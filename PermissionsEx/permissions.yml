@@ -2118,6 +2118,7 @@ groups:
         permissions: []
       buildworld:
         permissions:
+        - -command.exitgame
         - command.goworld
         - command.stageselect
         - essentials.warps.arcade
@@ -5027,12 +5028,6 @@ groups:
         - ch.alias.grow
         - kill.immune
         - immune.destroyworld
-  dva:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&d'
-      prefix: '&9D&f.&dV&fa'
   spidermanmilesmorales:
     inheritance:
     - commonherotraits
@@ -9412,6 +9407,12 @@ groups:
         - ch.alias.thrudestabilize
         - magic.cast.infinitemasspunch
         - magic.commands.cast
+  dva:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&d'
+      prefix: '&9D&f.&dV&fa'
 schema-version: 1
 worlds:
   checkers:
@@ -9572,6 +9573,7 @@ users:
       name: StrikerMax
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
+    - builder
     - flashwallywest
     options:
       name: Jiren_The_Grey
@@ -9614,8 +9616,7 @@ users:
       name: ExplodingPug_YT
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
-    - builder
-    - mortal
+    - dva
     permissions:
     - is.builder
     options:
