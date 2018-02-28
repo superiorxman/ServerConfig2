@@ -43,7 +43,6 @@ register_command(buff,
             }else{
                 queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
             }
-            queue_push(closure(set_phunger(@plr,17)))
             if(array_index_exists(@hero,'speech')){
                 queue_push(closure(tmsg(@plr,@hero['speech'])))
             }
