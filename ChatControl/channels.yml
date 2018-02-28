@@ -1,0 +1,36 @@
+# !---------------------------------------------------------!
+# ! File automatically updated at 12.10.2017 17:36:07
+# ! to plugin version v7.5.14
+# !---------------------------------------------------------!
+# ! Unfortunatelly due to how Bukkit handles YAML
+# ! configurations, all comments (#) were wiped. 
+# ! 
+# ! For reference values and comments, open
+# ! channels.yml in the plugin .JAR file.
+# !---------------------------------------------------------!
+
+Enabled: true
+Command_Aliases:
+- channel
+- ch
+Notify_On_Join: true
+Max_Channels_Per_Player: 1
+Channels:
+  Global:
+    Format: Global_Chat
+    Bungee: false
+    Log_Format: '{player}: {message}'
+  Local:
+    Format: Local_Chat
+    Bungee: false
+    Log_Format: '{player}: {message}'
+    Range: 100
+Compatibility:
+  Multi_Event: false
+  Single_Event_Format: '[{channels}] {player}: {message}'
+  Cancel_Event: false
+  Discord:
+    Control_Incoming_Messages: false
+    Deny_Unknown_Channel: true
+    Format: '&8[&3Discord&8] &7{player}: &f{message}'
+    Apply_Natural_Format_If_Online: false

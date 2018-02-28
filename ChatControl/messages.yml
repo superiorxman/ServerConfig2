@@ -1,0 +1,159 @@
+# -------------------------------------------------------------------------------------------
+# 
+#  Your file has been automatically updated at 06.11.2017 18:16:57
+#  to ChatControl 7.6.8
+# 
+#  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
+#  preserve the documentation comments in your file. We apologies.
+# 
+#  If you'd like to view the default file, you can either:
+#  a) Open the chatcontrol.jar with a WinRar or similar
+#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+# 
+# -------------------------------------------------------------------------------------------
+
+Hide_Join_Quit_Kick_Messages: false
+Join_Message:
+  Enabled: false
+  Message: default
+  Conditions:
+    hells_message:
+      Gamemode: SURVIVAl
+      World:
+      - world_nether
+      - hardcore_nether
+      - another_nether
+      Message: '&8[&2+&8] &7Welcome to &chell &7{player}!'
+    staff_message:
+      Permission: chatcontrol.joinmessage.staff
+      Message:
+      - '&8[&2+&8] &7Welcome &b{player} &7to the server!'
+      - '&8[&2+&8] &7Bless &9{player} &7for joining!'
+      - '&8[&2+&8] &7All say hey to &e{player} &7for joining!'
+      - '&8[&2+&8] &7Watch out for &c{player} &7joining!'
+    jubileum_message:
+      Condition: player.getStatistic(Java.type("org.bukkit.Statistic").LEAVE_GAME)
+        == 99
+      Message: |-
+        &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        &e&l{player} &ejoined the server 100th time!
+        &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Quit_Message:
+  Enabled: false
+  Message: '&8[&c-&8] &b{player}'
+Kick_Message:
+  Enabled: false
+  Message: default
+Death_Messages:
+  Enabled: false
+  Prefix: '&c{player} &7&8[&4x&8]'
+  Default:
+    Message:
+    - '{player} has passed away'
+    - '{player} has been killed'
+    - '{player} has died'
+    Bungee_Message: hide
+    Display_To: ALL
+    Range: -1
+    Conditions:
+      silent_on_creative:
+        Gamemode: CREATIVE
+        Message: none
+  Contact:
+    Message: has died of a contact
+  Entity_Attack:
+    Message: has been killed by {killer}
+    Conditions:
+      zombie:
+        Killer: ZOMBIE
+        Message:
+        - has been torn apart by an angry {killer}
+        - thought zombies are friendly creatures
+      pvp:
+        Killer: PLAYER
+        Killer_Message:
+        - <noprefix> &8[&4PvP&8] &6You just &cmurdered &6{player}!
+        - <noprefix> &8[&4PvP&8] &6You just &cslayed &6{player}!
+        Message:
+        - <noprefix> &8[&4PvP&8] &c{killer} &7just murdered {player} by {killer_item}
+        - <noprefix> &8[&4PvP&8] &c{killer} &7just killed {player} by {killer_item}
+        - <noprefix> &8[&4PvP&8] &c{player} &7has been slayed by {player} using {killer_item}
+  Projectile:
+    Message: has died of a projectile
+  Suffocation:
+    Message: has died of suffocation
+  Fall:
+    Message: has died of fall
+  Fire:
+    Message: has died of fire
+  Fire_Tick:
+    Message: has died of a fire tick
+  Melting:
+    Message: has died of melting
+  Lava:
+    Message: has died of lava
+  Drowning:
+    Message: has died of drowning
+  Block_Explosion:
+    Message: has died of a block explosion
+  Entity_Explosion:
+    Message: has died of an entity explosion
+    Conditions:
+      creeper:
+        Killer: CREEPER
+        Message: has been blown up by creeper
+  Void:
+    Message: has died of void
+  Lightning:
+    Message: has died of lightning
+  Suicide:
+    Message: has died of suicide
+  Starvation:
+    Message: has died of starvation
+  Poison:
+    Message: has died of a poison
+  Magic:
+    Message: has died of magic
+  Wither:
+    Message: has died of a wither
+  Falling_Block:
+    Message: has died of a falling block
+  Thorns:
+    Message: has died of thorns
+  Dragon_Breath:
+    Message: has died of a dragon breath
+  Custom:
+    Message: has miraculously died
+  Fly_Into_Wall:
+    Message: has died of flying into a wall
+  Hot_Floor:
+    Message: has died of a hot floor
+  Cramming:
+    Message: squished too much
+  Entity_Sweep_Attack:
+    Message: squished too much
+  Hide_By_Gamerule: false
+Broadcaster:
+  Enabled: false
+  Mode: 0
+  Prefix: '&8[&2Tip&8]&2'
+  Suffix: ''
+  Delay_Seconds: 180
+  Messages:
+    global:
+    - Hey, {player}, did you know that we are running ChatControl?
+    - Check out &ahttps://spigotmc.org/resources/10258
+    hardcore:
+    - Grief is not permitted what-so-ever and every griefer will be banned.
+    - Can you survive the night on {world} world?
+    hardcore_nether:
+    - includeFrom hardcore
+    ignored-world:
+    - excludeGlobal
+    creative:
+    - excludeGlobal
+    - Welcome on Creative world. Enjoy your gamemode :)
+    - "This is an example of multi-line.\nUse it if the new line character \nis not\
+      \ working for you."
+    - This is another message, this time only on one line!
+  Sound: none

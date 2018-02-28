@@ -1,0 +1,68 @@
+#
+# Modify this file to change, add or disable custom mob types.
+#
+# You can also add individual files to the mobs/ folder
+#
+# To see the current default builtin configs, look in this folder:
+# https://github.com/elBukkit/MagicPlugin/tree/master/src/main/resources/defaults/mobs
+#
+# For customization help see: 
+# https://github.com/elBukkit/MagicPlugin/wiki/Customization
+#
+#
+
+#
+# General format:
+#
+# <mobkey>:
+#       enabled: true/false
+#       type: <mob type enum/name>
+#       health: 100
+
+#
+# Examples:
+# Note that a "#" chararacter means the line is commented out and has no effect.
+# Make sure to not comment out the lines you add, there should not be a space in front of the name, indentation is important.
+# Use http://www.yamllint.com if you have issues with your config, make sure not to use tabs!
+# 
+
+# Add a disguised mob type (requires LibsDisguises plugin!)
+# cowlock:
+#   type: zombie
+#   name: Cowlock
+#   health: 200
+#   default_drops: false
+#   disguise:
+#     type: cow
+
+demon:
+  name: Demon
+  type: zombie
+  item: iron_fence
+  chestplate: leather_chestplate
+  leggings: leather_leggings
+  helmet: leather_helmet
+  boots: leather_boots
+  health: 40
+  default_drops: false
+  cast_interval: 5000
+  cast:
+    demon_rush: 100
+  drops:
+  - redstone@1
+tarzultrig:
+  name: Tarzultrig
+  type: zombie
+  item: iron_fence
+  chestplate: iron_chestplate
+  leggings: iron_leggings
+  helmet: iron_helmet
+  boots: iron_boots
+  health: 10000
+  default_drops: false
+  cast_interval: 3000
+  cast:
+    demon_rush: 50
+    demon_firebolt: 50
+  drops:
+  - nether_brick@1

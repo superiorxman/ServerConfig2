@@ -1,0 +1,46 @@
+players:
+  8ca7fc56-614b-482a-91df-bf8580ba273d:
+    rank: 20
+    party: TheTitans
+    name:
+      timestamp: 1519635544
+      name: TheLightShadow_
+  0c4e2027-58e2-4b57-8bfa-8ec912c22e7f:
+    party: TheTitans
+    rank: 5
+    name:
+      name: PsychicVictini
+      timestamp: 1519635597
+  1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99:
+    party: Dude
+    name:
+      name: MisserMan
+      timestamp: 1519677753
+    rank: 20
+  433a0d8e-aa8a-42ae-bc54-f4456bf366c0:
+    rank: 5
+    party: Dude
+    name:
+      name: MaxTrident
+      timestamp: 1519677782
+  fbb8c072-4c4b-49c8-948b-26e8ad73099e:
+    rank: 20
+    name:
+      timestamp: 1519708560
+      name: Eiilonwy
+    party: aaaaaaa
+parties:
+  TheTitans:
+    members:
+    - 8ca7fc56-614b-482a-91df-bf8580ba273d
+    - 0c4e2027-58e2-4b57-8bfa-8ec912c22e7f
+    leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
+  Dude:
+    leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
+    members:
+    - 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
+    - 433a0d8e-aa8a-42ae-bc54-f4456bf366c0
+  aaaaaaa:
+    members:
+    - fbb8c072-4c4b-49c8-948b-26e8ad73099e
+    leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e

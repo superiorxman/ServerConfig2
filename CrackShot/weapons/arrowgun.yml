@@ -1,0 +1,25 @@
+arrowgun:
+    Item_Information:
+        Item_Name: "&cArrow &6Gun"
+        Item_Type: 417
+    Shooting:
+        Projectile_Flames: true
+        Cancel_Left_Click_Block_Damage: false
+        Cancel_Right_Click_Interactions: false
+        Right_Click_To_Shoot: true
+        Delay_Between_Shots: 0
+        Recoil_Amount: 0
+        Projectile_Amount: 1
+        Projectile_Type: arrow
+        Projectile_Speed: 15
+        Projectile_Damage: 0
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 1
+    Hit_Events:
+        Enable: true
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 262
+        Take_Ammo_Per_Shot: true

@@ -1,0 +1,190 @@
+
+------------------------------------[ 27.02.2018 16:04:55 ]-----------------------------------
+ChatControl 7.7.3 encountered a COM6
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3339-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.66, AsyncWorldEdit v3.5.0, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, WorldEdit v6.1.9-SNAPSHOT;3732-df1a1d5, Parties v2.2.6, ChatControl v7.7.3, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.2-SNAPSHOT-338cb
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Player RoryDaPanda is already in Global channel in write mode!
+COM6 Report / Player RoryDaPanda is already in Global channel in write mode!
+	 at me.kangarko.chatcontrol.final. .lpt6.const(SourceFile:30)
+	 at me.kangarko.chatcontrol.final. .L.const(SourceFile:103)
+	 at me.kangarko.chatcontrol.final. .throw.setPlayer(SourceFile:132)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:188)
+	 at me.kangarko.chatcontrol.final. .lpt7.onCommand(SourceFile:53)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+	 at com.laytonsmith.abstraction.bukkit.BukkitMCServer.dispatchCommand(BukkitMCServer.java:104)
+	 at com.laytonsmith.core.functions.Meta$sudo.exec(Meta.java:238)
+	 at com.laytonsmith.core.Script.eval(Script.java:369)
+	 at com.laytonsmith.core.Script.eval(Script.java:337)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2190)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2149)
+	 at com.laytonsmith.core.events.AbstractEvent.execute(AbstractEvent.java:121)
+	 at com.laytonsmith.core.events.BoundEvent.execute(BoundEvent.java:301)
+	 at com.laytonsmith.core.events.BoundEvent.trigger(BoundEvent.java:259)
+	 at com.laytonsmith.core.events.EventUtils.FireListeners(EventUtils.java:310)
+	 at com.laytonsmith.core.events.EventUtils.TriggerListener(EventUtils.java:297)
+	 at com.laytonsmith.abstraction.bukkit.events.drivers.BukkitPlayerListener.onPlayerJoin(BukkitPlayerListener.java:67)
+	 at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor109.execute(Unknown Source)
+	 at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:515)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 27.02.2018 16:04:56 ]-----------------------------------
+ChatControl 7.7.3 encountered a COM6
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3339-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.66, AsyncWorldEdit v3.5.0, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, WorldEdit v6.1.9-SNAPSHOT;3732-df1a1d5, Parties v2.2.6, ChatControl v7.7.3, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.2-SNAPSHOT-338cb
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Player StrikerMax is already in Global channel in write mode!
+COM6 Report / Player StrikerMax is already in Global channel in write mode!
+	 at me.kangarko.chatcontrol.final. .lpt6.const(SourceFile:30)
+	 at me.kangarko.chatcontrol.final. .L.const(SourceFile:103)
+	 at me.kangarko.chatcontrol.final. .throw.setPlayer(SourceFile:132)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:188)
+	 at me.kangarko.chatcontrol.final. .lpt7.onCommand(SourceFile:53)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+	 at com.laytonsmith.abstraction.bukkit.BukkitMCServer.dispatchCommand(BukkitMCServer.java:104)
+	 at com.laytonsmith.core.functions.Meta$sudo.exec(Meta.java:238)
+	 at com.laytonsmith.core.Script.eval(Script.java:369)
+	 at com.laytonsmith.core.Script.eval(Script.java:337)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2190)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2149)
+	 at com.laytonsmith.core.events.AbstractEvent.execute(AbstractEvent.java:121)
+	 at com.laytonsmith.core.events.BoundEvent.execute(BoundEvent.java:301)
+	 at com.laytonsmith.core.events.BoundEvent.trigger(BoundEvent.java:259)
+	 at com.laytonsmith.core.events.EventUtils.FireListeners(EventUtils.java:310)
+	 at com.laytonsmith.core.events.EventUtils.TriggerListener(EventUtils.java:297)
+	 at com.laytonsmith.abstraction.bukkit.events.drivers.BukkitPlayerListener.onPlayerJoin(BukkitPlayerListener.java:67)
+	 at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor109.execute(Unknown Source)
+	 at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:515)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 27.02.2018 16:14:05 ]-----------------------------------
+ChatControl 7.7.3 encountered a COM6
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3339-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.66, AsyncWorldEdit v3.5.0, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, WorldEdit v6.1.9-SNAPSHOT;3732-df1a1d5, Parties v2.2.6, ChatControl v7.7.3, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.2-SNAPSHOT-338cb
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Player WhosThatItzLulu is already in Global channel in write mode!
+COM6 Report / Player WhosThatItzLulu is already in Global channel in write mode!
+	 at me.kangarko.chatcontrol.final. .lpt6.const(SourceFile:30)
+	 at me.kangarko.chatcontrol.final. .L.const(SourceFile:103)
+	 at me.kangarko.chatcontrol.final. .throw.setPlayer(SourceFile:132)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:188)
+	 at me.kangarko.chatcontrol.final. .lpt7.onCommand(SourceFile:53)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+	 at com.laytonsmith.abstraction.bukkit.BukkitMCServer.dispatchCommand(BukkitMCServer.java:104)
+	 at com.laytonsmith.core.functions.Meta$sudo.exec(Meta.java:238)
+	 at com.laytonsmith.core.Script.eval(Script.java:369)
+	 at com.laytonsmith.core.Script.eval(Script.java:337)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2190)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2149)
+	 at com.laytonsmith.core.events.AbstractEvent.execute(AbstractEvent.java:121)
+	 at com.laytonsmith.core.events.BoundEvent.execute(BoundEvent.java:301)
+	 at com.laytonsmith.core.events.BoundEvent.trigger(BoundEvent.java:259)
+	 at com.laytonsmith.core.events.EventUtils.FireListeners(EventUtils.java:310)
+	 at com.laytonsmith.core.events.EventUtils.TriggerListener(EventUtils.java:297)
+	 at com.laytonsmith.abstraction.bukkit.events.drivers.BukkitPlayerListener.onPlayerJoin(BukkitPlayerListener.java:67)
+	 at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor109.execute(Unknown Source)
+	 at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:515)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 27.02.2018 17:54:25 ]-----------------------------------
+ChatControl 7.7.3 encountered a COM6
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3339-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.66, AsyncWorldEdit v3.5.0, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, PerPlayerBlood v2.6, WorldEdit v6.1.9-SNAPSHOT;3732-df1a1d5, Parties v2.2.6, ChatControl v7.7.3, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.2-SNAPSHOT-338cb
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Player StrikerMax is already in Global channel in write mode!
+COM6 Report / Player StrikerMax is already in Global channel in write mode!
+	 at me.kangarko.chatcontrol.final. .lpt6.const(SourceFile:30)
+	 at me.kangarko.chatcontrol.final. .L.const(SourceFile:103)
+	 at me.kangarko.chatcontrol.final. .throw.setPlayer(SourceFile:132)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:188)
+	 at me.kangarko.chatcontrol.final. .lpt7.onCommand(SourceFile:53)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+	 at com.laytonsmith.abstraction.bukkit.BukkitMCServer.dispatchCommand(BukkitMCServer.java:104)
+	 at com.laytonsmith.core.functions.Meta$sudo.exec(Meta.java:238)
+	 at com.laytonsmith.core.Script.eval(Script.java:369)
+	 at com.laytonsmith.core.Script.eval(Script.java:337)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2190)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2149)
+	 at com.laytonsmith.core.events.AbstractEvent.execute(AbstractEvent.java:121)
+	 at com.laytonsmith.core.events.BoundEvent.execute(BoundEvent.java:301)
+	 at com.laytonsmith.core.events.BoundEvent.trigger(BoundEvent.java:259)
+	 at com.laytonsmith.core.events.EventUtils.FireListeners(EventUtils.java:310)
+	 at com.laytonsmith.core.events.EventUtils.TriggerListener(EventUtils.java:297)
+	 at com.laytonsmith.abstraction.bukkit.events.drivers.BukkitPlayerListener.onPlayerJoin(BukkitPlayerListener.java:67)
+	 at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor109.execute(Unknown Source)
+	 at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:515)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 27.02.2018 17:54:43 ]-----------------------------------
+ChatControl 7.7.3 encountered a COM6
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3339-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.66, AsyncWorldEdit v3.5.0, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, PerPlayerBlood v2.6, WorldEdit v6.1.9-SNAPSHOT;3732-df1a1d5, Parties v2.2.6, ChatControl v7.7.3, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.2-SNAPSHOT-338cb
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Player LolItzCrusty is already in Global channel in write mode!
+COM6 Report / Player LolItzCrusty is already in Global channel in write mode!
+	 at me.kangarko.chatcontrol.final. .lpt6.const(SourceFile:30)
+	 at me.kangarko.chatcontrol.final. .L.const(SourceFile:103)
+	 at me.kangarko.chatcontrol.final. .throw.setPlayer(SourceFile:132)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:188)
+	 at me.kangarko.chatcontrol.final. .lpt7.onCommand(SourceFile:53)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+	 at com.laytonsmith.abstraction.bukkit.BukkitMCServer.dispatchCommand(BukkitMCServer.java:104)
+	 at com.laytonsmith.core.functions.Meta$sudo.exec(Meta.java:238)
+	 at com.laytonsmith.core.Script.eval(Script.java:369)
+	 at com.laytonsmith.core.Script.eval(Script.java:337)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2190)
+	 at com.laytonsmith.core.MethodScriptCompiler.execute(MethodScriptCompiler.java:2149)
+	 at com.laytonsmith.core.events.AbstractEvent.execute(AbstractEvent.java:121)
+	 at com.laytonsmith.core.events.BoundEvent.execute(BoundEvent.java:301)
+	 at com.laytonsmith.core.events.BoundEvent.trigger(BoundEvent.java:259)
+	 at com.laytonsmith.core.events.EventUtils.FireListeners(EventUtils.java:310)
+	 at com.laytonsmith.core.events.EventUtils.TriggerListener(EventUtils.java:297)
+	 at com.laytonsmith.abstraction.bukkit.events.drivers.BukkitPlayerListener.onPlayerJoin(BukkitPlayerListener.java:67)
+	 at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor109.execute(Unknown Source)
+	 at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:70)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:78)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:515)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
+----------------------------------------------------------------------------------------------
+
