@@ -13,7 +13,7 @@ register_command(chars,
             } else {
                 @pageNum = null
             }
-    
+            // nothing
             if(@pageNum < 1 && @pageNum != null){
                 msg(color(RED).color(BOLD).'Sorry, the page number must be at least 1.');
                 die()
