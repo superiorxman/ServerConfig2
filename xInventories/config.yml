@@ -97,8 +97,11 @@ groups:
 - ooo
 - soulstone
 - phantomzone
-- lexstarklabs
+- arcade
+- mainmenu
+- buildworld
 worlds:
+  buildworld: buildworld
   starlabs: superherocities
   starktower: superherocities
   pokemon: superherocities
@@ -117,7 +120,8 @@ worlds:
   leafdecay: leafdecay
   kartlobby: kartlobby
   kartraces: kartraces
-  lexstarklabs: lexstarklabs
+  mainmenu: mainmenu
+  arcade: arcade
   shootingrange: shootingrange
   freezetag: freezetag
   infectiontag: infetiontag

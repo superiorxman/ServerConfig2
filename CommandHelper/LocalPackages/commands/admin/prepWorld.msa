@@ -1,0 +1,31 @@
+prepworld:/prepworld = >>>
+
+    @world = ploc()[world]
+    queue_push(closure(sudo('/mvm clear difficulty')))
+    queue_push(closure(sudo('/mvm clear monsters')))
+    queue_push(closure(sudo('/mvm clear animals')))
+    queue_push(closure(sudo('/mvm clear weather')))
+    queue_push(closure(sudo('/mvm set memory false')))
+    queue_push(closure(sudo('/mvm set portalform NONE')))
+    queue_push(closure(sudo('/mvm set bedrespawn false')))
+    queue_push(closure(sudo('/mvm set respawnworld '.@world)))
+    queue_push(closure(sudo('/gamerule randomTickSpeed 0')))
+    queue_push(closure(sudo('/gamerule doMobSpawning false')))
+    queue_push(closure(sudo('/gamerule doMobLoot false')))
+    queue_push(closure(sudo('/gamerule doTileDrops false')))
+    queue_push(closure(sudo('/gamerule doWeatherCycle false')))
+    queue_push(closure(sudo('/gamerule keepInventory true')))
+    queue_push(closure(sudo('/gamerule maxEntityCramming 2')))
+    queue_push(closure(sudo('/gamerule mobGriefing false')))
+    queue_push(closure(sudo('/gamerule naturalRegeneration false')))
+    #queue_push(closure(sudo('/rg flag __global__ other-explosion: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ creeper-explosion: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ entity-painting-destroy: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ entity-item-frame-destroy: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ ghast-fireball: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ firework-damage: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ enderdragon-block-damage: deny')))
+    #queue_push(closure(sudo('/rg flag __global__ enderman-grief: deny')))
+
+
+<<<
