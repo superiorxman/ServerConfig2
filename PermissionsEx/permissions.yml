@@ -5500,17 +5500,6 @@ groups:
         - essentials.fly
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-  doctordoom:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2D&ao&2ct&ao&2r &aD&2o&ao&2m'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.tppos
-        - ch.alias.explode
   superboykalel:
     inheritance:
     - commonherotraits
@@ -9410,6 +9399,17 @@ groups:
         - weakto.kryptonite
         - magic.cast.infinitemasspunch
         - magic.commands.cast
+  doctordoom:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2D&ao&2ct&ao&2r &aD&2o&ao&2m'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.tppos
+        - ch.alias.explode
 schema-version: 1
 worlds:
   checkers:
@@ -9614,9 +9614,6 @@ users:
     - mortal
     options:
       name: ExplodingPug_YT
-  superiorxman:
-    permissions:
-    - is.headbuilder
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
     - builder
@@ -10004,3 +10001,11 @@ users:
     - thefourthdoctor
     options:
       name: LordOfGallifrey
+  ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
+    permissions:
+    - is.headbuilder
+    options:
+      name: superiorxman
+    group:
+    - headbuilder
+    - mortal
