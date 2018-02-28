@@ -7056,16 +7056,6 @@ groups:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-  batman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&7B&ea&0t&7m&8a&7n'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.batman
   thebeyonder:
     inheritance:
     - commonherotraits
@@ -9410,6 +9400,16 @@ groups:
         permissions:
         - essentials.tppos
         - ch.alias.explode
+  batman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&7B&ea&0t&7m&8a&7n'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.batman
 schema-version: 1
 worlds:
   checkers:
@@ -9812,7 +9812,7 @@ users:
       name: vader147
   4082517f-c021-411b-b302-ccb2d61c84c1:
     group:
-    - mortal
+    - batman
     options:
       name: Bruce_Wayne08
   f9e418bf-9c4f-47af-a963-310bff20bc36:
@@ -9998,7 +9998,7 @@ users:
       name: LolItzCrusty
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     group:
-    - thefourthdoctor
+    - mortal
     options:
       name: LordOfGallifrey
   ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
