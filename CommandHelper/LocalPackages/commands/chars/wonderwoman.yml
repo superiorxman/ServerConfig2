@@ -18,7 +18,6 @@ name: §4W§fon§eder §4W§fom§9an
 op: 'false'
 permissions:
   speedforce:
-  - essentials.warps.speedforce
   - ch.alias.powers
   - essentials.back
   superherocity:
@@ -57,8 +56,9 @@ powers:
 - /haste <0-9>
 - /flyspeed <number>
 - /fly
+- /warp speedforce
 - /back (In the speedforce)
-- /tppos <x y z world>
+- /tppos <x> <y> <z>
 - /tp <player> (In the speedforce)
 - /speedforceteleport <playername>
 - /lightningpunch <on/off>

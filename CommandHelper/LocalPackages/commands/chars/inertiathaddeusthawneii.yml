@@ -21,6 +21,7 @@ permissions:
   - essentials.warps.speedforce
 powers:
 - /buff
+- /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
 - /speedforceteleport <playername>
@@ -32,7 +33,7 @@ powers:
 - /run 0-1 (In speedforce)
 - /run <0-9>
 - /haste <0-4>
-- /tppos <x y z world>
+- /tppos <x> <y> <z>
 run: 9
 sig: MvvvyvIKbuCKON8n/84CQPDSgaa513QaBrbJkHyXOv9NFri4fXDxxt0VYfS02aHqr9axTIg9ue/yUeuDiwLBv9LIUCHQeEJs80rL5yXaiGRpQHrKJW6DEophjxzdub7cWQ+T0VQdKdCcAPX5QihOa2avdAF8hmsd/D2yOlVCUS0hJ5mJ1gqERQaXWSjYnn6owVJnPTlTdLlAVhy0ku0IataTC9+AI2asTJKrL3FcCanRzdaOrrurDxFJ15NTz4iYJ9ShHoL63rFOjXmaccv/OwRj/yvgs+t7v1e+M0pRJQDZVgE5PCtQz0PIijTak52y9t4n3Lwib/8IqI+VqimcASRJcVbJ7dq4D/OUt3Gc1MRFnPzHa8e4aGupdis9JKs4rOAr0xWsfFD6vnCxIx20+JWZoS7dWEZE4kiferpojaOUBdC1BS7BXmdwDVlwCDWfMEOGrsX5IboygpBQq/+fjjIhfW///T6PHaY5yZ5kVtkiGJ2QJEM6pCrOsNtMywf/o+u9ObRNuc+531fD6F6ygqLc5TNjKSmLQArp5QEV7PdjEiWJ9fZ5d5avwlrBLjiObtRGx88BfxntW3kqhK3e3PnyVno4FGlF6g4dCnqpYPWK6wmdt+0RE3pqXsDZDkYPgNCcT1P3fBk2gCAvnwFNqZH1OiOIzKC0dcWYQUwdf5Q=
 speech: Name's Tad Thawne, but you can call me Inertia

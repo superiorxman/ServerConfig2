@@ -25,16 +25,9 @@ register_command(buff,
                 }
             }
 
-#            queue_push(closure(
-#                @pinv = pinv(@plr)
-#                @i = 0
-#                foreach(@slot: @itm in @pinv){
-#                    if(@itm != null){
-#                        queue_push(closure(runas(~console,'/nbt *'.@plr.' Inventory['.@i.'].tag += {heroclass:'.@hero['class'].'}')))
-#                        @i++
-#                    }
-#                }
-#            ))
+            if(has_permission(@player,'essentials.fly')){
+                run_cmd('/fly on')
+            }
 
             @puuid = puuid(@plr)
             if(array_index_exists(@hero,'maxHearts')){

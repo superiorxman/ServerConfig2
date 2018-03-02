@@ -29,16 +29,18 @@ permissions:
 powers:
 - /splitself
 - /buff
-- /carryplayer <Player>
+- /carryplayer <player>
+- /dismountplayer
+- /warp speedforce
 - /back (in the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /run <0-9>
 - /haste <0-6>
 - /jump <0-3>
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
-- /tppos <X, Y, Z Coordinates>
+- /tppos <x> <y> <z>
 - /tp <player> (In the speedforce)
 run: 9
 sig: Edfwv5NsF0+wZ9HhWFIwv/BrvaRHYmog0cEqqdD1BQOLuXtA6ET3//zCihg3czyu5z2Rf6flYG5ax3nOdPqYFF2lIFHrFLnSdFSjsS5ZvqVD3KtI7/zGennlhU/0vvEy26pR/BsFIOGefjED04UGIHzsHvyIPjUxuatllSZaVKtSQRA+tIdiuXjEw+sWy5JWtbaxLBwpU+3kX1dxo9YqYin91d2yGInQDIKrQl+yhRDzXWFYcOJV6evDf/LjYZkVkCQ+LCEWvsfrNnaOB4p8fB33QEYdsBUOqUg3+M4Hu5QP3mTRH3+eZpL/OINi2ZNHayPiNGcNXiduijBULcPmi0SClRCJoej8NvtU4okcAgyKOCh70wFoto6KToThMIts1xlxhfxejJXxKW4RLZTKqftbzC8jKeD5JbTB8VymvpW6RlbqSlbnYG3i6W4BTyijB++kbvd2OXyGcXcsN3z74g1wJl1r2oGAomoqz040ElV7yBnEN58dLRZ/mewO1YMCU/7OfK8aUROdi4QlG0RCOs17C6rNLKSTaDGgeeXpsuDtLPgnTIwYjGqDD3LafP+4rzVvo849d85eIxK/vl2xP8tEChCIrYejhak6vVTtluerRSHWbzHy+nSAAdxdjuBrzpkGXhwgfwLlJG8Z9uGStKHNr1xmbcPyj4CarWXP1fQ=

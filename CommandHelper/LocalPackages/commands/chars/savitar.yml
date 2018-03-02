@@ -33,7 +33,8 @@ permissions:
   - ch.alias.vis
 powers:
 - /buff
-- /carryplayer <Player>
+- /carryplayer <player>
+- /warp speedforce
 - /back (in the speedforce)
 - /tp <player> (In the speedforce)
 - /speedforceteleport <playername>
@@ -43,9 +44,9 @@ powers:
 - /run <0-9>
 - /haste <0-8>
 - /jump <0-3>
-- /tppos <X, Y, Z Coordinates>
-- /invis (makes you invisible)
-- /vis (makes you visible again)
+- /tppos <x> <y> <z>
+- /invis
+- /vis
 run: 9
 sig: kPz1FipicEjkp/2IH62cGlHg6bIdWn2LI1Vr1ufMOZY+v/yTUR/5TwmxH9EbK+sqzosRHitcgthR2D/wUim0IgSp3hjV4ufjpE+ZIkVsm+MfVfXfrQA45ei9zxkHCkY9zofjbfFTZx54+Ab/mysrleYnp54UOcWm8DM5eg1PaV8s8/9gxhgIW+7kSmgJ2xRvO0ZMOs7E17PuxewX6pPqIClfLZS8wD3i9qYN9w0I0T23X0MSVKAR4QcARHepAv3VySfto6iR3n10I1wmqOzbedXn5kfR9jbK4JskE/xCJ5cw9w31zFHDG6nZyvkMYfE8x1G17UbFjGelq4beUL6aoAdoqHaDgJKlYsVRnCG5CuHnVVsH2hr2xhvjwUj4kpjOfi+9GNKDBd5CSxTiLAYm6ZP8Jtr/ZX+C5HkDuRMyujW2aq8vkkMd+A8CmFgtDsHfPK+Edbf8xFmv6bCjoZ2IcVKLMZCsIJ7eQwgwfYBjtA0UNBbOLn53C9xQWgsKAD4KS7m086/BbMikmNS90fpPfCqFtuN460H8Qcrg16ngPRkwXZjLRvJHRtC5zGRFv3i66Hy/0M7tBYqJrXX/RWyqrvc5PCtYrYzYv94RYk8lneBPOvF3gP+npsYpysKM2WdP7EmLF3SR3eSzp0xxLxjbnszsExwBOEdjCjuWq/H+O0o=
 speech: I am the God of speed!

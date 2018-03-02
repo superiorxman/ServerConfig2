@@ -25,6 +25,7 @@ permissions:
   - essentials.warps.speedforce
 powers:
 - /buff
+- /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
 - /speedforceteleport <playername>
@@ -37,7 +38,7 @@ powers:
 - /jump <0-4>
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
-- /tppos <x y z world>
+- /tppos <x> <y> <z>
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /modifyspeed <playername> <number>

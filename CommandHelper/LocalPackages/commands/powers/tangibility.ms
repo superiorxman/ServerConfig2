@@ -19,7 +19,11 @@ register_command(tangible,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure() {        
             @plr = player()
-            set_pmode(@plr,'ADVENTURE')
+            @ploc = ploc(@plr)
+            @yml = read('/home/minecraft/server/plugins/Multiverse-Core/worlds.yml')
+            @yml = yml_decode(@yml)
+            @worldGM = @yml['worlds'][@ploc['world']]['gameMode']
+            set_pmode(@plr,@worldGM)
             if(!has_permission(@plr,'essentials.fly')){
                 set_pflight(@plr,false)
             }
