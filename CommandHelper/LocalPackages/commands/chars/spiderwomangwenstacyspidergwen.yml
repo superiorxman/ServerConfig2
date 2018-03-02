@@ -19,7 +19,6 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.slingweb
   - -essentials.protect.damage.fall
-  - ch.alias.spiderwomangwenstacyspidergwen
   - ch.alias.web
 powers:
 - /buff
@@ -28,9 +27,9 @@ powers:
 - /jump <0-7>
 - /run <0-4>
 - /haste <0-3>
-- |-
-  Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can sto
-  p climbing but continue to press crouch to stick to the wall in place and look around.
+- /wallclimb <on/off>
+- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- /websling <on/off>
 - With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob.
 run: 4
 sig: B5z6osyxnuz11tgxKUeR8RCQ/ard0ZUcb4El2KQaeedVgnyafazJq3yQWWbolo+DVl6pvfc3ivHb1XgI92ZIGo+3xX1rZESPxuoTUGEVOsz3aYriET/VbrDB/RsWd6pqGENgCbqeV8E6+E+AVhg7twnNmW2i044jB3vLV79nVGDa81eDrZXMATjI5yH+LEqAZtEbro8am09mI5WEfB7YqBBohiYfQLpPX0XwQTNIOqIjwf46UeGp/nLEKVmZUAIFNM27iT+PZnVpPv707/7eMNtM1y5/k3kLAHt4XPy/yg8QHY1mrm+DhxAwP+BkZpwV4EAxzZZPdeAVtHsMqvD8V0fVkg9Q/ji20ieTnTUvIPqK6Yoioitb4bxsorOWvQCbLnRwKztx2RBHRbVufUlfwFsPuCTP7/sAhBvpvjBgw8KmWwR/KQV0vg3zd0H7rZpBnBd/7XqRssDrWAu13UNx/M7yFggv7YvfNkg/OpoYOTngUsxsImt5cU8S/d+LJhR9OubRXOV+k/DrnHDpkGcyrYpwvo92wpO0xny5v8HFPtmzRIGYFPuikNZ7m/XdwIbDp66shSy0LCaA2But5RmYv+x2hY4TETYWv75BMOKij4/GzMSzsaVsbKBfgw2JgQlfkQ1ejS6+EeDkJKLJ3MHbyLEVDO476xEw07PoSc97j/s=

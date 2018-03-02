@@ -1,6 +1,10 @@
 bind(player_interact, null, array(item: 0, button: 'left'), @event,
 
     @player = player()
+
+    if(import(@player.'webSlingStatus') != true){
+        die()
+    }
     
     if(has_permission(@player,'ch.alias.websling')){
 

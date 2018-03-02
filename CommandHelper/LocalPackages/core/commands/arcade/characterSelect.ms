@@ -59,7 +59,7 @@ register_command(chars,
 register_command(characterselect, 
     array(
         description: 'Searches for a character',
-        usage: '/characterselect <searchterm>',
+        usage: '/characterselect <searchTerm>',
         permission: 'command.characterselect',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
         aliases: array('charsel', 'findchar','csel'),
@@ -77,8 +77,9 @@ register_command(characterselect,
  
             @searchTerm = ''
             foreach(@arg in @args){
-                @searchTerm = @searchTerm.@arg
+                @searchTerm = @searchTerm.'*'.@arg
             }
+            @searchTerm = '*'.@searchTerm.'*'
             @heroes = array()
 
             @var = shell('/home/minecraft/searchHero.sh '.@searchTerm)

@@ -5,8 +5,7 @@ register_command(intangible,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure() {
             @plr = player()
-            sudo('/minecraft:clear '.@plr) 
-            sudo(/gm 3)
+            set_pmode(@plr, 'SPECTATOR')
             set_pflight(@plr,true)
             set_pflying(@plr,true)
         }
@@ -20,12 +19,9 @@ register_command(tangible,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure() {        
             @plr = player()
-            sudo(/gms)
+            set_pmode(@plr,'ADVENTURE')
             if(!has_permission(@plr,'essentials.fly')){
                 set_pflight(@plr,false)
-            }
-            if(has_permission(@plr,'ch.alias.buff')){
-                runas(@plr,'/buff')
             }
         }
     )
