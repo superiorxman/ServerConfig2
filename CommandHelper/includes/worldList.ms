@@ -34,7 +34,7 @@
     associative_array('starlingcity','Starling City'),
     associative_array('nyc','New York City'),
     associative_array('chicago','Chicago'),
-    associative_array('infinitycity','Central City'),
+    associative_array('centralcity','Central City'),
     associative_array('pokemon','Pokemon'),
     associative_array('waynemanor','Wayne Manor'),
     associative_array('helicarrier','Helicarrier'),

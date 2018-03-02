@@ -11,8 +11,8 @@
 #
 regions:
     spawn:
-        min: {x: -202.0, y: 0.0, z: -22.0}
-        max: {x: -52.0, y: 255.0, z: 183.0}
+        min: {x: 206.0, y: 0.0, z: 252.0}
+        max: {x: 209.0, y: 255.0, z: 256.0}
         members: {}
         flags: {invincible: allow, greeting: §2You are now in SafeZone!, mob-damage: allow,
             mob-spawning: deny, farewell: §4You are now leaving SafeZone!}

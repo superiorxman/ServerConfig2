@@ -35,6 +35,7 @@ register_command(chars,
                     }
                 }
                 msg(color(RED).'For more characters check out '.color(GREEN).color(BOLD).'/chars 2')
+                msg(color(RED).'Click a character to select it.')
             }else{
                 @start = @pageNum * 10 - 9
                 for(@i = @start, @i < @start+10, @i++){
@@ -48,6 +49,7 @@ register_command(chars,
                     }
                 }
                 msg(color(RED).'For more characters check out '.color(GREEN).color(BOLD).'/chars '.(@pageNum + 1))
+                msg(color(RED).'Click a character to select it.')
             }
         }
     )

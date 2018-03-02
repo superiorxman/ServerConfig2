@@ -22,6 +22,7 @@ register_command(herotransform,
                         runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
                     }catch(IOException @e){}
                 }
+                msg(color(RED).'Click a character to transform.')
                 return(false)
             }
  
@@ -110,6 +111,7 @@ register_command(herotransform,
                         queue_push(closure(runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
                     }catch(IOException @e){}
                 }
+                msg(color(RED).'Click a character to transform.')
             }
 
         }

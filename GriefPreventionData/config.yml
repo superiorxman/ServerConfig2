@@ -8,17 +8,19 @@ GriefPrevention:
     ooo: -1
     mainmenu: -1
     titanstower: -1
+    speedforce: -1
     starktower: -1
     fortressofsolitude: -1
     helicarrier: -1
-    chicago: -1
+    infiniteparkour: -1
     gotham: -1
+    chicago: -1
     starlabs: -1
-    buildworld: -1
     greenfield: -1
+    buildworld: -1
     waynemanor: -1
-    hallofjustice: -1
     pokemon: -1
+    hallofjustice: -1
     metropolis: -1
     arcade: -1
     hogwarts: -1
@@ -36,6 +38,7 @@ GriefPrevention:
       broville: Disabled
       gotham: Disabled
       titanstower: Disabled
+      infiniteparkour: Survival
       soulstone: Survival
       ooo: Disabled
       survival112_the_end: Survival
@@ -50,6 +53,7 @@ GriefPrevention:
       waynemanor: Disabled
       thephantomzone: Survival
       arcade: Disabled
+      speedforce: Survival
       mainmenu: Disabled
       starktower: Disabled
       fortressofsolitude: Disabled
@@ -95,7 +99,7 @@ GriefPrevention:
     DeliverManuals: true
     ManualDeliveryDelaySeconds: 30
   Spam:
-    Enabled: true
+    Enabled: false
     LoginCooldownSeconds: 60
     LoginLogoutNotificationsPerMinute: 5
     ChatSlashCommands: /me;/global;/local
@@ -104,7 +108,7 @@ GriefPrevention:
     BanOffenders: true
     BanMessage: Banned for spam.
     AllowedIpAddresses: 1.2.3.4; 5.6.7.8
-    DeathMessageCooldownSeconds: 120
+    DeathMessageCooldownSeconds: 0
     Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
@@ -115,17 +119,19 @@ GriefPrevention:
       ooo: true
       mainmenu: true
       titanstower: true
+      speedforce: true
       starktower: true
       fortressofsolitude: true
       helicarrier: true
-      chicago: true
+      infiniteparkour: true
       gotham: true
+      chicago: true
       starlabs: true
-      buildworld: true
       greenfield: true
+      buildworld: true
       waynemanor: true
-      hallofjustice: true
       pokemon: true
+      hallofjustice: true
       metropolis: true
       arcade: true
       hogwarts: true

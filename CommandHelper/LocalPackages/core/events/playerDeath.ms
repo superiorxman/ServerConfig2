@@ -4,14 +4,9 @@ bind(player_death, null, null, @event){
         die()
     }
 
-    @player = player()
+    @player = @event['player']
     @world = pworld()
    
-    #runas(~console,'/minecraft:clear '.@player) 
-    if(@world == 'deathrun'){
-        runas(~console,'/timer &4DeathRun split '.@player.' global')
-    }
-
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @class = _getheroclass(@player)
     @message = @event['death_message']
@@ -25,11 +20,15 @@ bind(player_death, null, null, @event){
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
                 @message = replace(@message,@event['killer'],@hero['name'].color(DARK_RED).color(ITALIC))
+                modify_event('death_message',@message)
             }catch(Exception @e){
+                @message = replace(@message,@event['player'],@event['player'].color(DARK_RED).color(ITALIC))
+                modify_event('death_message',@message)
             }
         }
-        modify_event('death_message',@message)
     }catch(Exception @e){
+        @message = replace(@message,@event['player'],@event['player'].color(DARK_RED).color(ITALIC))
+        modify_event('death_message',@message)
     }
     if(has_permission(@player,'powers.cantdie')){
         set_phealth(@player,1)

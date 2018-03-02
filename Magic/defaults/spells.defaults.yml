@@ -2280,9 +2280,10 @@ boon:
     upgrade_required_path: beginner
     upgrade_required_casts: 40
     quick_cast: true
+    toggle: undo
     actions:
         cast:
-        -  class: PotionEffect
+        - class: PotionEffect
     effects:
         cast:
         -  class: EffectSingle
@@ -2299,38 +2300,34 @@ boon:
     parameters:
         target: any_entity
         range: 32
-        duration: 5000
         target_type: Player
         effect_speed: 1
         bypass_friendly_fire: true
         only_friendly: true
         bypass_pvp: true
-        cooldown: 20000
+        cooldown: 200
+        undo: 600000
+        duration: 600000
     costs:
-        mana: 50
+        mana: 20
+    active_costs:
+        mana: 5
 
 boon|2:
     upgrade_required_path: student
     upgrade_required_casts: 50
     parameters:
-        duration: 10000
-        cooldown: 40000
+        effect_jump: 2
 
 boon|3:
     upgrade_required_path: master
     upgrade_required_casts: 50
     parameters:
-        duration: 20000
-        cooldown: 40000
+        effect_speed: 2
 
 boon|4:
     parameters:
-        duration: 45000
-        cooldown: 60000
-        effect_speed: 2
         effect_night_vision: 5
-    costs:
-        mana: 100
 
 box:
     icon: diamond_axe:98
@@ -6504,19 +6501,33 @@ holylight:
                allowed_entities: player
                actions:
                - class: Heal
+               - class: PlayEffects
+                 effects: heal
             -  class: CheckEntity
                denied_entities: player
                actions:
                - class: Damage
+               - class: PlayEffects
+                 effects: hurt
     effects:
-        targets:
+        heal:
         -  class: EffectSingle
            sound: entity_villager_yes
            location: origin
            effectlib:
              class: HelixEffect
              particle: heart
-             iterations: 2
+             iterations: 10
+             radius: 2
+        hurt:
+        -  class: EffectSingle
+           sound: entity_bat_hurt
+           location: origin
+           effectlib:
+             class: HelixEffect
+             particle: smoke_normal
+             iterations: 10
+             radius: 2
     parameters:
         target: self
         target_caster: true
@@ -7870,7 +7881,6 @@ meteor:
         hitbox: true
         size: 1
         velocity: 50
-        cooldown: 21000
         bypass_backfire: false
         undo: 10000
         cooldown: 45000
@@ -9480,7 +9490,9 @@ progressmenu:
     - cast_spell: upgrades
     - placeholder: true
     - placeholder: true
-    - placeholder: true
+    - cast_spell: wandbuffshop
+      requirements:
+      - wand: wand
     - cast_spell: appearanceshop
       requirements: 
       - wand: wand
@@ -14063,9 +14075,33 @@ walls:
     costs:
         mana: 75
 
+wandbuffshop:
+  icon: diamond_axe:234
+  icon_disabled: diamond_hoe:234
+  category: npc
+  hidden: true
+  actions:
+      cast:
+      -  class: Selector
+  parameters:
+    show_unavailable: true
+    cost_type: sp
+    requirements:
+    - holding_wand: true
+    options:
+    - placeholder: true
+    - placeholder: true
+    - placeholder: true
+    - cast_spell: add_protection
+      cost: 1000
+    - cast_spell: add_fall_protection
+      cost: 500
+    - cast_spell: add_fire_protection
+      cost: 500
+
 add_protection:
-  icon: diamond_axe:110
-  icon_disabled: diamond_hoe:110
+  icon: diamond_axe:234
+  icon_disabled: diamond_hoe:234
   actions:
     cast:
     - class: ModifyProperties
@@ -14074,9 +14110,84 @@ add_protection:
     target: self
     modify_target: "wand"
     modify:
-      protection: "x + 0.1"
-  costs:
-    sp: 500
+    - path: "protection"
+      value: "x + 0.2"
+      max: 1
+
+add_explosion_protection:
+  icon: diamond_axe:235
+  icon_disabled: diamond_hoe:235
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - path: "protection_explosions"
+      value: "x + 0.2"
+      max: 1
+
+add_fall_protection:
+  icon: diamond_axe:236
+  icon_disabled: diamond_hoe:236
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - path: "protection_falling"
+      value: "x + 0.2"
+      max: 1
+
+add_fire_protection:
+  icon: diamond_axe:237
+  icon_disabled: diamond_hoe:237
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - path: "protection_fire"
+      value: "x + 0.2"
+      max: 1
+
+add_physical_protection:
+  icon: diamond_axe:238
+  icon_disabled: diamond_hoe:238
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - path: "protection_physical"
+      value: "x + 0.2"
+      max: 1
+
+add_projectile_protection:
+  icon: diamond_axe:239
+  icon_disabled: diamond_hoe:239
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - path: "protection_projectiles"
+      value: "x + 0.2"
+      max: 1
 wandshop:
     icon: wooden_hoe
     category: npc

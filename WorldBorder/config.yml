@@ -1,6 +1,6 @@
 cfg-version: 11
 message: '&cYou have reached the edge of this world.'
-round-border: true
+round-border: false
 debug-mode: false
 whoosh-effect: true
 portal-redirection: true
@@ -16,3 +16,22 @@ bypass-list-uuids: []
 fill-memory-tolerance: 500
 prevent-block-place: false
 prevent-mob-spawn: false
+worlds:
+  survival112:
+    x: 0.5
+    z: 0.5
+    radiusX: 2000
+    radiusZ: 2000
+    wrapping: false
+  survival112_nether:
+    x: -0.5570252414697041
+    z: 0.4823100982554256
+    radiusX: 2000
+    radiusZ: 2000
+    wrapping: false
+  survival112_the_end:
+    x: 0.5
+    z: 0.5
+    radiusX: 2000
+    radiusZ: 2000
+    wrapping: false
