@@ -6,8 +6,8 @@ buffs:
 - /effect <plr> 16 9999 1 true
 chatcolor: '&8'
 class: deadmanbostonbrand
-haste: 7
-jump: 9
+haste: 4
+jump: 5
 name: §4D§8e§fad§4m§fa§4n§8(§fBB§8)
 op: 'false'
 permissions:
@@ -26,9 +26,9 @@ powers:
 - /buff
 - /carryplayer <player>
 - /dismountplayer
-- /jump <0-9>
-- /run <0-8>
-- /haste <0-7>
+- /jump <0-5>
+- /run <0-4>
+- /haste <0-4>
 - /flyspeed <number>
 - /fly
 - /intangible
@@ -36,7 +36,7 @@ powers:
 - /disguise
 - /disguiseviewself
 - /undisguise
-run: 8
+run: 4
 sig: XwNneStCJwxWZGkTIaKQCFZhRlI1I4/rW/TV37qpD8FlU/6jYliMAOcM1MSXgUse5ywQNAIU1Mns4krreIonlwlY9HmWIa8lD9jUK+Bn9vTU+4NY+P2c6O3xagSd06ylBmwg2BfjfsRjCnQxoJh+1OyCtFWW0FxG5CHlT/Ot8LrwKpSbGG5Pp0YBj3x6xC6BIAsdVSTisdMhte8Q2Plqb6fRcFNPuc5HOaW82Chb348oZj0GJwQpXUlCZhBR7gznLczoZyruWJAyTE+l/vZlVCSHvAHPR9TQFMOGTLdZR+SzOu+HD/sXjz7AJI2PJuKPXx5iH79Er7IHZTjN0MB7RfNv2uZiaxkwBLzbb+ZbO98QA6dXrApkkAr+lr720/Xdbza+hUskIgp1tRG7v6vhTu/XBOqRJvXgxIhsS/gYV7+A8Howwy4DS7HANoCEjbyKiqG3sLTUiGkd0LfPh/K4U0zKchzkbSUq0+W2v++doEarVEJuJuK6hGcJsg6HwvzB0Ou1hVRcVq7OPKkeKW20ubQffjeNdkY61qCk7jo85UmpEfIQBghKBts2l58AW/oKSj14Xi0vzEL7qTvesDzU/S0H+narTJChaeInqfJq5U9bXk+AyOEhiBoTmqHNLmmsYnBdYUJQLewWLSe9SuVIxv0vb2hoBxHwbM4r/EVUols=
 speech: I am Boston Brand and I am Dead.
 trail: ''
