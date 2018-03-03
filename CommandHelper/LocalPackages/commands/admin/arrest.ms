@@ -1,3 +1,44 @@
+register_command('timeout', 
+
+    array(
+        'description': 'Arrests a player and Jails them',
+        'usage': '/timeout <player> <reason>',
+        'permission': 'ch.alias.timeout',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+    
+        'executor': closure(@alias, @sender, @args) {
+        
+            if(array_size(@args) < 10){
+                msg(color('RED').'Please write a more detailed report.')
+                return(false)
+            }
+                
+            @vic = @args[0]
+
+            for (@i = 1, @i < @argsLength, @i++){
+                @reason = @reason.@args[@i].' '
+            }
+                
+            @reason = trim(@reason)
+
+            runas('~console', '/sudo '.@plr.' c:/ch leave local')
+            runas('~console', '/sudo '.@plr.' c:/ch join global')
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            _mortal(@plr)
+            
+            set_timeout(3000,closure(
+                runas("~console", "/pex user ".@plr." group set criminal")
+                runas("~console", "/tptoggle ".@plr." off")
+                runas("~console", "/warp jail ".@plr)						
+            ))			
+            set_timeout(5000,closure(
+                set_pmode(@plr,'SURVIVAL')				
+            ))	
+        
+        }
+    )
+)
+
 register_command('arrest', 
 
     array(
