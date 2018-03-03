@@ -1,9 +1,9 @@
-register_command(intangible, 
+register_command('intangible', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.intangible',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Power',
+        'permission': 'ch.alias.intangible',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
             @plr = player()
             set_pmode(@plr, 'SPECTATOR')
             set_pflight(@plr,true)
@@ -12,12 +12,12 @@ register_command(intangible,
     )
 )
 
-register_command(tangible, 
+register_command('tangible', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.tangible',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.tangible',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             @plr = player()
             @ploc = ploc(@plr)
             @yml = read('/home/minecraft/server/plugins/Multiverse-Core/worlds.yml')

@@ -1,29 +1,16 @@
-register_command(deathnote, 
+register_command('deathnote', 
 
     array(
-        description: 'Send a death note to a player',
-        permission: 'ch.alias.deathnote',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
+        'description': 'Send a death note to a player',
+        'permission': 'ch.alias.deathnote',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) < 2) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /deathnote <player> <message>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /deathnote <player> <message>');
                 die(); # No need to go further					
             
             }
@@ -32,7 +19,7 @@ register_command(deathnote,
             @victim = @args[0]
 
             if(has_permission(@victim,'is.criminal')){
-                msg(color(RED).'Sorry, but that player is a criminal, you can\'t use this command on them right now')
+                msg(color('RED').'Sorry, but that player is a criminal, you can\'t use this command on them right now')
                 die()
             }
 
@@ -58,11 +45,11 @@ register_command(deathnote,
             @msg = trim(@msg)
             
             if(has_permission(@victim,"powers.deathnote.immune")){
-                tmsg(@player,color(red)."Sorry, they are immune to deathnote")
+                tmsg(@player,color('RED')."Sorry, they are immune to deathnote")
                 die()
             }
 
-            tmsg(player(),color(red)."In 5 minutes, ".@victim." is going to die by ".@msg)
+            tmsg(player(),color('RED')."In 5 minutes, ".@victim." is going to die by ".@msg)
             set_timeout(300000,closure(
                 if(ponline(@victim)){
                     if(has_permission(@victim,'is.criminal')){

@@ -1,11 +1,11 @@
-register_command(normalform, 
+register_command('normalform', 
 
     array(
-        description: 'Reset your Skin',
-        usage: '/normalform',
-        permission: 'ch.alias.normalform',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',	
-        executor: closure() {
+        'description': 'Reset your Skin',
+        'usage': '/normalform',
+        'permission': 'ch.alias.normalform',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',	
+        'executor': closure() {
                 
                 try {
                 

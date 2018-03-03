@@ -1,9 +1,9 @@
-register_command(mephistoillusion, 
+register_command('mephistoillusion', 
     array(
-        description: 'Power',
-        permission: 'powers.mephistoillusion',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'powers.mephistoillusion',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
                 return(false)
@@ -31,7 +31,7 @@ register_command(mephistoillusion,
             export(@player.'mephistoIllusion',@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
-                    runas(~console,"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
+                    runas('~console',"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
                 }
             ))
             

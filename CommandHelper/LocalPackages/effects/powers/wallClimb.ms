@@ -1,4 +1,4 @@
-bind(player_toggle_sneak,null,null,@event){
+bind('player_toggle_sneak',null,null,@event){
     @player = player()
     
     if(import(@player.'wallClimbStatus') && has_permission(@player, "powers.wallclimb")){
@@ -13,7 +13,7 @@ bind(player_toggle_sneak,null,null,@event){
             @blocksChanged = _spidermanVinePlacement(ploc(),"106",@player)
             export(@player."blocksChanged",@blocksChanged)
         
-            @realID = bind(player_move, @eventID, associative_array('player': @player), @event,
+            @realID = bind('player_move', @eventID, associative_array('player': @player), @event,
             @player, @eventID, @isSneaking){
                 
                 @blocksChanged = import(@player."blocksChanged")

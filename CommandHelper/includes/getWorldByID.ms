@@ -1,4 +1,4 @@
-proc(_getWorldByID, @id, 
+proc('_getWorldByID', @id, 
 
     if(@id == '1'){
         return(associative_array(
@@ -24,21 +24,21 @@ proc(_getWorldByID, @id,
     else if(@id == '4'){
         return(associative_array(
             'id': '4',
-            'name': '§eTi§at§dan§5s To§dw§eer',
+            'name': 'ï¿½eTiï¿½atï¿½danï¿½5s Toï¿½dwï¿½eer',
             'class': 'titantower'
         ))
     }
     else if(@id == '5'){
         return(associative_array(
             'id': '5',
-            'name': '§4Ha§fll §9Of §4Just§fi§9ce',
+            'name': 'ï¿½4Haï¿½fll ï¿½9Of ï¿½4Justï¿½fiï¿½9ce',
             'class': 'hallofjustice'
         ))
     }
     else if(@id == '6'){
         return(associative_array(
             'id': '6',
-            'name': '§bF§fo§brtr§fe§bss §fof §bS§fo§blit§fu§bde',
+            'name': 'ï¿½bFï¿½foï¿½brtrï¿½feï¿½bss ï¿½fof ï¿½bSï¿½foï¿½blitï¿½fuï¿½bde',
             'class': 'fortressofsolitude'
         ))
     }

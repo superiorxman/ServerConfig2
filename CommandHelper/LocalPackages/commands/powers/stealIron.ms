@@ -1,9 +1,9 @@
-register_command(stealiron, 
+register_command('stealiron', 
     array(
-        description: 'Eat the world',
-        permission: 'powers.stealiron',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {
+        'description': 'Eat the world',
+        'permission': 'powers.stealiron',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {
 
             @vics = players_in_radius(ploc(@sender),100)
 
@@ -48,7 +48,7 @@ register_command(stealiron,
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                     @hero = yml_decode(@contents)
                     
-                    tmsg(@vic,@hero['name'].color(RED).' stole the iron from your inventory!')
+                    tmsg(@vic,@hero['name'].color('RED').' stole the iron from your inventory!')
                 }
             }
         }

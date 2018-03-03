@@ -1,14 +1,9 @@
-register_command(mrshiftytp, 
-
+register_command('mrshiftytp', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.mrshiftytp',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.mrshiftytp',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @player = player()
             @multiplier = 0.2

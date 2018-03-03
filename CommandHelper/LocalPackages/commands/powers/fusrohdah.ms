@@ -1,14 +1,9 @@
-register_command(fusrodah, 
-
+register_command('fusrodah', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.fusrodah',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {
+        'description': 'Power',
+        'permission': 'ch.alias.fusrodah',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             @player = player()
             assign(@cooldown, 10)
@@ -16,7 +11,7 @@ register_command(fusrodah,
             assign(@lastUsedThuum, import(@player."lastUsedThuum"))
             
             if(@lastUsedThuum + @cooldown > time() / 1000,
-                die(color(gray)."Your Thu'um is too weak, you must wait for it to strengthen.")
+                die(color('GRAY')."Your Thu'um is too weak, you must wait for it to strengthen.")
             )
             export(@player."lastUsedThuum", time() / 1000)
 
@@ -54,8 +49,6 @@ register_command(fusrodah,
                     @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
                     @vector['y'] = @magnitude * sin(to_radians(@pitch));
                     @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                    #broadcast(@player)
-                    #broadcast(@magnitude)
                     set_pvelocity(@player,@vector) 
                 }
             }

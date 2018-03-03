@@ -1,33 +1,15 @@
-register_command(speedforceheal, 
-
+register_command('speedforceheal', 
     array(
+        'description': 'Power',
+        'permission': 'ch.alias.speedforceheal',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
-        description: 'Power',
-        
-        permission: 'ch.alias.speedforceheal',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /speedforceheal <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /speedforceheal <player>');
                 die(); # No need to go further					
             
             }
@@ -64,7 +46,7 @@ register_command(speedforceheal,
                 die()
             }
 
-            runas(~console,"/heal ".@vic)
+            runas('~console',"/heal ".@vic)
             tmsg(@vic, "You have been speedforce healed by ".@plr)
             
         }

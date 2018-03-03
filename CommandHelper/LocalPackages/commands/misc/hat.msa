@@ -4,6 +4,6 @@ hat:/hat = >>>
     if(@pinv['type'] == 397){
         die()
     }
-    set_mob_equipment(puuid(@plr), array(HELMET: @pinv))
-    set_pinv(@plr, array(null: array(type: null)))
+    set_mob_equipment(puuid(@plr), array('HELMET': @pinv))
+    set_pinv(@plr, array('null': array('type': null)))
 <<<

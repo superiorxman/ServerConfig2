@@ -1,14 +1,9 @@
-register_command(apokolips, 
-
+register_command('apokolips', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.apokolips',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.apokolips',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             sudo("/warp apokolips")
                 

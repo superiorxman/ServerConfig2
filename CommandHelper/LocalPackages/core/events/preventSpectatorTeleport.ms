@@ -1,7 +1,7 @@
-bind(player_teleport, null, null, @event,
+bind('player_teleport', null, null, @event,
     if(@event['type'] == 'SPECTATE'){
         cancel()
-        tmsg(player(),color(red)."Your character does not have the teleport ability.")
+        tmsg(player(),color('RED')."Your character does not have the teleport ability.")
         return()
     }
 )

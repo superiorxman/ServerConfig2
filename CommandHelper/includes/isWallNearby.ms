@@ -1,4 +1,4 @@
-proc(_isWallNearby,@loc, @radius){
+proc('_isWallNearby',@loc, @radius){
     for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
         for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
             for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {

@@ -1,4 +1,4 @@
-proc(_commandCooldown,@player,@cooldown,@cooldownID,
+proc('_commandCooldown',@player,@cooldown,@cooldownID,
     assign(@lastUsedCommand, import(@player.@cooldownID))
     if(@lastUsedCommand + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedCommand, @cooldown), divide(time(),1000)))

@@ -2,12 +2,12 @@ register_command('tournamentdelete',
 
     array(
     
-        description: 'Delete a tournament',
-        usage: '/tournamentdelete <tournamentName>',
-        permission: 'tournament.delete',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        'description': 'Delete a tournament',
+        'usage': '/tournamentdelete <tournamentName>',
+        'permission': 'tournament.delete',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
 
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
 
             @plr = player()
             assign(@cooldown, 60)
@@ -19,8 +19,8 @@ register_command('tournamentdelete',
             )
 
             if (array_size(@args) != 1) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /tournamentdelete <tournamentName>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /tournamentdelete <tournamentName>');
                 die(); # No need to go further					
             }
 
@@ -28,39 +28,38 @@ register_command('tournamentdelete',
             @tournamentURL = @tournamentName.'_omnivs'
             @puuid = puuid(@plr,true)
             if(get_value('tournament.'.@puuid.'tournamentOwned') != @tournamentName){
-                msg(color(RED).'Sorry, only the tournament owner can do that!')
+                msg(color('RED').'Sorry, only the tournament owner can do that!')
                 die()
             }
 
-            # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
 
             @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'.json'
-            tmsg(@plr,color(red).'Deleting tournament '.@tournamentName)
+            tmsg(@plr,color('RED').'Deleting tournament '.@tournamentName)
             http_request(@url, array(
-                method: 'POST',
-                headers: array(
+                'method': 'POST',
+                'headers': array(
                  // The content type isn't set automatically if we send a string via params,
                  // so we have to set this manually to application/json here, since we're sending
                  // json data. Other data types may have different MIME types.
                  // 'Content-Type': 'application/json'
-                ),   params: array(
+                ),   'params': array(
                  'api_key': @challongeKey,
                  '_method': 'delete',
                 ),
-                success: closure(@response){
+                'success': closure(@response){
                     if(@response['responseCode'] != 200){
                         @error = json_decode(@response['body'])
                         foreach(@error in @error['errors']){
                             if(@error == 'URL has already been taken'){
-                                tmsg(@plr,color(red).'Name has already been taken')
+                                tmsg(@plr,color('RED').'Name has already been taken')
                             }
                         }
                     }
                     @puuid = puuid(@plr,true)
                     store_value('tournament.'.@puuid.'tournamentOwned','')
                     store_value('tournament.'.@tournamentName.'tournamentOwner','')
-                    msg(color(RED).'The tournament '.@tournamentName.' has been deleted!')
+                    msg(color('RED').'The tournament '.@tournamentName.' has been deleted!')
                     export(@plr."lastUsedTournamentDelete", time() / 1000)
                 }
             ));

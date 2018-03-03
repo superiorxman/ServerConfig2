@@ -1,33 +1,14 @@
-register_command(entomb, 
-
+register_command('entomb', 
     array(
-    
-        description: 'Entomb a player',
-        
-        permission: 'ch.alias.entomb',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Entomb a player',
+        'permission': 'ch.alias.entomb',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /entomb <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /entomb <player>');
                 die(); # No need to go further					
             
             }

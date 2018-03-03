@@ -1,4 +1,4 @@
-bind(player_interact,null,array('item': 280,'button': 'LEFT'),@event){
+bind('player_interact',null,array('item': 280,'button': 'LEFT'),@event){
     
     if(!has_permission("powers.lightningsticks")){
         die()

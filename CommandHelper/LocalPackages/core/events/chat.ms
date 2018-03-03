@@ -8,7 +8,7 @@ bind('player_chat', null, null, @e) {
     @pworld = pworld()
     @puuid = puuid()
     @cooldown = 0
-    assign(@msg, @e[message])
+    assign(@msg, @e['message'])
 
     if(has_permission(@pname,'change.chat')){
         @numb = rand(0,2)
@@ -58,7 +58,7 @@ bind('player_chat', null, null, @e) {
                 assign(@msg,'"Oh, hello, I\'m talking to a fucking BURNING BUSH THIS MUST BE GOD IM NOT ON DRUGS THIS IS TOTALLY HAPPENING! ffs..."')
 
             }
-            modify_event(message, @msg)
+            modify_event('message', @msg)
             @cooldown = 10
         }
     }
@@ -69,8 +69,8 @@ bind('player_chat', null, null, @e) {
     if(@isMindLocked){
         @mindLocker = import(@pname.'mindLockedBy')
         if(@mindLocker != ''){
-            tmsg(@mindLocker,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
-            tmsg(@pname,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
+            tmsg(@mindLocker,color('DARK_RED').'['.color('RED').'mindlock'.color('DARK_RED').'] '.color('RED').@pname.color('DARK_RED').': '.color('GRAY').@msg)
+            tmsg(@pname,color('DARK_RED').'['.color('RED').'mindlock'.color('DARK_RED').'] '.color('RED').@pname.color('DARK_RED').': '.color('GRAY').@msg)
             assign(@msg,'')
             cancel()
             return()
@@ -83,14 +83,14 @@ bind('player_chat', null, null, @e) {
     if(@msg == '565' && !has_permission(@pname,'is.criminal'))
     {
         set_timeout(1000, closure(
-            tmsg(@pname, color(dark_red) . color(random) . "k" . color(gray) . "Retrieving classified image for your viewing...")
+            tmsg(@pname, color('DARK_RED') . color('RANDOM') . "k" . color('GRAY') . "Retrieving classified image for your viewing...")
             set_timeout(1000, closure(
-                tmsg(@pname, color(dark_red) . color(random) . "k" . color(gold) . "http://i.imgur.com/tlypRN9.jpg")
+                tmsg(@pname, color('DARK_RED') . color('RANDOM') . "k" . color('GOLD') . "http://i.imgur.com/tlypRN9.jpg")
                 #tmsg(@pname, "§4§kk§6http://i.imgur.com/0od9K1R.png")
             ))
         ))
         cancel()
-        broadcast(color(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
+        broadcast(color('DARK_RED') . color('RANDOM') . "k" . color('GRAY') . @pname. color('GRAY') ." said the secret password for superheroes!")
     }
 
     
@@ -116,12 +116,9 @@ bind('player_chat', null, null, @e) {
     if(has_permission(@pname,'is.mute'))
     {
         assign(@msg,"...")
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     
-    # -------------------------------
-     replace all messages by time wraith with screams
-    # -------------------------------
     if(@pgroup == 'timewraith'){
         @phrase = rand(1, 8)
         
@@ -141,7 +138,7 @@ bind('player_chat', null, null, @e) {
             assign(@msg,"HHRRRRAAAHHH!")
         }
         
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     
     # -------------------------------
@@ -157,7 +154,7 @@ bind('player_chat', null, null, @e) {
                 @newSentence = @newSentence.@wd.' '
             }
             @msg = @newSentence
-            modify_event(message, @newSentence)
+            modify_event('message', @newSentence)
         }else{
             cancel()
         }
@@ -186,7 +183,7 @@ bind('player_chat', null, null, @e) {
             assign(@msg,"Pika Pi!")
         }
         
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     
     # -------------------------------
@@ -202,7 +199,7 @@ bind('player_chat', null, null, @e) {
             assign(@msg,"Victini!")
         }
         
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
 
     # -------------------------------
@@ -218,7 +215,7 @@ bind('player_chat', null, null, @e) {
             assign(@msg,"Greninja!")
         }
         
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     
     # -------------------------------
@@ -236,7 +233,7 @@ bind('player_chat', null, null, @e) {
             assign(@msg,"Meww.")
         }
         
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     
     # -------------------------------
@@ -254,13 +251,13 @@ bind('player_chat', null, null, @e) {
         } else {
             assign(@msg,"We are Groot.")
         }
-        modify_event(message, @msg)
+        modify_event('message', @msg)
 
         
         foreach(@player in @players){
             if(_getheroclass(@player) == "rocketraccoon"){
                 set_timeout(500,closure(
-                    tmsg(@player,color(red)."Groot says: ".@rocketMsg)
+                    tmsg(@player,color('RED')."Groot says: ".@rocketMsg)
                 ))
             }
         }
@@ -301,7 +298,7 @@ bind('player_chat', null, null, @e) {
    # if(has_permission(@pname,'change.smiles')){
    #     assign(@msg, reg_replace('(:+|;+|=+|<+)+[.^ \',-]*(:+|\\[+|\\]+|D+|>+|:+|\\+|\\/+|\\)+)', ':)', @msg))
    #     assign(@msg, reg_replace('(D+|>+|\\+|\\/+|\\[+|\\+|:+])+[.^ \',-]*(<+|:+|;+|=+|\\(+)', ':(', @msg))
-   #     modify_event(message, @msg)
+   #     modify_event('message', @msg)
    # }
     #@temp = reg_match('[^ -~]',@msg)
     #if(array_size(@temp) > 0){
@@ -316,12 +313,12 @@ bind('player_chat', null, null, @e) {
             @mod = @mod.@word
         }
         @msg = @mod
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
 
     if(has_permission(@pname,'case.tolower')){
         @msg = to_lower(@msg)
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     if(has_permission('chat.babytalk')){
         @msg = replace(@msg,'l','w')
@@ -334,7 +331,7 @@ bind('player_chat', null, null, @e) {
         @msg = replace(@msg,'ER','YEW')
         @msg = replace(@msg,'age','yage')
         @msg = replace(@msg,'AGE','YAGE')
-        modify_event(message, @msg)
+        modify_event('message', @msg)
     }
     #@tmp = to_lower(@msg)
     #if(
@@ -347,7 +344,7 @@ bind('player_chat', null, null, @e) {
     #    cancel()
     #    console(@pname.' said it!')
     #    set_timeout(500,closure(
-    #        broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
+    #        broadcast(color('RED')."If you need advice from the wise, old hermit, you can visit him using ".color('GREEN')."/warp advice")
     #    ))
     #}
      
@@ -362,7 +359,7 @@ bind('player_chat', null, null, @e) {
     
     
     #assign(@msg, reg_replace('(?i)kcocco.ml', 'kcoccoisafaggot.com', @msg))
-    #modify_event(message, @msg)
+    #modify_event('message', @msg)
     @lastmessage = import(@pname.'lastmessage')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)

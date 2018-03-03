@@ -1,4 +1,4 @@
-bind(player_interact,null,array('button': 'LEFT'),@event){
+bind('player_interact',null,array('button': 'LEFT'),@event){
 
     @player = player()
         

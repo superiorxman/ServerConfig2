@@ -1,4 +1,4 @@
-bind(player_teleport, null, null, @event,
+bind('player_teleport', null, null, @event,
 
     if(has_permission('escaperoom.bpass')){
         die()

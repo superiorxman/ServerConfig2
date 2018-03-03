@@ -1,10 +1,10 @@
-register_command(exitgame, 
+register_command('exitgame', 
 
     array(
-        description: 'Unplugs from The Matrix',
-        permission: 'command.exitgame',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Unplugs from The Matrix',
+        'permission': 'command.exitgame',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @plr = player()
             assign(@cooldown, 10)
@@ -23,11 +23,11 @@ register_command(exitgame,
             @world = @ploc['world']
 
             if(has_permission(@plr,'is.ingame')){
-                queue_push(closure(runas(~console,'/warp vrexit '.@plr)))
-                queue_push(closure(broadcast(@plr.color(RED).' has disconnected from Infinity:One')))
+                queue_push(closure(runas('~console','/warp vrexit '.@plr)))
+                queue_push(closure(broadcast(@plr.color('RED').' has disconnected from Infinity:One')))
             }else{
-                queue_push(closure(runas(~console,'/warp '.@world.'exit '.@plr)))
-                queue_push(closure(msg(color(RED).' Welcome back to the arcade!')))
+                queue_push(closure(runas('~console','/warp '.@world.'exit '.@plr)))
+                queue_push(closure(msg(color('RED').' Welcome back to the arcade!')))
             }
         }
     )

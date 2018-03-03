@@ -1,16 +1,10 @@
-register_command(coinflip, 
-
+register_command('coinflip', 
     array(
-    
-        description: 'Flips a Coin',
-        
-        usage: '/coinflip',
-        
-        permission: 'ch.alias.coinflip',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command. It\'s a shame..',
-    
-        executor: closure() {
+        'description': 'Flips a Coin',
+        'usage': '/coinflip',
+        'permission': 'ch.alias.coinflip',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command. It\'s a shame..',
+        'executor': closure() {
         
                 try {
                 

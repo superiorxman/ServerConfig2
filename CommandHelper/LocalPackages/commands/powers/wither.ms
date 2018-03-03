@@ -1,34 +1,15 @@
-# Gives player wither 2 for 10 seconds
-register_command(wither, 
-
+register_command('wither', 
     array(
+        'description': 'Power',
+        'permission': 'ch.alias.wither',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
-        description: 'Power',
-        
-        permission: 'ch.alias.wither',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /wither <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /wither <player>');
                 die(); # No need to go further					
             
             }
@@ -56,7 +37,7 @@ register_command(wither,
             }
             
             if(@targetInRange ==  false){
-                tmsg(@plr,color(red)."You are not close enough to that player")
+                tmsg(@plr,color('RED')."You are not close enough to that player")
                 die()
             }
             

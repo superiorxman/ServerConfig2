@@ -1,14 +1,9 @@
-register_command(superbreath, 
-
+register_command('superbreath', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.superbreath',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.superbreath',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @ploc = ploc()
             @allPlayers = players_in_radius(@ploc,30)

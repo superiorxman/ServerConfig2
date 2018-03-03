@@ -18,7 +18,7 @@
 #                    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
 #                    _mortal(@player)
 #                    set_timeout(5000,closure(
-#                        tmsg(@player,color(red).color(bold)."You have been returned to a mortal because you were an OP character and ran out of money,")
+#                        tmsg(@player,color('RED').color('BOLD')."You have been returned to a mortal because you were an OP character and ran out of money,")
 #                    ))
 #                }
 #            #}

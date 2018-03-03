@@ -1,19 +1,19 @@
-register_command(superpunch, 
+register_command('superpunch', 
     array(
-        description: 'Power',
-        permission: 'powers.superpunch',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {        
+        'description': 'Power',
+        'permission': 'powers.superpunch',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {        
             if (array_size(@args) != 0) {
                 return(false)
             }
             @player = player()
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('lastUsedSuperPunch',5,@player) 
-            export(@player.'superPunchActive',TRUE)
+            export(@player.'superPunchActive',true)
 
-            bind(entity_damage, array('id':@player.'superPunch'), array('cause': 'ENTITY_ATTACK'), @e) {
-                if(import(@e['damager'].'superPunchActive') == TRUE){
+            bind('entity_damage', array('id':@player.'superPunch'), array('cause': 'ENTITY_ATTACK'), @e) {
+                if(import(@e['damager'].'superPunchActive') == true){
                     @player = @e['damager']
                     unbind()
                     cancel()

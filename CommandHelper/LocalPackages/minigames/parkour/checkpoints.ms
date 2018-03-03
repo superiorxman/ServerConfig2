@@ -1,16 +1,15 @@
-# checkpoint system for players in parkour
-register_command(cp, 
+register_command('cp', 
     array(
-        description: 'Create Checkpoint',
-        usage: '/cp',
-        permission: 'ch.alias.cp',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Create Checkpoint',
+        'usage': '/cp',
+        'permission': 'ch.alias.cp',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
                 
                 @plr = player()
                 
                 if(pmode(@plr) == 'SPECTATOR'){
-                    msg(color(RED).'Sorry, you cannot use that in spectator mode')
+                    msg(color('RED').'Sorry, you cannot use that in spectator mode')
                     die()
                 }
                 @pinfo = pinfo(@plr)
@@ -27,19 +26,18 @@ register_command(cp,
                 export(@plr.'pitch',@pitch)
                 export(@plr.'yaw',@yaw)
                 
-                tmsg(player(),concat(color(light_gray),
-                'Saved your position!'))
+                tmsg(@plr,color('LIGHT_GRAY').'Saved your position!')
         
         }
     )
 )
-register_command(gcp, 
+register_command('gcp', 
     array(
-        description: 'Go to Saved Checkpoint',
-        usage: '/gcp',
-        permission: 'ch.alias.gcp',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Go to Saved Checkpoint',
+        'usage': '/gcp',
+        'permission': 'ch.alias.gcp',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
                 
                 @plr = player()
                 @pinfo = pinfo(@plr)
@@ -51,15 +49,13 @@ register_command(gcp,
                 
                 if(@world != @pinfo[7])
                 {
-                    tmsg(player(),concat(color(light_gray),
-                    'You need to first use /cp.'))
+                    tmsg(@plr,color('LIGHT_GRAY').'You need to first use /cp.')
                     die()
                 }
                 
                 set_ploc(@plr,@coords)
                 pfacing(@plr,@yaw,@pitch)
-                tmsg(player(),concat(color(light_gray),
-                'Loaded your position!'))
+                tmsg(@plr,color('LIGHT_GRAY').'Loaded your position!')
         
         }
     )

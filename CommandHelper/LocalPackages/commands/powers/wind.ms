@@ -1,9 +1,9 @@
-register_command(wind, 
+register_command('wind', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.wind',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.wind',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
                 return(false)

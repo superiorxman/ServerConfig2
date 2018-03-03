@@ -1,33 +1,15 @@
-register_command(speedforceteleport, 
-
+register_command('speedforceteleport', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.speedforceteleport',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.speedforceteleport',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /speedforceteleport <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /speedforceteleport <player>');
                 die(); # No need to go further					
             
             }
@@ -66,19 +48,19 @@ register_command(speedforceteleport,
                 die()
             }
 
-            runas(~console, "/warp speedforce " . @vic)
-            runas(~console, "/warp speedforce " . @plr)
+            runas('~console', "/warp speedforce " . @vic)
+            runas('~console', "/warp speedforce " . @plr)
             tmsg(@vic, @plr . " has brought you into the speedforce!")
             tmsg(@plr, "You brought " . @vic . "  you into the speedforce!")
 
 
-            @asdf = bind(player_command,null,array('player': @vic),@e,@vic){
+            @asdf = bind('player_command',null,array('player': @vic),@e,@vic){
                 cancel()
-                tmsg(@vic,color(RED).'Sorry, you temporarily cannot use commands.')
+                tmsg(@vic,color('RED').'Sorry, you temporarily cannot use commands.')
             }
             set_timeout(30000,closure(
                 unbind(@asdf)
-                tmsg(@vic,color(RED).'You can use commands again!')
+                tmsg(@vic,color('RED').'You can use commands again!')
             ))
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 @vicclass = _getheroclass(@vic)
@@ -100,7 +82,7 @@ register_command(speedforceteleport,
                 }
                 @plrHero = @hero
                 set_timeout(3000,closure(
-                    broadcast(color(RED).color(ITALIC).'Whoosh'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(YELLOW).color(BOLD).' has brought '.color(WHITE).@vicHero['name'].color(YELLOW).color(BOLD).' Into'.color(DARK_RED).color(BOLD).' Th'.color(YELLOW).color(BOLD).'e'.color(DARK_RED).color(BOLD).' Sp'.color(YELLOW).color(BOLD).'ee'.color(DARK_RED).color(BOLD).'df'.color(YELLOW).color(BOLD).'o'.color(DARK_RED).color(BOLD).'r'.color(YELLOW).color(BOLD).'c'.color(DARK_RED).color(BOLD).'e'.color(YELLOW).color(BOLD).'!');
+                    broadcast(color('RED').color('ITALIC').'Whoosh'.color('YELLOW').color('BOLD').'! '.@plrHero['name'].color('YELLOW').color('BOLD').' has brought '.color('WHITE').@vicHero['name'].color('YELLOW').color('BOLD').' Into'.color('DARK_RED').color('BOLD').' Th'.color('YELLOW').color('BOLD').'e'.color('DARK_RED').color('BOLD').' Sp'.color('YELLOW').color('BOLD').'ee'.color('DARK_RED').color('BOLD').'df'.color('YELLOW').color('BOLD').'o'.color('DARK_RED').color('BOLD').'r'.color('YELLOW').color('BOLD').'c'.color('DARK_RED').color('BOLD').'e'.color('YELLOW').color('BOLD').'!');
                 ))
         }
     )

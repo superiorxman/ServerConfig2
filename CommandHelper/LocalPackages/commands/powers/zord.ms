@@ -1,12 +1,12 @@
-register_command(zord, 
+register_command('zord', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.zord',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.zord',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @plr = player()
-            sudo(/disguise enderdragon)
+            sudo('/disguise enderdragon')
             set_pflight(@plr,true)
             set_pflying(@plr,true)
                 
@@ -14,12 +14,12 @@ register_command(zord,
     )
 )
 
-register_command(unzord, 
+register_command('unzord', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.unzord',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.unzord',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
             @player = player()

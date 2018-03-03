@@ -1,4 +1,4 @@
-bind(projectile_launch, null, array(type: 'ARROW', shootertype: 'PLAYER'), @event) {
+bind('projectile_launch', null, array('type': 'ARROW', 'shootertype': 'PLAYER'), @event) {
     @pname = @event['player']
     @shooterType = @event['shootertype']
     @inv = pinv(@pname)

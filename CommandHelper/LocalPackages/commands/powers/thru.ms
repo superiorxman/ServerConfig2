@@ -1,14 +1,9 @@
-register_command(thrudestabilize, 
-
+register_command('thrudestabilize', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.thrudestabilize',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.thrudestabilize',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             sudo("/thru")
     

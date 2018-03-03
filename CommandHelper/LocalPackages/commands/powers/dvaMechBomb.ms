@@ -1,9 +1,9 @@
-register_command(mechbomb, 
+register_command('mechbomb', 
     array(
-        description: 'Power',
-        permission: 'powers.mechbomb',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {
+        'description': 'Power',
+        'permission': 'powers.mechbomb',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('dvaMechBomb',60,@sender)
@@ -19,7 +19,7 @@ register_command(mechbomb,
                 set_mob_effect(@uuid, 21, 100, 9999, true, false)
                 set_mob_effect(@uuid, 1, -254, 9999, true, false)
                 @rest = 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}' 
-                runas(~console,'/disguiseplayer '.@uuid.' player Mech '.@rest)
+                runas('~console','/disguiseplayer '.@uuid.' player Mech '.@rest)
             ))
 
             set_timeout(5000,closure(

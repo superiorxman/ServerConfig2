@@ -21,8 +21,8 @@ players:
     rank: 5
     party: Dude
     name:
-      name: MaxTrident
-      timestamp: 1519677782
+      name: AntiSepticEye1
+      timestamp: 1520024379
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     rank: 20
     name:
@@ -32,9 +32,9 @@ players:
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     name:
       name: WhosThatItzLulu
-      timestamp: 1519851070
+      timestamp: 1520036555
     party: aaaaaaa
-    rank: 5
+    rank: 10
   695c4d78-22c5-40e4-b0d4-286ab17c02cf:
     name:
       name: Eiisuke
@@ -62,11 +62,59 @@ players:
       timestamp: 1519960684
     party: Overwatch
     rank: 20
+  72fe3fc6-3df2-49ee-b836-38459deae8cd:
+    party: TheTitans
+    name:
+      name: littlejoshboy
+      timestamp: 1519979137
+    rank: 5
+  c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
+    name:
+      name: LordOfGallifrey
+      timestamp: 1519979149
+    party: TheTitans
+    rank: 5
+  55679107-589e-4487-abb4-4fca48b26f25:
+    name:
+      name: AgentNuggets
+      timestamp: 1520034461
+    rank: 20
+    party: Nip
+  52b6e861-9b1b-4e74-9fe9-85e81a7e6472:
+    name:
+      timestamp: 1520044791
+      name: Christina1125
+    rank: 5
+    party: TheTitans
+  09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
+    rank: 10
+    name:
+      timestamp: 1520053353
+      name: ItzWallyW_
+    party: TheTitans
+  e0870764-dcc8-49a5-ad33-6ec20d0be001:
+    name:
+      timestamp: 1520049853
+      name: Spiderninja90
+    rank: 5
+    party: TheTitans
+  5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68:
+    party: TheTitans
+    name:
+      timestamp: 1520051991
+      name: 3Cheetah_XP
+    rank: 5
 parties:
   TheTitans:
     members:
     - 8ca7fc56-614b-482a-91df-bf8580ba273d
     - 0c4e2027-58e2-4b57-8bfa-8ec912c22e7f
+    - 72fe3fc6-3df2-49ee-b836-38459deae8cd
+    - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
+    - 52b6e861-9b1b-4e74-9fe9-85e81a7e6472
+    - 09594d5f-8ef4-486e-8f1d-ab5d88fc42f1
+    - e0870764-dcc8-49a5-ad33-6ec20d0be001
+    - 5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
@@ -85,3 +133,7 @@ parties:
     members:
     - 8cb79cd3-1e48-4087-9137-a37e164f1494
     leader: 8cb79cd3-1e48-4087-9137-a37e164f1494
+  Nip:
+    leader: 55679107-589e-4487-abb4-4fca48b26f25
+    members:
+    - 55679107-589e-4487-abb4-4fca48b26f25

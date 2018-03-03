@@ -1,10 +1,10 @@
-register_command(grapplinghook, 
+register_command('grapplinghook', 
 
     array(
-        description: 'Fire a grappling hook',
-        permission: 'ch.alias.grapplinghook',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Fire a grappling hook',
+        'permission': 'ch.alias.grapplinghook',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             assign(@cooldown, 7)
 
@@ -41,7 +41,7 @@ register_command(grapplinghook,
             set_entity_velocity(@arrow, array(@velocity['x'] * @multiplier, @velocity['y'] * @multiplier, @velocity['z'] * @multiplier))
 
             
-            bind(projectile_hit, associative_array('id': 'grapplinghook'.@arrow), null, @event, 
+            bind('projectile_hit', associative_array('id': 'grapplinghook'.@arrow), null, @event, 
                 @arrow, @pig, @player = player()) {
                 
                     set_timeout(5000, closure(){

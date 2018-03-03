@@ -1,7 +1,7 @@
-bind(player_quit,null,null,@event){
+bind('player_quit',null,null,@event){
     @player = player()
     
-    runas(~console,"/effect " . @player . " 11 0")
+    runas('~console',"/effect " . @player . " 11 0")
 
     @eventID = import(@player."isVibrating")
     clear_task(@eventID)
@@ -19,10 +19,10 @@ bind(player_quit,null,null,@event){
         export(@vic.'mindLockedBy','')
         export(@player.'isMindLocked',false)
         export(@player.'mindLockedBy','')
-        tmsg(@player,color(red).'Mindlock connection lost.')
-        tmsg(@vic,color(red).'Mindlock connection lost.')
+        tmsg(@player,color('RED').'Mindlock connection lost.')
+        tmsg(@vic,color('RED').'Mindlock connection lost.')
     } 
     if(has_permission(@player,'tick.kill')){
-        runas(~console,'/stoptorture')
+        runas('~console','/stoptorture')
     }
 }

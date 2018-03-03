@@ -1,4 +1,4 @@
-proc(_getheroclass,@playerName,
+proc('_getheroclass',@playerName,
 
     @groups = pgroup(@playerName)
 

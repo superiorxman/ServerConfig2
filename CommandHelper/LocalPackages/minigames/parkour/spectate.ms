@@ -1,10 +1,10 @@
-register_command(parkourspec, 
+register_command('parkourspec', 
     array(
-        description: 'Enter Spectator Mode',
-        usage: '/spec',
-        permission: 'command.spec',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Enter Spectator Mode',
+        'usage': '/spec',
+        'permission': 'command.spec',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
                 
                 @plr = player()
                 
@@ -14,13 +14,13 @@ register_command(parkourspec,
         }
     )
 )
-register_command(parkourunspec,
+register_command('parkourunspec',
     array(
-        description: 'Leave Spectator Mode',
-        usage: '/unspec',
-        permission: 'command.unspec',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Leave Spectator Mode',
+        'usage': '/unspec',
+        'permission': 'command.unspec',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
                 
                 @plr = player()
                 

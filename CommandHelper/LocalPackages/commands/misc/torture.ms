@@ -1,11 +1,11 @@
-register_command(torture, 
+register_command('torture', 
 
     array(
-        description: 'torture',
-        usage: '/torture <person>',
-        permission: 'powers.torture',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'torture',
+        'usage': '/torture <person>',
+        'permission': 'powers.torture',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
             if(array_size(@args) !=2){
                 return(false)
             }
@@ -21,14 +21,14 @@ register_command(torture,
         }
     )
 ) 
-register_command(stoptorture, 
+register_command('stoptorture', 
 
     array(
-        description: 'torture',
-        usage: '/torture <person>',
-        permission: 'powers.torture',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'torture',
+        'usage': '/torture <person>',
+        'permission': 'powers.torture',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
             if(array_size(@args) != 0){
                 return(false)
             }

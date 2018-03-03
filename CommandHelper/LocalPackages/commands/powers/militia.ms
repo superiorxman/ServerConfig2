@@ -1,9 +1,9 @@
-register_command(militia, 
+register_command('militia', 
     array(
-        description: 'create illusion of given player',
-        permission: 'powers.militia',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'create illusion of given player',
+        'permission': 'powers.militia',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
                 return(false)
@@ -38,7 +38,7 @@ register_command(militia,
                 @named = false
                 foreach(@uuid in @militiaUUIDs)
                 {
-                    set_entity_spec(@uuid,array(angry:true,color:'RED',sitting:false))
+                    set_entity_spec(@uuid,array('angry':true,'color':'RED','sitting':false))
                     tame_mob(@player,@uuid)
 
                     @num = rand(0,3)
@@ -47,11 +47,11 @@ register_command(militia,
                     @val = @vals[@num]
 
                     @rest = 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}' 
-                    runas(~console,'/disguiseplayer '.@uuid.' player AKMilitia_#'.@milID.' '.@rest)
+                    runas('~console','/disguiseplayer '.@uuid.' player AKMilitia_#'.@milID.' '.@rest)
                     @milID++
                     set_mob_effect(@uuid, 5, 1, 9999, false, true)
                     set_mob_effect(@uuid, 1, 1, 9999, false, true)
-                    set_mob_equipment(@uuid,array(WEAPON: array(type: 261)))
+                    set_mob_equipment(@uuid,array('WEAPON': array('type': 261)))
                 }
             )) 
             

@@ -1,4 +1,4 @@
-proc(_mindControlStop, @player,  
+proc('_mindControlStop', @player,  
 
     @mindControlTimer = import(@player.'mindControlTimer')
     if(@mindControlTimer != null){
@@ -41,9 +41,9 @@ proc(_mindControlStop, @player,
         @hero = yml_decode(@contents)
         _changeSkin(@player,@hero['sig'],@hero['val'])
     }catch(Exception @e){
-        runas(~console,'/undisguiseplayer '.@player)
+        runas('~console','/undisguiseplayer '.@player)
     }
 
-    tmsg(@vic,color(RED).'You are no longer being mind controlled by '.@player)
-    tmsg(@player,color(RED).'You are no longer mind controlling '.@vic)
+    tmsg(@vic,color('RED').'You are no longer being mind controlled by '.@player)
+    tmsg(@player,color('RED').'You are no longer mind controlling '.@vic)
 )

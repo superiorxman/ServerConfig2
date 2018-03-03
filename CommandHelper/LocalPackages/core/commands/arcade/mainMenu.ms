@@ -1,10 +1,10 @@
-register_command(mainmenu, 
+register_command('mainmenu', 
 
     array(
-        description: 'Unplugs from The Matrix',
-        permission: 'command.mainmenu',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Unplugs from The Matrix',
+        'permission': 'command.mainmenu',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @plr = player()
             assign(@cooldown, 10)
@@ -18,7 +18,7 @@ register_command(mainmenu,
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             _mortal(@plr)
-            queue_push(closure(runas(~console,'/warp mainmenu '.@plr)))
+            queue_push(closure(runas('~console','/warp mainmenu '.@plr)))
             set_timeout(3100,closure(
                 set_peffect(@plr,14,1,9999,true, false)
             ))
@@ -26,13 +26,13 @@ register_command(mainmenu,
         }
     )
 )
-register_command(leavemenu, 
+register_command('leavemenu', 
 
     array(
-        description: 'Unplugs from The Matrix',
-        permission: 'command.leavemenu',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {        
+        'description': 'Unplugs from The Matrix',
+        'permission': 'command.leavemenu',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {        
             
             @plr = @args[0]
             assign(@cooldown, 10)
@@ -46,7 +46,7 @@ register_command(leavemenu,
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             _mortal(@plr)
-            queue_push(closure(runas(~console,'/warp vrexit '.@plr)))
+            queue_push(closure(runas('~console','/warp vrexit '.@plr)))
         }
     )
 )

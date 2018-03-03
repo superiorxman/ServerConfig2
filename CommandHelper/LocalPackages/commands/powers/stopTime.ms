@@ -1,14 +1,9 @@
-register_command(stoptime, 
-
+register_command('stoptime', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.stoptime',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.stoptime',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @player = player()
             assign(@cooldown, 120)
@@ -21,7 +16,7 @@ register_command(stoptime,
             )
             export(@player."lastUsedStopTime", time() / 1000)
 
-            runas(~console,'/effect '.@player.' 1 60 255 true')
+            runas('~console','/effect '.@player.' 1 60 255 true')
                 
         }
     )

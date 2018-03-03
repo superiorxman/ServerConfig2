@@ -1,4 +1,4 @@
-bind(entity_damage_player,null,array('button': 'LEFT'),@event){
+bind('entity_damage_player',null,array('button': 'LEFT'),@event){
 
     if(@event['damager'] == 'PLAYER'){
         @attacker = @event['data']

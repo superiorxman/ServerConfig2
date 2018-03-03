@@ -1,4 +1,4 @@
-bind(vehicle_leave,null,associative_array('vehicletype':'MINECART'),@event){
+bind('vehicle_leave',null,associative_array('vehicletype':'MINECART'),@event){
     
     if(@event['player'] == null){
         die()

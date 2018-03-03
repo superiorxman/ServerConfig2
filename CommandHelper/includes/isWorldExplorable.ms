@@ -1,4 +1,4 @@
-proc(_isWorldExplorable,@world){
+proc('_isWorldExplorable',@world){
         switch(@world){
             case 'greenfield':
             case 'metropolis':

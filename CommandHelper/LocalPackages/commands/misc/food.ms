@@ -1,12 +1,12 @@
-register_command(food, 
+register_command('food', 
     array(
-        description: 'Power',
-        permission: 'command.food',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'command.food',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
-                msg(color(RED).'Usage: /food')
+                msg(color('RED').'Usage: /food')
                 return(false)
             }
             @food = array(
@@ -32,7 +32,7 @@ register_command(food,
             )
             for(@i = 0, @i < 5, @i++){
                 @index = rand(0,19)
-                runas(~console,'/give '.@sender.' '.@food[@index].' 1')
+                runas('~console','/give '.@sender.' '.@food[@index].' 1')
             } 
         }
     )

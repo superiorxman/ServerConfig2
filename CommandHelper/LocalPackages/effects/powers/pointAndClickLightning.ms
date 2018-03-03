@@ -1,4 +1,4 @@
-bind(player_interact,null,array('button': 'LEFT'),@event){
+bind('player_interact',null,array('button': 'LEFT'),@event){
     
     @player = player()
     
@@ -7,7 +7,7 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
     }
     @ploc = ploc(@player) 
     if(sk_region_check_flag(@ploc,'invincible',@player) == true){
-        tmsg(@player,color(red).'Sorry, you can\'t use lightning here.')
+        tmsg(@player,color('RED').'Sorry, you can\'t use lightning here.')
         die()
     }
     

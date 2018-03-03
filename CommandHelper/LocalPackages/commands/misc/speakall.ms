@@ -1,13 +1,13 @@
-register_command(speakall, 
+register_command('speakall', 
     array(
-        description: 'Power',
-        permission: 'command.speakall',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {
+        'description': 'Power',
+        'permission': 'command.speakall',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {
 
             @msg = ''
             foreach(@word in @args){
-                @msg = @msg.''.@word.' '
+                @msg = @msg.@word.' '
             }
 
             @plrs = all_players()

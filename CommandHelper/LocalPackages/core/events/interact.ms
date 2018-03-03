@@ -1,4 +1,4 @@
-bind(player_interact, null, array(item: 0, button: 'left'), @event,
+bind('player_interact', null, array('item': 0, 'button': 'left'), @event,
 
     @player = player()
 
@@ -41,16 +41,13 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         
         set_entity_velocity(@arrow, array(@velocity['x'] * @multiplier, @velocity['y'] * @multiplier, @velocity['z'] * @multiplier))
         @puuidd = puuid(@player)
-        bind(entity_dismount, null, null, @event, @puuidd, @arrow) {
+        bind('entity_dismount', null, null, @event, @puuidd, @arrow) {
             if(@event['id'] == @puuidd){
                 entity_remove(@event['mountid'])
                 try{entity_remove(@arrow)}catch(Exception @e){}
                 unbind()
             }
         }
-        #bind(projectile_hit, null, array(id: @arrow), @event, @puuidd) {
-        #        set_entity_rider(null, @puuidd)
-        #}
 
         set_timeout(5000,closure(
             try{entity_remove(@arrow)}catch(Exception @e){}

@@ -1,4 +1,4 @@
-proc(_facingDirection, @ploc,
+proc('_facingDirection', @ploc,
 
     if(@ploc['yaw'] >= 135.0 && @ploc['yaw'] <= 225.0){
         return("north")

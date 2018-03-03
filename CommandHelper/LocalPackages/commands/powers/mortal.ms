@@ -1,10 +1,10 @@
-register_command(mortal, 
+register_command('mortal', 
 
     array(
-        description: 'Power',
-        permission: 'ch.alias.mortal',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {        
+        'description': 'Power',
+        'permission': 'ch.alias.mortal',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {        
             
             @plr = player()
             assign(@cooldown, 10)

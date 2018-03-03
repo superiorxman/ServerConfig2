@@ -1,16 +1,16 @@
-register_command(chill, 
+register_command('chill', 
     array(
-        description: 'Power',
-        permission: 'powers.chill',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) { 
+        'description': 'Power',
+        'permission': 'powers.chill',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) { 
 
             if(array_size(@args) != 1){
-                msg(color(RED).'Usage: /chill <player>')
+                msg(color('RED').'Usage: /chill <player>')
                 return(false)
             }
             if(pmode(@sender) != 'SPECTATOR'){
-                msg(color(RED).'You must be intangible to chill other players.')
+                msg(color('RED').'You must be intangible to chill other players.')
                 return(false)
             }
 
@@ -23,7 +23,7 @@ register_command(chill,
             @dist = _distanceBetween(@ploc,@vloc)
 
             if(@dist > 5){
-                msg(color(RED).'You must be within 5 blocks of another player to use this.')
+                msg(color('RED').'You must be within 5 blocks of another player to use this.')
                 return(false)
             }
 

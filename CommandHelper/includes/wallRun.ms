@@ -1,4 +1,4 @@
-proc(_wallRun, @player,
+proc('_wallRun', @player,
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/facingDirection.ms')
     

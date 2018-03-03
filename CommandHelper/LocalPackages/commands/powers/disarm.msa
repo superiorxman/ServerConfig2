@@ -18,8 +18,8 @@ disarm:/disarm = >>>
                         @zsign = ''
                     }
                     set_entity_velocity(@drop, array(@xsign.'0.'.@x, 1.0, @zsign.'0.'.@z))
-                    set_pinv(@player,array(null: array(type: null)))
-                    msg(color(RED).'You disarmed '.@player)
+                    set_pinv(@player,array('null': array('type': null)))
+                    msg(color('RED').'You disarmed '.@player)
                 }
             }
 <<<        

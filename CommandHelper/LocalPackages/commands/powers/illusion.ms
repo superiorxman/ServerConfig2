@@ -1,9 +1,9 @@
-register_command(illusionplayer, 
+register_command('illusionplayer', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.illusion',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.illusion',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
             @numArgs = array_size(@args)
             if (@numArgs < 3 || @numArgs > 4) {
                 return(false)
@@ -33,7 +33,7 @@ register_command(illusionplayer,
             export(@player."illusion",@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
-                    runas(~console,'/disguiseplayer '.@uuid.' player '.@playerName)
+                    runas('~console','/disguiseplayer '.@uuid.' player '.@playerName)
                     if(@tame){
                         tame_mob(@player,@uuid) 
                     }
@@ -44,12 +44,12 @@ register_command(illusionplayer,
     )
 )
 
-register_command(illusionmob, 
+register_command('illusionmob', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.illusion',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.illusion',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 3) {
                 return(false)

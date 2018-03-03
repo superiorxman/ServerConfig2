@@ -1,33 +1,15 @@
-register_command(modifyspeed, 
-
+register_command('modifyspeed', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.modifyspeed',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.modifyspeed',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 2) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /modifyspeed <player> <speed>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /modifyspeed <player> <speed>');
                 die(); # No need to go further					
             
             }
@@ -60,10 +42,10 @@ register_command(modifyspeed,
             )
 
             if(@speed > 0){
-                runas(~console,"/effect ". @vic . " 1 15 ". @speed ." true")
+                runas('~console',"/effect ". @vic . " 1 15 ". @speed ." true")
             }else{
                 @speed = abs(@speed)
-                runas(~console,"/effect ". @vic . " 2 15 ". integer(@speed) ." true")
+                runas('~console',"/effect ". @vic . " 2 15 ". integer(@speed) ." true")
             }
 
             export(@player."lastUsedModifySpeed", time() / 1000)
@@ -72,7 +54,7 @@ register_command(modifyspeed,
             
             set_timeout(15000,closure(
                 export(@vic."speedEffects","false")
-                tmsg(@vic, color(green)."Your speed is now unlocked")
+                tmsg(@vic, color('GREEN')."Your speed is now unlocked")
             ))
             
         }

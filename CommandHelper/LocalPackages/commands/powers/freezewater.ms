@@ -1,9 +1,9 @@
-register_command(freezewater, 
+register_command('freezewater', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.freezewater',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.freezewater',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
                 return(false)
@@ -35,7 +35,7 @@ register_command(freezewater,
             }
 
             if(array_size(@blocksChanged) == 0){
-                msg(color(RED).'Sorry, there needs to be water closer.')
+                msg(color('RED').'Sorry, there needs to be water closer.')
                 die()
             }
             

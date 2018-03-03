@@ -1,13 +1,13 @@
-register_command(mindcontrol, 
+register_command('mindcontrol', 
 
     array(
-        description: 'Mind Controls a person',
-        permission: 'ch.alias.mindcontrol',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Mind Controls a person',
+        'permission': 'ch.alias.mindcontrol',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
 
             if (array_size(@args) != 1) {
-                return(FALSE)
+                return(false)
             }
             
             @player = player()
@@ -21,37 +21,37 @@ register_command(mindcontrol,
             export(@player.'mindControlVictim',@vic)
 
             if(@player == @vic){
-                msg(color(RED).'You are already mindcontrolling yourself!')
+                msg(color('RED').'You are already mindcontrolling yourself!')
                 die()
             }
 
             if(has_permission(@vic,"is.telepathicallyresistant")){
-                tmsg(@player,color(red)."Sorry, that player is telepathically resistant.")
+                tmsg(@player,color('RED')."Sorry, that player is telepathically resistant.")
                 die()
             }
 
             if(has_permission(@vic,"is.criminal")){
-                tmsg(@player,color(red)."Sorry, that player cannot be controlled.")
+                tmsg(@player,color('RED')."Sorry, that player cannot be controlled.")
                 die()
             }
 
             if(import(@vic.'beingMindControlled') == true){
-                msg(color(RED).'Sorry, that person is already being mind controlled')
+                msg(color('RED').'Sorry, that person is already being mind controlled')
                 die()
             }
             if(import(@vic.'mindControlling') == true){
-                msg(color(RED).'Sorry, that person is already mind controlling someone')
+                msg(color('RED').'Sorry, that person is already mind controlling someone')
                 die()
             }
 
             if(!has_permission(@vic,'is.mindControllable')){
-                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                msg(color('RED').'Sorry, that person is in a minigame or other protected area')
                 die()
             }
 
             @id = get_claim_id(ploc(@vic))
             if(@id != null){
-                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                msg(color('RED').'Sorry, that person is in a minigame or other protected area')
                 die()
             }
 
@@ -72,7 +72,7 @@ register_command(mindcontrol,
                     include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
                     @dist = _distanceBetween(@ploc,@vloc)
                     if(@dist > @radius){
-                        tmsg(@player,color(RED).'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                        tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
                         die()
                     }
                 }
@@ -103,7 +103,7 @@ register_command(mindcontrol,
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
             }catch(Exception @e){
-                runas(~console,'/disguiseplayer '.@player.' player '.@vic)
+                runas('~console','/disguiseplayer '.@player.' player '.@vic)
             }
             @markerPloc = import(@player.'mindControlPlayerOrigLocation')
             @markerPloc['y'] += 1
@@ -113,7 +113,7 @@ register_command(mindcontrol,
             console(@marker)
             export(@player.'mindControlEntityID',@marker)
 
-            bind(entity_damage,array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
+            bind('entity_damage',array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
                 cancel()
                 if(array_index_exists(@e,'damager')){
                     damage_entity(@idd,(@e['amount']*10))
@@ -123,13 +123,13 @@ register_command(mindcontrol,
                 tmsg(@playerr,'Your body is being damaged!')
             }
 
-            bind(player_death,array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
+            bind('player_death',array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
             }
-            bind(player_command,array('id':@vic.'mindControlCommandCancel'),array('player':@vic),@e,@vicc = @vic){
+            bind('player_command',array('id':@vic.'mindControlCommandCancel'),array('player':@vic),@e,@vicc = @vic){
                 cancel()
-                tmsg(@vicc,color(RED).'You are being mind controlled, you can\'t use any commands right now!')
+                tmsg(@vicc,color('RED').'You are being mind controlled, you can\'t use any commands right now!')
             }
 
             @mindControlTimer = set_timeout(30000,closure(
@@ -139,25 +139,25 @@ register_command(mindcontrol,
 
             export(@player.'mindControlTimer',@mindControlTimer)
             
-            bind(player_chat,associative_array('id': @player.'mindControlChatForward'),associative_array('player': @player),@event, @playerr = @player, @vicc = @vic){
+            bind('player_chat',associative_array('id': @player.'mindControlChatForward'),associative_array('player': @player),@event, @playerr = @player, @vicc = @vic){
                 cancel()
                 console('chat forwarded from '.@playerr. ' to '.@vicc)
                 chatas(@vicc,@event['message'])
                 @players = all_players()
                 foreach (@plor in @players){
                     if (has_permission(@plor, 'is.officer')){
-                        tmsg(@plor, color(GRAY).color(ITALIC).'*MindController*: '.@playerr)
+                        tmsg(@plor, color('GRAY').color('ITALIC').'*MindController*: '.@playerr)
                     }
                 }
             }
-            bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player, @vicc = @vic){
-                runas(~console,'/tempban '.@vicc.' 60s 1 Minute Ban For Quitting During Mind Control')
-                runas(~console,'/pex user '.@vicc.' group set mortal')
+            bind('player_quit', associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player, @vicc = @vic){
+                runas('~console','/tempban '.@vicc.' 60s 1 Minute Ban For Quitting During Mind Control')
+                runas('~console','/pex user '.@vicc.' group set mortal')
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
             }
 
-            bind(player_quit,associative_array('id': @player.'mindControlPlrLeave'),associative_array('player': @player),@event, @playerr = @player){
+            bind('player_quit',associative_array('id': @player.'mindControlPlrLeave'),associative_array('player': @player),@event, @playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
             }
@@ -165,13 +165,13 @@ register_command(mindcontrol,
     )
 )
 
-register_command(stopmindcontrol, 
+register_command('stopmindcontrol', 
 
     array(
-        description: 'Stops mind control',
-        permission: 'ch.alias.stopmindcontrol',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {        
+        'description': 'Stops mind control',
+        'permission': 'ch.alias.stopmindcontrol',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {        
             
             @player = @sender
             assign(@cooldown, 30)
@@ -185,7 +185,7 @@ register_command(stopmindcontrol,
             export(@player."lastUsedStopMindControl", time() / 1000)
 
             if(import(@player.'mindControlling') != true){
-                msg(color(RED).'Sorry, you are not currently mind controlling anyone')
+                msg(color('RED').'Sorry, you are not currently mind controlling anyone')
                 die()
             }
 

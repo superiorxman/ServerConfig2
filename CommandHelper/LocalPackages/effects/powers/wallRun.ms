@@ -1,4 +1,4 @@
-bind(player_toggle_sneak,null,null,@event){
+bind('player_toggle_sneak',null,null,@event){
     @player = @event['player']
 
     if(import(@player.'wallRunStatus') && has_permission(@player, "powers.wallrun")){
@@ -9,7 +9,7 @@ bind(player_toggle_sneak,null,null,@event){
             @class = _getheroclass(@player)
             include('/home/minecraft/server/plugins/CommandHelper/includes/wallRun.ms')
         
-            @realID = bind(player_move, @eventID, associative_array('player': @player), @event,
+            @realID = bind('player_move', @eventID, associative_array('player': @player), @event,
             @player, @eventID, @isSneaking, @puuid = puuid(@player)){
                 
                 _wallRun(@player)

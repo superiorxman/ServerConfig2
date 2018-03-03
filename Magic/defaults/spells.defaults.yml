@@ -3634,6 +3634,70 @@ curse|2:
         effect_confusion: 2
         effect_slow: 3
 
+# Possible values for damage_type:
+# FIRE
+# LIGHTNING
+# BURN
+# LAVA
+# HOT_FLOOR
+# STUCK
+# CRAMMING
+# DROWN
+# STARVE
+# CACTUS
+# FALL
+# FLY_INTO_WALL
+# OUT_OF_WORLD
+# GENERIC
+# MAGIC
+# WITHER
+# ANVIL
+# FALLING_BLOCK
+# DRAGON_BREATH
+
+damage:
+    icon: diamond_axe:172
+    icon_disabled: diamond_hoe:172
+    icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+    category: staff
+    worth: 50000
+    actions:
+      cast:
+      - class: Damage
+    effects:
+        cast:
+        - sound: magic.zap_big
+          sound_volume: 1
+          location: origin
+          source_location: cast
+          effectlib:
+             class: ConeEffect
+             iterations: 16
+             particle: redstone
+             color: 00FF00
+             lengthGrow: 0.4
+        - location: target
+          target_location: hit
+          effectlib:
+             class: SphereEffect
+             iterations: 16
+             particle: redstone
+             color: FF0000
+             radius: 0.2
+    parameters:
+        target: other
+        target_type: Damageable
+        cooldown: 500
+        target_breakables: 5
+        bypass_backfire: true
+        bypass_pvp: true
+        range: 64
+        damage_type: OUT_OF_WORLD
+        damage: 10
+    costs:
+        mana: 100
+
+
 dash:
     icon: diamond_axe:178
     icon_disabled: diamond_hoe:178
@@ -9492,7 +9556,7 @@ progressmenu:
     - placeholder: true
     - cast_spell: wandbuffshop
       requirements:
-      - wand: wand
+      - wands: wand,battle
     - cast_spell: appearanceshop
       requirements: 
       - wand: wand
@@ -9501,7 +9565,7 @@ progressmenu:
       - holding_wand: true
     - cast_spell: effectshop
       requirements: 
-      - holding_wand: true
+      - wands: true,wand
     - cast_spell: controlsmenu
       requirements: 
       - holding_wand: true
@@ -14084,6 +14148,8 @@ wandbuffshop:
       cast:
       -  class: Selector
   parameters:
+    confirm: true
+    confirm_filler: stained_glass:13
     show_unavailable: true
     cost_type: sp
     requirements:
@@ -14094,10 +14160,22 @@ wandbuffshop:
     - placeholder: true
     - cast_spell: add_protection
       cost: 1000
+      requirements:
+        - wand_properties:
+          - property: protection.overall
+            max: 1
     - cast_spell: add_fall_protection
       cost: 500
+      requirements:
+        - wand_properties:
+          - property: protection.fall
+            max: 1
     - cast_spell: add_fire_protection
       cost: 500
+      requirements:
+        - wand_properties:
+          - property: protection.fire
+            max: 1
 
 add_protection:
   icon: diamond_axe:234
@@ -14110,7 +14188,7 @@ add_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection"
+    - path: "protection.overall"
       value: "x + 0.2"
       max: 1
 
@@ -14125,7 +14203,7 @@ add_explosion_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection_explosions"
+    - path: "protection.explosion"
       value: "x + 0.2"
       max: 1
 
@@ -14140,7 +14218,7 @@ add_fall_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection_falling"
+    - path: "protection.fall"
       value: "x + 0.2"
       max: 1
 
@@ -14155,7 +14233,7 @@ add_fire_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection_fire"
+    - path: "protection.fire"
       value: "x + 0.2"
       max: 1
 
@@ -14170,7 +14248,7 @@ add_physical_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection_physical"
+    - path: "protection.physical"
       value: "x + 0.2"
       max: 1
 
@@ -14185,7 +14263,7 @@ add_projectile_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection_projectiles"
+    - path: "protection.projectile"
       value: "x + 0.2"
       max: 1
 wandshop:

@@ -1,33 +1,15 @@
-register_command(carryplayer, 
-
+register_command('carryplayer', 
     array(
+        'description': 'Pickup a player and carry them',
+        'permission': 'ch.alias.carryplayer',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
-        description: 'Pickup a player and carry them',
-        
-        permission: 'ch.alias.carryplayer',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /carryplayer <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /carryplayer <player>');
                 die(); # No need to go further					
             
             }
@@ -73,17 +55,12 @@ register_command(carryplayer,
     )
 )
 
-register_command(dismountplayer, 
-
+register_command('dismountplayer',
     array(
-    
-        description: 'Dismount player',
-        
-        permission: 'ch.alias.dismountplayer',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {
+        'description': 'Dismount player',
+        'permission': 'ch.alias.dismountplayer',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             @rider = get_entity_rider(puuid(player()))
 

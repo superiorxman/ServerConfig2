@@ -1,4 +1,4 @@
-proc(_spidermanVinePlacement, @ploc, @block, @player,
+proc('_spidermanVinePlacement', @ploc, @block, @player,
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/facingDirection.ms')
     @facing = _facingDirection(@ploc)

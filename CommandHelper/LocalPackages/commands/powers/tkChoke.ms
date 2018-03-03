@@ -1,13 +1,13 @@
-register_command(tkchoke, 
+register_command('tkchoke', 
     array(
-        description: 'Choke a player',
-        permission: 'powers.tkchoke',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Choke a player',
+        'permission': 'powers.tkchoke',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /tkchoke <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /tkchoke <player>');
                 return(false)
             }
             
@@ -15,7 +15,7 @@ register_command(tkchoke,
             @vic = player(@vic)
 
             if(has_permission(@vic,'is.criminal')){
-                tmsg(@sender,color(red).'You cannot do this to a prisoner')
+                tmsg(@sender,color('RED').'You cannot do this to a prisoner')
                 die()
             }
             
@@ -30,7 +30,7 @@ register_command(tkchoke,
                 sudo(/effect @vic 19 5 6 true)
                 broadcast(@sender . " is now telekinetically choking " . @vic)
             }else{
-                tmsg(@sender,color(red).'You are not close enough to that player.')
+                tmsg(@sender,color('RED').'You are not close enough to that player.')
             }
         }
     )

@@ -1,4 +1,4 @@
-#bind(item_pickup,null,null,@e){
+#bind('item_pickup',null,null,@e){
 #    @nbt = nbt_read_entity(@e['id'])
 #    if(!array_index_exists(@nbt,'Item') || !array_index_exists(@nbt['Item'],'tag') || !array_index_exists(@nbt['Item']['tag'],'heroclass')){
 #        if(@e['player'] == 'Jiren_The_Grey'){

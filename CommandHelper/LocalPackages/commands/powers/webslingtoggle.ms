@@ -1,10 +1,10 @@
-register_command(websling, 
+register_command('websling', 
 
     array(
-        description: 'Turn Lightning Punch on/off',
-        permission: 'ch.alias.websling',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias,@sender,@args) {
+        'description': 'Turn Lightning Punch on/off',
+        'permission': 'ch.alias.websling',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias,@sender,@args) {
 
             if(array_size(@args) != 1){
                 return(false)
@@ -13,14 +13,14 @@ register_command(websling,
             switch(@args[0]){
                 case 'on':
                     export(@player.'webSlingStatus',true)
-                    msg(color(RED).'Web Sling on.')
+                    msg(color('RED').'Web Sling on.')
                     break()
                 case 'off':
                     export(@player.'webSlingStatus',false)
-                    msg(color(RED).'Web Sling off.')
+                    msg(color('RED').'Web Sling off.')
                     break()
                 default:
-                    msg(color(RED).'The choices are "on" or "off"')
+                    msg(color('RED').'The choices are "on" or "off"')
             }
         }
     )

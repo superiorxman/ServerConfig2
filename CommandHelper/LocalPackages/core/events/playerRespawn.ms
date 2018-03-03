@@ -1,4 +1,4 @@
-bind(player_spawn, null, null, @event){
+bind('player_spawn', null, null, @event){
 
     @player = @event['player']
     set_timeout(1000,closure(

@@ -1,12 +1,12 @@
-register_command(mindlock, 
+register_command('mindlock', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.mindlock',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.mindlock',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
 #            @numArgs = array_size(@args)
             if (array_size(@args) != 1) {
-                return(FALSE) 
+                return(false) 
             }
             
             @vic = @args[0]
@@ -17,16 +17,16 @@ register_command(mindlock,
             @plr = player()
             
             if(has_permission(@vic,'is.op')){
-                tmsg(@plr,color(red).'That player is better than you and cannot be mind locked.')
+                tmsg(@plr,color('RED').'That player is better than you and cannot be mind locked.')
                 die()
             }
             if(has_permission(@vic,"is.telepathicallyresistant")){
-                tmsg(@plr,color(red)."Sorry, that player is telepathically resistant.")
+                tmsg(@plr,color('RED')."Sorry, that player is telepathically resistant.")
                 die()
             }
             @isMindLocked = import(@vic.'isMindLocked')
             if(@isMindLocked){
-                tmsg(@plr,color(red).'That player is already mindlocked')
+                tmsg(@plr,color('RED').'That player is already mindlocked')
                 die()
             }
 
@@ -43,7 +43,7 @@ register_command(mindlock,
                     include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
                     @dist = _distanceBetween(@ploc,@vloc)
                     if(@dist > @radius){
-                        tmsg(@plr,color(RED).'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                        tmsg(@plr,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
                         die()
                     }
                 }
@@ -59,8 +59,8 @@ register_command(mindlock,
             export(@plr.'isMindLocked',true)
             export(@plr.'mindLockedBy',@vic)
             
-            tmsg(@vic,color(red).'You have been mindlocked by '.@plr)
-            tmsg(@plr,color(red).'You have mindlocked '.@vic)
+            tmsg(@vic,color('RED').'You have been mindlocked by '.@plr)
+            tmsg(@plr,color('RED').'You have mindlocked '.@vic)
 
             set_timeout(60000,closure(
                 @isMindLocked = import(@plr.'isMindLocked')
@@ -69,8 +69,8 @@ register_command(mindlock,
                     export(@vic.'mindLockedBy','')
                     export(@plr.'isMindLocked',false)
                     export(@plr.'mindLockedBy','')
-                    tmsg(@plr,color(red).'Mindlock connection lost.')
-                    tmsg(@vic,color(red).'Mindlock connection lost.')
+                    tmsg(@plr,color('RED').'Mindlock connection lost.')
+                    tmsg(@vic,color('RED').'Mindlock connection lost.')
                 }
             ))
             

@@ -1,33 +1,14 @@
-register_command(swarm, 
-
+register_command('swarm', 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.swarm',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.swarm',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',    
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /swarm <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /swarm <player>');
                 die(); # No need to go further					
             
             }
@@ -56,7 +37,7 @@ register_command(swarm,
             @final = sqrt(@final)
 
             if(@final > 50){
-                tmsg(@player,color(red).'Sorry, you are not close enough to that player!')
+                tmsg(@player,color('RED').'Sorry, you are not close enough to that player!')
                 die()
             }
 
@@ -70,14 +51,14 @@ register_command(swarm,
             )
             export(@player."lastUsedSwarm", time() / 1000)
             
-            tmsg(@player,color(red).'You have summoned a mosquito swarm upon '.color(white).@vic.color(red).'!')
-            tmsg(@vic,color(red).'Oh no! '.color(white).'Mosquito Girl '.color(red).'has summoned her mosquitos on you!')
+            tmsg(@player,color('RED').'You have summoned a mosquito swarm upon '.color('WHITE').@vic.color('RED').'!')
+            tmsg(@vic,color('RED').'Oh no! '.color('WHITE').'Mosquito Girl '.color('RED').'has summoned her mosquitos on you!')
             if(ponline(@vic)){
 
                 @eventID1 = set_interval(50,closure(
                     @loc = ploc(@vic)
                     #sudo("/particle largesmoke ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
-                    play_effect(@loc, LARGE_SMOKE, array(offsetX: 0.5, offsetY: 1.0, offsetZ: 0.5, speed: 0.01, particleCount: 64))
+                    play_effect(@loc, 'LARGE_SMOKE', array('offsetX': 0.5, 'offsetY': 1.0, 'offsetZ': 0.5, 'speed': 0.01, 'particleCount': 64))
                 ))
                 @eventID2 = set_interval(1000,closure(
                     damage_entity(puuid(@vic),6)        

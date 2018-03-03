@@ -5,130 +5,103 @@ tp:/tp $plr = >>>
     @vic = player(@vic)
 
     if(has_permission(@player,'is.op')){
-        runas(~console,'/minecraft:tp '.@player.' '.@vic)
+        runas('~console','/minecraft:tp '.@player.' '.@vic)
         die()
     }
 
     if(has_permission(@vic,'is.op')){
-        msg(color(RED).'Sorry, player is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, player is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@vic,'is.incity')){
         if(!has_permission(@vic,'in.survival')){
-            msg(color(RED).'Sorry, player is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, player is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
 
     broadcast(@player.' has teleported to '.@vic)
-    runas(~console,'/minecraft:tp '.@player.' '.@vic)
+    runas('~console','/minecraft:tp '.@player.' '.@vic)
 
 <<<
 tpanyone:/tp $plr1 $plr2 = >>>
     @player = player()
-    // @bal = acc_balance(@player)
-    // @isOp = has_permission(@player,'is.op')
-    // if(@bal < 100 && !@isOp){
-    //     msg(color(RED).'Sorry, you need $100 to use this command')
-    //     die()
-    // }
-    // if(!@isOp){
-    //     acc_subtract(@player,100)
-    // }
     @plr1 = $plr1
     @plr1 = player(@plr1)
     @plr2 = $plr2
     @plr2 = player(@plr2)
 
     if(has_permission(@plr1,'is.op')){
-        msg(color(RED).'Sorry, '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@plr1,'is.incity')){
         if(!has_permission(@plr1,'in.survival')){
-            msg(color(RED).'Sorry, '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
 
     if(has_permission(@plr2,'is.op')){
-        msg(color(RED).'Sorry, '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@plr2,'is.incity')){
         if(!has_permission(@plr2,'in.survival')){
-            msg(color(RED).'Sorry, '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
     broadcast(@player.' has teleported '.@plr1.' to '.@plr2)
-    runas(~console,'/minecraft:tp '.@plr1.' '.@plr2)
+    runas('~console','/minecraft:tp '.@plr1.' '.@plr2)
 
 <<<
 tphere:/tphere $plr = >>>
     @player = player()
-    // @bal = acc_balance(@player)
-    // @isOp = has_permission(@player,'is.op')
-    // if(@bal < 100 && !@isOp){
-    //     msg(color(RED).'Sorry, you need $100 to use this command')
-    //     die()
-    // }
-    // if(!@isOp){
-    //     acc_subtract(@player,100)
-    // }
     @vic = $plr
     @vic = player(@vic)
 
     if(has_permission(@vic,'is.op')){
-        msg(color(RED).'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@vic,'is.incity')){
         if(!has_permission(@vic,'in.survival')){
-            msg(color(RED).'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
 
     if(has_permission(@player,'is.op')){
-        msg(color(RED).'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@player,'is.incity')){
         if(!has_permission(@player,'in.survival')){
-            msg(color(RED).'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
     broadcast(@player.' has teleported '.@vic.' to '.@player)
-    runas(~console,'/minecraft:tp '.@vic.' '.@player)
+    runas('~console','/minecraft:tp '.@vic.' '.@player)
 
 <<<
 portaltp:/portaltp $plr = >>>
     @player = player()
-    // @bal = acc_balance(@player)
-    // @isOp = has_permission(@player,'is.op')
-    // if(@bal < 100 && !@isOp){
-    //     msg(color(RED).'Sorry, you need $100 to use this command')
-    //     die()
-    // }
-    // if(!@isOp){
-    //     acc_subtract(@player,100)
-    // }
     @vic = $plr
     @vic = player(@vic)
 
     if(has_permission(@vic,'is.op')){
-        msg(color(RED).'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@vic,'is.incity')){
         if(!has_permission(@vic,'in.survival')){
-            msg(color(RED).'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@vic.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
 
     if(has_permission(@player,'is.op')){
-        msg(color(RED).'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@player,'is.incity')){
         if(!has_permission(@player,'in.survival')){
-            msg(color(RED).'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@player.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }
@@ -139,12 +112,12 @@ portaltp:/portaltp $plr = >>>
 
     if(@ploc['world'] == @vloc['world']){
         if(@dist > 40){
-            msg(color(RED).'Sorry, they are too far away.')
+            msg(color('RED').'Sorry, they are too far away.')
             die()
         }
     }
     broadcast(@player.' has teleported '.@vic.' to them')
-    runas(~console,'/minecraft:tp '.@vic.' '.@player)
+    runas('~console','/minecraft:tp '.@vic.' '.@player)
 
 <<<
 grouptp:/grouptp $target = >>>
@@ -154,11 +127,11 @@ grouptp:/grouptp $target = >>>
 
 
     if(has_permission(@target,'is.op')){
-        msg(color(RED).'Sorry, '.@target.' is in a minigame or other protected area where you can\'t TP to right now.')
+        msg(color('RED').'Sorry, '.@target.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@target,'is.incity')){
         if(!has_permission(@target,'in.survival')){
-            msg(color(RED).'Sorry, '.@target.' is in a minigame or other protected area where you can\'t TP to right now.')
+            msg(color('RED').'Sorry, '.@target.' is in a minigame or other protected area where you can\'t TP to right now.')
             die()
         }
     }

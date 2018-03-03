@@ -1,13 +1,13 @@
-register_command(forcechoke, 
+register_command('forcechoke', 
     array(
-        description: 'Choke a player',
-        permission: 'ch.alias.forcechoke',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Choke a player',
+        'permission': 'ch.alias.forcechoke',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /forcechoke <player>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /forcechoke <player>');
                 die(); # No need to go further					
             }
             
@@ -15,7 +15,7 @@ register_command(forcechoke,
             @vic = @args[0]
 
             if(has_permission(@vic,'is.criminal')){
-                tmsg(@plr,color(red).'You cannot force choke a Prisoner')
+                tmsg(@plr,color('RED').'You cannot force choke a Prisoner')
                 die()
             }
 
@@ -29,8 +29,8 @@ register_command(forcechoke,
             )
             export(@player."lastUsedForceChoke", time() / 1000)
             
-            sudo(/effect @vic 20 5 6 true)
-            sudo(/effect @vic 19 5 6 true)
+            sudo('/effect '.@vic.' 20 5 6 true')
+            sudo('/effect '.@vic.' 19 5 6 true')
 
             broadcast(@player . " is now force choking " . @vic)
                 

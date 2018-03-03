@@ -1,33 +1,15 @@
-register_command(speak, 
-
+register_command('speak', 
     array(
+        'description': 'Power',
+        'permission': 'ch.alias.speak',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
-        description: 'Power',
-        
-        permission: 'ch.alias.speak',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
-        executor: closure(@alias, @sender, @args) {
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) < 2) {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /speak <player> <msg>');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /speak <player> <msg>');
                 die(); # No need to go further					
             
             }
@@ -50,7 +32,7 @@ register_command(speak,
             
             foreach (@player in @players){
                 if (has_permission(@player, 'is.officer')){
-                    tmsg(@player, color(GRAY).color(ITALIC).'*Player Speaking*: '.@plrSpeaking)
+                    tmsg(@player, color('GRAY').color('ITALIC').'*Player Speaking*: '.@plrSpeaking)
                 }
             }
             

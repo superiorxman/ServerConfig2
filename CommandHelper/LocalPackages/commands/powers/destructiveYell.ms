@@ -1,14 +1,9 @@
-register_command(yell, 
-
+register_command('yell', 
     array(
-    
-        description: 'Yell',
-        
-        permission: 'ch.alias.yell',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        executor: closure() {
+        'description': 'Yell',
+        'permission': 'ch.alias.yell',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             @plr = player()

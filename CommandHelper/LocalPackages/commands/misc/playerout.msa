@@ -1,6 +1,0 @@
-out:/out $plr = >>>
-    @plr = $plr
-    @plr = player(@plr)
-    runas(~console,'/minecraft:clear '.@plr)
-    runas(~console,'/minecraft:kill '.@plr)
-<<<

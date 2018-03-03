@@ -1,4 +1,4 @@
-bind(player_interact,null,array('button': 'RIGHT'),@event){
+bind('player_interact',null,array('button': 'RIGHT'),@event){
     
     @player = player()
     @wasPlaced = false
@@ -17,7 +17,7 @@ bind(player_interact,null,array('button': 'RIGHT'),@event){
     assign(@cooldown, 10)
     assign(@lastSonicScrewdriver, import(@player.'lastSonicScrewdriver'))
     if(@lastSonicScrewdriver + @cooldown > time() / 1000,
-        tmsg(@player,color(red).'Sonic Screwdriver has a 10 second cooldown!')
+        tmsg(@player,color('RED').'Sonic Screwdriver has a 10 second cooldown!')
         die()
     )
     export(@player.'lastSonicScrewdriver', time() / 1000)

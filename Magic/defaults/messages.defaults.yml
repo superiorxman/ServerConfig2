@@ -403,6 +403,9 @@ shops:
   has_class: "You already have class $class"
   at_limit: "You are at your limit of $limit"
   unlocked_lore: "&aUnlocked"
+  property_requirement: "&r&cRequires: &6$property &cof $4$value"
+  property_max: "&r&cYour &6$property &cis maxed out"
+  property_min: "&r&cYour &6$property &cmust be greater than $4$value"
 spell:
     category: ""
     # category: "&7&o$category"
@@ -1601,6 +1604,9 @@ spells:
         name: SuperKill
         description: Kills your target, no questions asked
         cast: SUPER DIE!
+    damage:
+        name: Damage
+        description: "A spell for testing different damage types.\nNote that the caster will not get credit for kills made with alternate vanilla damage types from other plugins since the damage source is lost."
     torture:
         name: Torture
         description: Mercilessly torture your enemy
@@ -2046,12 +2052,14 @@ wand:
     consume_reduction: "&6Manifestation"
     cooldown_reduction: "&6Cooldown Reduction $roman"
     power: "&6Power $roman"
-    protection: "&2Protection $roman"
-    protection_physical: "&2Physical Protection $roman"
-    protection_projectile: "&2Projectile Protection $roman"
-    protection_falling: "&2Fall Protection $roman"
-    protection_fire: "&2Fire Protection $roman"
-    protection_explosions: "&2Blast Protection $roman"
+    protection:
+      overall: "&2Protection $roman"
+      physical: "&2Physical Protection $roman"
+      projectile: "&2Projectile Protection $roman"
+      fall: "&2Fall Protection $roman"
+      fire: "&2Fire Protection $roman"
+      explosion: "&2Blast Protection $roman"
+      unknown: "&2$type Protection $roman"
     potion_effect: "&b$effect $roman"
     super_powered: "&3Superpowered"
     super_protected: "&3Invulnerability"

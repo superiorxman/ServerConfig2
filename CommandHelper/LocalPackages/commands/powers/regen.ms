@@ -1,12 +1,9 @@
-register_command(regen, 
-
+register_command('regen', 
     array(
-    
-        description: 'Power',
-        permission: 'powers.regen',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'powers.regen',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) == 0) {
             
@@ -20,8 +17,8 @@ register_command(regen,
                     die()
                 )
                 export(@player."lastUsedRegen", time() / 1000)
-                runas(~console,'/effect '.@player.' regeneration 20 1 true')
-                tmsg(@player,color(red).'You are regenning!')
+                runas('~console','/effect '.@player.' regeneration 20 1 true')
+                tmsg(@player,color('RED').'You are regenning!')
                 die()				
             
             } else if (array_size(@args) == 1) {
@@ -31,7 +28,7 @@ register_command(regen,
                 @plr = player(@plr)
 
                 if(has_permission(@plr,'is.criminal')){
-                    msg(color(RED).'Sorry, that player is a criminal, you can\'t do that right now.')
+                    msg(color('RED').'Sorry, that player is a criminal, you can\'t do that right now.')
                     die()
                 }
 
@@ -44,7 +41,7 @@ register_command(regen,
                     }
                 }
                 if(!@found){
-                    msg(color(RED).'Sorry, you have to be within 15 blocks of that player to use this')
+                    msg(color('RED').'Sorry, you have to be within 15 blocks of that player to use this')
                     die()
                 }
 
@@ -56,15 +53,15 @@ register_command(regen,
                     die()
                 )
                 export(@player."lastUsedRegen", time() / 1000)
-                runas(~console,'/effect '.@player.' regeneration 20 1 true')
-                tmsg(@player,color(red).'You are regenning '.@plr.'!')
-                tmsg(@plr,color(red).'You are regenning by '.@player.'!')
+                runas('~console','/effect '.@player.' regeneration 20 1 true')
+                tmsg(@player,color('RED').'You are regenning '.@plr.'!')
+                tmsg(@plr,color('RED').'You are regenning by '.@player.'!')
                 die()
             
             } else {
             
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /regen [player]');
+                msg(color('RED').color('BOLD').'Improper Usage!');
+                msg(color('RED').'Usage: /regen [player]');
                 die(); # No need to go further	
             
             }

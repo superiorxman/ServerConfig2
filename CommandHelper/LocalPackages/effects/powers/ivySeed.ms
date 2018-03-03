@@ -1,4 +1,4 @@
-bind(player_consume,null,null,@event){
+bind('player_consume',null,null,@event){
 
     if(
         @event['item']['meta'] != null && 
@@ -7,7 +7,7 @@ bind(player_consume,null,null,@event){
     ){
         cancel()
         damage_entity(puuid(@event['player']),60)
-        set_pinv(array(null: array(type: null)))
+        set_pinv(array('null': array('type': null)))
         broadcast(@event['player'].' ate an Ivy Seed and sustained massive damage!')
     }
 

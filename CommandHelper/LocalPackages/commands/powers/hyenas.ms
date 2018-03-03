@@ -1,14 +1,9 @@
-register_command(hyenas, 
-
+register_command('hyenas', 
     array(
-    
-        description: 'Spawn a bunch of Hyenas',
-        
-        permission: 'ch.alias.hyenas',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {
+        'description': 'Spawn a bunch of Hyenas',
+        'permission': 'ch.alias.hyenas',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             @player = player()
 
@@ -37,7 +32,7 @@ register_command(hyenas,
                 {
                     @colors = array("WHITE", "ORANGE", "MAGENTA", "LIGHT_BLUE", "YELLOW", "LIME", "PINK", "GRAY", "SILVER", "CYAN", "PURPLE", "BLUE", "BROWN", "GREEN", "RED", "BLACK")
                     @num = rand(1,17)
-                    set_entity_spec(@uuid,array(angry:true,color:@colors[@num],sitting:false))
+                    set_entity_spec(@uuid,array('angry':true,'color':@colors[@num],'sitting':false))
                     tame_mob(@player,@uuid)
                     if(@named == false){
                         set_mob_name(@uuid,'Bud')

@@ -1,9 +1,9 @@
-register_command(canarycry, 
+register_command('canarycry', 
     array(
-        description: 'White Canary attack',
-        permission: 'powers.canarycry',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'White Canary attack',
+        'permission': 'powers.canarycry',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             @player = player()
             @ploc = ploc(@player)
@@ -12,7 +12,7 @@ register_command(canarycry,
             foreach(@plr in @plrs){
                 if(@plr != @player){
                     damage_entity(puuid(@plr),3,puuid(@player))
-                    tmsg(@plr,color(RED).'You have been damaged by Canary Cry!')
+                    tmsg(@plr,color('RED').'You have been damaged by Canary Cry!')
                 }
             }
     

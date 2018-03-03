@@ -1,6 +1,6 @@
 prepworld:/prepworld = >>>
 
-    @world = ploc()[world]
+    @world = ploc()['world']
     queue_push(closure(sudo('/mvm set memory false')))
     queue_push(closure(sudo('/mvm set portalform NONE')))
     queue_push(closure(sudo('/mvm set bedrespawn false')))

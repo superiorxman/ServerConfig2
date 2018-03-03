@@ -1,4 +1,4 @@
-bind(vehicle_leave,null,associative_array('vehicletype':'BOAT'),@event){
+bind('vehicle_leave',null,associative_array('vehicletype':'BOAT'),@event){
     
     if(@event['player'] == null){
         die()

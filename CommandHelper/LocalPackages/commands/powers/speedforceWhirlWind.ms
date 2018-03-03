@@ -1,12 +1,12 @@
-register_command(whirlwind, 
+register_command('whirlwind', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.speedforcewhirlwind',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {        
+        'description': 'Power',
+        'permission': 'ch.alias.speedforcewhirlwind',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {        
             
             if (array_size(@args) != 1) {
-                tmsg(@sender,color(RED).'Usage: /whirlwind <player>')
+                tmsg(@sender,color('RED').'Usage: /whirlwind <player>')
                 return(false)
             }
             

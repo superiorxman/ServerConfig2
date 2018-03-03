@@ -1,7 +1,7 @@
-#bind(item_drop,null,null,@e){
+#bind('item_drop',null,null,@e){
 #    #@item = @e['item']
 #    #if(@e['player'] == 'Jiren_The_Grey'){
-#        #queue_push(closure(runas(~console,'/nbt @'.@plr.' Inventory['.@slot.'].tag += {heroclass:'.@hero['class'].'}')))
+#        #queue_push(closure(runas('~console','/nbt @'.@plr.' Inventory['.@slot.'].tag += {heroclass:'.@hero['class'].'}')))
         #console(@nbt)
 #    }
 #    if(@item['meta'] == null || @item['meta']['lore'] == null){

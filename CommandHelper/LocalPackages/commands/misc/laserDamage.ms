@@ -1,10 +1,10 @@
-register_command(laserdamage, 
+register_command('laserdamage', 
     array(
-        description: 'Gives Player their Superhero Powers',
-        usage: '/laserdamage',
-        permission: 'console.command',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@aliases, @sender, @args) {
+        'description': 'Gives Player their Superhero Powers',
+        'usage': '/laserdamage',
+        'permission': 'console.command',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@aliases, @sender, @args) {
 
 
             @vic = @args[0]

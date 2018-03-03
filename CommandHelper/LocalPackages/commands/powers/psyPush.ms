@@ -1,9 +1,9 @@
-register_command(psypush, 
+register_command('psypush', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.psypush',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.psypush',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
             
             if (array_size(@args) != 1) {
                 return(false)

@@ -1,9 +1,9 @@
-register_command(destroyworld, 
+register_command('destroyworld', 
     array(
-        description: 'Destroys the world',
-        permission: 'powers.destroyworld',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure() {
+        'description': 'Destroys the world',
+        'permission': 'powers.destroyworld',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure() {
         
             @plr = player()
             @world = pworld(@plr)
@@ -24,7 +24,7 @@ register_command(destroyworld,
                 }
             }
             
-            broadcast(color(DARK_RED).color(OBFUSCATED)."!i".color(WHITE)." ".@plr." ".color(DARK_RED).color(UNDERLINE)."destroyed".color(GRAY).color(ITALICS)." ".@world.color(RED)." and its every living inhabitant.") 
+            broadcast(color('DARK_RED').color('OBFUSCATED')."!i".color('WHITE')." ".@plr." ".color('DARK_RED').color('UNDERLINE')."destroyed".color('GRAY').color('ITALICS')." ".@world.color('RED')." and its every living inhabitant.") 
                 
         }
     )

@@ -1,10 +1,10 @@
-proc(_isSpecialArrow,@item,@launchEventID){
+proc('_isSpecialArrow',@item,@launchEventID){
     if(@item != null){
         if(is_array(@item['meta'])){
             @itemName = @item['meta']['display']
 
-            if(@itemName == color(white).'Arrow of '.color(gray).'Smoke'){
-                bind(projectile_hit, null, associative_array(id: @launchEventID), @e){
+            if(@itemName == color('WHITE').'Arrow of '.color('GRAY').'Smoke'){
+                bind('projectile_hit', null, associative_array('id': @launchEventID), @e){
                     @loc = @e['location']
                     @xStart = @loc['x'] - 1
                     @zStart = @loc['z'] - 1
@@ -39,15 +39,15 @@ proc(_isSpecialArrow,@item,@launchEventID){
                 }
                 return(true)
             }
-            if(@itemName == color(white).'Arrow of '.color(dark_red).'Ka-Ba-Boom'){
-                bind(projectile_hit, null, associative_array(id: @launchEventID), @e){
+            if(@itemName == color('WHITE').'Arrow of '.color('DARK_RED').'Ka-Ba-Boom'){
+                bind('projectile_hit', null, associative_array('id': @launchEventID), @e){
                     explosion(@e['location'], 3, true)
                     entity_remove(@e['id'])
                 }
                 return(true)
             }
-            if(@itemName == color(GREEN).'Kryptonite '.color(WHITE).'Arrow'){
-                bind(projectile_hit, null, array('id': @launchEventID), @e){
+            if(@itemName == color('GREEN').'Kryptonite '.color('WHITE').'Arrow'){
+                bind('projectile_hit', null, array('id': @launchEventID), @e){
                     if(!is_array(@e['hit'])){
                         @vicID = @e['hit']
                         @vicName = player(@vicID)
@@ -58,8 +58,8 @@ proc(_isSpecialArrow,@item,@launchEventID){
                 }
                 return(true)
             }
-            if(@itemName == color(BLUE).'Magic '.color(WHITE).'Arrow'){
-                bind(projectile_hit, null, array('id': @launchEventID), @e){
+            if(@itemName == color('BLUE').'Magic '.color('WHITE').'Arrow'){
+                bind('projectile_hit', null, array('id': @launchEventID), @e){
                     if(!is_array(@e['hit'])){
                         @vicID = @e['hit']
                         @vicName = player(@vicID)
@@ -70,8 +70,8 @@ proc(_isSpecialArrow,@item,@launchEventID){
                 }
                 return(true)
             }
-            if(@itemName == color(DARK_GRAY).'The Phantom Zone '.color(WHITE).'Arrow'){
-                bind(projectile_hit, null, array('id': @launchEventID), @e){
+            if(@itemName == color('DARK_GRAY').'The Phantom Zone '.color('WHITE').'Arrow'){
+                bind('projectile_hit', null, array('id': @launchEventID), @e){
                     if(!is_array(@e['hit'])){
                         @vicID = @e['hit']
                         @vicName = player(@vicID)

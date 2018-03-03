@@ -1,12 +1,12 @@
-register_command(push, 
+register_command('push', 
     array(
-        description: 'Power',
-        permission: 'ch.alias.push',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Power',
+        'permission': 'ch.alias.push',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 3) {
-                return(FALSE) 
+                return(false) 
             }
 
             @player = player()

@@ -1,12 +1,12 @@
-register_command(forget, 
+register_command('forget', 
     array(
-        description: 'Erase a hero from history',
-        permission: 'powers.forget',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        executor: closure(@alias, @sender, @args) {
+        'description': 'Erase a hero from history',
+        'permission': 'powers.forget',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
-                return(FALSE) 
+                return(false) 
             }
             
             @ploc = ploc(@sender)
@@ -18,21 +18,21 @@ register_command(forget,
                     @vic = @aPlrs[0]
                 }
             }else{
-                tmsg(@sender,color(red).'Sorry, there is no one close enough!')
+                tmsg(@sender,color('RED').'Sorry, there is no one close enough!')
                 die()
             }
 
             if(@sender == @vic){
-                tmsg(@sender,color(red).'Sorry, this does not work on yourself!')
+                tmsg(@sender,color('RED').'Sorry, this does not work on yourself!')
                 die()
             }
             if(has_permission(@vic,'is.criminal')){
-                tmsg(@sender,color(red).'Sorry, they are in jail!')
+                tmsg(@sender,color('RED').'Sorry, they are in jail!')
                 die()
             }
             
             if(has_permission(@vic,'is.immune')){
-                tmsg(@sender,color(red).'Sorry, you cannot do that to them!')
+                tmsg(@sender,color('RED').'Sorry, you cannot do that to them!')
                 die()
             }
 
@@ -75,7 +75,7 @@ register_command(forget,
                 export('forgottenHeroes',null)
             ))
 
-            broadcast(@plrHero['name'].color(RED).' throws '.@vicHero['name'].color(RED).' into The Overvoid! Their memory fades from existence...')
+            broadcast(@plrHero['name'].color('RED').' throws '.@vicHero['name'].color('RED').' into The Overvoid! Their memory fades from existence...')
                 
         }
     )
