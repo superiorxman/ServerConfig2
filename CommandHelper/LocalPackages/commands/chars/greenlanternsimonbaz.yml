@@ -1,0 +1,29 @@
+maxHearts: 60
+buffs:
+- /effect <plr> 5 9999 15 true
+- /effect <plr> 10 9999 1 true
+- /shot give <plr> greenenergybeam
+- /give <plr> 95:5 64
+- /give <plr> minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring
+chatcolor: '&2'
+class: greenlanternsimonbaz
+name: §2Gr§8e§2en Lant§8e§2rn§8(SB)
+op: 'false'
+permissions:
+  superherocity:
+  - ch.alias.greenlanternsimonbaz
+  - ch.alias.carryplayer
+  - ch.alias.dismountplayer
+  - essentials.fly
+  - essentials.speed.fly
+  - essentials.speed
+powers:
+- /buff
+- /carryplayer <player>
+- /dismountplayer
+- /flyspeed <number>
+- /fly
+sig: I+lpIzxtBi4e2fXGRUC4sWxwEUfxT1fxrOMMPumjXrS+ETy97pnO4kDcMUozJ1d7mZCmdKde5gBXFJ5K1Kjtm4j+dSbj0g+lh/UDONoDKvf7OrOVj9oeeuAzPtFuR2otYsz2F+f6xEfwlYtvEA1RV/RNMFOPDGPcGN0DoxCK/HqIF+OKIybn1xvHuwn89IeLkerMs9AEsW1H0qvZ+CZb42lnfvgH/7OXiK2hC2cUjKlSvTWDIa8HtucJu53ZYd3+JdabgBk0wX98Ji12amvoXWV3NrWsZMYrV/ebEg7yAJGqTOm70kwYKDcvL19iKEO6N45y0wjv9jc8wCmcVHDpxI9o6CzL8UNv9Nev/SOGybeymPfiSNbjRV6aaFLBNeTHJ0Utdxdrwr3EyXZEmCwDgb36MLEClzxwenxLVTivkeykCo5lFJj0/ziqb2qLLsVBf/PS9MTknxv89ojUgaKruKlH10Ov8prs+lFDzBB3zdSuyazQhOrkcieNb4SEHnmUj5iEI6Syw8lWdqSivtBVVNT6G9xzntVeaz2odTYox7rNP3KfGQTqTgXsm3jbmfGM3+OIOUFtqBXvKPVIcGvkwyB0Ihg4MYn+ryUn4Cfg5MbMDGOhDOz4Y++Gt+YicgphrLAIl8A2zL0Ko8xeyeu0G3xaDoszDfS9buNgCvw8woc=
+speech: In the brightest day, in the blackest night, no evil shall escape my sight.
+trail: ''
+val: eyJ0aW1lc3RhbXAiOjE1MjAxNDk4MTg3NjcsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UzZmRhYzc2Y2ZhZDJlMjNmMWYxYmUxNzYwYjIyZTc5NjczODEwNTk5YWE3M2ZkZjRlYjExMTJjMzg1NDc1In19fQ==
