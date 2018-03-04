@@ -55,73 +55,89 @@ register_command('mindcontrol',
                 die()
             }
 
-            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @ploc = ploc(@player)
             @vloc = ploc(@vic)
-            if(has_permission(@player,'powers.mindcontrolnear')){
-                @plrClass = _getHeroClass(@player)
-                @radius = 0
-                if(@plrClass == 'wonderwoman'){
-                    @radius = 20
-                }else if(@plrClass == 'jericho'){
-                    @radius = 20
-                }else if(@plrClass == 'infinitythanos'){
-                    @radius = 5
-                }
-                if(@ploc['world'] == @vloc['world']){
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
-                    @dist = _distanceBetween(@ploc,@vloc)
-                    if(@dist > @radius){
-                        tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
-                        die()
-                    }
+            
+            if(@ploc['world'] != @vloc['world']){
+                tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                die()        
+            }
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @pClass = _getheroclass(@player)
+
+            @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pClass.'.yml')
+            @pHero = yml_decode(@contents)
+
+            if(array_index_exists(@pHero,'mindControlLimit')){
+                @radius = @pHero['mindControlLimit']
+                @dist = distance(@ploc,@vloc)
+                if(@dist > @radius){
+                    tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                    die()
                 }
             }
 
-
+            // summon villager at point of mind controller so players may damage his body
+            @ploc['y'] += 1
+            @markerUUID = spawn_entity('VILLAGER',1,@ploc)[0]
+            if(@markerUUID != null){
+                runas('~console',"/disguiseplayer ".@markerUUID.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@pHero['sig'].'","name":"textures","value":"'.@pHero['val'].'"}]}')
+                set_mob_name(@markerUUID,@player)
+                export(@player.'mindControlEntityID',@markerUUID)
+                // forward all damage to villager to mindcontroller at 10x the amount
+                bind('entity_damage',array('id':@player.'mindControlEntityDamaged'),array('id':@markerUUID),@e,@idd = puuid(@player),@playerr = @player){
+                    cancel()
+                    if(array_index_exists(@e,'damager')){
+                        damage_entity(@idd,(@e['amount']*10))
+                        tmsg(@playerr,'Your body is being damaged!')
+                    }
+                }
+            }else{
+                tmsg(@player,color('RED').'Sorry, you are in a protected location, you cannot mind control from here.')
+                die()
+            }
+            
+            // actual mind control begins here
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('lastUsedMindControl',60,@player)
             
-            broadcast("@player is now mindcontrolling @vic")
+            // get victims info
+            @vClass = _getheroclass(@vic)
+            try{
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@vClass.'.yml')
+                @vHero = yml_decode(@contents)
+            }catch(Exception @e){
+                @vHero = array('name':@player)
+            }
 
-            export(@player.'mindControlling',true)
-            export(@vic.'beingMindControlled',true)
-            
+            //makes it so no one can change into the mindcontroller person while they change classes
+            @existingForgottenHeroes = import('forgottenHeroes')
+            if(@existingForgottenHeroes == null || @existingForgottenHeroes == ''){
+                @existingForgottenHeroes = @pClass
+            }else if(is_array(@existingForgottenHeroes)){
+                array_push(@existingForgottenHeroes,@pClass)
+            }else{
+                @existingForgottenHeroes = array(@existingForgottenHeroes,@pClass)
+            }
+            export('forgottenHeroes',@existingForgottenHeroes)
+
+            @vInv = pinv(@vic)
+            @pInv = pinv(@player)
+            export(@player.'mindControlPlayerInv',@pInv)
+            export(@player.'mindControlPlayerOrigHero',@pClass)
+            export(@player.'mindControlVicOrigHero',@vClass)
             export(@player.'mindControlPlayerOrigLocation',@ploc)
             export(@player.'mindControlVicOrigGameMode',pmode(@vic))
-            
-            set_ploc(@player,@vloc)
+            export(@player.'mindControlling',true)
+            export(@vic.'beingMindControlled',true)
 
+            set_ploc(@player,@vloc)
             set_pmode(@vic,'SPECTATOR')
 
-            export(@player.'mindControlPlayerOrigHero',_getheroclass(@player))
-            @vHero = _getheroclass(@vic)
-            
-            try{
-                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@vHero.'.yml')
-                @hero = yml_decode(@contents)
-                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-                _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
-            }catch(Exception @e){
-                runas('~console','/disguiseplayer '.@player.' player '.@vic)
-            }
-            @markerPloc = import(@player.'mindControlPlayerOrigLocation')
-            @markerPloc['y'] += 1
-            @marker = spawn_entity('ZOMBIE',1,@markerPloc)[0]
-
-            set_mob_name(@marker,@player)
-            console(@marker)
-            export(@player.'mindControlEntityID',@marker)
-
-            bind('entity_damage',array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
-                cancel()
-                if(array_index_exists(@e,'damager')){
-                    damage_entity(@idd,(@e['amount']*10))
-                }else{
-                    die()
-                }
-                tmsg(@playerr,'Your body is being damaged!')
-            }
+            runas('~console','/pex user '.@player.' group set '.@vClass)
+            sudo('/fixskin')
+            set_pinv(@player,@vInv)
 
             bind('player_death',array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
@@ -131,14 +147,6 @@ register_command('mindcontrol',
                 cancel()
                 tmsg(@vicc,color('RED').'You are being mind controlled, you can\'t use any commands right now!')
             }
-
-            @mindControlTimer = set_timeout(30000,closure(
-                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
-                _mindControlStop(@player)
-            ))
-
-            export(@player.'mindControlTimer',@mindControlTimer)
-            
             bind('player_chat',associative_array('id': @player.'mindControlChatForward'),associative_array('player': @player),@event, @playerr = @player, @vicc = @vic){
                 cancel()
                 console('chat forwarded from '.@playerr. ' to '.@vicc)
@@ -156,11 +164,19 @@ register_command('mindcontrol',
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
             }
-
             bind('player_quit',associative_array('id': @player.'mindControlPlrLeave'),associative_array('player': @player),@event, @playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
             }
+
+            // end the mind control after 30 seconds
+            @mindControlTimer = set_timeout(30000,closure(
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                _mindControlStop(@player)
+            ))
+            export(@player.'mindControlTimer',@mindControlTimer)
+            runas('~console','/pex user '.@player.' timed add ch.alias.stopmindcontrol 30 superherocity')
+            broadcast(@player." is now mindcontrolling ".@vic)
         }
     )
 )

@@ -54,6 +54,7 @@ register_command('goworld',
                     @worldNiceName = @world[1]
                     broadcast(color('BLUE').@hero['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
+                        msg(color('RED').'Turn the autobuff off after you die using '.color('GREEN').'/autobuff off'.color('RED').' .')
                         msg(color('RED').'Your hunger will never be full on this server, '.color('GREEN').'to prevent regeneration'.color('RED').' .')
                         msg(color('RED').'Some characters have multiple skins! Try '.color('GREEN').'/skins'.color('RED').' !')
                         msg(color('RED').'Make your powers clickable with '.color('GREEN').'/powertool'.color('RED').' !')

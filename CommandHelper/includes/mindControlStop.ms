@@ -12,12 +12,9 @@ proc('_mindControlStop', @player,
     unbind(@player.'mindControlDeath')
    
     @ent = import(@player.'mindControlEntityID')
-    console(@ent)
     try{
         entity_remove(@ent)
-    }catch(Exception @e){
-        console('no mind control entity found to be removed')
-    }
+    }catch(Exception @e){}
 
     export(@player.'mindControlling',false)
 
@@ -34,15 +31,23 @@ proc('_mindControlStop', @player,
     @vicOrigGamemode = import(@player.'mindControlVicOrigGameMode')
     set_pmode(@vic,@vicOrigGamemode)
 
-    @pHero = import(@player.'mindControlPlayerOrigHero')
-    try{
-        include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pHero.'.yml')
-        @hero = yml_decode(@contents)
-        _changeSkin(@player,@hero['sig'],@hero['val'])
-    }catch(Exception @e){
-        runas('~console','/undisguiseplayer '.@player)
+    @pClass = import(@player.'mindControlPlayerOrigHero')
+
+    @existingForgottenHeroes = import('forgottenHeroes')
+    if(is_array(@existingForgottenHeroes)){
+        array_remove_values(@existingForgottenHeroes,@pClass)
+    }else{
+        @existingForgottenHeroes = null
     }
+    export('forgottenHeroes',@existingForgottenHeroes)
+
+    @pInv = import(@player.'mindControlPlayerInv')
+    @vInv = pinv(@player)
+    set_pinv(@vic,@vInv)
+    set_pinv(@player,@pInv)
+
+    runas('~console','/pex user '.@player.' group set '.@pClass)
+    runas('~console','/sudo '.@player.' c:/fixskin')
 
     tmsg(@vic,color('RED').'You are no longer being mind controlled by '.@player)
     tmsg(@player,color('RED').'You are no longer mind controlling '.@vic)

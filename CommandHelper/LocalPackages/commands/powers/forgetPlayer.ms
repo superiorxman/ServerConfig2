@@ -72,7 +72,13 @@ register_command('forget',
             runas(@vic,'/mainmenu')
 
             set_timeout(300000,closure(
-                export('forgottenHeroes',null)
+                @existingForgottenHeroes = import('forgottenHeroes')
+                if(is_array(@existingForgottenHeroes)){
+                    array_remove_values(@existingForgottenHeroes,@pClass)
+                }else{
+                    @existingForgottenHeroes = null
+                }
+                export('forgottenHeroes',@existingForgottenHeroes)
             ))
 
             broadcast(@plrHero['name'].color('RED').' throws '.@vicHero['name'].color('RED').' into The Overvoid! Their memory fades from existence...')
