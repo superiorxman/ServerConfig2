@@ -22,7 +22,7 @@ permissions:
   - -essentials.enchantments.allowunsafe
   - essentials.enchant
   - powers.float
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - magic.cast.time
   - -essentials.protect.damage.fall
 powers:

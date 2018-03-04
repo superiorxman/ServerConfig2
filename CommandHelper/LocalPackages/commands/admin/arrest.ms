@@ -1,4 +1,4 @@
-register_command('timeout', 
+register_command('arrest', 
 
     array(
         'description': 'Arrests a player and Jails them',
@@ -9,6 +9,7 @@ register_command('timeout',
         'executor': closure(@alias, @sender, @args) {
         
             
+            @cop = @sender
             @vic = @args[0]
             ponline(@vic)
             @vic = player(@vic)
@@ -17,10 +18,10 @@ register_command('timeout',
             if(!is_numeric(@duration)){
                 msg(color('AQUA').'--------------------')
                 msg(color('RED').'Usage: ')
-                msg(color('RED').'/timeout '.color('GREEN').'<player> '.color('YELLOW').'<durationInSeconds> '.color('GOLD').'<reason('.color('WHITE').'at least 10 words'.color('GOLD').')>')
+                msg(color('RED').'/arrest '.color('GREEN').'<player> '.color('YELLOW').'<durationInSeconds> '.color('GOLD').'<reason('.color('WHITE').'at least 10 words'.color('GOLD').')>')
                 msg(color('AQUA').'--------------------')
                 msg(color('RED').'Example: ')
-                msg(color('RED').'/timeout '.color('GREEN').'xNotch '.color('YELLOW').'60 '.color('GOLD').'spamming chat repeatedly with "im the best" and not listening to police warnings')
+                msg(color('RED').'/arrest '.color('GREEN').'xNotch '.color('YELLOW').'60 '.color('GOLD').'spamming chat repeatedly with "im the best" and not listening to police warnings')
                 msg(color('AQUA').'--------------------')
                 msg(color('RED').'That would jail notch for 60 seconds.')
                 return(false)
@@ -44,17 +45,12 @@ register_command('timeout',
             @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                     
             @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
-            if (@cop[0] == '#') {
-                @result = query(@profile,'INSERT INTO `criminals` '.
-                                            'VALUES(?,?,?,?,?,?,?,?)',
-                                            @plr,@vicUUID,@reason,'TIMEOUT:'.@duration,@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
-                )
-            } else {
-                @result = query(@profile,'INSERT INTO `criminals` '.
-                                            'VALUES(?,?,?,?,?,?,?,?)',
-                                            @plr,@vicUUID,@reason,'TIMEOUT:'.@duration,@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
-                )
-            }
+            
+            @result = query(@profile,'INSERT INTO `criminals` '.
+                'VALUES(?,?,?,?,?,?,?,?)',
+                @plr,@vicUUID,@reason.' | '.@duration.' seconds','ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+            )
+            
 
             runas('~console', '/sudo '.@vic.' c:/ch leave local')
             runas('~console', '/sudo '.@vic.' c:/ch join global')
@@ -69,6 +65,9 @@ register_command('timeout',
             ))			
             set_timeout(1500,closure(
                 queue_push(closure(set_pmode(@vic,'ADVENTURE')))
+
+                broadcast(@plr.color('RED').' HAS BEEN SENT TO JAIL BY '.color('WHITE').@cop.color('RED').' FOR '.color('YELLOW').@reason)					
+                
                 tmsg(@vic,color('RED').'You have been jailed for '.@duration.'seconds!')
                 tmsg(@vic,color('RED').'Please take this time to read the /rules')
             ))

@@ -15,7 +15,7 @@ op: 'false'
 permissions:
   superherocity:
   - magic.cast.mach5punch
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - powers.wallrun
   - ch.alias.dismountplayer
   - ch.alias.carryplayer

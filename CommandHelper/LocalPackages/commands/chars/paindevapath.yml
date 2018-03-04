@@ -16,7 +16,7 @@ permissions:
   - powers.float
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - Magic.cast.almightypush
   - Magic.cast.universalpull
 powers:

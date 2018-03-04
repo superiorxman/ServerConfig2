@@ -10,7 +10,7 @@ permissions:
   superherocity:
   - magic.cast.groundpound
   - magic.cast.stonetouch
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /cast groundpound

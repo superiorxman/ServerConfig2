@@ -15,6 +15,8 @@ prepworld:/prepworld = >>>
     queue_push(closure(sudo('/gamerule maxEntityCramming 2')))
     queue_push(closure(sudo('/gamerule mobGriefing false')))
     queue_push(closure(sudo('/gamerule naturalRegeneration false')))
+    queue_push(closure(sudo('/gamerule commandBlockOutput false')))
+    queue_push(closure(sudo('/gamerule logAdminCommands true')))
 
 
 <<<

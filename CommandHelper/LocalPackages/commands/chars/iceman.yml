@@ -10,7 +10,7 @@ op: 'false'
 permissions:
   superherocity:
   - magic.cast.freezeray
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /run <0-2>

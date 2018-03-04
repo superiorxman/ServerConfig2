@@ -2,6 +2,7 @@ maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook
+- /give <plr> minecraft:snowball 10 name:&8Batarang
 chatcolor: '&7'
 class: batwoman
 haste: 2
@@ -14,7 +15,6 @@ permissions:
   - ch.alias.grapplinghook
 powers:
 - /buff
-- /batarang
 - /grapplinghook
 - /jump <0-3>
 - /run <0-2>

@@ -20,7 +20,7 @@ register_command('mainmenu',
             _mortal(@plr)
             queue_push(closure(runas('~console','/warp mainmenu '.@plr)))
             set_timeout(3100,closure(
-                set_peffect(@plr,14,1,9999,true, false)
+                queue_push(closure(set_peffect(@plr,14,1,9999,true,false)))
             ))
 
         }

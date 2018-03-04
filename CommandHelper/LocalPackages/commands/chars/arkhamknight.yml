@@ -13,7 +13,7 @@ op: 'false'
 permissions:
   superherocity:
   - powers.militia
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - magic.cast.stungrenade
   - ch.alias.grapplinghook
   - ch.alias.shadowhide

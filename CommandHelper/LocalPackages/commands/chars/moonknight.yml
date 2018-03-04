@@ -9,7 +9,7 @@ op: 'false'
 permissions:
   superherocity:
   - magic.cast.crescentthrow
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /cast crescentthrow

@@ -11,7 +11,7 @@ permissions:
   - magic.cast.forcepush
   - magic.cast.forcepull
   - magic.cast.forcegrip
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /jump <0-4>

@@ -12,7 +12,7 @@ permissions:
   superherocity:
   - ch.alias.forcepush
   - -essentials.protect.damage.fall
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - magic.cast.forcepull
 powers:
 - /buff

@@ -9,7 +9,7 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - Magic.commands.cast
+  - magic.commands.disabled.cast
   - Magic.cast.acidshot
 powers:
 - /buff

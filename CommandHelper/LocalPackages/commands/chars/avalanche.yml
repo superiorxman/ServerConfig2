@@ -7,7 +7,7 @@ op: 'false'
 permissions:
   superherocity:
   - magic.cast.quake
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /cast quake

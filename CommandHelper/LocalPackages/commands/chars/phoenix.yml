@@ -10,7 +10,7 @@ op: 'false'
 permissions:
   superherocity:
   - powers.herotransform
-  - magic.commands.cast
+  - magic.commands.disabled.cast
   - magic.cast.firebolt
   - magic.cast.forcefield
   - magic.cast.telekinesis

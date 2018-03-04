@@ -10,7 +10,7 @@ permissions:
   superherocity:
   - powers.throwfeather
   - magic.cast.feathershot
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /cast feathershot

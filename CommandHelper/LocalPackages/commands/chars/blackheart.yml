@@ -12,7 +12,7 @@ permissions:
   - magic.cast.demonicblast
   - magic.cast.darkpound
   - magic.cast.soulshock
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /jump <0-3>

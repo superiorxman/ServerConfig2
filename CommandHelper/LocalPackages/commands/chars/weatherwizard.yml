@@ -1,6 +1,7 @@
 buffs:
 - /shot give <plr> icespike
 - /give <plr> minecraft:ghast_tear 1 19:50 name:&fWindblast
+- /mgive <plr> tsunamiwand
 chatcolor: '&b'
 class: weatherwizard
 name: §0We§7at§8her §bWi§8za§7r§0d
@@ -10,14 +11,11 @@ permissions:
   - ch.alias.wind
   - essentials.weather
   - essentials.fly
-  - magic.cast.tsunami
-  - magic.commands.cast
   - powers.lightningpunch
 powers:
 - /buff
 - /fly
 - /weather
-- /cast tsunami
 - Throw lightning with an empty hand.
 - /lightningpunch <on/off>
 - /wind <player>

@@ -13,7 +13,7 @@ permissions:
   - powers.float
   - magic.cast.telekinesis
   - magic.cast.forcefield
-  - magic.commands.cast
+  - magic.commands.disabled.cast
 powers:
 - /buff
 - /cast forcefield
