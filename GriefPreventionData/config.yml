@@ -23,6 +23,7 @@ GriefPrevention:
     hallofjustice: -1
     pokemon: -1
     metropolis: -1
+    jail: -1
     arcade: -1
     hogwarts: -1
     thephantomzone: -1
@@ -31,7 +32,7 @@ GriefPrevention:
     soulstone: -1
   Claims:
     Mode:
-      test: Survival
+      test: Disabled
       pokemon: Disabled
       survival112: Survival
       metropolis: Disabled
@@ -40,8 +41,8 @@ GriefPrevention:
       broville: Disabled
       gotham: Disabled
       titanstower: Disabled
-      infiniteparkour: Survival
-      soulstone: Survival
+      infiniteparkour: Disabled
+      soulstone: Disabled
       ooo: Disabled
       survival112_the_end: Survival
       survival112_nether: Survival
@@ -53,9 +54,10 @@ GriefPrevention:
       hallofjustice: Disabled
       infinitycity: Disabled
       waynemanor: Disabled
-      thephantomzone: Survival
+      thephantomzone: Disabled
       arcade: Disabled
-      speedforce: Survival
+      speedforce: Disabled
+      jail: Disabled
       mainmenu: Disabled
       starktower: Disabled
       fortressofsolitude: Disabled
@@ -136,6 +138,7 @@ GriefPrevention:
       hallofjustice: true
       pokemon: true
       metropolis: true
+      jail: true
       arcade: true
       hogwarts: true
       thephantomzone: true

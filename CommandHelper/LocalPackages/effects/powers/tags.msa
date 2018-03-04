@@ -1,0 +1,29 @@
+tagset:/tagset = >>>
+
+    @plr = player()
+    @pinv = pinv(@plr)
+
+    @itemNum = 0
+    foreach(@item in @pinv){
+        if(@item != null){
+            runas('~console','/nbt *'.@plr.' Inventory['.@itemNum.'].tag.compound = {somekey'.@itemNum.':somval'.@itemNum.'}')
+            @itemNum++
+        }
+    }
+
+<<<
+
+tagget:/tagget = >>>
+
+    @plr = player()
+    @pinv = pinv(@plr)
+
+    @itemNum = 0
+    foreach(@item in @pinv){
+        if(@item != null){
+            sudo('/nbt *'.@plr.' Inventory['.@itemNum.'].tag.compound')
+            @itemNum++
+        }
+    }
+
+<<<

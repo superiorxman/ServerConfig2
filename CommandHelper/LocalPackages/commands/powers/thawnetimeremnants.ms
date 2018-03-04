@@ -32,7 +32,7 @@ register_command('thawnetimeremnants',
             export(@player.'thawnetimeremnantsClones',@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
-                    runas('~console',"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
+                    queue_push(closure(runas('~console',"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')))
                     tame_mob(@player,@uuid)
                     set_mob_effect(@uuid, 21, 4, 9999, true, false)
                     set_mob_effect(@uuid, 1, 4, 9999, true, false)

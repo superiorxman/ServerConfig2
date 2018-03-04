@@ -2,43 +2,107 @@ register_command('timeout',
 
     array(
         'description': 'Arrests a player and Jails them',
-        'usage': '/timeout <player> <reason>',
+        'usage': '',
         'permission': 'ch.alias.timeout',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
         'executor': closure(@alias, @sender, @args) {
         
-            if(array_size(@args) < 10){
+            
+            @vic = @args[0]
+            ponline(@vic)
+            @vic = player(@vic)
+            
+            @duration = @args[1]
+            if(!is_numeric(@duration)){
+                msg(color('AQUA').'--------------------')
+                msg(color('RED').'Usage: ')
+                msg(color('RED').'/timeout '.color('GREEN').'<player> '.color('YELLOW').'<durationInSeconds> '.color('GOLD').'<reason('.color('WHITE').'at least 10 words'.color('GOLD').')>')
+                msg(color('AQUA').'--------------------')
+                msg(color('RED').'Example: ')
+                msg(color('RED').'/timeout '.color('GREEN').'xNotch '.color('YELLOW').'60 '.color('GOLD').'spamming chat repeatedly with "im the best" and not listening to police warnings')
+                msg(color('AQUA').'--------------------')
+                msg(color('RED').'That would jail notch for 60 seconds.')
+                return(false)
+            }
+
+            if(@duration > 300 || @duration < 30){
+                msg(color('RED').'Only values between 30 and 300 allowed.')
+                return(false)
+            }
+
+            if(array_size(@args) < 12){
                 msg(color('RED').'Please write a more detailed report.')
                 return(false)
             }
-                
-            @vic = @args[0]
 
-            for (@i = 1, @i < @argsLength, @i++){
+            for (@i = 2, @i < @argsLength, @i++){
                 @reason = @reason.@args[@i].' '
             }
                 
             @reason = trim(@reason)
+            @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+                    
+            @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
+            if (@cop[0] == '#') {
+                @result = query(@profile,'INSERT INTO `criminals` '.
+                                            'VALUES(?,?,?,?,?,?,?,?)',
+                                            @plr,@vicUUID,@reason,'TIMEOUT:'.@duration,@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
+                )
+            } else {
+                @result = query(@profile,'INSERT INTO `criminals` '.
+                                            'VALUES(?,?,?,?,?,?,?,?)',
+                                            @plr,@vicUUID,@reason,'TIMEOUT:'.@duration,@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+                )
+            }
 
-            runas('~console', '/sudo '.@plr.' c:/ch leave local')
-            runas('~console', '/sudo '.@plr.' c:/ch join global')
+            runas('~console', '/sudo '.@vic.' c:/ch leave local')
+            runas('~console', '/sudo '.@vic.' c:/ch join global')
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-            _mortal(@plr)
+            _mortal(@vic)
             
-            set_timeout(3000,closure(
-                runas("~console", "/pex user ".@plr." group set criminal")
-                runas("~console", "/tptoggle ".@plr." off")
-                runas("~console", "/warp jail ".@plr)						
+            set_timeout(1000,closure(
+                @jailNum = rand(1,3)
+                queue_push(closure(runas("~console", "/pex user ".@vic." group set criminal")))
+                queue_push(closure(runas("~console", "/tptoggle ".@vic." off")))
+                queue_push(closure(runas("~console", "/warp jail".@jailNum." ".@vic)						))
             ))			
-            set_timeout(5000,closure(
-                set_pmode(@plr,'SURVIVAL')				
-            ))	
-        
+            set_timeout(1500,closure(
+                queue_push(closure(set_pmode(@vic,'ADVENTURE')))
+                tmsg(@vic,color('RED').'You have been jailed for '.@duration.'seconds!')
+                tmsg(@vic,color('RED').'Please take this time to read the /rules')
+            ))
+
+            set_timeout((@duration * 1000),closure(
+                _mortal(@vic)
+                queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
+                tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
+            ))
         }
     )
 )
 
+register_command('release', 
+    array(
+        'description': 'Release a player from Jail',
+        'usage': '/release <player>',
+        'permission': 'ch.alias.release',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+    
+        'executor': closure(@alias, @sender, @args) {
+        
+            @vic = @args[0]
+            ponline(@vic)
+            @vic = player(@vic)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            _mortal(@vic)
+            queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
+            tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
+                
+        }
+    )
+)
+/*
 register_command('arrest', 
 
     array(
@@ -174,7 +238,7 @@ register_command('release',
         }
     )
 )
-
+*/
 register_command('warn', 
 
     array(
