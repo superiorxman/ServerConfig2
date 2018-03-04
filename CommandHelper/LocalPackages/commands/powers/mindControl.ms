@@ -138,6 +138,7 @@ register_command('mindcontrol',
             runas('~console','/pex user '.@player.' group set '.@vClass)
             sudo('/fixskin')
             set_pinv(@player,@vInv)
+            sudo('/buff')
 
             bind('player_death',array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')

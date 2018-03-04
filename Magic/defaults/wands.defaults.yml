@@ -515,6 +515,7 @@ borealis:
         - force
 
 broomstick:
+    class: broomrider
     path: broom
     mode: cast
     keep: true
@@ -1588,6 +1589,7 @@ talisman:
   color: random
   effect_bubbles: true
   keep: true
+  locked: true
 quickcast_enable:
     icon: diamond_axe:206
     upgrade: true

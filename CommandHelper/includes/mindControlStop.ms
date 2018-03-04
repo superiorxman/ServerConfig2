@@ -48,6 +48,7 @@ proc('_mindControlStop', @player,
 
     runas('~console','/pex user '.@player.' group set '.@pClass)
     runas('~console','/sudo '.@player.' c:/fixskin')
+    sudo('/buff')
 
     tmsg(@vic,color('RED').'You are no longer being mind controlled by '.@player)
     tmsg(@player,color('RED').'You are no longer mind controlling '.@vic)

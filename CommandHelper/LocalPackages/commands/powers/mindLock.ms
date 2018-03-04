@@ -59,8 +59,8 @@ register_command('mindlock',
             export(@plr.'isMindLocked',true)
             export(@plr.'mindLockedBy',@vic)
             
-            tmsg(@vic,color('RED').'You have been mindlocked by '.@plr)
-            tmsg(@plr,color('RED').'You have mindlocked '.@vic)
+            tmsg(@vic,color('RED').'You have been mindlocked by '.@plr.' for 30 seconds')
+            tmsg(@plr,color('RED').'You have mindlocked '.@vic.' for 30 seconds')
 
             set_timeout(60000,closure(
                 @isMindLocked = import(@plr.'isMindLocked')
