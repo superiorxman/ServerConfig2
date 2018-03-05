@@ -31,8 +31,8 @@ register_command('buff',
 
             @puuid = puuid(@plr)
             if(array_index_exists(@hero,'maxHearts')){
-                queue_push(closure(set_attribute(@puuid,'maxHealth',@hero['maxHearts'])))
-                queue_push(closure(set_phealth(@plr,@hero['maxHearts'])))
+                queue_push(closure(set_attribute(@puuid,'maxHealth',(@hero['maxHearts'] * 2))))
+                queue_push(closure(set_phealth(@plr,(@hero['maxHearts'] * 2))))
             }else{
                 queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
             }

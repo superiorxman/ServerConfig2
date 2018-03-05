@@ -1,10 +1,20 @@
+1.68
+
+    Fixed Copy Weapon To Off Hand
+        Packet which displays weapon in off hand is now being sent to every player in world and not only for the player who is holding weapon
+    Fixed bugs
+    This update also contains code changes
+        Mostly removed unused code parts
+
 1.67
 
-    Fixed bugs
+    Added miniaturepets compatibility(?)
+        Someone has to test this
     Added ability to give weapons with skins via command
         Example command /csp give weapon AK-47_CSP skin Red DeeCaaD
     Added soulbound
         Keep weapons when dying
+
 
 1.66
 

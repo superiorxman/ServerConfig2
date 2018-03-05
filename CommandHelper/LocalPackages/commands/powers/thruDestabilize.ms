@@ -6,14 +6,10 @@ register_command('thrudestabilize',
         'executor': closure() {        
             
             sudo("/thru")
-    
-            if(has_permission("powers.thru.destabilize")){
-                set_timeout(500,closure(
-                    @ploc = ploc()
-                    explosion(@ploc,null,true)
-                ))
-            }
-                
+            set_timeout(500,closure(
+                @ploc = ploc()
+                explosion(@ploc,null,true)
+            ))                
         }
     )
 )

@@ -37,6 +37,8 @@ register_command('arrest',
                 return(false)
             }
 
+            @argsLength = array_size(@args)
+            @reason = ''
             for (@i = 2, @i < @argsLength, @i++){
                 @reason = @reason.@args[@i].' '
             }
@@ -45,10 +47,10 @@ register_command('arrest',
             @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                     
             @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
-            
+            @ip = pinfo(@vic)[3]
             @result = query(@profile,'INSERT INTO `criminals` '.
                 'VALUES(?,?,?,?,?,?,?,?)',
-                @plr,@vicUUID,@reason.' | '.@duration.' seconds','ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+                @vic,puuid(@vic),@reason.' | '.@duration.' seconds','ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
             )
             
 
@@ -62,11 +64,11 @@ register_command('arrest',
                 queue_push(closure(runas("~console", "/pex user ".@vic." group set criminal")))
                 queue_push(closure(runas("~console", "/tptoggle ".@vic." off")))
                 queue_push(closure(runas("~console", "/warp jail".@jailNum." ".@vic)						))
-            ))			
+            ))
             set_timeout(1500,closure(
                 queue_push(closure(set_pmode(@vic,'ADVENTURE')))
 
-                broadcast(@plr.color('RED').' HAS BEEN SENT TO JAIL BY '.color('WHITE').@cop.color('RED').' FOR '.color('YELLOW').@reason)					
+                broadcast(@vic.color('RED').' HAS BEEN SENT TO JAIL BY '.color('WHITE').@cop.color('RED').' FOR '.color('YELLOW').@reason)					
                 
                 tmsg(@vic,color('RED').'You have been jailed for '.@duration.'seconds!')
                 tmsg(@vic,color('RED').'Please take this time to read the /rules')

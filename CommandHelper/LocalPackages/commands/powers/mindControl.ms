@@ -78,29 +78,31 @@ register_command('mindcontrol',
                 }
             }
 
+            // actual mind control begins here
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('lastUsedMindControl',60,@player)
+
             // summon villager at point of mind controller so players may damage his body
             @ploc['y'] += 1
             @markerUUID = spawn_entity('VILLAGER',1,@ploc)[0]
+            @puuid = puuid(@player)
             if(@markerUUID != null){
                 runas('~console',"/disguiseplayer ".@markerUUID.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@pHero['sig'].'","name":"textures","value":"'.@pHero['val'].'"}]}')
                 set_mob_name(@markerUUID,@player)
                 export(@player.'mindControlEntityID',@markerUUID)
                 // forward all damage to villager to mindcontroller at 10x the amount
-                bind('entity_damage',array('id':@player.'mindControlEntityDamaged'),array('id':@markerUUID),@e,@idd = puuid(@player),@playerr = @player){
+                bind('entity_damage',array('id':@player.'mindControlEntityDamaged'),array('id':@markerUUID),@e,@idd = @puuid,@playerr = @player){
                     cancel()
-                    if(array_index_exists(@e,'damager')){
+                    if(array_index_exists(@e,'damager') && @e['damager'] != @playerr){
                         damage_entity(@idd,(@e['amount']*10))
                         tmsg(@playerr,'Your body is being damaged!')
                     }
                 }
             }else{
                 tmsg(@player,color('RED').'Sorry, you are in a protected location, you cannot mind control from here.')
+                _coolDown('lastUsedMindControl',1,@player)
                 die()
             }
-            
-            // actual mind control begins here
-            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMindControl',60,@player)
             
             // get victims info
             @vClass = _getheroclass(@vic)
@@ -134,9 +136,10 @@ register_command('mindcontrol',
 
             set_ploc(@player,@vloc)
             set_pmode(@vic,'SPECTATOR')
+            set_pspectator_target(@vic,@puuid)
 
             runas('~console','/pex user '.@player.' group set '.@vClass)
-            sudo('/fixskin')
+            runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['sig'].'","name":"textures","value":"'.@vHero['val'].'"}]}')
             set_pinv(@player,@vInv)
             sudo('/buff')
 

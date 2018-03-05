@@ -13,7 +13,7 @@ proc('_checkJobs',@player,
         msg(color('RED').'That player is already a Head Helper')
         return(false)
     }else if(has_permission(@player,'is.helper')){
-        msg(color('RED').'That player is already a Builder')
+        msg(color('RED').'That player is already a Helper')
         return(false)
     }
 
@@ -21,7 +21,7 @@ proc('_checkJobs',@player,
         msg(color('RED').'That player is already a Head Coder')
         return(false)
     }else if(has_permission(@player,'is.coder')){
-        msg(color('RED').'That player is already a Builder')
+        msg(color('RED').'That player is already a Coder')
         return(false)
     }
 
@@ -29,7 +29,7 @@ proc('_checkJobs',@player,
         msg(color('RED').'That player is already a Head Police')
         return(false)
     } if(has_permission(@player,'is.police')){
-        msg(color('RED').'That player is already a Builder')
+        msg(color('RED').'That player is already a Police')
         return(false)
     }
 
@@ -37,7 +37,7 @@ proc('_checkJobs',@player,
         msg(color('RED').'That player is already a Head Lawyer')
         return(false)
     }else if(has_permission(@player,'is.lawyer')){
-        msg(color('RED').'That player is already a Builder')
+        msg(color('RED').'That player is already a Lawyer')
         return(false)
     }
 
@@ -45,7 +45,7 @@ proc('_checkJobs',@player,
         msg(color('RED').'That player is already a Head Judge')
         return(false)
     }else if(has_permission(@player,'is.judge')){
-        msg(color('RED').'That player is already a Builder')
+        msg(color('RED').'That player is already a Judge')
         return(false)
     }
 

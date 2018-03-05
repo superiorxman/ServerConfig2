@@ -134,26 +134,12 @@ Death_Messages:
     Message: squished too much
   Hide_By_Gamerule: false
 Broadcaster:
-  Enabled: false
+  Enabled: true
   Mode: 0
   Prefix: '&8[&2Tip&8]&2'
   Suffix: ''
   Delay_Seconds: 180
   Messages:
     global:
-    - Hey, {player}, did you know that we are running ChatControl?
-    - Check out &ahttps://spigotmc.org/resources/10258
-    hardcore:
-    - Grief is not permitted what-so-ever and every griefer will be banned.
-    - Can you survive the night on {world} world?
-    hardcore_nether:
-    - includeFrom hardcore
-    ignored-world:
-    - excludeGlobal
-    creative:
-    - excludeGlobal
-    - Welcome on Creative world. Enjoy your gamemode :)
-    - "This is an example of multi-line.\nUse it if the new line character \nis not\
-      \ working for you."
-    - This is another message, this time only on one line!
+    - '&cRemeber to use &a/reportglitch <description> &cto report server issues!'
   Sound: none
