@@ -5,7 +5,7 @@ buffs:
 chatcolor: '&8'
 class: blackcanarydinahdrake
 haste: 2
-jump: 3
+jump: 2
 name: §0Black Canary§8(§0DD§8)
 op: 'false'
 permissions:
@@ -14,11 +14,11 @@ permissions:
   - ch.alias.psypush
 powers:
 - /buff
-- /jump <0-3>
-- /run <0-3>
+- /jump <0-2>
+- /run <0-2>
 - /haste <0-2>
 - /psypush <player>
-run: 3
+run: 2
 sig: ihFZFpKRSHA/zcivFbHGelhwL7cFQ0MZYVqLLUojPUs1nHqppKXSOBWBPDMcQutXRZD8bUuCzehs5NO4fr+t/6A4Pb/NaEY8UsUSnjn0wVSyTw/Kspxst6lk2zrJyQQ/OPV4scUSvX1WFkGas4VJ6053QjZ0rsThzQQ+4+dukmUExx5wxQk7TnF7HZyPYe/MQsZ7VIeK7dihBJ9PDx/KGjcbRw/HMgkO1ky/Xir8NYfQO+l09090LoY939WJ56Na77atspkRWXSp9zNFX/gLtzYxdeyUMNn+R+t2CRIH4aBGfmzsK8eUuHgFxTjb45MoAEEyHmc0x6WgO+bl5G7fAJPNq7Qt0bedYPP5/sgo8mM7b9nA1bvA8WngOMtK3tMw8OG5WEXHdalaVljciK6XoW3h8A9aXIeOBY2DA8vGHFkdEJ/+4oAFVMiq/26kqdc6lG6FnvBY69kwOQcaWkurF+lgcU8wfR3Q6uVchNjHLHxNtrv/WqTvh8i2mBTti54Hgu5oWr25AdExGDb8Bwuuf60ifG5EMjVgfu45XQ4IhCLhPhlz+AM8R75HPi3yD6gRMN/MSfW17pzTYSmZ3BjJNKq2Cs7gKYVhJOPSGmuFTWYZHO1hp/TYuh1/S7b0mm2Xcq/AYeElTz9IG7lyfukx0cj5L6cYy4JqJQVNN6x1PRE=
 speech: I am the Black Canary!
 trail: ''
