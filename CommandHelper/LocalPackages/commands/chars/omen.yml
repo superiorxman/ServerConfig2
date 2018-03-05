@@ -1,9 +1,7 @@
-maxHearts: 80
+maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 10 true
-- /effect <plr> 10 9999 1 true
-- /effect <plr> 11 9999 2 true
-- /shot give <plr> darkmagic
+- /shot give <plr> greenenergybeam
 chatcolor: '&a'
 class: omen
 name: §0O§2me§0n
@@ -14,11 +12,8 @@ permissions:
    - ch.alias.mindlock
   - -essentials.protect.damage.fall
   - ch.alias.omen
-  - magic.commands.disabled.cast
-  - magic.cast.telekinesis
 powers:
 - /buff
-- /cast telekinesis
 - /fly
 - /mindlock <playername>
 - /confuse <plr>
