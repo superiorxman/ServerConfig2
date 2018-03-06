@@ -1,21 +1,17 @@
 maxHearts: 30
 buffs:
 - /effect <plr> 12 9999 1 true
-- /effect <plr> 5 9999 12 true
+- /effect <plr> 5 9999 5 true
 chatcolor: '&6'
 class: firestormjacksonstein
 name: §cFi§ere§cst§eor§cm§8(§cJ§eS§8)
 op: 'false'
 permissions:
   superherocity:
-  - ch.alias.firestormjacksonstein
-  - ch.alias.transmute
   - essentials.fly
   - powers.fireballpunch
-  - essentials.speed.fly
 powers:
 - /buff
-- /flyspeed <number>
 - /fly
 - /transmute <blocktype> [color]
 - /cast fireballpunch
