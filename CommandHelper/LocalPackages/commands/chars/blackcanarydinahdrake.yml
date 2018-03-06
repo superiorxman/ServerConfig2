@@ -4,7 +4,6 @@ buffs:
 - /give <plr> minecraft:stick 1 19:3 16:3 name:&0Ca&0na&0ry_&0Ba&0to&0n
 chatcolor: '&8'
 class: blackcanarydinahdrake
-haste: 2
 name: §0Black Canary§8(§0DD§8)
 op: 'false'
 permissions:
@@ -12,7 +11,6 @@ permissions:
   - ch.alias.psypush
 powers:
 - /buff
-- /run <0-2>
 - /haste <0-2>
 - /psypush <player>
 run: 2
