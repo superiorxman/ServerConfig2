@@ -6,15 +6,13 @@ name: §0O§2me§0n
 op: 'false'
 permissions:
   superherocity:
-  - essentials.fly
-   - ch.alias.mindlock
+  - ch.alias.mindlock
   - ch.alias.confuse
   - ch.alias.unconfuse
   - ch.alias.omen
   - essentials.msg
 powers:
 - /buff
-- /fly
 - /mindlock <playername>
 - /confuse <player>
 - /msg <playername>
