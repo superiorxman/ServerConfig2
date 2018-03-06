@@ -153,34 +153,37 @@ register_command('selectchar',
                 }
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
                 @hero = yml_decode(@contents)
-                @plrs = all_players()
-                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                foreach(@playa in @plrs)
-                {
-                    @otherPlayerGroup = _getheroclass(@playa)
-                    if(@otherPlayerGroup == @hero['class'] && @player != @playa){
-                        msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                        msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['name'].color('RED').'.')
-                        msg(color('DARK_RED').'Please choose a different character.')
-                        msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                        die()
-                    }
-                    if(array_index_exists(@hero,'alts')){
-                        @alts = @hero['alts']
-                        foreach(@alt in @alts){
-                            if(@alt == @otherPlayerGroup){
-                                @h1 = @hero['name']
-                                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
-                                @hero = yml_decode(@contents)
-                                @h2 = @hero['name']
-                                msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                                msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@h2.color('RED').'.')
-                                msg(color('RED').'Try again with:')
-                                msg(color('GREEN').'/characterselect')
-                                msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                                die()
-                            }
-                        } 
+
+                if(!array_index_exists(@hero,'allowMultiple') || @hero['allowMultiple'] =! true){
+                    @plrs = all_players()
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    foreach(@playa in @plrs)
+                    {
+                        @otherPlayerGroup = _getheroclass(@playa)
+                        if(@otherPlayerGroup == @hero['class'] && @player != @playa){
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                            msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['name'].color('RED').'.')
+                            msg(color('DARK_RED').'Please choose a different character.')
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                            die()
+                        }
+                        if(array_index_exists(@hero,'alts')){
+                            @alts = @hero['alts']
+                            foreach(@alt in @alts){
+                                if(@alt == @otherPlayerGroup){
+                                    @h1 = @hero['name']
+                                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                                    @hero = yml_decode(@contents)
+                                    @h2 = @hero['name']
+                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                    msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@h2.color('RED').'.')
+                                    msg(color('RED').'Try again with:')
+                                    msg(color('GREEN').'/characterselect')
+                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                    die()
+                                }
+                            } 
+                        }
                     }
                 }
                 clear_task(import(@player.'isBurningInSunlight'))

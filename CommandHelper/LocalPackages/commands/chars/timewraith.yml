@@ -1,3 +1,4 @@
+allowMultiple: true
 maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
@@ -7,7 +8,7 @@ chatcolor: '&8'
 class: timewraith
 haste: 2
 name: §8Time §0Wraith
-op: 'false'
+op: false
 permissions:
   speedforce:
   - ch.alias.speedforcebuffs

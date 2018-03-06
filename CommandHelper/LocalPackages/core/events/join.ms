@@ -42,37 +42,38 @@ bind('player_join',null,null,@event){
             }
         }
     }
-    
-    @alts = ''
-    if(array_index_exists(@hero,'alts')){
-        @alts = @hero['alts']
-    }
-    foreach(@player in @plrs)
-    {
-        @otherPlayerGroup = _getheroclass(@player)
-        if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
-            set_timeout(1500, closure(
-                runas(@plr,'/mainmenu')
-                broadcast(color('WHITE')  . @plr . color('GRAY') . " has been returned to the main menu because " . color('WHITE') . @player . color('GRAY') . " was already " . @hero['name'])
-            ))
-            die()
+    if(!array_index_exists(@hero,'allowMultiple') || @hero['allowMultiple'] != true){    
+        @alts = ''
+        if(array_index_exists(@hero,'alts')){
+            @alts = @hero['alts']
         }
-        if(is_array(@alts)){
-            foreach(@alt in @alts){
-                if(@alt == @otherPlayerGroup){
-                    set_timeout(1500, closure(
-                        runas(@plr,'/mainmenu')
-                        @h1 = @hero['name']
-                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
-                        @hero = yml_decode(@contents)
-                        @h2 = @hero['name']
-                        msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                        msg(color('RED').'Sorry, '.color('WHITE').@player.color('RED').' is already using '.@h2.color('RED').'.')
-                        msg(color('RED').'Try again with:')
-                        msg(color('GREEN').'/characterselect')
-                        msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                    ))
-                    die()
+        foreach(@player in @plrs)
+        {
+            @otherPlayerGroup = _getheroclass(@player)
+            if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
+                set_timeout(1500, closure(
+                    runas(@plr,'/mainmenu')
+                    broadcast(color('WHITE')  . @plr . color('GRAY') . " has been returned to the main menu because " . color('WHITE') . @player . color('GRAY') . " was already " . @hero['name'])
+                ))
+                die()
+            }
+            if(is_array(@alts)){
+                foreach(@alt in @alts){
+                    if(@alt == @otherPlayerGroup){
+                        set_timeout(1500, closure(
+                            runas(@plr,'/mainmenu')
+                            @h1 = @hero['name']
+                            @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                            @hero = yml_decode(@contents)
+                            @h2 = @hero['name']
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                            msg(color('RED').'Sorry, '.color('WHITE').@player.color('RED').' is already using '.@h2.color('RED').'.')
+                            msg(color('RED').'Try again with:')
+                            msg(color('GREEN').'/characterselect')
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                        ))
+                        die()
+                    }
                 }
             }
         }

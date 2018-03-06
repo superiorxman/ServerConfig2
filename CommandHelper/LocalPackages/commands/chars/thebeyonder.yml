@@ -3,11 +3,11 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /mgive <plr> cosmicboltwand
 - /mgive <plr> telekinesiswand
-- /mgive <plr> acceleratetime
+- /mgive <plr> acceleratetimewand
 chatcolor: '&e'
 class: thebeyonder
 name: §7Th§fe §7B§fe§ey§7o§en§fd§7er
-op: 'false'
+op: false
 permissions:
   superherocity:
   - immune.destroyworld

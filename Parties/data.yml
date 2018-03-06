@@ -74,12 +74,6 @@ players:
       name: Clutonov
     rank: 5
     party: Dude
-  de5871d3-17d4-485f-8ddb-b45b30ee6591:
-    rank: 5
-    name:
-      name: Shokorana
-      timestamp: 1520124057
-    party: TheTitans
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     name:
       name: LordOfGallifrey
@@ -92,30 +86,12 @@ players:
       name: _xXSkylerXx_
     rank: 5
     party: TheTitans
-  fbb8c072-4c4b-49c8-948b-26e8ad73099e:
-    rank: 20
-    name:
-      timestamp: 1520207240
-      name: Eiilonwy
-    party: ppf
-  695c4d78-22c5-40e4-b0d4-286ab17c02cf:
-    name:
-      name: Eiisuke
-      timestamp: 1520205241
-    rank: 5
-    party: ppf
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     rank: 20
     party: darkheroes
     name:
       name: LoneRanger13
       timestamp: 1520205458
-  28556dea-667d-409f-b2ff-fb4177a20ff2:
-    name:
-      name: Marielia
-      timestamp: 1520207270
-    rank: 5
-    party: ppf
   c65b914b-37d8-4c55-826a-707ceb2904f4:
     rank: 5
     name:
@@ -128,17 +104,35 @@ players:
       name: mechaethansonic
     party: TheTitans
     rank: 5
+  cf0a0c3f-34c9-487c-86df-8477b25700ca:
+    name:
+      timestamp: 1520283597
+      name: SuperrCrazyGamer
+    rank: 5
+    party: TheTitans
+  de5871d3-17d4-485f-8ddb-b45b30ee6591:
+    rank: 5
+    name:
+      name: Shokorana
+      timestamp: 1520289503
+    party: TheTitans
+  fbb8c072-4c4b-49c8-948b-26e8ad73099e:
+    rank: 20
+    name:
+      timestamp: 1520294493
+      name: Eiilonwy
+    party: orkhorl
+  28556dea-667d-409f-b2ff-fb4177a20ff2:
+    name:
+      name: Marielia
+      timestamp: 1520294501
+    rank: 5
+    party: orkhorl
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     name:
       name: WhosThatItzLulu
-      timestamp: 1520214557
-    party: ppf
-    rank: 5
-  ae72a2c0-f969-478f-a494-ce5b4236524f:
-    name:
-      timestamp: 1520216394
-      name: leafoflive
-    party: ppf
+      timestamp: 1520294511
+    party: orkhorl
     rank: 5
 parties:
   TheTitans:
@@ -150,10 +144,11 @@ parties:
     - 09594d5f-8ef4-486e-8f1d-ab5d88fc42f1
     - e0870764-dcc8-49a5-ad33-6ec20d0be001
     - 98eaee4f-eb44-4674-ac95-9944a0da2861
-    - de5871d3-17d4-485f-8ddb-b45b30ee6591
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - c23a12ff-f26a-4f56-a345-21c9395b9c2b
     - 8cd908e9-a758-41fa-99b9-1a8f8ffc5297
+    - cf0a0c3f-34c9-487c-86df-8477b25700ca
+    - de5871d3-17d4-485f-8ddb-b45b30ee6591
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
@@ -170,15 +165,13 @@ parties:
     members:
     - 55679107-589e-4487-abb4-4fca48b26f25
     - c65b914b-37d8-4c55-826a-707ceb2904f4
-  ppf:
-    members:
-    - fbb8c072-4c4b-49c8-948b-26e8ad73099e
-    - 695c4d78-22c5-40e4-b0d4-286ab17c02cf
-    - 28556dea-667d-409f-b2ff-fb4177a20ff2
-    - dbb47887-bfbd-40e6-bfec-3d1053ea3aff
-    - ae72a2c0-f969-478f-a494-ce5b4236524f
-    leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
   darkheroes:
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+  orkhorl:
+    leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
+    members:
+    - fbb8c072-4c4b-49c8-948b-26e8ad73099e
+    - 28556dea-667d-409f-b2ff-fb4177a20ff2
+    - dbb47887-bfbd-40e6-bfec-3d1053ea3aff

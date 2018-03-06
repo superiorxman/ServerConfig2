@@ -139,7 +139,12 @@ register_command('mindcontrol',
             set_pspectator_target(@vic,@puuid)
 
             runas('~console','/pex user '.@player.' group set '.@vClass)
-            runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['sig'].'","name":"textures","value":"'.@vHero['val'].'"}]}')
+            if(array_index_exists(@vHero,'sig')){
+                runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['sig'].'","name":"textures","value":"'.@vHero['val'].'"}]}')
+            }else{
+                sudo('/disguise player '.@vic)
+            }
+
             set_pinv(@player,@vInv)
             sudo('/buff')
 
