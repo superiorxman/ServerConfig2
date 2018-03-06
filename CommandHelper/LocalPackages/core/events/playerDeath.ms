@@ -1,5 +1,10 @@
 bind('player_death', null, null, @event){
 
+    if(has_permission(@player,'tick.kill')){
+        modify_event('death_message',null)
+        die()
+    }
+
     if(@event['cause']['cause'] == 'VOID'){
         die()
     }
