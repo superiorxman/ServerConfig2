@@ -1,5 +1,5 @@
 buffs:
-- /effect <plr> 5 9999 10 true
+- /effect <plr> 5 9999 2 true
 chatcolor: '&a'
 class: omen
 name: §0O§2me§0n
@@ -9,7 +9,6 @@ permissions:
   - ch.alias.mindlock
   - ch.alias.confuse
   - ch.alias.unconfuse
-  - ch.alias.omen
   - essentials.msg
 powers:
 - /buff
