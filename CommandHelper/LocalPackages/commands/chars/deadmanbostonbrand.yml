@@ -1,6 +1,4 @@
 maxHearts: 30
-buffs:
-- /effect <plr> 10 9999 1 true
 chatcolor: '&8'
 class: deadmanbostonbrand
 name: §4D§8e§fad§4m§fa§4n§8(§fBB§8)
@@ -18,7 +16,6 @@ powers:
 - /fly
 - /intangible
 - /tangible
-- /disguiseviewself
 - /speak <player> <message>
 - /mindcontrol <playername>
 - /stopmindcontrol
