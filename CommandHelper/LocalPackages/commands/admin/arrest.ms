@@ -81,11 +81,40 @@ register_command('arrest',
                 tmsg(@vic,color('RED').'Please take this time to read the /rules')
             ))
 
-            set_timeout((@duration * 1000),closure(
+            @criminalTimer = set_timeout((@duration * 1000),closure(
                 _mortal(@vic)
                 queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
                 tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
             ))
+            export(@vic.'criminalTimer',@criminalTimer)
+        }
+    )
+)
+
+register_command('cleardatabase', 
+    array(
+        'description': 'Release a player from Jail',
+        'usage': '/cleardatabse',
+        'permission': 'ch.alias.cleardatabase',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+    
+        'executor': closure(@alias, @sender, @args) {
+            
+            @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+            try{
+                query(@profile,'DROP TABLE criminals;')
+            }catch(Exception @e){}
+            query(@profile,'CREATE TABLE criminals(
+    PERPNAME       TEXT    NOT NULL,
+    PERPUUID       TEXT    NOT NULL,
+    REASON         TEXT    NOT NULL,
+    TYPE           TEXT    NOT NULL,
+    IP             TEXT    NOT NULL,
+    AO             TEXT    NOT NULL,
+    OFFUUID        TEXT    NOT NULL,
+    DATE           TEXT    NOT NULL
+)')
+
         }
     )
 )
@@ -107,16 +136,14 @@ register_command('release',
             @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
             @currentTime = time()
             @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
+            @criminalTimer = import(@vic.'criminalTimer')
 
-            if(@timeLeft < 0){
-                include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-                _mortal(@vic)
-                queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
-                tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
-            }else{
-                
-                tmsg(@sender,color('RED').'They still have '.@timeLeft.' seconds left to serve.')
-            }
+            clear_task(@criminalTimer)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            _mortal(@vic)
+            queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
+            tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
+
         }
     )
 )
@@ -130,14 +157,39 @@ register_command('timeleft',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
         'executor': closure(@alias, @sender, @args) {
-        
-            @vicUUID = puuid(@sender,true)
-            @arrestTime = get_value('arresttimes.'.@vicUUID.'.time')
-            @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
-            @currentTime = time()
-            @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
 
-            tmsg(@sender,color('RED').'You still have '.@timeLeft.' seconds left to serve.')
+            @numArgs = array_size(@args)
+            if(@numArgs > 1){
+                tmsg(@sender,color('RED').'Usage: /timeleft or /timeleft <player>')
+                return()
+            }
+        
+            if(@numArgs == 1){
+                @vic = player(@args[0])
+                @vicUUID = puuid(@vic,true)
+                @arrestTime = get_value('arresttimes.'.@vicUUID.'.time')
+                if(@arrestTime == null){
+                    tmsg(@sender,color('RED').'It looks like they haven\'t been arrested before.')
+                    return()
+                }
+                @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
+                @currentTime = time()
+                @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
+                tmsg(@sender,color('RED').'They still have '.@timeLeft.' seconds left to serve.')
+            }else{
+                @vicUUID = puuid(@sender,true)
+                @arrestTime = get_value('arresttimes.'.@vicUUID.'.time')
+                if(@arrestTime == null){
+                    tmsg(@sender,color('RED').'It looks like they haven\'t been arrested before.')
+                    return()
+                }
+                @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
+                @currentTime = time()
+                @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
+
+                tmsg(@sender,color('RED').'You still have '.@timeLeft.' seconds left to serve.')
+            }
+            
         }
     )
 )
@@ -299,7 +351,7 @@ register_command('warn',
 
             @argsLength = array_size(@args)
             @reason = ''
-            for (@i = 2, @i < @argsLength, @i++){
+            for (@i = 1, @i < @argsLength, @i++){
                 @reason = @reason.@args[@i].' '
             }
                 
