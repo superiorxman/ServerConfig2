@@ -2,6 +2,11 @@ maxHearts: 30
 alts:
 - jeangrey
 buffs:
+- /mgive <plr> fireboltwand
+- /mgive <plr> forcefieldwand
+- /mgive <plr> telekinesiswand
+- /mgive <plr> phoenixforcewand
+- /mgive <plr> healingfieldwand
 chatcolor: '&6'
 class: phoenix
 jump: 2
@@ -10,22 +15,11 @@ op: false
 permissions:
   superherocity:
   - powers.herotransform
-  - magic.commands.disabled.cast
-  - magic.cast.firebolt
-  - magic.cast.forcefield
-  - magic.cast.telekinesis
-  - magic.cast.phoenixforce
-  - magic.cast.healingfield
   - essentials.fly
   - essentials.tppos
 powers:
 - /buff
 - /tppos
-- /cast healingfield
-- /cast firebolt
-- /cast telekinesis
-- /cast forcefield
-- /cast phoenixforce
 - /jump <0-2>
 - /fly
 - /herotransform <id>

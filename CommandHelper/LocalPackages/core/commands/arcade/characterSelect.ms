@@ -151,43 +151,7 @@ register_command('selectchar',
                         }
                     }
                 }
-                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
-                @hero = yml_decode(@contents)
 
-                if(!array_index_exists(@hero,'allowMultiple') || @hero['allowMultiple'] =! true){
-                    @plrs = all_players()
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                    foreach(@playa in @plrs)
-                    {
-                        @otherPlayerGroup = _getheroclass(@playa)
-                        if(@otherPlayerGroup == @hero['class'] && @player != @playa){
-                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                            msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['name'].color('RED').'.')
-                            msg(color('DARK_RED').'Please choose a different character.')
-                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                            die()
-                        }
-                        if(array_index_exists(@hero,'alts')){
-                            @alts = @hero['alts']
-                            foreach(@alt in @alts){
-                                if(@alt == @otherPlayerGroup){
-                                    @h1 = @hero['name']
-                                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
-                                    @hero = yml_decode(@contents)
-                                    @h2 = @hero['name']
-                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                                    msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@h2.color('RED').'.')
-                                    msg(color('RED').'Try again with:')
-                                    msg(color('GREEN').'/characterselect')
-                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                                    die()
-                                }
-                            } 
-                        }
-                    }
-                }
-                clear_task(import(@player.'isBurningInSunlight'))
-                export(@player.'skinNum',1)
                 if(@class == 'fanfic'){
                     @uuid = puuid(@player,true)
                     queue_push(closure(runas('~console','/pex group #'.@class.@uuid.' delete')))
@@ -218,24 +182,62 @@ register_command('selectchar',
                     die()
                 }
 
-                #if(array_index_exists(@hero,'eraserebuild')){
-                    queue_push(closure(runas('~console','/minecraft:clear '.@player)))
-                    set_peffect(@player, 14, 1, 9999, true, false)
-                    queue_push(closure(runas('~console','/pex group #'.@hero['class'].' delete')))
-                    queue_push(closure(runas('~console','/pex group #'.@hero['class'].' create')))
-                    queue_push(closure(runas('~console','/pex user #'.@player.' group set #'.@hero['class'])))
-                    queue_push(closure(runas('~console','/pex group #'.@hero['class'].' parents set #commonherotraits')))
-                    queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['chatcolor'])))
-                    @niceName = replace(@hero['name'],'§','&')
-                    queue_push(closure(runas('~console','/pex group #'.@hero['class'].' prefix "'.@niceName.'"')))
-                    if(array_index_exists(@hero,'permissions') && is_array(@hero['permissions'])){
-                        foreach(@worldName: @worldPerms in @hero['permissions']){
-                            foreach(@perm in @worldPerms){
-                                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' add '.@perm.' '.@worldName)))
-                            }
+
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                @hero = yml_decode(@contents)
+                if(!array_index_exists(@hero,'allowMultiple') || @hero['allowMultiple'] =! true){
+                    @plrs = all_players()
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    foreach(@playa in @plrs)
+                    {
+                        @otherPlayerGroup = _getheroclass(@playa)
+                        if(@otherPlayerGroup == @hero['class'] && @player != @playa){
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                            msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['name'].color('RED').'.')
+                            msg(color('DARK_RED').'Please choose a different character.')
+                            msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                            die()
+                        }else{
+                            queue_push(closure(runas('~console','/pex group #'.@hero['class'].' delete')))
+                            queue_push(closure(runas('~console','/pex group #'.@hero['class'].' create')))
+                        }
+                        if(array_index_exists(@hero,'alts')){
+                            @alts = @hero['alts']
+                            foreach(@alt in @alts){
+                                if(@alt == @otherPlayerGroup){
+                                    @h1 = @hero['name']
+                                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                                    @hero = yml_decode(@contents)
+                                    @h2 = @hero['name']
+                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                    msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@h2.color('RED').'.')
+                                    msg(color('RED').'Try again with:')
+                                    msg(color('GREEN').'/characterselect')
+                                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                    die()
+                                }
+                            } 
                         }
                     }
-                #}
+                }
+
+                queue_push(closure(runas('~console','/minecraft:clear '.@player)))
+                set_peffect(@player, 14, 1, 9999, true, false)
+                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' parents set #commonherotraits')))
+                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['chatcolor'])))
+                @niceName = replace(@hero['name'],'§','&')
+                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' prefix "'.@niceName.'"')))
+                queue_push(closure(runas('~console','/pex user #'.@player.' group set #'.@hero['class'])))
+                if(array_index_exists(@hero,'permissions') && is_array(@hero['permissions'])){
+                    foreach(@worldName: @worldPerms in @hero['permissions']){
+                        foreach(@perm in @worldPerms){
+                            queue_push(closure(runas('~console','/pex group #'.@hero['class'].' add '.@perm.' '.@worldName)))
+                        }
+                    }
+                }
+
+                clear_task(import(@player.'isBurningInSunlight'))
+                export(@player.'skinNum',1)
                 queue_push(closure(runas('~console',"/fly ".@player." off")))
                 queue_push(closure(runas('~console',"/gamemode survival ".@player)))
                 queue_push(closure(runas('~console',"/effect ".@player." clear")))

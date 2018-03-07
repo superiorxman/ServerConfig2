@@ -17,7 +17,7 @@ register_command('speakall',
             @plrs2 = array_rand(@plrs,@numPlrs,false)
 
             foreach(@plr in @plrs2){
-                chatas(@plr,@msg)
+                queue_push(closure(chatas(@plr,@msg)))
             }
         }
     )
