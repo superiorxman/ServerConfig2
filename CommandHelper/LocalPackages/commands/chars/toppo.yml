@@ -1,0 +1,34 @@
+maxHearts: 50
+buffs:
+- /effect <plr> 11 9999 3 true
+- /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
+- /shot give <plr> kiblast
+- /shot give <plr> destructionlaser
+chatcolor: '&4'
+class: toppo
+haste: 9
+jump: 9
+name: §4To§8pp§eo
+op: 'false'
+permissions:
+  superherocity:
+  - ch.alias.carryplayer
+  - ch.alias.dismountplayer
+  - powers.wallrun
+powers:
+- /buff
+- /carryplayer <player>
+- /dismountplayer
+- /jump <0-9>
+- /run <0-9>
+- /haste <0-9>
+- /fly
+- /wallrun <on/off>
+- Look Up+Jump+Crouch to perform a wallrun.
+- /carryplayer <player>
+- /dismountplayer
+run: 9
+sig: qtu7fymuktn2nwcg4kyxxklxxk1emeqeat74jekknac54bm8zed7c+jrfzh/UhDaoNvz8oZwmVmPfO0zVOuxcOYM8SwCxEw3jsomwtAi3Z0jXKKCEtFcJ/4mjatqBSxmOllJRMjTea9ITesgKr8Qcsqxmgx4Idsu9kkXddLCnffytdoQ2RdoCx8f3GoVrm6O+AK2BtlaVDAZ1LoKPXOLESL3SXdoj+awkRo3/G4NCEtY91NIKTXuBvN4h33/80mb0M+XT4Com4jCoJcH5aiEOPZRCjGSdBnohgG9OMr6PirgWnbjGrcJm3ojziU8SiPrtI1jW8M3lXzo5O7vYuQ0obS6JaKBwQLYIhvOtPSeHjekDdAHGmO1UE1Mh7L1hXukzZ9cMnRuKEMT+hvrBlvL16Cj/YYBlxe+0U5+4CvhQrXLAMxMDAVQWUJMu0qN04M+2M1y0IftYEPCIxqPQQpgCBFWf9FCg3axK/erMj2U4OnGpxAi+qluGHvXCRDuNNGDspCA8fhMdyHTfQ+tBq9QQUcQrz+VWnAZCkrcaNdomLivNg6EiHKM53ACld+Wrm3bbeJUmKo+RlBPVazHskMqfmMoUT1fc7Yihg98V+7w8uyFwbBt7xGM02l5zryESIysi2yG7MIvnIV7hVycbveVYpMuESL26l9bbz8t/WQTVhU=
+speech: I am a god of DESTRUCTION!
+trail: ''
+val: eyj0aw1lc3rhbxaioje1mjawmzq5mdmymzesinbyb2zpbgvjzci6ija4odbly2njzmvlzdrhmmy5ztiyzdhmnzixzjm5mtnliiwichjvzmlszu5hbwuioijazuvuzm9yy2vyiiwic2lnbmf0dxjlumvxdwlyzwqionrydwusinrlehr1cmvzijp7ilnlsu4ionsidxjsijoiahr0cdovl3rlehr1cmvzlm1pbmvjcmfmdc5uzxqvdgv4dhvyzs9hyzvlnmy4ztrjzmqyogeyntgxowe1owjkyzfjmgyzodrmnwi2mwm5otk1otdjzwninty3ztgxyzmxyzhkztmifx19/
