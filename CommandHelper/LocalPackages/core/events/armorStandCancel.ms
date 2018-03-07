@@ -91,12 +91,32 @@ bind('inventory_drag',null,null,@e){
             }
         }
     }
+    /*if(@e['slots'][0] == @e['rawslots'][0] && @e['rawslots'][0] <= @e['inventorysize'] && array_index_exists(@e['oldcursoritem']['meta'],'lore')){
+        @lore = @e['oldcursoritem']['meta']['lore']
+        if(@lore != null){
+            if(string_contains(@lore[0],'Bound') || string_contains(@lore[0],'Cooldown')){
+                cancel()
+            }
+        }
+    }*/
 }
 
 bind('inventory_click',null,null,@e){
     if(@e['slotitem'] != null){
-        if(@e['slotitem']['type'] == '397' && @e['shiftclick'] == true){
-            cancel()
+        if(@e['shiftclick'] == true){
+            /*if(array_index_exists(@e['slotitem']['meta'],'lore')){
+                @lore = @e['slotitem']['meta']['lore']
+                if(@lore != null){
+                    if(string_contains(@lore[0],'Bound') || string_contains(@lore[0],'Cooldown')){
+                        cancel()
+                        return()
+                    }
+                }
+            }*/
+            if(@e['slotitem']['type'] == 397){
+                cancel()
+                return()
+            }
         }
         if(array_index_exists(@e['slotitem'],'enchants')){
             foreach(@enchant in @e['slotitem']['enchants']){
@@ -117,7 +137,16 @@ bind('inventory_click',null,null,@e){
     }else{
         if(@e['slot'] == 39 && @e['cursoritem']['type'] == 397){
             cancel()
+            return()
         }
+        /*if(@e['slottype'] == 'CONTAINER' && @e['slot'] == @e['rawslot'] && @e['rawslot'] <= @e['inventorysize'] && array_index_exists(@e['cursoritem']['meta'],'lore')){
+            @lore = @e['cursoritem']['meta']['lore']
+            if(@lore != null){
+                if(string_contains(@lore[0],'Bound') || string_contains(@lore[0],'Cooldown')){
+                    cancel()
+                }
+            } 
+        }*/
     }
 }
 

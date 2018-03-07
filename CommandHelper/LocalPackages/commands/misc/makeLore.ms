@@ -52,3 +52,18 @@ register_command('addtolore',
         }
     )
 )
+register_command('viewlore', 
+    array(
+        'description': 'Gives Player their Superhero Powers',
+        'usage': '/makelore',
+        'permission': 'command.makelore',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+        'executor': closure(@alises, @sender, @args) {
+
+            @item = pinv(@sender, null)
+            if(@item['meta'] != null && array_index_exists(@item['meta'],'lore')){
+                msg(@item['meta']['lore'])
+            }
+        }
+    )
+)

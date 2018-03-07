@@ -79,10 +79,10 @@ bind('player_join',null,null,@event){
         }
     }
 
-    if(has_permission(@plr,'tick.kill')){
-        runas('~console','/stoptorture')
-        runas('~console','/torture '.@plr.' 50')
-    }
+//    if(has_permission(@plr,'tick.kill')){
+ //       runas('~console','/stoptorture')
+  //      runas('~console','/torture '.@plr.' 50')
+   // }
 
     if(has_permission(@plr,'arrest.onjoin')){
         runas('~console','/arrest '.@plr.' Joining Auto-Arrest Bot v2.1b')

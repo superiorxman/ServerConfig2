@@ -1,5 +1,5 @@
 bind('player_death', null, null, @event){
-
+    @player = @event['player']
     if(has_permission(@player,'tick.kill')){
         modify_event('death_message',null)
         die()
@@ -9,7 +9,6 @@ bind('player_death', null, null, @event){
         die()
     }
 
-    @player = @event['player']
     @world = pworld()
    
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')

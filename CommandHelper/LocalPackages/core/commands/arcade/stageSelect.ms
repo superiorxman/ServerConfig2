@@ -67,6 +67,13 @@ register_command('goworld',
                         if(has_permission(@sender,'ch.alias.buff')){
                             runas(@sender,'/buff')
                         }
+                        @puuid = puuid(@sender)
+                        if(array_index_exists(@hero,'maxHearts')){
+                            queue_push(closure(set_attribute(@puuid,'maxHealth',(@hero['maxHearts'] * 2))))
+                            queue_push(closure(set_phealth(@sender,(@hero['maxHearts'] * 2))))
+                        }else{
+                            queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
+                        }
                     ))
                 }
             }
