@@ -1,0 +1,40 @@
+maxHearts: 20
+alts:
+- trunks
+buffs:
+- /effect <plr> 5 9999 16 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 1 true
+- /effect <plr> 12 9999 1 true
+- /effect <plr> 13 9999 1 true
+- /shot give <plr> kamehameha
+- /shot give <plr> kiblast
+chatcolor: '&6'
+class: trunkssupersaiyan
+haste: 7
+jump: 7
+name: §eT§1ru§8nk§9s§8(§eSS§8)
+op: false
+permissions:
+  superherocity:
+  - powers.herotransform
+  - ch.alias.dismountplayer
+  - ch.alias.carryplayer
+  - essentials.fly
+  - essentials.speed.fly
+  - essentials.speed
+powers:
+- /buff
+- /jump <0-7>
+- /run <0-7>
+- /haste <0-7>
+- /flyspeed <number>
+- /fly
+- /carryplayer <player>
+- /dismountplayer
+- /herotransform
+run: 7
+sig: h9ob49ak2u7n8zqxl2opmy+8jz6rxpksprhccboch7ogj7evmw/SgvNbrjTKtQngOzan/tgF8nJP85YmmLQRXO7/B4kKzlRl7QUlfEjYRWEsZ5hjIajN4/cMfult6TlmEY7RaM0J8H41puRvtg6tc+rMcHSny2/qipFSWDwg3WvCT2Dh/celVHN/EoKEfVfBuBOST6TpXGKa0waVv9IjyEZcdv8K/npHx8u86ZzJmX1P/mrdlcbDqFUfgaonIhMWCqN56hOjJaRevoatO1N3VNtgbbuwAYVMihnC15OY+ZjVpqYLTCLcEvyNncR2iW6w9UGyYCVajkfWdZmdefHyfNj1UHr8PnJ8LicLK89+u1utHjq9sLBF7AQcJrMljxRE1iPUvXF7AzAmeKFXgdli4znaWh3r8cW3j7PkMYGTbzLYkR6A8iWH4hBSmULX1Him/2RA/vt5mQLHeyDCvKG9olPQOFblXe4/QmxXpFi8Rhx2kINNq6LcmybQNCYWLQw5ZyOALmncoXj/wpqKkpa7hGp/plY7jVuPdjeFHq843d5eLYzZcMfnBQ/dxdoawaaHZQlVsbJEgDrqfXaTFRO8qyrMdQDyM1BlcYYCn5otGaQLzP1+poiNv3cO/kj2r6IhdglX5bf4LTmx+leZxUYoIXg/HtUxZFWqQ0uV8IJisWI=
+speech: I too am a super SAIYAN!!
+trail: ''
+val: eyj0aw1lc3rhbxaioje1mjazoda2njc3otesinbyb2zpbgvjzci6ija4odbly2njzmvlzdrhmmy5ztiyzdhmnzixzjm5mtnliiwichjvzmlszu5hbwuioijazuvuzm9yy2vyiiwic2lnbmf0dxjlumvxdwlyzwqionrydwusinrlehr1cmvzijp7ilnlsu4ionsidxjsijoiahr0cdovl3rlehr1cmvzlm1pbmvjcmfmdc5uzxqvdgv4dhvyzs9mnweynzjmotcwywexymq0mmfkzdllmza4mtnin2ezzju0njgxndm5mji3n2e1owuxzti5zgqynwu4yja4osj9fx0
