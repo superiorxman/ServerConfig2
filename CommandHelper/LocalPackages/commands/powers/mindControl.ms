@@ -59,7 +59,7 @@ register_command('mindcontrol',
             @vloc = ploc(@vic)
             
             if(@ploc['world'] != @vloc['world']){
-                tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                tmsg(@player,color('RED').'Sorry, you need to be in the same world to do that.')
                 die()        
             }
 

@@ -5,7 +5,7 @@ bind('player_death', null, null, @event){
         die()
     }
 
-    if(@event['cause']['cause'] == 'VOID'){
+    if(array_index_exists(@event,'cause') && array_index_exists(@event['cause'],'cause') && @event['cause']['cause'] == 'VOID'){
         die()
     }
 

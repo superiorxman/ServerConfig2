@@ -16,44 +16,30 @@ register_command('fixskin',
             
             }
             
-            include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-            
             if (array_size(@args) == 1) {
             
-                try {
-                    @plr = player(@args[0])
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                    @class = _getheroclass(@player)
-                    
-                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
-                    @hero = yml_decode(@contents)
-                    _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                @plr = @args[0]
+                @plr = player(@plr)
+                @skinNum = import(@plr.'skinNum')
+                if(@skinNum != null){
+                    sudo('/skin '.@skinNum)
                     die()
-                } catch (IOException @ErrorInfo) {
-                
+                }else{
+                    queue_push(closure(runas('~console','/undisguiseplayer '.@plr)))
+                    queue_push(closure(sudo('/skin 1')))
                 }
                 
             } else {
-            
-                try {
-                    @plr = player()
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                    @class = _getheroclass(@plr)
-                    
-                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
-                    @hero = yml_decode(@contents)
-                    _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                @plr = @sender
+                @skinNum = import(@plr.'skinNum')
+                console('SKIN NUM ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS '.@skinNum)
+                if(@skinNum != null){
+                    sudo('/skin '.@skinNum)
                     die()
-                } catch (IOException @ErrorInfo) {
-                    
-                }		
-            
+                }else{
+                    queue_push(closure(runas('~console','/undisguiseplayer '.@plr)))
+                    queue_push(closure(sudo('/skin 1')))
+                }
             }        
         }
     )

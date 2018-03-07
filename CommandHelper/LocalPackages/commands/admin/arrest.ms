@@ -11,7 +11,6 @@ register_command('arrest',
             
             @cop = @sender
             @vic = @args[0]
-            ponline(@vic)
             @vic = player(@vic)
             
             @duration = @args[1]
@@ -45,12 +44,20 @@ register_command('arrest',
                 
             @reason = trim(@reason)
             @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-                    
-            @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
+
+            @time = time()
+
+            @vicUUID = puuid(@vic,true)
+            @copUUID = puuid(@cop,true)
+
+            store_value('arresttimes.'.@vicUUID.'.time',@time)
+            store_value('arresttimes.'.@vicUUID.'.duration',@duration)
+
+            @date = simple_date('yyyy-MM-dd HH:mm:ss', @time)
             @ip = pinfo(@vic)[3]
             @result = query(@profile,'INSERT INTO `criminals` '.
                 'VALUES(?,?,?,?,?,?,?,?)',
-                @vic,puuid(@vic),@reason.' | '.@duration.' seconds','ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+                @vic,@vicUUID,@reason.' | '.@duration.' seconds','ARREST',@ip,@cop,@copUUID,simple_date('yyyy-MM-dd HH:mm:ss', @time)
             )
             
 
@@ -93,13 +100,44 @@ register_command('release',
         'executor': closure(@alias, @sender, @args) {
         
             @vic = @args[0]
-            ponline(@vic)
             @vic = player(@vic)
-            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-            _mortal(@vic)
-            queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
-            tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
+            @vicUUID = puuid(@vic,true)
+
+            @arrestTime = get_value('arresttimes.'.@vicUUID.'.time')
+            @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
+            @currentTime = time()
+            @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
+
+            if(@timeLeft < 0){
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+                _mortal(@vic)
+                queue_push(closure(runas('~console','/sudo '.@vic.' c:/mainmenu')))
+                tmsg(@vic,color('RED').'You are now released from jail. Please behave yourself.')
+            }else{
                 
+                tmsg(@sender,color('RED').'They still have '.@timeLeft.' seconds left to serve.')
+            }
+        }
+    )
+)
+
+
+register_command('timeleft', 
+    array(
+        'description': 'Release a player from Jail',
+        'usage': '/timeleft',
+        'permission': 'command.timeleft',
+        'noPermMsg': 'Sorry you don\'t have permission to use this command.',
+    
+        'executor': closure(@alias, @sender, @args) {
+        
+            @vicUUID = puuid(@sender,true)
+            @arrestTime = get_value('arresttimes.'.@vicUUID.'.time')
+            @arrestDuration = get_value('arresttimes.'.@vicUUID.'.duration')
+            @currentTime = time()
+            @timeLeft = integer(((@arrestTime + (@arrestDuration * 1000)) - @currentTime) / 1000)
+
+            tmsg(@sender,color('RED').'You still have '.@timeLeft.' seconds left to serve.')
         }
     )
 )
@@ -250,54 +288,38 @@ register_command('warn',
     
         'executor': closure(@alias, @sender, @args) {
         
-                if (array_size(@args) < 2) {
-                
-                    msg(color('RED').color('BOLD').'Improper Usage!');
-                    msg(color('RED').'Usage: /warn <player> <reason>');
-                    die(); # No need to go further					
-                
-                }
-                
-                try {
-                    @plr = player(@args[0])
-                    @cop = player()
-                    @uuid = puuid(@plr)
-                    @ip = pinfo(@plr)[3]
-                    
-                    @reason = ''
-                    @argsLength = array_size(@args)
-                    
-                    if(has_permission(@cop, 'is.suspended')) {
-                    
-                        msg(color('RED').color('BOLD').'You are currently suspended! Your powers to warn have been revoked.');
-                        die();
-                    
-                    }
-                    
-                    for (@i = 1, @i < @argsLength, @i++){
-                    
-                        @reason = @reason.@args[@i].' '
-                    
-                    }
-                    
-                    @reason = trim(@reason)
-                    
-                    broadcast(color('BOLD').@plr.color('DARK_RED').color('BOLD').' HAS BEEN WARNED BY '.color('WHITE').@cop.color('DARK_RED').color('BOLD').' ON THE GROUNDS OF '.color('YELLOW').@reason.color('RED').color('BOLD').'. Please read '.color('DARK_RED').'/rules'.color('RED').' and familiarize yourself with the server rules or you may end up jailed!')
+            @cop = @sender
+            @vic = @args[0]
+            @vic = player(@vic)
 
-                    @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-                    query(@profile,'INSERT INTO `criminals` '.
-                                   'VALUES(?,?,?,?,?,?,?,?)',
-                                   @plr,@uuid,@reason,'WARN',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
-                    )			
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg('Player is Offline')
-                    die()
-                }				
-                
-                runas('~console','/sudo '.@plr.' c:/warp police')
-                runas('~console','/warp warncop '.@cop)
-                runas('~console','/warp warnperp '.@plr)
+            if(array_size(@args) < 11){
+                msg(color('RED').'Please write a more detailed report.')
+                return()
+            }
 
+            @argsLength = array_size(@args)
+            @reason = ''
+            for (@i = 2, @i < @argsLength, @i++){
+                @reason = @reason.@args[@i].' '
+            }
+                
+            @reason = trim(@reason)
+            @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+
+            @time = time()
+
+            @vicUUID = puuid(@vic,true)
+            @copUUID = puuid(@cop,true)
+
+            @date = simple_date('yyyy-MM-dd HH:mm:ss', @time)
+            @ip = pinfo(@vic)[3]
+            @result = query(@profile,'INSERT INTO `criminals` '.
+                'VALUES(?,?,?,?,?,?,?,?)',
+                @vic,@vicUUID,@reason,'WARN',@ip,@cop,@copUUID,simple_date('yyyy-MM-dd HH:mm:ss', @time)
+            )
+            
+
+            broadcast(color('BOLD').@vic.color('DARK_RED').color('BOLD').' HAS BEEN WARNED BY '.color('WHITE').@cop.color('DARK_RED').color('BOLD').' ON THE GROUNDS OF '.color('YELLOW').@reason.color('RED').color('BOLD').'. Please read '.color('DARK_RED').'/rules'.color('RED').' and familiarize yourself with the server rules or you may end up jailed!')
         
         }
     )
@@ -430,7 +452,7 @@ register_command('backgroundcheck',
             try {
                 @plr = player(@args[0])
                 @cop = player()
-                @uuid = puuid(@plr)
+                @uuid = puuid(@plr,true)
                 @ip = pinfo(@plr)[3]
                 
                 if(has_permission(@cop, 'is.suspended')) {
@@ -501,7 +523,7 @@ register_command('criminalrecord',
             
             @plr = player()
             @cop = player()
-            @uuid = puuid(@plr)
+            @uuid = puuid(@plr,true)
             @ip = pinfo(@plr)[3]
             
             @profile = array('type': 'sqlite', 'file': '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
@@ -543,7 +565,7 @@ register_command('officerhistory',
             try {
                 @plr = player(@args[0])
                 @cop = player()
-                @uuid = puuid(@plr)
+                @uuid = puuid(@plr,true)
                 @ip = pinfo(@plr)[3]
                 
                 if(has_permission(@cop, 'is.suspended')) {

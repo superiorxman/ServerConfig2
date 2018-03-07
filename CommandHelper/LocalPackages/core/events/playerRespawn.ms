@@ -13,14 +13,15 @@ bind('player_spawn', null, null, @event){
         }
         
         include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-        @class = _getheroclass(@sender)
+        @class = _getheroclass(@player)
+        @puuid = puuid(@player) 
         try{
             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
             @hero = yml_decode(@contents)
         }catch(Exception @d){
-            queue_push(closure(set_attribute(@puuid,'maxHealth',20)))    
+            queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
+            return()
         }
-        @puuid = puuid(@player) 
         if(array_index_exists(@hero,'maxHearts')){
             queue_push(closure(set_attribute(@puuid,'maxHealth',(@hero['maxHearts'] * 2))))
             queue_push(closure(set_phealth(@player,(@hero['maxHearts'] * 2))))

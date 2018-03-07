@@ -17,49 +17,38 @@ register_command('skin',
                 
                 }
                 
-                try {
-                
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')    
-                    @player = player()
-                    @class = _getheroclass(@player)
-                    
-                
-                    @skinNum = @args[0]
+                @player = @sender
+                @skinNum = @args[0]
 
-                    if(@skinNum <= 0){
-                        tmsg(@player,"Skin number has to be at least 1")
-                        die()
-                    }
-                    
-                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
-                    @hero = yml_decode(@contents)
-                    
-                    if(@skinNum == "1"){
-                        @sig = @hero['sig']
-                        @val = @hero['val']
-                        _changeSkin(@player,@sig,@val,@hero['name'])
-                        die()
-                    }
-                    @skinNum = @skinNum - 2
-                    try(
-                        @altSig = @hero['altskins'][@skinNum]['sig']
-                        @altVal = @hero['altskins'][@skinNum]['val']
-                    ,
-                        @skinNum = @skinNum + 2
-                        tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
-                        die()
-                    )
-                    _changeSkin(@player,@altSig,@altVal,@hero['name'])
-                    export(@player.'skinNum',@skinNum)
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                if(@skinNum <= 0){
+                    tmsg(@player,"Skin number has to be at least 1")
                     die()
-                }				
+                }
+
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @class = _getheroclass(@player)
                 
-                
-        
+                try{
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
+                }catch(Exception @e){
+                    tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
+                    export(@player.'skinNum',1)    
+                    queue_push(closure(runas('~console','/undisguiseplayer '.@plr)))
+                    return()
+                }
+
+                export(@player.'skinNum',@skinNum)
+                if(@skinNum == 1){
+                    @sig = @hero['sig']
+                    @val = @hero['val']
+                }else{
+                    @skinNum = @skinNum - 2
+                    @sig = @hero['altskins'][@skinNum]['sig']
+                    @val = @hero['altskins'][@skinNum]['val']
+                }
+                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+                _changeSkin(@player,@sig,@val,@hero['name'])
         }
     )
 )
