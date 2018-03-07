@@ -74,12 +74,6 @@ players:
       name: Clutonov
     rank: 5
     party: Dude
-  c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
-    name:
-      name: LordOfGallifrey
-      timestamp: 1520141975
-    party: TheTitans
-    rank: 5
   c23a12ff-f26a-4f56-a345-21c9395b9c2b:
     name:
       timestamp: 1520200665
@@ -140,6 +134,12 @@ players:
       name: Moshicko
     party: eyy
     rank: 20
+  c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
+    name:
+      name: LordOfGallifrey
+      timestamp: 1520413405
+    party: TheTitans
+    rank: 5
 parties:
   TheTitans:
     members:
@@ -150,11 +150,11 @@ parties:
     - 09594d5f-8ef4-486e-8f1d-ab5d88fc42f1
     - e0870764-dcc8-49a5-ad33-6ec20d0be001
     - 98eaee4f-eb44-4674-ac95-9944a0da2861
-    - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - c23a12ff-f26a-4f56-a345-21c9395b9c2b
     - 8cd908e9-a758-41fa-99b9-1a8f8ffc5297
     - cf0a0c3f-34c9-487c-86df-8477b25700ca
     - de5871d3-17d4-485f-8ddb-b45b30ee6591
+    - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
