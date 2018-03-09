@@ -99,8 +99,13 @@ register_command('herotransform',
                     queue_push(closure(runas(@player,'/buff')))
                 }
 
-                queue_push(closure(sudo('/powers')))
-                queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['name'].color('GRAY').' to '.@newHero['name'].color('GRAY').' !')))
+                
+                if(array_index_exists(@newHero,'silentTransformMessage') && @newHero['silentTransformMessage'] == true){
+                    queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['name'])))
+                }else{
+                    queue_push(closure(sudo('/powers')))
+                    queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['name'].color('GRAY').' to '.@newHero['name'].color('GRAY').' !')))
+                }
 
             }else{
                 msg(color('RED').'Sorry, the available transformations you have are:')

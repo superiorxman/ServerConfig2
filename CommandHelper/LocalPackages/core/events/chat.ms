@@ -11,8 +11,7 @@ bind('player_chat', null, null, @e) {
         @msg = to_lower(@msg)
     }
 
-    @isMindLocked = import(@player.'isMindLocked')
-    if(@isMindLocked){
+    if(import(@player.'isMindLocked')){
         @mindLocker = import(@player.'mindLockedBy')
         if(@mindLocker != null && @mindLocker != ''){
             tmsg(@mindLocker,color('DARK_RED').'['.color('RED').'mindlock'.color('DARK_RED').'] '.color('RED').@player.color('DARK_RED').': '.color('GRAY').@msg)
@@ -79,9 +78,7 @@ bind('player_chat', null, null, @e) {
 
 
     // Confusion affects anyone who has specfic allowed phrases, so it comes after
-    @isConfused = import(@player.'isConfused')
-    if(@isConfused == true){
-        msg('isConfused is '.@isConfused)
+    if(import(@player.'isConfused')){
         @words = split(' ',@msg)
         @numWords = array_size(@words)
         if(@numWords > 1){

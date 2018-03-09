@@ -6,7 +6,7 @@
 #        try(
 #        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms'),
 #        ,continue())
-#        if(@hero['op'] == 'true')
+#        if(@hero['op'] == true)
 #        {
 #            #if(has_permission(@player,"rank.mod") == false){
 #                @bal = acc_balance(@player)

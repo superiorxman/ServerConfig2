@@ -2,7 +2,7 @@ bind('projectile_launch', null, array('type': 'ARROW', 'shootertype': 'PLAYER'),
     @pname = @event['player']
     @shooterType = @event['shootertype']
     @inv = pinv(@pname)
-    @arrowUsed = 'false'
+    @arrowUsed = false
     include('/home/minecraft/server/plugins/CommandHelper/includes/isSpecialArrow.ms')
     for(@i = 0, @i <= 35, @i++){
         if(_isSpecialArrow(@inv[@i],@event['id'])){

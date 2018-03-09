@@ -49,11 +49,11 @@ register_command('modifyspeed',
             }
 
             export(@player."lastUsedModifySpeed", time() / 1000)
-            export(@vic."speedEffects","true")
+            export(@vic."speedEffects",true)
             broadcast(@player . " modified " . @vic . "'s speed")
             
             set_timeout(15000,closure(
-                export(@vic."speedEffects","false")
+                export(@vic."speedEffects",false)
                 tmsg(@vic, color('GREEN')."Your speed is now unlocked")
             ))
             

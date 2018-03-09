@@ -1,12 +1,12 @@
 glowoff:/glow off = >>>
-    if(import(player()."glowEffects") == "true"){
+    if(import(player()."glowEffects") == true){
         tmsg(player(), color('RED')."Your glow is currently locked")
         die()
     }
     sudo(/effect player() 24 0)
 <<<
 glowon:/glow on = >>>
-    if(import(player()."glowEffects") == "true"){
+    if(import(player()."glowEffects") == true){
         tmsg(player(), color('RED')."Your glow is currently locked")
         die()
     }

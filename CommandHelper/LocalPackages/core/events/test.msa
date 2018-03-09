@@ -1,0 +1,11 @@
+thistest:/thistest = >>>
+
+    @confuseStatus = import(player().'isConfused')
+
+    if(@confuseStatus == true){
+        msg('tested true, value reported as '.@confuseStatus)
+        die()
+    }
+    msg('tested false, value reported as '.@confuseStatus)
+
+<<<

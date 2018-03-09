@@ -31,13 +31,13 @@ register_command('confuse',
             }
             
             if(ponline(@victim)){
-                export(@victim."isConfused", "true")
+                export(@victim."isConfused", true)
                 broadcast(color('BLUE') . @player . color('GRAY') . " is using their mind control to confuse " . color('BLUE') . @victim . color('GRAY') . "!")
             
                 set_timeout(30000, closure(
             
                     broadcast(color('BLUE') . @victim . color('GRAY') . " is no longer confused.")
-                    export(@victim."isConfused", "false")
+                    export(@victim."isConfused", false)
             
                 ))
             }
@@ -79,7 +79,7 @@ register_command('unconfuse',
             
             
             if(ponline(@victim)){
-                export(@victim."isConfused", "false")
+                export(@victim."isConfused", false)
                 broadcast(color('BLUE') . @victim . color('GRAY') . " is no longer confused.")
             }
                 

@@ -22,8 +22,8 @@ bind('player_join',null,null,@event){
         die()
     }
     
-    export(@plr."isConfused","false")    
-    export(@plr."speedEffects","false")
+    export(@plr."isConfused",false)    
+    export(@plr."speedEffects",false)
 
     if(@hero['class'] == 'mortal'){
         runas('~console',"/undisguiseplayer ".@plr)
