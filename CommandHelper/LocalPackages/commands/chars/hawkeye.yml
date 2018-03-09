@@ -25,11 +25,12 @@ buffs:
 - /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"Arrow of §2Luck"},Potion:"minecraft:luck"}
 - /give <plr> minecraft:arrow 10 0 {display:{Name:"§fArrow of §7Smoke"}}
 - /give <plr> minecraft:arrow 10 0 {display:{Name:"§fArrow of §4Ka-Ba-Boom"}}
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §8H§0a§8w§0k§8e§0y§8e
 class: hawkeye
 haste: 2
 jump: 2
-name: §8H§0a§8w§0k§8e§0y§8e
 op: false
 permissions:
   superherocity:

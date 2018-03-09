@@ -1,10 +1,11 @@
 buffs:
 - /effect <plr> 5 9999 4 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eChe§6et§eah
 class: cheetah
 jump: 4
-name: §eChe§6et§eah
 op: false
 permissions:
   superherocity:

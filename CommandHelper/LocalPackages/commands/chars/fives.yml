@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 11 9999 5 true
 - /shot give <plr> blasterrifle
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §1F§bi§fv§9e§9s
 class: fives
 haste: 2
 jump: 2
-name: §1F§bi§fv§9e§9s
+maxHearts: 20
 op: false
 permissions:
   superherocity:

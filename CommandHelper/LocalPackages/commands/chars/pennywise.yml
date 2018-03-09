@@ -2,10 +2,11 @@ buffs:
 - /effect <plr> 11 9999 3 true
 - /give <plr> minecraft:iron_bars 1 16:6 name:&4IT's_&cClaws
 - /mgive <plr> deadlightswand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §4P§ce§fn§eny§4w§ei§fs§4e
 class: pennywise
 jump: 2
-name: §4P§ce§fn§eny§4w§ei§fs§4e
 op: false
 permissions:
   superherocity:

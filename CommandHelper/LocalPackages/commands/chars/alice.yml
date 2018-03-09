@@ -6,9 +6,10 @@ buffs:
 - /give <plr> minecraft:iron_chestplate 1 name:&3A&fl&0i&bc&fes_'s_&3Chestplate
 - /give <plr> minecraft:iron_leggings 1 name:&3A&fl&0i&bc&fes_'s_&3Leggings
 - /give <plr> minecraft:iron_boots 1 name:&3A&fl&0i&bc&fes_'s_&3Boots
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §3A§fl§ei§bc§fe
 class: alice
-name: §3A§fl§ei§bc§fe
 op: false
 powers:
 - /buff

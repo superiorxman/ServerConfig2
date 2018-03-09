@@ -3,11 +3,12 @@ buffs:
 - /effect <plr> 11 9999 1 true
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> pyrokenesisblast
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §2S§fa§2iki §fK§2us§fu§2o
 class: saikikusuo
 haste: 9
 jump: 7
-name: §2S§fa§2iki §fK§2us§fu§2o
 op: false
 permissions:
   superherocity:

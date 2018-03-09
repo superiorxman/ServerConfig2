@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 1 true
 - /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §4Fl§ea§4sh§8(BartA§8)
 class: flashbartallen
 haste: 4
 jump: 3
-name: §4Fl§ea§4sh§8(BartA§8)
+maxHearts: 20
 op: false
 permissions:
   speedforce:

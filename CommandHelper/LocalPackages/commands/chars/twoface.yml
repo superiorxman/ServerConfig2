@@ -1,8 +1,9 @@
 buffs:
 - /shot give <plr> pistol
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §fTwo§0Face
 class: twoface
-name: §fTwo§0Face
 op: false
 powers:
 - /buff

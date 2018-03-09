@@ -1,4 +1,3 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 150 true
 - /effect <plr> 10 9999 1 true
@@ -7,11 +6,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /disguise giant
 - /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
-chatcolor: '&5'
+chat:
+- color: '&5'
+  name: §5G§9a§0l§5a§9c§0t§5u§9s
 class: galactus
 haste: 9
 jump: 9
-name: §5G§9a§0l§5a§9c§0t§5u§9s
+maxHearts: 50
 op: false
 permissions:
   superherocity:

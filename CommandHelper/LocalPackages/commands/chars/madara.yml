@@ -1,11 +1,12 @@
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> minecraft:diamond_hoe 1 16:10 name:&1M&4a&1d&4a&1r&1a&4s_&1D&4e&1a&4t&1h_&4S&1i&4c&1k&4l&1e
-chatcolor: '&3'
+chat:
+- color: '&3'
+  name: §1M§4a§1d§4a§1r§1a
 class: madara
 haste: 2
 jump: 2
-name: §1M§4a§1d§4a§1r§1a
 op: false
 permissions:
   superherocity:

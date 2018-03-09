@@ -1,15 +1,16 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 18 true
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 3 true
 - /shot give <plr> kiblast
 - /shot give <plr> specialbeamcannon
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Pi§5cc§folo
 class: piccolo
 haste: 8
 jump: 8
-name: §2Pi§5cc§folo
+maxHearts: 50
 op: false
 permissions:
   superherocity:

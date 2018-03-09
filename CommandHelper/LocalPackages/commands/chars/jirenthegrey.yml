@@ -1,10 +1,11 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 254 true
 - /effect <plr> 11 9999 3 true
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §4J§ci§4r§ce§4n §8T§fh§7e Gr§0e§fy
 class: jirenthegrey
-name: §4J§ci§4r§ce§4n §8T§fh§7e Gr§0e§fy
+maxHearts: 50
 op: false
 permissions:
   superherocity:

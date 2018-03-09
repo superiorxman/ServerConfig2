@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
@@ -8,11 +7,13 @@ buffs:
 - /shot give <plr> redenergybeam
 - /give <plr> 95:14 64
 - /give <plr> minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4R§0e§4d L§ca§4nt§0e§4rn§8(A)
 class: redlanternatrocitus
 haste: 4
 jump: 3
-name: §4R§0e§4d L§ca§4nt§0e§4rn§8(A)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

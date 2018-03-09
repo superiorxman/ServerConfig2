@@ -1,4 +1,3 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 10 9999 3 true
@@ -9,11 +8,13 @@ buffs:
 - /shot give <plr> blackenergybeam
 - /give <plr> 95:7 64
 - /give <plr> 263 1 20:2 16:155 name:&0B&8l&7a&fc&0k&8_&7L&fa&0nte&8r&7n's_&8Ri&fn&0g
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §0B§8l§7a§fc§0k §7L§fa§0nte§8r§7n§8(§fM§7M§8)
 class: blacklanternmartianmanhunter
 haste: 7
 jump: 9
-name: §0B§8l§7a§fc§0k §7L§fa§0nte§8r§7n§8(§fM§7M§8)
+maxHearts: 50
 op: false
 permissions:
   superherocity:

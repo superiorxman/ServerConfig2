@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 1 true
 - /shot give <plr> pistol
 - /shot give <plr> pistol
-chatcolor: '&5'
+chat:
+- color: '&5'
+  name: §5B§0lac§5k §5W§0ido§5w
 class: blackwidow
 haste: 2
 jump: 3
-name: §5B§0lac§5k §5W§0ido§5w
+maxHearts: 20
 op: false
 permissions:
   superherocity:

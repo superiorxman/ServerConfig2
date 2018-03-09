@@ -1,10 +1,11 @@
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> minecraft:golden_hoe 1 16:10 name:&6Earth_Scythe
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §6Ninjago §0Co§8le
 class: ninjagocole
 jump: 2
-name: §6Ninjago §0Co§8le
 op: false
 permissions:
   superherocity:

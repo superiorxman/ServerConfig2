@@ -2,11 +2,12 @@ buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 4 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §aI§dm§2p§5o§as§ds§2i§5b§al§de §5Man
 class: impossibleman
 haste: 9
 jump: 4
-name: '§aI§dm§2p§5o§as§ds§2i§5b§al§de §5Man'
 op: true
 permissions:
   superherocity:

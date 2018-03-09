@@ -1,14 +1,15 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> 95:4 64
 - /shot give <plr> yellowenergybeam
 - /give <plr> minecraft:gold_nugget 1 20:2 16:155 name:&eYe&ell&6o&ew_&eL&6a&ent&fe&ern_Ring
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eYe§ell§6o§ew §eL§6a§ent§fe§ern§8(§8B)
 class: yellowlanternbatman
 haste: 9
 jump: 8
-name: §eYe§ell§6o§ew §eL§6a§ent§fe§ern§8(§8B)
+maxHearts: 20
 op: false
 permissions:
   superherocity:

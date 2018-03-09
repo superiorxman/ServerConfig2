@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fDovahkiin
 class: dovahkiin
 haste: 1
 jump: 1
-name: §fDovahkiin
+maxHearts: 20
 op: false
 permissions:
   superherocity:

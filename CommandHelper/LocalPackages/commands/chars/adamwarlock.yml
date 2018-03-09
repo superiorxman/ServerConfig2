@@ -7,9 +7,10 @@ buffs:
 - /mgive <plr> forcefieldwand
 - /mgive <plr> stonetouchwand
 - /mgive <plr> turnwaterwand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §4A§6d§ea§6m §4W§ba§er§6l§bo§ec§4k
 class: adamwarlock
-name: §4A§6d§ea§6m §4W§ba§er§6l§bo§ec§4k
 op: false
 permissions:
   superherocity:

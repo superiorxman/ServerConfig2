@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 2 true
 - /effect <plr> 10 9999 4 true
 - /give <plr> minecraft:iron_bars 1 16:10 name:&eW&0o&elv&9er&eine's_Claws
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eW§0o§elv§9er§eine
 class: wolverine
 haste: 3
 jump: 3
-name: §eW§0o§elv§9er§eine
+maxHearts: 20
 op: false
 permissions:
   superherocity:

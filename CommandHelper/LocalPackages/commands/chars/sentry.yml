@@ -1,13 +1,14 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eS§3e§en§3t§er§3y
 class: sentry
 haste: 9
 jump: 9
-name: §eS§3e§en§3t§er§3y
+maxHearts: 50
 op: false
 permissions:
   superherocity:

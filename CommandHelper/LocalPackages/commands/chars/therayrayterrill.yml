@@ -1,13 +1,14 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 2 true
 - /mgive <plr> lightraywand
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §8Th§ee §8R§ea§8y(§eRT§8)
 class: therayrayterrill
 haste: 5
 jump: 2
-name: §8Th§ee §8R§ea§8y(§eRT§8)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

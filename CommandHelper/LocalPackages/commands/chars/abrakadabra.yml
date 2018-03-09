@@ -1,9 +1,10 @@
 buffs:
 - /give <plr> minecraft:paper 52 name:&fMa&cgic&0_&fCa&crds
 - /mgive <plr> abraswand
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §0A§8bra §fK§0a§8d§0a§8bra
 class: abrakadabra
-name: §0A§8bra §fK§0a§8d§0a§8bra
 op: false
 powers:
 - /buff

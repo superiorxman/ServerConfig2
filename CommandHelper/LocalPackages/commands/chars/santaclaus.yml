@@ -1,8 +1,9 @@
 buffs:
 - /effect <plr> 2 9999 1 true
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §4S§fa§0n§4t§0a §4C§0l§fa§4u§fs
 class: santaclaus
-name: §4S§fa§0n§4t§0a §4C§0l§fa§4u§fs
 op: false
 powers:
 - /buff

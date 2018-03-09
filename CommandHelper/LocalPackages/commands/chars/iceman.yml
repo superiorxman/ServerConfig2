@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 2 true
 - /shot give <plr> icespike
 - /give <plr> minecraft:elytra 1 70:1 34:3 name:&bIce_Glide
 - /mgive <plr> freezeraywand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §bIce§1man
 class: iceman
-name: §bIce§1man
+maxHearts: 30
 op: false
 powers:
 - /buff

@@ -4,9 +4,10 @@ buffs:
 - /mgive <plr> cosmicboltwand
 - /mgive <plr> telekinesiswand
 - /mgive <plr> acceleratetimewand
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §7Th§fe §7B§fe§ey§7o§en§fd§7er
 class: thebeyonder
-name: §7Th§fe §7B§fe§ey§7o§en§fd§7er
 op: false
 permissions:
   superherocity:

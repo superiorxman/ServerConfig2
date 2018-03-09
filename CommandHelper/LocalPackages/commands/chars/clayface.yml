@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 8 true
 - /effect <plr> 10 9999 3 true
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §6Clayface
 class: clayface
 haste: 5
 jump: 2
-name: §6Clayface
+maxHearts: 30
 op: false
 permissions:
   superherocity:

@@ -48,7 +48,7 @@ register_command('skin',
                     @val = @hero['altskins'][@skinNum]['val']
                 }
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-                _changeSkin(@player,@sig,@val,@hero['name'])
+                _changeSkin(@player,@sig,@val,@hero['chat'][0]['name'])
         }
     )
 )

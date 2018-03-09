@@ -28,7 +28,7 @@ register_command('chars',
                         @class = substr(@files[@i],0,string_position(@files[@i],'.'))
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
                     }catch(Exception @e){
                         break()
                     }
@@ -42,7 +42,7 @@ register_command('chars',
                         @class = substr(@files[@i],0,string_position(@files[@i],'.'))
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
                     }catch(Exception @e){
                         break()
                     }
@@ -91,7 +91,7 @@ register_command('characterselect',
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.replace(@her,'\n','').'.yml')
                     @hero = yml_decode(@contents)
                     @foundAHero = true
-                    queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')))
+                    queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')))
                     
                 }catch(IOException @e){
                     continue()
@@ -198,7 +198,7 @@ register_command('selectchar',
                     if(@otherPlayerGroup == @hero['class'] && @player != @playa){
                         if(!@multipleAllowed){
                             msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                            msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['name'].color('RED').'.')
+                            msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@hero['chat'][0]['name'].color('RED').'.')
                             msg(color('DARK_RED').'Please choose a different character.')
                             msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                             die()
@@ -211,10 +211,10 @@ register_command('selectchar',
                         @alts = @hero['alts']
                         foreach(@alt in @alts){
                             if(@alt == @otherPlayerGroup){
-                                @h1 = @hero['name']
+                                @h1 = @hero['chat'][0]['name']
                                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
                                 @hero = yml_decode(@contents)
-                                @h2 = @hero['name']
+                                @h2 = @hero['chat'][0]['name']
                                 msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                                 msg(color('RED').'Sorry, '.color('WHITE').@playa.color('RED').' is already using '.@h2.color('RED').'.')
                                 msg(color('RED').'Try again with:')
@@ -234,8 +234,8 @@ register_command('selectchar',
                 queue_push(closure(runas('~console','/minecraft:clear '.@player)))
                 queue_push(closure(set_peffect(@player, 14, 1, 9999, true, false)))
                 queue_push(closure(runas('~console','/pex group #'.@hero['class'].' parents set #commonherotraits')))
-                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['chatcolor'])))
-                @niceName = replace(@hero['name'],'§','&')
+                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['chat'][0]['color'])))
+                @niceName = replace(@hero['chat'][0]['name'],'§','&')
                 queue_push(closure(runas('~console','/pex group #'.@hero['class'].' prefix "'.@niceName.'"')))
                 queue_push(closure(runas('~console','/pex user #'.@player.' group set #'.@hero['class'])))
                 if(array_index_exists(@hero,'permissions') && is_array(@hero['permissions'])){

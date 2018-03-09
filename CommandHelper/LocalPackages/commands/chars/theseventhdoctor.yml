@@ -2,9 +2,10 @@ alts:
 - theeighthdoctor
 buffs:
 - /give <plr> minecraft:redstone_torch 1 name:&7S&4o&7n&0ic_&7Screwd&6r&7iver
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §fT§9h§6e D§4o§6ct§f§9o§fr§8(§f7th§8)
 class: theseventhdoctor
-name: §fT§9h§6e D§4o§6ct§f§9o§fr§8(§f7th§8)
 op: false
 permissions:
   superherocity:

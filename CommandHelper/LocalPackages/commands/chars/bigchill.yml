@@ -1,4 +1,3 @@
-maxHearts: 30
 alts:
 - ben10
 - alienx
@@ -16,10 +15,12 @@ buffs:
 - /shot give <plr> icespike
 - /give <plr> minecraft:elytra 1 70:1 34:3 name:&bWings
 - /mgive <plr> freezeraywand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §bB§0i§bg §0C§bh§0i§bl§0l
 class: bigchill
 jump: 1
-name: §bB§0i§bg §0C§bh§0i§bl§0l
+maxHearts: 30
 op: false
 permissions:
   superherocity:

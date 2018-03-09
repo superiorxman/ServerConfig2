@@ -1,14 +1,15 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 4 true
 - /shot give <plr> ghostridershotgun
 - /shot give <plr> flamethrower
 - /effect <plr> 12 9999 1 true
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §8Gh§0o§8st R§7i§8der§8(§6J§cB§8)
 class: ghostriderjohnnyblaze
 haste: 5
-name: §8Gh§0o§8st R§7i§8der§8(§6J§cB§8)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

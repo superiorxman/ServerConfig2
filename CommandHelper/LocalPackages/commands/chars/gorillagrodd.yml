@@ -1,13 +1,14 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 12 true
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §8G§7o§8rilla Gr§7o§8dd
 class: gorillagrodd
 haste: 6
 jump: 3
-name: §8G§7o§8rilla Gr§7o§8dd
+maxHearts: 30
 op: false
 permissions:
   speedforce:

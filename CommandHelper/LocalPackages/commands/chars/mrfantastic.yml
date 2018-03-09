@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 2 true
 - /give <plr> minecraft:fishing_rod 1 34:10 name:&1Ar&0m_&1St&0re&1tch
 - /give <plr> minecraft:elytra 1 34:10 name:&1Glide
 - /mgive <plr> longpunchwand
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §1M§fr §1F§fa§0n§1t§0a§1s§0t§fi§1c
 class: mrfantastic
 jump: 3
-name: §1M§fr §1F§fa§0n§1t§0a§1s§0t§fi§1c
+maxHearts: 20
 op: false
 permissions:
   superherocity:

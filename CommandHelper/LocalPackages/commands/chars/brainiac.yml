@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 12 true
 - /effect <plr> 11 9999 3 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2B§5r§0a§2i§5n§0i§2a§5c
 class: brainiac
 haste: 5
 jump: 4
-name: §2B§5r§0a§2i§5n§0i§2a§5c
+maxHearts: 30
 op: false
 permissions:
   superherocity:

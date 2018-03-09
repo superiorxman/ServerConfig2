@@ -53,7 +53,7 @@ bind('player_join',null,null,@event){
             if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
                 set_timeout(1500, closure(
                     runas(@plr,'/mainmenu')
-                    broadcast(color('WHITE')  . @plr . color('GRAY') . " has been returned to the main menu because " . color('WHITE') . @player . color('GRAY') . " was already " . @hero['name'])
+                    broadcast(color('WHITE')  . @plr . color('GRAY') . " has been returned to the main menu because " . color('WHITE') . @player . color('GRAY') . " was already " . @hero['chat'][0]['name'])
                 ))
                 die()
             }
@@ -62,10 +62,10 @@ bind('player_join',null,null,@event){
                     if(@alt == @otherPlayerGroup){
                         set_timeout(1500, closure(
                             runas(@plr,'/mainmenu')
-                            @h1 = @hero['name']
+                            @h1 = @hero['chat'][0]['name']
                             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
                             @hero = yml_decode(@contents)
-                            @h2 = @hero['name']
+                            @h2 = @hero['chat'][0]['name']
                             msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                             msg(color('RED').'Sorry, '.color('WHITE').@player.color('RED').' is already using '.@h2.color('RED').'.')
                             msg(color('RED').'Try again with:')
@@ -97,7 +97,7 @@ bind('player_join',null,null,@event){
         }
     ))
     set_timeout(5000, closure(
-        _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
+        _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['chat'][0]['name'])
         _changeTrail(@plr, @hero['trail'])
     ))
 

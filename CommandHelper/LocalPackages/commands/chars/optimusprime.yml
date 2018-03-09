@@ -1,12 +1,13 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §1O§4pti§1mus §1Pr§4ime
 class: optimusprime
 haste: 5
 jump: 4
-name: §1O§4pti§1mus §1Pr§4ime
+maxHearts: 40
 op: false
 permissions:
   superherocity:

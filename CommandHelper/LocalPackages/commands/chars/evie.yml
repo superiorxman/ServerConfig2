@@ -1,8 +1,9 @@
 buffs:
 - /give <plr> minecraft:glass 1 name:&1E&9v&ei&9e's_&1M&9i&er&1r&9o&1r
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §1E§9v§ei§9e
 class: evie
-name: §1E§9v§ei§9e
 op: false
 powers:
 - /buff

@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> magicblast
 - /mgive <plr> emoksemocebadlofdnilbwand
@@ -6,11 +5,13 @@ buffs:
 - /mgive <plr> dlocdniwwolbwand
 - /mgive <plr> etaercsnoisulliwand
 - /mgive <plr> tekcajtiartswand
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fZ§0a§ft§0a§fn§0n§fa
 class: zatanna
 haste: 1
 jump: 3
-name: §fZ§0a§ft§0a§fn§0n§fa
+maxHearts: 30
 op: false
 permissions:
   superherocity:

@@ -1,13 +1,14 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 13 9999 1 true
 - /effect <plr> 16 9999 1 true
 - /effect <plr> 11 9999 2 true
 - /give <plr> minecraft:iron_hoe 1 16:10 name:&9At&3lant&9ean_&9Tr&3ide&9nt
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §9A§6t§3t§9u§6m§3a
 class: attuma
-name: §9A§6t§3t§9u§6m§3a
+maxHearts: 30
 op: false
 powers:
 - /buff

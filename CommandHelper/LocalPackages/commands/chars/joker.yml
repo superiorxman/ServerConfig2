@@ -3,9 +3,10 @@ buffs:
 - /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
 - /shot give <plr> pistol
 - /shot give <plr> cakebomb
-chatcolor: '&5'
+chat:
+- color: '&5'
+  name: §fJo§2k§5er
 class: joker
-name: §fJo§2k§5er
 op: false
 powers:
 - /buff

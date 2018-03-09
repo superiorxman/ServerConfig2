@@ -1,4 +1,3 @@
-maxHearts: 30
 alts:
 - ben10
 - bigchill
@@ -12,9 +11,11 @@ alts:
 - upgrade
 buffs:
 - /effect <plr> 5 9999 10 true
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §4F§fo§8u§fr §4A§fr§8m§4s
 class: fourarms
-name: §4F§fo§8u§fr §4A§fr§8m§4s
+maxHearts: 30
 op: false
 permissions:
   superherocity:

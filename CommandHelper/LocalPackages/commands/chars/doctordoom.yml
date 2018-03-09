@@ -2,9 +2,10 @@ buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 3 true
 - /shot give <plr> energybeam
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2D§ao§2ct§ao§2r §aD§2o§ao§2m
 class: doctordoom
-name: §2D§ao§2ct§ao§2r §aD§2o§ao§2m
 op: true
 permissions:
   superherocity:

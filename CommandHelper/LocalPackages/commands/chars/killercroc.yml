@@ -1,13 +1,14 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 12 true
 - /effect <plr> 11 9999 1 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Killer §aCroc
 class: killercroc
 haste: 5
 jump: 3
-name: §2Killer §aCroc
+maxHearts: 30
 op: false
 permissions:
   superherocity:

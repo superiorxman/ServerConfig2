@@ -3,9 +3,10 @@ alts:
 buffs:
 - /mgive <plr> telekinesiswand
 - /mgive <plr> forcefieldwand
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §eJe§1an §eGr§de§1y
 class: jeangrey
-name: §eJe§1an §eGr§de§1y
 op: false
 permissions:
   superherocity:

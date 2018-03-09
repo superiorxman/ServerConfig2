@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 10 true
 - /shot give <plr> solarenergybeam
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4D§0e§4l§cs§0i§cn §8R§7o§8w§7e
 class: delsinrowe
 haste: 5
 jump: 5
-name: §4D§0e§4l§cs§0i§cn §8R§7o§8w§7e
+maxHearts: 20
 op: false
 permissions:
   superherocity:

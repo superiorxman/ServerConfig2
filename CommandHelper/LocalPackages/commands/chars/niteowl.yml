@@ -1,10 +1,11 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §8N§ci§8te O§7w§8l
 class: niteowl
 haste: 1
-name: §8N§ci§8te O§7w§8l
+maxHearts: 20
 op: false
 permissions:
   superherocity:

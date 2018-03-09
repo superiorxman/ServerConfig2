@@ -1,4 +1,3 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 3 true
@@ -9,9 +8,11 @@ buffs:
 - /mgive <plr> liftmetalwand
 - /mgive <plr> telekinesiswand
 - /mgive <plr> destroyerblastwand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §8D§6e§es§7t§8r§6o§7y§8e§7r
 class: destroyer
-name: §8D§6e§es§7t§8r§6o§7y§8e§7r
+maxHearts: 40
 op: false
 permissions:
   superherocity:

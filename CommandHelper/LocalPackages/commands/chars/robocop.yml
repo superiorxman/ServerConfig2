@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 9 true
 - /effect <plr> 11 9999 1 true
@@ -12,11 +11,13 @@ buffs:
 - /shot give <plr> Putty
 - /shot give <plr> Grenade
 - /shot give <plr> C4
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §4R§7o§8b§0o§4c§7o§8p
 class: robocop
 haste: 5
 jump: 3
-name: §4R§7o§8b§0o§4c§7o§8p
+maxHearts: 30
 op: false
 permissions:
   superherocity:

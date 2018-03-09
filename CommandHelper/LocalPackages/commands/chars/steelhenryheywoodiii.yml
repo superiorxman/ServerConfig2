@@ -1,14 +1,15 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 1 9999 1 true
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 3 9999 3 true
 - /effect <plr> 10 9999 2 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fSte§7el§8(HHIII)
 class: steelhenryheywoodiii
 haste: 5
 jump: 3
-name: §fSte§7el§8(HHIII)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

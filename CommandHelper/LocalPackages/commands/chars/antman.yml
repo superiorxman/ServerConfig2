@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 1 true
 - /disguiseplayer <plr> creeper setinvisible
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4A§0n§4t-M§0a§4n
 class: antman
 haste: 2
 jump: 7
-name: §4A§0n§4t-M§0a§4n
+maxHearts: 20
 op: false
 permissions:
   superherocity:

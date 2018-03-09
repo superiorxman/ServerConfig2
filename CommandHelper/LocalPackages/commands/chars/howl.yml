@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 7 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4H§co§7wl
 class: howl
 haste: 5
 jump: 5
-name: §4H§co§7wl
+maxHearts: 20
 op: false
 permissions:
   superherocity:

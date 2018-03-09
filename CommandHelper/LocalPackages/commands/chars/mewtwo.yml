@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §fM§de§fwt§dw§fo
 class: mewtwo
 haste: 2
 jump: 2
-name: §fM§de§fwt§dw§fo
+maxHearts: 30
 op: false
 permissions:
   superherocity:

@@ -1,11 +1,12 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 4 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2D§aa§0n§fn§ay §0P§ah§2a§0n§at§fo§2m
 class: dannyphantom
 jump: 1
-name: §2D§aa§0n§fn§ay §0P§ah§2a§0n§at§fo§2m
+maxHearts: 30
 op: false
 permissions:
   superherocity:

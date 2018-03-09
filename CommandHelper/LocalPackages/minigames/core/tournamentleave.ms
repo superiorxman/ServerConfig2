@@ -76,7 +76,7 @@ register_command('tournamentleave',
                     @participants = json_decode(@response['body'])
                     @confirmedPerson = false
                     foreach(@participant in @participants){
-                        if(@personLeaving == @participant['participant']['name']){
+                        if(@personLeaving == @participant['participant']['chat'][0]['name']){
                             @confirmedPerson = true
                             @participantID = @participant['participant']['id']
                             break()

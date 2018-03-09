@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 11 9999 2 true
 - /mgive <plr> stonetouchwand
 - /mgive <plr> groundpoundwand
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §8G§7r§9e§8y §8G§9a§7r§8g§9o§7y§8le
 class: greygargoyle
-name: §8G§7r§9e§8y §8G§9a§7r§8g§9o§7y§8le
+maxHearts: 30
 op: false
 powers:
 - /buff

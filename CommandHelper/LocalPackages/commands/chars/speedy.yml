@@ -1,14 +1,15 @@
-maxHearts: 20
 buffs:
 - /give <plr> minecraft:bow 1 51:1 name:&4Sp&eee&4dy's_Bow
 - /effect <plr> 5 9999 1 true
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4Sp§eee§4dy
 class: speedy
 haste: 1
 jump: 2
-name: §4Sp§eee§4dy
+maxHearts: 20
 op: false
 permissions:
   superherocity:

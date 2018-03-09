@@ -48,7 +48,7 @@ register_command('stealiron',
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                     @hero = yml_decode(@contents)
                     
-                    tmsg(@vic,@hero['name'].color('RED').' stole the iron from your inventory!')
+                    tmsg(@vic,@hero['chat'][0]['name'].color('RED').' stole the iron from your inventory!')
                 }
             }
         }

@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 2 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fKi§5n§fgp§5i§fn
 class: kingpin
 haste: 1
 jump: 1
-name: §fKi§5n§fgp§5i§fn
+maxHearts: 20
 op: false
 permissions:
   superherocity:

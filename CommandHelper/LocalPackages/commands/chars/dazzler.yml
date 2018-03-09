@@ -1,9 +1,10 @@
 buffs:
 - /shot give <plr> whiteenergybeam
 - /shot give <plr> lightbeam
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fD§ea§fzz§7l§fer
 class: dazzler
-name: §fD§ea§fzz§7l§fer
 op: false
 powers:
 - /buff

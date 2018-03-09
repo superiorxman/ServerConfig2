@@ -1,9 +1,10 @@
 buffs:
 - /effect <plr> 18 9999 1 true
 - /effect <plr> 2 9999 2 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fSnoop Dogg
 class: snoopdogg
-name: §fSnoop Dogg
 op: false
 powers:
 - /buff

@@ -1,8 +1,9 @@
 buffs:
 - /give <plr> minecraft:redstone_torch 1 name:&9So&7ni&9c_Scre&6wd&7river
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §7T§8h§ee §4D§1o§2c§et§8o§7r§8(§f13th§8)
 class: thethirteenthdoctor
-name: §7T§8h§ee §4D§1o§2c§et§8o§7r§8(§f13th§8)
 op: false
 permissions:
   superherocity:

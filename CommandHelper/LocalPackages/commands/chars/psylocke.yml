@@ -4,11 +4,12 @@ buffs:
 - /give <plr> minecraft:bow 1 51:1 name:&dPsy_Bow
 - /give <plr> minecraft:arrow 1 name:&dPsy_Arrow
 - /give <plr> minecraft:lead 1 16:5 name:&dPsy_Whip
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §5Psy§8loc§0k§9e
 class: psylocke
 haste: 2
 jump: 3
-name: §5Psy§8loc§0k§9e
 op: false
 permissions:
   superherocity:

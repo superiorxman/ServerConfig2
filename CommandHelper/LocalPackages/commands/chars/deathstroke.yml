@@ -10,11 +10,12 @@ buffs:
 - /shot give <plr> Putty
 - /shot give <plr> Grenade
 - /shot give <plr> C4
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §8Death§6stroke
 class: deathstroke
 haste: 2
 jump: 4
-name: §8Death§6stroke
 op: false
 permissions:
   superherocity:

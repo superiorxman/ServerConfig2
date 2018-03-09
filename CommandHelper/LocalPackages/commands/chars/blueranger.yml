@@ -1,14 +1,15 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 11 9999 3 true
 - /give <plr> minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers
 - /shot give <plr> hydrobow
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §1B§9l§7u§8e §1R§9a§7n§8g§1e§9r
 class: blueranger
 haste: 5
 jump: 4
-name: §1B§9l§7u§8e §1R§9a§7n§8g§1e§9r
+maxHearts: 20
 op: false
 permissions:
   superherocity:

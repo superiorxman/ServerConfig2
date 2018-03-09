@@ -1,13 +1,18 @@
-maxHearts: 20
+allowedPhrases:
+- Mew.
+- Meew.
+- Meww.
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §dMew
 class: mew
 haste: 2
 id: '152'
 jump: 2
-name: §dMew
+maxHearts: 20
 op: false
 permissions:
   superherocity:
@@ -39,7 +44,3 @@ sig: cQbEtt0p38EEFmyN/GFujhLB2D+0E6fea8PI5AzpKV/gVTVUKkGlK0c2CxWZxZKICaBQPN7IBVV
 speech: I am the protector!
 trail: ''
 val: eyJ0aW1lc3RhbXAiOjE0Nzg2MTkzODgzNDEsInByb2ZpbGVJZCI6IjRiZDYyYzJlNTZlMzRmZjQ4NDNmNGFmNTFlZGI4MzM5IiwicHJvZmlsZU5hbWUiOiJ0ZWFtR0JOaXNiZXRzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYTgzNGY5ZjU1YjRmOTIyM2Q1YjU2ZTYyZGI1ZGJlOTU0ZmY2YjA5MGJkNWQ2NjY0ZmJhZjdhMTdjMTg1YWQifX19
-allowedPhrases:
-- Mew.
-- Meew.
-- Meww.

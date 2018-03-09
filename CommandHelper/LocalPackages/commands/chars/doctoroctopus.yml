@@ -1,10 +1,11 @@
-maxHearts: 20
 buffs:
 - /give <plr> minecraft:fishing_rod 1 16:50 name:&7D&4o&7c_&7O&4c&7k's_&7Ten&8tac&7le
 - /give <plr> minecraft:fishing_rod 1 16:50 name:&7D&4o&7c_&7O&4c&7k's_&7Ten&8tac&7le
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Do§6ct§2or §2O§6c§7t§4o§7p§6u§2s
 class: doctoroctopus
-name: §2Do§6ct§2or §2O§6c§7t§4o§7p§6u§2s
+maxHearts: 20
 op: false
 permissions:
   superherocity:

@@ -1,11 +1,12 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 1 true
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eParallax §6Entity
 class: parallaxentity
 haste: 2
 jump: 3
-name: §eParallax §6Entity
+maxHearts: 30
 op: false
 permissions:
   superherocity:

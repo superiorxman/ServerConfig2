@@ -1,4 +1,3 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 18 true
 - /effect <plr> 10 9999 1 true
@@ -7,11 +6,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> kamehameha
 - /shot give <plr> kiblast
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §eG§1o§6han
 class: gohan
 haste: 9
 jump: 9
-name: §eG§1o§6han
+maxHearts: 50
 op: false
 permissions:
   superherocity:

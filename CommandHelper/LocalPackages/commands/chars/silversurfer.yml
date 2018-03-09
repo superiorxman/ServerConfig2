@@ -1,13 +1,14 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §7Si§fl§7ver §7Su§fr§7fer
 class: silversurfer
 haste: 5
 jump: 4
-name: §7Si§fl§7ver §7Su§fr§7fer
+maxHearts: 50
 op: false
 permissions:
   superherocity:

@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> shockblast
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §eSh§4o§ec§7k§4e§7r
 class: shocker
 jump: 1
-name: §eSh§4o§ec§7k§4e§7r
+maxHearts: 30
 op: false
 permissions:
   superherocity: [

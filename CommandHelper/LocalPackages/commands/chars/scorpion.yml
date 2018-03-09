@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /give <plr> minecraft:fishing_rod 1 16:50 name:&2T&aai&2l_&2Wh&7i&2p
 - /mgive <plr> acidshotwand
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §2Sco§arp§2ion
 class: scorpion
-name: §2Sco§arp§2ion
+maxHearts: 30
 op: false
 permissions:
   superherocity:

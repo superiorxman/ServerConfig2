@@ -2,9 +2,10 @@ buffs:
 - /shot give <plr> icespike
 - /give <plr> minecraft:ghast_tear 1 19:50 name:&fWindblast
 - /mgive <plr> tsunamiwand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §0We§7at§8her §bWi§8za§7r§0d
 class: weatherwizard
-name: §0We§7at§8her §bWi§8za§7r§0d
 op: false
 permissions:
   superherocity:

@@ -1,8 +1,9 @@
 buffs:
 - /effect <plr> 11 9999 5 true
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §0D§8e§fa§0th§8(§fD§8C§8)
 class: deathdc
-name: §0D§8e§fa§0th§8(§fD§8C§8)
 op: true
 permissions:
   superherocity:

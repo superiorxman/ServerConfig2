@@ -1,9 +1,10 @@
 buffs:
 - /give <plr> minecraft:golden_sword 1 20:2 name:&6The_Sword_Of_Fire
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §6Ninjago §4K§0a§4i
 class: ninjagokai
 jump: 2
-name: §6Ninjago §4K§0a§4i
 op: false
 permissions:
   superherocity:

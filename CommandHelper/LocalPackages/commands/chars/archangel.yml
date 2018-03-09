@@ -1,11 +1,12 @@
-maxHearts: 20
 buffs:
 - /give <plr> elytra 1
 - /give <plr> firework 10
 - /mgive <plr> feathershotwand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §1A§0r§7ch§1an§7ge§0l
 class: archangel
-name: §1A§0r§7ch§1an§7ge§0l
+maxHearts: 20
 op: false
 permissions:
   superherocity:

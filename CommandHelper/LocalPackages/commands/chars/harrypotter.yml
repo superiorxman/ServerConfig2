@@ -1,8 +1,9 @@
 buffs:
 - /mgive <plr> harryswand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §4Har§6ry §4Pot§6ter
 class: harrypotter
-name: §4Har§6ry §4Pot§6ter
 op: false
 permissions:
   superherocity:

@@ -1,9 +1,10 @@
 buffs:
 - /shot give <plr> icebeam
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §6Ninjago §bZane
 class: ninjagozane
 jump: 2
-name: §6Ninjago §bZane
 op: false
 permissions:
   superherocity:

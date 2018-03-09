@@ -1,12 +1,13 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 11 9999 4 true
 - /shot give <plr> kryptonianlaservision
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §cC§eo§9s§6mi§9c §4A§2r§9m§6o§4r S§9u§ep§9er§4man
 class: cosmicarmorsuperman
 haste: 9
 jump: 5
-name: §cC§eo§9s§6mi§9c §4A§2r§9m§6o§4r S§9u§ep§9er§4man
+maxHearts: 50
 op: false
 permissions:
   superherocity:

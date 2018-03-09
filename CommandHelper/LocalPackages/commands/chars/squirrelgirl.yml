@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> spawn_egg:101 64
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §6Squ§7irr§6el §7Gi§6rl
 class: squirrelgirl
 haste: 1
 jump: 2
-name: §6Squ§7irr§6el §7Gi§6rl
+maxHearts: 20
 op: false
 permissions:
   superherocity:

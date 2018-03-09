@@ -1,8 +1,9 @@
 buffs:
 - /mgive <plr> quakewand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §7Av§9a§7la§8nc§9h§7e
 class: avalanche
-name: §7Av§9a§7la§8nc§9h§7e
 op: false
 powers:
 - /buff

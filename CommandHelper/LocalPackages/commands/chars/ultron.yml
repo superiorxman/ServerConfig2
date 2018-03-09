@@ -1,4 +1,3 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
@@ -7,11 +6,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /effect <plr> 16 9999 1 true
 - /shot give <plr> petawattlaser
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §7Ul§8tr§4o§7n
 class: ultron
 haste: 7
 jump: 6
-name: §7Ul§8tr§4o§7n
+maxHearts: 40
 op: false
 permissions:
   superherocity:

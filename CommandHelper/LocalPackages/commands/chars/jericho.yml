@@ -1,9 +1,12 @@
-mindControlLimit: 20
+allowedPhrases:
+- '...'
 buffs:
 - /give <plr> minecraft:stick 1 name:Jericho's_Guitar
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §eJ§5e§fr§5i§fc§5h§fo
 class: jericho
-name: §eJ§5e§fr§5i§fc§5h§fo
+mindControlLimit: 20
 op: false
 permissions:
   superherocity:
@@ -17,5 +20,3 @@ sig: PGcTFnoOX23Yi8Oun4hjMKYn/3l2KNfVRDh6D4z9bE7Tj1pPak7KPfmWmR0jyLCy+EjYtTOqNL8
 speech: '...'
 trail: ''
 val: eyJ0aW1lc3RhbXAiOjE1MDQ5ODI2MjA5NjUsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJKaXJlbl9UaGVfR3JleSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdkN2Y3NjZhNGEwMmNjOGZmODUyYTZlOWFjZTgyNjg1ODJhZTFjNzViY2Q5Nzc3NzlmOWQzOTE1ODg5Zjk3In19fQ==
-allowedPhrases:
-- '...'

@@ -1,8 +1,9 @@
 buffs:
 - /mgive <plr> elderwand
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §5Dum§dbl§5edo§dre
 class: dumbledore
-name: §5Dum§dbl§5edo§dre
 op: false
 powers:
 - /buff

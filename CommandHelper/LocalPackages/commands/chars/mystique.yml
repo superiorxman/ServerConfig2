@@ -1,11 +1,12 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 1 true
-chatcolor: '&5'
+chat:
+- color: '&5'
+  name: §1Mystique
 class: mystique
 haste: 2
 jump: 3
-name: §1Mystique
+maxHearts: 20
 op: false
 permissions:
   superherocity:

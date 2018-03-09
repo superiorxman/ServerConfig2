@@ -1,8 +1,9 @@
 buffs:
 - /effect <plr> 11 9999 3 true
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §fL§du§fc§dy
 class: lucy
-name: §fL§du§fc§dy
 op: false
 permissions:
   superherocity:

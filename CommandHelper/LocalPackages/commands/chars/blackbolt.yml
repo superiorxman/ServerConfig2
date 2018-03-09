@@ -1,4 +1,5 @@
-maxHearts: 50
+allowedPhrases:
+- '...'
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 10 9999 1 true
@@ -6,11 +7,13 @@ buffs:
 - /effect <plr> 12 9999 1 true
 - /effect <plr> 13 9999 1 true
 - /effect <plr> 16 9999 1 true
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §8B§7l§0a§8ck B§0o§7l§8t
 class: blackbolt
 haste: 8
 jump: 8
-name: §8B§7l§0a§8ck B§0o§7l§8t
+maxHearts: 50
 op: true
 permissions:
   superherocity:
@@ -58,5 +61,3 @@ sig: gJkaneYNd5DvbDYGINhXQdnsmtK2oyJjdBH+9PnGcQamUTmtxf3yF+j73zyk58004B5CoFOvR/A
 speech: '...!'
 trail: ''
 val: eyJ0aW1lc3RhbXAiOjE0NzIyNTQwMTEyMjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EwMzkxYzhmMjhkY2I5ZTdjMGJlZDY0MWYyMDVjY2RmNDU0ODAyYTkzYjAxNTZlZjdlNWNjNWNhMjNmYzA2NiJ9fX0=
-allowedPhrases:
-- '...'

@@ -1,14 +1,15 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 3 true
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 1 true
 - /effect <plr> 16 9999 1 true
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §l§c3-D §aMa§an(C&H)
 class: 3dmanchuckandhal
 haste: 3
 jump: 4
-name: §l§c3-D §aMa§an(C&H)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

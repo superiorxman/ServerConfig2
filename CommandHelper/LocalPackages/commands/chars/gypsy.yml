@@ -1,8 +1,9 @@
 buffs:
 - /shot give <plr> gypsyfreezeray
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §0G§4y§8p§cs§4y
 class: gypsy
-name: §0G§4y§8p§cs§4y
 op: false
 permissions:
   superherocity:

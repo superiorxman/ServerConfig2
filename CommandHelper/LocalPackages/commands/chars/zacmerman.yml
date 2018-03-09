@@ -1,15 +1,17 @@
 buffs:
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> watershot
-- /minecraft:give <plr> minecraft:iron_boots 1 0 {AttributeModifiers:[{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.5,Operation:0,UUIDLeast:341641,UUIDMost:949552,Slot:"feet"}],display:{Name:"§bMerman Tail"},ench:[{id:8,lvl:30}]}
+- /minecraft:give <plr> minecraft:iron_boots 1 0 {AttributeModifiers:[{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.5,Operation:0,UUIDLeast:341641,UUIDMost:949552,Slot:"feet"}],display:{Name:"§bMerman
+  Tail"},ench:[{id:8,lvl:30}]}
 - /mgive <plr> waterspearwand
 - /mgive <plr> bubblewand
 - /mgive <plr> streamwand
 - /mgive <plr> waterscooterwand
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §7Z§ba§7c§8(§9m§1m§8)
 class: zacmerman
 haste: 2
-name: §7Z§ba§7c§8(§9m§1m§8)
 op: false
 permissions:
   superherocity:

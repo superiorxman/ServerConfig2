@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 3 true
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §9Inv§bi§9s§1ible §9W§bo§9m§0a§9n
 class: invisiblewoman
 haste: 2
 jump: 2
-name: §9Inv§bi§9s§1ible §9W§bo§9m§0a§9n
+maxHearts: 20
 op: false
 permissions:
   superherocity:
@@ -19,7 +20,8 @@ permissions:
   - ch.alias.vis
 powers:
 - /buff
-- /fly (she can't really fly, but she has control over psionic forcefields that she can use to fly)
+- /fly (she can't really fly, but she has control over psionic forcefields that she
+  can use to fly)
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-2>

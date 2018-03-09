@@ -1,13 +1,14 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 24 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 10 9999 1 true
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4T§cri§4gon
 class: trigon
 haste: 5
 jump: 4
-name: §4T§cri§4gon
+maxHearts: 50
 op: false
 permissions:
   superherocity:

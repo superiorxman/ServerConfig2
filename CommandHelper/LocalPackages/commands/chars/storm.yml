@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §8Storm
 class: storm
 haste: 2
 jump: 4
-name: §8Storm
+maxHearts: 30
 op: false
 permissions:
   superherocity:

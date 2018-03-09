@@ -1,11 +1,12 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 10 9999 1 true
 - /shot give <plr> pumpkinbomb
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Gr§5ee§2n G§5o§2blin
 class: greengoblin
-name: §2Gr§5ee§2n G§5o§2blin
+maxHearts: 30
 op: false
 permissions:
   superherocity:

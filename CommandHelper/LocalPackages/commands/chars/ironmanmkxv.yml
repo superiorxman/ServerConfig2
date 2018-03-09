@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 6 true
 - /effect <plr> 11 9999 2 true
@@ -7,11 +6,13 @@ buffs:
 - /shot give <plr> ironmansmachinegun
 - /shot give <plr> ironmanshomingmissile
 - /shot give <plr> quantumlaser
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §6I§4r§bo§4n M§6an §4MK §6X§4V
 class: ironmanmkxv
 haste: 6
 jump: 5
-name: §6I§4r§bo§4n M§6an §4MK §6X§4V
+maxHearts: 30
 op: false
 permissions:
   superherocity:

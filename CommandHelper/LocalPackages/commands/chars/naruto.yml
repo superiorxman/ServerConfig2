@@ -1,4 +1,3 @@
-maxHearts: 30
 altbuffs:
 - /effect <plr> 5 10 20 true
 altspeech: Punch your opponent in the next 10 seconds for massive damage!
@@ -6,11 +5,13 @@ buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 10 9999 1 true
 - /shot give <plr> throwingstar
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §eN§6aruto
 class: naruto
 haste: 3
 jump: 7
-name: §eN§6aruto
+maxHearts: 30
 op: false
 permissions:
   superherocity:

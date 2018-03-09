@@ -1,17 +1,27 @@
-nametransfer:/nametransfer $class = >>>
+nametransfer:/nametransfer = >>>
 
-    @class = $class
-    @file = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
-    @hero = yml_decode(@file)
+    @files = list_files('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/')
 
-    @hero['chat'] = array(
-        'name': @hero['name'],
-        'color': @hero['chatcolor']
-    )
+    foreach(@file in @files){
+        @filename = replace(@file,'.yml','')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
+        @hero = yml_decode(@contents)
 
-    array_remove(@hero,'name')
-    array_remove(@hero,'chatcolor')
+        try{
+            @hero['chat'] = array(
+            'name': @hero[0]['name'],
+            'color': @hero['chatcolor']
+            )
+        }catch(Exception @e){
+            continue()
+        }
+        
 
-    write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml',yml_encode(@hero,true),'OVERWRITE')
+        array_remove(@hero,'name')
+        array_remove(@hero,'chatcolor')
+
+        write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')
+    }
+    msg('DONE')
 
 <<<

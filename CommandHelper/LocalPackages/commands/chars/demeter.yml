@@ -1,12 +1,13 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §aD§2e§am§2e§at§2e§ar
 class: demeter
 haste: 3
 jump: 3
-name: §aD§2e§am§2e§at§2e§ar
+maxHearts: 40
 op: false
 permissions:
   superherocity:

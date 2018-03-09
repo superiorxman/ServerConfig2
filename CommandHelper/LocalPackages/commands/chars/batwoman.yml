@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /give <plr> minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook
 - /give <plr> minecraft:snowball 10 name:&8Batarang
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §eB§7a§8t§7w§eo§8m§ea§7n
 class: batwoman
 haste: 2
 jump: 3
-name: §eB§7a§8t§7w§eo§8m§ea§7n
+maxHearts: 20
 op: false
 permissions:
   superherocity:

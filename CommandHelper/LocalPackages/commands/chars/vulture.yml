@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> pistol
 - /give <plr> minecraft:iron_hoe 1 16:40 name:&2Vu&altu&2re's_&7Ta&8l&7ons
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §2Vu§al§ft§au§2re
 class: vulture
-name: §2Vu§al§ft§au§2re
+maxHearts: 30
 op: false
 permissions:
   superherocity:

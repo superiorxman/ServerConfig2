@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /give <plr> minecraft:bow 1 50:1 51:1 name:&2Ar&fte&2mis'_&fBow
 - /give <plr> minecraft:ender_pearl 5 name:&2Ar&fte&2mis'_&fGrappling&2_Arrow
 - /effect <plr> 11 9999 1 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Ar§fte§2mis§8(§2YJ§8)
 class: artemisyoungjustice
 haste: 1
 jump: 2
-name: §2Ar§fte§2mis§8(§2YJ§8)
+maxHearts: 20
 op: false
 permissions:
   superherocity:

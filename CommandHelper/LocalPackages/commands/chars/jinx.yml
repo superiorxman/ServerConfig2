@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&5'
+chat:
+- color: '&5'
+  name: §dJ§8i§5n§0x
 class: jinx
 haste: 3
 jump: 5
-name: §dJ§8i§5n§0x
+maxHearts: 30
 op: false
 permissions:
   superherocity:

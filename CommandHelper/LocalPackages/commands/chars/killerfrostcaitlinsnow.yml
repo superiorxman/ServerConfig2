@@ -6,9 +6,10 @@ buffs:
 - /give <plr> minecraft:iron_boots 1 9:3 name:&9F&1r&9o&8s&ft_&9B&3o&8ot&fs
 - /mgive <plr> frostwand
 - /mgive <plr> iceshieldwand
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §9K§1i§9l§8ler §9F§1r§9o§8st§8(§bCS§8)
 class: killerfrostcaitlinsnow
-name: §9K§1i§9l§8ler §9F§1r§9o§8st§8(§bCS§8)
 op: false
 permissions:
   superherocity:

@@ -1,12 +1,13 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
-chatcolor: '&3'
+chat:
+- color: '&3'
+  name: §bH§3er§ba
 class: hera
 haste: 3
 jump: 2
-name: §bH§3er§ba
+maxHearts: 40
 op: false
 permissions:
   superherocity:

@@ -1,4 +1,3 @@
-maxHearts: 30
 alts:
 - garfieldlogan
 altskins:
@@ -14,11 +13,15 @@ buffs:
 - /give <plr> minecraft:fireworks 64 name:&7Propelled_Flight
 - /give <plr> minecraft:elytra 1 70:1 34:5 name:&6Wings
 - /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2B§8e§5a§8s§2t §aB§5o§ay
+- color: '&2'
+  name: §2Be§fa§4st §2B§fo§4y
 class: beastboy
 haste: 6
 jump: 8
-name: §2B§8e§5a§8s§2t §aB§5o§ay
+maxHearts: 30
 op: false
 permissions:
   superherocity:
@@ -88,7 +91,10 @@ powers:
 - /normalsize
 - /grow
 - /wallclimb
-- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
 run: 6
 sig: SoivnUgy40qHsZlXNgEmeIyNe5rkVr5m3Bt1Ye7gNoc8e+eFIKz6p3A1OldgBMaQMNk+fTUKvZHSfzYDBUTh/NL3UVVMcojc9mCKpaP3szmOYWJBA3EkAvEBkfY9UWlP5+LcVccUsK+nzBEg5lY6A/DveoYiv+cW2g7vVPvxPPQoHEZ1KpBmjG+r5edavW7uO1YHAcDz7n0oXJ8MirDYzX75Hf620yU3KXY8+cd55xNAJwfVeQuc/SF1i8rQzuG4zPR0ipqUQ36mJ6ZEIL/9sO+amriLITxGWMuwqY5JCDg+Cipk5Ezs6nXG/eCVNmO6luPQIric7fiTZqXXwdkDIoJoQQxMeuZ3Zl0nj6LhkQe8DVEImjFuZjj7+9XmzA2JvQVj8nFkBV/x96Yc1Qvz0hpnbF+AINBqNFA1kkdVYqaCFgvs3uVa6Wzx5yqy2/TlEVPCc1v98sjYMVRZI/e+QiUdDFku+FZBCScBNsIRL0ryiwUTpq62i+g4DEZVMYebSQfggRn9FB0cduPYtkhfUEo7bMn/aG6AZ6/7X3wRVYxeT3rNOazVgbMhqxvfD8P8kP7G0vreH3enOuMr7ru+nMnPNS8t6nociR/eadhoLbk3I//MqVnWBcxC2fyRFpwkr67Y1vS4Z34p+L/C+QmEWrIAlktmg928TayCICAvfFc=
 speech: Beast Boy is here to save the day!

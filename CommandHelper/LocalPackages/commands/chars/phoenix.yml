@@ -1,4 +1,3 @@
-maxHearts: 30
 alts:
 - jeangrey
 buffs:
@@ -7,10 +6,12 @@ buffs:
 - /mgive <plr> telekinesiswand
 - /mgive <plr> phoenixforcewand
 - /mgive <plr> healingfieldwand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §4P§6h§eo§6e§en§4i§ex
 class: phoenix
 jump: 2
-name: §4P§6h§eo§6e§en§4i§ex
+maxHearts: 30
 op: false
 permissions:
   superherocity:

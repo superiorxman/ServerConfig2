@@ -1,9 +1,10 @@
 buffs:
 - /effect <plr> 5 9999 3 true
 - /effect <plr> 11 9999 1 true
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §2T§fi§dk§ci
 class: tiki
-name: §2T§fi§dk§ci
 op: false
 permissions:
   superherocity:

@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 2 true
@@ -6,9 +5,11 @@ buffs:
 - /give <plr> minecraft:iron_bars 1 16:10 name:&4T&co&4x&8i&0n's_&4C&claw&4s
 - /mgive <plr> symbiotetendrilwand
 - /mgive <plr> symbiotestretchwand
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §4T§co§4x§8i§0n
 class: toxin
-name: §4T§co§4x§8i§0n
+maxHearts: 30
 op: false
 permissions:
   superherocity:
@@ -23,9 +24,14 @@ powers:
 - /carryplayer <player>
 - /dismountplayer <player>
 - /wallclimb <on/off>
-- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
 - /websling <on/off>
-- With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob.
+- With an empty hand, right click the air and you will sling web out from your hand.
+  You can use it to swing around the city! If you cannot move, press shift to dismount
+  the invisible mob.
 sig: jzMIXJJ6F0QOOizUyGrIIgg9gEGdhzhCl+G67tVLQGjQdlpAjLcAJpwpqD+AbGBkjcIDd3Ea0HfJ7aMhjHFx1y6LgMnf+7dZB1wT3gNrD/aWqjcAL91H38B5bKEb1SLENffV134Ahlv9Kyl0n1lwC023qajUCZ0Zrvy39aAUZjQTsHlB2S3hZHKtKOjiwkUoAjgXOm31aVgYbUH/PM39a4NrOXttxJNGqN4byOi6EEX9cyD+dz9wktVzmsDKxrwMLt+GwtOi8OWHmgPCMxc4/SvFAEOhIeNhZ37a36aiIpvq2I/96xGyY7JksFe2JID6QspIxQYf6ckrPBZ9wWiONo4bqNpVKCfEXRoDprYwCguGffgSTihuxstjOUA3o32qIIMZ0oT8+JF7I2aE4YuqgkpUJuDd1PzbDS9EhFhqnf7n3WK0jwsSz1JiWwfFQPM1AOFON4d6RXJRYhHosS2AQ8HbaqxMoLGCbkq2yvi0rHLos3ue5NsjVMmAYM9tkIzhL/bQ6vEp4AXZUvfF80Bn5U/Xx1/bW/QsVdcqozJVdiZCQ55zXVHUqKRSIhDu4Sc76juBRyQnMavtlDOTZRX2uqnwZmEYKeF+vwZJPx+NFQtYmsKl88j70ehInJkamCuIioJ2v/w+XaTiG1kBW8oNsmPVFdx2x/Hxko3CGOuYYYE=
 speech: WE ARE TOXIN!
 trail: ''

@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §2L§fiz§0a§fr§5d
 class: lizard
 jump: 2
-name: §2L§fiz§0a§fr§5d
+maxHearts: 30
 op: false
 permissions:
   superherocity: [

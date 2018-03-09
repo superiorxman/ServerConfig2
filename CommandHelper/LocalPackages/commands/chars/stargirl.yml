@@ -1,14 +1,15 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 1 true
 - /give <plr> minecraft:iron_hoe 1 20:1 16:5 name:&9S&4t&fa&7r&4g&7i&9r&fl's_&7S&9t&4a&fff
 - /shot give <plr> whiteenergybeam
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §9S§4t§fa§7r§4g§7i§9r§fl
 class: stargirl
 haste: 2
 jump: 2
-name: §9S§4t§fa§7r§4g§7i§9r§fl
+maxHearts: 30
 op: false
 permissions:
   superherocity:

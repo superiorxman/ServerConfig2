@@ -1,15 +1,16 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 3 true
 - /shot give <plr> whiteenergybeam
 - /give <plr> 95 64
 - /give <plr> minecraft:quartz_block 1 20:2 16:155 name:&fWh&7it&fe&8_&fLan&7te&frn&8_&fRi&7ng
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §fWh§7it§fe §fLan§7te§frn§8(§fK§7R§8)
 class: whitelanternkylerayner
 haste: 4
 jump: 3
-name: §fWh§7it§fe §fLan§7te§frn§8(§fK§7R§8)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

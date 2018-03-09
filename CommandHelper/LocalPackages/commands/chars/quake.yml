@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /shot give <plr> pistol
 - /shot give <plr> quake
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §8Q§7u§8a§7k§8e
 class: quake
 haste: 2
 jump: 9
-name: §8Q§7u§8a§7k§8e
+maxHearts: 20
 op: false
 permissions:
   superherocity:

@@ -5,9 +5,10 @@ buffs:
 - /shot give <plr> webshot
 - /shot give <plr> quantumlaser
 - /shot give <plr> ironmanshomingmissile
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §4I§er§4o§en §4Sp§bi§eder
 class: ironspider
-name: §4I§er§4o§en §4Sp§bi§eder
 op: false
 permissions:
   superherocity:
@@ -23,9 +24,14 @@ powers:
 - /websling
 - /web
 - /wallclimb <on/off>
-- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
 - /websling <on/off>
-- With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob.
+- With an empty hand, right click the air and you will sling web out from your hand.
+  You can use it to swing around the city! If you cannot move, press shift to dismount
+  the invisible mob.
 sig: K/rEiwgyOIBAMbryBnPRAedmOm8fsLZM+Js9eZT66hqk2l7bX2y40qOcDGb5VWKD2haii8ZtksS83qmRjHKm4y5GFwpYmvPq2nTpOY6FRC0tPV8fj6nghwGjgLSfHeQ0I25120GI9A+TNi8rX71w4SfaSMiotA97DHKNjVV1C0m6ML+9sYf5Ot7DH3uWfNMZen1M5DvTYDosP2julWwkpaO2leHO7PAPiLiSiakHR47yRjlj956EfoAP9zbpzD22zgAktU1Rb/Tii/JpbuIG6+e8xlT4cajgOTxipHoAUjMKiNC8z92ld95iRjaLKDeAGkRchEKNfdcA6VobOmtcZOf25tPlt/ZsroCPo+8iPK7EvrFKaYFBjaTIU39wx4cMLpqKNGvyXbPDtqp0BA95qlAioII5y99SKNISelyXa22rGC6EfAmsizVSclWHjoigV6bisepI1PgR1uP1sDK8EW3qDOM7IJoUhEsGLQLUZAUfuSxzPQssJfmuzflkcV2Ac6nXaAkK9D9MzibT4C0Q2/6/QU2N5bjBwwY67tO8n4O/XZUrzvIKuSpVCaveAVil8pz9kVHtpV4KTgy0Nwd1yTWh8oNvKG3WUKksv4sxS+awYMeNXSkLpOhC0bYEQiubLrRWKiiFkqX7aybbNIp4rxyBQ0ngkzq7HDvI8bk8jIw=
 speech: With great power comes great... ooo look at this cool suit!
 trail: ''

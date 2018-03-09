@@ -1,14 +1,15 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 12 true
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> watershot
 - /mgive <plr> percysdemigodpowers
-chatcolor: '&3'
+chat:
+- color: '&3'
+  name: §3P§9e§3r§9c§3y§9 J§3a§9c§3k§9s§3o§9n
 class: percyjackson
 haste: 5
 jump: 3
-name: §3P§9e§3r§9c§3y§9 J§3a§9c§3k§9s§3o§9n
+maxHearts: 20
 op: false
 permissions:
   superherocity:

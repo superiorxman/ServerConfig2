@@ -1,4 +1,3 @@
-maxHearts: 50
 alts:
 - trunks
 buffs:
@@ -9,11 +8,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> kamehameha
 - /shot give <plr> kiblast
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §eT§1ru§8nk§9s§8(§eSS§8)
 class: trunkssupersaiyan
 haste: 7
 jump: 7
-name: §eT§1ru§8nk§9s§8(§eSS§8)
+maxHearts: 50
 op: false
 permissions:
   superherocity:

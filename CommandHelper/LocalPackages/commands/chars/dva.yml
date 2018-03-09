@@ -1,8 +1,9 @@
 buffs:
 - /shot give <plr> pistol
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §9D§f.§dV§fa
 class: dva
-name: §9D§f.§dV§fa
 op: false
 powers:
 - /buff

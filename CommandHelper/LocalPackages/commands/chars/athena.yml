@@ -1,4 +1,3 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
@@ -7,11 +6,13 @@ buffs:
 - /give <plr> minecraft:iron_chestplate 1 0:5 1:5 3:5 4:5 7:5 name:&fA&9then&fa's_&9Chestplate
 - /give <plr> minecraft:iron_leggings 1 0:5 1:5 3:5 4:5 7:5 name:&fA&9then&fa's_&9Leggings
 - /give <plr> minecraft:iron_boots 1 0:5 1:5 3:5 4:5 7:5 name:&fA&9then&fa's_&9Boots
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §fA§9then§fa
 class: athena
 haste: 3
 jump: 3
-name: §fA§9then§fa
+maxHearts: 40
 op: false
 permissions:
   superherocity:

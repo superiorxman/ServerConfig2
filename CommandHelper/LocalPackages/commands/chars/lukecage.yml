@@ -1,14 +1,15 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 12 9999 1 true
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eL§7u§eke §9C§7a§9ge
 class: lukecage
 haste: 7
 jump: 3
-name: §eL§7u§eke §9C§7a§9ge
+maxHearts: 30
 op: false
 permissions:
   superherocity:

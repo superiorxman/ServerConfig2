@@ -1,9 +1,10 @@
-maxHearts: 20
 buffs:
 - /disguiseplayer <plr> villager baby
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §0W§ea§0s§ep
 class: wasp
-name: §0W§ea§0s§ep
+maxHearts: 20
 op: false
 permissions:
   superherocity:

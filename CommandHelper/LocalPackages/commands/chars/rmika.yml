@@ -1,10 +1,11 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 3 true
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §6R. M§9i§6k§9a
 class: rmika
 jump: 2
-name: §6R. M§9i§6k§9a
+maxHearts: 20
 op: false
 permissions:
   superherocity:

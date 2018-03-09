@@ -4,11 +4,12 @@ buffs:
 - /effect <plr> 11 9999 2 true
 - /mgive <plr> redtornadowand
 - /mgive <plr> whirlwindwand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §cRe§4d §6To§9r§1n§ea§6d§co
 class: redtornado
 haste: 4
 jump: 3
-name: §cRe§4d §6To§9r§1n§ea§6d§co
 op: false
 permissions:
   superherocity:

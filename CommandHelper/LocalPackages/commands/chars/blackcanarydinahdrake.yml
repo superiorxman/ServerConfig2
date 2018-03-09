@@ -1,10 +1,11 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 2 true
 - /give <plr> minecraft:stick 1 19:3 16:3 name:&0Ca&0na&0ry_&0Ba&0to&0n
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §0Black Canary§8(§0DD§8)
 class: blackcanarydinahdrake
-name: §0Black Canary§8(§0DD§8)
+maxHearts: 20
 op: false
 permissions:
   superherocity:

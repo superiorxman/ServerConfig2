@@ -1,13 +1,14 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 11 9999 2 true
 - /shot give <plr> soulball
 - /mgive <plr> soulgripwand
 - /mgive <plr> soulpushwand
 - /mgive <plr> energytrapwand
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §8E§4r§cm§aa§8c
 class: ermac
-name: §8E§4r§cm§aa§8c
+maxHearts: 30
 op: false
 permissions:
   superherocity:

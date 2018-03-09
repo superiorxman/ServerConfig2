@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /shot give <plr> icebeam
 - /effect <plr> 5 9999 5 true
 - /mgive <plr> tsunamiwand
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §6C§er§6y§es§6t§ea§6l
 class: crystal
 jump: 2
-name: §6C§er§6y§es§6t§ea§6l
+maxHearts: 20
 op: false
 permissions:
   superherocity:

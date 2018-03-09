@@ -1,7 +1,3 @@
-mindControlDist: 20
-mindLockDist: 20
-msgDist: 20
-maxHearts: 50
 alts:
 - wonderwomangodmode
 buffs:
@@ -18,11 +14,16 @@ buffs:
 - /mgive <plr> lassoregenwand
 - /mgive <plr> wwbracerswand
 - /mgive <plr> forcefieldwand
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §4W§fon§eder §4W§fom§9an
 class: wonderwoman
 haste: 9
 jump: 6
-name: §4W§fon§eder §4W§fom§9an
+maxHearts: 50
+mindControlDist: 20
+mindLockDist: 20
+msgDist: 20
 op: false
 permissions:
   speedforce:

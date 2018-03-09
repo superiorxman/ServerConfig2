@@ -1,15 +1,16 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 24 true
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 12 9999 1 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §5H§di§5t
 class: hit
 haste: 9
 jump: 9
-name: §5H§di§5t
+maxHearts: 50
 op: false
 permissions:
   superherocity:

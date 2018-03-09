@@ -3,9 +3,10 @@ buffs:
 - /shot give <plr> pistol
 - /shot give <plr> mercyhealingwand
 - /shot give <plr> mercybuffingwand
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §fM§ee§0r§fc§6y
 class: mercy
-name: §fM§ee§0r§fc§6y
 op: false
 permissions:
   superherocity:

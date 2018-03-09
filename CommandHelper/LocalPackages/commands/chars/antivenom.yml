@@ -1,15 +1,16 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 6 true
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 12 9999 1 true
 - /give <plr> minecraft:web 64
 - /shot give<plr> webshot
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §fA§7n§0t§7i-§fV§7e§0n§7o§fm
 class: antivenom
 haste: 4
 jump: 7
-name: §fA§7n§0t§7i-§fV§7e§0n§7o§fm
+maxHearts: 30
 op: false
 permissions:
   superherocity:
@@ -30,9 +31,14 @@ powers:
 - /haste <0-4>
 - /antivenomattack <player>
 - /wallclimb <on/off>
-- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
 - /websling <on/off>
-- With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob.
+- With an empty hand, right click the air and you will sling web out from your hand.
+  You can use it to swing around the city! If you cannot move, press shift to dismount
+  the invisible mob.
 run: 5
 sig: NZClSsjFHNCNy56+EB5st3KOiauH7Zzqa7pkA5uwKjTcDum+TIOAnuQTyGwqSpUZhWTKIsAFEFdMyXFJxT7xP7qZUTv764HYJNLo0uJCjQdKIsPjNf8C1kDsJ/l+VePAjvPiXVCWWB/vuOGZZlbRvCWDdqVJMthsVu5OUWwYLqxmr0LIilZwM0Aqvapdm66cWMKxOkuK+40Dvsj48m99tXDRxnFfcrPO9n0htyPbZOrfxfT6rgc5nRrZKNFoLA+/YyaDZ2HPIe42/yKjmV1Jzn43+WVLLxrpc4GusOTkwgZyRa/u2aJo4YaGoTJrpLsZ8CY7uQqOKyI6mqqWeR2tJpkq8+Z/KfEe4LFdTRCNEWH+rQsB94GY849vp9aT88dwU7dEWZdrSTPit9Xta7GjAVcUy2ZqCGe2IKOqSYZRR/Fydiyo0Fd1EvhkAD4sjt4ClRTKNPyK3O9RRRYf2clK94US0KqvO2sq56S5t/yzKNMGRnD9Id62xYYgRknGyG+YxIVTT/BkJ3QonhSuqaxvEOvlmb7AGKv6xBsb3wIGd+XzoCCKjcTcC1efb/BUO6yHXud+yrCoCSeXkICDC6NYIemh2bJdDPu6tncR15PPqRvGqrkGrm17gSx5lgOwCVQjfMHiksGfq3R/+ZIu3jUUVaDOhpIj1yZbbpoC2dFodZo=
 speech: Ill lay my hands upon you and CURE YOU ALL

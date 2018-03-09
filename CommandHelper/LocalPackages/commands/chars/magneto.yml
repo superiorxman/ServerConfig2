@@ -1,10 +1,11 @@
-maxHearts: 20
-buffs:
-chatcolor: '&5'
+buffs: null
+chat:
+- color: '&5'
+  name: §4M§5a§4g§5n§4e§5t§4o
 class: magneto
 haste: 1
 jump: 1
-name: §4M§5a§4g§5n§4e§5t§4o
+maxHearts: 20
 op: false
 permissions:
   superherocity:

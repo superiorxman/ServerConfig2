@@ -1,9 +1,10 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> pumpkinbomb
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §6H§9o§6b§9gob§6lin
 class: hobgoblin
-name: §6H§9o§6b§9gob§6lin
+maxHearts: 30
 op: false
 permissions:
   superherocity:

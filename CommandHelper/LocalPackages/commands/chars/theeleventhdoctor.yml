@@ -2,9 +2,10 @@ alts:
 - thetwelfthdoctor
 buffs:
 - /give <plr> minecraft:redstone_torch 1 name:&aS&7oni&6c_Scr&0ewd&friv&6er
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §5The §4Doc§5tor§8(§f11th§8)
 class: theeleventhdoctor
-name: §5The §4Doc§5tor§8(§f11th§8)
 op: false
 permissions:
   superherocity:

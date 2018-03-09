@@ -43,7 +43,7 @@ register_command('goworld',
                 @hero = yml_decode(@contents)
             }catch(Exception @d){
                 @hero = array()
-                @hero['name'] = @sender
+                @hero['chat'][0]['name'] = @sender
             } 
 
             @worldNiceName = ''
@@ -52,7 +52,7 @@ register_command('goworld',
                 if(@world[0] == @args[0]){
                     runas('~console','/warp '.@args[0].' '.@sender)
                     @worldNiceName = @world[1]
-                    broadcast(color('BLUE').@hero['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
+                    broadcast(color('BLUE').@hero['chat'][0]['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
                         msg(color('RED').'Turn the autobuff off after you die using '.color('GREEN').'/autobuff off'.color('RED').' .')
                         msg(color('RED').'Your hunger will never be full on this server, '.color('GREEN').'to prevent regeneration'.color('RED').' .')

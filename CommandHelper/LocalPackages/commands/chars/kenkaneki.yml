@@ -1,14 +1,15 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 10 9999 3 true
 - /shot give <plr> kaguneattack
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §7K§8e§7n §8K§0a§8n§7e§8k§7i
 class: kenkaneki
 haste: 5
 jump: 4
-name: §7K§8e§7n §8K§0a§8n§7e§8k§7i
+maxHearts: 40
 op: false
 permissions:
   superherocity: [

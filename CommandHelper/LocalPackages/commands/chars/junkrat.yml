@@ -2,9 +2,10 @@ buffs:
 - /shot give <plr> Putty
 - /shot give <plr> Grenade
 - /shot give <plr> C4
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §eJ§eu§2n§6k§8ra§et
 class: junkrat
-name: §eJ§eu§2n§6k§8ra§et
 op: false
 powers:
 - /buff

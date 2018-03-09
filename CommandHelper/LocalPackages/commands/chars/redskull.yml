@@ -1,9 +1,10 @@
 buffs:
 - /effect <plr> 5 9999 2 true
 - /shot give <plr> energypistol
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §4R§ce§4d §8S§7k§bu§8ll
 class: redskull
-name: §4R§ce§4d §8S§7k§bu§8ll
 op: false
 powers:
 - /buff

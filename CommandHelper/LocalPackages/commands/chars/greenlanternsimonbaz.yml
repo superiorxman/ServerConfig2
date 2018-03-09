@@ -1,12 +1,13 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 10 true
 - /shot give <plr> greenenergybeam
 - /give <plr> 95:5 64
 - /give <plr> minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Gr§8e§2en Lant§8e§2rn§8(SB)
 class: greenlanternsimonbaz
-name: §2Gr§8e§2en Lant§8e§2rn§8(SB)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

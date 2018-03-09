@@ -1,13 +1,14 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 3 true
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §eI§fro§en §fFi§es§ft
 class: ironfist
 haste: 5
 jump: 3
-name: §eI§fro§en §fFi§es§ft
+maxHearts: 40
 op: false
 permissions:
   superherocity:

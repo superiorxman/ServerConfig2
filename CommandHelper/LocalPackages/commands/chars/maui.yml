@@ -1,14 +1,15 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 13 9999 1 true
 - /give <plr> minecraft:fishing_rod 1 16:15 name:&3Maui's_&1Fishing_&4Rod
-chatcolor: '&3'
+chat:
+- color: '&3'
+  name: §3M§fa§6u§9i
 class: maui
 haste: 9
 jump: 9
-name: §3M§fa§6u§9i
+maxHearts: 40
 op: false
 permissions:
   superherocity:

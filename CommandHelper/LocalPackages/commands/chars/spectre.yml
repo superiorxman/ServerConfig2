@@ -2,9 +2,10 @@ buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 11 9999 4 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2S§0p§7e§ac§0t§7r§2e
 class: spectre
-name: §2S§0p§7e§ac§0t§7r§2e
 op: true
 permissions:
   superherocity:

@@ -1,11 +1,12 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 4 true
 - /shot give <plr> yellowenergybeam
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §6B§0u§6m§0b§6l§0e§6b§0e§6e§0(YJ)
 class: bumblebeeyoungjustice
 haste: 2
-name: §6B§0u§6m§0b§6l§0e§6b§0e§6e§0(YJ)
+maxHearts: 20
 op: false
 permissions:
   superherocity:

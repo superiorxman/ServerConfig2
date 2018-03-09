@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> phantomblast
 - /mgive <plr> telekinesiswand
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §2My§5st§eer§2i§5o
 class: mysterio
-name: §2My§5st§eer§2i§5o
+maxHearts: 30
 op: false
 permissions:
   superherocity:

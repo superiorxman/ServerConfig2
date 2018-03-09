@@ -1,8 +1,9 @@
 buffs:
 - /shot give <plr> pistol
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §6Jack §8Joyce
 class: jackjoyce
-name: §6Jack §8Joyce
 op: false
 permissions:
   superherocity:

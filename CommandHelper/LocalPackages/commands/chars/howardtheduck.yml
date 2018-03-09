@@ -1,9 +1,10 @@
 buffs:
 - /effect <plr> 5 9999 1 true
 - /shot give <plr> howardtheduckbfg
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eHoward §6the §fDuck
 class: howardtheduck
-name: §eHoward §6the §fDuck
 op: false
 permissions:
   superherocity:

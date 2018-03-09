@@ -50,7 +50,7 @@ register_command('depower',
                     @vicHero = @hero
                 }catch(Exception @e){
                     @vicHero = array()
-                    @vicHero['name'] = @player
+                    @vicHero['chat'][0]['name'] = @player
                 }
 
                 set_timeout(30000,closure(
@@ -65,11 +65,11 @@ register_command('depower',
                     @hero = yml_decode(@contents)
                 }catch(Exception @e){
                     @hero = array()
-                    @hero['name'] = @plr
+                    @hero['chat'][0]['name'] = @plr
                 }
                 @plrHero = @hero
                 set_timeout(3000,closure(
-                    broadcast(color('LIGHT_PURPLE').color('BOLD').'POOF'.color('YELLOW').color('BOLD').'! '.@plrHero['name'].color('RED').color('BOLD').' has stripped '.color('WHITE').@vicHero['name'].color('RED').color('BOLD').' of their powers!');
+                    broadcast(color('LIGHT_PURPLE').color('BOLD').'POOF'.color('YELLOW').color('BOLD').'! '.@plrHero['chat'][0]['name'].color('RED').color('BOLD').' has stripped '.color('WHITE').@vicHero['chat'][0]['name'].color('RED').color('BOLD').' of their powers!');
                 ))
             }
             

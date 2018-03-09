@@ -1,4 +1,3 @@
-maxHearts: 40
 alts:
 - cassandracassiesandsmark
 altskins:
@@ -9,11 +8,13 @@ buffs:
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 2 true
 - /give <plr> 420 1 16:10 name:&4W&fon&eder_&4G&fi&9r&fl's_&eLasso
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §eW§4on§ed§4er §9Gi§8rl§8(§4C§eS§8)
 class: wondergirlcassandracassiesandsmark
 haste: 6
 jump: 5
-name: §eW§4on§ed§4er §9Gi§8rl§8(§4C§eS§8)
+maxHearts: 40
 op: false
 permissions:
   superherocity:

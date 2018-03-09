@@ -1,4 +1,3 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
@@ -6,11 +5,13 @@ buffs:
 - /effect <plr> 12 9999 1 true
 - /effect <plr> 13 9999 1 true
 - /give <plr> minecraft:elytra 1 70:1 34:3 name:&aShe-&lH&2&lULK's_&aGlide_Wings
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2She-§lH§a§lU§2§lLK
 class: shehulk
 haste: 8
 jump: 8
-name: §2She-§lH§a§lU§2§lLK
+maxHearts: 40
 op: false
 permissions:
   superherocity:

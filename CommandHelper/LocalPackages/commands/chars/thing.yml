@@ -1,12 +1,13 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 11 9999 1 true
 - /mgive <plr> groundpoundwand
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §6T§eh§1i§fn§6g
 class: thing
 jump: 1
-name: §6T§eh§1i§fn§6g
+maxHearts: 20
 op: false
 powers:
 - /buff

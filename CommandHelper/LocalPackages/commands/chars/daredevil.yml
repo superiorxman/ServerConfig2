@@ -1,13 +1,14 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 1 true
 - /effect <plr> 11 9999 1 true
 - /effect <plr> 15 9999 1 true
 - /give <plr> minecraft:stick 1 name:&4D&care&4d&cevil's_&4Billy_Club
 - /give <plr> minecraft:stick 1 name:&4D&care&4d&cevil's_&4Billy_Club
-chatcolor: '&c'
+chat:
+- color: '&c'
+  name: §4D§care§4d§cevil
 class: daredevil
-name: §4D§care§4d§cevil
+maxHearts: 50
 op: false
 permissions:
   superherocity:

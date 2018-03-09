@@ -70,7 +70,7 @@ register_command('speedforceteleport',
                     @vicHero = @hero
                 }catch(Exception @e){
                     @vicHero = array()
-                    @vicHero['name'] = @plr
+                    @vicHero['chat'][0]['name'] = @plr
                 }
                 @plrclass = _getheroclass(@plr)
                 try{
@@ -78,11 +78,11 @@ register_command('speedforceteleport',
                     @hero = yml_decode(@contents)
                 }catch(Exception @e){
                     @hero = array()
-                    @hero['name'] = @plr
+                    @hero['chat'][0]['name'] = @plr
                 }
                 @plrHero = @hero
                 set_timeout(3000,closure(
-                    broadcast(color('RED').color('ITALIC').'Whoosh'.color('YELLOW').color('BOLD').'! '.@plrHero['name'].color('YELLOW').color('BOLD').' has brought '.color('WHITE').@vicHero['name'].color('YELLOW').color('BOLD').' Into'.color('DARK_RED').color('BOLD').' Th'.color('YELLOW').color('BOLD').'e'.color('DARK_RED').color('BOLD').' Sp'.color('YELLOW').color('BOLD').'ee'.color('DARK_RED').color('BOLD').'df'.color('YELLOW').color('BOLD').'o'.color('DARK_RED').color('BOLD').'r'.color('YELLOW').color('BOLD').'c'.color('DARK_RED').color('BOLD').'e'.color('YELLOW').color('BOLD').'!');
+                    broadcast(color('RED').color('ITALIC').'Whoosh'.color('YELLOW').color('BOLD').'! '.@plrHero['chat'][0]['name'].color('YELLOW').color('BOLD').' has brought '.color('WHITE').@vicHero['chat'][0]['name'].color('YELLOW').color('BOLD').' Into'.color('DARK_RED').color('BOLD').' Th'.color('YELLOW').color('BOLD').'e'.color('DARK_RED').color('BOLD').' Sp'.color('YELLOW').color('BOLD').'ee'.color('DARK_RED').color('BOLD').'df'.color('YELLOW').color('BOLD').'o'.color('DARK_RED').color('BOLD').'r'.color('YELLOW').color('BOLD').'c'.color('DARK_RED').color('BOLD').'e'.color('YELLOW').color('BOLD').'!');
                 ))
         }
     )

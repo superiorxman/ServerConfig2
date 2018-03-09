@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 11 9999 2 true
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §7C§8o§4l§7o§ess§7u§4s
 class: colossus
-name: §7C§8o§4l§7o§ess§7u§4s
+maxHearts: 30
 op: false
 powers:
 - /buff

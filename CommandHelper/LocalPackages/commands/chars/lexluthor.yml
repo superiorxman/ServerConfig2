@@ -2,9 +2,10 @@ buffs:
 - /shot give <plr> magicgun
 - /shot give <plr> exawattlaser
 - /shot give <plr> powercannon
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §2L§9e§2x Luth§9o§2r
 class: lexluthor
-name: §2L§9e§2x Luth§9o§2r
 op: false
 permissions:
   superherocity:

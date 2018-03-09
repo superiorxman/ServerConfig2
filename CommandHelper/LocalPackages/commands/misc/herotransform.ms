@@ -19,7 +19,7 @@ register_command('herotransform',
                     try{
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')
@@ -44,7 +44,7 @@ register_command('herotransform',
                 if(@class == @idToBe){
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                     @hero = yml_decode(@contents)
-                    msg(color('RED').'Sorry, but '.@plr.' is already '.@hero['name'])
+                    msg(color('RED').'Sorry, but '.@plr.' is already '.@hero['chat'][0]['name'])
                     die()
                 }
             }
@@ -68,8 +68,8 @@ register_command('herotransform',
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' create')))
                 queue_push(closure(runas('~console','/pex user '.@player.' group set #'.@idToBe)))
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' parents set #commonherotraits')))
-                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['chatcolor'])))
-                @niceName = replace(@newHero['name'],'§','&')
+                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['chat'][0]['color'])))
+                @niceName = replace(@newHero['chat'][0]['name'],'§','&')
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' prefix "'.@niceName.'"')))
                 foreach(@worldName: @worldPerms in @newHero['permissions']){
                     foreach(@perm in @worldPerms){
@@ -101,10 +101,10 @@ register_command('herotransform',
 
                 
                 if(array_index_exists(@newHero,'silentTransformMessage') && @newHero['silentTransformMessage'] == true){
-                    queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['name'])))
+                    queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['chat'][0]['name'])))
                 }else{
                     queue_push(closure(sudo('/powers')))
-                    queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['name'].color('GRAY').' to '.@newHero['name'].color('GRAY').' !')))
+                    queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['chat'][0]['name'].color('GRAY').' to '.@newHero['chat'][0]['name'].color('GRAY').' !')))
                 }
 
             }else{
@@ -113,7 +113,7 @@ register_command('herotransform',
                     try{
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
                         @hero = yml_decode(@contents)
-                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
+                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')

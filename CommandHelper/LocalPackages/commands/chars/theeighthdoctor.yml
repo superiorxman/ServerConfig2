@@ -2,9 +2,10 @@ alts:
 - thewardoctor
 buffs:
 - /give <plr> minecraft:redstone_torch 1 name:&bSo&6nic_Screwdriver
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §0The §6Doc§0tor§8(§f8th§8)
 class: theeighthdoctor
-name: §0The §6Doc§0tor§8(§f8th§8)
 op: false
 permissions:
   superherocity:

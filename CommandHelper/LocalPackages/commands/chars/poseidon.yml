@@ -1,4 +1,3 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 12 true
 - /effect <plr> 13 9999 1 true
@@ -6,11 +5,13 @@ buffs:
 - /give <plr> minecraft:fishing_rod 1 61:32767 62:5 name:&3Pos&beid&3on's_Fishing_Rod
 - /give <plr> minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3Pos&beid&3on's_&9Water_&3Helmet
 - /give <plr> minecraft:diamond_hoe 1 16:10 name:&3Po&bseid&3on's&9_&3Tri&bdent
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §3P§9o§3s§9e§3i§9d§3o§9n
 class: poseidon
 haste: 5
 jump: 4
-name: §3P§9o§3s§9e§3i§9d§3o§9n
+maxHearts: 50
 op: false
 permissions:
   superherocity:

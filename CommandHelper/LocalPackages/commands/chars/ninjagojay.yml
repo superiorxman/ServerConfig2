@@ -2,10 +2,11 @@ buffs:
 - /effect <plr> 5 9999 5 true
 - /shot give <plr> yellowlightning
 - give <plr> minecraft:blaze_rod 1 name:§&Ninjago_&1Jay's_&eNunchucks
-chatcolor: '&1'
+chat:
+- color: '&1'
+  name: §6Ninjago §1Jay
 class: ninjagojay
 jump: 2
-name: §6Ninjago §1Jay
 op: false
 permissions:
   superherocity:

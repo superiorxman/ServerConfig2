@@ -1,4 +1,3 @@
-maxHearts: 50
 buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 10 9999 1 true
@@ -6,11 +5,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /effect <plr> 16 9999 1 true
 - /shot give <plr> solarenergybeam
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §4Vi§esi§2on
 class: vision
 haste: 5
 jump: 4
-name: §4Vi§esi§2on
+maxHearts: 50
 op: false
 permissions:
   superherocity:

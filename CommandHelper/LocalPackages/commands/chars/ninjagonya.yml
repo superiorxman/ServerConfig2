@@ -1,9 +1,10 @@
 buffs:
 - /give <plr> minecraft:stone_sword 1 16:10
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §6Ninjago §4N§cy§ea
 class: ninjagonya
 jump: 1
-name: §6Ninjago §4N§cy§ea
 op: false
 permissions:
   superherocity:

@@ -7,9 +7,10 @@ buffs:
 - /mgive <plr> freezetimewand
 - /mgive <plr> odinlightningwand
 - /mgive <plr> meteorshowerwand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §6O§ed§bi§7n
 class: odin
-name: §6O§ed§bi§7n
 op: false
 permissions:
   superherocity:

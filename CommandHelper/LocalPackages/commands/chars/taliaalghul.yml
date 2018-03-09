@@ -3,11 +3,12 @@ buffs:
 - /give <plr> minecraft:bow 1 49:1 name:&2Talia's_&8Bow
 - /shot give <plr> pistol
 - /shot give <plr> AK-47
-chatcolor: '&2'
+chat:
+- color: '&2'
+  name: §2Talia §8al §7Ghul
 class: taliaalghul
 haste: 2
 jump: 2
-name: §2Talia §8al §7Ghul
 op: false
 permissions:
   superherocity: [

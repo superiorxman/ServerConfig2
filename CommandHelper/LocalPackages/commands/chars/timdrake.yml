@@ -1,15 +1,16 @@
 alts:
 - redrobin
-chatcolor: '&f'
+chat:
+- color: '&f'
+  name: §7Tim Drake
 class: timdrake
-name: §7Tim Drake
 op: false
+permissions:
+  superherocity:
+  - powers.herotransform
 powers:
 - /herotransform
 sig: M8wCJdXiyC5jHQumu1liqj+7tREulU7VeEI4caGt7B86YrVZYbyk9CM/RtIRS0iZYYcdGWEnNwiMGL2/X/l6LJ0XVG+OoPXqA/9BilMkcXBuGOnKKm+eNnaUaZr7/EMQV9JncPNCAkFf4HTq3qCPr+LrJ/BcAp+YvhtoAGPpknnb66pxda52QnpUqo3AhZtVUeD+cczT3LDMzjLwijn3GRLqxaIvIsjTYQ9mAYsyn/LAlHJQZs8Ks8VrvKcDK/Ve3qwfiA9ddceFxhzH8E21JDFyTvn5qq5pTJ2Zbo0hBlW2xMH+2BKKXn3oBkSfHKSfK7jFNB6pzLCD7f4gQfztxqnyuFWw047vBpvuqwUyb12hCDUqhgnGgJwFCDLPQrINcsKSZPTES+W+E5W6AzJJMZT1qTJZRwHA5Nm6toelRT1TRlAtf0nC1c/cmQukG1ZdjnXg6JOy4i1lUoTsRD/vOGEIGf5+W02J2GVVifs7tiy+QmTrkI5SE8bnOUqXMnOu1nqwtUFnPpvBIMlE18wMAgq7UbBMq00YUQGGyNMt35wwhByPwgcGnjNxYZl0gVRNbii1dgEDxpQ9MUDs8c6ZFSk1nVxRo8WaOu+RjjrInoyAMYF1jdtuPRQ8u1KGIwSRXyVXALazWtORaGrx+YOtCojcUKRuUFcPtKJ5XJ5H6Bw=
 speech: My name is Tim Drake, and I am Red Robin.
 trail: ''
 val: eyJ0aW1lc3RhbXAiOjE1MjAwNjMyODQ5MDMsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VhY2JhMjQ3NWVlMWUzYzQ0NThlZGM3MzNkYjc0Njg0MDk2YjFhYzYzZDAzNTk4OWNlMzdkZGJiZWMyYWE1YiJ9fX0=
-permissions:
- superherocity:
- - powers.herotransform

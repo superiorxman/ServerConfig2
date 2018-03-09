@@ -1,4 +1,3 @@
-maxHearts: 50
 alts:
 - gokublack
 buffs:
@@ -9,11 +8,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> superblackkamehameha
 - /shot give <plr> kiblast
-chatcolor: '&d'
+chat:
+- color: '&d'
+  name: §dG§0o§dk§0u §dB§0l§da§0c§dk§8(§dSSR§8)
 class: gokublacksupersaiyanrose
 haste: 9
 jump: 9
-name: §dG§0o§dk§0u §dB§0l§da§0c§dk§8(§dSSR§8)
+maxHearts: 50
 op: false
 permissions:
   superherocity:

@@ -12,10 +12,11 @@ alts:
 buffs:
 - /effect <plr> 5 9999 2 true
 - /give <plr> minecraft:iron_bars 1 16:6 name:&bXLR8's_&8Claws
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §bX§fL§8R§28
 class: xlr8
 haste: 2
-name: §bX§fL§8R§28
 op: false
 permissions:
   superherocity:

@@ -1,11 +1,12 @@
-maxHearts: 30
 buffs:
 - /shot give <plr> electrocute
 - /mgive <plr> electricfloorwand
 - /mgive <plr> electrictpwand
-chatcolor: '&b'
+chat:
+- color: '&b'
+  name: §2Ele§bc§etro
 class: electro
-name: §2Ele§bc§etro
+maxHearts: 30
 op: false
 permissions:
   superherocity:

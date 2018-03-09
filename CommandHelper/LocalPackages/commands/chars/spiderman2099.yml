@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 10 9999 1 true
@@ -6,11 +5,13 @@ buffs:
 - /effect <plr> 16 9999 1 true
 - /give <plr> minecraft:web 64
 - /shot give <plr> webshot
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4Sp§fi§4d§0e§4r-M§0a§4n 2099
 class: spiderman2099
 haste: 3
 jump: 7
-name: §4Sp§fi§4d§0e§4r-M§0a§4n 2099
+maxHearts: 30
 op: false
 permissions:
   superherocity:
@@ -29,9 +30,14 @@ powers:
 - /run <0-4>
 - /haste <0-3>
 - /wallclimb <on/off>
-- Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
 - /websling <on/off>
-- With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob.
+- With an empty hand, right click the air and you will sling web out from your hand.
+  You can use it to swing around the city! If you cannot move, press shift to dismount
+  the invisible mob.
 run: 4
 sig: PgbiaiR5ECzObP+EM6uPwImUdWcoUSCY/N3+ZvSG/tZyEsVrCTvvxFmhra99C2sOPLbkRxLJh4YvJXpTRWe49Ow3NhoQnYaHJn5PI/iqx2ksvdIkJJ+UEB4zCrtMK2MUd0s9CjWwcnZof3gdXy/uUabALCujtH1QhH4CYAWqnk+WXaHJ1W1U2khGUDtGxMZGce5dTJnUxlPCH/oqHOeMFPZbb2rE41fsrqB2MoSa03LRwUz48D7i9s/6S4iCHYGedId9BGuOuLDnzqIrO1HH6vtM16+xshMoxxeJqu3azRG6V6fxmfTuPRyK/o08czBdVorBCiDDHCYZSuyleNlqh+QV2Rq84O4QKEdbn02mMgPHh/UrZ3EaVn1lLyLpPC7lOKCwWosQg3aAKZA/6QKvL+2/+pRlNeYII3F5TXwYb7UPmDPnvvy4HQ01ZiWxakOFFxRhctrdoMxyb4S5c2BwQ3f5RfnxkPPKvxjdL7LU5migNRxduIIAFgTiGlBxVkEyG7/eh3M4Q2XWefhLHzspaspUqwSWwo1l3AMACHhgO3tk+e0F4Rc4x4iTRP45C/x1PLGDxlPz1lIeGxIMdqCXyghY3AdyYfU2nd3/Cbgq7dahsQqYCJ076AMuj+AkaXV6j+sF0BCUvOQtKrmggFv7qKnZRLUl4TINtA8WXNF8HjM=
 speech: I must save the past to save the future!

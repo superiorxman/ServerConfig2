@@ -1,4 +1,3 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 2 true
 - /give <plr> minecraft:elytra 1 70:1 34:3 name:&4R&8e&4d_H&8oo&4d's_Glide_Wings
@@ -10,11 +9,13 @@ buffs:
 - /shot give <plr> Putty
 - /shot give <plr> Grenade
 - /shot give <plr> C4
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4R§8e§4d H§8oo§4d
 class: redhood
 haste: 2
 jump: 2
-name: §4R§8e§4d H§8oo§4d
+maxHearts: 20
 op: false
 permissions:
   superherocity:

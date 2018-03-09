@@ -1,4 +1,3 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 3 true
 - /effect <plr> 10 9999 1 true
@@ -11,11 +10,13 @@ buffs:
 - /shot give <plr> Gauss
 - /shot give <plr> Grenade
 - /shot give <plr> Hunting
-chatcolor: '&7'
+chat:
+- color: '&7'
+  name: §fDe§cad§8sh§co§8t
 class: deadshot
 haste: 1
 jump: 1
-name: §fDe§cad§8sh§co§8t
+maxHearts: 20
 op: false
 permissions:
   superherocity:

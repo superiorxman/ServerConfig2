@@ -1,10 +1,11 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 5 9999 15 true
 - /shot give <plr> firelaser
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §5Su§0pe§5r§0-§5S§0k§aru§5l§0l
 class: superskrull
-name: §5Su§0pe§5r§0-§5S§0k§aru§5l§0l
+maxHearts: 30
 op: false
 permissions:
   superherocity:

@@ -1,4 +1,3 @@
-maxHearts: 30
 buffs:
 - /effect <plr> 2 9999 2 true
 - /effect <plr> 5 9999 10 true
@@ -6,10 +5,12 @@ buffs:
 - /effect <plr> 16 9999 1 true
 - /give <plr> minecraft:diamond_shovel 1 name:&aKr&2y&apt&2o&anite_&7Sp&8ea&7r
 - /give <plr> minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook
-chatcolor: '&8'
+chat:
+- color: '&8'
+  name: §7B§ea§0t§7m§8a§7n(§8B§ba§8ts§7u§8it§7)
 class: batmanbatsuit
 haste: 5
-name: §7B§ea§0t§7m§8a§7n(§8B§ba§8ts§7u§8it§7)
+maxHearts: 30
 op: false
 permissions:
   superherocity:

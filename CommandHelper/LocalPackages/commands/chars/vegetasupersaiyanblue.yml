@@ -1,4 +1,3 @@
-maxHearts: 50
 alts:
 - vegeta
 buffs:
@@ -9,11 +8,13 @@ buffs:
 - /effect <plr> 13 9999 1 true
 - /shot give <plr> finalflash
 - /shot give <plr> kiblast
-chatcolor: '&9'
+chat:
+- color: '&9'
+  name: §bV§fe§1ge§fta§8(§bSSB§8)
 class: vegetasupersaiyanblue
 haste: 9
 jump: 9
-name: §bV§fe§1ge§fta§8(§bSSB§8)
+maxHearts: 50
 op: false
 permissions:
   superherocity:

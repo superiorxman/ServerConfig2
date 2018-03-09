@@ -1,15 +1,16 @@
-maxHearts: 20
 alts:
 - raypalmer
 buffs:
 - /effect <plr> 5 9999 10 true
 - /effect <plr> 10 9999 1 true
 - /shot give <plr> plasmablast
-chatcolor: '&4'
+chat:
+- color: '&4'
+  name: §4A§7t§8o§4m
 class: atom
 haste: 2
 jump: 7
-name: §4A§7t§8o§4m
+maxHearts: 20
 op: false
 permissions:
   superherocity:

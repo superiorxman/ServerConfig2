@@ -1,13 +1,14 @@
-maxHearts: 20
 buffs:
 - /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 3 true
 - /effect <plr> 13 9999 1 true
-chatcolor: '&6'
+chat:
+- color: '&6'
+  name: §6Vi§ex§6e§en
 class: vixen
 haste: 3
 jump: 6
-name: §6Vi§ex§6e§en
+maxHearts: 20
 op: false
 permissions:
   superherocity:

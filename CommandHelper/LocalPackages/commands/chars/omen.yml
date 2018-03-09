@@ -1,8 +1,9 @@
 buffs:
 - /effect <plr> 5 9999 2 true
-chatcolor: '&a'
+chat:
+- color: '&a'
+  name: §0O§2me§0n
 class: omen
-name: §0O§2me§0n
 op: false
 permissions:
   superherocity:

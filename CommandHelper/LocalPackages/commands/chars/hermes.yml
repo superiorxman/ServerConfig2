@@ -1,12 +1,13 @@
-maxHearts: 40
 buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 10 9999 1 true
-chatcolor: '&e'
+chat:
+- color: '&e'
+  name: §eH§6e§er§6m§ee§6s
 class: hermes
 haste: 4
 jump: 9
-name: §eH§6e§er§6m§ee§6s
+maxHearts: 40
 op: false
 permissions:
   superherocity:
