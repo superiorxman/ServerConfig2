@@ -13,7 +13,9 @@ register_command('whirlwind',
             @player = player()
             @plr = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedWhirlwind',10,@player) 
+            if(_coolDown('lastUsedWhirlwind',10,@player)){
+                return()
+            }
             sudo('/push '.@plr.' 30 5')
             tmsg(@plr,"You have been whirlwinded by ".@player."!")
             tmsg(@player,"You have used whirlwind!")

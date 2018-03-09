@@ -38,7 +38,9 @@ register_command('forget',
 
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown(@sender.'forgetPlayer',600,@sender)
+            if(_coolDown(@sender.'forgetPlayer',600,@sender)){
+                return()
+            }
 
             
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')

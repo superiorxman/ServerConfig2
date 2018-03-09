@@ -12,7 +12,9 @@ register_command('magicpush',
             @player = player()
             @plr = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMagicPush',30,@player) 
+            if(_coolDown('lastUsedMagicPush',30,@player) ){
+                return()
+            }
             sudo('/push '.@plr.' 30 5')
             tmsg(@plr,"You have been magicPushed by ".@player."!")
             tmsg(@player,"You have used magicPush!")

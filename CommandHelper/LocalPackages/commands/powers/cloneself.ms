@@ -19,7 +19,9 @@ register_command('cloneself',
             @val = @hero['val']
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('cloneSelf',1,@player)
+            if(_coolDown('cloneSelf',1,@player)){
+                return()
+            }
 
             @mobUUIDs = spawn_mob('villager',1)
             set_timeout(50,closure(

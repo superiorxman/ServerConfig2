@@ -26,7 +26,9 @@ register_command('confuse',
             }
             
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('confuse',30,@player)
+            if(_coolDown('confuse',30,@player)){
+                return()
+            }
             
             if(ponline(@victim)){
                 export(@victim."isConfused", "true")

@@ -12,7 +12,9 @@ register_command('militia',
             @player = player()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMilita',60,@player)
+            if(_coolDown('lastUsedMilita',60,@player)){
+                return()
+            }
 
             if(!is_null(import(@player."militia"))){
                 @oldMobs = import(@player."militia")

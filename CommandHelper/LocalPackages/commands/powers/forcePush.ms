@@ -12,7 +12,9 @@ register_command('forcepush',
             @player = player()
             @plr = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedForcePush',10,@player) 
+            if(_coolDown('lastUsedForcePush',10,@player) ){
+                return()
+            }
             sudo('/push '.@plr.' 30 2')
             tmsg(@plr,"You have been force pushed by ".@player."!")
             tmsg(@player,"You have force pushed ".@plr."!")

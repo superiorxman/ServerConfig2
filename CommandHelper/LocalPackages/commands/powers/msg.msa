@@ -1,0 +1,27 @@
+msg:/msg $plr $ = >>>
+
+    @plr = player()
+    @vic = player($plr)
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @pClass = _getheroclass(@plr)
+    try{
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pClass.'.yml')
+        @pHero = yml_decode(@contents)
+    }catch(Exception @e){
+        @pHero = array()
+    }
+
+    if(array_index_exists(@pHero,'msgDist')){
+        @ploc = ploc(@plr)
+        @vloc = ploc(@vic)
+        @radius = @pHero['msgDist']
+        @dist = distance(@ploc,@vloc)
+        if(@dist > @radius){
+            tmsg(@plr,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+            die()
+        }
+    }
+    @message = $
+    sudo('/essentials:msg '.@vic.' '.@message)
+
+<<<

@@ -12,7 +12,9 @@ register_command('splitself',
             @player = player()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('splitSelf',10,@player)
+            if(_coolDown('splitSelf',10,@player)){
+                return()
+            }
 
             @oldMobs = import(@player.'splitSelfClones')
             if(is_array(@oldMobs)){

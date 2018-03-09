@@ -7,7 +7,9 @@ register_command('projectilefield',
         'executor': closure(@aliases, @sender, @args) {
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('projectileField',30,@sender)
+            if(_coolDown('projectileField',30,@sender)){
+                return()
+            }
             export(@sender.'projectileField', true)
             msg(color('RED').'Projectile Force Field Active!')
             set_timeout(30000,closure(

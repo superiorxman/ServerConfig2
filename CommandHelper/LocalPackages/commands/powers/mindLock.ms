@@ -31,8 +31,26 @@ register_command('mindlock',
             }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @pClass = _getheroclass(@plr)
+            try{
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pClass.'.yml')
+                @pHero = yml_decode(@contents)
+            }catch(Exception @e){
+                @pHero = array()
+            }
+
             @ploc = ploc(@plr)
             @vloc = ploc(@vic)
+            if(array_index_exists(@pHero,'mindLockDist')){
+                @radius = @pHero['mindLockDist']
+                @dist = distance(@ploc,@vloc)
+                if(@dist > @radius){
+                    tmsg(@plr,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                    die()
+                }
+            }
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             if(has_permission(@plr,'powers.mindlocknear')){
                 @plrClass = _getHeroClass(@plr)
                 @radius = 0
@@ -51,7 +69,9 @@ register_command('mindlock',
 
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMindControl',60,@plr)
+            if(_coolDown('lastUsedMindControl',60,@plr)){
+                return()
+            }
             
             export(@vic.'isMindLocked',true)
             export(@vic.'mindLockedBy',@plr)
@@ -62,7 +82,7 @@ register_command('mindlock',
             tmsg(@vic,color('RED').'You have been mindlocked by '.@plr.' for 30 seconds')
             tmsg(@plr,color('RED').'You have mindlocked '.@vic.' for 30 seconds')
 
-            set_timeout(60000,closure(
+            set_timeout(30000,closure(
                 @isMindLocked = import(@plr.'isMindLocked')
                 if(@isMindLocked){
                     export(@vic.'isMindLocked',false)

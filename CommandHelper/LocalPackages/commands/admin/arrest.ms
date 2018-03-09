@@ -26,8 +26,8 @@ register_command('arrest',
                 return(false)
             }
 
-            if(@duration > 1800 || @duration < 30){
-                msg(color('RED').'Only values between 30 and 300 allowed.')
+            if(@duration > 86400 || @duration < 30){
+                msg(color('RED').'Only values between 30 and 86400 allowed.')
                 return(false)
             }
 

@@ -8,10 +8,9 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - -essentials.protect.damage.fall
-  - essentials.fly
+  - powers.flywithrider
 powers:
-- /fly
+- /flywithrider
 - /carryplayer <player>
 - /dismountplayer
 sig: JE4vckLk3l4i83Cb12sWYKEJTRJ7WTpDiQiagDnJHRrWsQlLS9/5iPQoVLD31vFWZKVJObbYJimMtDt/NcRfXgKPqvRVzfMAD80VwIgjuOYlX/fU1B/zF2PiYGAkV3Vq/Az8Nl9WqKtQ0ffVAkIET6ehQUjni13g8uSPmyhEwHh4EmIXCxavfqQUTJM/P7aC4KpW5fILxaD4ZL4B6320eY0yYAT8Zkj+khzDQJrwEt6KDNLxJVS1grD+aoWj9U4I76ZacuMLQjjQABY6NsbGDsPPryahqgtO45FFxRyihFAwC1fERHt7fZot3JdsbDHjDqYmXN1Cc4egXWV+D+JcZsOh4EIIRrpAGHZJ5SXj4Hn51Z5WvpQjeYhjrvTAuHEwsE3ENxgdkYK5iqqpATaQHSf4QFgEfnfb4BM/ErcsImzdZWc4Ugy+UXmPOqlA9Tw3gp7Cfad1I9KfLJ0hTsLpPwEq85KdaCjyQU4sd4pdpowEVBE5nY6OovM7GOYGaMSJuvgmYyUNrjWuQGVsJnep7OZe2YWuEus1JjmvtJRiv0A6Q+SQ7UPy18j4Q91rL6lo2rM7IWOFxusCkJX+H2kfG7idIGms2QgR6YV6knfbCsLhDThKNZFInfrFDM2z/26uGoI9guEIfS+yj6x+wxC6MPUL1EKMbUFNV0EIVGuhC20=

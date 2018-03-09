@@ -9,7 +9,9 @@ register_command('superpunch',
             }
             @player = player()
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedSuperPunch',5,@player) 
+            if(_coolDown('lastUsedSuperPunch',5,@player) ){
+                return()
+            }
             export(@player.'superPunchActive',true)
 
             bind('entity_damage', array('id':@player.'superPunch'), array('cause': 'ENTITY_ATTACK'), @e) {

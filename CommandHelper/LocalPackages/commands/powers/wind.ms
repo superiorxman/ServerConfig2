@@ -12,7 +12,9 @@ register_command('wind',
             @player = player()
             @plr = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedWind',10,@player) 
+            if(_coolDown('lastUsedWind',10,@player)){
+                return()
+            }
             sudo('/push '.@plr.' 30 2')
             tmsg(@plr,"You have been winded by ".@player."!")
             tmsg(@player,"You have used wind!")

@@ -6,7 +6,9 @@ register_command('mechbomb',
         'executor': closure(@aliases, @sender, @args) {
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('dvaMechBomb',60,@sender)
+            if(_coolDown('dvaMechBomb',60,@sender)){
+                return()
+            }
 
             @ploc = ploc(@sender)
             @ploc['y'] = @ploc['y'] + 1

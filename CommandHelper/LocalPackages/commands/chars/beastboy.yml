@@ -22,45 +22,56 @@ name: §2B§8e§5a§8s§2t §aB§5o§ay
 op: false
 permissions:
   superherocity:
-  - libsdisguises.undisguise
-  - ch.alias.beastboy
-  - -libsdisguises.disguise.player.*
-  - -libsdisguises.disguise.area_effect_cloud.*
-  - -libsdisguises.disguise.ender_signal.*
-  - -libsdisguises.disguise.fishing_hook.*
-  - -libsdisguises.disguise.leash_hitch.*
-  - -libsdisguises.disguise.minecart_mob_spawner.*
-  - -libsdisguises.disguise.wither_skull.*
-  - -libsdisguises.disguise.armor_stand.*
-  - -libsdisguises.disguise.minecart_tnt.*
-  - -libsdisguises.disguise.thrown_exp_bottle.*
-  - -libsdisguises.disguise.arrow.*
-  - -libsdisguises.disguise.dragon_fireball.*
-  - -libsdisguises.disguise.llama_spit.*
-  - -libsdisguises.disguise.primed_tnt.*
-  - -libsdisguises.disguise.small_fireball.*
-  - -libsdisguises.disguise.tipped_arrow.*
-  - -libsdisguises.disguise.dropped_item.*
-  - -libsdisguises.disguise.snowball.*
-  - -libsdisguises.disguise.minecart.*
-  - -libsdisguises.disguise.boat.*
-  - -libsdisguises.disguise.experience_orb.*
-  - -libsdisguises.disguise.minecart_chest.*
-  - -libsdisguises.disguise.painting.*
-  - -libsdisguises.disguise.spectral_arrow.*
-  - -libsdisguises.disguise.ender_crystal.*
-  - -libsdisguises.disguise.falling_block.*
-  - -libsdisguises.disguise.minecart_command.*
-  - -libsdisguises.disguise.shulker_bullet.*
-  - -libsdisguises.disguise.fireball.*
-  - -libsdisguises.disguise.minecart_furnace.*
-  - -libsdisguises.disguise.splash_potion.*
-  - -libsdisguises.disguise.ender_pearl.*
-  - -libsdisguises.disguise.firework.*
-  - -libsdisguises.disguise.item_frame.*
-  - -libsdisguises.disguise.minecart_hopper.*
-  - libsdisguises.undisguise
-  - libsdisguises.disguise.*.-setinvisible
+  - libsdisguises.disguise.bat.-setinvisible
+  - libsdisguises.disguise.chicken.-setinvisible
+  - libsdisguises.disguise.cow.-setinvisible
+  - libsdisguises.disguise.donkey.-setinvisible
+  - libsdisguises.disguise.horse.-setinvisible
+  - libsdisguises.disguise.mooshroom.-setinvisible
+  - libsdisguises.disguise.ocelot.-setinvisible
+  - libsdisguises.disguise.parrot.-setinvisible
+  - libsdisguises.disguise.pig.-setinvisible
+  - libsdisguises.disguise.rabbit.-setinvisible
+  - libsdisguises.disguise.sheep.-setinvisible
+  - libsdisguises.disguise.skeletonhorse.-setinvisible
+  - libsdisguises.disguise.squid.-setinvisible
+  - libsdisguises.disguise.villager.-setinvisible
+  - libsdisguises.disguise.cavespider.-setinvisible
+  - libsdisguises.disguise.enderman.-setinvisible
+  - libsdisguises.disguise.irongolem.-setinvisible
+  - libsdisguises.disguise.llama.-setinvisible
+  - libsdisguises.disguise.polarbear.-setinvisible
+  - libsdisguises.disguise.spider.-setinvisible
+  - libsdisguises.disguise.wolf.-setinvisible
+  - libsdisguises.disguise.pigzombie.-setinvisible
+  - libsdisguises.disguise.blaze.-setinvisible
+  - libsdisguises.disguise.creeper.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.endermite.-setinvisible
+  - libsdisguises.disguise.evoker.-setinvisible
+  - libsdisguises.disguise.ghast.-setinvisible
+  - libsdisguises.disguise.guardian.-setinvisible
+  - libsdisguises.disguise.husk.-setinvisible
+  - libsdisguises.disguise.magmacube.-setinvisible
+  - libsdisguises.disguise.shulker.-setinvisible
+  - libsdisguises.disguise.silverfish.-setinvisible
+  - libsdisguises.disguise.skeleton.-setinvisible
+  - libsdisguises.disguise.slime.-setinvisible
+  - libsdisguises.disguise.stray.-setinvisible
+  - libsdisguises.disguise.vex.-setinvisible
+  - libsdisguises.disguise.vindicator.-setinvisible
+  - libsdisguises.disguise.witch.-setinvisible
+  - libsdisguises.disguise.witherskeleton.-setinvisible
+  - libsdisguises.disguise.zombie.-setinvisible
+  - libsdisguises.disguise.zombievillager.-setinvisible
+  - libsdisguises.disguise.snowgolem.-setinvisible
+  - libsdisguises.disguise.enderdragon.-setinvisible
+  - libsdisguises.disguise.wither.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.giant.-setinvisible
+  - libsdisguises.disguise.illusioner.-setinvisible
+  - libsdisguises.disguise.killerbunny.-setinvisible
+  - libsdisguises.disguise.zombiehorse.-setinvisible
   - powers.herotransform
   - ch.alias.shrink
   - ch.alias.normalsize
@@ -72,8 +83,6 @@ powers:
 - /run <0-6>
 - /haste <0-6>
 - /disguise
-- /disguiseviewself
-- /undisguise
 - /herotransform
 - /shrink
 - /normalsize

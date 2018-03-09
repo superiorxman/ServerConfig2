@@ -4,10 +4,12 @@ buffs:
 - /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 2 true
 - /shot give <plr> darkmagic
+- /mgive <plr> ravenrushwand
+- /mgive <plr> ravenfieldwand
+- /mgive <plr> telekinesiswand
 chatcolor: '&5'
 class: raven
 haste: 2
-jump: 5
 name: §5R§0a§5v§0e§5n
 op: false
 permissions:
@@ -15,21 +17,11 @@ permissions:
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
-  - -essentials.protect.damage.fall
-  - ch.alias.raven
   - ch.alias.portaltp
-  - magic.commands.disabled.cast
-  - magic.cast.ravenrush
-  - magic.cast.ravenfield
-  - magic.cast.telekinesis
 powers:
 - /buff
-- /jump <0-5>
 - /run <0-2>
 - /haste <0-2>
-- /cast telekinesis
-- /cast ravenfield
-- /cast ravenrush
 - /portaltp <player>
 - /fly speed <number>
 - /fly

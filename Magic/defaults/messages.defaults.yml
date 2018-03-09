@@ -1993,6 +1993,9 @@ spells:
     add_explosion_protection:
       name: Add Explosion Protection
       description: "Adds protection from explosions to your wand.\nThis protection is only active while you are holding your wand."
+    add_damage:
+      name: Increase Damage
+      description: "Increases the amount of damage done when hitting something with your weapon (not spell casting)."
     magictorch:
       name: Magic Torch
     wandbuffshop:
@@ -2000,6 +2003,7 @@ spells:
       description: "Add buffs to your wand.\nThese are only active while you are holding your wand."
       cast_fail: "&cYou are maxed out on that buff!"
       selected: "&d&oYou bought &r&6$item &r&d&ofor &r&a$cost"
+      no_template: "&cYou may not add this buff to your $wand."
 wand:
     default_name: Wand
     upgrade_default_description: Will upgrade your wand.
@@ -2052,6 +2056,8 @@ wand:
     consume_reduction: "&6Manifestation"
     cooldown_reduction: "&6Cooldown Reduction $roman"
     power: "&6Power $roman"
+    attributes:
+      GENERIC_ATTACK_DAMAGE: "Attack Damage"
     protection:
       overall: "&2Protection $roman"
       physical: "&2Physical Protection $roman"

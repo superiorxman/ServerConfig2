@@ -70,6 +70,17 @@ dark_wizard:
   - type: speed
     amplifier: 1
     
+dummy:
+  type: husk
+  name: Dummy
+  health: 100
+  protection:
+    fire: 2
+  weakness:
+    water: 1
+  potion_effects:
+  - type: slow
+    amplifier: 10
 fire_elemental:
   type: blaze
   name: Fire Elemental
@@ -101,6 +112,15 @@ killer_bunny:
   - gold_nugget@10
   - sp:10
 
+kingslime:
+  name: "King Slime"
+  type: slime
+  size: 18
+  cast_interval: 3000
+  cast_requires_target: false
+  cast:
+    none: 100
+    "rubberize pdy -1 pdx 0 pdz 0": 50
 madscientist:
   name: Mad Scientist
   type: pig_zombie

@@ -7,7 +7,9 @@ register_command('crystallightning',
 
             @player = player()
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('crystalLightning',1,@player)
+            if(_coolDown('crystalLightning',1,@player)){
+                return()
+            }
     
             if(!has_bind(@player.'crystalLightning')){
                 console('binded!')

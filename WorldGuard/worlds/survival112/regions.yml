@@ -10,15 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    jail:
-        min: {x: 149.0, y: 67.0, z: 189.0}
-        max: {x: 155.0, y: 70.0, z: 200.0}
-        members: {}
-        flags: {invincible: allow}
-        owners:
-            unique-ids: [8ca7fc56-614b-482a-91df-bf8580ba273d]
-        type: cuboid
-        priority: 0
     __global__:
         members: {}
         flags: {invincible: deny, pvp: allow}

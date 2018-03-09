@@ -12,7 +12,9 @@ register_command('thawnetimeremnants',
             @player = player()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('thawnetimeremnants',10,@player)
+            if(_coolDown('thawnetimeremnants',10,@player)){
+                return()
+            }
 
             @oldMobs = import(@player.'thawnetimeremnantsClones')
             if(is_array(@oldMobs)){

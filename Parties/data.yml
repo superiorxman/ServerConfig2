@@ -23,9 +23,6 @@ players:
     name:
       name: AntiSepticEye1
       timestamp: 1520024379
-  391762eb-24f6-4d95-84d6-bfac682d575a:
-    options:
-      spy: true
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     name:
       name: TheDarkRaven_
@@ -86,12 +83,6 @@ players:
     name:
       name: LoneRanger13
       timestamp: 1520205458
-  c65b914b-37d8-4c55-826a-707ceb2904f4:
-    rank: 5
-    name:
-      name: Awhtin
-      timestamp: 1520208822
-    party: Nip
   8cd908e9-a758-41fa-99b9-1a8f8ffc5297:
     name:
       timestamp: 1520211151
@@ -116,12 +107,6 @@ players:
       timestamp: 1520294493
       name: Eiilonwy
     party: orkhorl
-  28556dea-667d-409f-b2ff-fb4177a20ff2:
-    name:
-      name: Marielia
-      timestamp: 1520294501
-    rank: 5
-    party: orkhorl
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     name:
       name: WhosThatItzLulu
@@ -139,6 +124,39 @@ players:
       name: LordOfGallifrey
       timestamp: 1520413405
     party: TheTitans
+    rank: 5
+  e6de8cf0-af45-44e4-882f-d98446f4b31b:
+    rank: 20
+    party: oof
+    name:
+      timestamp: 1520456387
+      name: xThqsey
+  7dff91dd-96e6-4b73-9dfa-17992e055694:
+    name:
+      timestamp: 1520463166
+      name: TreyCoding
+    party: orkhorl
+    rank: 5
+  28556dea-667d-409f-b2ff-fb4177a20ff2:
+    name:
+      name: Marielia
+      timestamp: 1520539203
+    rank: 5
+    party: orkhorl
+  391762eb-24f6-4d95-84d6-bfac682d575a:
+    options:
+      spy: true
+  d1fbaab7-bde3-4405-8282-9fc15d90209d:
+    name:
+      timestamp: 1520547995
+      name: TheDarkAura_
+    rank: 20
+    party: JSA
+  861da66b-8eef-4143-93f1-dbab33665595:
+    name:
+      timestamp: 1520548007
+      name: MageOfSixPaths
+    party: JSA
     rank: 5
 parties:
   TheTitans:
@@ -170,7 +188,6 @@ parties:
     leader: 55679107-589e-4487-abb4-4fca48b26f25
     members:
     - 55679107-589e-4487-abb4-4fca48b26f25
-    - c65b914b-37d8-4c55-826a-707ceb2904f4
   darkheroes:
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
@@ -179,9 +196,19 @@ parties:
     leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
     members:
     - fbb8c072-4c4b-49c8-948b-26e8ad73099e
-    - 28556dea-667d-409f-b2ff-fb4177a20ff2
     - dbb47887-bfbd-40e6-bfec-3d1053ea3aff
+    - 7dff91dd-96e6-4b73-9dfa-17992e055694
+    - 28556dea-667d-409f-b2ff-fb4177a20ff2
   eyy:
     members:
     - 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
     leader: 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
+  oof:
+    members:
+    - e6de8cf0-af45-44e4-882f-d98446f4b31b
+    leader: e6de8cf0-af45-44e4-882f-d98446f4b31b
+  JSA:
+    leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
+    members:
+    - d1fbaab7-bde3-4405-8282-9fc15d90209d
+    - 861da66b-8eef-4143-93f1-dbab33665595

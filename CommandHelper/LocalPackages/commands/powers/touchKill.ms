@@ -24,7 +24,9 @@ register_command('touchkill',
 
                 if(@plr != @player){
                     include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                    _coolDown('touchkill',10,@player)
+                    if(_coolDown('touchkill',10,@player)){
+                        return()
+                    }
                     broadcast(player()." touched @plr and they died. R.I.P.")
                     pkill(@plr)
                     die()

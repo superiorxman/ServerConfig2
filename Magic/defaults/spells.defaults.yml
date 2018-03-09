@@ -8080,8 +8080,7 @@ missile:
         hit_entity:
         -  class: EffectSingle
            location: target
-           particle: block_crack
-           material: redstone_block
+           particle: redstone
            particle_count: 30
            particle_offset_x: 0.2
            particle_offset_y: 0.2
@@ -8090,38 +8089,33 @@ missile:
         -  class: EffectSingle
            location: target
            particle: fireworks_spark
-           particle_count: 20
+           particle_count: 10
            particle_offset_x: 0.3
-           particle_offset_y: 0.5
+           particle_offset_y: 0.3
            particle_offset_z: 0.3
            sound: magic.zap
            sound_volume: .3
-           particle_data: 0.3
+           particle_data: 0.1
         headshot:
         -  class: EffectSingle
            location: target
            particle: fireworks_spark
-           particle_count: 15
+           particle_count: 20
            particle_offset_y: 0.2
            particle_offset_x: 0.2
            particle_offset_z: 0.2
            particle_data: 0.1
            sound: magic.zap
            sound_volume: .3
-        -  class: EffectSingle
-           sound: entity_slime_attack
+        -  sound: entity_player_attack_crit
            sound_pitch: 0.8
            location: target
-           effectlib:
-            class: AnimatedBallEffect
-            particles: 50
-            particlesPerIteration: 4
-            iterations: 10
-            particle: block_crack
-            particleCount: 20
-            material: redstone_block
-            size: 0.1
-            yOffset: 0
+           particle: crit_magic
+           particle_count: 30
+           particle_offset_y: 1
+           particle_offset_x: 1
+           particle_offset_z: 1
+           particle_data: 0.5
     headshot_parameters:
       damage_multiplier: 1.5
     parameters:
@@ -9938,8 +9932,7 @@ railgun:
         hit_entity:
         -  class: EffectSingle
            location: target
-           particle: block_crack
-           material: redstone_block
+           particle: redstone
            particle_count: 40
            particle_offset_x: 0.3
            particle_offset_y: 0.3
@@ -9948,10 +9941,10 @@ railgun:
         -  class: EffectSingle
            location: target
            particle: fireworks_spark
-           particle_count: 20
-           particle_offset_x: 0.4
-           particle_offset_y: 0.5
-           particle_offset_z: 0.4
+           particle_count: 10
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
            particle_data: 0.4
            sound: magic.zap
            sound_pitch: 1.2
@@ -9971,27 +9964,22 @@ railgun:
         -  class: EffectSingle
            location: target
            particle: fireworks_spark
-           particle_count: 15
+           particle_count: 20
            particle_offset_y: 0.5
            particle_offset_x: 0.5
            particle_offset_z: 0.5
            sound: magic.zap
            sound_volume: .3
            particle_data: 0.4
-        -  class: EffectSingle
-           sound: entity_slime_attack
+        -  sound: entity_player_attack_crit
            sound_pitch: 0.8
            location: target
-           effectlib:
-            class: AnimatedBallEffect
-            particles: 50
-            particlesPerIteration: 8
-            iterations: 15
-            particle: block_crack
-            particleCount: 20
-            material: redstone_block
-            size: 0.3
-            yOffset: 0
+           particle: crit_magic
+           particle_count: 30
+           particle_offset_y: 1
+           particle_offset_x: 1
+           particle_offset_z: 1
+           particle_data: 0.5
     headshot_parameters:
       damage_multiplier: 2
     parameters:
@@ -13290,8 +13278,7 @@ testdummy:
     parameters:
         target: block
         track: false
-        type: villager
-        health: 1000
+        type: dummy
         allow_max_range: true
         range: 24
 
@@ -14172,7 +14159,6 @@ wandbuffshop:
     options:
     - placeholder: true
     - placeholder: true
-    - placeholder: true
     - cast_spell: add_protection
       cost: 1000
       cost_modifiers:
@@ -14183,8 +14169,18 @@ wandbuffshop:
         - wand_properties:
           - property: protection.overall
             max: 1
+    - cast_spell: add_physical_protection
+      cost: 200
+      cost_modifiers:
+        - scale: "1 + 15 * (x ^ 3)"
+          type: wand
+          property: protection.physical
+      requirements:
+        - wand_properties:
+          - property: protection.physical
+            max: 1
     - cast_spell: add_fall_protection
-      cost: 500
+      cost: 300
       cost_modifiers:
         - scale: "1 + 15 * (x ^ 3)"
           type: wand
@@ -14203,6 +14199,17 @@ wandbuffshop:
         - wand_properties:
           - property: protection.fire
             max: 1
+    - cast_spell: add_damage
+      cost: 1000
+      cost_modifiers:
+        - scale: "1 + (x / 6) * 2"
+          type: wand
+          property: attributes.GENERIC_ATTACK_DAMAGE
+      requirements:
+        - wand: battle
+        - wand_properties:
+          - property: attributes.GENERIC_ATTACK_DAMAGE
+            max: 10
 
 add_protection:
   icon: diamond_axe:234
@@ -14215,7 +14222,7 @@ add_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.overall"
+    - property: "protection.overall"
       value: "x + 0.2"
       max: 1
 
@@ -14230,7 +14237,7 @@ add_explosion_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.explosion"
+    - property: "protection.explosion"
       value: "x + 0.2"
       max: 1
 
@@ -14245,7 +14252,7 @@ add_fall_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.fall"
+    - property: "protection.fall"
       value: "x + 0.2"
       max: 1
 
@@ -14260,7 +14267,7 @@ add_fire_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.fire"
+    - property: "protection.fire"
       value: "x + 0.2"
       max: 1
 
@@ -14275,7 +14282,7 @@ add_physical_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.physical"
+    - property: "protection.physical"
       value: "x + 0.2"
       max: 1
 
@@ -14290,9 +14297,24 @@ add_projectile_protection:
     target: self
     modify_target: "wand"
     modify:
-    - path: "protection.projectile"
+    - property: "protection.projectile"
       value: "x + 0.2"
       max: 1
+
+add_damage:
+  icon: diamond_axe:178
+  icon_disabled: diamond_hoe:178
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+    - property: "attributes.GENERIC_ATTACK_DAMAGE"
+      value: "x + 1"
+      max: 10
 wandshop:
     icon: wooden_hoe
     category: npc

@@ -19,7 +19,9 @@ register_command('freezewater',
             @blocksChanged = array()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedWind',10,@player)
+            if(_coolDown('lastUsedWind',10,@player)){
+                return()
+            }
 
             for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
                 for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {

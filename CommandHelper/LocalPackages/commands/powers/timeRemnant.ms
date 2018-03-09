@@ -26,7 +26,9 @@ register_command('timeremnant',
             @val = @hero['val']
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('timeRemnant',1,@player)
+            if(_coolDown('timeRemnant',1,@player)){
+                return()
+            }
 
             @mobUUIDs = spawn_mob('villager',1)
             export(@player.'timeRemnant',@mobUUIDs)

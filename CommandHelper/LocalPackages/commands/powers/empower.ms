@@ -18,7 +18,9 @@ register_command('empower',
                 die()
             }
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('empowerCooldown',150,@player)
+            if(_coolDown('empowerCooldown',150,@player)){
+                return()
+            }
             sudo('/effect '.@plr.' 5 300 10 true')
             tmsg(player(), "You have empowered ".@plr."!")
             tmsg(@plr, "You have been empowered by ". player() ."!")

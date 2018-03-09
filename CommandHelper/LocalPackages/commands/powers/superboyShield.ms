@@ -10,7 +10,9 @@ register_command('useshield',
                 return(false)
             }
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('superboyShield',300,@sender)
+            if(_coolDown('superboyShield',300,@sender)){
+                return()
+            }
             
             set_pflight(@sender, true)
             set_pflying(@sender, true)

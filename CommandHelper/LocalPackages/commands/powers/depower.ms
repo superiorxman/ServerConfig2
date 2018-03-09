@@ -26,7 +26,9 @@ register_command('depower',
                     die()
                 }
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                _coolDown('lastUsedDepower',60,@plr)
+                if(_coolDown('lastUsedDepower',60,@plr)){
+                    return()
+                }
                 
                 export(@player.'nerfOnePunch',true)
 

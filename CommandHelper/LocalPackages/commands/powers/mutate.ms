@@ -38,7 +38,9 @@ register_command('mutate',
             }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMutate',60,@plr)
+            if(_coolDown('lastUsedMutate',60,@plr)){
+                return()
+            }
 
             runas('~console',"/gamemode survival ".@vic)
             runas('~console',"/minecraft:clear ".@vic)

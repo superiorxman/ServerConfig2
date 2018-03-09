@@ -13,7 +13,9 @@ register_command('multiplexillusion',
             @vic = @args[0]
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedIllusion',1,@player)
+            if(_coolDown('lastUsedIllusion',1,@player)){
+                return()
+            }
 
             sudo('/illusionplayer 5 wolf '.@vic)
         }

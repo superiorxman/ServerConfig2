@@ -7,7 +7,9 @@ bind('player_interact',null,array('button': 'LEFT'),@event){
     }
 
     include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-    _coolDown('fireBallPunch',2,@player)    
+    if(_coolDown('fireBallPunch',2,@player)){
+        return()
+    }
     
     @multiplier = 5
     @arrow = shoot_projectile(@player, 'FIREBALL')

@@ -20,7 +20,9 @@ explode:/explode $plr = >>>
             }
             
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('kill',60,@plr)
+            if(_coolDown('kill',60,@plr)){
+                return()
+            }
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             broadcast(@plr." exploded the body of ".@vic)
             pkill(@vic)

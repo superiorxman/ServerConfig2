@@ -13,22 +13,26 @@ register_command('powers',
                 try {
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                     @hero = yml_decode(@contents)
-                    
-                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                    msg(color('GOLD').  '                                YOUR POWERS                    ')
-                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                    foreach(@power in @hero['powers']){
-                        tmsg(@plr,color('GOLD').@power)
-                    }
-                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+
                 } catch (IOException @ErrorInfo) {
                     # Ignore file doesn't exist message and kill the script
                     tmsg(@plr, 'There\'s no power\'s associated with your current Character Class')
                     die()
                 }
                 
+                if(array_index_exists(@hero,'powers')){
+                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                    msg(color('GOLD').  '                                YOUR POWERS                    ')
+                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                    foreach(@power in @hero['powers']){
+                        tmsg(@plr,color('GOLD').@power)
+                    }
+                    msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')    
+                }else{
+                    tmsg(@plr, 'There\'s no power\'s associated with your current Character Class')
+                    die()
+                }
                 
-        
         }
     )
 )

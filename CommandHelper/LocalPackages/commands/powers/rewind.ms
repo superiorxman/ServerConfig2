@@ -6,7 +6,9 @@ register_command('rewind',
         'executor': closure(@alias, @sender, @args) {
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('tracerRewindCooldown',5,@sender)
+            if(_coolDown('tracerRewindCooldown',5,@sender)){
+                return()
+            }
             @ploc = import(@sender.'tracerRewind')
             set_ploc(@sender,import(@sender.'tracerRewind')) 
         }

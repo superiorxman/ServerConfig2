@@ -10,7 +10,9 @@ register_command('gravityshift',
                 sudo('/gravityshiftstop')
             }
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedGravityShift',5,@sender)
+            if(_coolDown('lastUsedGravityShift',5,@sender)){
+                return()
+            }
 
             tmsg(@sender,color('RED').'Gravity shift active!')
 

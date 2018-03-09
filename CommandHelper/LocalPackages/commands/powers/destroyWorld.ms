@@ -13,7 +13,9 @@ register_command('destroyworld',
             @ents = all_entities(@world)
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('destroyWorld',1800,@plr)
+            if(_coolDown('destroyWorld',1800,@plr)){
+                return()
+            }
 
             foreach(@ent in @ents){
                 if(is_entity_living(@ent) && @puuid != @ent){

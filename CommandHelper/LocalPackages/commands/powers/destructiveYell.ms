@@ -7,7 +7,9 @@ register_command('yell',
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             @plr = player()
-            _coolDown('blackBoltYellCooldown',30,@plr)
+            if(_coolDown('blackBoltYellCooldown',30,@plr)){
+                return()
+            }
             
             @start = ploc();
             @vector = associative_array();

@@ -19,7 +19,9 @@ register_command('illusionplayer',
             }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedIllusionPlayer',1,@player)
+            if(_coolDown('lastUsedIllusionPlayer',1,@player)){
+                return()
+            }
 
             if(!is_null(import(@player."illusion"))){
                 @oldMobs = import(@player."illusion")

@@ -1,4 +1,6 @@
-mindControlLimit: 20
+mindControlDist: 20
+mindLockDist: 20
+msgDist: 20
 maxHearts: 50
 alts:
 - wonderwomangodmode
@@ -11,6 +13,11 @@ buffs:
 - /give <plr> 420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso
 - /give <plr> minecraft:iron_sword 1 16:40 name:&4G&fo&ed_&4K&fi&el&9l&fe&er
 - /give <plr> minecraft:shield 1 0 {display:{Name:"§4W§fon§eder §4W§fom§9an's Shield"},BlockEntityTag:{Base:11,Patterns:[{Pattern:tt,Color:1},{Pattern:mr,Color:11},{Pattern:hhb,Color:4},{Pattern:bts,Color:15},{Pattern:flo,Color:11},{Pattern:ms,Color:11}]}}
+- /mgive <plr> lassolockwand
+- /mgive <plr> lassopullwand
+- /mgive <plr> lassoregenwand
+- /mgive <plr> wwbracerswand
+- /mgive <plr> forcefieldwand
 chatcolor: '&e'
 class: wonderwoman
 haste: 9
@@ -23,31 +30,21 @@ permissions:
   - essentials.back
   superherocity:
   - ch.alias.mindlocknear
-  - magic.cast.lassolock
-  - magic.cast.mindcontrol
-  - magic.cast.lassopull
-  - magic.cast.regenerate
-  - magic.cast.lassoregen
   - powers.herotransform
   - essentials.tppos
   - is.telepathicallyresistant
-  - -essentials.protect.damage.fall
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
   - ch.alias.speedforceteleport
   - essentials.warps.speedforce
   - ch.alias.mindlock
-  - essentials.msg
+  - ch.alias.msg
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
   - powers.lightningpunch
   - ch.alias.mindcontrol
-  - ch.alias.mindcontrolnear
   - ch.alias.stopmindcontrol
-  - magic.commands.disabled.cast
-  - magic.cast.wwbracers
-  - magic.cast.forcefield
 powers:
 - /buff
 - /carryplayer <player>
@@ -64,14 +61,10 @@ powers:
 - /speedforceteleport <playername>
 - /lightningpunch <on/off>
 - /cast forcefield
-- /cast wwbracers
-- /msg <playername>
-- /mindlock <playername>
+- /msg <player>
+- /mindlock <player>
 - /herotransform <id>
-- /cast lassoregen
-- /cast lassopull
-- /cast mindcontrol
-- /cast lassolock
+- /mindcontrol <player>
 - /stopmindcontrol
 run: 9
 sig: aFYtShn0ssurOM3u+EYDdoa5VNl+4AntNAPXZ+Bc6Thkx4Br0NRaFRvh+jF6D7UBQGeP1gQ/CUVwewnb1GMQFl6CZ9CO9595tGUf28UzS8eCTr5Obt3Vla6CHykiQ5/l979akX/Hm0hFHBQ2cNVBNKIEWEm8XxUjow6JwrgfjhPGADiFITU+x/yMhXd3mD+Af0leHjiMmDZgmxEp0DxWgWM78XcN0vEwYo0vOR4RqBWgGgqrIphUjfxP0YmLzBibUGMOwIgRiI/uShv6eIuXahpoUv33PzovAuGJYVNCh2N6o1kp4vcE7izDtDuuyUDXnW6NyGhnG24wIFGncEwrsWnDEcGfoMdcarCxliYZ4mzdKXH6EPV0MmQBnHgBigO8T7nhXQy+cgXxwisXOqZUOy9zc7lD7vg/BkDqw0OGsqA6+1OfNaQFxtsajC9dafqjDwJtStkYImpm36mtYpJFLwzvOYS/kZ/mKWUX7Jxjjdh/keFR6zOwJMzK1RbnzkTH7VM1kJj9NyhKB+27bri3WUHw6HmS5WoQJLFbH1gm5CyGQzOCjclsoVxPlgUTiybcNYR8+3kWKE/tsx/q+eGuokZMVAN2ga+ohDVOLZQdTJj3htIteHKBTRX4GzYoMEJWrGMo7tG0QwKYvfuzsJt1zzNckygHluwpUT79yBLn7gg=

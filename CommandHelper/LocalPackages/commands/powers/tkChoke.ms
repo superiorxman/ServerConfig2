@@ -24,7 +24,9 @@ register_command('tkchoke',
             
             if(@dist < 20){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                _coolDown('tkChoke',10,@sender)
+                if(_coolDown('tkChoke',10,@sender)){
+                    return()
+                }
                 sudo('/freeze '.@vic.' 6000')
                 sudo(/effect @vic 20 5 6 true)
                 sudo(/effect @vic 19 5 6 true)

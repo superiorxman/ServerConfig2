@@ -9,7 +9,9 @@ register_command('saikiinvis',
         'executor': closure(@alias, @sender, @args) {
             @player = player()
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('saikiInvis',3600,@player)
+            if(_coolDown('saikiInvis',3600,@player)){
+                return()
+            }
 
             sudo('/effect '.@player.' invisibility 6000 1')
 

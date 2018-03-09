@@ -76,7 +76,9 @@ proc('_isSpecialArrow',@item,@launchEventID){
                         @vicID = @e['hit']
                         @vicName = player(@vicID)
                         include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                        _coolDown('phantomZoneArrow',120,player(@e['shooter']))
+                        if(_coolDown('phantomZoneArrow',120,player(@e['shooter']))){
+                            return()
+                        }
                         sudo('/phantomzonetrap '.@vicName)
                     }
                 }

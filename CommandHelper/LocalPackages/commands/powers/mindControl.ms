@@ -69,8 +69,8 @@ register_command('mindcontrol',
             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pClass.'.yml')
             @pHero = yml_decode(@contents)
 
-            if(array_index_exists(@pHero,'mindControlLimit')){
-                @radius = @pHero['mindControlLimit']
+            if(array_index_exists(@pHero,'mindControlDist')){
+                @radius = @pHero['mindControlDist']
                 @dist = distance(@ploc,@vloc)
                 if(@dist > @radius){
                     tmsg(@player,color('RED').'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
@@ -80,7 +80,9 @@ register_command('mindcontrol',
 
             // actual mind control begins here
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMindControl',60,@player)
+            if(_coolDown('lastUsedMindControl',60,@player)){
+                return()
+            }
 
             // summon villager at point of mind controller so players may damage his body
             @ploc['y'] += 1
@@ -100,7 +102,9 @@ register_command('mindcontrol',
                 }
             }else{
                 tmsg(@player,color('RED').'Sorry, you are in a protected location, you cannot mind control from here.')
-                _coolDown('lastUsedMindControl',1,@player)
+                if(_coolDown('lastUsedMindControl',1,@player)){
+                    return()
+                }
                 die()
             }
             

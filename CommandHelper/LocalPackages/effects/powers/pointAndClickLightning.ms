@@ -12,7 +12,9 @@ bind('player_interact',null,array('button': 'LEFT'),@event){
     }
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-    _coolDown(@player.'lightningPunch',2,@player)
+    if(_coolDown(@player.'lightningPunch',2,@player)){
+        return()
+    }
 
     sudo('/lightning')
 }

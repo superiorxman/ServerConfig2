@@ -28,7 +28,9 @@ register_command('chill',
             }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('chill',10,@sender)
+            if(_coolDown('chill',10,@sender)){
+                return()
+            }
             
 
             sudo('/freeze '.@vic.' 5000')
