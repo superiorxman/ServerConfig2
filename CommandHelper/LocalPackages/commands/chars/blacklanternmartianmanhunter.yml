@@ -18,7 +18,7 @@ maxHearts: 50
 op: false
 permissions:
   superherocity:
-  - essentials.msg
+  - ch.alias.msg
   - ch.alias.mindlock
   - -essentials.protect.entitytarget.bypass
   - powers.wallrun

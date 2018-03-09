@@ -4,21 +4,40 @@ nametransfer:/nametransfer = >>>
 
     foreach(@file in @files){
         @filename = replace(@file,'.yml','')
+        @filename = trim(@filename)
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
         @hero = yml_decode(@contents)
 
-        try{
-            @hero['chat'] = array(
-            'name': @hero[0]['name'],
-            'color': @hero['chatcolor']
-            )
-        }catch(Exception @e){
-            continue()
+        //rename 'alts' to 'transformations'
+        @hero['transformations'] = array_get(@hero['alts'])
+        //clear alts to prepare for loops ahead
+        array_remove(@hero['alts'])
+
+        
+        @i = 0
+        foreach(@pair in @hero['chat']){
+            @hero['alts'][@i]['color'] = @pair['color']
+            @hero['alts'][@i]['name'] = @pair['name']
+            if(@i == 0){
+                @hero['alts'][0]['sig'] = @hero['sig'])
+                @hero['alts'][0]['val'] = @hero['val'])
+            }
+            @i++
+        }
+
+
+        
+        if(array_index_exists(@hero,'altskins')){
+            @i = 1
+            foreach(@pair in @hero['altskins']){
+                assign(@hero['alts'][@i]['sig'], @pair['sig'])
+                assign(@hero['alts'][@i]['val'], @pair['val'])
+                @i++
+            }
         }
         
 
-        array_remove(@hero,'name')
-        array_remove(@hero,'chatcolor')
+        array_remove(@hero,'chat')
 
         write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')
     }

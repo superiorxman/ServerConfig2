@@ -66,10 +66,10 @@ ParticleTrails:
     Slot: 13
     Speed: 1
     Y: 0
-    Amount: 4
-    OffsetX: 1
-    OffsetY: 1
-    OffsetZ: 1
+    Amount: 30
+    OffsetX: 0.25
+    OffsetY: 0.25
+    OffsetZ: 0.25
   Cloud:
     Slot: 14
     Speed: 0
@@ -226,10 +226,10 @@ ParticleTrails:
     Slot: 33
     Speed: 0
     Y: 0
-    Amount: 4
-    OffsetX: 1
-    OffsetY: 1
-    OffsetZ: 1
+    Amount: 1
+    OffsetX: 0
+    OffsetY: 0
+    OffsetZ: 0
   Breath:
     Slot: 34
     Speed: 0.1

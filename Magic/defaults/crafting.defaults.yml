@@ -61,18 +61,6 @@ battle:
   row_2: o
   row_3: i
 
-blaster:
-  enabled: false
-  output: blaster
-  output_type: wand
-  materials:
-    p: wood
-    i: iron_ingot
-    g: emerald
-  row_1: "iig"
-  row_2: "ii "
-  row_3: "p  "
-
 broomstick:
   output: broomstick
   output_type: wand

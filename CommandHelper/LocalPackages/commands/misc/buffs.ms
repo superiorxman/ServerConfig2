@@ -33,6 +33,13 @@ register_command('buff',
             if(array_index_exists(@hero,'speech')){
                 queue_push(closure(tmsg(@plr,@hero['speech'])))
             }
+
+            /*queue_push(closure(
+                @pinv = pinv(@plr)
+                foreach(@item in @pinv){
+
+                }
+            ))*/
         }
     )
 )
