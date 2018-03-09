@@ -1,11 +1,17 @@
-thistest:/thistest = >>>
+nametransfer:/nametransfer $class = >>>
 
-    @confuseStatus = import(player().'isConfused')
+    @class = $class
+    @file = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+    @hero = yml_decode(@file)
 
-    if(@confuseStatus == true){
-        msg('tested true, value reported as '.@confuseStatus)
-        die()
-    }
-    msg('tested false, value reported as '.@confuseStatus)
+    @hero['chat'] = array(
+        'name': @hero['name'],
+        'color': @hero['chatcolor']
+    )
+
+    array_remove(@hero,'name')
+    array_remove(@hero,'chatcolor')
+
+    write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml',yml_encode(@hero,true),'OVERWRITE')
 
 <<<

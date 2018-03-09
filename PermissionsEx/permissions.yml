@@ -9002,17 +9002,6 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
         - ch.alias.greenlanternhaljordan
-  varikk:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&4V&0a&6R&8i&0k&7k'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.sunhealing
-        - essentials.fly
   gokuultrainstinct:
     inheritance:
     - commonherotraits
@@ -9367,20 +9356,6 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
         - immune.destroyworld
-  onepunchman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&6One &fPunch &4Man'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.wallrun
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - ch.alias.onepunchman
-        - powers.onepunch
   blackracerbarryallen:
     inheritance:
     - commonherotraits
@@ -9611,24 +9586,6 @@ groups:
         - essentials.fly
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
-  starbutterfly:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6St&da&3r &3Butte&5rfly'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.tppos
-        - ch.alias.tp
-        - -esssentials.warps.*
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - ch.alias.tphere
-        - ch.alias.mutate
   alienx:
     inheritance:
     - commonherotraits
@@ -9754,6 +9711,51 @@ groups:
       superherocity:
         permissions:
         - powers.sonicscrewdriver
+  varikk:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&4V&0a&6R&8i&0k&7k'
+    worlds:
+      superherocity:
+        permissions:
+        - -blivtrails.*
+        - -trails.*
+        - powers.sunhealing
+        - essentials.fly
+  starbutterfly:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6St&da&3r &3Butte&5rfly'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.tppos
+        - ch.alias.tp
+        - -esssentials.warps.*
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - ch.alias.tphere
+        - ch.alias.mutate
+  onepunchman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&6One &fPunch &4Man'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.wallrun
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - ch.alias.onepunchman
+        - powers.onepunch
 schema-version: 1
 worlds:
   checkers:
@@ -10739,8 +10741,7 @@ users:
     options:
       name: XMasterSlayerX
   c2045a9e-d59e-48eb-844f-caa045e0da53:
-    group:
-    - onepunchman
+    group: []
     options:
       name: Xmatter156
   a44fc706-f022-4bc9-ae1d-539780fd08db:
@@ -10982,7 +10983,7 @@ users:
       name: WingedMonkey
   12a25369-3032-4128-8b44-ed4ae9b31a4b:
     group:
-    - flashbarryallen
+    - onepunchman
     options:
       name: Lucky_Ducky
   a40abb49-d921-4689-8aca-89923b7aaeca:
