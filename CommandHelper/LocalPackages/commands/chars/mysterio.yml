@@ -1,6 +1,7 @@
 maxHearts: 30
 buffs:
 - /shot give <plr> phantomblast
+- /mgive <plr> telekinesiswand
 chatcolor: '&d'
 class: mysterio
 name: §2My§5st§eer§2i§5o
@@ -11,15 +12,12 @@ permissions:
   - essentials.tppos
   - ch.alias.invis
   - ch.alias.vis
-  - magic.commands.disabled.cast
-  - Magic.cast.telekinesis
 powers:
 - /buff
 - /tppos
 - /run <0-2>
 - /invis
 - /vis
-- /cast telekinesis
 - /disguise
 - /undisguise
 run: 2

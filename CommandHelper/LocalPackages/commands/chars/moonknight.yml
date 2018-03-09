@@ -2,17 +2,13 @@ maxHearts: 30
 buffs:
 - /give <plr> minecraft:stick 1 16:10 name:&7M&foo&7n_&7St&faf&7f
 - /give <plr> minecraft:elytra 1 16:10 name:&7M&foo&7n_&7Gl&fid&7e
+- /mgive <plr> crescentthrowwand
 chatcolor: '&8'
 class: moonknight
 name: §7M§foo§7n §7K§fni§7g§fh§7t
 op: false
-permissions:
-  superherocity:
-  - magic.cast.crescentthrow
-  - magic.commands.disabled.cast
 powers:
 - /buff
-- /cast crescentthrow
 sig: vLK5MRvDy5Gr0QpkD/elgoby4TPtNP6Xgypnt2JvwFPM2mAYPMb+aT8c40i47VAZYzJgNsj+aaux7uErCoCyuNBe1rR/utIo7FPGy2f+E/kptjuPFu0sdP2IvbsnFuJhjcSl2CaaZB/wNeKPv+Zvetv2BWBbGcbE+E6D+z+xIB9gFuf+MEdGi/Cse1EerZcl5KSu3lwpJZSgncryw+Qrp3Ss3GGrTH6/4UvNCdcU10YEPtXak0DBJaJwo2zr7307w9FiTS/vbE4O+Hlwp/6kVWaMGOILPwo7+dGr8byyuTWx94f3mG/pwlvfDDzEBqlqzl8hor5Ceqhx6lbQxumlMRPA9StBq4wcsXyNdO/EnbwCmNe+I54+Nd5DKq58LeyoFInxxT4AWEv4r/6I2eGT0k+i3esLsS/NEBtEcKg7dORBAgnBwMTVd5Jonl9lIJ4Ji2WOQytx6UkARbWYIlbfDrmy58pfZDAX7CpKbXvT7qhxgzK2Q8JsujEXV9Ym+EPYcMUB7jJ7bs4OKy1UwhcPpzZwF3kSmPyu3/MhyEjY5eXZ6zZO0aTWgTY5GJCMxjtbOGbdUw48wME84B+/zp42ixZz3p6fiZ/hMJN6bNrOgJGf5yDEIuSHPYTqWdfwOHNVSjy8BFgaEFHPe76T0G37Jke/49KwJxJonWjMWLfzVZE=
 speech: May the moon guide me!
 trail: ''

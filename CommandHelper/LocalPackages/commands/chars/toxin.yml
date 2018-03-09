@@ -4,6 +4,8 @@ buffs:
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 2 true
 - /give <plr> minecraft:iron_bars 1 16:10 name:&4T&co&4x&8i&0n's_&4C&claw&4s
+- /mgive <plr> symbiotetendrilwand
+- /mgive <plr> symbiotestretchwand
 chatcolor: '&c'
 class: toxin
 name: §4T§co§4x§8i§0n
@@ -15,16 +17,11 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - -essentials.protect.damage.fall
-  - magic.commands.disabled.cast
-  - magic.cast.symbiotetendril
-  - magic.cast.symbiotestretch
   - weakto.antivenom
 powers:
 - /buff
 - /carryplayer <player>
 - /dismountplayer <player>
-- /cast symbiotetendril
-- /cast symbiotestretch
 - /wallclimb <on/off>
 - Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.
 - /websling <on/off>

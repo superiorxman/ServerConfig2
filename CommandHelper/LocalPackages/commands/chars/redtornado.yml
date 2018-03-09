@@ -2,6 +2,8 @@ buffs:
 - /effect <plr> 5 9999 3 true
 - /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 2 true
+- /mgive <plr> redtornadowand
+- /mgive <plr> whirlwindwand
 chatcolor: '&6'
 class: redtornado
 haste: 4
@@ -12,15 +14,9 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - essentials.fly
-  - magic.commands.disabled.cast
-  - magic.cast.redtornado
-  - magic.cast.whirlwind
 powers:
 - /buff
 - /fly
-- /cast redtornado
-- /cast whirlwind
 - /run <0-4>
 - /haste <0-4>
 - /jump <0-3>

@@ -14,20 +14,18 @@ buffs:
 - /effect <plr> 5 9999 20 true
 - /effect <plr> 13 9999 1 true
 - /effect <plr> 11 9999 3 true
+- /mgive <plr> freezetimewand
 chatcolor: '&7'
 class: alienx
 name: §0A§8li§7en §2X
 op: false
 permissions:
   superherocity:
-  - magic.commands.disabled.cast
-  - magic.cast.freezetime
   - essentials.fly
   - powers.destroyworld
   - powers.herotransform
 powers:
 - /buff
-- /cast freezetime
 - /fly
 - /destroyworld
 - /herotransform

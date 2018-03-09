@@ -4,6 +4,7 @@ buffs:
 - /shot give <plr> pistol
 - /shot give <plr> hunting
 - /shot give <plr> bazooka
+- /mgive <plr> stungrenadewand
 chatcolor: '&c'
 class: arkhamknight
 haste: 2
@@ -13,15 +14,12 @@ op: false
 permissions:
   superherocity:
   - powers.militia
-  - magic.commands.disabled.cast
-  - magic.cast.stungrenade
   - ch.alias.grapplinghook
   - ch.alias.shadowhide
 powers:
 - /buff
 - /grapplinghook
 - /shadowhide (Allows you to become invisible in dark areas)
-- /cast stungrenade
 - /run <0-2>
 - /jump <0-2>
 - /haste <0-2>

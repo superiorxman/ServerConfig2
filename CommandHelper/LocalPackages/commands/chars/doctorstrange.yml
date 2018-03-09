@@ -3,6 +3,9 @@ buffs:
 - /effect <plr> 5 9999 1 true
 - /shot give <plr> magicblast
 - /mgive <plr> timestone
+- /mgive <plr> freezetimewand
+- /mgive <plr> acceleratetimewand
+- /mgive <plr> timewand
 chatcolor: '&9'
 class: doctorstrange
 haste: 1
@@ -12,18 +15,12 @@ op: false
 permissions:
   superherocity:
   - powers.gravityshift
-  - magic.cast.freezetime
-  - magic.cast.acceleratetime
-  - magic.use.timestone
-  - magic.wand.use
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.enchantments.*
   - -essentials.enchantments.allowunsafe
   - essentials.enchant
   - powers.float
-  - magic.commands.disabled.cast
-  - magic.cast.time
   - -essentials.protect.damage.fall
 powers:
 - /buff
@@ -33,7 +30,6 @@ powers:
 - /run <0-1>
 - /haste <0-1>
 - /float <up/down/pause/unpause/stop>
-- /cast time
 - /gravityshift
 - /gravityshiftstop
 run: 1

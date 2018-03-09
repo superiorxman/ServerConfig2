@@ -2,6 +2,7 @@ maxHearts: 20
 buffs:
 - /shot give <plr> icebeam
 - /effect <plr> 5 9999 5 true
+- /mgive <plr> tsunamiwand
 chatcolor: '&6'
 class: crystal
 jump: 2
@@ -12,8 +13,6 @@ permissions:
   - powers.fireballpunch
   - ch.alias.wind
   - powers.crystallightning
-  - magic.cast.tsunami
-  - magic.commands.disabled.cast
   - ch.alias.earth
   - essentials.speed.fly
   - essentials.fly
@@ -22,7 +21,6 @@ powers:
 - /jump <0-2>
 - /run <0-3>
 - /fly
-- /cast tsunami
 - /earth
 - /wind <playername>
 - /crystallightning

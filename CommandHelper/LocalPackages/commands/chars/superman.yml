@@ -8,6 +8,7 @@ buffs:
 - /effect <plr> 16 9999 1 true
 - /shot give <plr> kryptonianlaservision
 - /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
+- /mgive <plr> infinitemasspunchwand
 chatcolor: '&9'
 class: superman
 haste: 9
@@ -16,8 +17,6 @@ name: §cS§9u§ep§9e§9rm§can
 op: false
 permissions:
   superherocity:
-  - magic.commands.disabled.cast
-  - magic.cast.infinitemasspunch
   - weakto.kryptonite
   - powers.nofalldamage
   - powers.wallrun
@@ -39,7 +38,6 @@ powers:
 - Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>
 - /fly
-- /cast infinitemasspunch
 run: 9
 sig: n12HtxORVEoDI6+HUojhNLkvmU/XtC5V/P20SCOhynxgBgqi3xcHu5UY4touepldXZsU1L0SwLcUpDIAaV3EasdmK5onympPU4TDORS9J6j1BC4xivbBkZ9vD4q5f9h48C67b5nDtwUC/xcs4mVfVdaUtSWRzMlIywWQIiwj1TlXhb6C7qe5CRuaiMdGMIRL3xbL9MXM8w2mV3NBtDki8Tbxspj6pW9HhToWA6KW1E7n1HRxmUnf8svzaJ0NQDZ4WspQTyrf2pWDnCJ2CWK9DNH66VEfPtipxCnf4YiuS8JHKtBXOZMxAimyDOdV5RI9c9gMGbxcWCJxAmh3KL5qALL1ptsu2BfMY4cyI4TvB7pBMSzi+sgc9hbHCXYTmpFF8WYnvcDEpcdYmFD5KpD+WZjUbBUeRr/6PZGJB6oMbk1Pn3y3qCSbFzzrOoLMEAnlEOHYpolHymSLj6e0z7aCp8K0xW2PjisApyRVlEGMdeYAZsBtgRoXbpCXU6rS+sHGGkakClSd+TKegyaF5E3MJzdDbONAqBt6i+wcB012W941uqgSLwRQoKYeyfKPmRFaZwmMP1hqYSTevqGT3CJ5DkTHSd1CCCufC9RfpX7ou9VPrZ2oCNdreagn3H1d45NovMaknPqBUmAx//v3autSokR0IV/Z2tIe32ROX+4CH84=
 speech: Time to save the world once again!

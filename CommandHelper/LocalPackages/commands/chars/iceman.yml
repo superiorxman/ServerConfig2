@@ -3,14 +3,11 @@ buffs:
 - /effect <plr> 5 9999 2 true
 - /shot give <plr> icespike
 - /give <plr> minecraft:elytra 1 70:1 34:3 name:&bIce_Glide
+- /mgive <plr> freezeraywand
 chatcolor: '&b'
 class: iceman
 name: §bIce§1man
 op: false
-permissions:
-  superherocity:
-  - magic.cast.freezeray
-  - magic.commands.disabled.cast
 powers:
 - /buff
 - /run <0-2>
