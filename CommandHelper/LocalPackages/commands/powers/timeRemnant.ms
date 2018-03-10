@@ -22,8 +22,8 @@ register_command('timeremnant',
             @class = _getheroclass(@player)            
             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
             @hero = yml_decode(@contents)
-            @sig = @hero['sig']
-            @val = @hero['val']
+            @sig = @hero['costumes'][0]['sig']
+            @val = @hero['costumes'][0]['val']
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             if(_coolDown('timeRemnant',1,@player)){

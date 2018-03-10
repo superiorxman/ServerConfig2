@@ -16,10 +16,18 @@ register_command('skins',
                 die()
             }
 
-            if(array_index_exists(@hero,'altskins')){
-                @numExtraSkins = array_size(@hero['altskins'])
+
+            @numExtraSkins = -1
+
+            foreach(@costume in @hero['costumes']){
+                if(array_index_exists(@costume,'sig')){
+                    @numExtraSkins++
+                }
+            }
+
+            if(@numExtraSkins > 1){
                 tmsg(@sender,color('RED').'You have '.color('GREEN').@numExtraSkins.color('RED').' extra skins!')
-                for(@i = 1, @i <= @numExtraSkins + 1, @i++){
+                for(@i = 2, @i <= @numExtraSkins + 1, @i++){
                     tmsg(@sender,color('RED').'/skin '.@i)
                 }
             }else{

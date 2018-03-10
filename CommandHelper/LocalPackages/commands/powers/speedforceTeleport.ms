@@ -78,7 +78,7 @@ register_command('speedforceteleport',
                     @hero = yml_decode(@contents)
                 }catch(Exception @e){
                     @hero = array()
-                    @hero['chat'][0]['name'] = @plr
+                    @hero['costumes'][0]['name'] = @plr
                 }
                 @plrHero = @hero
                 set_timeout(3000,closure(

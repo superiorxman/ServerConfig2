@@ -20,8 +20,8 @@ register_command('setname',
                     tmsg(@sender,color('RED').'Sorry, you are not a character with multiple skins.')
                     return()
                 }
-                @numNames = array_size(@hero['chat'])
-                if(array_index_exists(@hero['chat'],@reqestedNum) && @numNames > 1 ){
+                @numNames = array_size(@hero['costumes'])
+                if(array_index_exists(@hero['costumes'],@reqestedNum) && @numNames > 1 ){
                     tmsg(@sender,color('RED').'You have '.@numNames.' names. Try switching by doing '.color('GREEN').'/setname <number>')
                 }else{
                     tmsg(@sender,color('RED').'Sorry, you are not a character with multiple skins.')
@@ -43,10 +43,10 @@ register_command('setname',
                 return()
             }
             @reqestedNum = @args[0] - 1
-            if(array_index_exists(@hero['chat'],@reqestedNum)){
-                @niceName = replace(@hero['chat'][@reqestedNum]['name'],'§','&')
+            if(array_index_exists(@hero['costumes'],@reqestedNum)){
+                @niceName = replace(@hero['costumes'][@reqestedNum]['name'],'§','&')
                 runas('~console','/pex group #'.@class.' prefix "'.@niceName.'"')
-                runas('~console','/pex group #'.@class.' suffix "'.@hero['chat'][@reqestedNum]['color'].'"')
+                runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][@reqestedNum]['color'].'"')
                 tmsg(@sender,color('RED').'Name set!')
             }else{
                 tmsg(@sender,color('RED').'Sorry, you are not a character with multiple skins.')

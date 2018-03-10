@@ -27,7 +27,7 @@ register_command('untransform',
             try(
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
-                _changeSkin(@plr,@hero['sig'],@hero['val'])
+                _changeSkin(@plr,@hero['costumes'][0]['sig'],@hero['costumes'][0]['val'])
             ,
                 sudo('/undisguise')
             )

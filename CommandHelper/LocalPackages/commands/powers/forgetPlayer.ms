@@ -63,8 +63,8 @@ register_command('forget',
                 @plrHero = array('name': @sender)
             }
 
-            if(array_index_exists(@vicHero,'alts')){
-                @alts = @vicHero['alts']
+            if(array_index_exists(@vicHero,'costumes')){
+                @alts = @vicHero['costumes']
                 array_push(@alts,@vicHero['class'])
                 export('forgottenHeroes',@alts)
             }else{

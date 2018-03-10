@@ -32,8 +32,8 @@ register_command('unzord',
             @hero = yml_decode(@contents)
 
             
-            @sig = @hero['sig']
-            @val = @hero['val']
+            @sig = @hero['costumes'][0]['sig']
+            @val = @hero['costumes'][0]['val']
             _changeSkin(@player,@sig,@val)
                 
         }

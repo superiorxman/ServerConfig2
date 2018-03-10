@@ -52,7 +52,7 @@ register_command('vis',
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-                _changeSkin(@player, @hero['sig'], @hero['val'])
+                _changeSkin(@player, @hero['costumes'][0]['sig'], @hero['costumes'][0]['val'])
                 unbind(associative_array('id': @player.'invis'))
             ,
                 sudo("/undisguise")
@@ -92,7 +92,7 @@ register_command('shadowhide',
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                         @hero = yml_decode(@contents)
                         include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-                        _changeSkin(@player, @hero['sig'], @hero['val'])
+                        _changeSkin(@player, @hero['costumes'][0]['sig'], @hero['costumes'][0]['val'])
                         unbind()
                     }
                 )

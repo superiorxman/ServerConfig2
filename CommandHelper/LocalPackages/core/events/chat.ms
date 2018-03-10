@@ -76,36 +76,11 @@ bind('player_chat', null, null, @e) {
         }
     }
 
-
-    // Confusion affects anyone who has specfic allowed phrases, so it comes after
-    if(import(@player.'isConfused')){
-        @words = split(' ',@msg)
-        @numWords = array_size(@words)
-        if(@numWords > 1){
-            @newWordOrder = array_rand(@words,@numWords,false)
-            @newSentence = ''
-            foreach(@wd in @newWordOrder){
-                @newSentence = @newSentence.@wd.' '
-            }
-            @msg = @newSentence
-        }
-    }
-
     if(has_permission(@player.'is.mrmxyzptlk') && string_contains(to_lower(@msg), 'kltpzyxm')){
         sudo('/mainmenu')
         set_timeout(1500, closure(
             tmsg(@player, 'You said your name backwards! Off to the other dimension you go!')
         ))
-    }
-
-    if(has_permission(@player,'chat.tofood')){
-        @msg = replace(@msg,'f','food')
-        @msg = replace(@msg,'F','FOOD')
-    }
-
-    if(has_permission(@player,'chat.tictac')){
-        @msg = replace(@msg,'t','tictac')
-        @msg = replace(@msg,'T','TICTAC')
     }
 
     // fun shit goes after here
@@ -182,6 +157,30 @@ bind('player_chat', null, null, @e) {
             @cooldown = 10
             
         }
+    }
+
+    // Confusion affects anyone who has specfic allowed phrases, so it comes after
+    if(import(@player.'isConfused')){
+        @words = split(' ',@msg)
+        @numWords = array_size(@words)
+        if(@numWords > 1){
+            @newWordOrder = array_rand(@words,@numWords,false)
+            @newSentence = ''
+            foreach(@wd in @newWordOrder){
+                @newSentence = @newSentence.@wd.' '
+            }
+            @msg = @newSentence
+        }
+    }
+
+    if(has_permission(@player,'chat.tofood')){
+        @msg = replace(@msg,'f','food')
+        @msg = replace(@msg,'F','FOOD')
+    }
+
+    if(has_permission(@player,'chat.tictac')){
+        @msg = replace(@msg,'t','tictac')
+        @msg = replace(@msg,'T','TICTAC')
     }
 
     if(has_permission(@player,'chat.ef')){

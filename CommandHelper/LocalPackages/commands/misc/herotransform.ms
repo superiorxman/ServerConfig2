@@ -13,13 +13,13 @@ register_command('herotransform',
                 @class = _getheroclass(@sender)
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
-                @alts = @hero['alts']
+                @alts = @hero['costumes']
                 msg(color('RED').'The available transformations you have are:')
                 foreach(@alt in @alts){
                     try{
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')
@@ -33,7 +33,7 @@ register_command('herotransform',
 
             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
             @oldHero = yml_decode(@contents)
-            if(!array_index_exists(@oldHero,'alts')){
+            if(!array_index_exists(@oldHero,'costumes')){
                 msg(color('RED').'Sorry, your character doesn\'t have any available transformations')
                 die()
             }
@@ -44,12 +44,12 @@ register_command('herotransform',
                 if(@class == @idToBe){
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                     @hero = yml_decode(@contents)
-                    msg(color('RED').'Sorry, but '.@plr.' is already '.@hero['chat'][0]['name'])
+                    msg(color('RED').'Sorry, but '.@plr.' is already '.@hero['costumes'][0]['name'])
                     die()
                 }
             }
 
-            @alts = @oldHero['alts']
+            @alts = @oldHero['costumes']
             @goAhead = false
 
             foreach(@alt in @alts){
@@ -113,7 +113,7 @@ register_command('herotransform',
                     try{
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
                         @hero = yml_decode(@contents)
-                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['chat'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
+                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')

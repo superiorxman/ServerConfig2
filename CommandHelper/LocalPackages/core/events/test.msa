@@ -5,24 +5,30 @@ nametransfer:/nametransfer = >>>
     foreach(@file in @files){
         @filename = replace(@file,'.yml','')
         @filename = trim(@filename)
+        queue_push(closure(console('processing '.@filename)))
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
         @hero = yml_decode(@contents)
 
-        //rename 'alts' to 'transformations'
-        @hero['transformations'] = array_get(@hero['alts'])
-        //clear alts to prepare for loops ahead
-        array_remove(@hero['alts'])
-
         
-        @i = 0
-        foreach(@pair in @hero['chat']){
-            @hero['alts'][@i]['color'] = @pair['color']
-            @hero['alts'][@i]['name'] = @pair['name']
-            if(@i == 0){
-                @hero['alts'][0]['sig'] = @hero['sig'])
-                @hero['alts'][0]['val'] = @hero['val'])
+        if(array_index_exists(@hero,'costumes')){
+            //rename 'costumes' to 'costumes'
+            @hero['costumes'] = array_get(@hero['costumes'])
+            //clear alts to prepare for loops ahead
+            array_remove(@hero,'costumes')
+        }
+
+        @hero['costumes'] = array()
+        if(array_index_exists(@hero,'chat')){
+            @i = 0
+            foreach(@pair in @hero['chat']){
+                @hero['costumes'][@i]['color'] = @pair['color']
+                @hero['costumes'][@i]['name'] = @pair['name']
+                if(@i == 0){
+                    @hero['costumes'][0]['sig'] = @hero['sig']
+                    @hero['costumes'][0]['val'] = @hero['val']
+                }
+                @i++
             }
-            @i++
         }
 
 
@@ -30,14 +36,15 @@ nametransfer:/nametransfer = >>>
         if(array_index_exists(@hero,'altskins')){
             @i = 1
             foreach(@pair in @hero['altskins']){
-                assign(@hero['alts'][@i]['sig'], @pair['sig'])
-                assign(@hero['alts'][@i]['val'], @pair['val'])
+                @hero['costumes'][@i]['sig'] = @pair['sig']
+                @hero['costumes'][@i]['val'] = @pair['val']
                 @i++
             }
         }
         
 
         array_remove(@hero,'chat')
+        array_remove(@hero,'altskins')
 
         write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')
     }

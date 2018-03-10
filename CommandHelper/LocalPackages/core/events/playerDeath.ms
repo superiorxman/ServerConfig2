@@ -17,13 +17,13 @@ bind('player_death', null, null, @event){
     try{
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
         @hero = yml_decode(@contents)
-        @message = replace(@message,@player,@hero['chat'][0]['name'].color('DARK_RED').color('ITALIC'))
+        @message = replace(@message,@player,@hero['costumes'][0]['name'].color('DARK_RED').color('ITALIC'))
         if(@event['killer'] != null){
             @class = _getheroclass(@event['killer'])
             try{
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
-                @message = replace(@message,@event['killer'],@hero['chat'][0]['name'].color('DARK_RED').color('ITALIC'))
+                @message = replace(@message,@event['killer'],@hero['costumes'][0]['name'].color('DARK_RED').color('ITALIC'))
             }catch(Exception @e){
                 @message = replace(@message,@player,@player.color('DARK_RED').color('ITALIC'))
             }

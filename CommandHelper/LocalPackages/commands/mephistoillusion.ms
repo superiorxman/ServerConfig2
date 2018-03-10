@@ -21,8 +21,8 @@ register_command('mephistoillusion',
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@player)            
             include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
-            @sig = @hero['sig']
-            @val = @hero['val']
+            @sig = @hero['costumes'][0]['sig']
+            @val = @hero['costumes'][0]['val']
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             if(_coolDown('mephistoIllusion',1,@player)){

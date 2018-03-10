@@ -1,8 +1,10 @@
-buffs:
-- /effect <plr> 5 9999 1 true
-chat:
+costumes:
 - color: '&e'
   name: §eParallax §6Entity
+  sig: magmacube
+  val: ''
+buffs:
+- /effect <plr> 5 9999 1 true
 class: parallaxentity
 haste: 2
 jump: 3

@@ -79,7 +79,7 @@ register_command('mutate',
                 @hero = yml_decode(@contents)
             }catch(Exception @e){
                 @hero = array()
-                @hero['chat'][0]['name'] = @plr
+                @hero['costumes'][0]['name'] = @plr
             }
             @plrHero = @hero
             broadcast(color('LIGHT_PURPLE').color('BOLD').'POOF'.color('YELLOW').color('BOLD').'! '.@plrHero['chat'][0]['name'].color('GREEN').color('BOLD').' has changed '.color('WHITE').@vicHero['chat'][0]['name'].color('GREEN').color('BOLD').' into a deformed, freaky mutant!');
