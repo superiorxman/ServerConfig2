@@ -1,7 +1,7 @@
-register_command('skins', 
+register_command('costumes', 
     array(
         'description': 'Power',
-        'permission': 'command.skins',
+        'permission': 'command.costume',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
         'executor': closure(@alias, @sender, @args) {
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -25,10 +25,10 @@ register_command('skins',
                 }
             }
 
-            if(@numExtraSkins > 1){
-                tmsg(@sender,color('RED').'You have '.color('GREEN').@numExtraSkins.color('RED').' extra skins!')
+            if(@numExtraSkins > 0){
+                tmsg(@sender,color('RED').'You have '.color('GREEN').@numExtraSkins.color('RED').' extra costume(s)!')
                 for(@i = 2, @i <= @numExtraSkins + 1, @i++){
-                    tmsg(@sender,color('RED').'/skin '.@i)
+                    tmsg(@sender,color('RED').'/setcostume '.@i)
                 }
             }else{
                 tmsg(@sender,color('RED').'Sorry, this character doesn\'t have any extra skins :(')

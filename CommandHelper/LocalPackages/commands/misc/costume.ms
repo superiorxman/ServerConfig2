@@ -1,10 +1,10 @@
-register_command('skin', 
+register_command('setcostume', 
 
     array(
     
         'description': 'Change your Hero Skin to an Alternate Skin',
-        'usage': '/skin <number>',
-        'permission': 'ch.alias.skin',
+        'usage': '/setcostume <number>',
+        'permission': 'command.costume',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
         'executor': closure(@alias, @sender, @args) {
@@ -12,7 +12,7 @@ register_command('skin',
                 if (array_size(@args) != 1) {
                 
                     msg(color\('RED').color\('BOLD').'Improper Usage!');
-                    msg(color\('RED').'Usage: /skin <number>');
+                    msg(color\('RED').'Usage: /setcostume <number>');
                     die(); # No need to go further					
                 
                 }

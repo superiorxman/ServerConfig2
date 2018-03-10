@@ -22,11 +22,11 @@ register_command('fixskin',
                 @plr = player(@plr)
                 @skinNum = import(@plr.'skinNum')
                 if(@skinNum != null){
-                    sudo('/skin '.@skinNum)
+                    sudo('/setcostume '.@skinNum)
                     die()
                 }else{
                     queue_push(closure(runas('~console','/undisguiseplayer '.@plr)))
-                    queue_push(closure(sudo('/skin 1')))
+                    queue_push(closure(sudo('/setcostume 1')))
                 }
                 
             } else {
@@ -34,11 +34,11 @@ register_command('fixskin',
                 @skinNum = import(@plr.'skinNum')
                 console('SKIN NUM ISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS '.@skinNum)
                 if(@skinNum != null){
-                    sudo('/skin '.@skinNum)
+                    sudo('/setcostume '.@skinNum)
                     die()
                 }else{
                     queue_push(closure(runas('~console','/undisguiseplayer '.@plr)))
-                    queue_push(closure(sudo('/skin 1')))
+                    queue_push(closure(sudo('/setcostume 1')))
                 }
             }        
         }
