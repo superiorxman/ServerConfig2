@@ -11,24 +11,46 @@ bind('player_interact',null,array('button': 'RIGHT'),@event){
         die()
     }
     
-    if(@item['meta'] == null || @item['meta']['display'] == null || 
-    
-    //adjust the names of the screwdrivers to match these. only 1 name was programmed originally
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' ||
-     @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver' 
-     //last line should not have ||
-    
-    
-    ){
+    if(@item['meta'] == null || @item['meta']['display'] == null){
         die()
     }
+
+    
+    //adjust the names of the screwdrivers to match these. only 1 name was programmed originally
+     switch(@item['meta']['display']){
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        case '§4S§7onic §0S§7crewdr§8i§7ver':
+            break()
+        default:
+            return()
+     } 
+
+
     assign(@cooldown, 10)
     assign(@lastSonicScrewdriver, import(@player.'lastSonicScrewdriver'))
     if(@lastSonicScrewdriver + @cooldown > time() / 1000,
