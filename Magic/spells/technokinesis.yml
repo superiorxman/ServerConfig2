@@ -30,11 +30,11 @@ technokinesis:
         target_type: Entity
         allow_max_range: false
         range: 64
-        radius: 1
-        undo: 1000000
+        radius: 5
+        undo: 100000
         transparent: transparent_to_construction
         materials:
-        - - unlit_redstone_torch
+        - - stone
           - redstone_torch
         - - redstone_torch
           - unlit_redstone_torch
@@ -54,7 +54,5 @@ technokinesis:
           - lit_furnance
         - - lit_furnance
           - furnance
-        - - glass
-          - stone
     costs:
         mana: 5
