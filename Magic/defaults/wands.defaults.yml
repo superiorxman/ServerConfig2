@@ -448,16 +448,7 @@ base_sword:
 # A starter battle wand
 #
 battle:
-    inherit: base_sword
-    class: battle_mage
-    icon: gold_sword:1
-    migrate_icon: gold_sword
-    effect_color: '11FF11'
-    protection:
-      physical: 0.4
-    attributes:
-      GENERIC_ATTACK_DAMAGE: 6
-
+  migrate_to: magicsword
 #
 #
 # Wand templates
@@ -1061,6 +1052,21 @@ magichat:
     spells:
         - magichat
 
+#
+# A spellcasting sword
+#
+magicsword:
+    inherit: base_sword
+    class: battle_mage
+    icon: gold_sword:8
+    migrate_icon: gold_sword
+    effect_color: '11FF11'
+    hide_flags: 62
+    protection:
+      physical: 0.4
+    attributes:
+      GENERIC_ATTACK_DAMAGE: 6
+
 magictorch:
     icon: torch
     locked: true
@@ -1137,6 +1143,21 @@ master:
       - sponge
       - flashbang
       - gatling
+
+#
+# The legendary sword that seals the darkness
+#
+mastersword:
+    inherit: base_bound
+    icon: gold_sword:1
+    effect_color: '11FF88'
+    hide_flags: 62
+    alternate_spell: masterattack
+    drop: alt_cast
+    protection:
+      physical: 0.5
+    attributes:
+      GENERIC_ATTACK_DAMAGE: 10
 
 minister:
     mode: cast

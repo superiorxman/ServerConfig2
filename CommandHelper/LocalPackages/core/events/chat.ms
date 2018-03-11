@@ -6,6 +6,11 @@ bind('player_chat', null, null, @e) {
     @class = _getheroclass(@player)
     @cooldown = 0
 
+    if(import(@player.'mindControlling')){
+        cancel()
+        die()
+    }
+
     // force lowercase should happen no matter what, so it's 1st
     if(has_permission('case.tolower')){
         @msg = to_lower(@msg)

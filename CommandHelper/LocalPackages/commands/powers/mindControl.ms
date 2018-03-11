@@ -162,7 +162,6 @@ register_command('mindcontrol',
             }
             bind('player_chat',associative_array('id': @player.'mindControlChatForward'),associative_array('player': @player),@event, @playerr = @player, @vicc = @vic){
                 cancel()
-                console('chat forwarded from '.@playerr. ' to '.@vicc)
                 chatas(@vicc,@event['message'])
                 @players = all_players()
                 foreach (@plor in @players){

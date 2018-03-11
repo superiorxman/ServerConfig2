@@ -13,13 +13,13 @@ register_command('herotransform',
                 @class = _getheroclass(@sender)
                 @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                 @hero = yml_decode(@contents)
-                @alts = @hero['costumes']
+                @transformations = @hero['transformations']
                 msg(color('RED').'The available transformations you have are:')
-                foreach(@alt in @alts){
+                foreach(@transformation in @transformations){
                     try{
-                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@transformation.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@transformation.'"},"hoverEvent":{"action":"show_text","value":"'.@transformation.'"}}')
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')
@@ -33,7 +33,7 @@ register_command('herotransform',
 
             @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
             @oldHero = yml_decode(@contents)
-            if(!array_index_exists(@oldHero,'costumes')){
+            if(!array_index_exists(@oldHero,'transformations')){
                 msg(color('RED').'Sorry, your character doesn\'t have any available transformations')
                 die()
             }
@@ -49,11 +49,11 @@ register_command('herotransform',
                 }
             }
 
-            @alts = @oldHero['costumes']
+            @transformations = @oldHero['transformations']
             @goAhead = false
 
-            foreach(@alt in @alts){
-                if(@alt == @idToBe){
+            foreach(@transformation in @transformations){
+                if(@transformation == @idToBe){
                     @goAhead = true
                 }
             }
@@ -68,8 +68,8 @@ register_command('herotransform',
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' create')))
                 queue_push(closure(runas('~console','/pex user '.@player.' group set #'.@idToBe)))
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' parents set #commonherotraits')))
-                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['chat'][0]['color'])))
-                @niceName = replace(@newHero['chat'][0]['name'],'§','&')
+                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['costumes'][0]['color'])))
+                @niceName = replace(@newHero['costumes'][0]['name'],'§','&')
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' prefix "'.@niceName.'"')))
                 foreach(@worldName: @worldPerms in @newHero['permissions']){
                     foreach(@perm in @worldPerms){
@@ -101,19 +101,19 @@ register_command('herotransform',
 
                 
                 if(array_index_exists(@newHero,'silentTransformMessage') && @newHero['silentTransformMessage'] == true){
-                    queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['chat'][0]['name'])))
+                    queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['costumes'][0]['name'])))
                 }else{
                     queue_push(closure(sudo('/powers')))
-                    queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['chat'][0]['name'].color('GRAY').' to '.@newHero['chat'][0]['name'].color('GRAY').' !')))
+                    queue_push(closure(broadcast(color('BLUE').@player.color('GRAY').' has performed a hero transformation from '.@oldHero['costumes'][0]['name'].color('GRAY').' to '.@newHero['costumes'][0]['name'].color('GRAY').' !')))
                 }
 
             }else{
                 msg(color('RED').'Sorry, the available transformations you have are:')
-                foreach(@alt in @alts){
+                foreach(@transformation in @transformations){
                     try{
-                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@transformation.'.yml')
                         @hero = yml_decode(@contents)
-                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')))
+                        queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@transformation.'"},"hoverEvent":{"action":"show_text","value":"'.@transformation.'"}}')))
                     }catch(IOException @e){}
                 }
                 msg(color('RED').'Click a character to transform.')

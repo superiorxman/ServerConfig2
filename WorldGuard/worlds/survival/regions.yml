@@ -14,9 +14,8 @@ regions:
         min: {x: 48.0, y: 0.0, z: -220.0}
         max: {x: 125.0, y: 255.0, z: -92.0}
         members: {}
-        flags: {other-explosion: deny, creeper-explosion: deny, invincible: allow,
-            mob-damage: deny, greeting: §2Welcome to spawn!, leaf-decay: deny, snow-melt: deny,
-            ghast-fireball: deny, farewell: §4You are leaving spawn!}
+        flags: {invincible: allow, greeting: §2You are now in SafeZone, pvp: deny,
+            farewell: §4You are now leaving SafeZone}
         owners: {}
         type: cuboid
         priority: 0

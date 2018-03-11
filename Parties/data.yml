@@ -149,23 +149,59 @@ players:
       name: TheDarkAura_
     rank: 20
     party: JSA
-  861da66b-8eef-4143-93f1-dbab33665595:
-    name:
-      timestamp: 1520548007
-      name: MageOfSixPaths
-    party: JSA
-    rank: 5
   a15f051c-1473-4f90-88f3-bad6e6b9dce2:
     party: TheTitans
     name:
       timestamp: 1520566300
       name: Amazonian_Miner
     rank: 5
-  5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68:
-    party: TheTitans
+  b06401f9-844e-4fb8-80e3-55fa795b4eb3:
     name:
-      timestamp: 1520566323
+      name: Bethlagon
+      timestamp: 1520655664
+    rank: 5
+    party: JSA
+  5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68:
+    party: JSA
+    name:
+      timestamp: 1520656673
       name: 3Cheetah_XP
+    rank: 5
+  fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
+    party: JSA
+    name:
+      timestamp: 1520675492
+      name: simon2008
+    rank: 5
+  90b2ba6d-43e6-4e5c-8f77-9126b6969a9c:
+    name:
+      name: WingArmor
+      timestamp: 1520686584
+    rank: 5
+    party: darkheroes
+  861da66b-8eef-4143-93f1-dbab33665595:
+    name:
+      timestamp: 1520690067
+      name: MageOfSixPaths
+    party: Group
+    rank: 20
+  09926bea-1ec0-493b-930b-ec78f4ce150e:
+    name:
+      name: Miss_Mercy
+      timestamp: 1520690079
+    party: Group
+    rank: 5
+  9e8cb2d8-f44f-46f2-9ca6-afc0a17573f0:
+    party: Group
+    name:
+      timestamp: 1520721838
+      name: DoctorWafflez
+    rank: 5
+  5d414617-ce0a-467b-9fe2-07e742970ed2:
+    party: Group
+    name:
+      name: TheKingOfThings
+      timestamp: 1520732158
     rank: 5
 parties:
   TheTitans:
@@ -183,8 +219,8 @@ parties:
     - de5871d3-17d4-485f-8ddb-b45b30ee6591
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - a15f051c-1473-4f90-88f3-bad6e6b9dce2
-    - 5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
+    motd: HB Nobody
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
     members:
@@ -202,6 +238,7 @@ parties:
   darkheroes:
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+    - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
   orkhorl:
     leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
@@ -222,4 +259,13 @@ parties:
     leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
     members:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
+    - b06401f9-844e-4fb8-80e3-55fa795b4eb3
+    - 5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68
+    - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
+  Group:
+    leader: 861da66b-8eef-4143-93f1-dbab33665595
+    members:
     - 861da66b-8eef-4143-93f1-dbab33665595
+    - 09926bea-1ec0-493b-930b-ec78f4ce150e
+    - 9e8cb2d8-f44f-46f2-9ca6-afc0a17573f0
+    - 5d414617-ce0a-467b-9fe2-07e742970ed2

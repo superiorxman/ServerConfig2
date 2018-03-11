@@ -50,9 +50,8 @@ apprenticeleggings:
   row_2: i i
   row_3: ioi
 
-# Other default craftable items
 battle:
-  output: battle
+  output: magicsword
   output_type: wand
   materials:
     o: nether_star
@@ -173,6 +172,17 @@ magichat:
   row_1: o
   row_2: i
   row_3:
+
+mastersword:
+  enabled: false
+  output: mastersword
+  output_type: wand
+  materials:
+    o: nether_star
+    i: blaze_rod
+  row_1: o
+  row_2: o
+  row_3: i
 
 mirrorshield:
   output: mirrorshield

@@ -28,7 +28,22 @@ register_command('chars',
                         @class = substr(@files[@i],0,string_position(@files[@i],'.'))
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
+                        @extraNames = ''
+                        @heroName = @hero['costumes'][0]['name']
+                        if(array_size(@hero['costumes']) > 1){
+                            @numper = 0
+                            foreach(@cost in @hero['costumes']){
+                                if(@numper == 0){
+                                    @numper++
+                                    continue()
+                                }
+                                if(array_index_exists(@cost,'name')){
+                                    @extraNames = @extraNames.color('GREEN').'/'.@cost['name']
+                                }
+                            }
+                        }
+                    
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@heroName.@extraNames.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
                     }catch(Exception @e){
                         break()
                     }
@@ -42,7 +57,21 @@ register_command('chars',
                         @class = substr(@files[@i],0,string_position(@files[@i],'.'))
                         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
                         @hero = yml_decode(@contents)
-                        runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
+                        @extraNames = ''
+                        @heroName = @hero['costumes'][0]['name']
+                        if(array_size(@hero['costumes']) > 1){
+                            @numper = 0
+                            foreach(@cost in @hero['costumes']){
+                                if(@numper == 0){
+                                    @numper++
+                                    continue()
+                                }
+                                if(array_index_exists(@cost,'name')){
+                                    @extraNames = @extraNames.color('GREEN').'/'.@cost['name']
+                                }
+                            }
+                        }
+                        runas('~console','/tellraw '.@sender.' {"text":"'.@heroName.@extraNames.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@hero['class'].'"},"hoverEvent":{"action":"show_text","value":"'.@hero['class'].'"}}')
                     }catch(Exception @e){
                         break()
                     }
@@ -91,7 +120,22 @@ register_command('characterselect',
                     @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.replace(@her,'\n','').'.yml')
                     @hero = yml_decode(@contents)
                     @foundAHero = true
-                    queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@hero['costumes'][0]['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')))
+                    @extraNames = ''
+                    @heroName = @hero['costumes'][0]['name']
+                    if(array_size(@hero['costumes']) > 1){
+                        @i = 0
+                        foreach(@cost in @hero['costumes']){
+                            if(@i == 0){
+                                @i++
+                                continue()
+                            }
+                            if(array_index_exists(@cost,'name')){
+                                @extraNames = @extraNames.color('GREEN').'/'.@cost['name']
+                            }
+                        }
+                    }
+                    
+                    queue_push(closure(runas('~console','/tellraw '.@sender.' {"text":"'.@heroName.@extraNames.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')))
                     
                 }catch(IOException @e){
                     continue()
@@ -207,8 +251,8 @@ register_command('selectchar',
                             break()
                         }
                     }
-                    if(array_index_exists(@hero,'costumes')){
-                        @alts = @hero['costumes']
+                    if(array_index_exists(@hero,'transformations')){
+                        @alts = @hero['transformations']
                         foreach(@alt in @alts){
                             if(@alt == @otherPlayerGroup){
                                 @h1 = @hero['costumes'][0]['name']

@@ -44,8 +44,8 @@ bind('player_join',null,null,@event){
     }
     if(!array_index_exists(@hero,'allowMultiple') || @hero['allowMultiple'] != true){    
         @alts = ''
-        if(array_index_exists(@hero,'costumes')){
-            @alts = @hero['costumes']
+        if(array_index_exists(@hero,'transformations')){
+            @alts = @hero['transformations']
         }
         foreach(@player in @plrs)
         {

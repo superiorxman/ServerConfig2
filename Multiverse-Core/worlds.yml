@@ -1282,11 +1282,11 @@ worlds:
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 705.4251897197234
-      y: 131.0
-      z: 280.2750645491244
-      pitch: 8.506927
-      yaw: -359.8446
+      x: 649.4248089166971
+      y: 66.0
+      z: 994.5088710906042
+      pitch: 16.472181
+      yaw: -90.31897
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
@@ -1354,7 +1354,7 @@ worlds:
     respawnWorld: thephantomzone
     allowWeather: 'true'
     difficulty: EASY
-    spawning: &id019
+    spawning: &id013
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -1366,7 +1366,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id020
+    entryfee: &id014
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -1385,7 +1385,7 @@ worlds:
       yaw: -270.15033
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id021 []
+    worldBlacklist: &id015 []
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.
@@ -1498,8 +1498,8 @@ worlds:
     respawnWorld: soulstone
     allowWeather: 'true'
     difficulty: EASY
-    spawning: *id019
-    entryfee: *id020
+    spawning: *id013
+    entryfee: *id014
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -1515,7 +1515,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id021
+    worldBlacklist: *id015
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.

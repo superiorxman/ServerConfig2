@@ -28,7 +28,7 @@ register_command('goworld',
         'description': 'Goes to stage',
         'usage': '/goworld',
         'permission': 'command.goworld',
-        'noPermMsg': 'Sorry you don\'t have permission to use this command.',		
+        'noPermMsg': 'Sorrrrrrrrrrrrrrrrrrrrrry you don\'t have permission to use this command.',		
         'executor': closure(@alias, @sender, @args) {
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@sender)

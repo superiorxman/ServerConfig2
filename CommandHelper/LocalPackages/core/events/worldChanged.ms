@@ -4,7 +4,7 @@ bind('world_changed', null, null, @event,
 
     set_timeout(1000,closure(
         if(has_permission(@player,'essentials.fly')){
-            sudo('/fly on')
+            runas(@player,'/fly on')
         }
         include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
         @class = _getheroclass(@player)
@@ -13,7 +13,7 @@ bind('world_changed', null, null, @event,
         }else{
             @skinNum = import(@player.'skinNum')
             if(@skinNum != null){
-                runas(@player,'/skin '.@skinNum)
+                runas(@player,'/setcostume '.@skinNum)
             }
         }
     ))
