@@ -1,11 +1,11 @@
+buffs:
+- /effect <plr> 5 9999 1 true
+class: parallaxentity
 costumes:
 - color: '&e'
   name: §eParallax §6Entity
   sig: magmacube
   val: ''
-buffs:
-- /effect <plr> 5 9999 1 true
-class: parallaxentity
 haste: 2
 jump: 3
 maxHearts: 30
@@ -78,7 +78,5 @@ powers:
 - /mindcontrol <playername>
 - /stopmindcontrol
 run: 3
-sig: magmacube
 speech: I'm a mind reader!
 trail: ''
-val: ''

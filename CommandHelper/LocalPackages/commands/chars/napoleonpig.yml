@@ -1,11 +1,11 @@
+buffs:
+- /effect <plr> 11 9999 1 true
+class: napoleonpig
 costumes:
 - color: '&d'
   name: §8N§7a§dp§8o§7l§8e§7o§dn
   sig: pig
   val: ''
-buffs:
-- /effect <plr> 11 9999 1 true
-class: napoleonpig
 op: false
 permissions:
   superherocity:
@@ -14,7 +14,5 @@ powers:
 - /buff
 - /run <0-1>
 run: 1
-sig: pig
 speech: All Animals Are Equal, But Some Animals Are More Equal Than Others.
 trail: ''
-val: ''

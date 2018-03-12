@@ -1,3 +1,10 @@
+buffs:
+- /give <plr> minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer
+- /give <plr> minecraft:stick 1 16:2 name:&6Baseball_Bat
+- /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
+- /shot give <plr> pistol
+- /shot give <plr> cakebomb
+class: harleyquinn
 costumes:
 - color: '&f'
   name: §4H§fa§0r§4l§fe§0y §4Q§fu§0i§4n§fn
@@ -11,13 +18,6 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0OTAyMjE2MzMyNTEsInByb2ZpbGVJZCI6ImRiYjQ3ODg3YmZiZDQwZTZiZmVjM2QxMDUzZWEzYWZmIiwicHJvZmlsZU5hbWUiOiJEX1RlcnJhX0MiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xMmU0YWE2Y2NjZWFlMzY4NzYwODY3M2U1Yjg5ZDUxOTdhOTQ1ZWJiMDZlMjBkNWM0NTgxNjYxZWQzMTYzIn19fQ==
 - sig: Se/KcmvhzOXtGpiSSsGBLmlMNsie+Iv/gA6X4MwjksVLpPOCm+AiiRJsfMkhzwk1wv7Op8v0XEdqrtS6XiMSEvts0Ejp9ZYoNdBBRS6K5tPDxzLzBHRl2KSKvMRWAfCe4gnxN1QONYz0SAfxDxnF4dlI48OAvS+4lRiR65v1UOL0OrNDPtxmKsuNH+wCvS6M/kTjMCszJbMMdVC57EG1wP+4PBWOtsbhjuaVgp0gmY7KmNg6LZrViDmIlhwiDDZTzyZntWagYZ62dVIPB21xI5QyrcDMEyAG3WF6eWjDZWaNe29HYrGlet5wFJIqCIARnNv9MvDBiGBljdHYzkRSfSoX4Fo+pFmjGBmptATkgXyri+rGUk+vx7LnsAj+275XUtWM5THdYQHqzshncp+CU+wTfs7hzQ+MXHVQ2qsOolkjd/kIlU9BQ0m3yCSNhcCE+TwKBVZt50pjt1pZPQbEiRYXJ3EXMMF3ciyNPRkBctjlwWxpKNKFedK3m7cwa4YQnTKFzQ+nWbD7Os4WEMwl2cnVz7vogt9WNuVwv+Nq6AvWqRWd8NZaqSgNfqLg9ojFXBZlDjIDMb+IYkIaSq9a/6CyrXKFZKQ4qb2Jjc2nJC2sjXk24ZaGFfOwwDj92Thha1gDV1pb0pTb/ZtCJfKM0Gjn13lnEOA0KkEvG/LhNsw=
   val: eyJ0aW1lc3RhbXAiOjE0OTIwMDgzODkzMTEsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJMb3N0SW5HYWxheGVoXyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y0ODI0YTJjYmI3ZjE3YmFkYWM1ZDRmN2RmZjcyN2ZlZjY5YzJjM2MzOWZiM2Y3ODdlMjI3OTNmNmM1In19fQ==
-buffs:
-- /give <plr> minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer
-- /give <plr> minecraft:stick 1 16:2 name:&6Baseball_Bat
-- /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
-- /shot give <plr> pistol
-- /shot give <plr> cakebomb
-class: harleyquinn
 jump: 1
 op: false
 permissions:
@@ -32,7 +32,5 @@ powers:
 - /jump <0-1>
 - /poisonimmunity
 run: 1
-sig: oH6W0Bqm+1ULpnqhdCNz01wmTtVNG+SboLlKDLB/wSCmVmg9rWOqpUoEuM8PWSeF5YyafPb4QxJzfkw8y6d7x9M2B/taIquH89BgiyaSscJt8evfx+0xud7FEwSfnP93YkoPecoByjma5rJBh/doEpvOFOFz2jCsnY8pqBVENF3YqOl0uG9NS1Wt8/NGnboYf9XdZgG+apmT8slxwkMpEyCPIGkQu05liLrtszV7+O6l1/WlLiMnvp/I1vQlZ4qm4DMZaSyXsrqoX/aLubiBSylBccKtwgoRFlAzKWpTuN44udomDXN0L6x/2BJh2G6D/Klbd4/gn510PdBU40KuRAJkqEwiZTB5ZkKg1rjrXZ4GW/moNzU8OE8zJeB3Q+BBrMHQ/gGLaLWmx9w7FFLQlgo7KBwVOtqcJgpUeXMXIugTTweWqeOxdgWETm7KwWiE12o51ge8MQCFv4ZPqE/SWUi9kYeDAUVbfHboHQMNe+6vzZYyBFuj/mvOqn8SfZ+Mha9qXb0M6iou/NnXdf0r6K5RX0CEehgx2TWnRUQVComx65VHgOylfs0lXx/bpZ9izdR9szj67wqLt7KfTDFr1aPXiqmdy4dC3kddE0aTm1dNZnBfwKhuP4HxnGq+To7VwoeuoyDL8y3fpBK7bHYnIL2iApP+YAEL0eLTu4NuEQU=
 speech: Oh that's cute...
 trail: ''
-val: eyJ0aW1lc3RhbXAiOjE0NzY2NTM5MzI4OTksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xOGMxOTI1ZTg3MzA5ZGJhMTIzNjczMTQ2YmY4NTU2Y2U1YjE1MTdmYTdjMTEzODA5OGE4NTNmMmYzOTUifX19

@@ -1,11 +1,11 @@
+buffs:
+- /effect <plr> 2 9999 3 true
+class: enderman
 costumes:
 - color: '&0'
   name: §0End§de§0rman
   sig: enderman
   val: ''
-buffs:
-- /effect <plr> 2 9999 3 true
-class: enderman
 op: false
 permissions:
   superherocity:
@@ -14,7 +14,5 @@ powers:
 - /buff
 - /pt jumpto
 - /jumpto
-sig: enderman
 speech: '*Borp*'
 trail: ''
-val: ''
