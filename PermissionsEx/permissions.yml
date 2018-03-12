@@ -8226,25 +8226,6 @@ groups:
         - powers.float
         - ch.alias.msg
         - powers.herotransform
-  cosmicarmorsuperman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&cC&eo&9s&6mi&9c &4A&2r&9m&6o&4r S&9u&ep&9er&4man'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - essentials.fly
-        - weakto.kryptonite
-        - powers.forget
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - powers.cantdie
   skaar:
     inheritance:
     - commonherotraits
@@ -9671,6 +9652,25 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
         - powers.wallrun
+  cosmicarmorsuperman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&cC&eo&9s&6mi&9c &4A&2r&9m&6o&4r S&9u&ep&9er&4man'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - essentials.fly
+        - weakto.kryptonite
+        - powers.forget
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - powers.cantdie
 schema-version: 1
 worlds:
   checkers:
@@ -9923,7 +9923,7 @@ users:
       name: _xXSkylerXx_
   2bf5a7c9-a0c5-4dbd-bf87-2a02036fbc41:
     group:
-    - beerus
+    - cosmicarmorsuperman
     options:
       name: That_David
     permissions: []

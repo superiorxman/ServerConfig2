@@ -7,44 +7,15 @@ nametransfer:/nametransfer = >>>
         @filename = trim(@filename)
         queue_push(closure(console('processing '.@filename)))
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
-        @hero = yml_decode(@contents)
+        @hero = yml_decode(@contents)   
 
-        
-        if(array_index_exists(@hero,'costumes')){
-            //rename 'costumes' to 'costumes'
-            @hero['costumes'] = array_get(@hero['costumes'])
-            //clear alts to prepare for loops ahead
-            array_remove(@hero,'costumes')
-        }
-
-        @hero['costumes'] = array()
-        if(array_index_exists(@hero,'chat')){
-            @i = 0
-            foreach(@pair in @hero['chat']){
-                @hero['costumes'][@i]['color'] = @pair['color']
-                @hero['costumes'][@i]['name'] = @pair['name']
-                if(@i == 0){
-                    @hero['costumes'][0]['sig'] = @hero['sig']
-                    @hero['costumes'][0]['val'] = @hero['val']
-                }
-                @i++
-            }
-        }
-
-
-        
-        if(array_index_exists(@hero,'altskins')){
-            @i = 1
-            foreach(@pair in @hero['altskins']){
-                @hero['costumes'][@i]['sig'] = @pair['sig']
-                @hero['costumes'][@i]['val'] = @pair['val']
-                @i++
-            }
+        if(array_index_exists(@hero,'sig')){
+            array_remove(@hero,'sig')
         }
         
-
-        array_remove(@hero,'chat')
-        array_remove(@hero,'altskins')
+        if(array_index_exists(@hero,'val')){
+            array_remove(@hero,'val')
+        }
 
         write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')
     }
