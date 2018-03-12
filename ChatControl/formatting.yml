@@ -1,14 +1,14 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 27.11.2017 02:43:31
-#  to ChatControl 7.6.15
+#  Your file has been automatically updated at 12.03.2018 13:12:22
+#  to ChatControl 7.8.0
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
 # 
 #  If you'd like to view the default file, you can either:
 #  a) Open the chatcontrol.jar with a WinRar or similar
-#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+#  b) or, visit: https://github.com/kangarko/ChatControl/wiki
 # 
 # -------------------------------------------------------------------------------------------
 
@@ -20,6 +20,9 @@ Formatting:
   Global: Global_Chat
   Admin: Admin_Chat
   Bungee: Global_Chat
+  Me: Me
+  Party_Chat: Spy_Chat
+  Party_Spy: Spy_Party_Chat
 Range:
   Enabled: true
   Distance: 100.0
@@ -98,7 +101,7 @@ Formats:
         - '{player}'
   Local_Chat:
     Channel_Prefix:
-      Message: 'L@&f{world}&a/'
+      Message: L@&f{world}&a/
       Hover_Event:
         Action: SHOW_TEXT
         Values:
@@ -125,3 +128,22 @@ Formats:
   Spy_Chat:
     Everything:
       Message: '&8SPY: [{world}&8]&f {pl_prefix}{player}:{pl_suffix} {message}'
+  Me:
+    Vip:
+      Message: '&6* '
+      Condition: player.hasPermission("chatcontrol.groups.vip")
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '&6This player is VIP'
+        - '&6Check out &e/web &6to obtain VIP'
+    Normal:
+      Message: '&f* '
+      Condition: '!player.hasPermission("chatcontrol.groups.vip")'
+    Player:
+      Message: '{player} '
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/tell {player} '
+    The_Rest:
+      Message: '{message}'

@@ -7229,18 +7229,6 @@ groups:
         - ch.alias.mindlock
         - ch.alias.mindcontrol
         - ch.alias.stopmindcontrol
-  deathdc:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tphere
-        - ch.alias.tp
-        - powers.onepunch
   zatanna:
     inheritance:
     - commonherotraits
@@ -7719,23 +7707,6 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
         - ch.alias.greenlanternguygardner
-  thanos:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&7&5Th&ea&9n&eo&9s'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.modifyspeed
-        - ch.alias.thanos
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - powers.wallrun
   batmite:
     inheritance:
     - commonherotraits
@@ -9479,25 +9450,6 @@ groups:
         - ch.alias.thor
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-  spectre:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2S&0p&7e&ac&0t&7r&2e'
-    worlds:
-      superherocity:
-        permissions:
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - ch.alias.vis
-        - ch.alias.invis
-        - ch.alias.normalsize
-        - ch.alias.grow
-        - essentials.fly
-        - powers.onepunch
   batman:
     inheritance:
     - commonherotraits
@@ -9530,24 +9482,6 @@ groups:
     options:
       suffix: '&5'
       prefix: '&fJo&2k&5er'
-  beerus:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&5'
-      prefix: '&5B&6e&5e&9r&8u&9s'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.destroyworld
-        - powers.onepunch
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - powers.wallrun
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - ch.alias.beerus
   superman:
     inheritance:
     - commonherotraits
@@ -9615,6 +9549,61 @@ groups:
         - -essentials.protect.entitytarget.bypass
         - kill.immune
         - powers.onepunch
+  thebeyonder:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&7Th&fe &7B&fe&ey&7o&en&fd&7er'
+    worlds:
+      superherocity:
+        permissions:
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - powers.depower
+        - powers.destroyworld
+        - essentials.fly
+        - ch.alias.mindcontrol
+        - ch.alias.tp
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - libsdisguises.disguise.player
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - immune.destroyworld
+  spectre:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2S&0p&7e&ac&0t&7r&2e'
+    worlds:
+      superherocity:
+        permissions:
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - ch.alias.vis
+        - ch.alias.invis
+        - ch.alias.normalsize
+        - ch.alias.grow
+        - essentials.fly
+        - powers.onepunch
+  deathdc:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tphere
+        - ch.alias.tp
+        - powers.onepunch
   apocalypse:
     inheritance:
     - commonherotraits
@@ -9647,30 +9636,41 @@ groups:
         - headdb.category.*
         - headdb.open
         - ch.alias.create
-  thebeyonder:
+  beerus:
     inheritance:
     - commonherotraits
     options:
-      suffix: '&e'
-      prefix: '&7Th&fe &7B&fe&ey&7o&en&fd&7er'
+      suffix: '&5'
+      prefix: '&5B&6e&5e&9r&8u&9s'
     worlds:
       superherocity:
         permissions:
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - powers.depower
         - powers.destroyworld
+        - powers.onepunch
+        - essentials.speed
+        - essentials.speed.fly
         - essentials.fly
-        - ch.alias.mindcontrol
-        - ch.alias.tp
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - libsdisguises.disguise.player
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - immune.destroyworld
+        - powers.wallrun
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.beerus
+  thanos:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&7&5Th&ea&9n&eo&9s'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.modifyspeed
+        - ch.alias.thanos
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - powers.wallrun
 schema-version: 1
 worlds:
   checkers:
@@ -9923,7 +9923,7 @@ users:
       name: _xXSkylerXx_
   2bf5a7c9-a0c5-4dbd-bf87-2a02036fbc41:
     group:
-    - thebeyonder
+    - beerus
     options:
       name: That_David
     permissions: []
@@ -9964,7 +9964,7 @@ users:
     permissions: []
   3639172b-aa0f-498d-9322-18addf094675:
     group:
-    - joker
+    - thanos
     options:
       name: MasterofDevil
     permissions: []
@@ -10469,8 +10469,7 @@ users:
     options:
       name: stormingg
   92a2652a-ff1f-4729-b835-acad7a876cb0:
-    group:
-    - deathdc
+    group: []
     options:
       name: Builderdragon1
   f3077e67-9cf8-4b48-b488-4a5fd899d697:
@@ -10979,8 +10978,7 @@ users:
     options:
       name: piglord1618
   d89e7a40-4981-4a3f-aab5-891ae714a0ad:
-    group:
-    - apocalypse
+    group: []
     options:
       name: GauntletGamerYT
   95231857-b709-4c2c-ac46-889d45aa4a82:
@@ -11198,7 +11196,8 @@ users:
     options:
       name: RDInman
   7e2b5ebc-3ea1-4278-8ca9-1109067f00f4:
-    group: []
+    group:
+    - apocalypse
     options:
       name: Nexominer
     worlds:

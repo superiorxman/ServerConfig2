@@ -1,14 +1,14 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 06.11.2017 18:16:57
-#  to ChatControl 7.6.8
+#  Your file has been automatically updated at 12.03.2018 13:12:22
+#  to ChatControl 7.8.0
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
 # 
 #  If you'd like to view the default file, you can either:
 #  a) Open the chatcontrol.jar with a WinRar or similar
-#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+#  b) or, visit: https://github.com/kangarko/ChatControl/wiki
 # 
 # -------------------------------------------------------------------------------------------
 
@@ -133,6 +133,10 @@ Death_Messages:
   Entity_Sweep_Attack:
     Message: squished too much
   Hide_By_Gamerule: false
+  Translate:
+    Skeleton: Mighty Skeleton
+    Wither Skeleton: Withered Skeleton
+    Diamond Sword: Sword of Death
 Broadcaster:
   Enabled: true
   Mode: 0
@@ -141,5 +145,6 @@ Broadcaster:
   Delay_Seconds: 180
   Messages:
     global:
-    - "&cRemember to use &a/reportglitch <description> &cto report server issues! Please read &a/listglitches &cfirst to prevent reporting something already reported!"
+    - '&cRemember to use &a/reportglitch <description> &cto report server issues!
+      Please read &a/listglitches &cfirst to prevent reporting something already reported!'
   Sound: none

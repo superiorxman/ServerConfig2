@@ -1,14 +1,14 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 16.02.2018 17:13:18
-#  to ChatControl 7.7.0-BETA
+#  Your file has been automatically updated at 12.03.2018 13:12:22
+#  to ChatControl 7.8.0
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
 # 
 #  If you'd like to view the default file, you can either:
 #  a) Open the chatcontrol.jar with a WinRar or similar
-#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+#  b) or, visit: https://github.com/kangarko/ChatControl/wiki
 # 
 # -------------------------------------------------------------------------------------------
 
@@ -72,6 +72,9 @@ Anti_Spam:
     - hello
     Handle_As_Chat:
     - me
+    Limit:
+      Period: 10 seconds
+      Max_Commands: 8
   Chat:
     Message_Delay: 0
     Delay_Points:
@@ -87,6 +90,9 @@ Anti_Spam:
     - hey
     Whitelist_Delay:
     - test
+    Limit:
+      Period: 10 seconds
+      Max_Messages: 8
   Regex_In_Whitelists: false
 Grammar:
   Insert_Dot:
@@ -95,6 +101,8 @@ Grammar:
   Capitalize:
     Enabled: false
     Min_Message_Length: 5
+  Lowercase_Second:
+    Enabled: false
 Clear:
   Broadcast: true
   Do_Not_Clear_For_Staff: false
@@ -152,6 +160,11 @@ Private_Messages:
     Enabled: true
     Format: '&6[{sender} &8-> &6you]{dynamic_spaces}&7{message}'
   Deny_Message_Self: false
+  Register_Reply_To_Receiver: true
+  Auto_Start:
+    Enabled: true
+    Prefix: '@'
+    End: exit
 Ignore:
   Enabled: false
   Aliases:
@@ -296,6 +309,8 @@ Motd:
   - \n
   - '&6Help &7- &f/help &6Settings &7- &f/menu &6Web &7- &f/web'
   - '&8*--------------------------------------------------*'
+  Message_First_Time: []
+  Message_Newcomer: []
 Spy:
   Enabled: true
   Command_Aliases:
@@ -312,6 +327,8 @@ Spy:
   - /whisper
   - /r
   - /reply
+  Books: true
+  Signs: false
 BungeeCords:
   Enabled: false
   Prefix: ''
@@ -326,11 +343,6 @@ MySQL:
     Table_Prefix: ChatControl_
     Connector_Advanced: jdbc:mysql://{host}:{port}/{database}?autoReconnect=true
   Aggressive: false
-Debugger:
-  Sections: []
-  Keys: r9KB1FEtXSMpQQLGhXgvruccx3l4Cdjq=
-  Save: true
-  Log: false
 Listener_Priority:
   Formatter: NORMAL
   Checker: NORMAL
@@ -348,7 +360,35 @@ Regex_Strip_Colors: true
 Reset_Cache_On_Quit: false
 Enforce_New_Line: false
 Server_Name: default
-Check_Updates: true
-Debug: false
-Version: 18
+Version: 19
 Clear_Data_If_Inactive: 30 days
+Notify_Updates: true
+Debug: []
+Prefix: '&8[&3ChatControl&8]&7 '
+Serialization: ''
+Me:
+  Enabled: true
+  Aliases:
+  - me
+  - shout
+  - status
+  Bungee: true
+Newcomer:
+  Threshold: 0 minutes
+  Worlds:
+  - '*'
+  Restrict_Commands:
+    Enabled: true
+    Whitelist:
+    - /login
+    - /l
+    - /register
+    - /reg
+    - /helpop
+    - /help
+    - /?
+  Restrict_Seeing_Chat:
+    Enabled: true
+  Restrict_Chat:
+    Enabled: true
+    Whitelist: []
