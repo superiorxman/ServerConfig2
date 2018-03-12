@@ -44,7 +44,7 @@ register_command('setcostume',
                     @val = @hero['costumes'][0]['val']
                     @niceName = replace(@hero['costumes'][0]['name'],'§','&')
                     runas('~console','/pex group #'.@class.' prefix "'.@niceName.'"')
-                    runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][0]['color'].'"')
+                    runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][0]['chatcolor'].'"')
                     tmsg(@sender,color('RED').'Name and set!')
                 }else{
                     @skinNum = @skinNum - 1
@@ -53,7 +53,7 @@ register_command('setcostume',
                     if(array_index_exists(@hero['costumes'][@skinNum],'name')){
                         @niceName = replace(@hero['costumes'][@skinNum]['name'],'§','&')
                         runas('~console','/pex group #'.@class.' prefix "'.@niceName.'"')
-                        runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][@skinNum]['color'].'"')
+                        runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][@skinNum]['chatcolor'].'"')
                         tmsg(@sender,color('RED').'Name and skin set!')
                     }else{
                         tmsg(@sender,color('GREEN').'Skin Changed Successfully!')

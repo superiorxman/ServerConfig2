@@ -68,7 +68,7 @@ register_command('herotransform',
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' create')))
                 queue_push(closure(runas('~console','/pex user '.@player.' group set #'.@idToBe)))
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' parents set #commonherotraits')))
-                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['costumes'][0]['color'])))
+                queue_push(closure(runas('~console','/pex group #'.@idToBe.' suffix '.@newHero['costumes'][0]['chatcolor'])))
                 @niceName = replace(@newHero['costumes'][0]['name'],'§','&')
                 queue_push(closure(runas('~console','/pex group #'.@idToBe.' prefix "'.@niceName.'"')))
                 foreach(@worldName: @worldPerms in @newHero['permissions']){

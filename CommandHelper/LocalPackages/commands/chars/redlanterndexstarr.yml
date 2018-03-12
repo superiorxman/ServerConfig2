@@ -7,14 +7,13 @@ buffs:
 - /give <plr> minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring
 class: redlanterndexstarr
 costumes:
-- color: '&c'
+- chatcolor: '&c'
   name: §4R§0e§4d L§3a§cn§4te§0rn§8(§3D§4S§8)
   sig: ocelot
   val: ''
 haste: 4
 jump: 5
 maxHearts: 30
-op: false
 permissions:
   superherocity:
   - ch.alias.redlanterndexstarr
@@ -30,4 +29,4 @@ powers:
 - /fly
 run: 4
 speech: MEEEEOWWWW!
-trail: ''
+trail: []

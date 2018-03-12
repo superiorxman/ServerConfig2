@@ -279,7 +279,7 @@ register_command('selectchar',
                 queue_push(closure(runas('~console','/minecraft:clear '.@player)))
                 queue_push(closure(set_peffect(@player, 14, 1, 9999, true, false)))
                 queue_push(closure(runas('~console','/pex group #'.@hero['class'].' parents set #commonherotraits')))
-                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['costumes'][0]['color'])))
+                queue_push(closure(runas('~console','/pex group #'.@hero['class'].' suffix '.@hero['costumes'][0]['chatcolor'])))
                 @niceName = replace(@hero['costumes'][0]['name'],'§','&')
                 queue_push(closure(runas('~console','/pex group #'.@hero['class'].' prefix "'.@niceName.'"')))
                 queue_push(closure(runas('~console','/pex user #'.@player.' group set #'.@hero['class'])))

@@ -2,11 +2,10 @@ buffs:
 - /shot give <plr> redenergybeam
 class: cyclops
 costumes:
-- color: '&9'
+- chatcolor: '&9'
   name: §9C§4y§9c§el§9ops
   sig: XTfPFGDrSk4Wd/OOHxVFI7llM5NfVMz6k2LPS+whAYurDS5MzMnoPCo+yJ0WGClFmv1Bob6uRrTlOOkLapPdwCiOS7d9UStdNUykmRNvk/PAjyqeOOMYL3YtBLJaOZ71eretneHBL0LJASuMX6qBdv3aulJbIqM+8BwLcJOKQowq225U/FvQSeONxtXCfAOzR79786NlVpIOA7URj8nmg0JsAKMBwE3TjwQ8aoYY0Vy0EbXY3WkLCDGW7kIaDmbrr5EUpx9hUFpsMNbsdXcl8/+YTAHVclvxReeSON+Zp9hwMEvJ2CAgMv76RYmG1mIYucIQzQJ3hPTERMQbpptxZzYmzLadX4vVrO/+/z+M261Sy9Jlfl8E16FP4xrq3UFpFvFDGjlnOUjhozbmVQ9ZdqXqdwEY5XdvzUNcfIXMKK88pVBVQuY2hVUuNufJrNAd0euU8UVGxHL130lH1Wjj73ZKVMNCwQrttDTpLk2YIr0f71Diacu60JN8iP2dWqXRjYyDGr2QHbtMOpbcSI/8ukUzXKlRD81DTPL+ZrSLRbuJvGP6e2T0ehEAdCI5wco0uPAqottP1uEXD9BEtEFOjGajrvXQOG98Y75n7EzZ932gHOsSW+HRUMuUGSjyRj/Szq83zT4siS7pvrDy33SCJAfVflgWG+shdvXZD6jA3P8=
   val: eyJ0aW1lc3RhbXAiOjE1MjA4OTA3NzgyMDUsInByb2ZpbGVJZCI6IjM5MTc2MmViMjRmNjRkOTU4NGQ2YmZhYzY4MmQ1NzVhIiwicHJvZmlsZU5hbWUiOiJTdHJpa2VyTWF4Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iZWE4ZDJkZGFjMjUzODc5ODU2Zjc3MjM4OGM4ZWQ1MzRjMzQxZjI3MjI3ZTZkMmNmOGJmMzk0NmE5ZjhjMWUifX19
-op: false
 permissions:
   superherocity:
   - ch.alias.carryplayer
@@ -16,4 +15,4 @@ powers:
 - /carryplayer <player>
 - /dismountplayer
 speech: I shoot red shit out of my face!
-trail: ''
+trail: []

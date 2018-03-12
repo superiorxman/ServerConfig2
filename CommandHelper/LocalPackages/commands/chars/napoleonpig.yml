@@ -2,11 +2,10 @@ buffs:
 - /effect <plr> 11 9999 1 true
 class: napoleonpig
 costumes:
-- color: '&d'
+- chatcolor: '&d'
   name: §8N§7a§dp§8o§7l§8e§7o§dn
   sig: pig
   val: ''
-op: false
 permissions:
   superherocity:
   - ch.alias.guarddogs
@@ -15,4 +14,4 @@ powers:
 - /run <0-1>
 run: 1
 speech: All Animals Are Equal, But Some Animals Are More Equal Than Others.
-trail: ''
+trail: []

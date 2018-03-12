@@ -13,14 +13,13 @@ buffs:
 - /shot give <plr> C4
 class: robocop
 costumes:
-- color: '&7'
+- chatcolor: '&7'
   name: §4R§7o§8b§0o§4c§7o§8p
   sig: LWpTEEPXpVt9w80lHJu2vM/ucZ0nj95vLx2jhrtumhkRDHD5pkD+F8onn4lPDkasgBeHqKuN1tNAuhgsImY4XAq8P03Wl65rYfyACh96NDfeTXJMTtW9tNhW4VBRSGKZskWISlNHPVKpAWT3r8nkWtCjH9iAPvQhQytbNLLmMgJvy7aYieXeW31ThiM//dWznX4U3v2HmRj4EQth3QLMV1MQiWzSTp/aRv9VOTXdfcew/Y/Nz1B+tnjYD78dfjnrdD03jcyBWIBMHMWg+gSBBxKs7rDFWwGyMzRENA55fnagRAln9bigjK6Vh4oITVgeW/7ImF3pbKTUKATrnl+Yw0yIOveIy6kJi8Cn2+O+PdqBA9TdzB47BxMT/MR8M1Juff5zx/NMkWjgC2+0xjwFQaqg52uQu0Sq++PayaZoMyWDHm9bwfiRr3plLTDQTbPNYXCImOvtxSGQ5ff4wkX5YmeRyfE8Vjkf0luFM+Zh2yfXV6d4V8imptoXtsv5x+RSDDt62w+78uw6caXyCKYHJdhV4uNfDdaLd0bF0l95sVM4hXeqHS2o3tCyKKPIy4LWIlxLednakrQTOzisoqDZpFpa8T/yDX3JI1x8fyO4ZVfugwRV8kP+L3sugq7XIjNbMf+NHRObVFzVRoMx4Em4J+u5He7DEW3ElphD1rCep3Y=
   val: eyJ0aW1lc3RhbXAiOjE0ODQ3MTI1MjEzNzksInByb2ZpbGVJZCI6IjQwODdiYzdmYzIxMzQ3ZGZiZjJkNDE2NTAwMzBiZTQ1IiwicHJvZmlsZU5hbWUiOiJVbHRyYU93bERDIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yZmYzYTBmY2VhMzVkNDVlMzI2ZWZmZDZkZWQ1NDViNmU1MjZlMWIxNjEwY2FkZjcwMjQxMjFiZjlhNmE1In19fQ==
 haste: 5
 jump: 3
 maxHearts: 30
-op: false
 permissions:
   superherocity:
   - ch.alias.carryplayer
@@ -34,4 +33,4 @@ powers:
 - /haste <0-5>
 run: 5
 speech: Crime has a new enemy.
-trail: ''
+trail: []

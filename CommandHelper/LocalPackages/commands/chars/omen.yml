@@ -2,11 +2,10 @@ buffs:
 - /effect <plr> 5 9999 2 true
 class: omen
 costumes:
-- color: '&a'
+- chatcolor: '&a'
   name: §0O§2me§0n
   sig: Q6R9I/h2B6KTnxemwLvAL94WH9+blw1ifZ8Ja+0znbKteSZHYUmU0VqzJ8PPwZNoUqJWdWi2z0f3eZe9tb2VLx8jh09a3OaziCK9sMzj3IYEDPmbMi7txEOYj+yeYgAHSdGtvjnqj0K/1G9I3y7lIIC73JfbJhphcqeYctxAJPVz2KKKxCxGY5WGoSW9RwR5zh0KlwlEvSNMGI2r05oDU+3/8CdoiwpIy5F0Nc9ZJ+uFHHUwo3jbqWD1qKK5LiSwnwyUXvx7LRcN30yOXszYDwJ+m2/azwpjEf3hkPq39hIw8yKs02eltXg6C7j7O7XWzKTOXPylxUE4PM6GUFkwUAbWaIbkHKko67PZE31ZOqGJXUPQiEQFYj3W/JIl6yIbKMV+10+Y31NO0qJaAIht2dKHiMnqGqzR5VAk8OaDOjjrxOOQcBpOvvNDtn8+c0KXB4jZ8ObeP/Tx8FspxF3WSV+davUh1cFSizbEoztZB5+kupQRoqrgMWSHWVQHpQvliPFwkbvTueT2L31qFOsBKX+pS7JQgm7XSVkDfJRQuqGFljOCEwxJZlDPYnwXHmOfoiZ3aj0FM7549z0QnixJ30gPGHGmaMkb/SaPjxYHpVXeBBi3VLPaStmnxYJuGNFcsyDUfjCZe+91O+jKPPf8TnNDysASJNJHlBJBOI8IYt8=
   val: eyJ0aW1lc3RhbXAiOjE1MjAyOTM4NzQ5MTUsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U3ZDI3OGM3OWZmYjk3M2UxMWVmYTgyNWZkNDZhYjc5OTBiYzQ4YmQ4N2QzZTA5MDM4MTMwNTcyZmE4ODg1NCJ9fX0=
-op: false
 permissions:
   superherocity:
   - ch.alias.mindlock
@@ -18,4 +17,4 @@ powers:
 - /confuse <player>
 - /msg <player>
 speech: I am The Omen!
-trail: ''
+trail: []

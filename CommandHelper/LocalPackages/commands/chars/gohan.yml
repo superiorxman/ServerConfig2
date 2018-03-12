@@ -8,14 +8,13 @@ buffs:
 - /shot give <plr> kiblast
 class: gohan
 costumes:
-- color: '&6'
+- chatcolor: '&6'
   name: §eG§1o§6han
   sig: nl0PzOFSvJklgO/TEA0trAmF47Bv7/Ci7ahMzPKsek15YsbbULEzfiHBECE8aDBos/tddMPZP8ClFbdJdlutvNEcQ9AjIFj0G8w3XdhsIMT8NZlew1HGcT/leR71Xp1/cdfin/+hz1D3trh2FO5SAlcKeth6X0DV9rrlpgKukYqq91WiYygE8sMehlXziWYA27cKDeV/tnZJNWZwFTCqjRYY5D4Ixe399eyAYLVsliyWkDh94mneCNgIAYgkoDUbZMJveq+8e6ELjNx/ZpC2jfHicl8z0ixEXGr4maxrxBNLskCBb2tKcDETzaXpBbKbWLpnbZKzc0aAYP+gjK03C1QYanP8NpB1DT8XfgGjV3NB3LzmWCIXV3peyee5AyKi5dSuW0tUb56il4a449Gqoa5OdRe3/RTQOQm56teIXk1RQsACrrN85KNort+5Feu8Xs/vIp34xwsHeksaihPxFCCAl2qOi45Mq38Rs99/123rqQIGbNmXH579drMRPzFf5IkwtcTQykJBCUWQLTXEl+C2w1rR2MFqYVjv67OUmkqvGK7xV3etNYF1mzPMYrPCDKA+w2hR47fczGirZa3YAPETFAXbi9z+T5bbmmCSqYXJ2+DuDAJZiTg7QNBpiQIpW2/g9w1BwP77MJiXNVhumzdsFgaF6SNhiIlkuC0YZ7s=
   val: eyJ0aW1lc3RhbXAiOjE1MjAyMTg2NjgyMjEsInByb2ZpbGVJZCI6IjM5MTc2MmViMjRmNjRkOTU4NGQ2YmZhYzY4MmQ1NzVhIiwicHJvZmlsZU5hbWUiOiJTdHJpa2VyTWF4Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hODVmY2M5ZDFjYTNlMjRmMzFkZDlmNjk3YWFlZjAyN2NiZjFlOTJjYWYzZGQ0MjNjOGMzMWE0MGJiNDAifX19
 haste: 9
 jump: 9
 maxHearts: 50
-op: false
 permissions:
   superherocity:
   - ch.alias.carryplayer
@@ -38,4 +37,4 @@ powers:
 - /dismountplayer
 run: 9
 speech: I'm Gohan!!
-trail: ''
+trail: []

@@ -2,14 +2,13 @@ buffs:
 - /effect <plr> 5 9999 1 true
 class: parallaxentity
 costumes:
-- color: '&e'
+- chatcolor: '&e'
   name: §eParallax §6Entity
   sig: magmacube
   val: ''
 haste: 2
 jump: 3
 maxHearts: 30
-op: false
 permissions:
   superherocity:
   - ch.alias.stopmindcontrol
@@ -79,4 +78,4 @@ powers:
 - /stopmindcontrol
 run: 3
 speech: I'm a mind reader!
-trail: ''
+trail: []

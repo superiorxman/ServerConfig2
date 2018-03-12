@@ -1,10 +1,9 @@
 class: deadmanbostonbrand
 costumes:
-- color: '&8'
+- chatcolor: '&8'
   name: §4D§8e§fad§4m§fa§4n§8(§fBB§8)
   sig: XwNneStCJwxWZGkTIaKQCFZhRlI1I4/rW/TV37qpD8FlU/6jYliMAOcM1MSXgUse5ywQNAIU1Mns4krreIonlwlY9HmWIa8lD9jUK+Bn9vTU+4NY+P2c6O3xagSd06ylBmwg2BfjfsRjCnQxoJh+1OyCtFWW0FxG5CHlT/Ot8LrwKpSbGG5Pp0YBj3x6xC6BIAsdVSTisdMhte8Q2Plqb6fRcFNPuc5HOaW82Chb348oZj0GJwQpXUlCZhBR7gznLczoZyruWJAyTE+l/vZlVCSHvAHPR9TQFMOGTLdZR+SzOu+HD/sXjz7AJI2PJuKPXx5iH79Er7IHZTjN0MB7RfNv2uZiaxkwBLzbb+ZbO98QA6dXrApkkAr+lr720/Xdbza+hUskIgp1tRG7v6vhTu/XBOqRJvXgxIhsS/gYV7+A8Howwy4DS7HANoCEjbyKiqG3sLTUiGkd0LfPh/K4U0zKchzkbSUq0+W2v++doEarVEJuJuK6hGcJsg6HwvzB0Ou1hVRcVq7OPKkeKW20ubQffjeNdkY61qCk7jo85UmpEfIQBghKBts2l58AW/oKSj14Xi0vzEL7qTvesDzU/S0H+narTJChaeInqfJq5U9bXk+AyOEhiBoTmqHNLmmsYnBdYUJQLewWLSe9SuVIxv0vb2hoBxHwbM4r/EVUols=
   val: eyJ0aW1lc3RhbXAiOjE1MTk5NTk3MTU4NTEsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FiYmRlMTQ2ZjNjM2IyMTRhMDU4ZjE1MmIxYWM4NjQzNWVmYjgyOWEyY2Q3ZDc5ZTExZWM0ZGRlNTJkMWY0NCJ9fX0=
-op: false
 permissions:
   superherocity:
   - essentials.fly
@@ -22,4 +21,4 @@ powers:
 - /mindcontrol <playername>
 - /stopmindcontrol
 speech: I am Boston Brand and I am Dead.
-trail: ''
+trail: []
