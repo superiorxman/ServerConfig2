@@ -1,0 +1,36 @@
+costumes:
+- color: '&2'
+  name: §2Gr§8e§2en Lant§8e§2rn§8(KR)
+  sig:
+  val:
+buffs:
+- /effect <plr> 5 9999 15 true
+- /shot give <plr> greenenergybeam
+- /give <plr> 95:5 64
+- /give <plr> minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring
+class: greenlanternkylerayner
+haste: 3
+jump: 3
+maxHearts: 30
+op: false
+permissions:
+  superherocity:
+  - ch.alias.carryplayer
+  - ch.alias.dismountplayer
+  - essentials.fly
+  - essentials.speed.fly
+  - essentials.speed
+powers:
+- /buff
+- /carryplayer <player>
+- /dismountplayer
+- /jump <0-3>
+- /run <0-3>
+- /haste <0-3>
+- /flyspeed <number>
+- /fly
+run: 3
+sig: 
+speech: In the brightest day, in the blackest night, no evil shall escape my sight.
+trail: ''
+val: 
