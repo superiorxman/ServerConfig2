@@ -1538,7 +1538,7 @@ spells:
         name: Magic Missile
         description: Fire a bolt of pure magic
         cast_target: "Your missile deals $damage damage to $target"
-        cast_player_message: "$name did $damage damage to you with $spell"
+        cast_player_message: "$caster did $damage damage to you with $spell"
         cast: You fire a missile
         no_target: You fire a missile
         upgrade_description: "&r&b&bull; &6Increased damage and range"
@@ -2513,7 +2513,9 @@ wands:
         description: Right-click to view skills, drag skill to hotbar to use
     spellbook:
         name: Spell Book
-        description: Right-click to view spells, drag skill to hotbar to use
+        description: $path spellbook
+        spell_instructions: "&r&bUse the hotbar button to cast spells that you have put on your hotbar."
+        inventory_instructions: "&r&bRight-click to open the spell inventory and drag spells to your hotbar to cast them."
     appearance_beginner:
         name: Beginner Wand Appearance
         description: Will change the appearance of your wand

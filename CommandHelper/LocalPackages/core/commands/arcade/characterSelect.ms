@@ -117,7 +117,8 @@ register_command('characterselect',
             foreach(@her in @heroes){
 
                 try{
-                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.replace(@her,'\n','').'.yml')
+                    @her = trim(@her)
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@her.'.yml')
                     @hero = yml_decode(@contents)
                     @foundAHero = true
                     @extraNames = ''

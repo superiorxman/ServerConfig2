@@ -113,12 +113,6 @@ players:
       timestamp: 1520294511
     party: orkhorl
     rank: 5
-  057e6a01-1f9e-427a-bc81-f67ffe47fdb6:
-    name:
-      timestamp: 1520334830
-      name: Moshicko
-    party: eyy
-    rank: 20
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     name:
       name: LordOfGallifrey
@@ -161,12 +155,6 @@ players:
       timestamp: 1520655664
     rank: 5
     party: JSA
-  5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68:
-    party: JSA
-    name:
-      timestamp: 1520656673
-      name: 3Cheetah_XP
-    rank: 5
   fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
     party: JSA
     name:
@@ -203,6 +191,48 @@ players:
       name: TheKingOfThings
       timestamp: 1520732158
     rank: 5
+  e17d8de4-9fa8-474a-a6c1-54d28c9a5591:
+    rank: 20
+    name:
+      timestamp: 1520746575
+      name: nevsfam
+    party: Chaos
+  ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
+    name:
+      timestamp: 1520755331
+      name: superiorxman
+    rank: 10
+    party: Chaos
+  057e6a01-1f9e-427a-bc81-f67ffe47fdb6:
+    name:
+      timestamp: 1520791788
+      name: Moshicko
+    party: YOUNG
+    rank: 20
+  5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68:
+    party: YOUNG
+    name:
+      timestamp: 1520792298
+      name: 3Cheetah_XP
+    rank: 5
+  166d7767-8e39-4616-9efd-f78ac8bca0e8:
+    rank: 5
+    party: YOUNG
+    name:
+      name: Sub2Randomjedi
+      timestamp: 1520793484
+  b09b6618-e035-4e1f-be4e-f01ec6888001:
+    name:
+      timestamp: 1520793819
+      name: Bcrulez
+    party: YOUNG
+    rank: 5
+  7e2b5ebc-3ea1-4278-8ca9-1109067f00f4:
+    name:
+      name: Nexominer
+      timestamp: 1520794210
+    party: Wwkq
+    rank: 20
 parties:
   TheTitans:
     members:
@@ -247,10 +277,6 @@ parties:
     - dbb47887-bfbd-40e6-bfec-3d1053ea3aff
     - 7dff91dd-96e6-4b73-9dfa-17992e055694
     - 28556dea-667d-409f-b2ff-fb4177a20ff2
-  eyy:
-    members:
-    - 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
-    leader: 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
   oof:
     members:
     - e6de8cf0-af45-44e4-882f-d98446f4b31b
@@ -260,7 +286,6 @@ parties:
     members:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
     - b06401f9-844e-4fb8-80e3-55fa795b4eb3
-    - 5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68
     - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
   Group:
     leader: 861da66b-8eef-4143-93f1-dbab33665595
@@ -269,3 +294,20 @@ parties:
     - 09926bea-1ec0-493b-930b-ec78f4ce150e
     - 9e8cb2d8-f44f-46f2-9ca6-afc0a17573f0
     - 5d414617-ce0a-467b-9fe2-07e742970ed2
+  Chaos:
+    members:
+    - e17d8de4-9fa8-474a-a6c1-54d28c9a5591
+    - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
+    leader: e17d8de4-9fa8-474a-a6c1-54d28c9a5591
+    motd: Chao Dominatur In Aeternum
+  YOUNG:
+    members:
+    - 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
+    - 5df4e4ab-a326-4d44-a5c2-9d7e11f2ed68
+    - 166d7767-8e39-4616-9efd-f78ac8bca0e8
+    - b09b6618-e035-4e1f-be4e-f01ec6888001
+    leader: 057e6a01-1f9e-427a-bc81-f67ffe47fdb6
+  Wwkq:
+    members:
+    - 7e2b5ebc-3ea1-4278-8ca9-1109067f00f4
+    leader: 7e2b5ebc-3ea1-4278-8ca9-1109067f00f4
