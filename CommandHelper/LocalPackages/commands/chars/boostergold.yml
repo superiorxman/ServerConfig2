@@ -12,14 +12,12 @@ costumes:
 - /effect <plr> 16 9999 1 true
 class: boostergold
 haste: 3
-jump: 2
 maxHearts: 30
 op: false
 permissions:
   superherocity:
   - powers.nofalldamage
   - -essentials.protect.damage.fall
-  - ch.alias.superman
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -29,7 +27,6 @@ powers:
 - /buff
 - /carryplayer <player>
 - /dismountplayer
-- /jump <0-2>
 - /run <0-3>
 - /haste <0-3>
 - /flyspeed <number>
