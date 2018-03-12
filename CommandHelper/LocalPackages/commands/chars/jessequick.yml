@@ -26,7 +26,6 @@ permissions:
   - ch.alias.dismountplayer
   - essentials.tppos
   - essentials.warps.speedforce
-  - ch.alias.jessequick
 powers:
 - /buff
 - /warp speedforce
@@ -42,4 +41,5 @@ powers:
 - /haste <0-4>
 run: 8
 speech: My name is Jesse Quick... and im the fastest woman alive!
-trail: []
+trail: [
+  ]

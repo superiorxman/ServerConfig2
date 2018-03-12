@@ -11,8 +11,8 @@ haste: 1
 jump: 2
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.squirrelgirl
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-2>
@@ -20,4 +20,5 @@ powers:
 - /haste <0-1>
 run: 2
 speech: It's Squirrel Time!
-trail: []
+trail: [
+  ]

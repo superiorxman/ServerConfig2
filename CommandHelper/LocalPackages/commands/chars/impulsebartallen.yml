@@ -21,7 +21,6 @@ permissions:
   - ch.alias.speedforceteleport
   - essentials.tppos
   - essentials.warps.speedforce
-  - ch.alias.impulsebartallen
 powers:
 - /buff
 - /warp speedforce
@@ -39,4 +38,5 @@ powers:
 - /tppos <x> <y> <z>
 run: 9
 speech: Dude! That is so crash!
-trail: []
+trail: [
+  ]

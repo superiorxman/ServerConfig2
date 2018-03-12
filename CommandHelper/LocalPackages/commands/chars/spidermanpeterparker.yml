@@ -19,7 +19,6 @@ permissions:
   - powers.wallclimb
   - ch.alias.websling
   - -essentials.protect.damage.fall
-  - ch.alias.spidermanpeterparker
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - ch.alias.web
@@ -41,4 +40,5 @@ powers:
   the invisible mob.
 run: 4
 speech: With great power comes great responsibility.
-trail: []
+trail: [
+  ]

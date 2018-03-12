@@ -19,7 +19,6 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.blackspiderman
   - ch.alias.web
   - weakto.antivenom
 powers:
@@ -40,4 +39,5 @@ powers:
   the invisible mob.
 run: 5
 speech: Oh fuck I'm black
-trail: []
+trail: [
+  ]

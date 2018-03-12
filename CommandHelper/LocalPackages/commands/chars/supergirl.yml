@@ -24,7 +24,6 @@ permissions:
   - weakto.kryptonite
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.supergirl
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -45,6 +44,7 @@ powers:
 - /herotransform
 run: 8
 speech: Time to save the world once again!
-trail: []
+trail: [
+  ]
 transformations:
 - karadanvers

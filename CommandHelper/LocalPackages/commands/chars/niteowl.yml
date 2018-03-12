@@ -9,10 +9,11 @@ costumes:
 haste: 1
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.niteowl
+  superherocity: [
+    ]
 powers:
 - /buff
 - /haste <0-1>
 speech: I seek the dark sky.
-trail: []
+trail: [
+  ]

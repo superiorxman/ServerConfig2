@@ -13,7 +13,6 @@ costumes:
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.greenlanternjohnstewart
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -26,4 +25,5 @@ powers:
 - /flyspeed <number>
 - /fly
 speech: In the brightest day, in the blackest night, no evil shall escape my sight.
-trail: []
+trail: [
+  ]

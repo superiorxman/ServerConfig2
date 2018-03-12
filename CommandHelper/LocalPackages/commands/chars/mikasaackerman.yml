@@ -11,7 +11,6 @@ permissions:
   superherocity:
   - ch.alias.websling
   - -essentials.protect.damage.fall
-  - ch.alias.mikasaackerman
 powers:
 - /buff
 - 'With an empty hand, right click the air and you will use your 3D maneuver gear.
@@ -19,4 +18,5 @@ powers:
   invisible chicken (lol), so if you wonder why you can''t move it''s because you
   have to press crouch button to get off the chicken first xD'
 speech: This world is merciless, and it's also very beautiful.
-trail: []
+trail: [
+  ]

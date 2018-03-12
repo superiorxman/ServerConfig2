@@ -23,7 +23,6 @@ permissions:
   - powers.nofalldamage
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.superman
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -42,4 +41,5 @@ powers:
 - /fly
 run: 9
 speech: Time to save the world once again!
-trail: []
+trail: [
+  ]

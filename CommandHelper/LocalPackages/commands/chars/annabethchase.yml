@@ -11,7 +11,6 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0OTI1MzI5NDU0MDEsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJMb3N0SW5HYWxheGVoXyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQyNWI0MTkwY2YyNDIxMTVhYmRmZmI2ZDIwNGQ5ZmQyYWIxNmVkZDUzZDAzYTExOWQ5OWIwYjExY2U1YTExZSJ9fX0=
 permissions:
   superherocity:
-  - ch.alias.annabethchase
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
@@ -20,4 +19,5 @@ powers:
 - /dismountplayer
 speech: I am never, ever going to make things easy for you, Seaweed Brain. Get used
   to it.
-trail: []
+trail: [
+  ]

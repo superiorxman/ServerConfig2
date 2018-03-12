@@ -35,7 +35,6 @@ permissions:
   - libsdisguises.disguise.wolf.-setinvisible
   - essentials.fly
   - -essentials.protect.damage.fall
-  - ch.alias.maui
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -50,4 +49,5 @@ powers:
 - /disguiseviewself
 run: 2
 speech: 'Maui, Demigod of the Wind and Sea! '
-trail: []
+trail: [
+  ]

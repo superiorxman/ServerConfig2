@@ -14,7 +14,6 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.yangxiaolong
 powers:
 - /buff
 - /carryplayer <player>
@@ -25,4 +24,5 @@ powers:
 run: 4
 speech: I can't take it anymore! Could everyone just chill out for two seconds before
   something CRAZY happens again?!
-trail: []
+trail: [
+  ]

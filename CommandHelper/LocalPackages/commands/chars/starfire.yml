@@ -17,7 +17,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.starfire
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -36,4 +35,5 @@ powers:
 - Shoots fireballs with bare hand
 run: 2
 speech: There will always be people who say mean words because you are different.
-trail: []
+trail: [
+  ]

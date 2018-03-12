@@ -16,7 +16,6 @@ permissions:
   superherocity:
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.blackadam
   - ch.alias.carryplayer
   - essentials.fly
   - essentials.speed.fly
@@ -35,4 +34,5 @@ powers:
 - /fly
 run: 9
 speech: Am I black?! SHIT!
-trail: []
+trail: [
+  ]

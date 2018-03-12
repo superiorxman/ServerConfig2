@@ -13,7 +13,6 @@ jump: 5
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.hercules
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -23,4 +22,5 @@ powers:
 - /haste <0-8>
 run: 2
 speech: I shall defeat you like my father before me!
-trail: []
+trail: [
+  ]

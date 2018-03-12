@@ -13,8 +13,8 @@ haste: 2
 jump: 3
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.batman
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-3>
@@ -22,4 +22,5 @@ powers:
 - /haste <0-2>
 run: 2
 speech: Your mind becomes razor sharp!
-trail: []
+trail: [
+  ]

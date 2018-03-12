@@ -14,7 +14,6 @@ maxHearts: 40
 permissions:
   superherocity:
   - powers.wallrun
-  - ch.alias.apollo
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -74,4 +73,5 @@ powers:
 - /fly
 run: 7
 speech: I am the God of Light, Sun, Music, and Archery.
-trail: []
+trail: [
+  ]

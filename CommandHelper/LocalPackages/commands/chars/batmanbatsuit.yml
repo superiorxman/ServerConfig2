@@ -15,7 +15,6 @@ haste: 5
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.batmanbatsuit
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -24,4 +23,5 @@ powers:
 - /dismountplayer
 - /haste <0-5>
 speech: WHY DID YOU SAY MARTHA?!
-trail: []
+trail: [
+  ]

@@ -17,7 +17,6 @@ maxHearts: 40
 permissions:
   superherocity:
   - weakto.kryptonite
-  - ch.alias.superboynew52
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -35,6 +34,7 @@ powers:
 - /herotransform
 run: 8
 speech: I am the cloned son of the son of Krypton!
-trail: []
+trail: [
+  ]
 transformations:
 - connerkent

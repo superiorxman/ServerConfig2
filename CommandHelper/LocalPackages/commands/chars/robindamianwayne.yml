@@ -14,7 +14,6 @@ jump: 7
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.robindamianwayne
   - powers.herotransform
 powers:
 - /buff
@@ -26,6 +25,7 @@ powers:
 run: 7
 speech: My name is Damian Wayne, i was trained in the LOA by my mother Talia and my
   grampz, Ra's Al Ghul!
-trail: []
+trail: [
+  ]
 transformations:
 - damianwayne

@@ -13,7 +13,6 @@ costumes:
 jump: 3
 permissions:
   superherocity:
-  - ch.alias.hawkman
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
@@ -23,4 +22,5 @@ powers:
 - /carryplayer <playername>
 - /dismountplayer
 speech: We carry justice on our wings!
-trail: []
+trail: [
+  ]

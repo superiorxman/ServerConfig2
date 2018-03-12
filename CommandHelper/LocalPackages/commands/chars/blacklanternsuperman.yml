@@ -26,7 +26,6 @@ permissions:
   - powers.wallrun
   - -essentials.protect.entitytarget.bypass
   - -essentials.protect.damage.fall
-  - ch.alias.blacklanternsuperman
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -46,4 +45,5 @@ powers:
 - Protected by Nekron, mobs will fear you and wont attack you
 run: 9
 speech: Time to kill again!
-trail: []
+trail: [
+  ]

@@ -19,7 +19,6 @@ permissions:
   - powers.nofalldamage
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.gothamman
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -39,4 +38,5 @@ powers:
 run: 9
 speech: My powers may drain my lifeforce, but it's a small price to pay to defend
   Gotham
-trail: []
+trail: [
+  ]

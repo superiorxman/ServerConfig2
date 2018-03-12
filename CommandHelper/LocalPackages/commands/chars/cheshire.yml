@@ -10,8 +10,8 @@ costumes:
 haste: 2
 jump: 4
 permissions:
-  superherocity:
-  - ch.alias.cheshire
+  superherocity: [
+    ]
 powers:
 - /buff
 - /run <0-3>
@@ -19,4 +19,5 @@ powers:
 - /haste <0-2>
 run: 3
 speech: My poison will take over you!
-trail: []
+trail: [
+  ]

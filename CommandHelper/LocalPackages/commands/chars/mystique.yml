@@ -53,7 +53,6 @@ permissions:
   - libsdisguises.disguise.wolf.-setinvisible
   - libsdisguises.disguise.zombie.-setinvisible
   - libsdisguises.disguise.zombie_villager.-setinvisible
-  - ch.alias.mystique
 powers:
 - /buff
 - /jump <0-3>
@@ -62,4 +61,5 @@ powers:
 - /disguise
 run: 3
 speech: I can be anyone!
-trail: []
+trail: [
+  ]

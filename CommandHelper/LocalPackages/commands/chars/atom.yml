@@ -20,7 +20,6 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.atom
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -41,6 +40,7 @@ powers:
 - /herotransform
 run: 4
 speech: WTF I'm so small!
-trail: []
+trail: [
+  ]
 transformations:
 - raypalmer

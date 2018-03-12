@@ -8,7 +8,6 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0NzY2NDcyMDY5MzIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xZGNhNjA4MWQyMGY5ZWU2MmFhMDY0NWJkMTNlZmQzNWE2N2UzZWE0YzdiMGJlZGU1MzFiMjZmYWI0OTMyIn19fQ==
 permissions:
   superherocity:
-  - ch.alias.theinvisibleboy
   - ch.alias.invis
   - ch.alias.vis
 powers:
@@ -16,4 +15,5 @@ powers:
 - /invis
 - /vis
 speech: You really can't see me.
-trail: []
+trail: [
+  ]

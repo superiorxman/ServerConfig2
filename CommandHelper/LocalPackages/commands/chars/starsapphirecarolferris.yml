@@ -15,7 +15,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.starsapphirecarolferris
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -32,4 +31,5 @@ powers:
 - /fly
 run: 3
 speech: For hearts long lost and full of fright, For those alone in the Blackest Night.
-trail: []
+trail: [
+  ]

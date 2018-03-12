@@ -21,7 +21,6 @@ permissions:
   - weakto.kryptonite
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.darksupergirl
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -41,4 +40,5 @@ powers:
 run: 8
 speech: I'm young, hot and I have the powers of a god. I want out from here. I want
   some fun.
-trail: []
+trail: [
+  ]

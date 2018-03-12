@@ -21,7 +21,6 @@ permissions:
   - powers.nofalldamage
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.ultraboy
   - essentials.speed.fly
   - essentials.speed
   - essentials.fly
@@ -40,4 +39,5 @@ powers:
 - /fly
 run: 8
 speech: I lead the Legions of Super-Heros twice..damn I'm great.
-trail: []
+trail: [
+  ]

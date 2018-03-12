@@ -14,7 +14,6 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.hestia
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -42,4 +41,5 @@ powers:
 run: 3
 speech: I an the Goddess of hearth, architecture, and the right ordering of domesticity,
   the family, and the state.
-trail: []
+trail: [
+  ]

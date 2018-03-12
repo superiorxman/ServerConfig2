@@ -15,7 +15,6 @@ jump: 9
 maxHearts: 50
 permissions:
   superherocity:
-  - ch.alias.beerus
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - powers.wallrun
@@ -41,4 +40,5 @@ powers:
 - Anything you attack, dies
 run: 9
 speech: I am the God of Destruction!
-trail: []
+trail: [
+  ]

@@ -29,7 +29,6 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.speedforceteleport
   - essentials.warps.speedforce
-  - ch.alias.savitar
   - ch.alias.invis
   - ch.alias.vis
 powers:
@@ -50,4 +49,5 @@ powers:
 - /vis
 run: 9
 speech: I am the God of speed!
-trail: []
+trail: [
+  ]

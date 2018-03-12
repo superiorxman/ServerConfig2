@@ -20,7 +20,6 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
   - essentials.tppos
-  - ch.alias.quicksilver
 powers:
 - /buff
 - /carryplayer <player>
@@ -32,4 +31,5 @@ powers:
 - /haste <0-4>
 run: 9
 speech: I Am Not Ze Fastest Man Alive!
-trail: []
+trail: [
+  ]

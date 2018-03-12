@@ -16,7 +16,6 @@ permissions:
   superherocity:
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.shazam
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -35,4 +34,5 @@ powers:
 - /fly
 run: 9
 speech: Shazam!
-trail: []
+trail: [
+  ]

@@ -21,7 +21,6 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - -essentials.protect.damage.fall
-  - ch.alias.godfallsuperman
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -36,4 +35,5 @@ powers:
 - /dismountplayer
 run: 6
 speech: The power of Kandor protects me!
-trail: []
+trail: [
+  ]

@@ -18,7 +18,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.redlanternatrocitus
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -35,4 +34,5 @@ powers:
 - /fly
 run: 3
 speech: Rage will Rule!
-trail: []
+trail: [
+  ]

@@ -11,8 +11,8 @@ haste: 1
 jump: 1
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.finnthehuman
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-1>
@@ -20,4 +20,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: IT'S ADVENTURE TIME!
-trail: []
+trail: [
+  ]

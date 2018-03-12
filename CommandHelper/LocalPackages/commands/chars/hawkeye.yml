@@ -36,7 +36,6 @@ jump: 2
 permissions:
   superherocity:
   - ch.alias.arrowspectral
-  - ch.alias.hawkeye
   - ch.alias.arrow
   - ch.alias.arrowstrongregen
   - ch.alias.arrowlongregen
@@ -84,4 +83,5 @@ powers:
 - /arrow luck
 run: 3
 speech: How many bow & arrow shooter guys can there be?!
-trail: []
+trail: [
+  ]

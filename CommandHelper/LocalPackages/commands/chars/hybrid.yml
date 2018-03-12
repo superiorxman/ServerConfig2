@@ -19,7 +19,6 @@ permissions:
   - ch.alias.websling
   - powers.wallclimb
   - ch.alias.carryplayer
-  - ch.alias.hybrid
   - ch.alias.dismountplayer
   - ch.alias.invis
   - ch.alias.vis
@@ -43,4 +42,5 @@ powers:
   the invisible mob.
 run: 6
 speech: With these four symbiotes I'll be UNSTOPPABLE!
-trail: []
+trail: [
+  ]

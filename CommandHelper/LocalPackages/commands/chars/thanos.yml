@@ -20,7 +20,6 @@ permissions:
   - powers.wallrun
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
-  - ch.alias.thanos
   - ch.alias.modifyspeed
   - essentials.fly
   - essentials.speed.fly
@@ -38,4 +37,5 @@ powers:
 - /fly
 run: 9
 speech: You thought you could defeat me. You suffer from delusions of grandeur.
-trail: []
+trail: [
+  ]

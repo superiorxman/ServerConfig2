@@ -13,7 +13,6 @@ maxHearts: 50
 permissions:
   superherocity:
   - powers.fireballPunch
-  - ch.alias.hades
   - essentials.fly
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
@@ -30,4 +29,5 @@ powers:
 - /fly
 run: 6
 speech: God of the Underworld!
-trail: []
+trail: [
+  ]

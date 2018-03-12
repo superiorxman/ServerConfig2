@@ -12,7 +12,6 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.dionysus
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -33,4 +32,5 @@ powers:
 - /fly
 run: 3
 speech: Goddess of wine, fertility, theatre, and religious ecstasy.
-trail: []
+trail: [
+  ]

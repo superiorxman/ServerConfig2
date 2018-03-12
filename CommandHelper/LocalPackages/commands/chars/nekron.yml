@@ -15,7 +15,6 @@ permissions:
   - ch.alias.tp
   - kill.immune
   - -essentials.protect.damage.fall
-  - ch.alias.nekron
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -29,4 +28,5 @@ powers:
 - /empower (You empower a player with your Nekrotic energy
 - Mobs won't attack you
 speech: You owe me your life <plr>, you all do!
-trail: []
+trail: [
+  ]

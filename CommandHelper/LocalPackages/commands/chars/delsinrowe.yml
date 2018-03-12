@@ -11,8 +11,8 @@ haste: 5
 jump: 5
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.delsinrowe
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-5>
@@ -21,4 +21,5 @@ powers:
 - /thru
 run: 3
 speech: Just because something isn't normal doesn't mean it needs to be fixed.
-trail: []
+trail: [
+  ]

@@ -20,7 +20,6 @@ permissions:
   - ch.alias.websling
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.antivenom
   - -essentials.protect.damage.fall
   - ch.alias.web
 powers:
@@ -42,4 +41,5 @@ powers:
   the invisible mob.
 run: 5
 speech: Ill lay my hands upon you and CURE YOU ALL
-trail: []
+trail: [
+  ]

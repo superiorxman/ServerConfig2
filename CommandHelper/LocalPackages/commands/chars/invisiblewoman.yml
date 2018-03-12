@@ -16,7 +16,6 @@ permissions:
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
-  - ch.alias.invisiblewoman
   - ch.alias.invis
   - ch.alias.vis
 powers:
@@ -30,4 +29,5 @@ powers:
 - /vis
 run: 2
 speech: Invisibility is one thing, being naked and invisible is another.
-trail: []
+trail: [
+  ]

@@ -17,7 +17,6 @@ maxHearts: 30
 permissions:
   superherocity:
   - powers.float
-  - ch.alias.zatanna
   - essentials.enchantments.*
   - -essentials.enchantments.allowunsafe
   - essentials.enchant
@@ -31,4 +30,5 @@ powers:
 - /cast mrasid
 run: 1
 speech: I like Zapata's!
-trail: []
+trail: [
+  ]

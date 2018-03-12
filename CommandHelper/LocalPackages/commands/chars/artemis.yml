@@ -14,7 +14,6 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.artemis
   - ch.alias.carryplayer
   - essentials.speed.fly
   - essentials.speed
@@ -72,4 +71,5 @@ powers:
 - /feed
 run: 3
 speech: Let the hunt begin!
-trail: []
+trail: [
+  ]

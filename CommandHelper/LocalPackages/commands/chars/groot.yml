@@ -23,7 +23,6 @@ occasionalPhrases:
 - We are Groot.
 permissions:
   superherocity:
-  - ch.alias.groot
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -35,4 +34,5 @@ powers:
 - /haste <0-4>
 run: 2
 speech: I am GROOT!
-trail: []
+trail: [
+  ]

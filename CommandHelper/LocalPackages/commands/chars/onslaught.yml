@@ -10,7 +10,6 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.onslaught
   - ch.alias.fly
   - ch.alias.mindcontrol
   - ch.alias.mindlock
@@ -27,4 +26,5 @@ powers:
 - /speak <player>
 - /msg <player> <message>
 speech: At last...FREEDOM! Now behold my mighty hand!
-trail: []
+trail: [
+  ]

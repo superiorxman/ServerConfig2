@@ -19,8 +19,8 @@ haste: 4
 jump: 5
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.wintersoldier
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-5>
@@ -28,4 +28,5 @@ powers:
 - /haste <0-4>
 run: 4
 speech: Soldier ready to serve.
-trail: []
+trail: [
+  ]

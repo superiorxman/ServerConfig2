@@ -19,8 +19,8 @@ haste: 2
 jump: 2
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.redhood
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-2>
@@ -28,4 +28,5 @@ powers:
 - /haste <0-2>
 run: 3
 speech: The old Jason is dead.
-trail: []
+trail: [
+  ]

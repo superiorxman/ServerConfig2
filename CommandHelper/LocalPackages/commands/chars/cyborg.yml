@@ -16,7 +16,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.cyborg
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -36,4 +35,5 @@ powers:
 run: 6
 speech: My body may have its limitations but when I put my mind to it, there's nothing
   I can't do.
-trail: []
+trail: [
+  ]

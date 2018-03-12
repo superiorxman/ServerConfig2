@@ -20,7 +20,6 @@ permissions:
   - essentials.back
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.gorillagrodd
   - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
   - ch.alias.carryplayer
@@ -46,4 +45,5 @@ powers:
 - /speak <playername>
 run: 9
 speech: I am a telepathic gorilla!
-trail: []
+trail: [
+  ]

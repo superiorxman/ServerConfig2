@@ -18,7 +18,6 @@ permissions:
   superherocity:
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.boros
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
   - essentials.fly
@@ -37,4 +36,5 @@ powers:
 - /fly
 run: 9
 speech: I am the STRONGEST!
-trail: []
+trail: [
+  ]

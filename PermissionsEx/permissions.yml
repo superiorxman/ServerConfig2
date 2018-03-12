@@ -3848,20 +3848,6 @@ groups:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-  lucy:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&d'
-      prefix: '&fL&du&fc&dy'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.invishandsattack
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - ch.alias.lucy
-        - powers.projectileinvulnerability
   niteowl:
     inheritance:
     - commonherotraits
@@ -8666,21 +8652,6 @@ groups:
     options:
       suffix: '&4'
       prefix: '&fU&4gandan &fK&4nuckles'
-  thepresence:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&7The &7Presence'
-    worlds:
-      superherocity:
-        permissions:
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - libsdisguises.disguise.wolf
-        - libsdisguises.disguise
   theriddler:
     inheritance:
     - commonherotraits
@@ -9682,6 +9653,35 @@ groups:
         - powers.wallclimb
         - ch.alias.websling
         - -essentials.protect.damage.fall
+  lucy:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&d'
+      prefix: '&fL&du&fc&dy'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.invishandsattack
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.lucy
+        - powers.projectileinvulnerability
+  thepresence:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&7The &7Presence'
+    worlds:
+      superherocity:
+        permissions:
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - libsdisguises.disguise.wolf
+        - libsdisguises.disguise
 schema-version: 1
 worlds:
   checkers:
@@ -10964,7 +10964,7 @@ users:
       name: H2O_Delirious7
   6ae33e07-ca4b-4820-ac96-8ea2037ac021:
     group:
-    - hybrid
+    - lucy
     options:
       name: TheFartTrain
     permissions: []
@@ -11232,7 +11232,7 @@ users:
       name: AndiMack
   1ffc1b79-0d84-4cfd-9908-3b77d6b276a8:
     group:
-    - silversurfer
+    - mortal
     options:
       name: Buehl34
   77a889c5-b502-4ee2-aec6-1bda35a28826:

@@ -14,7 +14,6 @@ jump: 3
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.nightwing
   - powers.herotransform
 powers:
 - /buff
@@ -24,6 +23,7 @@ powers:
 - /herotransform
 run: 3
 speech: You'll never know if you can fly unless you take the risk of falling.
-trail: []
+trail: [
+  ]
 transformations:
 - dickgrayson

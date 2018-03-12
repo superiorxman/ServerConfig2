@@ -20,7 +20,6 @@ permissions:
   superherocity:
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.powergirl
   - essentials.fly
   - essentials.speed
   - ch.alias.carryplayer
@@ -38,4 +37,5 @@ powers:
 - /fly
 run: 8
 speech: I am Power Girl! Kara Zor-L!
-trail: []
+trail: [
+  ]

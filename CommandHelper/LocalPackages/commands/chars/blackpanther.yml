@@ -13,8 +13,8 @@ haste: 3
 jump: 3
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.blackpanther
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-3>
@@ -22,4 +22,5 @@ powers:
 - /haste <0-3>
 run: 3
 speech: I am...The Black Panther!
-trail: []
+trail: [
+  ]

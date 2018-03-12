@@ -14,8 +14,8 @@ haste: 1
 jump: 2
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.batgirl
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-2>
@@ -23,4 +23,5 @@ powers:
 - /haste <0-1>
 run: 2
 speech: Trained by the best! My dad does not need to know though..
-trail: []
+trail: [
+  ]

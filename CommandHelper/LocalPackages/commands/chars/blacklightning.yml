@@ -14,7 +14,6 @@ maxHearts: 50
 permissions:
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.blacklightning
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
@@ -26,4 +25,5 @@ powers:
 - /haste <0-3>
 run: 6
 speech: I am Black Lightning!
-trail: []
+trail: [
+  ]

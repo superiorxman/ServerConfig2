@@ -12,7 +12,6 @@ costumes:
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.bobafett
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -24,4 +23,5 @@ powers:
 - /fly
 - Shoots rockets with bare hands
 speech: This time we will get them all.
-trail: []
+trail: [
+  ]

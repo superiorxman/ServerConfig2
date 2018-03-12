@@ -15,7 +15,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.greenlanternalanscott
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -32,4 +31,5 @@ powers:
 - /fly
 run: 3
 speech: In the brightest day, in the blackest night, no evil shall escape my sight.
-trail: []
+trail: [
+  ]

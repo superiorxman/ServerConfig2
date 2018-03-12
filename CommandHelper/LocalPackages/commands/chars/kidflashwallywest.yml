@@ -33,7 +33,6 @@ permissions:
   - ch.alias.dismountplayer
   - essentials.tppos
   - essentials.warps.speedforce
-  - ch.alias.kidflashwallywest
 powers:
 - /buff
 - /warp speedforce
@@ -54,6 +53,7 @@ powers:
 - /herotransform
 run: 9
 speech: Im the fastest KID alive!
-trail: []
+trail: [
+  ]
 transformations:
 - kidwallywest

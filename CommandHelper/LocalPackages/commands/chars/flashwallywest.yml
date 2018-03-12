@@ -36,7 +36,6 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.warps.speedforce
-  - ch.alias.flashwallywest
   - essentials.tppos
 powers:
 - /buff
@@ -61,4 +60,5 @@ powers:
 - /cast infinitemasspunch
 run: 9
 speech: I am Wally West, unleash the speedforce inside of me!
-trail: []
+trail: [
+  ]

@@ -12,7 +12,6 @@ jump: 5
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.jinx
   - essentials.speed.fly
   - essentials.speed
   - essentials.fly
@@ -23,4 +22,5 @@ powers:
 - /haste <0-3>
 run: 3
 speech: Im bad luck... I never really got to choose.
-trail: []
+trail: [
+  ]

@@ -11,7 +11,6 @@ costumes:
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.greengoblin
   - essentials.speed.fly
   - essentials.speed
   - essentials.fly
@@ -20,4 +19,5 @@ powers:
 - /flyspeed <number>
 - /fly (simulates his hoverboard, he can't really fly)
 speech: Itsy Bitsy Spidey, climb up on the web, the goblin came and cut of his web.
-trail: []
+trail: [
+  ]

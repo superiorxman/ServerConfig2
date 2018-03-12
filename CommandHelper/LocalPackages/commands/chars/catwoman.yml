@@ -14,7 +14,6 @@ jump: 3
 permissions:
   superherocity:
   - powers.wallclimb
-  - ch.alias.catwoman
   - -essentials.protect.damage.fall
 powers:
 - /buff
@@ -23,4 +22,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: I'm a girl cat!
-trail: []
+trail: [
+  ]

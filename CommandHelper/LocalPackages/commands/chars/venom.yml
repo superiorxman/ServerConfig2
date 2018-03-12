@@ -18,7 +18,6 @@ permissions:
   - powers.wallclimb
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.venom
   - -essentials.protect.damage.fall
   - ch.alias.web
 powers:
@@ -39,4 +38,5 @@ powers:
   the invisible mob.
 run: 5
 speech: I am Venom!
-trail: []
+trail: [
+  ]

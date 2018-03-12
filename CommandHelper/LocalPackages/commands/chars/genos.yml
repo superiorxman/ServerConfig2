@@ -13,7 +13,6 @@ jump: 4
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.genos
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
@@ -25,4 +24,5 @@ powers:
 - /haste <0-4>
 run: 4
 speech: Master Saitama would be proud.
-trail: []
+trail: [
+  ]

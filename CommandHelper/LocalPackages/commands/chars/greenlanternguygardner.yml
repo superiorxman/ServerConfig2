@@ -13,7 +13,6 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MTkwMzc4NzMxOTEsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y5ZTQ5OGJhOTBkZjk3NDI3YTQxNmE2Mzc1NzVlNDI2Zjc2MzE3OGFiOTBkMDI3NTVmMzRhYzZkYjQ3NWYifX19
 permissions:
   superherocity:
-  - ch.alias.greenlanternguygardner
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -23,4 +22,5 @@ powers:
 - /dismountplayer
 - /fly
 speech: In the brightest day, in the blackest night, no evil shall escape my sight.
-trail: []
+trail: [
+  ]

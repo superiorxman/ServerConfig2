@@ -9,8 +9,8 @@ costumes:
 haste: 1
 jump: 2
 permissions:
-  superherocity:
-  - ch.alias.stephencurry
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-2>
@@ -18,4 +18,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: What the hell am I doing here?
-trail: []
+trail: [
+  ]

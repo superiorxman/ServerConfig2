@@ -17,7 +17,6 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.thor
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -34,4 +33,5 @@ powers:
 - /lightning
 run: 8
 speech: The God of Thunder has arrived!
-trail: []
+trail: [
+  ]

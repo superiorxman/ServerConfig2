@@ -24,7 +24,6 @@ permissions:
   - headdb.open
   - headdb.category.*
   - headdb.free.*
-  - ch.alias.blackbolt
   - ch.alias.msg
   - ch.alias.mindlock
   - ch.alias.stopmindcontrol
@@ -59,4 +58,5 @@ powers:
 - /unconfuse
 run: 8
 speech: '...!'
-trail: []
+trail: [
+  ]

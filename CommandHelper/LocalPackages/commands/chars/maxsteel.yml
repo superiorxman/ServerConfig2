@@ -12,7 +12,6 @@ costumes:
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.maxsteel
   - ch.alias.invis
   - ch.alias.vis
   - essentials.fly
@@ -24,4 +23,5 @@ powers:
 - /fly
 run: 8
 speech: Go Turbo?!?
-trail: []
+trail: [
+  ]

@@ -11,9 +11,9 @@ jump: 8
 permissions:
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.deku
 powers:
 - /buff
 - /jump <0-6>
 speech: 'My deku means you can do it '
-trail: []
+trail: [
+  ]

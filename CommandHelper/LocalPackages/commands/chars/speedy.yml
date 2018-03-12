@@ -15,7 +15,6 @@ maxHearts: 20
 permissions:
   superherocity:
   - ch.alias.arrowspectral
-  - ch.alias.speedy
   - ch.alias.arrow
   - ch.alias.arrowstrongregen
   - ch.alias.arrowlongregen
@@ -63,4 +62,5 @@ powers:
 - /arrow luck
 run: 3
 speech: I guess I'm kinda like the Red Arrow!
-trail: []
+trail: [
+  ]

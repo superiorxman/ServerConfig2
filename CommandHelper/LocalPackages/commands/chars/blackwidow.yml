@@ -12,8 +12,8 @@ haste: 2
 jump: 3
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.blackwidow
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-3>
@@ -21,4 +21,5 @@ powers:
 - /haste <0-2>
 run: 3
 speech: I've got red in my ledger, I'd like to wipe it out.
-trail: []
+trail: [
+  ]

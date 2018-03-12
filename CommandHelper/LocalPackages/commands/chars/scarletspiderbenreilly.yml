@@ -17,7 +17,6 @@ permissions:
   - powers.wallclimb
   - ch.alias.websling
   - -essentials.protect.damage.fall
-  - ch.alias.scarletspiderbenreilly
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - ch.alias.web
@@ -40,4 +39,5 @@ powers:
   the invisible mob.
 run: 4
 speech: I'm not just a clone.
-trail: []
+trail: [
+  ]

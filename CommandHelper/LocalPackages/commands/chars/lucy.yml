@@ -9,7 +9,6 @@ costumes:
 permissions:
   superherocity:
   - powers.projectileinvulnerability
-  - ch.alias.lucy
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - ch.alias.invishandsattack
@@ -19,4 +18,5 @@ powers:
 - /dismountplayer
 - /invishandsattack <playername>
 speech: You know who isn't human? You know who isn't human?... PEOPLE LIKE YOU!
-trail: []
+trail: [
+  ]

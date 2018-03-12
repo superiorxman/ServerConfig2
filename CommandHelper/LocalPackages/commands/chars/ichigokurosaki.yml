@@ -16,7 +16,6 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
   - powers.float
-  - ch.alias.ichigokurosaki
 powers:
 - /buff
 - /jump <0-4>
@@ -26,4 +25,5 @@ powers:
 - /hover off
 run: 6
 speech: I may only be a substitue soul reaper, but it's still enough to beat you!
-trail: []
+trail: [
+  ]

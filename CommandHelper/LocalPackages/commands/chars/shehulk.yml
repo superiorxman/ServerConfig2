@@ -17,7 +17,6 @@ maxHearts: 40
 permissions:
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.shehulk
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -29,4 +28,5 @@ powers:
 - /haste <0-8>
 run: 1
 speech: SHE-HULK SMASH!
-trail: []
+trail: [
+  ]

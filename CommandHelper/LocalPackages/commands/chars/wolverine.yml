@@ -15,7 +15,6 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.wolverine
 powers:
 - /buff
 - /carryplayer <player>
@@ -25,4 +24,5 @@ powers:
 - /haste <0-3>
 run: 2
 speech: I'm the best at what I do, but what I do isn't very nice.
-trail: []
+trail: [
+  ]

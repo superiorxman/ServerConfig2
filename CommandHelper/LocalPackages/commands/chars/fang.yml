@@ -18,7 +18,6 @@ permissions:
   superherocity:
   - ch.alias.vis
   - ch.alias.invis
-  - ch.alias.fang
   - essentials.speed.fly
   - essentials.speed
   - essentials.fly
@@ -37,4 +36,5 @@ powers:
 - /vis
 run: 2
 speech: You just can't kill people like you used to.
-trail: []
+trail: [
+  ]

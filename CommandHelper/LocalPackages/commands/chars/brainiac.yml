@@ -14,7 +14,6 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
   - essentials.fly
-  - ch.alias.brainiac
   - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
   - ch.alias.carryplayer
@@ -39,4 +38,5 @@ powers:
 - /mindlock
 run: 6
 speech: I am the smartest being earth has ever encountered!
-trail: []
+trail: [
+  ]

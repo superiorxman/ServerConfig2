@@ -16,7 +16,6 @@ jump: 2
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.warmachine
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -33,4 +32,5 @@ powers:
 - /fly
 run: 3
 speech: The name is...War Machine.
-trail: []
+trail: [
+  ]

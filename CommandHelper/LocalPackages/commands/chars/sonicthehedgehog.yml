@@ -12,11 +12,11 @@ permissions:
   superherocity:
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.sonicthehedgehog
 powers:
 - /buff
 - /run <0-8>
 - /jump <0-6>
 run: 8
 speech: Gotta Go Fast!
-trail: []
+trail: [
+  ]

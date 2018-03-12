@@ -14,7 +14,6 @@ permissions:
   superherocity:
   - essentials.fly
   - powers.lightningpunch
-  - ch.alias.zeus
   - essentials.lightning
 powers:
 - /buff
@@ -26,4 +25,5 @@ powers:
 - /haste <0-5>
 run: 6
 speech: Zeus Almighty.
-trail: []
+trail: [
+  ]

@@ -19,7 +19,6 @@ permissions:
   superherocity:
   - ch.alias.tpradius
   - ch.alias.bodyslide
-  - ch.alias.deadpool
 powers:
 - /buff
 - /jump <0-4>
@@ -30,4 +29,5 @@ powers:
 run: 3
 speech: Hey <plr>, thanks for typing /buff, and for choosing me! By the way, tell
   your mom I said "Hello There"! She'll know what it means.
-trail: []
+trail: [
+  ]

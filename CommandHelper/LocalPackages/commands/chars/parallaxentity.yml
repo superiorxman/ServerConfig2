@@ -56,7 +56,6 @@ permissions:
   - libsdisguises.disguise.wolf.-setinvisible
   - libsdisguises.disguise.zombie.-setinvisible
   - libsdisguises.disguise.zombie_villager.-setinvisible
-  - ch.alias.parallaxentity
   - ch.alias.speak
   - ch.alias.confuse
   - ch.alias.unconfuse
@@ -78,4 +77,5 @@ powers:
 - /stopmindcontrol
 run: 3
 speech: I'm a mind reader!
-trail: []
+trail: [
+  ]

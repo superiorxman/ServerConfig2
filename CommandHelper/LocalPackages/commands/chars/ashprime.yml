@@ -14,7 +14,6 @@ jump: 4
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.ashprime
   - ch.alias.invis
   - ch.alias.vis
 powers:
@@ -26,4 +25,5 @@ powers:
 - /vis
 run: 4
 speech: I'm not normal Ash, I am Ash Prime, shadow hunter of Warframe!
-trail: []
+trail: [
+  ]

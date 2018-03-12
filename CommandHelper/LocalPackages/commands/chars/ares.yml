@@ -23,7 +23,6 @@ maxHearts: 40
 permissions:
   superherocity:
   - powers.wallrun
-  - ch.alias.ares
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -42,4 +41,5 @@ powers:
 - /fly
 run: 7
 speech: War is necessary, but through it comes peace.
-trail: []
+trail: [
+  ]

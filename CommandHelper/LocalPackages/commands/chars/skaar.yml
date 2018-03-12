@@ -17,7 +17,6 @@ maxHearts: 50
 permissions:
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.skaar
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -29,4 +28,5 @@ powers:
 - /haste <0-9>
 run: 3
 speech: I am Skaar! Champion of my planet!
-trail: []
+trail: [
+  ]

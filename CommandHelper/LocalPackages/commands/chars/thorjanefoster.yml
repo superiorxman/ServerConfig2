@@ -18,7 +18,6 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.lightning
-  - ch.alias.thorjanefoster
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -34,4 +33,5 @@ powers:
 - /fly
 run: 8
 speech: The Female God of Thunder has arrived!
-trail: []
+trail: [
+  ]

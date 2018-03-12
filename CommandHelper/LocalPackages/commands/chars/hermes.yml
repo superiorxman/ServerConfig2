@@ -12,7 +12,6 @@ jump: 9
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.hermes
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -30,4 +29,5 @@ powers:
 - /fly
 run: 9
 speech: Tonight im gonna have myselfff- wait im not Freddy Mercury!
-trail: []
+trail: [
+  ]

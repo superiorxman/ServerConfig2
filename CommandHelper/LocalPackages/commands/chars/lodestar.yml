@@ -14,7 +14,6 @@ permissions:
   - ch.alias.iron
   - powers.stealiron
   - -essentials.protect.damage.fall
-  - ch.alias.lodestar
   - powers.herotransform
 powers:
 - /buff
@@ -24,7 +23,8 @@ powers:
 - /stealiron
 run: 1
 speech: Not the right time to shape a new guy
-trail: []
+trail: [
+  ]
 transformations:
 - ben10
 - bigchill

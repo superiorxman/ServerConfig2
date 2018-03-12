@@ -28,7 +28,6 @@ permissions:
   - ch.alias.grow
   - ch.alias.apokolips
   - -essentials.protect.damage.fall
-  - ch.alias.darkseid
   - powers.wallrun
   - powers.float
 powers:
@@ -53,4 +52,5 @@ powers:
 - /float <up/down/pause/unpause/stop>
 run: 9
 speech: I am the Destroyer of Worlds!
-trail: []
+trail: [
+  ]

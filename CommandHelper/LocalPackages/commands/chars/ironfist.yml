@@ -16,7 +16,6 @@ permissions:
   - powers.immunity.poison
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.ironfist
   - ch.alias.healing
 powers:
 - /buff
@@ -29,4 +28,5 @@ powers:
 - /healing <playername>
 run: 3
 speech: You cannot shake hands with a clenched fist.
-trail: []
+trail: [
+  ]

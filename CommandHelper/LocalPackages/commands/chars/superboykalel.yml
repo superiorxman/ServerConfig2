@@ -18,7 +18,6 @@ permissions:
   superherocity:
   - weakto.kryptonite
   - -essentials.protect.damage.fall
-  - ch.alias.superboykalel
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -36,4 +35,5 @@ powers:
 - /jump <0-8>
 run: 8
 speech: Don't ever call me Superboy!
-trail: []
+trail: [
+  ]

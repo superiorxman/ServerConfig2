@@ -16,7 +16,6 @@ jump: 2
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.hephaestus
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -46,4 +45,5 @@ powers:
 - /flintsteel
 run: 2
 speech: I can repair anything!
-trail: []
+trail: [
+  ]

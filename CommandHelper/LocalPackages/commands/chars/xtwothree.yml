@@ -17,7 +17,6 @@ permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.xtwothree
 powers:
 - /buff
 - /carryplayer <player>
@@ -27,4 +26,5 @@ powers:
 - /haste <0-3>
 run: 2
 speech: This is your fault, everything I am is because of you!
-trail: []
+trail: [
+  ]

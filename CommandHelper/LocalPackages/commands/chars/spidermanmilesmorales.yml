@@ -21,7 +21,6 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.spidermanmilesmorales
   - ch.alias.web
   - ch.alias.invis
   - ch.alias.vis
@@ -45,4 +44,5 @@ powers:
   the invisible mob.
 run: 4
 speech: Just a kid from Brooklyn!
-trail: []
+trail: [
+  ]

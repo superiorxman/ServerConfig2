@@ -14,7 +14,6 @@ jump: 5
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.firestormraymondstein
   - worldedit.navigation.thru.command
   - ch.alias.transmute
   - ch.alias.carryplayer
@@ -37,4 +36,5 @@ powers:
 - Shoots nuclear blasts with bare hand
 run: 5
 speech: We are Ronnie Raymond and Martin Stein, together we're FIRESTORM.
-trail: []
+trail: [
+  ]

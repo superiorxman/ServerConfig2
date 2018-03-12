@@ -12,7 +12,6 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.demeter
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -35,4 +34,5 @@ powers:
 - /fly
 run: 3
 speech: Goddess of the harvest.
-trail: []
+trail: [
+  ]

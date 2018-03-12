@@ -17,7 +17,6 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.athena
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -32,4 +31,5 @@ powers:
 - /feed
 run: 3
 speech: Wisdom is the key to battle
-trail: []
+trail: [
+  ]

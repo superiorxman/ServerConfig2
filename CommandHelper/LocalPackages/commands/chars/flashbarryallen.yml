@@ -33,7 +33,6 @@ permissions:
   - ch.alias.carryplayer
   - essentials.tppos
   - essentials.warps.speedforce
-  - ch.alias.flashbarryallen
   - ch.alias.speedforcewhirlwind
   - powers.cloneself
   - ch.alias.invis
@@ -64,4 +63,5 @@ powers:
 - /timeremnant (Creates a clone of you.)
 run: 9
 speech: I am Barry Allen!
-trail: []
+trail: [
+  ]

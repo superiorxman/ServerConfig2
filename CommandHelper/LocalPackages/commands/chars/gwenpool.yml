@@ -14,8 +14,8 @@ costumes:
 haste: 2
 jump: 3
 permissions:
-  superherocity:
-  - ch.alias.gwenpool
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-3>
@@ -23,4 +23,5 @@ powers:
 - /haste <0-2>
 run: 3
 speech: Hey <plr>, thanks for choosing your friendly neighborhood GWENPOOL!
-trail: []
+trail: [
+  ]

@@ -14,7 +14,6 @@ jump: 3
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.hawkgirl
   - -essentials.protect.damage.fall
   - essentials.fly
   - ch.alias.carryplayer
@@ -26,4 +25,5 @@ powers:
 - /carryplayer <playername>
 - /dismountplayer
 speech: We carry justice on our wings!
-trail: []
+trail: [
+  ]

@@ -21,7 +21,6 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - -essentials.protect.damage.fall
-  - ch.alias.mewtwo
   - essentials.fly
 powers:
 - /buff
@@ -37,4 +36,5 @@ powers:
 - /confuse <player>
 run: 2
 speech: I am the ALL POWERFUL!
-trail: []
+trail: [
+  ]

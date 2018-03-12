@@ -9,8 +9,8 @@ costumes:
 haste: 1
 jump: 2
 permissions:
-  superherocity:
-  - ch.alias.lebronjamesmiamiheat
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-2>
@@ -18,4 +18,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: I am the KING!
-trail: []
+trail: [
+  ]

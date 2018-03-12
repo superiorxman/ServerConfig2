@@ -18,7 +18,6 @@ permissions:
   superherocity:
   - ch.alias.stopmindcontrol
   - ch.alias.mindcontrol
-  - ch.alias.poisonivy
 powers:
 - /buff
 - /mindcontrol <playername>
@@ -26,4 +25,5 @@ powers:
 - /haste <0-4>
 - /jump <0-4>
 speech: I am one with the plants
-trail: []
+trail: [
+  ]

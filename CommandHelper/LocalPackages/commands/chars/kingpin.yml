@@ -12,7 +12,6 @@ jump: 1
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.kingpin
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -24,4 +23,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: Wilson Fisk is my name.. On the streets the call me the KING-PIN!
-trail: []
+trail: [
+  ]

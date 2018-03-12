@@ -23,7 +23,6 @@ permissions:
   superherocity:
   - ch.alias.hyenas
   - powers.immunity.poison
-  - ch.alias.harleyquinn
 powers:
 - /buff
 - /hyenas
@@ -32,4 +31,5 @@ powers:
 - /poisonimmunity
 run: 1
 speech: Oh that's cute...
-trail: []
+trail: [
+  ]

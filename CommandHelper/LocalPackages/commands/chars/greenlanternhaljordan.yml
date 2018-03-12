@@ -15,7 +15,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.greenlanternhaljordan
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -34,6 +33,7 @@ powers:
 - /herotransform
 run: 3
 speech: In the brightest day, in the blackest night, no evil shall escape my sight.
-trail: []
+trail: [
+  ]
 transformations:
 - haljordan

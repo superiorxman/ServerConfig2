@@ -13,7 +13,6 @@ permissions:
   - ch.alias.iron
   - powers.stealiron
   - -essentials.protect.damage.fall
-  - ch.alias.magneto
   - ch.alias.ma
   - essentials.speed.fly
   - essentials.speed
@@ -31,4 +30,5 @@ powers:
 - /iron
 run: 1
 speech: Well let's just say I'm Frankenstein's monster...
-trail: []
+trail: [
+  ]

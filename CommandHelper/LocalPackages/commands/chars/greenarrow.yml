@@ -41,7 +41,6 @@ maxHearts: 20
 permissions:
   superherocity:
   - ch.alias.arrowspectral
-  - ch.alias.greenarrow
   - ch.alias.arrow
   - ch.alias.arrowstrongregen
   - ch.alias.arrowlongregen
@@ -89,4 +88,5 @@ powers:
 - /arrow luck
 run: 3
 speech: You have failed this city!
-trail: []
+trail: [
+  ]

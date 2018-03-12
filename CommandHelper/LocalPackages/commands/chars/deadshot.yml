@@ -20,8 +20,8 @@ haste: 1
 jump: 1
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.deadshot
+  superherocity: [
+    ]
 powers:
 - /buff
 - /run <0-1>
@@ -29,4 +29,5 @@ powers:
 - /haste <0-1>
 run: 1
 speech: Another day for Killing.
-trail: []
+trail: [
+  ]

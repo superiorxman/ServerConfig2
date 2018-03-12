@@ -21,7 +21,6 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.slingweb
   - -essentials.protect.damage.fall
-  - ch.alias.spiderwomancindymoon
   - ch.alias.web
 powers:
 - /buff
@@ -41,4 +40,5 @@ powers:
   the invisible mob.
 run: 4
 speech: Has anyone seen Peteee- uh I mean Spider-Man?
-trail: []
+trail: [
+  ]

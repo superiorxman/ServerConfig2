@@ -18,7 +18,6 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.msmarvelcaroldanvers
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -34,4 +33,5 @@ powers:
 - /carryplayer <playername>
 run: 8
 speech: MISS MARVEL, FUCK YOU SHAZAM YOU RUINED ME!
-trail: []
+trail: [
+  ]

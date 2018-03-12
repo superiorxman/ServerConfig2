@@ -27,7 +27,6 @@ permissions:
   - ch.alias.dismountplayer
   - essentials.warps.speedforce
   - essentials.tppos
-  - ch.alias.zoom
 powers:
 - /buff
 - /jump <0-3>
@@ -45,4 +44,5 @@ powers:
 - /haste <0-4>
 run: 9
 speech: Zoom!
-trail: []
+trail: [
+  ]

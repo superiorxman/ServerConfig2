@@ -13,7 +13,6 @@ permissions:
   superherocity:
   - ch.alias.websling
   - -essentials.protect.damage.fall
-  - ch.alias.erenjaeger
   - ch.alias.grow
   - ch.alias.normalsize
 powers:
@@ -23,4 +22,5 @@ powers:
 - With an empty hand, right click the air and you will use your 3D maneuver gear.
   You can use it to swing around the city!
 speech: What is the point if those with the means and power do not fight?
-trail: []
+trail: [
+  ]

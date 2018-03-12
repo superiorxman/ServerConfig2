@@ -11,11 +11,12 @@ haste: 2
 jump: 1
 maxHearts: 20
 permissions:
-  superherocity:
-  - ch.alias.johncena
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-1>
 - /haste <0-2>
 speech: You can't see me!
-trail: []
+trail: [
+  ]

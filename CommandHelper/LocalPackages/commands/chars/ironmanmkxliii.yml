@@ -20,7 +20,6 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.hulkbuster
-  - ch.alias.ironmanmkxliii
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -37,4 +36,5 @@ powers:
 - /fly
 run: 3
 speech: It's time to suit up again!
-trail: []
+trail: [
+  ]

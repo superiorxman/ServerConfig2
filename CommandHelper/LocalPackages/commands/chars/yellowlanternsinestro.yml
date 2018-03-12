@@ -15,7 +15,6 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.yellowlanternsinestro
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -32,4 +31,5 @@ powers:
 - /fly
 run: 3
 speech: I am Sinestro! I'm evil or some shit i dont fuckin know
-trail: []
+trail: [
+  ]

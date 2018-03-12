@@ -21,7 +21,6 @@ permissions:
   - ch.alias.invis
   - essentials.fly
   - ch.alias.hulkbuster
-  - ch.alias.ironmanmkxv
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
@@ -36,4 +35,5 @@ powers:
 - /invis
 run: 6
 speech: It's time to suit up again, this time in STEALTH!
-trail: []
+trail: [
+  ]

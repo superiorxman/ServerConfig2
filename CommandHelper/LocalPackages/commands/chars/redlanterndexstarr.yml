@@ -16,7 +16,6 @@ jump: 5
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.redlanterndexstarr
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -29,4 +28,5 @@ powers:
 - /fly
 run: 4
 speech: MEEEEOWWWW!
-trail: []
+trail: [
+  ]

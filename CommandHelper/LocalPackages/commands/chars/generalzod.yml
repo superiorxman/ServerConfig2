@@ -21,7 +21,6 @@ permissions:
   - weakto.kryptonite
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.generalzod
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
   - essentials.fly
@@ -38,4 +37,5 @@ powers:
 - /fly
 run: 9
 speech: I am evil superman or some shit idk!
-trail: []
+trail: [
+  ]

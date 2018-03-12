@@ -11,8 +11,8 @@ costumes:
 haste: 1
 jump: 3
 permissions:
-  superherocity:
-  - ch.alias.robin
+  superherocity: [
+    ]
 powers:
 - /buff
 - /jump <0-3>
@@ -20,4 +20,5 @@ powers:
 - /haste <0-1>
 run: 2
 speech: Holy strawberries Batman, we're in a jam!
-trail: []
+trail: [
+  ]

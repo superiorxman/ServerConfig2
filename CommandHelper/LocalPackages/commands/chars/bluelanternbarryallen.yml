@@ -31,7 +31,6 @@ permissions:
   - ch.alias.carryplayer
   - essentials.tppos
   - essentials.warps.speedforce
-  - ch.alias.bluelanternbarryallen
 powers:
 - /buff
 - /warp speedforce
@@ -52,4 +51,5 @@ powers:
 - /fly
 run: 9
 speech: I am Barry Allen! And i will bring hope to our world!
-trail: []
+trail: [
+  ]

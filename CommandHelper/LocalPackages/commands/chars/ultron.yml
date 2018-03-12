@@ -20,7 +20,6 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
-  - ch.alias.ultron
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -35,4 +34,5 @@ powers:
 - /fly
 run: 4
 speech: You're all puppets, tangled in strings
-trail: []
+trail: [
+  ]

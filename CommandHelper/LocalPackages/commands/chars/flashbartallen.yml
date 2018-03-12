@@ -21,7 +21,6 @@ permissions:
   superherocity:
   - powers.wallrun
   - essentials.tppos
-  - ch.alias.flashbartallen
   - ch.alias.speedforceteleport
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
@@ -43,4 +42,5 @@ powers:
 - Look Up+Jump+Crouch to perform a wallrun.
 run: 9
 speech: I am Bart Allen!
-trail: []
+trail: [
+  ]

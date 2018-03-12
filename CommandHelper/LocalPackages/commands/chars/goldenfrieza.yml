@@ -20,7 +20,6 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - powers.wallrun
-  - ch.alias.goldenfrieza
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -37,4 +36,5 @@ powers:
 - /dismountplayer
 run: 9
 speech: You thought you destroyed me!?!
-trail: []
+trail: [
+  ]

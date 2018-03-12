@@ -14,7 +14,6 @@ permissions:
   superherocity:
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
-  - ch.alias.terra
   - ch.alias.earth
   - essentials.fly
   - powers.herotransform
@@ -30,6 +29,7 @@ powers:
 - /herotransform
 run: 1
 speech: My name is Terra... And I have done horrible things.
-trail: []
+trail: [
+  ]
 transformations:
 - taramarkov

@@ -12,7 +12,6 @@ maxHearts: 20
 permissions:
   superherocity:
   - weakto.magicarrow
-  - ch.alias.doctorfatekentnelson
   - ch.alias.create
   - headdb.open
   - headdb.category.*
@@ -25,4 +24,5 @@ powers:
 - /create <item> <quantity> <color>
 - /headdb
 speech: I am Kent Nelson, a.k.a. Doctor Fate.
-trail: []
+trail: [
+  ]

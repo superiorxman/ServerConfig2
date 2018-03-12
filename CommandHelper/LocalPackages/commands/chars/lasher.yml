@@ -13,7 +13,6 @@ haste: 4
 jump: 7
 permissions:
   superherocity:
-  - ch.alias.lasher
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
@@ -39,4 +38,5 @@ powers:
   the invisible mob.
 run: 5
 speech: I am Lasher!
-trail: []
+trail: [
+  ]

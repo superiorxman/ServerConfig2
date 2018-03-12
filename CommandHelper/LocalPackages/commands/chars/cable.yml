@@ -14,7 +14,6 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.bodyslide
-  - ch.alias.cable
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.tppos
@@ -29,4 +28,5 @@ powers:
 - /bodyslide
 run: 3
 speech: We are NOT retreating! It's victory or death!
-trail: []
+trail: [
+  ]
