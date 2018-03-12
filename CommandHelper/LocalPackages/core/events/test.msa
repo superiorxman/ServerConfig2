@@ -8,13 +8,9 @@ nametransfer:/nametransfer = >>>
         queue_push(closure(console('processing '.@filename)))
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
         @hero = yml_decode(@contents)   
-
-        if(array_index_exists(@hero,'sig')){
-            array_remove(@hero,'sig')
-        }
         
-        if(array_index_exists(@hero,'val')){
-            array_remove(@hero,'val')
+        if(array_index_exists(@hero,'op')){
+            array_remove(@hero,'op')
         }
 
         write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')

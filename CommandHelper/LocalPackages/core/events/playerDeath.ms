@@ -9,6 +9,10 @@ bind('player_death', null, null, @event){
         die()
     }
 
+    if(array_index_exists(@event,'killer') && has_permission(@event['killer'],'is.op')){
+        die()
+    }
+
     @world = pworld()
    
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
