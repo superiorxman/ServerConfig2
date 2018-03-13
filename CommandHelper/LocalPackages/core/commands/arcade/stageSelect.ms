@@ -55,12 +55,10 @@ register_command('goworld',
                     broadcast(color('BLUE').@hero['costumes'][0]['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
                         msg(color('RED').'Turn the autobuff off after you die using '.color('GREEN').'/autobuff off'.color('RED').' .')
-                        msg(color('RED').'Your hunger will never be full on this server, '.color('GREEN').'to prevent regeneration'.color('RED').' .')
                         msg(color('RED').'Some characters have multiple costumes! Try '.color('GREEN').'/costumes'.color('RED').' !')
                         msg(color('RED').'Make your powers clickable with '.color('GREEN').'/powertool'.color('RED').' !')
                         msg(color('RED').'See your character skin with '.color('GREEN').'/dvs'.color('RED').' !')
                         msg(color('RED').'Regain health using '.color('GREEN').'/rest'.color('RED').' !')
-                        msg(color('RED').'Exit back to the arcade with '.color('GREEN').'/exitgame'.color('RED').' !')
                         msg(color('RED').'Go somewhere else with '.color('GREEN').'/stageselect'.color('RED').' !')
                         msg(color('RED').'Select a new character using '.color('GREEN').'/mainmenu'.color('RED').' !')
                         msg(color('RED').'Check out your '.color('GREEN').'/powers'.color('RED').' !')
