@@ -25,7 +25,7 @@ register_command('makelore',
             @item = pinv(@sender, null)
             @item['meta'] = array('lore': '')
             @item['meta']['lore'] = @lore
-            set_pinv(array('null': @item))
+            set_pinv(array(null: @item))
 
         }
     )
@@ -47,7 +47,7 @@ register_command('addtolore',
             }else{
                 @item['meta'] = array('lore': array(@lore))
             }
-            set_pinv(array('null': @item))
+            set_pinv(array(null: @item))
 
         }
     )

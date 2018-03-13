@@ -49,6 +49,11 @@ register_command('mindcontrol',
                 die()
             }
 
+            if(sk_region_check_flag(ploc(@vic),'invincible',@plr) == true){
+                tmsg(@player,color('RED').'Sorry, they are in a protected area.')
+                die()
+            }
+
             @id = get_claim_id(ploc(@vic))
             if(@id != null){
                 msg(color('RED').'Sorry, that person is in a minigame or other protected area')

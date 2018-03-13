@@ -1,0 +1,20 @@
+watershot:
+    icon: diamond_axe:171
+    actions:
+      cast:
+      - class: PlayEffects
+        effects: laser
+      - class: Damage
+    effects:
+        laser:
+        - class: EffectSingle
+          effectlib:
+              class: LineEffect
+              particle: redstone
+              color: 0000ff
+              particles: 10
+    parameters:
+        cooldown: 500
+        range: 50
+        allow_max_range: true
+        damage: 15

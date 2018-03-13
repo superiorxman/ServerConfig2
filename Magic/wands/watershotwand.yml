@@ -1,0 +1,15 @@
+watershotwand:
+  spell_inventory:
+    watershot: 0
+  active_spell: watershot
+  name: Water Shot
+  spells:
+  - watershot
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

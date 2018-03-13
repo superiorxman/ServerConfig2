@@ -1,0 +1,20 @@
+warbeam:
+    icon: diamond_axe:171
+    actions:
+      cast:
+      - class: PlayEffects
+        effects: laser
+      - class: Damage
+    effects:
+        laser:
+        - class: EffectSingle
+          effectlib:
+              class: LineEffect
+              particle: redstone
+              color: ff0000
+              particles: 10
+    parameters:
+        cooldown: 500
+        range: 50
+        allow_max_range: true
+        damage: 12

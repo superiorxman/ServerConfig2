@@ -1,0 +1,15 @@
+warlockblastwand:
+  spell_inventory:
+    warlockblast: 0
+  active_spell: warlockblast
+  name: Warlock Blast
+  spells:
+  - warlockblast
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

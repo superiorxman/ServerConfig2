@@ -21,7 +21,7 @@ register_command('transmute',
             @player = player()
             @items = pinv(@player,null)
             try(
-                set_pinv(array('null': array('type': 0)))
+                set_pinv(array(null: array('type': 0)))
                 runas('~console',"/minecraft:give ".@player." ".@block." ".@items['qty']." ".@color)
             ,
                 tmsg(@player,color('RED')."Make sure to hold the item that you want to transmute")

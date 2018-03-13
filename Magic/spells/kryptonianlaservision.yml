@@ -1,25 +1,47 @@
 kryptonianlaservision:
     icon: diamond_axe:171
+    actions:
+      cast:
+      - class: Repeat
+        actions:
+        - class: Retarget
+          actions:
+          - class: PlayEffects
+            effects: laser
+          - class: Damage
+          #- class: BreakBlock
+        - class: Delay
+          delay: 50
     effects:
-        cast:
+        laser:
         - class: EffectSingle
           source_location: eyes
-          source_yaw_offset: 0.1
           effectlib:
              class: LineEffect
              particle: redstone
-             duration: 500
+             iterations: 2
              color: ff0000
+             relativeOffset: 0.2,0,-0.15
+             particles: 10
         - class: EffectSingle
           source_location: eyes
-          source_yaw_offset: -0.1
           effectlib:
              class: LineEffect
              particle: redstone
-             duration: 500
+             iterations: 2
              color: ff0000
+             relativeOffset: 0.2,0,0.15
+             particles: 10
     parameters:
-        cooldown: 500
+        hitbox: true
+        hitbox_size: 2
+        cooldown: 50
+        repeat: 1
         range: 50
         allow_max_range: true
-        damage: 12
+        damage: 4
+        undo_speed: 1
+        undo: 1000
+        destructible: solid
+        destructible_durability: 100
+        break_durability: 4

@@ -1,0 +1,15 @@
+webshotwand:
+  spell_inventory:
+    webshot: 0
+  active_spell: webshot
+  name: Web Shot
+  spells:
+  - webshot
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

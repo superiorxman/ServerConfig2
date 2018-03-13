@@ -1,0 +1,23 @@
+webshot:
+    icon: diamond_axe:171
+    actions:
+      cast:
+      - class: PlayEffects
+        effects: laser
+      - class: Damage
+      - class: PotionEffect
+    effects:
+        laser:
+        - class: EffectSingle
+          effectlib:
+              class: LineEffect
+              particle: redstone
+              color: ffffff
+              particles: 10
+    parameters:
+        cooldown: 8000
+        range: 50
+        allow_max_range: true
+        damage: 1
+        duration: 7000
+        effect_slow: 100

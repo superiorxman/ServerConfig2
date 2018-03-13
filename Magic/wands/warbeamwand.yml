@@ -1,0 +1,15 @@
+warbeamwand:
+  spell_inventory:
+    warbeam: 0
+  active_spell: warbeam
+  name: War Beam
+  spells:
+  - warbeam
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

@@ -99,6 +99,13 @@ register_command('herotransform',
                     queue_push(closure(runas(@player,'/buff')))
                 }
 
+                if(array_index_exists(@hero,'maxHearts')){
+                    queue_push(closure(set_attribute(@puuid,'maxHealth',(@hero['maxHearts'] * 2))))
+                    queue_push(closure(set_phealth(@sender,(@hero['maxHearts'] * 2))))
+                }else{
+                    queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
+                }
+
                 
                 if(array_index_exists(@newHero,'silentTransformMessage') && @newHero['silentTransformMessage'] == true){
                     queue_push(closure(msg(color('RED').'You changed your name to '.@newHero['costumes'][0]['name'])))
