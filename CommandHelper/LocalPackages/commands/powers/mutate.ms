@@ -60,7 +60,7 @@ register_command('mutate',
                 @vicHero = @hero
             }catch(Exception @e){
                 @vicHero = array()
-                @vicHero['chat'][0]['name'] = @vic
+                @vicHero['costumes'][0]['name'] = @vic
             }
 
             set_timeout(30000,closure(
@@ -82,7 +82,7 @@ register_command('mutate',
                 @hero['costumes'][0]['name'] = @plr
             }
             @plrHero = @hero
-            broadcast(color('LIGHT_PURPLE').color('BOLD').'POOF'.color('YELLOW').color('BOLD').'! '.@plrHero['chat'][0]['name'].color('GREEN').color('BOLD').' has changed '.color('WHITE').@vicHero['chat'][0]['name'].color('GREEN').color('BOLD').' into a deformed, freaky mutant!');
+            broadcast(color('LIGHT_PURPLE').color('BOLD').'POOF'.color('YELLOW').color('BOLD').'! '.@plrHero['costumes'][0]['name'].color('GREEN').color('BOLD').' has changed '.color('WHITE').@vicHero['costumes'][0]['name'].color('GREEN').color('BOLD').' into a deformed, freaky mutant!');
 
             msg(color('RED').'You mutated '.@vic)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')

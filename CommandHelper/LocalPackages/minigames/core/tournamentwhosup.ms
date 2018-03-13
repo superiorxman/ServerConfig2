@@ -91,7 +91,7 @@ register_command('tournamentwhosup',
                                 die()
                             }
                             @player1 = json_decode(@response2['body'])
-                            @player1Name = @player1['participant']['chat'][0]['name']
+                            @player1Name = @player1['participant']['costumes'][0]['name']
                             @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'/participants/'.@player2ID.'.json'
                             http_request(@url, array(
                                 'method': 'GET',
@@ -112,7 +112,7 @@ register_command('tournamentwhosup',
                                         die()
                                     }
                                     @player2 = json_decode(@response3['body'])
-                                    @player2Name = @player2['participant']['chat'][0]['name']
+                                    @player2Name = @player2['participant']['costumes'][0]['name']
                                     export(@plr."lastUsedTournamentMatch", time() / 1000)
                                     msg(color('RED').'That match will be '.@player1Name.' vs. '.@player2Name)
                                 }

@@ -1808,3 +1808,37 @@ NullPointerException (Unknown cause)
 	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:497)
 ----------------------------------------------------------------------------------------------
 
+
+------------------------------------[ 12.03.2018 18:58:17 ]-----------------------------------
+ChatControl 7.8.0 encountered a InvalidConfigurationException
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_161
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.3, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3349-, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, SuperTrailsPro vv1.0.3, PowerNBT v0.8.9.2, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.1, CrackShotPlus v1.68, AsyncWorldEdit v3.5.1, EssentialsProtect vTeamCity, EssentialsGeoIP vTeamCity, EditableSign v3.3.0, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Vault v1.6.6-b${env.TRAVIS_BUILD_NUMBER}, xInventories v2.5, EssentialsSpawn vTeamCity, PerPlayerBlood v2.6, WorldEdit v6.1.9-SNAPSHOT;3733-52263ac, Parties v2.2.12, ChatControl v7.8.0, HeadDatabase v4.2.0, WorldGuard v6.2.2-SNAPSHOT;1713-d2c52f7, MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, Magic v7.3-SNAPSHOT-5125c
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error reloading ChatControl 7.8.0
+InvalidConfigurationException while parsing a block mapping
+ in 'string', line 147, column 5:
+        global: 
+        ^
+expected <block end>, but found Scalar
+ in 'string', line 153, column 5:
+        |- 
+        ^
+
+	 at org.bukkit.configuration.file.YamlConfiguration.loadFromString(YamlConfiguration.java:55)
+	 at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:162)
+	 at org.bukkit.configuration.file.FileConfiguration.load(FileConfiguration.java:130)
+	 at me.kangarko.chatcontrol.final. .af.native(SourceFile:126)
+	 at me.kangarko.chatcontrol.final. .ag.native(SourceFile:165)
+	 at me.kangarko.chatcontrol.final. .bB.native(SourceFile:72)
+	 at me.kangarko.chatcontrol.final. .ag.const(SourceFile:63)
+	 at me.kangarko.chatcontrol.final. .coM4.throw(SourceFile:454)
+	 at me.kangarko.chatcontrol.final. .coM4.goto(SourceFile:426)
+	 at me.kangarko.chatcontrol.final. .case.const(SourceFile:408)
+	 at me.kangarko.chatcontrol.final. .auX.onCommand(SourceFile:57)
+	 at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44)
+	 at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:151)
+	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:677)
+----------------------------------------------------------------------------------------------
+

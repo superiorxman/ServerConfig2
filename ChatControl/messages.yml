@@ -140,11 +140,36 @@ Death_Messages:
 Broadcaster:
   Enabled: true
   Mode: 0
-  Prefix: '&8[&2Tip&8]&2'
+  Prefix: ''
   Suffix: ''
   Delay_Seconds: 180
   Messages:
     global:
-    - '&cRemember to use &a/reportglitch <description> &cto report server issues!
-      Please read &a/listglitches &cfirst to prevent reporting something already reported!'
+    - "&b ----------------------------------------------------\n
+&cRemember to use &a/reportglitch <description> &cto report server issues!\n
+&cPlease read &a/listglitches &cfirst to prevent reporting something already reported!\n
+&b----------------------------------------------------"
+    - "&b ----------------------------------------------------\n
+&cDiscord: &ahttps://discord.gg/86CDDh4\n
+&b----------------------------------------------------"
+    - "&b ----------------------------------------------------\n
+&7Handy Stuff:\n
+&a/recipe&7\n
+&a/co i&7 &f<-- &alets you see who griefed\n
+&a/home &f<&aplayername&f>&a: &f<-- dont forget the &a:&7\n
+&a/who&7\n
+&e&lhttps://discord.gg/86CDDh4\n
+&b----------------------------------------------------"
+    - "&b ----------------------------------------------------\n
+&7We now beg for irl money: &ahttps://goo.gl/BmxAqv&7\n
+&b----------------------------------------------------"
+    - "&b ----------------------------------------------------\n
+&7This server supports &aall canon &7(&4&lnot &4fanfic&7) &7characters&7\n
+&7It is &lFEATS ONLY&7, meaning NO WIKIS OR FANSITES.\n
+&7Only stuff that's &lACTUALLY&7 been shown in a comic, game,\n
+&7TV, Movie, or other authorized merch.\n
+&7Interpretation can still be up for debate.\n
+&7&lONLY PICS OR VIDS COUNT AS PROOF!\n
+&b----------------------------------------------------"
   Sound: none
+  

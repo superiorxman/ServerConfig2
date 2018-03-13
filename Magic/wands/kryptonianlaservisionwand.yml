@@ -1,0 +1,15 @@
+kryptonianlaservisionwand:
+  spell_inventory:
+    kryptonianlaservision: 0
+  active_spell: kryptonianlaservision
+  name: Kryptonian Laser Vision
+  spells:
+  - kryptonianlaservision
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

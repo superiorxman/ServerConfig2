@@ -73,7 +73,7 @@ bind('player_chat', null, null, @e) {
                 foreach(@understandable in @oHero['canUnderstand']){
                     if(@understandable == @class){
                         set_timeout(50,closure(
-                            tmsg(@plr,@oHero['chat'][0]['name'].color('RED').' says: '.@orignalMsg)
+                            tmsg(@plr,@oHero['costumes'][0]['name'].color('RED').' says: '.@orignalMsg)
                         ))
                     }
                 }

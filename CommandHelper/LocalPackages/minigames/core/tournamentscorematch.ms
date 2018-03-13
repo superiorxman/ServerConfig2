@@ -175,7 +175,7 @@ register_command('tournamentmatchwinner',
                                                             die()
                                                         }
                                                         @player1 = json_decode(@response5['body'])
-                                                        @player1Name = @player1['participant']['chat'][0]['name']
+                                                        @player1Name = @player1['participant']['costumes'][0]['name']
                                                         @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'/participants/'.@player2ID.'.json'
                                                         http_request(@url, array(
                                                             'method': 'GET',
@@ -197,7 +197,7 @@ register_command('tournamentmatchwinner',
                                                                 }
                                                                 export(@plr."lastUsedTournamentMatchWinner", time() / 1000)
                                                                 @player2 = json_decode(@response6['body'])
-                                                                @player2Name = @player2['participant']['chat'][0]['name']
+                                                                @player2Name = @player2['participant']['costumes'][0]['name']
                                                                 broadcast(@matchWinner.color('RED').color('BOLD').' won the last match! The next match will be '.color('WHITE').@player1Name.color('RED').color('BOLD')' vs. '.color('WHITE').@player2Name)
                                                             }
                                                         ))

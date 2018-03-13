@@ -89,7 +89,7 @@ register_command('mindcontrol',
             @markerUUID = spawn_entity('VILLAGER',1,@ploc)[0]
             @puuid = puuid(@player)
             if(@markerUUID != null){
-                runas('~console',"/disguiseplayer ".@markerUUID.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@pHero['sig'].'","name":"textures","value":"'.@pHero['val'].'"}]}')
+                runas('~console',"/disguiseplayer ".@markerUUID.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@pHero['costumes'][0]['sig'].'","name":"textures","value":"'.@pHero['costumes'][0]['val'].'"}]}')
                 set_mob_name(@markerUUID,@player)
                 export(@player.'mindControlEntityID',@markerUUID)
                 // forward all damage to villager to mindcontroller at 10x the amount
@@ -144,7 +144,7 @@ register_command('mindcontrol',
 
             runas('~console','/pex user '.@player.' group set '.@vClass)
             if(array_index_exists(@vHero,'sig')){
-                runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['sig'].'","name":"textures","value":"'.@vHero['val'].'"}]}')
+                runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['costumes'][0]['sig'].'","name":"textures","value":"'.@vHero['costumes'][0]['val'].'"}]}')
             }else{
                 sudo('/disguise player '.@vic)
             }

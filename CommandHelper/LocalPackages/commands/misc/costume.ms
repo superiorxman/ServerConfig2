@@ -38,27 +38,49 @@ register_command('setcostume',
                     return()
                 }
 
+                
+
                 export(@player.'skinNum',@skinNum)
                 if(@skinNum == 1){
+                    if(!array_index_exists(@hero['costumes'][0],'info')){
+                        @hero['costumes'][0]['info'] = color('WHITE').' #1'
+                    }else{
+                        @hero['costumes'][0]['info'] = color('WHITE').' #1. ('.@hero['costumes'][0]['info'].color('WHITE').')'
+                    }
                     @sig = @hero['costumes'][0]['sig']
                     @val = @hero['costumes'][0]['val']
                     @niceName = replace(@hero['costumes'][0]['name'],'§','&')
                     runas('~console','/pex group #'.@class.' prefix "'.@niceName.'"')
                     runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][0]['chatcolor'].'"')
-                    tmsg(@sender,color('RED').'Name and set!')
+
+                    
+
+                    tmsg(@sender,color('RED').'Costume is now set to '.@hero['costumes'][0]['info'])
+                    broadcast(@sender.' '.color('GRAY').'switched costumes into '.@hero['costumes'][0]['name'].@hero['costumes'][0]['info'])
                 }else{
                     @skinNum = @skinNum - 1
+                    if(!array_index_exists(@hero['costumes'][@skinNum],'name')){
+                        @hero['costumes'][@skinNum]['name'] = @hero['costumes'][0]['name']
+                    }
+
+                    if(!array_index_exists(@hero['costumes'][@skinNum],'info')){
+                        @hero['costumes'][@skinNum]['info'] = color('WHITE').' #'.(@skinNum + 1)
+                    }else{
+                        @hero['costumes'][@skinNum]['info'] = color('WHITE').' #'.(@skinNum + 1).'. ('.@hero['costumes'][@skinNum]['info'].color('WHITE').')'
+                    }
                     @sig = @hero['costumes'][@skinNum]['sig']
                     @val = @hero['costumes'][@skinNum]['val']
-                    if(array_index_exists(@hero['costumes'][@skinNum],'name')){
+                    if(array_index_exists(@hero['costumes'][@skinNum],'chatcolor')){
                         @niceName = replace(@hero['costumes'][@skinNum]['name'],'§','&')
                         runas('~console','/pex group #'.@class.' prefix "'.@niceName.'"')
                         runas('~console','/pex group #'.@class.' suffix "'.@hero['costumes'][@skinNum]['chatcolor'].'"')
-                        tmsg(@sender,color('RED').'Name and skin set!')
+                        tmsg(@sender,color('RED').'Costume is now set to '.@hero['costumes'][@skinNum]['info'])
+                        broadcast(@sender.' '.color('GRAY').'switched costumes into '.@hero['costumes'][@skinNum]['name'].@hero['costumes'][@skinNum]['info'])
                     }else{
                         tmsg(@sender,color('GREEN').'Skin Changed Successfully!')
                         tmsg(@sender,color('DARK_RED').color('BOLD').'Warning: '.color('RED').'Each skin should have a matching colored name, but this one is missing!')
                         tmsg(@sender,color('GOLD').'Ask someone to make it for you!')
+                        broadcast(@sender.' '.color('GRAY').'switched costumes into '.@hero['costumes'][@skinNum]['name'].@hero['costumes'][@skinNum]['info'])
                     }
                 }
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')

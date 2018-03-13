@@ -118,7 +118,7 @@ register_command('tournamentstart',
                                                 die()
                                             }
                                             @player1 = json_decode(@response2['body'])
-                                            @player1Name = @player1['participant']['chat'][0]['name']
+                                            @player1Name = @player1['participant']['costumes'][0]['name']
                                             @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'/participants/'.@player2ID.'.json'
                                             http_request(@url, array(
                                                 'method': 'GET',
@@ -139,7 +139,7 @@ register_command('tournamentstart',
                                                         die()
                                                     }
                                                     @player2 = json_decode(@response3['body'])
-                                                    @player2Name = @player2['participant']['chat'][0]['name']
+                                                    @player2Name = @player2['participant']['costumes'][0]['name']
                                                     broadcast(color('RED').color('BOLD').'The first match will be '.color('WHITE').@player1Name.color('RED').color('BOLD')' vs. '.color('WHITE').@player2Name)
                                                 }
                                             ))

@@ -17,22 +17,27 @@ register_command('costumes',
             }
 
 
-            @numExtraSkins = -1
+            @numSkins
 
             foreach(@costume in @hero['costumes']){
                 if(array_index_exists(@costume,'sig')){
-                    @numExtraSkins++
+                    @numSkins++
                 }
             }
-
-            if(@numExtraSkins > 0){
-                tmsg(@sender,color('RED').'You have '.color('GREEN').@numExtraSkins.color('RED').' extra costume(s)!')
-                for(@i = 2, @i <= @numExtraSkins + 1, @i++){
-                    tmsg(@sender,color('RED').'/setcostume '.@i)
+            tmsg(@sender,color('RED').'You have '.color('GREEN').@numSkins.color('RED').' costume(s)!')
+            @i = 1
+            foreach(@cost in @hero['costumes']){
+                if(!array_index_exists(@cost,'name')){
+                    @cost['name'] = @hero['costumes'][0]['name']
                 }
-            }else{
-                tmsg(@sender,color('RED').'Sorry, this character doesn\'t have any extra skins :(')
-                tmsg(@sender,color('RED').'(but you can add some if you want, anyone can! Just take a hero making class, they are held every weekend, but can be held any time upon request.)')
+                if(!array_index_exists(@cost,'info')){
+                    @cost['info'] = ''
+                }else{
+                    @cost['info'] = color('WHITE').' ('.color('WHITE').@cost['info'].color('WHITE').')'
+                }
+
+                tmsg(@sender,color('RED').'/setcostume '.color('GREEN').@i.color('WHITE').' - '.@cost['name'].@cost['info'])
+                @i++
             }
         }
     )

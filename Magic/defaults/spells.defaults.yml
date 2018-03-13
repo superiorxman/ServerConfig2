@@ -106,6 +106,7 @@ default:
          particle_offset_y: 0.1
          particle_offset_z: 0.1
          sound: magic.shimmer_quiet
+       headshot: hit
        cast_self: cast
        no_target: cast
        no_action: cast
@@ -1630,11 +1631,25 @@ blast:
         -  class: EffectSingle
            sound: magic.shimmer
            location: target
-           effectlib:
-               class: AtomEffect
-               particleNucleus: smoke_large
-               particleOrbital: redstone
-               iterations: 8
+        undo_block:
+        - location: target
+          use_block_location: true
+          effectlib:
+            class: Modified
+            period: 2
+            iterations: 8
+            parameters:
+              radius: "(1 - (t / i)) * 5 + 0.2"
+              particles: "(t / i) * 40"
+            effect:
+              class: Sphere
+              particle: block_crack
+              yOffset: 0
+              offset: 0,0.7,0
+              particleCount: 4
+              particleOffsetX: 0.1
+              particleOffsetY: 0.1
+              particleOffsetZ: 0.1
     parameters:
         velocity: 2000
         allow_max_range: false
@@ -1758,44 +1773,35 @@ blind:
              class: ConeEffect
              iterations: 15
              particle: smoke_normal
-             lengthGrow: 0.01
+             lengthGrow: 0.05
+             radiusGrow: 0.002
+             particleCount: 4
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
         tick:
         - location: target
           particle: smoke_normal
+          particle_count: 20
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
         hit:
         -  class: EffectSingle
            location: target
-           color: 2E2E2E
-           firework: ball
-        -  class: EffectSingle
-           location: target
            use_hit_location: false
            requires_entity_target: true
+           sound: magic.shimmer
            effectlib:
-             class: SphereEffect
-             iterations: 17
-             period: 4
-             particle: smoke_normal
-             radius: 0.5
-             particles: 20
-        headshot:
-        -  class: EffectSingle
-           location: target
-           color: 2E2E2E
-           firework: ball
-        -  class: EffectSingle
-           location: target
-           use_hit_location: false
-           requires_entity_target: true
-           effectlib:
-             class: SphereEffect
-             iterations: 30
-             period: 4
-             particle: smoke_normal
-             radius: 0.75
-             particles: 30
-    costs:
-        mana: 45
+             class: Modified
+             effect:
+               class: SphereEffect
+               particle: smoke_normal
+               particleCount: 5
+             duration: $duration
+             parameters:
+               particles: "select(t - 10, t * 5, 50, select(t - i + 10, 50, 50, abs(t - i) * 5))"
+               radius: "select(t - 10, (10 - t) * 0.3 + 0.5, 0.5, select(t - i + 10, 0.5, 0.5, (t - i + 10) * 0.3 + 0.5))"
     headshot_parameters:
       duration_multiplier: 3
     parameters:
@@ -1808,6 +1814,8 @@ blind:
         cooldown: 10000
         effect_blindness: 5
         hitbox: true
+    costs:
+        mana: 45
 
 blink:
     icon: diamond_axe:134
@@ -3138,11 +3146,25 @@ collapse:
         -  class: EffectSingle
            sound: magic.shimmer
            location: target
-           effectlib:
-               class: AtomEffect
-               particleNucleus: smoke_large
-               particleOrbital: redstone
-               iterations: 8
+        undo_block:
+        - location: target
+          use_block_location: true
+          effectlib:
+            class: Modified
+            period: 2
+            iterations: 8
+            parameters:
+              radius: "(1 - (t / i)) * 5 + 0.2"
+              particles: "(t / i) * 40"
+            effect:
+              class: Sphere
+              particle: block_crack
+              yOffset: 0
+              offset: 0,0.7,0
+              particleCount: 4
+              particleOffsetX: 0.1
+              particleOffsetY: 0.1
+              particleOffsetZ: 0.1
     parameters:
         velocity: 1500
         allow_max_range: false
@@ -4616,33 +4638,48 @@ familiar:
     icon_disabled: diamond_hoe:63
     icon_url: http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
     category: elemental
-    class: FamiliarSpell
     worth: 100
-    entity_types:
-        chicken: 30
-        cow: 100
-        pig: 100
-        mushroom_cow: 15
-        bat: 15
-        horse: 5
-        snowman: 5
-        iron_golem: 2
+    actions:
+      cast:
+      - class: SpawnEntity
     effects:
         cast:
         -  class: EffectSingle
            sound: entity_villager_yes
            effectlib:
-             class: DnaEffect
-             particleHelix: drip_lava
-             iterations: 24
-             particleBase1: drip_water
+             class: Modified
+             iterations: 40
+             parameters:
+               radius: "(t / i) * 3 + 0.1"
+             effect:
+               class: DnaEffect
+               grow: 0.1
+               particlesHelix: 5
+               length: 50
+               particleHelix: drip_water
+               particleBase1: drip_water
+               particleBase2: drip_water
         -  class: EffectSingle
            location: target
            effectlib:
-             class: AtomEffect
-             iterations: 32
-             particleNucleus: drip_water
+              class: Modified
+              iterations: 32
+              parameters:
+                radius: "(t / i) * 4 + 1"
+              effect:
+               class: AtomEffect
+               particleNucleus: drip_water
+               particleOrbital: drip_water
     parameters:
+        entity_types:
+            chicken: 30
+            cow: 100
+            pig: 100
+            mushroom_cow: 15
+            bat: 15
+            horse: 5
+            snowman: 5
+            iron_golem: 2
         target_type: LivingEntity
         allow_max_range: false
         cooldown: 30000
@@ -4651,42 +4688,64 @@ familiar:
         loot: false
     costs:
         mana: 20
-
 farm:
     icon: diamond_axe:68
     icon_disabled: diamond_hoe:68
     icon_url: http://textures.minecraft.net/texture/5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5
     category: elemental
-    class: FamiliarSpell
     worth: 300
-    entity_types:
-        chicken: 30
-        cow: 100
-        pig: 100
-        mushroom_cow: 15
-        horse: 5
+    actions:
+      cast:
+        - class: Repeat
+          actions:
+          - class: Spread
+            actions:
+            - class: SpawnEntity
+            - class: PlayEffects
+              effects: spawned
     effects:
         cast:
         -  class: EffectSingle
            sound: entity_sheep_ambient
            effectlib:
-             class: DnaEffect
-             particleHelix: drip_lava
-             iterations: 24
-             particleBase1: drip_water
+             class: Modified
+             iterations: 60
+             parameters:
+               radius: "(t / i) * 5 + 0.1"
+             effect:
+               class: DnaEffect
+               grow: 0.1
+               particlesHelix: 5
+               length: 50
+               particleHelix: drip_water
+               particleBase1: drip_water
+               particleBase2: drip_water
+        spawned:
         -  class: EffectSingle
            location: target
            effectlib:
-             class: AtomEffect
-             iterations: 32
-             particleNucleus: drip_water
+              class: Modified
+              iterations: 32
+              parameters:
+                radius: "(t / i) * 4 + 1"
+              effect:
+               class: AtomEffect
+               particleNucleus: drip_water
+               particleOrbital: drip_water
     parameters:
         target_type: LivingEntity
         allow_max_range: false
         range: 64
-        count: 10
+        repeat: 10
         cooldown: 45000
         undo: 30000
+        radius: 24
+        entity_types:
+            chicken: 30
+            cow: 100
+            pig: 100
+            mushroom_cow: 15
+            horse: 5
     costs:
         mana: 50
 
@@ -4825,28 +4884,23 @@ fireball:
         -  class: Projectile
     effects:
         cast:
-        -  class: EffectSingle
-           effectlib:
-             class: ConeEffect
-             iterations: 15
-             particle: lava
-             lengthGrow: 0.4
-           sound: magic.burn
-           sound_volume: 1
-           sound_pitch: -.25
+        - sound: magic.burn
+          sound_volume: 1
+          sound_pitch: -.25
         projectile:
-        -  class: EffectSingle
-           location: origin
-           effectlib:
-             class: SmokeEffect
-             iterations: 4
-             period: 5
+        - class: EffectSingle
+          location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
              particle: lava
         hit:
-        -  class: EffectSingle
-           location: target
-           color: FE642E
-           firework: ball
+        - class: EffectSingle
+          location: target
+          color: FE642E
+          firework: ball
     parameters:
         projectile: LargeFireball
         fire: false
@@ -4928,11 +4982,23 @@ flare:
     upgrade_required_casts: 50
     actions:
         cast:
-        -  class: Firework
+        - class: CustomProjectile
+          actions:
+          - class: Firework
+          miss:
+          - class: Firework
     effects:
         cast:
-        -  class: EffectSingle
-           sound: entity_firework_launch
+        - sound: entity_firework_launch
+        tick:
+        - location: target
+          particle: fireworks_spark
+          particle_count: 8
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        - location: target
+          particle: redstone
     parameters:
         target_type: LivingEntity
         allow_max_range: true
@@ -4940,19 +5006,26 @@ flare:
         ticks_flown: 2
         expected_lifespan: 1
         cooldown: 2000
+        miss_effects: hit
     costs:
         mana: 10
 
 flare|2:
   effects:
-    cast:
-    -  class: EffectRing
-       location: target
-       firework: star
-       radius: 8
-       target_offset: 0,4,0
-       size: 6
-
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: Firework
+          miss:
+          - class: Firework
+    hit:
+    - class: EffectRing
+      location: target
+      firework: star
+      radius: 8
+      target_offset: 0,4,0
+      size: 6
 flashbang:
     icon: diamond_axe:58
     icon_disabled: diamond_hoe:58
@@ -5041,8 +5114,13 @@ fling:
            sound: entity_enderdragon_flap
            sound_volume: 1
            effectlib:
-             class: TraceEffect
+             class: Trace
              iterations: 30
+             particleOffsetX: 1
+             particleOffsetY: 1
+             particleOffsetZ: 1
+             particleCount: 10
+             speed: 2
              particle: spell
         land:
         -  sound: block_stone_step
@@ -8273,20 +8351,36 @@ mob:
             - class: SpawnEntity
               set_target: true
             - class: Aggro
+            - class: PlayEffects
+              effects: spawned
     effects:
         cast:
         -  class: EffectSingle
            effectlib:
-             class: DnaEffect
-             particleHelix: drip_lava
-             iterations: 24
-             particleBase1: drip_water
+             class: Modified
+             iterations: 60
+             parameters:
+               radius: "(t / i) * 5 + 0.1"
+             effect:
+               class: DnaEffect
+               grow: 0.1
+               particlesHelix: 5
+               length: 50
+               particleHelix: drip_lava
+               particleBase1: drip_lava
+               particleBase2: drip_lava
+        spawned:
         -  class: EffectSingle
            location: target
            effectlib:
-             class: AtomEffect
-             iterations: 32
-             particleNucleus: drip_water
+              class: Modified
+              iterations: 32
+              parameters:
+                radius: "(t / i) * 5 + 1"
+              effect:
+               class: AtomEffect
+               particleNucleus: drip_lava
+               particleOrbital: drip_lava
     parameters:
         entity_types:
             zombie: 100
@@ -8347,16 +8441,29 @@ monster:
         -  class: EffectSingle
            sound: entity_ghast_warn
            effectlib:
-             class: DnaEffect
-             particleHelix: drip_lava
-             iterations: 24
-             particleBase1: drip_water
+             class: Modified
+             iterations: 40
+             parameters:
+               radius: "(t / i) * 3 + 0.1"
+             effect:
+               class: DnaEffect
+               grow: 0.1
+               particlesHelix: 5
+               length: 50
+               particleHelix: drip_lava
+               particleBase1: drip_lava
+               particleBase2: drip_lava
         -  class: EffectSingle
            location: target
            effectlib:
-             class: AtomEffect
-             iterations: 32
-             particleNucleus: drip_water
+              class: Modified
+              iterations: 32
+              parameters:
+                radius: "(t / i) * 4 + 1"
+              effect:
+               class: AtomEffect
+               particleNucleus: drip_lava
+               particleOrbital: drip_lava
     parameters:
         target_type: LivingEntity
         allow_max_range: false
@@ -8914,6 +9021,10 @@ peek:
            sound: block_fire_extinguish
         -  class: EffectTrail
            particle: block_crack
+           particle_count: 20
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
     parameters:
         target: block
         allow_max_range: false
@@ -9426,29 +9537,26 @@ poison:
           particle_count: 4
           particle_offset_x: 0.5
           particle_offset_z: 0.5
-          particle_offset_y: 0
+          particle_offset_y: 0.5
         hit:
         -  class: EffectSingle
            location: target
-           color: 088A08
-           firework: ball
-        -  class: EffectSingle
-           location: target
            requires_entity_target: true
+           target_location: body
            effectlib:
-             class: WarpEffect
-             particle: slime
-             iterations: 1
-        -  class: EffectSingle
-           location: target
-           requires_entity_target: true
-           effectlib:
-             class: SphereEffect
-             iterations: 60
-             period: .1
-             particle: slime
-             radius: .75
-             particles: 20
+             class: Modified
+             duration: $duration
+             parameters:
+              radius: "sin(t/10)*1.5 + 0.1"
+             effect:
+               class: SphereEffect
+               period: 0.1
+               particle: slime
+               particles: 10
+               particleCount: 10
+               particleOffsetX: 0.1
+               particleOffsetY: 0.1
+               particleOffsetZ: 0.1
     costs:
         mana: 50
     parameters:
@@ -9846,29 +9954,55 @@ pull:
     earns_sp: 4
     actions:
         cast:
-        -  class: Velocity
-        -  class: FallProtection
-        alternate_down:
         - class: Velocity
-          fov: 3
-          range: 16
-          count: 16
+        - class: FallProtection
+        alternate_down:
+        - class: ChangeContext
+          target_caster: true
+          actions:
+          - class: Repeat
+            repeat: 2
+            actions:
+            - class: AreaOfEffect
+              radius: 12
+              actions:
+              - class: Velocity
+                push: -1
+                living_entity_speed: 1
+              - class: FallProtection
+              - class: Delay
+                delay: 200
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_fire_extinguish
-        -  class: EffectTrail
-           particle: spell
-           reverse: true
-           length: 16
-           particle_count: 6
+        - class: EffectSingle
+          sound: block_fire_extinguish
+        - class: EffectTrail
+          particle: spell
+          reverse: true
+          length: 16
+          particle_count: 20
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        - location: target
+          effectlib:
+            class: Sphere
+            particle: spell
+            particles: 20
+            iterations: 20
+            particleCount: 5
+            particleOffsetX: 0.5
+            particleOffsetY: 0.5
+            particleOffsetZ: 0.5
+            radius: 1.5
         alternate_down:
-        -  class: EffectSingle
-           sound: block_fire_extinguish
-           effectlib:
+        - class: EffectSingle
+          sound: block_fire_extinguish
+          effectlib:
              class: HelixEffect
              particle: spell
              iterations: 2
+             offset: 0, -1.6, 0
     parameters:
         target_type: Entity
         range: 48
@@ -9903,30 +10037,60 @@ push:
             - class: VelocityAction
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_fire_extinguish
-           sound_volume: 1
-           sound_pitch: -0.1
-           location: origin
-           effectlib:
-             class: DnaEffect
-             particlesBase: 0
-             particlesHelix: 7
-             particleHelix: spell
-             particleBase1: spell
-             particleBase2: spell
-             iterations: 10
+        - class: EffectSingle
+          sound: block_fire_extinguish
+          sound_volume: 1
+          sound_pitch: -0.1
+          location: origin
+          effectlib:
+               class: Modified
+               iterations: 20
+               parameters:
+                radius: "(t/i) * 4 + 0.2"
+               effect:
+                 class: DnaEffect
+                 particlesBase: 0
+                 particlesHelix: 7
+                 particleHelix: spell
+                 particleBase1: spell
+                 particleBase2: spell
+        - location: target
+          effectlib:
+            class: Sphere
+            particle: spell
+            particles: 5
+            iterations: 20
+            particleCount: 10
+            particleOffsetX: 0.5
+            particleOffsetY: 0.5
+            particleOffsetZ: 0.5
+            radius: 1.5
         iterate:
-        -  class: EffectSingle
-           location: origin
-           effectlib:
-             class: DnaEffect
-             particlesBase: 0
-             particlesHelix: 7
-             particleHelix: spell
-             particleBase1: spell
-             particleBase2: spell
-             iterations: 4
+        - class: EffectSingle
+          location: origin
+          effectlib:
+               class: Modified
+               iterations: 10
+               parameters:
+                radius: "(t/i) * 4 + 0.2"
+               effect:
+                 class: DnaEffect
+                 particlesBase: 0
+                 particlesHelix: 7
+                 particleHelix: spell
+                 particleBase1: spell
+                 particleBase2: spell
+        - location: target
+          effectlib:
+            class: Sphere
+            particle: spell
+            particles: 5
+            iterations: 20
+            particleCount: 10
+            particleOffsetX: 0.5
+            particleOffsetY: 0.5
+            particleOffsetZ: 0.5
+            radius: 1.5
     parameters:
         target_type: Entity
         range: 8
@@ -9967,7 +10131,21 @@ push|4:
             radius: 8
             actions:
             - class: Velocity
-              push: 1
+              direction: 0,1,0
+              living_entity_speed: 0.2
+          - class: Delay
+            delay: 100
+          - class: Repeat
+            repeat: 2
+            actions:
+            - class: AreaOfEffect
+              radius: 12
+              actions:
+              - class: Velocity
+                push: 1
+                living_entity_speed: 1
+              - class: Delay
+                delay: 200
     effects:
         alternate_down:
         -  class: EffectSingle
@@ -9979,6 +10157,7 @@ push|4:
              class: HelixEffect
              iterations: 1
              particle: spell
+             offset: 0, -1.6, 0
     parameters:
         living_entity_speed: 0.75
         range: 16
@@ -10344,6 +10523,14 @@ reflect:
         -  class: EffectSingle
            sound: magic.shield_boom
            location: origin
+        -  location: target
+           target_location: block
+           effectlib:
+             class: SphereEffect
+             particle: block_crack
+             radius: $radius
+             duration: 500
+             offset: 0.5,0.5,0.5
     parameters:
         allow_max_range: true
         range: 3
@@ -10543,6 +10730,11 @@ rocket:
            sound_pitch: 0.1
            sound_volume: 0.5
            location: origin
+           particle: explosion_large
+           particle_count: 50
+           particle_offset_x: 3
+           particle_offset_y: 3
+           particle_offset_z: 3
     parameters:
         target: self
         launch: true
@@ -12360,9 +12552,9 @@ stun:
            location: origin
            color_override: color
            effectlib:
-             class: SmokeEffect
+             class: Sphere
              iterations: 16
-             particle: spell
+             particle: redstone
     parameters:
         target_type: Damageable
         radius: 4
@@ -13743,10 +13935,13 @@ tracking:
            sound: magic.zap
            location: origin
         -  class: EffectSingle
-           location: target
            effectlib:
-               class: LineEffect
-               particle: redstone
+             class: LineEffect
+             particle: redstone
+             particleCount: 5
+             particleOffsetX: 0.1
+             particleOffsetY: 0.1
+             particleOffsetZ: 0.1
     parameters:
         range: 32
         fov: 3
@@ -14862,6 +15057,15 @@ workbench:
         cast:
         -  class: EffectSingle
            sound: block_piston_extend
+           effectlib:
+            class: WarpEffect
+            particle: block_crack
+            material: workbench
+            duration: 1000
+            particleCount: 10
+            particleOffsetX: 1
+            particleOffsetZ: 1
+            particleOffsetY: 1
     parameters:
         target: none
         cooldown: 5000

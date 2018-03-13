@@ -1,0 +1,25 @@
+kryptonianlaservision:
+    icon: diamond_axe:171
+    effects:
+        cast:
+        - class: EffectSingle
+          source_location: eyes
+          source_yaw_offset: 0.1
+          effectlib:
+             class: LineEffect
+             particle: redstone
+             duration: 500
+             color: ff0000
+        - class: EffectSingle
+          source_location: eyes
+          source_yaw_offset: -0.1
+          effectlib:
+             class: LineEffect
+             particle: redstone
+             duration: 500
+             color: ff0000
+    parameters:
+        cooldown: 500
+        range: 50
+        allow_max_range: true
+        damage: 12

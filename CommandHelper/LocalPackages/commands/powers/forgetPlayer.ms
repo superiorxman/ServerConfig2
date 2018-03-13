@@ -83,7 +83,7 @@ register_command('forget',
                 export('forgottenHeroes',@existingForgottenHeroes)
             ))
 
-            broadcast(@plrHero['chat'][0]['name'].color('RED').' throws '.@vicHero['chat'][0]['name'].color('RED').' into The Overvoid! Their memory fades from existence...')
+            broadcast(@plrHero['costumes'][0]['name'].color('RED').' throws '.@vicHero['costumes'][0]['name'].color('RED').' into The Overvoid! Their memory fades from existence...')
                 
         }
     )
