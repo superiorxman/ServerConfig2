@@ -17,7 +17,7 @@ register_command('costumes',
             }
 
 
-            @numSkins
+            @numSkins = 0
 
             foreach(@costume in @hero['costumes']){
                 if(array_index_exists(@costume,'sig')){

@@ -9,7 +9,7 @@ bind('player_death', null, null, @event){
         die()
     }
 
-    if(array_index_exists(@event,'killer') && has_permission(@event['killer'],'is.op')){
+    if(array_index_exists(@event,'killer') && @event['killer'] != null && has_permission(@event['killer'],'is.op')){
         die()
     }
 

@@ -10,7 +10,7 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0NjQ3NjI4NTA5NjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkxNTc5MGU3MThmN2VmYjA5YTk1Yzc3ZjNiMTkyYjVlN2ZlMzMxMjFlMjhkMmM3MTJiOWZjYWRiMzc2ZmNhMyJ9fX0=
 haste: 1
 jump: 7
-maxHearts: 30
+maxHearts: 20
 permissions:
   superherocity:
   - ch.alias.forcepush
@@ -23,8 +23,6 @@ powers:
 - /haste <0-1>
 - /forcepush <playername>
 - /forcechoke <playername>
-- When you punch a player empty handed, your victim is struck by lightning (force
-  lightning)
 run: 4
 speech: Let the hate flow through you.
 trail: [

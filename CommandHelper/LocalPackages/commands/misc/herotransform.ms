@@ -99,9 +99,10 @@ register_command('herotransform',
                     queue_push(closure(runas(@player,'/buff')))
                 }
 
-                if(array_index_exists(@hero,'maxHearts')){
-                    queue_push(closure(set_attribute(@puuid,'maxHealth',(@hero['maxHearts'] * 2))))
-                    queue_push(closure(set_phealth(@sender,(@hero['maxHearts'] * 2))))
+                @puuid = puuid(@player)
+                if(array_index_exists(@newHero,'maxHearts')){
+                    queue_push(closure(set_attribute(@puuid,'maxHealth',(@newHero['maxHearts'] * 2))))
+                    queue_push(closure(set_phealth(@sender,(@newHero['maxHearts'] * 2))))
                 }else{
                     queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
                 }

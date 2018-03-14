@@ -216,16 +216,47 @@ admission:
         - class: Door
     effects:
         cast:
-        -  class: EffectSingle
-           sound: magic.shimmer
-        -  class: EffectTrail
-           particle: redstone
-           color: FFFF00
-           particle_data: 2
-           particle_count: 5
+        - sound: magic.shimmer
+        - class: EffectTrail
+          particle: redstone
+          color: false
+          particle_data: 2
+          particle_count: 20
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        - class: EffectSingle
+          location: target
+          sound: magic.bonk
+          sound_volume: 0.5
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            edgeLength: "max(1, (t / i) * 5 - 2)"
+           effect:
+             class: CubeEffect
+             particle: redstone
+             speed: 2
+             enableRotation: false
+             offset: 0.5,0.5,0.5
+        no_target:
+        - sound: magic.shimmer
+        - class: EffectTrail
+          particle: redstone
+          color: false
+          particle_data: 2
+          particle_count: 10
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
     parameters:
         range: 16
         radius: 3
+        allow_max_range: true
         destructible: unlocked_doors
         transparent: transparent_to_construction
         undo: 8000
@@ -1375,6 +1406,41 @@ arrowrain:
         cast:
         -  class: EffectSingle
            sound: entity_arrow_shoot
+           pitch: 0.8
+        -  class: EffectSingle
+           sound: entity_arrow_shoot
+           pitch: 0.5
+        -  class: EffectSingle
+           sound: entity_arrow_shoot
+           pitch: 1.2
+        hit:
+        - location: target
+          effectlib:
+            class: Modified
+            period: 2
+            iterations: 10
+            parameters:
+                radius: "(t / i) * 3"
+                particleOffsetY: "(t / i) * 2"
+            effect:
+                class: Shield
+                particles: 20
+                particleCount: 10
+                particleOffsetX: 0.5
+                particleOffsetZ: 0.5
+                particle: water_drop
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 5
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: water_drop
     parameters:
         target: none
         projectile: TippedArrow
@@ -1847,29 +1913,58 @@ blink:
           source_location: eyes
           effectlib:
              class: AtomEffect
-             particleNucleus: dragon_breath
+             particleNucleus: fireworks_spark
              particleOrbital: redstone
-             iterations: 8
+             iterations: 16
              offset: 0,-1,0
+        - class: EffectSingle
+          location: target
+          source_location: body
+          color_override: colorNucleus
+          effectlib:
+             class: AtomEffect
+             particleNucleus: redstone
+             particleOrbital: fireworks_spark
+             iterations: 8
         precast:
          - class: EffectSingle
            sound: magic.teleport
            location: origin
            particle_override: particleNucleus
            color_override: colorOrbital
-           source_location: eyes
+           source_location: body
            effectlib:
                class: AtomEffect
                updateLocations: false
-               particleNucleus: dragon_breath
+               particleNucleus: fireworks_spark
                particleOrbital: redstone
+               iterations: 16
+         - class: EffectSingle
+           location: origin
+           source_location: body
+           color_override: colorNucleus
+           effectlib:
+               class: AtomEffect
+               updateLocations: false
+               particleNucleus: redstone
+               particleOrbital: fireworks_spark
                iterations: 8
-               offset: 0,-1,0
          - class: EffectSingle
            color_override: color
            effectlib:
                class: LineEffect
                particle: redstone
+               updateLocations: false
+               particles: 200
+         - class: EffectSingle
+           effectlib:
+               class: LineEffect
+               particle: fireworks_spark
+               particles: 50
+               particleCount: 5
+               particleOffsetX: 0.5
+               particleOffsetY: 0.5
+               particleOffsetZ: 0.5
                updateLocations: false
     parameters:
         target: block
@@ -1957,11 +2052,20 @@ blob:
         tick:
         -  location: target
            particle: block_crack
+           particle_count: 20
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
         hit:
         -  location: target
            effectlib:
              class: SphereEffect
              particle: block_crack
+             particleCount: 20
+             particles: 20
+             particleOffsetX: 0.3
+             particleOffsetY: 0.3
+             particleOffsetZ: 0.3
              radius: $radius
              duration: 2000
     parameters:
@@ -3006,25 +3110,43 @@ chop:
     upgrade_required_casts: 30
     actions:
         cast:
-        - class: Recurse
+        - class: ArmorStandProjectile
           actions:
-          - class: Drop
+          - class: Recurse
+            actions:
+            - class: Drop
     effects:
         cast:
         -  class: EffectSingle
            sound: block_wood_step
-        -  class: EffectTrail
-           particle: block_crack
-           material: log
+        projectile:
+        - location: origin
+          material: log
+          effectlib:
+             class: Sphere
+             duration: 5000
+             period: 2
+             particles: 2
+             particle: block_crack
+             particleCount: 3
+             particleOffsetX: 0.1
+             particleOffsetY: 0.1
+             particleOffsetZ: 0.1
     parameters:
+        velocity: 10
+        right_arm_item: iron_axe
         bypass_undo: true
-        allow_max_range: false
+        allow_max_range: true
         range: 32
         faces: all
         recursion_depth: 64
         drop_count: 8
         destructible: trees
         cooldown: 5000
+        right_arm_transform:
+            x: 0
+            y: "6.28*sin(2*t)"
+            z: 0
     costs:
         mana: 80
 
@@ -3505,19 +3627,20 @@ cure:
         - class: EffectSingle
           sound: magic.shimmer
           location: target
-          particle_override: particleOrbital
+          source_location: body
           effectlib:
-             class: AtomEffect
-             particleNucleus: heart
-             particleOrbital: crit
-             iterations: 5
-        -  class: EffectSingle
-           location: target
-           use_hit_location: false
-           effectlib:
-             class: LoveEffect
-             iterations: 5
+             class: Modified
+             iterations: 40
              period: 2
+             parameters:
+                 radius: "(t/i) * 3 + 0.5"
+                 radiusNucleus: "(t/i) * 0.5 + 0.4"
+             effect:
+                 class: AtomEffect
+                 particleNucleus: heart
+                 particleOrbital: crit
+                 particlesNucleus: 1
+                 particlesOrbital: 30
     parameters:
         bypass_mage_cooldown: true
         target_type: LivingEntity
@@ -3609,6 +3732,12 @@ curse:
         - particle: redstone
           color: 380B61
           location: target
+        - particle: smoke_normal
+          particle_count: 10
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+          location: target
         hit:
         -  class: EffectSingle
            location: target
@@ -3622,17 +3751,31 @@ curse:
              iterations: 16
              particle: spell_mob
              color: 210B61
-        -  class: EffectSingle
-           location: target
-           requires_entity_target: true
+        hit_entity:
+        -  location: target
+           source_location: body
+           effectlib:
+             class: Modified
+             duration: $duration
+             parameters:
+                 radius: "1.5 * sin(t) + 0.5"
+             effect:
+                 class: SphereEffect
+                 particle: spell_mob
+                 color: 210B61
+                 particles: 20
+        -  location: target
+           source_location: body
            effectlib:
              class: SphereEffect
-             iterations: 45
-             period: .1
-             particle: spell_mob
-             color: 210B61
-             radius: 1
-             particles: 20
+             iterations: 4
+             particle: villager_happy
+             radius: 0.8
+             particles: 2
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
     costs:
         mana: 50
     parameters:
@@ -4533,6 +4676,26 @@ entangle:
            sound: magic.crack
         -  class: EffectTrail
            particle: block_crack
+           particle_count: 25
+           particle_offset_x: 0.25
+           particle_offset_y: 0.25
+           particle_offset_z: 0.25
+        -  location: target
+           effectlib:
+             class: Modified
+             duration: $undo
+             parameters:
+               size: "(1 - (t / i)) * 2 + 1.2"
+             effect:
+               class: AnimatedBall
+               particle: block_crack
+               particles: 50
+               particleCount: 5
+               particleOffsetX: 0.05
+               particleOffsetY: 0.05
+               particleOffsetZ: 0.05
+               yFactor: 0.2
+
     parameters:
         target: other
         target_type: LivingEntity
@@ -4888,8 +5051,7 @@ fireball:
           sound_volume: 1
           sound_pitch: -.25
         projectile:
-        - class: EffectSingle
-          location: origin
+        - location: origin
           effectlib:
              class: Sphere
              iterations: 10
@@ -4938,6 +5100,8 @@ flamethrower:
     category: combat
     worth: 250
     earns_sp: 4
+    upgrade_required_path: student
+    upgrade_required_casts: 50
     actions:
         cast:
         -  class: Line
@@ -4952,15 +5116,28 @@ flamethrower:
            sound: magic.burn
            effectlib:
              class: DragonEffect
-             iterations: 20
-             length: 16
+             iterations: 10
+             length: $size
              stepsPerIteration: 1
+             particles: 10
+             particleCount: 20
+             particleOffsetX: 0.3
+             particleOffsetY: 0.3
+             particleOffsetZ: 0.3
+             relativeOffset: 2,0,0
+        iterate:
+        - location: target
+          particle: lava
+          particle_count: 8
+          particle_offset_x: 0.5
+          particle_offset_z: 0.5
+          particle_offset_y: 0.2
     parameters:
         target_type: LivingEntity
         transparent: transparent_to_construction
         allow_max_range: true
         range: 32
-        size: 8
+        size: 6
         reverse: false
         require_blocks: true
         undo: 5000
@@ -4970,6 +5147,17 @@ flamethrower:
     costs:
         mana: 100
 
+flamethrower|2:
+  parameters:
+    size: 8
+
+flamethrower|3:
+  parameters:
+    size: 12
+
+flamethrower|4:
+  parameters:
+    size: 16
 flare:
     icon: diamond_axe:148
     icon_disabled: diamond_hoe:148
@@ -6376,8 +6564,19 @@ grenade:
         -  class: TNT
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_lava_pop
+        - class: EffectSingle
+          sound: block_lava_pop
+        projectile:
+        - location: origin
+          effectlib:
+            class: Modified
+            iterations: 60
+            parameters:
+              size: "max(1, (t / i) * 5 - 2)"
+            effect:
+              class: AnimatedBall
+              particle: smoke_large
+              xFactor: 2
     parameters:
         target: none
         allow_max_range: true
@@ -6407,12 +6606,14 @@ grow:
     earns_sp: 8
     actions:
       cast:
-      - class: GrowEntity
+      - class: CustomProjectile
+        actions:
+        - class: GrowEntity
     effects:
         cast:
         -  class: EffectSingle
            sound: entity_endermen_teleport
-           sound_pitch: 0.1
+           sound_pitch: 1.5
            sound_volume: 0.5
            location: origin
            effectlib:
@@ -6420,26 +6621,27 @@ grow:
              iterations: 11
              particle: spell_instant
              lengthGrow: 0.32
-        -  class: EffectSingle
-           location: target
-           color: "81F7D8"
-           firework: ball_large
-        no_target:
-        -  class: EffectSingle
-           sound: entity_endermen_teleport
-           sound_pitch: 0.1
-           sound_volume: 0.5
-           location: origin
-           effectlib:
-             class: ConeEffect
-             iterations: 11
-             particle: spell_instant
-             lengthGrow: 0.32
-        -  class: EffectSingle
-           location: target
-           color: "FFFFFF"
-           firework: ball
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+        hit:
+        - class: EffectSingle
+          location: target
+          sound: entity_endermen_teleport
+          sound_pitch: 1.4
+          sound_volume: 0.8
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            radius: "max(1, (t / i) * 5 - 2)"
+           effect:
+             class: Sphere
+             particle: redstone
+             color: "C0F0C0"
     parameters:
+        velocity: 400
         target_type: LivingEntity
         target: other_entity
         allow_max_range: false
@@ -6559,13 +6761,16 @@ heal:
           location: target
           target_offset: 0,-2,0
           effectlib:
-            class: WarpEffect
-            duration: $total_duration
+            class: Modified
             period: 2
-            particle: heart
-            particles: 7
-            iterations: 40
-            radius: 1
+            duration: $total_duration
+            parameters:
+              radius: "(t/i) * 0.5 + 1"
+              rings: "(1 - (t/i)) * 11 + 1"
+            effect:
+              class: WarpEffect
+              particle: heart
+              particles: 7
         - class: EffectSingle
           target_offset: 0,-1.5,0
           effectlib:
@@ -6573,20 +6778,23 @@ heal:
             particle: heart
             duration: 5000
             particles: 10
-            period: 5
+            period: 20
         cast_self:
         - class: EffectSingle
           sound: magic.shimmer
           location: target
           target_offset: 0,-2,0
           effectlib:
-            class: WarpEffect
-            duration: $total_duration
+            class: Modified
             period: 2
-            particle: heart
-            particles: 7
-            iterations: 40
-            radius: 1
+            duration: $total_duration
+            parameters:
+              radius: "(t/i) * 0.5 + 1"
+              rings: "(1 - (t/i)) * 11 + 1"
+            effect:
+              class: WarpEffect
+              particle: heart
+              particles: 7
         cast_finish:
         -  class: EffectSingle
            custom_sound: magic.shimmer_quiet
@@ -6606,7 +6814,7 @@ heal:
         target_type: LivingEntity
         target: any_entity
         allow_max_range: false
-        range: 5
+        range: 8
         cooldown: 20000
         bypass_pvp: true
         bypass_friendly_fire: true
@@ -7206,6 +7414,22 @@ kill:
           location: target
           color: "00FF00"
           firework: ball_large
+        hit_entity:
+        - class: EffectSingle
+          location: target
+          target_offset: 0,3,0
+          effectlib:
+             class: Modified
+             iterations: 75
+             parameters:
+              size: "max(0, (t / i) * 5 - 3) + 0.2"
+             effect:
+               enableRotation: false
+               class: ColoredImageEffect
+               fileName: https://i.imgur.com/47aVrwT.gif
+               stepX: 1
+               stepY: 1
+               transparency: true
     parameters:
         target: none
         target_type: Damageable
@@ -7365,6 +7589,8 @@ lava:
     pvp_restricted: true
     worth: 250
     earns_sp: 5
+    upgrade_required_path: student
+    upgrade_required_casts: 50
     actions:
       cast:
       - class: DisablePhysics
@@ -7374,17 +7600,21 @@ lava:
         - class: Delay
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_lava_ambient
+        - class: EffectSingle
+          sound: block_lava_ambient
         iterate:
-        -  class: EffectSingle
-           particle: lava
+        - location: target
+          particle: lava
+          particle_count: 8
+          particle_offset_x: 0.5
+          particle_offset_z: 0.5
+          particle_offset_y: 0.2
     parameters:
         target_type: LivingEntity
         transparent: transparent_to_construction
         allow_max_range: true
-        range: 8
-        size: 8
+        range: 6
+        size: 6
         brush: stationary_lava
         increment_data: true
         undo: 200
@@ -7393,6 +7623,22 @@ lava:
         delay: 1
     costs:
         mana: 65
+
+lava|2:
+  parameters:
+    range: 8
+    size: 8
+
+lava|3:
+  parameters:
+    range: 12
+    size: 12
+
+lava|3:
+  parameters:
+    range: 16
+    size: 16
+
 
 ledger:
     icon: paper
@@ -7686,13 +7932,20 @@ lightning:
            sound: entity_firework_large_blast
         -  class: EffectTrail
            particle: smoke_normal
-           particle_count: 2
+           particle_count: 30
+           particle_offset_x: 0.3
+           particle_offset_y: 0.3
+           particle_offset_z: 0.3
         -  class: EffectSingle
            location: target
            effectlib:
              class: HelixEffect
-             particle: smoke_normal
-             iterations: 3
+             particle: smoke_large
+             iterations: 1
+             particleCount: 10
+             particleOffsetX: 1
+             particleOffsetY: 0.1
+             particleOffsetZ: 1
     parameters:
         target_type: LivingEntity
         allow_max_range: true
@@ -7730,18 +7983,74 @@ lockpick:
        - class: Lock
     effects:
         cast:
-        -  class: EffectSingle
-           sound: magic.shimmer
-           location: origin
-        -  class: EffectTrail
-           particle: smoke_normal
-           particle_data: 1
-           particle_count: 5
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.1
+          particle_offset_y: 0.2
+          particle_offset_z: 0.1
+        - class: EffectSingle
+          location: target
+          sound: magic.bonk
+          sound_volume: 0.5
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            edgeLength: "max(1, (t / i) * 5 - 2)"
+           effect:
+             class: CubeEffect
+             particle: redstone
+             color: "D0C0C0"
+             enableRotation: false
+             offset: 0.5,0.5,0.5
+        no_target:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.2
+          particle_offset_y: 0.4
+          particle_offset_z: 0.2
+        fail:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.2
+          particle_offset_y: 0.4
+          particle_offset_z: 0.2
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: CubeEffect
+           iterations: 2
+           particle: redstone
+           color: "660000"
+           edgeLength: 1
+           enableRotation: false
+           offset: 0.5,0.5,0.5
     parameters:
         bypass_build: true
         type: unlock
         override: true
         range: 8
+        loud: true
+        allow_max_range: true
         check_destructible: true
         destructible: containers
         cooldown: 10000
@@ -8161,6 +8470,10 @@ mine:
               duration: 1000
               particles: 15
               period: 1
+              particleCount: 4
+              particleOffsetX: 0.1
+              particleOffsetY: 0.1
+              particleOffsetZ: 0.1
         no_target:
         -  class: EffectSingle
            sound: vanish,1,0.5
@@ -9267,6 +9580,14 @@ phase:
              particleOffsetX: 0.9
              particleOffsetY: 2
              particleOffsetZ: 0.9
+        -  location: source
+           source_location: eyes
+           effectlib:
+             class: AnimatedBall
+             particle: redstone
+             color: "F000F0"
+             duration: 5000
+             yOffset: -0.5
         phase:
         - class: EffectSingle
           source_location: eyes
@@ -9294,6 +9615,14 @@ phase:
              particleOffsetX: 0.9
              particleOffsetY: 2
              particleOffsetZ: 0.9
+        -  location: target
+           source_location: eyes
+           effectlib:
+             class: AnimatedBall
+             particle: redstone
+             color: "F000F0"
+             duration: 5000
+             yOffset: -0.5
     parameters:
         warmup: 5000
         cancel_on_damage: 1
@@ -10725,10 +11054,12 @@ rocket:
         - class: Mount
     effects:
         cast:
-        -  class: EffectSingle
-           sound: entity_firework_launch
+        -  sound: entity_firework_launch
            sound_pitch: 0.1
-           sound_volume: 0.5
+           sound_volume: 1.2
+        -  sound: entity_generic_explode
+           sound_pitch: 0.4
+           sound_volume: 0.8
            location: origin
            particle: explosion_large
            particle_count: 50
@@ -10917,13 +11248,98 @@ secure:
        - class: Lock
     effects:
         cast:
-        -  class: EffectSingle
-           sound: magic.shimmer
-           location: origin
-        -  class: EffectTrail
-           particle: smoke_normal
-           particle_data: 1
-           particle_count: 5
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.1
+          particle_offset_y: 0.2
+          particle_offset_z: 0.1
+        - class: EffectSingle
+          location: target
+          sound: magic.hit
+          sound_volume: 0.5
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            edgeLength: "max(1, (1 - (t / i)) * 5 - 2)"
+           effect:
+             class: CubeEffect
+             particle: redstone
+             color: "C0C0C0"
+             enableRotation: false
+             offset: 0.5,0.5,0.5
+        no_target:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.2
+          particle_offset_y: 0.4
+          particle_offset_z: 0.2
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: CubeEffect
+           iterations: 2
+           particle: redstone
+           color: "660000"
+           edgeLength: 1
+           enableRotation: false
+           offset: 0.5,0.5,0.5
+        alternate_up:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            radius: "(1 - (t / i)) * 5"
+           effect:
+             class: Sphere
+             particle: redstone
+             color: "C0C0C0"
+        alternate_sneak:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: origin
+        - class: EffectTrail
+          particle: smoke_normal
+          particle_data: 0
+          particle_count: 8
+          particle_offset_x: 0.1
+          particle_offset_y: 0.2
+          particle_offset_z: 0.1
+        - class: EffectSingle
+          location: target
+          sound: magic.bonk
+          sound_volume: 0.5
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            edgeLength: "max(1, (t / i) * 5 - 2)"
+           effect:
+             class: CubeEffect
+             particle: redstone
+             color: "C0C0C0"
+             enableRotation: false
+             offset: 0.5,0.5,0.5
     alternate_up_parameters:
       type: key
     alternate_sneak_parameters:
@@ -10931,6 +11347,7 @@ secure:
     parameters:
         range: 8
         loud: true
+        allow_max_range: true
         transparent: air,attachable_wall
         check_destructible: true
         destructible: chest,trapped_chest
@@ -10942,7 +11359,6 @@ secure:
 secure|2:
     parameters:
         destructible: containers
-
 sellshop:
     icon: sulphur
     category: shop
@@ -10981,11 +11397,20 @@ shell:
         tick:
         -  location: target
            particle: block_crack
+           particle_count: 20
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
         hit:
         -  location: target
            effectlib:
              class: SphereEffect
              particle: block_crack
+             particleCount: 15
+             particles: 20
+             particleOffsetX: 0.3
+             particleOffsetY: 0.3
+             particleOffsetZ: 0.3
              radius: $radius
              duration: 2000
     parameters:
@@ -11650,7 +12075,9 @@ shrink:
     earns_sp: 8
     actions:
       cast:
-      - class: ShrinkEntity
+      - class: CustomProjectile
+        actions:
+        - class: ShrinkEntity
     effects:
         cast:
         -  class: EffectSingle
@@ -11663,26 +12090,27 @@ shrink:
              iterations: 11
              particle: spell_instant
              lengthGrow: 0.4
-        -  class: EffectSingle
-           location: target
-           color: "81F7D8"
-           firework: star
-        no_target:
-        -  class: EffectSingle
-           sound: entity_endermen_teleport
-           sound_pitch: 0.1
-           sound_volume: 0.5
-           location: origin
-           effectlib:
-             class: ConeEffect
-             iterations: 11
-             particle: spell_instant
-             lengthGrow: 0.4
-        -  class: EffectSingle
-           location: target
-           color: "FFFFFF"
-           firework: burst
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+        hit:
+        - class: EffectSingle
+          location: target
+          sound: entity_endermen_teleport
+          sound_pitch: 0.2
+          sound_volume: 0.8
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            radius: "max(1, (1 - (t / i)) * 5 - 2)"
+           effect:
+             class: Sphere
+             particle: redstone
+             color: "F0C0F0"
     parameters:
+        velocity: 500
         hitbox: true
         target_type: LivingEntity
         target: other_entity
@@ -12049,7 +12477,6 @@ smite:
         mana: 100
 
 snake:
-    inherit: false
     hidden: true
     icon: diamond_axe:16
     icon_disabled: diamond_hoe:16
@@ -13413,7 +13840,11 @@ tag:
         -  class: EffectSingle
            sound: block_fire_extinguish
         -  class: EffectTrail
-           particle: redstone
+           particle: crit
+           particle_count: 20
+           particle_offset_x: 0.1
+           particle_offset_y: 0.1
+           particle_offset_z: 0.1
         -  class: EffectSingle
            location: target
            target_offset: 0,3,0
@@ -13421,8 +13852,19 @@ tag:
            effectlib:
              class: TextEffect
              text: $target
-             iterations: 2
+             iterations: 10
+             period: 4
              particle: redstone
+        -  class: EffectSingle
+           location: target
+           target_offset: 0,3,0
+           effectlib:
+             class: TextEffect
+             text: $target
+             iterations: 5
+             period: 4
+             particleCount: 20
+             particle: fireworks_spark
     parameters:
         target_type: Player
         allow_max_range: false
@@ -13561,17 +14003,6 @@ testdummy:
         cast:
         -  class: EffectSingle
            sound: entity_villager_yes
-           effectlib:
-             class: DnaEffect
-             particleHelix: drip_lava
-             iterations: 24
-             particleBase1: drip_water
-        -  class: EffectSingle
-           location: target
-           effectlib:
-             class: AtomEffect
-             iterations: 32
-             particleNucleus: drip_water
     parameters:
         target: block
         track: false
@@ -13611,7 +14042,7 @@ throwsword:
                 duration: 30000
     parameters:
       velocity: 10
-      held_item: gold_sword:1
+      right_arm_item: gold_sword:1
       location_offset: 0,4,0
       armor_stand_invisible: true
       armor_stand_marker: true
@@ -14929,12 +15360,41 @@ wither:
             - class: PotionEffect
     effects:
         cast:
-        -  class: EffectSingle
-           sound: entity_wither_shoot
+        - sound: entity_wither_shoot
+          sound_pitch: 0.9
+        projectile:
+        - class: EffectSingle
+          location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particle: redstone
+             color: "010101"
+        hit:
+        - location: target
+          sound: entity_wither_break_block
+          sound_pitch: 0.8
+          source_location: body
+          effectlib:
+           class: Modified
+           duration: $duration
+           parameters:
+            size: "(1 - (t / i)) * 1.5 + 0.5"
+           effect:
+             class: AnimatedBall
+             particle: smoke_normal
+             particleCount: 20
+             particleOffsetX: 0.05
+             particleOffsetY: 0.05
+             particleOffsetZ: 0.05
+             yFactor: 1
     parameters:
         target: none
         projectile: WitherSkull
-        effect_wither: 160,2
+        effect_wither: 2
+        duration: 5000
         radius: 2
         count: 1
         undo: 15000
@@ -14950,11 +15410,13 @@ wither|2:
     parameters:
        count: 3
        radius: 3
+       duration: 8000
 
 wither|3:
     parameters:
        count: 4
        radius: 4
+       duration: 10000
 
 wolf:
     icon: diamond_axe:69

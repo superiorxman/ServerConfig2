@@ -49,7 +49,7 @@ register_command('mindcontrol',
                 die()
             }
 
-            if(sk_region_check_flag(ploc(@vic),'invincible',@plr) == true){
+            if(sk_region_check_flag(ploc(@vic),'invincible',@vic) == true){
                 tmsg(@player,color('RED').'Sorry, they are in a protected area.')
                 die()
             }
@@ -125,7 +125,7 @@ register_command('mindcontrol',
             //makes it so no one can change into the mindcontroller person while they change classes
             @existingForgottenHeroes = import('forgottenHeroes')
             if(@existingForgottenHeroes == null || @existingForgottenHeroes == ''){
-                @existingForgottenHeroes = @pClass
+                @existingForgottenHeroes = array(@existingForgottenHeroes,@pClass)
             }else if(is_array(@existingForgottenHeroes)){
                 array_push(@existingForgottenHeroes,@pClass)
             }else{
@@ -148,8 +148,8 @@ register_command('mindcontrol',
             set_pspectator_target(@vic,@puuid)
 
             runas('~console','/pex user '.@player.' group set '.@vClass)
-            if(array_index_exists(@vHero,'sig')){
-                runas('~console',"/disguiseplayer " . @player . ' player ' . @vic . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@vHero['costumes'][0]['sig'].'","name":"textures","value":"'.@vHero['costumes'][0]['val'].'"}]}')
+            if(array_index_exists(@vHero['costumes'][0],'sig')){
+                sudo('/setcostume 1')
             }else{
                 sudo('/disguise player '.@vic)
             }
