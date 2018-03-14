@@ -3965,19 +3965,6 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
         - ch.alias.kingpin
-  varikk:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&4V&0a&6R&8i&0k&7k'
-    worlds:
-      superherocity:
-        permissions:
-        - -blivtrails.*
-        - -trails.*
-        - powers.sunhealing
-        - essentials.fly
   mephisto:
     inheritance:
     - commonherotraits
@@ -7307,16 +7294,6 @@ groups:
         - ch.alias.carryplayer
         - -essentials.protect.damage.fall
         - powers.nofalldamage
-  xlr8:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&bX&fL&8R&28'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
   fourarms:
     inheritance:
     - commonherotraits
@@ -7596,19 +7573,6 @@ groups:
         - ch.alias.tangible
         - ch.alias.intangible
         - ch.alias.disguise
-  lodestar:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6Lo&ede&7st&8a&0r'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - -essentials.protect.damage.fall
-        - powers.stealiron
-        - ch.alias.iron
   santaclaus:
     inheritance:
     - commonherotraits
@@ -9496,6 +9460,48 @@ groups:
         - powers.wallrun
         - ch.alias.mindlock
         - ch.alias.msg
+  lodestar:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6Lo&ede&7st&8a&0r'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - -essentials.protect.damage.fall
+        - powers.stealiron
+        - ch.alias.iron
+  xlr8:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&bX&fL&8R&28'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+  varikk:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&4V&0a&6R&8i&0k&7k'
+    worlds:
+      superherocity:
+        permissions:
+        - -blivtrails.*
+        - -trails.*
+        - powers.sunhealing
+        - essentials.fly
+  newtscamander:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&1Ne&9wt &6Sc&eama&4n&eder'
 schema-version: 1
 worlds:
   checkers:
@@ -10804,7 +10810,8 @@ users:
     options:
       name: xcoser
   6c162032-76f5-4925-a369-946c492634ae:
-    group: []
+    group:
+    - varikk
     options:
       name: vaRikk
   16ef6ae1-6e1f-4f47-a5a1-de5a3bcc75ee:
@@ -11156,7 +11163,7 @@ users:
       name: MacGregorDavis
   bca30c1c-b10c-4bdb-a532-bad2359911d0:
     group:
-    - darkseid
+    - mortal
     options:
       name: TheSoulGamer
   99b0ac2e-5c71-40d7-899e-288da89e23a6:
