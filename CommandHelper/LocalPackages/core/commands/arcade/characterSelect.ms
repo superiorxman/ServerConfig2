@@ -110,7 +110,7 @@ register_command('characterselect',
             @searchTerm = '*'.@searchTerm.'*'
             @heroes = array()
 
-            @var = shell('/home/minecraft/searchHero.sh '.@searchTerm)
+            @var = shell('/home/minecraft/searchHero.sh '.to_lower(@searchTerm))
             @heroes = split('\n',@var)
             msg(color('YELLOW').'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
             @foundAHero = false

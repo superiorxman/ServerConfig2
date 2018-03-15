@@ -85,7 +85,7 @@ bind('player_join',null,null,@event){
    // }
 
     if(has_permission(@plr,'arrest.onjoin')){
-        runas('~console','/arrest '.@plr.' Joining Auto-Arrest Bot v2.1b')
+        runas('~console','/arrest '.@plr.' 86400 WARRANT FOR ARREST DETECTED! AUTO-ARRESTING USER EFFECTIVE IMMEDIATELY WITHOUT WARNING!')
         runas('~console','/pex user '.@plr.' remove arrest.onjoin')
     }
 

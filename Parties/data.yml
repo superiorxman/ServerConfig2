@@ -35,12 +35,6 @@ players:
       name: littlejoshboy
       timestamp: 1519979137
     rank: 5
-  55679107-589e-4487-abb4-4fca48b26f25:
-    name:
-      name: AgentNuggets
-      timestamp: 1520034461
-    rank: 20
-    party: Nip
   52b6e861-9b1b-4e74-9fe9-85e81a7e6472:
     name:
       timestamp: 1520044791
@@ -245,6 +239,18 @@ players:
       name: Nightur
       timestamp: 1520976747
     party: orkhorl
+  55679107-589e-4487-abb4-4fca48b26f25:
+    name:
+      name: AgentNuggets
+      timestamp: 1521061757
+    rank: 20
+    party: XMen
+  4d2c833f-8b88-4269-887d-3b84a57435c2:
+    name:
+      timestamp: 1521061770
+      name: shredderxboy
+    party: XMen
+    rank: 5
 parties:
   TheTitans:
     members:
@@ -273,10 +279,6 @@ parties:
     members:
     - 8cb79cd3-1e48-4087-9137-a37e164f1494
     leader: 8cb79cd3-1e48-4087-9137-a37e164f1494
-  Nip:
-    leader: 55679107-589e-4487-abb4-4fca48b26f25
-    members:
-    - 55679107-589e-4487-abb4-4fca48b26f25
   darkheroes:
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
@@ -326,3 +328,8 @@ parties:
     members:
     - 7e2b5ebc-3ea1-4278-8ca9-1109067f00f4
     leader: 7e2b5ebc-3ea1-4278-8ca9-1109067f00f4
+  XMen:
+    leader: 55679107-589e-4487-abb4-4fca48b26f25
+    members:
+    - 55679107-589e-4487-abb4-4fca48b26f25
+    - 4d2c833f-8b88-4269-887d-3b84a57435c2
