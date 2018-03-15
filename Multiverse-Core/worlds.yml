@@ -1354,7 +1354,7 @@ worlds:
     respawnWorld: survival112
     allowWeather: 'true'
     difficulty: EASY
-    spawning: &id007
+    spawning: &id010
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -1366,7 +1366,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id011
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -1385,7 +1385,7 @@ worlds:
       yaw: -270.15033
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id012 []
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.
@@ -1498,8 +1498,8 @@ worlds:
     respawnWorld: survival112
     allowWeather: 'true'
     difficulty: EASY
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id010
+    entryfee: *id011
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -1515,7 +1515,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id009
+    worldBlacklist: *id012
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.
