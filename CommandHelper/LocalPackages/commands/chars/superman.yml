@@ -28,6 +28,7 @@ permissions:
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
+  - powers.herotransform
 powers:
 - /buff
 - /carryplayer <player>
@@ -39,7 +40,10 @@ powers:
 - Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>
 - /fly
+- /herotransform
 run: 9
 speech: Time to save the world once again!
 trail: [
   ]
+transformations:
+- clarkkent
