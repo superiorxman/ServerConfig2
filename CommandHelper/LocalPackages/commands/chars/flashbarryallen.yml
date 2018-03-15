@@ -38,6 +38,7 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
   - powers.timeremnant
+  - powers.herotransform
 powers:
 - /buff
 - /warp speedforce
@@ -61,7 +62,10 @@ powers:
 - /thru
 - /tppos <x> <y> <z>
 - /timeremnant (Creates a clone of you.)
+- /herotransform
 run: 9
 speech: I am Barry Allen!
 trail: [
   ]
+transformations:
+- barryallen
