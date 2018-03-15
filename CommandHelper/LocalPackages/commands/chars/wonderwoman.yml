@@ -45,7 +45,6 @@ permissions:
   - powers.lightningpunch
   - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
-  - powers.herotransform
 powers:
 - /buff
 - /carryplayer <player>
@@ -67,7 +66,6 @@ powers:
 - /herotransform
 - /mindcontrol <player>
 - /stopmindcontrol
-- /herotransform
 run: 9
 speech: Justice shall prevail!
 trail: [
