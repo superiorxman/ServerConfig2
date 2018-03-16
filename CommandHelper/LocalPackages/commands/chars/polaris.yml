@@ -14,7 +14,8 @@ permissions:
   - ch.alias.psypush
   - ch.alias.disarm
 powers:
-- /buff
+- /effects
+- /items
 - /ma (this is his iron attack!)
 - /psypush <playername>
 - /disarm

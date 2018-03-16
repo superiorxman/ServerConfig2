@@ -15,7 +15,8 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 speech: I am now stronger and faster than you Spider-Man!

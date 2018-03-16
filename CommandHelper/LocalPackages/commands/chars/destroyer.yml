@@ -21,7 +21,8 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer <player>
 speech: I do more than live! I do what I was created for! I DESTROY!!

@@ -53,24 +53,12 @@ players:
       name: Spiderninja90
     rank: 5
     party: TheTitans
-  98eaee4f-eb44-4674-ac95-9944a0da2861:
-    name:
-      name: LittlePenguin022
-      timestamp: 1520077091
-    party: TheTitans
-    rank: 5
   f94c3653-6191-4414-ab77-5a315fe93cd9:
     name:
       timestamp: 1520101461
       name: Clutonov
     rank: 5
     party: Dude
-  c23a12ff-f26a-4f56-a345-21c9395b9c2b:
-    name:
-      timestamp: 1520200665
-      name: _xXSkylerXx_
-    rank: 5
-    party: TheTitans
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     rank: 20
     party: darkheroes
@@ -83,12 +71,6 @@ players:
       name: mechaethansonic
     party: TheTitans
     rank: 5
-  cf0a0c3f-34c9-487c-86df-8477b25700ca:
-    name:
-      timestamp: 1520283597
-      name: SuperrCrazyGamer
-    rank: 5
-    party: TheTitans
   de5871d3-17d4-485f-8ddb-b45b30ee6591:
     rank: 5
     name:
@@ -121,8 +103,8 @@ players:
       name: xThqsey
   7dff91dd-96e6-4b73-9dfa-17992e055694:
     name:
-      timestamp: 1520463166
-      name: TreyCoding
+      timestamp: 1521241351
+      name: Txmmeh
     party: orkhorl
     rank: 5
   28556dea-667d-409f-b2ff-fb4177a20ff2:
@@ -257,6 +239,21 @@ players:
       name: xMqthy
     rank: 5
     party: XMen
+  391762eb-24f6-4d95-84d6-bfac682d575a:
+    options:
+      spy: true
+  2a402832-0240-4587-89ae-4541eb4ed088:
+    party: orkhorl
+    name:
+      name: AboveIsTripleGay
+      timestamp: 1521238789
+    rank: 5
+  ae37c994-7b2c-4927-923c-33fc87301321:
+    rank: 5
+    name:
+      timestamp: 1521242216
+      name: AdoBoy
+    party: TheTitans
 parties:
   TheTitans:
     members:
@@ -266,13 +263,11 @@ parties:
     - 52b6e861-9b1b-4e74-9fe9-85e81a7e6472
     - 09594d5f-8ef4-486e-8f1d-ab5d88fc42f1
     - e0870764-dcc8-49a5-ad33-6ec20d0be001
-    - 98eaee4f-eb44-4674-ac95-9944a0da2861
-    - c23a12ff-f26a-4f56-a345-21c9395b9c2b
     - 8cd908e9-a758-41fa-99b9-1a8f8ffc5297
-    - cf0a0c3f-34c9-487c-86df-8477b25700ca
     - de5871d3-17d4-485f-8ddb-b45b30ee6591
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - a15f051c-1473-4f90-88f3-bad6e6b9dce2
+    - ae37c994-7b2c-4927-923c-33fc87301321
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
     motd: HB Nobody
   Dude:
@@ -299,6 +294,7 @@ parties:
     - 28556dea-667d-409f-b2ff-fb4177a20ff2
     - 05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85
     - 57b29f1f-dc6b-4d30-80ac-cf64c4df3428
+    - 2a402832-0240-4587-89ae-4541eb4ed088
   oof:
     members:
     - e6de8cf0-af45-44e4-882f-d98446f4b31b

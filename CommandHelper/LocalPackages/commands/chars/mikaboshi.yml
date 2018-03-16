@@ -19,7 +19,8 @@ permissions:
   - powers.destroyworld
   - ch.alias.confuse
 powers:
-- /buff
+- /effects
+- /items
 - /confuse <player>
 - /grow
 - /normalform

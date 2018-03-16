@@ -1,5 +1,5 @@
 arrow:/arrow = >>>
-    sudo('/minecraft:give '.player().' minecraft:arrow 1 0 {display:{Name:"'.color('GRAY').'Normal Arrow"}}')
+    sudo('/minecraft:give '.player().' minecraft:arrow')
     tmsg(player(),concat(color('WHITE'),
     'Just another boring arrow.'))
 <<<
@@ -104,22 +104,22 @@ arrowluck:/arrow luck = >>>
     'Maybe I should visit the casino...'))
 <<<
 arrowsmoke:/arrow smoke = >>>
-    sudo('/minecraft:give '.player().' minecraft:arrow 1 0 {display:{Name:"'.color('WHITE').'Arrow of '.color('GRAY').'Smoke"}}')
+    sudo('/minecraft:give '.player().' minecraft:tipped_arrow 1 0 {display:{Name:"'.color('WHITE').'Arrow of '.color('GRAY').'Smoke"}}')
     tmsg(player(),concat(color('DARK_GRAY'),
     "I'll smoke 'em out!"))
 <<<
 arrowbomb:/arrow bomb = >>>
-    sudo('/minecraft:give '.player().' minecraft:arrow 1 0 {display:{Name:"'.color('WHITE').'Arrow of '.color('DARK_RED').'Ka-Ba-Boom"}}')
+    sudo('/minecraft:give '.player().' minecraft:tipped_arrow 1 0 {display:{Name:"'.color('WHITE').'Arrow of '.color('DARK_RED').'Ka-Ba-Boom"}}')
     tmsg(player(),concat(color('DARK_RED'),
     'EXPLOOOOSSSSIIOONNNNSSSS!!!!'))
 <<<
 arrowkryptonite:/arrow kryptonite = >>>
-    sudo('/minecraft:give '.player().' minecraft:arrow 1 0 {display:{Name:"'.color('GREEN').'Kryptonite '.color('WHITE').'Arrow"}}')
+    sudo('/minecraft:give '.player().' minecraft:tipped_arrow 1 0 {display:{Name:"'.color('GREEN').'Kryptonite '.color('WHITE').'Arrow"}}')
     tmsg(player(),concat(color('GREEN'),
     "It's green and glowing!"))
 <<<
 arrowphantomzone:/arrow phantomzone = >>>
-    sudo('/minecraft:give '.player().' minecraft:arrow 1 0 {display:{Name:"'.color('DARK_GRAY').'The Phantom Zone '.color('WHITE').'Arrow"}}')
+    sudo('/minecraft:give '.player().' minecraft:tipped_arrow 1 0 {display:{Name:"'.color('DARK_GRAY').'The Phantom Zone '.color('WHITE').'Arrow"}}')
     tmsg(player(),concat(color('GREEN'),
     'This is where the bad guys go!'))
 <<<

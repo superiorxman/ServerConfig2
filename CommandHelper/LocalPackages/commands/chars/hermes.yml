@@ -21,7 +21,8 @@ permissions:
   - powers.wallrun
   - ch.alias.dismountplayer
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-9>
 - /run <0-9>
 - /haste <0-4>

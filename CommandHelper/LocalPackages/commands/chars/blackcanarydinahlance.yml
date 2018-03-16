@@ -16,7 +16,8 @@ permissions:
   - ch.alias.blackcanary
   - ch.alias.psypush
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-2>

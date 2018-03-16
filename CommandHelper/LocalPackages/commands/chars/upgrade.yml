@@ -19,7 +19,8 @@ permissions:
   - -essentials.protect.damage.fall
   - powers.wallclimb
 powers:
-- /buff
+- /effects
+- /items
 - /herotransform
 - /wallclimb <on/off>
 - Wall climb by standing next to a wall and pressing crouch and vines will appear.

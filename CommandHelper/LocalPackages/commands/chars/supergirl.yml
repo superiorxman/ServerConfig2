@@ -32,7 +32,8 @@ permissions:
   - ch.alias.dismountplayer
   - powers.herotransform
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-8>

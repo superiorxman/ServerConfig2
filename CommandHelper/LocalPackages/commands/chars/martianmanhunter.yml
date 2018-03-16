@@ -39,7 +39,8 @@ permissions:
   - ch.alias.intangible
   - ch.alias.tangible
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-9>

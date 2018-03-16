@@ -44,7 +44,14 @@ register_command('goworld',
             }catch(Exception @d){
                 @hero = array()
                 @hero['costumes'][0]['name'] = @sender
-            } 
+            }
+
+            @costNum = import(@player.'skinNum')
+            if(@costNum == null){
+                @costNum = 0
+            }else{
+                @costNum--
+            }
 
             @worldNiceName = ''
             include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms')
@@ -52,7 +59,7 @@ register_command('goworld',
                 if(@world[0] == @args[0]){
                     runas('~console','/warp '.@args[0].' '.@sender)
                     @worldNiceName = @world[1]
-                    broadcast(color('BLUE').@hero['costumes'][0]['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
+                    broadcast(color('BLUE').@hero['costumes'][@costNum]['name'].color('GRAY').color('ITALIC').' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
                         msg(color('RED').'Turn the autobuff off after you die using '.color('GREEN').'/autobuff off'.color('RED').' .')
                         msg(color('RED').'Some characters have multiple costumes! Try '.color('GREEN').'/costumes'.color('RED').' !')
@@ -62,8 +69,11 @@ register_command('goworld',
                         msg(color('RED').'Go somewhere else with '.color('GREEN').'/stageselect'.color('RED').' !')
                         msg(color('RED').'Select a new character using '.color('GREEN').'/mainmenu'.color('RED').' !')
                         msg(color('RED').'Check out your '.color('GREEN').'/powers'.color('RED').' !')
-                        if(has_permission(@sender,'ch.alias.buff')){
-                            runas(@sender,'/buff')
+                        if(has_permission(@sender,'command.effects')){
+                            runas(@sender,'/effects')
+                        }
+                        if(has_permission(@sender,'command.items')){
+                            runas(@sender,'/items')
                         }
                         @puuid = puuid(@sender)
                         if(array_index_exists(@hero,'maxHearts')){

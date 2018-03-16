@@ -17,7 +17,8 @@ permissions:
   - essentials.fly
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - /swarm <playername>
 - /bloodregen
 - /fly

@@ -20,7 +20,8 @@ permissions:
   - powers.fireballpunch
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - Can throw fireballs by punching with an empty hand
 - /run <0-5>
 - /haste <0-5>

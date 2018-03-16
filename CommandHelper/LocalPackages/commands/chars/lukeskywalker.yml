@@ -16,7 +16,8 @@ permissions:
   - ch.alias.forcepush
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-7>
 - /run <0-4>
 - /haste <0-1>

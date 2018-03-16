@@ -28,7 +28,8 @@ permissions:
   - essentials.tppos
   - essentials.warps.speedforce
 powers:
-- /buff
+- /effects
+- /items
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)

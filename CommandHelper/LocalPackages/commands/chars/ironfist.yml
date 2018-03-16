@@ -20,7 +20,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.healing
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-3>

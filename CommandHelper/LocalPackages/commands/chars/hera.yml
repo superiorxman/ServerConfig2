@@ -23,7 +23,8 @@ permissions:
   - commandhelper.alias.cow
   - commandhelper.alias.chicken
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-2>

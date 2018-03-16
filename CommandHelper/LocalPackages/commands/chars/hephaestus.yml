@@ -29,15 +29,14 @@ permissions:
   - essentials.enchant
   - commandhelper.alias.workbench
   - commandhelper.alias.flintsteel
-  - essentials.flame
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-7>
-- /flame <playername>
 - /flyspeed <number>
 - /fly
 - /enchant

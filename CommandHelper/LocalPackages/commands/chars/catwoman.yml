@@ -17,7 +17,8 @@ permissions:
   - powers.wallclimb
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-3>
 - /run <0-1>
 - /haste <0-1>

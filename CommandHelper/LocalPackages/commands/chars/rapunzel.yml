@@ -17,7 +17,8 @@ permissions:
   superherocity:
   - powers.regen
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-6>
 - /regen
 - /regen <playername>

@@ -15,7 +15,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 speech: I am never, ever going to make things easy for you, Seaweed Brain. Get used

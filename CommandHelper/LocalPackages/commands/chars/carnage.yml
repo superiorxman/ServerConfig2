@@ -23,7 +23,8 @@ permissions:
   - ch.alias.web
   - weakto.antivenom
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-7>

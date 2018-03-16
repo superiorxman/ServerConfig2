@@ -21,7 +21,8 @@ permissions:
   - ch.alias.zord
   - ch.alias.unzord
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /run <0-2>

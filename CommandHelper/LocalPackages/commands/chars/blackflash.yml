@@ -27,7 +27,8 @@ permissions:
   - kill.immune
   - powers.onepunch
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-3>
 - /run <0-9>
 - /haste <0-4>

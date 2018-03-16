@@ -24,7 +24,8 @@ permissions:
   - essentials.tppos
   - ch.alias.unconfuse
 powers:
-- /buff
+- /effects
+- /items
 - /confuse
 - /unconfuse
 - /tppos <x> <y> <z>

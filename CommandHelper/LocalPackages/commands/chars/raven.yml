@@ -22,7 +22,8 @@ permissions:
   - essentials.speed
   - ch.alias.portaltp
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-2>
 - /haste <0-2>
 - /portaltp <player>

@@ -24,7 +24,8 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /float <up/down/pause/unpause/stop>

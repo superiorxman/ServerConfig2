@@ -23,7 +23,8 @@ permissions:
   - ch.alias.dismountplayer
   - powers.cloneself
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /rasengan (very powerful punches for 10 seconds)

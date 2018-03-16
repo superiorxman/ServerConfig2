@@ -16,7 +16,8 @@ permissions:
   - essentials.fly
   - powers.fireballpunch
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - Can throw fireballs by punching with an empty hand
 - /fireballpunch <on/off>

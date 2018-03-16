@@ -25,7 +25,8 @@ permissions:
   - essentials.speed
   - powers.herotransform
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-5>
 - /run <0-5>
 - /haste <0-5>

@@ -17,7 +17,8 @@ permissions:
   - powers.float
   - essentials.tppos
 powers:
-- /buff
+- /effects
+- /items
 - /tppos
 - /float <up/down/pause/unpause/stop>
 speech: We are Ermac!

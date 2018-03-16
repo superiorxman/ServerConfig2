@@ -23,7 +23,8 @@ permissions:
   - essentials.skull
   - essentials.skull.*
 powers:
-- /buff
+- /effects
+- /items
 - /create <item> <quantity> <color>
 - /headdb
 - /explode <player>

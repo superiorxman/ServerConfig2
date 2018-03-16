@@ -14,7 +14,8 @@ permissions:
   - libsdisguises.disguise
   - libsdisguises.disguise.player
 powers:
-- /buff
+- /effects
+- /items
 - /disguise player <player>
 - /undisguise
 speech: I am invincible!

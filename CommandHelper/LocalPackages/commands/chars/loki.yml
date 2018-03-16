@@ -60,7 +60,8 @@ permissions:
   - essentials.tppos
   - ch.alias.disguise
 powers:
-- /buff
+- /effects
+- /items
 - /mindcontrol <playername>
 - /stopmindcontrol
 - /run <0-2>

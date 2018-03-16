@@ -47,7 +47,8 @@ permissions:
   - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-6>

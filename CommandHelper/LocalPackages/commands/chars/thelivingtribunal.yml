@@ -22,7 +22,8 @@ permissions:
   - ch.alias.mindlock
   - powers.destroyworld
 powers:
-- /buff
+- /effects
+- /items
 - /mindlock <player>
 - /tp
 - /destroyworld <world>

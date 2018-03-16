@@ -84,6 +84,21 @@ appearance_moon:
     upgrade: true
     icon: wood_hoe:10
     upgrade_icon: wood_hoe:10
+
+appearance_spire:
+    upgrade: true
+    icon: wood_hoe:35
+    upgrade_icon: wood_hoe:35
+
+appearance_claw:
+    upgrade: true
+    icon: wood_hoe:36
+    upgrade_icon: wood_hoe:36
+
+appearance_orb:
+    upgrade: true
+    icon: wood_hoe:37
+    upgrade_icon: wood_hoe:37
 apprentice:
     inherit: student
     icon: wood_hoe:3
@@ -444,10 +459,21 @@ base_sword:
     quick_cast: true
     quiet: 1
 
+base_bow:
+    hidden: true
+    inherit: base_bound
+    mode: inventory
+    drop: toggle
+    left_click: none
+    right_click: none
+    swap: cycle_hotbar
+    quiet: 1
+
 #
 # A starter battle wand
 #
 battle:
+  hidden: true
   migrate_to: magicsword
 #
 #
@@ -958,6 +984,7 @@ flashboots:
     effect_particle_offset: -1.5
 
 gamemode:
+  hidden: true
   inherit: base_wand
   icon: diamond_axe:79
   quick_cast: true
@@ -1038,6 +1065,17 @@ ledger:
   spells:
   - ledger
   
+#
+# A spellcasting bow
+#
+magicbow:
+  inherit: base_bow
+  class: archer_mage
+  icon: bow:1
+  cast_min_projectile_speed: 2
+  protection:
+    projectile: 0.5
+
 magichat:
     mode: cast
     active_spell: magichat

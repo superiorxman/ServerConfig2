@@ -28,7 +28,8 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
 powers:
-- /buff
+- /effects
+- /items
 - /warp speedforce
 - /back (in the speedforce)
 - /tp <player> (In the speedforce)

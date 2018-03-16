@@ -15,7 +15,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.invishandsattack
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /invishandsattack <playername>

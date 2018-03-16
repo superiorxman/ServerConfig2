@@ -21,7 +21,8 @@ permissions:
   - ch.alias.dismountplayer
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-9>
 - /run <0-1>
 - /haste <0-9>

@@ -23,7 +23,8 @@ permissions:
   - headdb.category.*
   - headdb.free.*
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - /grow
 - /normalsize

@@ -21,7 +21,8 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
 powers:
-- /buff
+- /effects
+- /items
 - /disguise p <player>
 - /disguise <mob>
 - /jump <0-2>

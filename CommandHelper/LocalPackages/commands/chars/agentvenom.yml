@@ -23,7 +23,8 @@ permissions:
   - -essentials.protect.damage.fall
   - weakto.antivenom
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-7>
 - /run <0-5>
 - /haste <0-4>

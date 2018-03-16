@@ -15,7 +15,8 @@ permissions:
   - ch.alias.msg
   - powers.float
 powers:
-- /buff
+- /effects
+- /items
 - /float <up/down/pause/unpause/stop> /msg <playername>
 - /herotransform
 speech: I must not overuse my powers!

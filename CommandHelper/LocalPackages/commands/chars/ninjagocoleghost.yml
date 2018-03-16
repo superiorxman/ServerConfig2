@@ -15,7 +15,8 @@ permissions:
   - worldedit.navigation.thru.command
   - essentials.fly
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-2>
 - /thru (phases through walls)
 - /run <0-5>

@@ -32,7 +32,8 @@ permissions:
   - -essentials.enchantments.allowunsafe
   - essentials.enchant
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-1>

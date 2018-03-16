@@ -29,7 +29,8 @@ permissions:
   - ch.alias.tp
   - essentials.tppos
 powers:
-- /buff
+- /effects
+- /items
 - /create <item> <quantity> <color>
 - /headdb
 - /mutate <playername>

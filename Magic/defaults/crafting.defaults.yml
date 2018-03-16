@@ -163,6 +163,16 @@ invisiblecloak:
   row_2: "ioi"
   row_3: "eoe"
 
+magicbow:
+  output: magicbow
+  output_type: wand
+  materials:
+    o: nether_star
+    i: bow
+  row_1: o
+  row_2: i
+  row_3: ""
+
 magichat:
   output: magichat
   output_type: wand

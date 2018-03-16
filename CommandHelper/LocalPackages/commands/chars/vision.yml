@@ -73,7 +73,8 @@ permissions:
   - libsdisguises.disguise.zombie.-setinvisible
   - libsdisguises.disguise.zombie_villager.-setinvisible
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-4>
 - /run <0-6>
 - /haste <0-5>

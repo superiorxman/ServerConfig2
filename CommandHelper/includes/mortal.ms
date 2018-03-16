@@ -7,7 +7,7 @@ proc('_mortal',@plr,
     @worldGM = @yml['worlds'][@ploc['world']]['gameMode']
     queue_push(closure(set_attribute(puuid(@plr),'maxHealth',20)))
     queue_push(closure(runas('~console',"/minecraft:clear ".@plr)))
-    queue_push(closure(runas('~console',"/sudo ".@plr." c:/trailsid none")))
+    queue_push(closure(runas('~console',"/trailsid none ".@plr)))
     queue_push(closure(set_pmode(@plr,@worldGM)))
     queue_push(closure(runas('~console',"/effect ".@plr." clear")))
     queue_push(closure(runas('~console',"/fly ".@plr." off")))

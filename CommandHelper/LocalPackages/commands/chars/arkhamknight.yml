@@ -21,7 +21,8 @@ permissions:
   - ch.alias.grapplinghook
   - ch.alias.shadowhide
 powers:
-- /buff
+- /effects
+- /items
 - /grapplinghook
 - /shadowhide (Allows you to become invisible in dark areas)
 - /run <0-2>

@@ -15,7 +15,8 @@ permissions:
   superherocity:
   - essentials.fly
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - /run <0-2>
 run: 2

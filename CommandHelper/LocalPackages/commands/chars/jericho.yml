@@ -16,7 +16,8 @@ permissions:
   - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
 powers:
-- /buff
+- /effects
+- /items
 - /mindcontrol <playername>
 - /stopmindcontrol
 speech: '...'

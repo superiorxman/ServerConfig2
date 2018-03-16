@@ -1,8 +1,8 @@
-register_command('buff', 
+register_command('effects', 
     array(
         'description': 'Gives Player their Superhero Powers',
         'usage': '/buff',
-        'permission': 'ch.alias.buff',
+        'permission': 'command.effects',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
         'executor': closure() {
         
@@ -15,31 +15,20 @@ register_command('buff',
                 @hero = yml_decode(@contents)
                 
             } catch (IOException @ErrorInfo) {
-                tmsg(@plr, 'There\'s no buffs\'s associated with your current Character Class')
+                tmsg(@plr, 'There\'s no effects\'s associated with your current character :(')
                 die()
             }
             queue_push(closure(runas('~console','/effect '.@plr.' clear')))
-            if(array_index_exists(@hero,'buffs')){
-                foreach(@power in @hero['buffs']){
-                    @power = replace(@power,'<plr>',@plr)
-                    queue_push(closure(runas('~console',@power)))
+            if(array_index_exists(@hero,'effects')){
+                foreach(@effect in @hero['effects']){
+                    @effect = replace(@effect,'<plr>',@plr)
+                    queue_push(closure(runas('~console',@effect)))
                 }
             }
 
             if(has_permission(@plr,'essentials.fly')){
                 run_cmd('/fly on')
             }
-
-            if(array_index_exists(@hero,'speech')){
-                queue_push(closure(tmsg(@plr,@hero['speech'])))
-            }
-
-            /*queue_push(closure(
-                @pinv = pinv(@plr)
-                foreach(@item in @pinv){
-
-                }
-            ))*/
         }
     )
 )

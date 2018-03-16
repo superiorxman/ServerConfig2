@@ -18,7 +18,8 @@ permissions:
   - libsdisguises.disguise.wolf
   - libsdisguises.disguise.wolf.-setinvisible
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-5>
 - /run <0-6>
 - /disguise wolf

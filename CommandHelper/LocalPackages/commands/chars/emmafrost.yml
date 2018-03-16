@@ -22,7 +22,8 @@ permissions:
   - ch.alias.mindcontrol
   - ch.alias.speak
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-2>

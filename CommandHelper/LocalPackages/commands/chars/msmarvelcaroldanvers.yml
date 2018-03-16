@@ -23,7 +23,8 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
 powers:
-- /buff
+- /effects
+- /items
 - /flyspeed <number>
 - /fly
 - /jump <0-8>

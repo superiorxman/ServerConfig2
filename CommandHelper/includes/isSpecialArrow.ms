@@ -77,7 +77,7 @@ proc('_isSpecialArrow',@item,@launchEventID){
                         @vicName = player(@vicID)
                         include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
                         if(_coolDown('phantomZoneArrow',120,player(@e['shooter']))){
-                            return()
+                            die()
                         }
                         sudo('/phantomzonetrap '.@vicName)
                     }
@@ -87,9 +87,7 @@ proc('_isSpecialArrow',@item,@launchEventID){
         }
         if(@item['type'] == 262 || @item['type'] == 440 || @item['type'] == 439){
             return(true)
-        }else{
-            console(@item['type'])
         }
-        }
+    }
         return(false)
 }

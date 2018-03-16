@@ -20,7 +20,8 @@ permissions:
   - ch.alias.dismountplayer
   - essentials.fly
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /haste <0-9>

@@ -11,18 +11,17 @@
 #
 regions:
     infiniteparkour:
-        min: {x: -732.0, y: 0.0, z: -679.0}
-        max: {x: 798.0, y: 255.0, z: 670.0}
+        min: {x: -137.0, y: 0.0, z: -114.0}
+        max: {x: 194.0, y: 255.0, z: 138.0}
         members: {}
-        flags: {ice-form: deny, use: allow, invincible: allow, interact: allow}
+        flags: {use: allow, invincible: allow, interact: allow}
         owners:
-            unique-ids: [5da26092-c807-4c9b-8d08-9523f74ddc97, 9025e96a-d286-47b0-a709-98d2a4ee42db]
+            unique-ids: [28556dea-667d-409f-b2ff-fb4177a20ff2, 2a402832-0240-4587-89ae-4541eb4ed088]
         type: cuboid
         priority: 0
     __global__:
         members: {}
-        flags: {pistons-group: MEMBERS, build: allow, build-group: MEMBERS, greeting: §7Welcome
-                to §2§kI§5nfinite §3Park§2§ko§3ur, pistons: allow}
+        flags: {greeting: §7Welcome to §2§kI§5nfinite §3Park§2§ko§3ur}
         owners: {}
         type: global
         priority: 0

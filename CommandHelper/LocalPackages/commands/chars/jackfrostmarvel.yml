@@ -19,7 +19,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.freezewater
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /freezewater

@@ -22,7 +22,8 @@ permissions:
   - ch.alias.empower
   - ch.alias.explode
 powers:
-- /buff
+- /effects
+- /items
 - /flyspeed <number>
 - /fly
 - /explode <player>

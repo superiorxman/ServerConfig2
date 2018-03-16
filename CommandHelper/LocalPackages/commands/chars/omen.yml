@@ -14,7 +14,8 @@ permissions:
   - ch.alias.confuse
   - ch.alias.msg
 powers:
-- /buff
+- /effects
+- /items
 - /mindlock <player>
 - /confuse <player>
 - /msg <player>

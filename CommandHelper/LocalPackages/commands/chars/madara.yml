@@ -14,7 +14,8 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-2>

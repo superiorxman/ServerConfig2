@@ -20,7 +20,8 @@ permissions:
   - ch.alias.stopmindcontrol
   - ch.alias.mindcontrol
 powers:
-- /buff
+- /effects
+- /items
 - /mindcontrol <playername>
 - /stopmindcontrol
 - /haste <0-4>

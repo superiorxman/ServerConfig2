@@ -32,7 +32,8 @@ permissions:
   - powers.wallrun
   - powers.float
 powers:
-- /buff
+- /effects
+- /items
 - /levitate
 - /mindcontrol <playername>
 - /stopmindcontrol

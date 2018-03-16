@@ -9,7 +9,8 @@ effects: [
 items:
 - /shot give <plr> pistol
 powers:
-- /buff
+- /effects
+- /items
 speech: Let the coins decide
 trail: [
   ]

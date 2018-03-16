@@ -22,7 +22,8 @@ permissions:
   superherocity: [
     ]
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-1>
 run: 1
 speech: That's it! You can attack me, you can call me names, but no one -- NO ONE

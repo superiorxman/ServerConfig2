@@ -13,7 +13,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 speech: You will learn respect!

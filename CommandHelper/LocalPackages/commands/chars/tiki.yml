@@ -14,7 +14,8 @@ permissions:
   - -libsdisguises.disguise.player.*
   - libsdisguises.disguise.enderdragon.-setinvisible
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-3>
 - /disguise
 run: 3

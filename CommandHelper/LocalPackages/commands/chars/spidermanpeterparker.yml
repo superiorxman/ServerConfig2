@@ -24,7 +24,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.web
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-7>

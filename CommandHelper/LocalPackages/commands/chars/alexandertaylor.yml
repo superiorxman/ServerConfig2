@@ -21,7 +21,8 @@ permissions:
   - headdb.category.*
   - headdb.free.*
 powers:
-- /buff
+- /effects
+- /items
 - /disguise
 - /create <item> <quantity> <color>
 - /headdb

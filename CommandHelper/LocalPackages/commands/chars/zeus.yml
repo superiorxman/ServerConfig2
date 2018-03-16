@@ -18,7 +18,8 @@ permissions:
   - powers.lightningpunch
   - essentials.lightning
 powers:
-- /buff
+- /effects
+- /items
 - /lightningpunch <on/off>
 - When punching with an empty hand, you throw lightning
 - /fly

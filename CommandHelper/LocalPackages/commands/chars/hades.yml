@@ -21,7 +21,8 @@ permissions:
   - essentials.warp
   - essentials.warp.*
 powers:
-- /buff
+- /effects
+- /items
 - /haste <0-5>
 - /run <0-6>
 - /jump <0-4>

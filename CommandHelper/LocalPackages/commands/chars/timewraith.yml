@@ -41,7 +41,8 @@ permissions:
   - essentials.speed
   - ch.alias.wither
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-9>
 - /haste <0-2>
 - /warp speedforce

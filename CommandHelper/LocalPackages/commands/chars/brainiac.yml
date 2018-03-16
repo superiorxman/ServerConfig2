@@ -25,7 +25,8 @@ permissions:
   - ch.alias.unconfuse
   - ch.alias.mindlock
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <playername>
 - /dismountplayer
 - /jump <0-4>

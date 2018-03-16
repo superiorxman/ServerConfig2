@@ -19,7 +19,8 @@ permissions:
   - ch.alias.dismountplayer
   - powers.immunity.fire
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-5>
 - /run <0-3>
 - /haste <0-5>

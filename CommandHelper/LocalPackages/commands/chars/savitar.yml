@@ -33,7 +33,8 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /warp speedforce
 - /back (in the speedforce)

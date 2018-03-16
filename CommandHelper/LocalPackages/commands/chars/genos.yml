@@ -18,7 +18,8 @@ permissions:
   - ch.alias.dismountplayer
   - ch.alias.carryplayer
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-4>

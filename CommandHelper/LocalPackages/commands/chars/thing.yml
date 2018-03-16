@@ -12,7 +12,8 @@ items:
 jump: 1
 maxHearts: 20
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-2>
 - /jump <0-1>
 run: 2

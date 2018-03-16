@@ -25,7 +25,8 @@ permissions:
   - -essentials.protect.damage.fall
   - essentials.fly
 powers:
-- /buff
+- /effects
+- /items
 - /flyspeed <number>
 - /fly
 - /mindcontrol <playername>

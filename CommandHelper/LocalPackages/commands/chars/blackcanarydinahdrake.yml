@@ -13,7 +13,8 @@ permissions:
   superherocity:
   - ch.alias.psypush
 powers:
-- /buff
+- /effects
+- /items
 - /haste <0-2>
 - /psypush <player>
 run: 2

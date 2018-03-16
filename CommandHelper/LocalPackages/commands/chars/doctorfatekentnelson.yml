@@ -20,7 +20,8 @@ permissions:
   - essentials.fly
   - essentials.teleport
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - /create <item> <quantity> <color>
 - /headdb

@@ -72,7 +72,8 @@ permissions:
   - ch.alias.confuse
   - ch.alias.unconfuse
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /disguise

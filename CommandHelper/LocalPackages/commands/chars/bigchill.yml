@@ -21,7 +21,8 @@ permissions:
   - powers.chill
   - powers.herotransform
 powers:
-- /buff
+- /effects
+- /items
 - /intangible
 - /tangible
 - /jump <0-1>

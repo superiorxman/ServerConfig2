@@ -30,7 +30,8 @@ permissions:
   - ch.alias.confuse
   - ch.alias.unconfuse
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <playername>
 - /dismountplayer
 - /jump <0-3>

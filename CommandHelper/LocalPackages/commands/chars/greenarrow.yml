@@ -33,10 +33,10 @@ items:
 - /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"Arrow of §fHarming"},Potion:"minecraft:strong_harming"}
 - /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"Arrow of §bWater Breathing"},Potion:"minecraft:long_water_breathing"}
 - /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"Arrow of §2Luck"},Potion:"minecraft:luck"}
-- /give <plr> minecraft:arrow 10 0 {display:{Name:"§fArrow of §7Smoke"}}
-- /give <plr> minecraft:arrow 10 0 {display:{Name:"§fArrow of §4Ka-Ba-Boom"}}
-- /give <plr> minecraft:arrow 10 0 {display:{Name:"§aKryptonite §fArrow"}}
-- /give <plr> minecraft:arrow 10 0 {display:{Name:"§9Magic §fArrow"}}
+- /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"§fArrow of §7Smoke"}}
+- /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"§fArrow of §4Ka-Ba-Boom"}}
+- /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"§aKryptonite §fArrow"}}
+- /give <plr> minecraft:tipped_arrow 10 0 {display:{Name:"§9Magic §fArrow"}}
 jump: 2
 maxHearts: 20
 permissions:
@@ -63,7 +63,8 @@ permissions:
   - ch.alias.arrowwaterbreathe
   - ch.alias.arrowluck
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-2>
 - /run <0-3>
 - /haste <0-1>

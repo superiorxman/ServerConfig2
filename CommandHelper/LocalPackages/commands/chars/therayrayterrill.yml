@@ -27,7 +27,8 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /jump <0-2>

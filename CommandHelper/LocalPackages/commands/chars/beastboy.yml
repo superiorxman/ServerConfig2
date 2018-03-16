@@ -92,7 +92,8 @@ permissions:
   - ch.alias.grow
   - powers.wallclimb
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-8>
 - /run <0-6>
 - /haste <0-6>

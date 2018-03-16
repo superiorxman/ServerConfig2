@@ -22,7 +22,8 @@ permissions:
   - ch.alias.carryplayer
   - essentials.tppos
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer
 - /wallrun <on/off>

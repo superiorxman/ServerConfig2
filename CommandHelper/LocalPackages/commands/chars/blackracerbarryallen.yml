@@ -31,7 +31,8 @@ permissions:
   - essentials.tppos
   - essentials.warps.speedforce
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-5>
 - /run <0-9>
 - /haste <0-5>

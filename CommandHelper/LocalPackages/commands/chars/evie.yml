@@ -9,7 +9,8 @@ effects: [
 items:
 - /give <plr> minecraft:glass 1 name:&1E&9v&ei&9e's_&1M&9i&er&1r&9o&1r
 powers:
-- /buff
+- /effects
+- /items
 speech: Mirror Mirror in my hand, who's the biggest jerk in the land?!
 trail: [
   ]

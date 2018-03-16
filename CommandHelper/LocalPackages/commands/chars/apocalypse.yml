@@ -40,7 +40,8 @@ permissions:
   - essentials.speed
   - powers.tounderworld
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - /flyspeed <number>
 - /mindcontrol <playername>

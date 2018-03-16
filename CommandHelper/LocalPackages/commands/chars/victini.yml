@@ -19,7 +19,8 @@ permissions:
   - ch.alias.healing
   - essentials.fly
 powers:
-- /buff
+- /effects
+- /items
 - /healing <player>
 - /fly
 - /empower <player>

@@ -22,7 +22,8 @@ permissions:
   - -essentials.protect.damage.fall
   - weakto.antivenom
 powers:
-- /buff
+- /effects
+- /items
 - /carryplayer <player>
 - /dismountplayer <player>
 - /wallclimb <on/off>

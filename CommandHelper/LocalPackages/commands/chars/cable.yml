@@ -19,7 +19,8 @@ permissions:
   - ch.alias.dismountplayer
   - essentials.tppos
 powers:
-- /buff
+- /effects
+- /items
 - /jump <0-3>
 - /run <0-3>
 - /haste <0-3>

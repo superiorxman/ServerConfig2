@@ -19,7 +19,8 @@ permissions:
   - ch.alias.msg
   - ch.alias.r
 powers:
-- /buff
+- /effects
+- /items
 - /fly
 - /carryplayer <player>
 - /dismountplayer

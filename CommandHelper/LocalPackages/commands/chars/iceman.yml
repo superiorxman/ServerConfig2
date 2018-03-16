@@ -12,7 +12,8 @@ items:
 - /mgive <plr> freezeraywand
 maxHearts: 30
 powers:
-- /buff
+- /effects
+- /items
 - /run <0-2>
 - /cast freezeray
 run: 2
