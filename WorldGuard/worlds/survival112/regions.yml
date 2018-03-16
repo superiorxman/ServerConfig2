@@ -14,8 +14,9 @@ regions:
         min: {x: 577.0, y: 0.0, z: 933.0}
         max: {x: 709.0, y: 255.0, z: 1082.0}
         members: {}
-        flags: {invincible: allow, use: allow, greeting: §2You are now in SafeZone,
-            interact: allow, pvp: deny, farewell: §4You are now leaving SafeZone}
+        flags: {use: allow, invincible: allow, greeting: §2You are now in SafeZone,
+            damage-animals: allow, interact: allow, pvp: deny, farewell: §4You are
+                now leaving SafeZone}
         owners: {}
         type: cuboid
         priority: 0

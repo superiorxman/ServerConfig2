@@ -13,15 +13,6 @@ bind('player_death', null, null, @event){
         die()
     }
 
-    @oes = ''
-    for(@i = 0, @i < 10, @i++){
-        if(rand(0,2) == 1){
-            @oes = @oes.'o'
-        }
-    }
-
-    chatas(@player,@oes.'oof')
-
     @world = pworld()
    
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -48,6 +39,16 @@ bind('player_death', null, null, @event){
     if(has_permission(@player,'powers.cantdie')){
         set_phealth(@player,1)
         modify_event('death_message',null)
+        return()
     }
+
+    @oes = ''
+    for(@i = 0, @i < 10, @i++){
+        if(rand(0,2) == 1){
+            @oes = @oes.'o'
+        }
+    }
+
+    chatas(@player,@oes.'oof')
 
 }

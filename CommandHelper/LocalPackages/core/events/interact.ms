@@ -8,7 +8,7 @@ bind('player_interact', null, array('item': 0, 'button': 'left'), @event,
     
     if(has_permission(@player,'ch.alias.websling')){
 
-        assign(@cooldown, 1)
+        assign(@cooldown, 10)
         assign(@lastshot, import(@player.'lastwebshot'))
         if(@lastshot + @cooldown > time() / 1000,
             die()
@@ -19,6 +19,11 @@ bind('player_interact', null, array('item': 0, 'button': 'left'), @event,
         @multiplier = 0.5
         @arrow = shoot_projectile(@player, 'ARROW')
         @velocity = entity_velocity(@arrow)
+
+        bind('projectile_hit',null,array('id':@arrow),@e,@player){
+            unbind()
+            export(@player.'lastwebshot', 0)
+        }
         
         # spawn pig
         @ploc = ploc(@player)

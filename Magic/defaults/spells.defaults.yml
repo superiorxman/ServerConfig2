@@ -1411,6 +1411,8 @@ arrowrain:
     upgrade_required_path: apprentice
     upgrade_required_casts: 50
     icon_url: http://textures.minecraft.net/texture/7d89462020cc12f63d5117d37b52e642536de7fa774d2d96e80c72e1d4ff6
+    example_thumbnail: https://thumbs.gfycat.com/SpeedyPlainIaerismetalmark-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/SpeedyPlainIaerismetalmark
     category: combat
     worth: 100
     earns_sp: 5
@@ -1789,6 +1791,7 @@ blast|4:
         damage: 12
 
 blessing:
+    inherit: false
     icon: diamond_axe:10
     icon_disabled: diamond_hoe:10
     icon_url: http://textures.minecraft.net/texture/775c41bd5e4ef3cba5f9bdc5258973c95477e819cb20c163ffb378db5ae3
@@ -1797,47 +1800,63 @@ blessing:
     earns_sp: 8
     actions:
         cast:
-        -  class: Projectile
+        -  class: CustomProjectile
            actions:
            -  class: AreaOfEffect
               actions:
               -  class: PotionEffect
     effects:
-        projectile:
-        -  class: EffectSingle
-           location: origin
-           sound: entity_villager_yes
-           effectlib:
-             class: SmokeEffect
-             iterations: 8
-             particle: heart
+        cast:
+        - sound: entity_villager_yes
+        tick:
+        - location: target
+          particle: end_rod
+          particle_count: 20
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
         hit:
-        -  class: EffectSingle
-           sound: entity_villager_yes
-           location: origin
-           effectlib:
+        - class: EffectSingle
+          sound: entity_villager_yes
+          location: target
+          effectlib:
              class: HelixEffect
-             particle: heart
-             iterations: 2
+             particle: end_rod
+             iterations: 1
+             particles: 40
+             particleCount: 4
+             particleOffsetX: 0.2
+             particleOffsetY: 0.01
+             particleOffsetZ: 0.2
+             offset: 0,0.1,0
+             radius: $radius
+        cast_finish:
+        - location: targets
+          effectlib:
+             class: Love
+             iterations: 20
     parameters:
-        target_type: Player
+        #target_type: Player
         projectile: Snowball
         effect_heal: 6
         effect_damage_resistance: 1
         effect_fire_resistance: 1
         duration: 5000
         radius: 8
-        target_self: true
+        target_self_timeout: 100
         cooldown: 30000
-        bypass_friendly_fire: true
-        only_friendly: true
+        #bypass_friendly_fire: true
+        #only_friendly: true
+        gravity: 0.05
+        velocity: 15
     costs:
         mana: 200
-
 blind:
     icon: diamond_axe:166
     icon_disabled: diamond_hoe:166
     icon_url: http://textures.minecraft.net/texture/c7a8e7c9d3375135e39aa6d57b4e60539cf8f6efc5b58c83a13caf40561560
+    example_thumbnail: https://thumbs.gfycat.com/YoungBoilingAfricancivet-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/YoungBoilingAfricancivet
     category: combat
     worth: 70
     earns_sp: 6
@@ -2127,38 +2146,87 @@ blob|4:
         cooldown: 8000
 
 bomb:
+    inherit: false
     icon: diamond_axe:93
     icon_disabled: diamond_hoe:93
     icon_url: http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e
     category: demolition
     pvp_restricted: true
+    upgrade_required_casts: 30
     worth: 500
     earns_sp: 8
     actions:
         cast:
-        -  class: TNT
+        - class: Delay
+          delay: 2000
+        - class: Multiply
+          actions:
+          - class: Spread
+            radius: 5
+            actions:
+            - class: Delay
+              delay: "rand(10,5000)"
+            - class: ChangeContext
+              actions:
+              - class: TNT
     effects:
         cast:
         -  class: EffectSingle
            sound: entity_creeper_primed
-        -  class: EffectRing
-           particle: drip_lava
-           location: target
-           particle_count: 4
+        -  location: target
+           effectlib:
+             class: Modified
+             duration: 3000
+             period: 3
+             parameters:
+               radius: "(t/i)*10"
+             effect:
+               class: Helix
+               particle: spell_witch
+               particleCount: 2
+               particleOffsetX: 0.2
+               particleOffsetY: 0.01
+               particleOffsetZ: 0.2
+               updateLocations: false
+               particles: 20
+        projectile:
+        -  class: EffectSingle
+           location: origin
+           effectlib:
+             class: SphereEffect
+             particle: lava
+             duration: 2000
+             particles: 5
+             radius: 0.5
     parameters:
-        target: none
-        size: 1
+        target: block
+        allow_max_range: false
+        range: 20
+        size: 2
         fuse: 60
         fire: true
-        count: 12
-        py: ~20
-        pdy: -0.75
+        multiply: 8
+        source_at_target: true
+        target_offset: 0,20,0
+        source_pitch: 90
+        source_yaw: 0
         undo: 20000
         cooldown: 12000
         undo_speed: 0.2
     costs:
         mana: 175
 
+bomb|2:
+  parameters:
+    multiply: 10
+
+bomb|3:
+  parameters:
+    multiply: 12
+
+bomb|4:
+  parameters:
+    multiply: 15
 bookshop:
     icon: book
     category: npc
@@ -2501,6 +2569,7 @@ breach:
             actions:
             - class: PlayEffects
               effects: removed
+              ignore_result: true
             - class: Delay
               delay: 1
             - class: ModifyBlock
@@ -3248,34 +3317,83 @@ cloak:
         effect_invisibility: 5
     
 cluster:
+    inherit: false
     icon: diamond_axe:92
     icon_disabled: diamond_hoe:92
     icon_url: http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e
     category: demolition
     pvp_restricted: true
+    upgrade_required_casts: 30
     worth: 600
     earns_sp: 8
     actions:
         cast:
         -  class: TNT
+           projectile_effects: "big"
+           size: 3
            actions:
-           -  class: TNT
-              count: 4
+           - class: Delay
+             delay: 100
+           - class: Multiply
+             actions:
+             - class: ChangeContext
+               source_pitch: -90
+               source_yaw: 0
+               actions:
+               - class: Spread
+                 pitch_max: 45
+                 yaw_max: 360
+                 actions:
+                 - class: TNT
+                   size: 2
+                   projectile_effects: "little"
     effects:
         cast:
-        -  class: EffectSingle
-           sound: entity_creeper_primed
+        - class: EffectSingle
+          sound: entity_creeper_primed
+        big:
+        - location: origin
+          effectlib:
+            class: AnimatedBall
+            duration: 2500
+            particle: spell_witch
+            particleCount: 3
+            offset: 0,0.5,0
+            yFactor: 1
+            yOffset: 0
+        little:
+        - location: origin
+          sound: entity_creeper_primed
+          effectlib:
+            class: Sphere
+            duration: 2500
+            particle: redstone
+            offset: 0,0.5,0
     parameters:
         target: none
-        size: 2
         fuse: 60
         fire: false
         undo: 20000
         cooldown: 15000
         undo_speed: 0.2
+        repeat: 2
+        radius: 4
+        direction: 0,1,0
+        speed: 4
     costs:
         mana: 150
 
+cluster|2:
+  parameters:
+    repeat: 3
+
+cluster|3:
+  parameters:
+    repeat: 4
+
+cluster|4:
+  parameters:
+    repeat: 5
 collapse:
     icon: diamond_axe:114
     icon_disabled: diamond_hoe:114
@@ -4020,6 +4138,8 @@ day:
     icon: diamond_axe:84
     icon_disabled: diamond_hoe:84
     icon_url: http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb
+    example_thumbnail: https://thumbs.gfycat.com/DirtyScrawnyErin-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/DirtyScrawnyErin
     category: master
     worth: 1000
     earns_sp: 5
@@ -4358,6 +4478,7 @@ disintegrate:
           - class: Damage
           - class: PlayEffects
             effects: removed
+            ignore_result: true
           - class: ModifyBlock
             ignore_result: true
     effects:
@@ -4571,49 +4692,52 @@ earthquake:
     earns_sp: 8
     actions:
         cast:
-        # First thing it does is AOE Velocity
-        # To throw entities into the air
-        - class: AreaOfEffect
+        # Attach everything to a projectile
+        - class: CustomProjectile
           actions:
-          - class: Velocity
-        # Then delay 1/2 second
-        - class: Delay
-          delay: 500
-        # The Parallel action runs its actions in Parallel
-        # Generally actions are run in sequence, so one must
-        # finish completely before moving on to the next
-        # This includes the Delay action - so important for animations
-        - class: Parallel
-          actions:
-          # Repat an AOE effect five times to apply a velocity to
-          # surrounding entities, continously tossing them into the air
-          - class: Repeat
-            repeat: 5
+          # First thing it does is AOE Velocity
+          # To throw entities into the air
+          - class: AreaOfEffect
             actions:
-            - class: Delay
-              delay: 1000
-            - class: AreaOfEffect
-              actions:
-              - class: Damage
-              - class: Velocity
-                speed: 0.2
-          # Create a disc, do this in parallel with the Repeating
-          # AOE above
-          - class: Disc
-            ignore_result: true
+            - class: Velocity
+          # Then delay 1/2 second
+          - class: Delay
+            delay: 500
+          # The Parallel action runs its actions in parallel
+          # Generally actions are run in sequence, so one must
+          # finish completely before moving on to the next
+          # This includes the Delay action - so important for animations
+          - class: Parallel
             actions:
-            # The "Skip" action skips the actions below it
-            # every "skip" run (skip: 8 in params)
-            # What this does here is allows Disc to build 8 blocks,
-            # then the Delay runs- then the Delay is skipped 8 more times,
-            # etc- giving the Disc a "radiating outward" effect
-            - class: Skip
+            # Repeat an AOE effect five times to apply a velocity to
+            # surrounding entities, continously tossing them into the air
+            - class: Repeat
+              repeat: 5
               actions:
               - class: Delay
-                delay: 500
-            - class: Cover
+                delay: 1000
+              - class: AreaOfEffect
+                actions:
+                - class: Damage
+                - class: Velocity
+                  speed: 0.2
+            # Create a disc, do this in parallel with the Repeating
+            # AOE above
+            - class: Disc
+              ignore_result: true
               actions:
-              - class: ModifyBlock
+              # The "Skip" action skips the actions below it
+              # every "skip" run (skip: 8 in params)
+              # What this does here is allows Disc to build 8 blocks,
+              # then the Delay runs- then the Delay is skipped 8 more times,
+              # etc- giving the Disc a "radiating outward" effect
+              - class: Skip
+                actions:
+                - class: Delay
+                  delay: 500
+              - class: Cover
+                actions:
+                - class: ModifyBlock
     effects:
         cast:
         -  class: EffectSingle
@@ -4624,25 +4748,47 @@ earthquake:
              class: ConeEffect
              iterations: 10
              particle: spell_witch
-             lengthGrow: 0.4
+             lengthGrow: 0.3
+             particleCount: 10
+             particleOffsetX: 0.1
+             particleOffsetY: 0.1
+             particleOffsetZ: 0.1
+        hit:
         -  class: EffectSingle
-           target_offset: 0,0.5,0
-           location: target
-           color: FFFF00
-           firework: burst
-        -  class: EffectSingle
            location: target
            target_offset: 0,0.5,0
+           material: dirt
            effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 4
-             particle: flame
+             class: Modified
+             iterations: 30
+             period: 4
+             parameters:
+              height: "sin(t/10)*3"
+             effect:
+               class: Wave
+               particle: block_crack
+               cloudParticle: redstone
+               cloudColor: "835C3B"
+               particleCount: 4
+               particleOffsetX: 0.01
+               particleOffsetY: 0.01
+               particleOffsetZ: 0.01
+               particlesFront: 8
+               particlesBack: 8
+               rows: 10
+        tick:
+        - location: target
+          particle: spell_witch
+          particle_count: 10
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
     parameters:
         target: other
+        velocity: 25
         target_type: Damageable
         allow_max_range: false
-        range: 16
+        range: 24
         speed: 0.5
         item_speed: 0.2
         entity_speed: 1.2
@@ -5353,6 +5499,8 @@ flashbang:
     icon: diamond_axe:58
     icon_disabled: diamond_hoe:58
     icon_url: http://textures.minecraft.net/texture/964590674dbaf76126bd87694bfe97575be8de19aac4a8d9aa5579f8f01ed1
+    example_thumbnail: https://thumbs.gfycat.com/FearlessSeriousBorer-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/FearlessSeriousBorer
     category: combat
     pvp_restricted: true
     worth: 50
@@ -7166,12 +7314,14 @@ holylight:
                - class: Heal
                - class: PlayEffects
                  effects: heal
+                 ignore_result: true
             -  class: CheckEntity
                denied_entities: player
                actions:
                - class: Damage
                - class: PlayEffects
                  effects: hurt
+                 ignore_result: true
     effects:
         heal:
         -  class: EffectSingle
@@ -7494,6 +7644,8 @@ icbm:
     icon: diamond_axe:51
     icon_disabled: diamond_hoe:51
     icon_url: http://textures.minecraft.net/texture/9c2e9d8395cacd9922869c15373cf7cb16da0a5ce5f3c632b19ceb3929c9a11
+    example_thumbnail: https://thumbs.gfycat.com/RipeUnluckyFruitbat-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/RipeUnluckyFruitbat
     category: demolition
     pvp_restricted: true
     worth: 1500
@@ -7508,12 +7660,58 @@ icbm:
             - class: ModifyBlock
     effects:
         cast:
-        -  class: EffectSingle
-           sound: entity_ghast_shoot
+        - class: EffectSingle
+          sound: entity_ghast_shoot
+        projectile:
+        - location: origin
+          effectlib:
+            class: Sphere
+            particle: smoke_large
+            particles: 4
+            particleCount: 8
+            particleOffsetX: 0.1
+            particleOffsetY: 0.1
+            particleOffsetZ: 0.1
+            radius: 0.3
+            duration: 2000
+            delay: 6
+        - location: origin
+          effectlib:
+            class: Sphere
+            particle: lava
+            particles: 2
+            particleCount: 2
+            particleOffsetX: 0.2
+            particleOffsetY: 0.2
+            particleOffsetZ: 0.2
+            radius: 0.2
+            duration: 2000
         hit:
         - class: EffectSingle
           particle: explosion_huge
           sound: entity_generic_explode
+          effectlib:
+            class: Helix
+            particles: 10
+            particle: lava
+            particleCount: 4
+            particleOffsetX: 0.2
+            particleOffsetY: 0.2
+            particleOffsetZ: 0.2
+            radius: $radius
+            iterations: 1
+        - class: EffectSingle
+          particle: explosion_huge
+          effectlib:
+            class: Helix
+            particles: 10
+            particle: smoke_large
+            particleCount: 4
+            particleOffsetX: 0.2
+            particleOffsetY: 0.2
+            particleOffsetZ: 0.2
+            radius: $radius
+            iterations: 1
     parameters:
         target: none
         size: 1
@@ -7529,6 +7727,7 @@ icbm:
         brush: air
         radius: 3
         direction: 0,0.5,0
+        spread: 0
     costs:
         mana: 150
 
@@ -7544,22 +7743,41 @@ invincible:
         -  class: PotionEffect
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_fire_extinguish
-           location: target
-           effectlib:
-             class: SphereEffect
-             iterations: 70
-             period: .1
-             particle: redstone
-             color: 0A2A0A
-             radius: 2
-             particles: 20
+        - class: EffectSingle
+          sound: block_fire_extinguish
+          location: target
+          effectlib:
+             class: Modified
+             duration: $duration
+             parameters:
+              size: "sin(t/20) + 0.2"
+             effect:
+               class: AnimatedBall
+               iterations: 70
+               particle: redstone
+               color: "FFD700"
+               particles: 60
+               yOffset: -0.5
+               yFactor: 1
+        - location: target
+          effectlib:
+             class: Modified
+             duration: $duration
+             parameters:
+              size: "cos(t/20) + 0.2"
+             effect:
+               class: AnimatedBall
+               iterations: 70
+               particle: redstone
+               color: "C0C0C0"
+               particles: 60
+               yOffset: -0.5
+               yFactor: 1
     parameters:
         target: self
         duration: 5000
-        cooldown: 15000
-        cooldown_mage: 10000
+        cooldown: 30000
+        cooldown_mage: 6000
         transparent: transparent_to_construction
         effect_damage_resistance: 300
         effect_slow: 1
@@ -7646,6 +7864,8 @@ kill:
     icon: diamond_axe:170
     icon_disabled: diamond_hoe:170
     icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+    example_thumbnail: https://thumbs.gfycat.com/IllCloudyAfricancivet-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/IllCloudyAfricancivet
     category: master
     tags: noduel
     worth: 5000
@@ -7764,6 +7984,8 @@ laser:
     icon: diamond_axe:145
     icon_disabled: diamond_hoe:145
     icon_url: http://textures.minecraft.net/texture/7cc8e096a2ac99bf264b3e827f1e3aa07ba688d7b4f470128f741132625e
+    example_thumbnail: https://thumbs.gfycat.com/SnivelingDependentHuman-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/SnivelingDependentHuman
     category: demolition
     worth: 450
     earns_sp: 8
@@ -7774,6 +7996,7 @@ laser:
         cast:
         - class: PlayEffects
           effect: beam
+          ignore_result: true
         -  class: Line
            ignore_result: true
            actions:
@@ -7784,6 +8007,7 @@ laser:
                 - class: BreakBlock
                 - class: PlayEffects
                   effects: burn
+                  ignore_result: true
         -  class: Repeat
            actions:
            - class: Delay
@@ -7802,6 +8026,7 @@ laser:
                      - class: BreakBlock
                      - class: PlayEffects
                        effects: burn
+                       ignore_result: true
               - class: ConeOfEffect
                 actions:
                 -  class: Damage
@@ -7811,6 +8036,7 @@ laser:
            sound: magic.zap
            location: origin
            sound_volume: 0.1
+           color_override: color
            effectlib:
              class: LineEffect
              particle: redstone
@@ -8126,6 +8352,7 @@ lift:
              set_target: true
            - class: PlayEffects
              effects: float
+             ignore_result: true
            - class: Delay
              delay: 100
            - class: Skip
@@ -8133,6 +8360,7 @@ lift:
              actions:
              - class: PlayEffects
                effects: floating
+               ignore_result: true
     effects:
         floating:
         -  class: EffectSingle
@@ -9443,6 +9671,8 @@ night:
     icon: diamond_axe:85
     icon_disabled: diamond_hoe:85
     icon_url: http://textures.minecraft.net/texture/15f1fe5d5cc447e215243b4cf0b4eb56331f1b4f40909bb91a2963929ef1c2
+    example_thumbnail: https://thumbs.gfycat.com/VillainousInfantileEmeraldtreeskink-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/VillainousInfantileEmeraldtreeskink
     category: elemental
     quick_cast: true
     worth: 800
@@ -9484,9 +9714,12 @@ night:
     costs:
         mana: 150
 nuke:
+    inherit: false
     icon: diamond_axe:36
     icon_disabled: diamond_hoe:36
     icon_url: http://textures.minecraft.net/texture/f27c497b89fdcbf754b59aaadcc7e49c5217f1677bf9f8803c4cca519b3a2
+    example_thumbnail: https://thumbs.gfycat.com/QuerulousWealthyAmericanavocet-size_restricted.gif
+    example_link: https://gfycat.com/gifs/detail/QuerulousWealthyAmericanavocet
     category: master
     worth: 2000
     earns_sp: 10
@@ -9495,107 +9728,127 @@ nuke:
     upgrade_required_casts: 20
     actions:
         cast:
-        - class: Parallel
+        - class: CustomProjectile
           actions:
-          - class: Serial
+          - class: Parallel
             actions:
-            - class: Repeat
-              repeat: 4
+            - class: Serial
               actions:
-              - class: Delay
-                delay: 1000
-              - class: PlayEffects
-                ignore_result: true
-                effect: burst
-              - class: AreaOfEffect
-                radius: 4
-                actions:
-                - class: Damage
-                - class: Velocity
-                  ignore_result: true
-            - class: Repeat
-              repeat: 4
-              actions:
-              - class: Delay
-                delay: 1000
-              - class: PlayEffects
-                ignore_result: true
-                effect: burst
-              - class: AreaOfEffect
-                radius: 10
-                actions:
-                - class: Damage
-                - class: Velocity
-                  ignore_result: true
-          - class: Serial
-            ignore_result: true
-            actions:
-            - class: Sphere
-              actions:
-              - class: Skip
+              - class: Repeat
+                repeat: 4
                 actions:
                 - class: Delay
-              - class: ModifyBlock
-            - class: PlayEffects
-              effect: cloud
+                  delay: 1000
+                - class: PlayEffects
+                  ignore_result: true
+                  effect: explode
+                - class: AreaOfEffect
+                  radius: 4
+                  actions:
+                  - class: Damage
+                  - class: Velocity
+                    ignore_result: true
+              - class: Repeat
+                repeat: 4
+                actions:
+                - class: Delay
+                  delay: 1000
+                - class: PlayEffects
+                  ignore_result: true
+                  effect: explode
+                - class: AreaOfEffect
+                  radius: 10
+                  actions:
+                  - class: Damage
+                  - class: Velocity
+                    ignore_result: true
+            - class: Serial
+              ignore_result: true
+              actions:
+              - class: Sphere
+                actions:
+                - class: Skip
+                  actions:
+                  - class: Delay
+                - class: ModifyBlock
+              - class: PlayEffects
+                effect: explode
     effects:
-        burst:
-        -  class: EffectSingle
-           location: target
-           sound: entity_generic_explode
-           sound_volume: 2
-           effectlib:
-             class: SphereEffect
-             particle: explosion_huge
-             radius: 6
-             particles: 4
-             iterations: 4
-        cloud:
-        -  class: EffectSingle
-           location: target
-           effectlib:
-             class: FountainEffect
-             particle: explosion_huge
-             strands: 4
-             particlesStrand: 4
-             particlesSpout: 2
-             height: 30
-             heightSpout: 28
-             iterations: 2
-             radius: 8
-             period: 4
-             radiusSpout: 0.1
-        -  class: EffectSingle
-           location: target
-           effectlib:
-             class: SphereEffect
-             particle: explosion_huge
-             iterations: 30
-             radius: 8
-             particles: 10
-             offset: 0,24,0
+        explode:
+        - location: target
+          sound: entity_generic_explode
+          sound_volume: 10
         cast:
         -  class: EffectSingle
-           sound: entity_generic_explode
+           sound: entity_firework_launch
            location: both
-        -  class: EffectTrail
-           particle: explosion_large
-           iterations: 3
-        -  class: EffectSingle
-           location: target
+        tick:
+        -  location: target
+           particle: smoke_large
+           particle_count: 6
+           particle_offset_x: 0.3
+           particle_offset_y: 0.3
+           particle_offset_z: 0.3
+        -  location: target
+           particle: fireworks_spark
+           particle_count: 2
+           particle_offset_x: 0.01
+           particle_offset_y: 0.01
+           particle_offset_z: 0.01
+        -  location: target
+           particle: end_rod
+           particle_count: 4
+           particle_offset_x: 0.5
+           particle_offset_y: 0.5
+           particle_offset_z: 0.5
+        hit:
+        -  location: target
+           sound: entity_generic_explode
+           sound_volume: 10
+        -  location: target
            effectlib:
-             class: FountainEffect
-             particle: explosion_huge
-             strands: 4
-             particlesStrand: 4
-             particlesSpout: 2
-             height: 30
-             heightSpout: 28
-             iterations: 20
-             radius: 2
-             radiusSpout: 1
-             period: 10
+             class: Modified
+             duration: 8000
+             parameters:
+               radius: "min(8, (t/i) * 15)"
+             effect:
+               class: Helix
+               particles: 20
+               strands: 4
+               particle: explosion_large
+               particleCount: 2
+               particleOffsetX: 1
+               particleOffsetY: 0
+               particleOffsetZ: 1
+               period: 4
+        -  location: target
+           effectlib:
+             class: Modified
+             duration: 8000
+             parameters:
+               yFactor: "min(20, (t/i) * 30)"
+             effect:
+               class: AnimatedBall
+               particles: 20
+               particle: explosion_huge
+               size: 1
+               period: 4
+        -  location: target
+           effectlib:
+             class: Modified
+             duration: 8000
+             yEquation: "min(20, (t/i)*30)"
+             parameters:
+               size: "min(10, (t/i) * 20)"
+             effect:
+               class: AnimatedBall
+               particles: 20
+               particle: explosion_huge
+               size: 1
+               period: 4
+               yFactor: 0.3
     parameters:
+        velocity: 20
         target: block
         allow_max_range: true
         range: 64
@@ -10733,6 +10986,7 @@ push:
           - class: Delay
           - class: PlayEffects
             effects: iterate
+            ignore_result: true
           - class: ConeOfEffectAction
             actions:
             - class: VelocityAction
@@ -11632,6 +11886,8 @@ secure:
     icon: diamond_axe:183
     icon_disabled: diamond_hoe:183
     icon_url: http://textures.minecraft.net/texture/e266e2ffa06f553ef326d8c92994c77edde2e521697b5fb4637ed644443e12
+    example_thumbnail: https://thumbs.gfycat.com/MatureCarefreeBushbaby-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/MatureCarefreeBushbaby
     category: utility
     upgrade_required_path: master
     upgrade_required_casts: 10
@@ -13103,6 +13359,8 @@ sponge:
     icon_disabled: diamond_hoe:186
     alias: gasp
     icon_url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+    example_thumbnail: https://thumbs.gfycat.com/EcstaticVictoriousBunny-size_restricted.gif
+    example_link: https://thumbs.gfycat.com/EcstaticVictoriousBunny
     category: utility
     worth: 100
     earns_sp: 4
@@ -13115,6 +13373,7 @@ sponge:
           - class: ModifyBlock
           - class: PlayEffects
             effects: sponge
+            ignore_result: true
           - class: Delay
             delay: 10
     effects:
@@ -13237,6 +13496,7 @@ sticky:
           actions:
           - class: PlayEffects
             effects: explode
+            ignore_result: true
           - class: AreaOfEffect
             actions:
             - class: Damage
@@ -15415,6 +15675,7 @@ wandbuffshop:
 add_protection:
   icon: diamond_axe:234
   icon_disabled: diamond_hoe:234
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15430,6 +15691,7 @@ add_protection:
 add_explosion_protection:
   icon: diamond_axe:235
   icon_disabled: diamond_hoe:235
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15445,6 +15707,7 @@ add_explosion_protection:
 add_fall_protection:
   icon: diamond_axe:236
   icon_disabled: diamond_hoe:236
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15460,6 +15723,7 @@ add_fall_protection:
 add_fire_protection:
   icon: diamond_axe:237
   icon_disabled: diamond_hoe:237
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15475,6 +15739,7 @@ add_fire_protection:
 add_physical_protection:
   icon: diamond_axe:238
   icon_disabled: diamond_hoe:238
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15490,6 +15755,7 @@ add_physical_protection:
 add_projectile_protection:
   icon: diamond_axe:239
   icon_disabled: diamond_hoe:239
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15505,6 +15771,7 @@ add_projectile_protection:
 add_damage:
   icon: diamond_axe:178
   icon_disabled: diamond_hoe:178
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
@@ -15520,6 +15787,7 @@ add_damage:
 add_sharpness:
   icon: diamond_axe:178
   icon_disabled: diamond_hoe:178
+  hidden: true
   actions:
     cast:
     - class: ModifyProperties
