@@ -1,11 +1,13 @@
-buffs:
-- /effect <plr> 2 9999 3 true
 class: enderman
 costumes:
 - chatcolor: '&0'
   name: §0End§de§0rman
   sig: enderman
   val: ''
+effects:
+- /effect <plr> 2 9999 3 true
+items: [
+  ]
 permissions:
   superherocity:
   - worldedit.navigation.jumpto.command

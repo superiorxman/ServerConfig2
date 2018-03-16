@@ -1,6 +1,3 @@
-buffs:
-- /effect <plr> 11 9999 5 true
-- /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
 class: blackflash
 costumes:
 - chatcolor: '&8'
@@ -9,7 +6,11 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0Nzk4NDMxOTQ4NjYsInByb2ZpbGVJZCI6IjAyZGM3ZDcyMTk3NzQ5NTA4MWVjYTUxNTMyNTBkY2FkIiwicHJvZmlsZU5hbWUiOiJSaWNoaW5hdG9yMzI0Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82OTVkNGY2YWQ3OWFlZDIwYzU2YjEwZjZjMzE2YTE0NjYwZGRiYjUyODExZDJkYzc0YWRjNTk1YjBmYWI0YzgifX19
 - sig: c3sfw4RH8UBngOenN1mhFH1kDuNid98mproMQFSV5tNWdb2gAVkfDdcAdd573fsERQGYkAz7s23/b9tBfe8mVsX520HaVfrcPiEj4kFQcGRs5ifB9nhT3OU8BQ5c4jgZyaUH50eNpnu4nwCIWTzJOPuOp68UaMyyQ5kGVE3+nvv4HZtX3iODSosdfpy1xQ8H5VDAFnvlAv1HJo67MWBWTsoMZeX0HglrQ4kfYiAeFv+uI3qwyhZsgGeUwSmZhUDM1bJLVbwFOSrLt03sseqIYslrxw4Q8gl0LRXH9XeZcs91185e3hqpVX79XHso0/uLTteqg2yelusFfdTrD8M26ChEyjJFwnn+vCjIcFOgbORstgdPA+fPnCxFh85cwP9GjGVRxkXdy/W+gHulVb/prChoBv6H6tWRjDZmiztoPsNGz+DwGj/h9BWKanUPLPFuiX3rJOIVY7/2850KUSS68M6tliKD489l7LaOSWhMYkSb6JY32UNgozzJHr7zflWBgNv6H09rVheCpnaUTyRvsSTdRKF7y9Wt/g/BRyya/jqYHUL0mL/AEiBRSXDwBaIvJk60JSsjamscNg7Y2dhk/epcujLapn8+Aj0tkFFkPpcqVXqdGtchVNNWv3YPFV23USX8Ft2Ax+MHnZxMoXfyBQnwtbZinmeaaoufw+YXp7s=
   val: eyJ0aW1lc3RhbXAiOjE0ODk3OTMyNzYzNzksInByb2ZpbGVJZCI6ImZiYjhjMDcyNGM0YjQ5Yzg5NDhiMjZlOGFkNzMwOTllIiwicHJvZmlsZU5hbWUiOiJTdGFyYmVhcnp6Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kZWI3MmY5MDUyZmJiY2FiMjA1OGQxNzk1MWMwMzU3Njc4OTQ2NzY5YTU1ZWYwNjQzNzYxNDQ4ZjNkNWJmZTllIn19fQ==
+effects:
+- /effect <plr> 11 9999 5 true
 haste: 4
+items:
+- /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
 jump: 3
 permissions:
   speedforce:

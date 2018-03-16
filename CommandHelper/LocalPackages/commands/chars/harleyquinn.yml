@@ -1,9 +1,3 @@
-buffs:
-- /give <plr> minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer
-- /give <plr> minecraft:stick 1 16:2 name:&6Baseball_Bat
-- /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
-- /shot give <plr> pistol
-- /shot give <plr> cakebomb
 class: harleyquinn
 costumes:
 - chatcolor: '&f'
@@ -18,6 +12,14 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE0OTAyMjE2MzMyNTEsInByb2ZpbGVJZCI6ImRiYjQ3ODg3YmZiZDQwZTZiZmVjM2QxMDUzZWEzYWZmIiwicHJvZmlsZU5hbWUiOiJEX1RlcnJhX0MiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xMmU0YWE2Y2NjZWFlMzY4NzYwODY3M2U1Yjg5ZDUxOTdhOTQ1ZWJiMDZlMjBkNWM0NTgxNjYxZWQzMTYzIn19fQ==
 - sig: Se/KcmvhzOXtGpiSSsGBLmlMNsie+Iv/gA6X4MwjksVLpPOCm+AiiRJsfMkhzwk1wv7Op8v0XEdqrtS6XiMSEvts0Ejp9ZYoNdBBRS6K5tPDxzLzBHRl2KSKvMRWAfCe4gnxN1QONYz0SAfxDxnF4dlI48OAvS+4lRiR65v1UOL0OrNDPtxmKsuNH+wCvS6M/kTjMCszJbMMdVC57EG1wP+4PBWOtsbhjuaVgp0gmY7KmNg6LZrViDmIlhwiDDZTzyZntWagYZ62dVIPB21xI5QyrcDMEyAG3WF6eWjDZWaNe29HYrGlet5wFJIqCIARnNv9MvDBiGBljdHYzkRSfSoX4Fo+pFmjGBmptATkgXyri+rGUk+vx7LnsAj+275XUtWM5THdYQHqzshncp+CU+wTfs7hzQ+MXHVQ2qsOolkjd/kIlU9BQ0m3yCSNhcCE+TwKBVZt50pjt1pZPQbEiRYXJ3EXMMF3ciyNPRkBctjlwWxpKNKFedK3m7cwa4YQnTKFzQ+nWbD7Os4WEMwl2cnVz7vogt9WNuVwv+Nq6AvWqRWd8NZaqSgNfqLg9ojFXBZlDjIDMb+IYkIaSq9a/6CyrXKFZKQ4qb2Jjc2nJC2sjXk24ZaGFfOwwDj92Thha1gDV1pb0pTb/ZtCJfKM0Gjn13lnEOA0KkEvG/LhNsw=
   val: eyJ0aW1lc3RhbXAiOjE0OTIwMDgzODkzMTEsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJMb3N0SW5HYWxheGVoXyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y0ODI0YTJjYmI3ZjE3YmFkYWM1ZDRmN2RmZjcyN2ZlZjY5YzJjM2MzOWZiM2Y3ODdlMjI3OTNmNmM1In19fQ==
+effects: [
+  ]
+items:
+- /give <plr> minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer
+- /give <plr> minecraft:stick 1 16:2 name:&6Baseball_Bat
+- /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
+- /shot give <plr> pistol
+- /shot give <plr> cakebomb
 jump: 1
 permissions:
   superherocity:

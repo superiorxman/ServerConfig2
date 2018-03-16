@@ -1,12 +1,14 @@
-buffs:
-- /effect <plr> 12 9999 1 true
-- /effect <plr> 5 9999 5 true
 class: firestormjacksonstein
 costumes:
 - chatcolor: '&6'
   name: §cFi§ere§cst§eor§cm§8(§cJ§eS§8)
   sig: IY1mG9aExoVA1IR7syBkYSciVdYaNWElULWjrSIVjHZQaKsYhLOttXt4TG5fiKKg0ZeaaRifxFiuJ1Pzv0DDb4ar5mVXqJ3jpp7XcT2toyzd2+xvCZJFDOQ2559cBjmeBmkSN1BJF6fZ/YJ8ZNqyfsGDpDMaPf8RMlnbZO42GjgWbT1kjo9afAYg41alG2xNIZK8svupqu939ezx9VVZrGoOb3OlwQjSliQvVVwLgR4J0oXjqx3NfKKJ64NQ4DwpCrDWctG0AfGRcIcSr3jWUwYm0D2QRL74MOjfcqwm+5X82j/Fp/cLNto9VfEgTGaDqOXvgfnvfZ2b2f/hI7VLGWzk/eBUyknJQy+sYHflCHV9n0KQ5DQnavj/30TpoSl4QhgVEgR2+RtycU63Zktex3gXallNfVRhPn2PvbasIiHafdMnM+snLb18grjyIqQ/WC9eDjEZwP18FoupLyS5HHoMEnJYb7BIv8Z7EAJdS1mKy3MqLp8WE7lL0ZWZEacFf1JtR/d8ugbo477mQEGwtGtpomp55CCmPg+8T/rT2TRROnq9GLVct/gtmNJu+yBunRC8teZ02TPFGMwrX00Wc0bM5rsw2iSBGDuo88Rmy6x9Ze+E6n3WOP6O3R9cLVup3NsO8RUASpqJ25l5uosBVDIm/HWvkL6AvFmgBBZwlJc=
   val: eyJ0aW1lc3RhbXAiOjE1MjAyMTc0Mjc2ODcsInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M0MTY0NjgxYzRhYTVlZGYyMTk2OWU4YWQxMTlmODM0MmQ5ODZlZmNiYWI1NzczZWZkYWI0YmRkMjI3NWM3NCJ9fX0=
+effects:
+- /effect <plr> 12 9999 1 true
+- /effect <plr> 5 9999 5 true
+items: [
+  ]
 maxHearts: 20
 peech: We are Jefferson Jackson and Martin Stein, together we're FIRESTORM.
 permissions:

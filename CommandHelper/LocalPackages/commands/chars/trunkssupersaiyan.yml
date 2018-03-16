@@ -1,18 +1,19 @@
-buffs:
-- /effect <plr> 5 9999 16 true
-- /effect <plr> 10 9999 1 true
-- /effect <plr> 11 9999 1 true
-- /effect <plr> 12 9999 1 true
-- /effect <plr> 13 9999 1 true
-- /shot give <plr> kamehameha
-- /shot give <plr> kiblast
 class: trunkssupersaiyan
 costumes:
 - chatcolor: '&6'
   name: §eT§1ru§8nk§9s§8(§eSS§8)
   sig: vtlwtgEhB11+kwPOYnJ6cEbvNUuVOf9XTYeQZoReWXZWu0E6L06Kt7p6hLUb9NhZ3ZHOV0ldJGaw5oAwj5X56uE25cEnyUvUBJaCbNpdc5Iz/xfrbaGwHZTwJqeZ5oaMTHd0OEklA7gn69YfM6XPCRlsOZ5h1/gHMsQ+tZ3OP1fsnxUgo0UcGbG9kUFgIWHPoa9Am7Tz+dgZQMr0N5saJAWaOMlW5AniHVQxw+XmP4rPhQclF5BJAHD0Nu911XIzM01ELPHCjqI6FVWnM/K1nvujX+/7dR/7MUT5MDv5VzF9XiflP+fck4CtmNyhmLKE8Da3aAT+xPydVqTpD/7nPlI1t8RiDCwleu+SAs9qjBCzwX6sp9kKSnD5MhyWLtH9E9cs726/7Ao++JyEleq5Ehdle2bN/Bvnhg8oKPID4WgUgdMWLAX0vrHnOpxroHegu2rPjaJR/PKaF91E+fEp4l0/Ko/6RMj1OFgEaHvURFDQxjx5P9vR4CV+MZq3vYveNrSe2FTeNB0XJ6aRH8hMPeXvxuszLhcE9GxCdU6vNh0j9Umc/MmsKx6mlu2GA4Y7VKpgzZnQmJ+xV6egzPuU2A/51p596I+VoM97R+cKlw6KaJchK4QgjL1UbBO61lozli8Xsx5wWaCMyPupcPejjh0Z2uwJPju4qXsUNAIdxN4=
   val: eyJ0aW1lc3RhbXAiOjE1MjAzODMzOTc3NjAsInByb2ZpbGVJZCI6IjM5MTc2MmViMjRmNjRkOTU4NGQ2YmZhYzY4MmQ1NzVhIiwicHJvZmlsZU5hbWUiOiJTdHJpa2VyTWF4Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYmYzZmVlMWY0NWZhN2ZlN2MxN2QwOTA1YjVlNTVlMzMyNTk3N2Y5MmNhMDlhZTIyNjM3ZjlhYzM1ZGQ4ZTgyIn19fQ==
+effects:
+- /effect <plr> 5 9999 16 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 1 true
+- /effect <plr> 12 9999 1 true
+- /effect <plr> 13 9999 1 true
 haste: 7
+items:
+- /shot give <plr> kamehameha
+- /shot give <plr> kiblast
 jump: 7
 maxHearts: 50
 permissions:

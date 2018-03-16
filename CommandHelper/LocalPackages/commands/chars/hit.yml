@@ -1,16 +1,18 @@
-buffs:
-- /effect <plr> 5 9999 24 true
-- /effect <plr> 10 9999 1 true
-- /effect <plr> 11 9999 3 true
-- /effect <plr> 12 9999 1 true
-- /effect <plr> 13 9999 1 true
 class: hit
 costumes:
 - chatcolor: '&6'
   name: §5H§di§5t
   sig: jUgx1nsXw53ZXIiJof1V1fYvpiB0IZIBgLNJWwxG+nuCzARUO163zO/lt9vTVcNjFGjIJ0g0Z0kflJKok0D60eKfxNr3TKWwa/LjHiJo629htpoY8IW53Qwn33mwzMHQFzJcLfar+8OEv3207/QaXVBtbx64lwn/GiZfnFV5V3RR8MH2fzPGkuyh9ZsDiscIP9MflqsFynkGH6tRUCbSm8rlyFSKhrdNoc63TH3BVVgHNtfZos8in/aAX4IEFH66a5Yl8ldRN6uPiCYIPOCAGQm1zGPHv7mUNe+8FOKkNAy2klqOYPRkn8VwWLN/tOjmFPOX3CQY6LJ6XHLjo7pY1zBapAoW7OkujGT0FYGrdNZ0/1M11Rn9js1JorjIdgjHt7cwhUYmS9pCAGNrMSc0fviCZooxqorcyyH+rQ8XuF48r3AD82awcmbcsGg0wdMpXmAxh/2PRJPXMOYGd6a/1Vs6LR4zo983IJmQoBHJ2tBgwKva9NrpvDUq9LAiTJ5jnlpcB8JQODwOq0dTwcWvfoHMaEUZWO5JmlZ3dgmximzXCFmiIVZUcSejPGgGyh2BySvRGWTr/Zo+6MfNXgazAOU2J51VneNVmGy3f+kPbznWUJcSHEih3mOaHQlP6GAqqbvkfcbGAIQLlk2/qOyxqPrn+Vy1kpbCQjXHfNZxW3w=
   val: eyJ0aW1lc3RhbXAiOjE1MjExNTM5MjgyNTMsInByb2ZpbGVJZCI6IjM5MTc2MmViMjRmNjRkOTU4NGQ2YmZhYzY4MmQ1NzVhIiwicHJvZmlsZU5hbWUiOiJTdHJpa2VyTWF4Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iN2UwZDM3M2Y0OTM5ZmUzOGYyYjExZTYzNDE5OTYwOGMxZGFmZjg4MjM0MzY3Y2Q5NTM2ZjM3NjMwNjk0In19fQ==
+effects:
+- /effect <plr> 5 9999 24 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 3 true
+- /effect <plr> 12 9999 1 true
+- /effect <plr> 13 9999 1 true
 haste: 9
+items: [
+  ]
 jump: 9
 maxHearts: 50
 permissions:

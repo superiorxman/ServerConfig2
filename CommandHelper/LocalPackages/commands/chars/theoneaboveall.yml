@@ -1,4 +1,3 @@
-buffs: null
 class: theoneaboveall
 costumes:
 - chatcolor: '&e'
@@ -11,7 +10,6 @@ permissions:
   - ch.alias.glowon
   - ch.alias.glowoff
 powers:
-- /buff
 - /glow <on/off>
 speech: I am the most powerful being to exist
 trail: [

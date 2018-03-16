@@ -5,12 +5,25 @@ nametransfer:/nametransfer = >>>
     foreach(@file in @files){
         @filename = replace(@file,'.yml','')
         @filename = trim(@filename)
-        queue_push(closure(console('processing '.@filename)))
+        //queue_push(closure(console('processing '.@filename)))
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml')
         @hero = yml_decode(@contents)   
         
-        if(array_index_exists(@hero,'permissions') && array_index_exists(@hero['permissions'],'superherocity')){
-            array_remove_values(@hero['permissions']['superherocity'],'ch.alias.'.@filename)
+        if(array_index_exists(@hero,'buffs')){
+            if(is_array(@hero['buffs'])){
+                @hero['effects'] = array()
+                @hero['items'] = array()
+                foreach(@buff in @hero['buffs']){
+                    if(string_contains(@buff,'effect')){
+                        array_push(@hero['effects'],@buff)
+                    }else{
+                        array_push(@hero['items'],@buff)
+                    }
+                }
+            }else{
+                console('not an arry '.@filename)
+            }
+            array_remove(@hero,'buffs')
         }
 
         write_file('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@filename.'.yml',yml_encode(@hero,true),'OVERWRITE')

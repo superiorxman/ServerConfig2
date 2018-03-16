@@ -1,17 +1,18 @@
-buffs:
-- /effect <plr> 5 9999 15 true
-- /effect <plr> 10 9999 1 true
-- /effect <plr> 11 9999 2 true
-- /shot give <plr> redenergybeam
-- /give <plr> 95:14 64
-- /give <plr> minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring
 class: redlanterndexstarr
 costumes:
 - chatcolor: '&c'
   name: §4R§0e§4d L§3a§cn§4te§0rn§8(§3D§4S§8)
   sig: ocelot
   val: ''
+effects:
+- /effect <plr> 5 9999 15 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 2 true
 haste: 4
+items:
+- /shot give <plr> redenergybeam
+- /give <plr> 95:14 64
+- /give <plr> minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring
 jump: 5
 maxHearts: 30
 permissions:

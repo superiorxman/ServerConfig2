@@ -8482,33 +8482,6 @@ groups:
         - -essentials.protect.damage.fall
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-  blackracerbarryallen:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&8B&7l&6a&8c&7k &6R&ea&8c&6e&er&8(&6B&8)'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.powers
-        - powers.onepunch
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - essentials.warps.speedforce
-        - essentials.tppos
-        - ch.alias.speedforceteleport
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - powers.wallrun
-        - -essentials.protect.entitytarget.bypass
-        - kill.immune
-        - powers.onepunch
   ashprime:
     inheritance:
     - commonherotraits
@@ -9536,6 +9509,33 @@ groups:
         - essentials.speed
         - essentials.speed.fly
         - essentials.fly
+  blackracerbarryallen:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&8B&7l&6a&8c&7k &6R&ea&8c&6e&er&8(&6B&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - powers.onepunch
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.speedforceteleport
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - powers.wallrun
+        - -essentials.protect.entitytarget.bypass
+        - kill.immune
+        - powers.onepunch
 schema-version: 1
 worlds:
   checkers:
@@ -9814,7 +9814,8 @@ users:
     permissions:
     - donot.hire
   72fe3fc6-3df2-49ee-b836-38459deae8cd:
-    group: []
+    group:
+    - mortal
     options:
       name: littlejoshboy
     permissions:
@@ -10131,7 +10132,8 @@ users:
     options:
       name: VipeGamingYT
   aa087f05-df98-4fa1-88fe-c6c2ea29b784:
-    group: []
+    group:
+    - blackracerbarryallen
     options:
       name: SilverImtiaaz
   a148da77-84d7-4b02-ae6e-cacb3befdef6:
@@ -11303,8 +11305,7 @@ users:
     options:
       name: TheMauBeast
   d9e73a5b-013b-4589-b92a-969f0f88f694:
-    group:
-    - blackracerbarryallen
+    group: []
     options:
       name: sddtjacr2013
   ead1c0c7-8608-446c-bf5e-05b64c9fa236:
