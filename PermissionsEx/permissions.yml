@@ -9538,6 +9538,12 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
+  mario:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&3'
+      prefix: '&4M&fa&4r&ei&9o'
 schema-version: 1
 worlds:
   checkers:
@@ -9899,7 +9905,7 @@ users:
       name: Morti_Ipsum
   2a63e405-eecf-480a-9fcf-1e22b996d998:
     group:
-    - odin
+    - mario
     permissions:
     - is.builder
     options:
