@@ -18,13 +18,9 @@ jump: 6
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.carryplayer
-  - ch.alias.dismountplayer
   - essentials.speed
 powers:
 - /buff
-- /carryplayer <player>
-- /dismountplayer
 - /jump <0-6>
 - /run <0-6>
 - /haste <0-6>
