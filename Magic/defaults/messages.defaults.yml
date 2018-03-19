@@ -607,6 +607,9 @@ spells:
     arrow_regular:
         name: Normal Arrow
         description: Fire a normal arrow
+    arrow_blink:
+        name: Blink Arrow
+        description: Teleport to the location where your arrow lands
     toss:
         name: Toss
         description: Toss a block
@@ -2229,16 +2232,16 @@ wands:
         description: A Wand with Limited Potential
     beginner:
         name: Beginner Wand
-        description: $path Magic Wand\nFor demonstration purposes
+        description: "$path Magic Wand\nFor demonstration purposes"
     master:
         name: Master Wand
-        description: $path Magic Wand\nFor demonstration purposes
+        description: "$path Magic Wand\nFor demonstration purposes"
     student:
         name: Student Wand
-        description: $path Magic Wand\nFor demonstration purposes
+        description: "$path Magic Wand\nFor demonstration purposes"
     apprentice:
         name: Apprentice Wand
-        description: $path Magic Wand\nFor demonstration purposes
+        description: "$path Magic Wand\nFor demonstration purposes"
     rage:
         name: Rage Sword
         description: Gathers energy when hitting an enemy

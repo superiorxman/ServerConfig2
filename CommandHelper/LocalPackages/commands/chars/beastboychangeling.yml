@@ -86,7 +86,6 @@ permissions:
   - libsdisguises.disguise.illusioner.-setinvisible
   - libsdisguises.disguise.killerbunny.-setinvisible
   - libsdisguises.disguise.zombiehorse.-setinvisible
-  - powers.herotransform
   - ch.alias.shrink
   - ch.alias.normalsize
   - ch.alias.grow
@@ -98,7 +97,6 @@ powers:
 - /run <0-6>
 - /haste <0-6>
 - /disguise
-- /herotransform
 - /shrink
 - /normalsize
 - /grow
@@ -111,5 +109,3 @@ run: 6
 speech: Beast Boy is here to save the day!
 trail: [
   ]
-transformations:
-- garfieldlogan

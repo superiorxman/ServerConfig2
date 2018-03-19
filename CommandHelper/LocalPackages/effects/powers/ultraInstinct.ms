@@ -1,5 +1,8 @@
 bind('entity_damage', null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK/'), @e) {
    
+    if(ponline(@e['damager']) && has_permission(@e['damager'],'is.op')){
+        die()
+    }
     if(has_permission(@e['player'], "powers.ultrainstinct"))
     {
         cancel()

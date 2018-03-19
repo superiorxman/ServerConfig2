@@ -17,12 +17,6 @@ players:
       name: MisserMan
       timestamp: 1519677753
     rank: 20
-  433a0d8e-aa8a-42ae-bc54-f4456bf366c0:
-    rank: 5
-    party: Dude
-    name:
-      name: AntiSepticEye1
-      timestamp: 1520024379
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     name:
       name: TheRealSans_
@@ -59,12 +53,6 @@ players:
       name: Clutonov
     rank: 5
     party: Dude
-  d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
-    rank: 20
-    party: darkheroes
-    name:
-      name: LoneRanger13
-      timestamp: 1520205458
   8cd908e9-a758-41fa-99b9-1a8f8ffc5297:
     name:
       timestamp: 1520211151
@@ -137,40 +125,10 @@ players:
       timestamp: 1520675492
       name: simon2008
     rank: 5
-  90b2ba6d-43e6-4e5c-8f77-9126b6969a9c:
-    name:
-      name: WingArmor
-      timestamp: 1520686584
-    rank: 5
-    party: darkheroes
-  861da66b-8eef-4143-93f1-dbab33665595:
-    name:
-      timestamp: 1520690067
-      name: MageOfSixPaths
-    party: Group
-    rank: 20
-  09926bea-1ec0-493b-930b-ec78f4ce150e:
-    name:
-      name: Miss_Mercy
-      timestamp: 1520690079
-    party: Group
-    rank: 5
-  9e8cb2d8-f44f-46f2-9ca6-afc0a17573f0:
-    party: Group
-    name:
-      timestamp: 1520721838
-      name: DoctorWafflez
-    rank: 5
-  5d414617-ce0a-467b-9fe2-07e742970ed2:
-    party: Group
-    name:
-      name: TheKingOfThings
-      timestamp: 1520732158
-    rank: 5
   e17d8de4-9fa8-474a-a6c1-54d28c9a5591:
-    rank: 20
+    rank: 5
     name:
-      timestamp: 1520746575
+      timestamp: 1521421688
       name: nevsfam
     party: Chaos
   ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
@@ -239,9 +197,6 @@ players:
       name: xMqthy
     rank: 5
     party: XMen
-  391762eb-24f6-4d95-84d6-bfac682d575a:
-    options:
-      spy: true
   2a402832-0240-4587-89ae-4541eb4ed088:
     party: orkhorl
     name:
@@ -254,6 +209,51 @@ players:
       timestamp: 1521242216
       name: AdoBoy
     party: TheTitans
+  ff0fec80-b8d2-4d10-8951-3061c6e7181d:
+    rank: 5
+    party: Chaos
+    name:
+      timestamp: 1521318126
+      name: Ultimate_Gamer00
+  524eb61e-b329-4b65-8cd2-8f6d0e9b1919:
+    name:
+      name: carolinacub
+      timestamp: 1521324117
+    party: TheTitans
+    rank: 5
+  d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
+    rank: 20
+    party: HEROES
+    name:
+      name: LoneRanger13
+      timestamp: 1521393937
+  861da66b-8eef-4143-93f1-dbab33665595:
+    name:
+      timestamp: 1521421688
+      name: MageOfSixPaths
+    party: Chaos
+    rank: 20
+  b67316ab-26b9-4329-8766-bb5a1eb164b3:
+    rank: 5
+    name:
+      timestamp: 1521449586
+      name: ItsDeathWing
+    party: TheTitans
+  f475c2cf-ebbe-4314-8c6a-7211b32e55ae:
+    rank: 5
+    party: Chaos
+    name:
+      name: _The_Craftsman_
+      timestamp: 1521490297
+  391762eb-24f6-4d95-84d6-bfac682d575a:
+    options:
+      spy: true
+  4082517f-c021-411b-b302-ccb2d61c84c1:
+    name:
+      name: Bruce_Wayne08
+      timestamp: 1521493037
+    rank: 5
+    party: XMen
 parties:
   TheTitans:
     members:
@@ -268,23 +268,19 @@ parties:
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - a15f051c-1473-4f90-88f3-bad6e6b9dce2
     - ae37c994-7b2c-4927-923c-33fc87301321
+    - 524eb61e-b329-4b65-8cd2-8f6d0e9b1919
+    - b67316ab-26b9-4329-8766-bb5a1eb164b3
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
     motd: HB Nobody
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
     members:
     - 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
-    - 433a0d8e-aa8a-42ae-bc54-f4456bf366c0
     - f94c3653-6191-4414-ab77-5a315fe93cd9
   Overwatch:
     members:
     - 8cb79cd3-1e48-4087-9137-a37e164f1494
     leader: 8cb79cd3-1e48-4087-9137-a37e164f1494
-  darkheroes:
-    members:
-    - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
-    - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
-    leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
   orkhorl:
     leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
     members:
@@ -305,18 +301,14 @@ parties:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
     - b06401f9-844e-4fb8-80e3-55fa795b4eb3
     - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
-  Group:
-    leader: 861da66b-8eef-4143-93f1-dbab33665595
-    members:
-    - 861da66b-8eef-4143-93f1-dbab33665595
-    - 09926bea-1ec0-493b-930b-ec78f4ce150e
-    - 9e8cb2d8-f44f-46f2-9ca6-afc0a17573f0
-    - 5d414617-ce0a-467b-9fe2-07e742970ed2
   Chaos:
     members:
     - e17d8de4-9fa8-474a-a6c1-54d28c9a5591
     - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
-    leader: e17d8de4-9fa8-474a-a6c1-54d28c9a5591
+    - ff0fec80-b8d2-4d10-8951-3061c6e7181d
+    - 861da66b-8eef-4143-93f1-dbab33665595
+    - f475c2cf-ebbe-4314-8c6a-7211b32e55ae
+    leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
   YOUNG:
@@ -336,3 +328,8 @@ parties:
     - 55679107-589e-4487-abb4-4fca48b26f25
     - 4d2c833f-8b88-4269-887d-3b84a57435c2
     - f621586e-8ef8-448d-9264-86b61375052e
+    - 4082517f-c021-411b-b302-ccb2d61c84c1
+  HEROES:
+    leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+    members:
+    - d1ad3f3c-2a47-4921-81bb-68a9f2862c34

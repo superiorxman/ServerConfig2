@@ -3,36 +3,33 @@ register_command('speak',
         'description': 'Power',
         'permission': 'ch.alias.speak',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
-    
         'executor': closure(@alias, @sender, @args) {
-        
             if (array_size(@args) < 2) {
-            
                 msg(color('RED').color('BOLD').'Improper Usage!');
-                msg(color('RED').'Usage: /speak <player> <msg>');
-                die(); # No need to go further					
-            
+                msg(color('RED').'Usage: /speak <player> <some sort of message>');
+                die()
             }
             
+            @vic = @args[0]
+            @vic = player(@vic)
+            
+            if(!has_permission(@vic,'is.ingame')){
+                msg(color('RED').color('BOLD').'Sorry, that player is not in the game.');
+                die()
+            }
+
             @msg = ''
-            @plr = @args[0]
-            @plrSpeaking = player()
-            
-            for (@i=1, @i < array_size(@args), @i++){
-            
+            for (@i=1, @i < array_size(@args), @i++){            
                 @msg = @msg.' '.@args[@i]
-            
             }
             
             @msg = trim(@msg)
-            
-            sudo('/sudo '.@plr.' c:.'.@msg)
+            chatas(@vic,'.'.@msg)
             
             @players = all_players()
-            
             foreach (@player in @players){
-                if (has_permission(@player, 'is.officer')){
-                    tmsg(@player, color('GRAY').color('ITALIC').'*Player Speaking*: '.@plrSpeaking)
+                if (has_permission(@player, 'is.police')){
+                    tmsg(@player, color('GRAY').color('ITALIC').'*Player Speaking*: '.@sender)
                 }
             }
             

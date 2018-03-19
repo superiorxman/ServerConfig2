@@ -1434,6 +1434,83 @@ arrow|6:
     costs:
         mana: 50
 
+arrow_blink:
+    icon: diamond_axe:248
+    icon_disabled: diamond_hoe:248
+    icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+    category: combat
+    worth: 100
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Projectile
+          actions:
+          - class: Teleport
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_arrow_shoot
+           sound_pitch: 0.2
+           sound_volume: 0.3
+           location: origin
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 20
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: portal
+             disappearWithOriginEntity: true
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 10
+             particle: redstone
+             color: "FF00FF"
+             disappearWithOriginEntity: true
+        hit:
+        -  class: EffectSingle
+           target_offset: 0,0.5,0
+           location: target
+           color: FACC2E
+           firework: burst
+        teleport:
+        - class: EffectSingle
+          sound: magic.teleport
+          location: target
+          particle_override: particleNucleus
+          color_override: colorOrbital
+          source_location: eyes
+          effectlib:
+             class: AtomEffect
+             particleNucleus: fireworks_spark
+             particleOrbital: redstone
+             iterations: 16
+             offset: 0,-1,0
+        - class: EffectSingle
+          location: target
+          source_location: body
+          color_override: colorNucleus
+          effectlib:
+             class: AtomEffect
+             particleNucleus: redstone
+             particleOrbital: fireworks_spark
+             iterations: 8
+    parameters:
+      target: none
+      projectile: TippedArrow
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      vertical_range: 8
+    costs:
+      arrow: 1
 arrow_bomb:
     icon: diamond_axe:247
     icon_disabled: diamond_hoe:247
@@ -1447,7 +1524,7 @@ arrow_bomb:
           actions:
           - class: AreaOfEffect
             actions:
-            - class: PotionEffect
+            - class: Damage
             - class: Velocity
           - class: Sphere
             actions:
@@ -1466,6 +1543,19 @@ arrow_bomb:
              iterations: 8
              lengthGrow: 1
              particle: smoke_normal
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 5
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: lava
+             disappearWithOriginEntity: true
         hit:
         -  class: EffectSingle
            target_offset: 0,0.5,0
@@ -1499,26 +1589,27 @@ arrow_bomb:
     parameters:
       target: none
       projectile: TippedArrow
-      damage: 0.75
-      speed: 2
-      spread: 1
       fire: false
       tick_increase: 1180
       entity_undo: false
       undo: 5000
-      speed: 0.9
       living_entity_speed: 0.7
       direction: 0,0.8,0
       falling: true
-      radius: 2
-      durability_max_distance: 3
-      damage_max_distance: 2
       destructible: solid
       destructible_override: true
-      destructible_durability: 50
       break_durability: 10
       physics_blocks: true
       undo_speed: 0.5
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      break_durability: 1000
+      destructible_durability: 5000
+      radius: 3
+      durability_max_distance: 5
+      damage_max_distance: 4
+      undo: 30000
+      damage: 10
     costs:
       arrow: 1
 
@@ -1545,13 +1636,19 @@ arrow_poison:
            sound_pitch: 0.2
            sound_volume: 0.3
            location: origin
-        -  class: EffectSingle
-           location: origin
-           effectlib:
-             class: ConeEffect
-             iterations: 8
-             lengthGrow: 1
-             particle: smoke_normal
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 5
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: slime
+             disappearWithOriginEntity: true
         hit:
         -  class: EffectSingle
            target_offset: 0,0.5,0
@@ -1561,12 +1658,12 @@ arrow_poison:
     parameters:
       target: none
       projectile: TippedArrow
-      speed: 2
-      spread: 1
       duration: 10000
       potion_effects:
       - type: poison
         duration: 10000
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
     costs:
       arrow: 1
 arrow_regular:
@@ -1580,8 +1677,10 @@ arrow_regular:
     parameters:
       target: none
       projectile: TippedArrow
-      speed: 2
-      spread: 0
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      tick_increase: 0
+      pickup: allowed
     costs:
       arrow: 1
 arrowrain:
@@ -4903,7 +5002,7 @@ earthquake:
                 actions:
                 - class: Damage
                 - class: Velocity
-                  speed: 0.2
+                  speed: 0.4
             # Create a disc, do this in parallel with the Repeating
             # AOE above
             - class: Disc
@@ -4982,10 +5081,10 @@ earthquake:
         destructible: destructible_mining
         undo: 10000
         skip: 8
-        target_self: true
+        target_self_timeout: 2000
         cooldown: 20000
         undo_speed: 0.5
-        damage: 1
+        damage: 3
     costs:
         mana: 150
 
@@ -5781,7 +5880,6 @@ flashbang:
       effect_blindness: 1
       effect_night_vision: 1
       radius: 5
-      target_self: true
       target_self_timeout: 2000
       cooldown: 10000
       speed: 1
@@ -8714,6 +8812,7 @@ lightning:
         range: 32
         radius: 8
         cooldown: 10000
+        undo: 8000
     costs:
         mana: 80
 
@@ -10069,7 +10168,8 @@ nuke:
         skip: 16
         delay: 1
         undo_speed: 2
-        damage: 1.5
+        damage: 4
+        target_self_timeout: 2000
     costs:
         mana: 200
 
@@ -13332,8 +13432,8 @@ singularity:
       radius: 5
       repeat: 10
       delay: 250
-      damage: 1
-      target_self: true
+      damage: 3
+      target_self_timeout: 2000
       speed: 0.5
       item_speed: 0.5
       entity_speed: 0.5
@@ -16248,7 +16348,7 @@ wave:
         brush: air
         falling: true
         undo: 15000
-        damage: 0.5
+        damage: 2
         undo_speed: 0.5
     costs:
         mana: 150

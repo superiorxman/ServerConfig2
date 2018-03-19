@@ -489,8 +489,18 @@ battle:
 #
 # It is probably best to use the default "wand" for this now instead!
 #
+# Unless your intention is a wand that levels on its own, apart from player progression.
+#
 beginner:
-    inherit: wand
+  inherit: wand
+  class: ""
+  mana_max: 50
+  mana: 50
+  mana_regeneration: 5
+  active_spell: missile
+  path: beginner
+  spells:
+   - missile
 
 borealis:
     inherit: master
@@ -1072,7 +1082,7 @@ magicbow:
   inherit: base_bow
   class: archer_mage
   icon: bow:1
-  cast_min_projectile_speed: 2
+  cast_min_bowpull: 0.5
   protection:
     projectile: 0.5
 

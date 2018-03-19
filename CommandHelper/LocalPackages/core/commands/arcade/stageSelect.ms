@@ -46,7 +46,7 @@ register_command('goworld',
                 @hero['costumes'][0]['name'] = @sender
             }
 
-            @costNum = import(@player.'skinNum')
+            @costNum = import(@sender.'skinNum')
             if(@costNum == null){
                 @costNum = 0
             }else{
