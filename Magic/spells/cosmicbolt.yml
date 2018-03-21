@@ -6,7 +6,7 @@ cosmicbolt:
     worth: 50000
     actions:
       cast:
-      - class: Kill
+      - class: Damage
     effects:
         cast:
         - class: EffectSingle
@@ -44,5 +44,6 @@ cosmicbolt:
         bypass_backfire: true
         bypass_pvp: false
         range: 64
+        damage: 9999
     costs:
         mana: 0

@@ -1,0 +1,15 @@
+jokerfloweracidwand:
+  spell_inventory:
+    jokerfloweracid: 0
+  active_spell: jokerfloweracid
+  name: Flower Acid
+  spells:
+  - jokerfloweracid
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast

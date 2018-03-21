@@ -43,7 +43,6 @@
     associative_array('hogwarts','Hogwarts'),
     associative_array('fortressofsolitude','Fortress of Solitude'),
     associative_array('hallofjustice','Hall of Justice'),
-    associative_array('starktower','Stark Tower'),
     associative_array('starlabs','Star Labs')
 
 )

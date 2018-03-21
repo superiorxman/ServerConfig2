@@ -11,6 +11,19 @@ bind('player_chat', null, null, @e) {
         die()
     }
 
+    if(import(@player.'laughingGasActive') == true){
+        @msg = @e['message']
+        if(string_contains(@msg,'laughingGas') == true){
+            @msg = replace(@msg,'laughingGas','')
+            modify_event('message',@msg)
+            die()
+        }else{
+            tmsg(@player,color('RED').'Sorry, you temporarily cannot speak.')
+            cancel()
+            die()
+        }
+    }
+
     // force lowercase should happen no matter what, so it's 1st
     if(has_permission('case.tolower')){
         @msg = to_lower(@msg)

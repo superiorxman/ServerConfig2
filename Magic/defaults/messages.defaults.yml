@@ -210,6 +210,10 @@ mage:
     no_property: Mage has no property $name
     player_reconfigured: $name mage data reconfigured
     player_not_reconfigured: $name mage data not reconfigured
+    player_spells_levelled: "Levelled up $count of $name's spells"
+    player_spells_not_levelled: "Did not level up any of $name's spells"
+    spells_levelled: "Levelled up $count of your spells"
+    spells_not_levelled: "Did not level up any of your spells"
     reconfigured: Mage reconfigured
     not_reconfigured: Mage not reconfigured
     earned_sp: "a:&6+&e$amount &6SP"
@@ -2107,7 +2111,9 @@ wand:
     consume_reduction: "&6Manifestation"
     cooldown_reduction: "&6Cooldown Reduction $roman"
     power: "&6Power $roman"
-    attributes:
+    attributes: "&d$attribute $value"
+    attributes_stack: "&d$attribute +$value"
+    item_attributes:
       GENERIC_ATTACK_DAMAGE: "Attack Damage"
     protection:
       overall: "&2Protection $roman"
@@ -2141,6 +2147,10 @@ wand:
     hotbar_count: "$amount hotbars"
     player_upgraded: $name's wand upgraded
     player_not_upgraded: $name's wand not upgraded
+    player_spells_levelled: "Levelled up $count of $name's spells"
+    player_spells_not_levelled: "Did not level up any of $name's spells"
+    spells_levelled: "Levelled up $count of your spells"
+    spells_not_levelled: "Did not level up any of your spells"
     no_wand: You must be holding a wand
     player_no_wand: $name is not holding a wand
     no_item: You must be holding an item
@@ -2232,16 +2242,16 @@ wands:
         description: A Wand with Limited Potential
     beginner:
         name: Beginner Wand
-        description: "$path Magic Wand\nFor demonstration purposes"
+        description: "For demonstration purposes"
     master:
         name: Master Wand
-        description: "$path Magic Wand\nFor demonstration purposes"
+        description: "For demonstration purposes"
     student:
         name: Student Wand
-        description: "$path Magic Wand\nFor demonstration purposes"
+        description: "For demonstration purposes"
     apprentice:
         name: Apprentice Wand
-        description: "$path Magic Wand\nFor demonstration purposes"
+        description: "For demonstration purposes"
     rage:
         name: Rage Sword
         description: Gathers energy when hitting an enemy

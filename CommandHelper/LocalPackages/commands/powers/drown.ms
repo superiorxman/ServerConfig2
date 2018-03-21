@@ -15,6 +15,22 @@ register_command('drown',
             @vic = @args[0]
             @vic = player(@vic)
 
+            if(!has_permission(@vic,'is.incity') && !has_permission(@vic,'in.survival')){
+                msg(color('RED').'Sorry, that person is in a minigame or other protected area')
+                die()
+            }
+
+            @id = get_claim_id(ploc(@vic))
+            if(@id != null){
+                msg(color('RED').'Sorry, that person is in a minigame or other protected area')
+                die()
+            }
+            
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            if(_coolDown('kill',60,@plr)){
+                return()
+            }
+
             set_entity_air(puuid(@vic),0)
 
             @pos1 = ploc(@vic)

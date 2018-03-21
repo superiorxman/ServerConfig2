@@ -39,6 +39,9 @@ load_default_paths: true
 # Set to false to skip loading defaults/classes.defaults.yml entirely.
 load_default_classes: true
 
+# Set to false to skip loading defaults/attributes.defaults.yml entirely.
+load_default_attributes: true
+
 # Set to false to skip loading defaults/crafting.defaults.yml entirely.
 load_default_crafting: true
 
@@ -172,11 +175,11 @@ wand_location_offset_vertical: 0
 # Set this to true to make wands "Unbreakable", regardless of the indestructible property
 wand_unbreakable: false
 
-# Set this to false to allow players to drop wands by dragging them out of their inventories
-# and to let players put wands in chests.
-# The Magic.wand.override_drop permission also allows players to do this.
-# Wands are droppable normally unless they are set to "undroppable: true"
-wand_undroppable: false
+# Set this to false to allow players to put wands in chests.
+# The Magic.wand.override_stash permission also allows players to override this setting.
+# Wands are droppable and stashable normally unless they are set to "undroppable: true"
+# The "unstashable" property can also be set per-wand instead of using this global setting.
+wand_unstashable: false
 
 # Skill configuration
 default_skill_icon: stick

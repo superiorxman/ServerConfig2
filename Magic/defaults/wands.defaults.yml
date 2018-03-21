@@ -104,7 +104,6 @@ apprentice:
     icon: wood_hoe:3
     migrate_icon: wood_hoe
     effect_color: '22FF22'
-    path: apprentice
     hotbar_count: 2
     mana_regeneration: 40
     mana_max: 200
@@ -444,7 +443,7 @@ base_wand:
     swap: cycle_hotbar
     quiet: 1
     effect_bubbles: false
-    attributes:
+    item_attributes:
       GENERIC_ATTACK_SPEED: 10
     attribute_slot: mainhand
   
@@ -452,9 +451,9 @@ base_sword:
     hidden: true
     inherit: base_bound
     mode: inventory
-    drop: toggle
+    drop: cycle_hotbar
     left_click: none
-    right_click: none
+    right_click: toggle
     swap: cycle_hotbar
     quick_cast: true
     quiet: 1
@@ -492,13 +491,14 @@ battle:
 # Unless your intention is a wand that levels on its own, apart from player progression.
 #
 beginner:
-  inherit: wand
-  class: ""
+  inherit: base_wand
+  icon: wood_hoe:1
+  migrate_icon: wood_hoe
+  effect_color: random
   mana_max: 50
   mana: 50
   mana_regeneration: 5
   active_spell: missile
-  path: beginner
   spells:
    - missile
 
@@ -1082,7 +1082,8 @@ magicbow:
   inherit: base_bow
   class: archer_mage
   icon: bow:1
-  cast_min_bowpull: 0.5
+  # This can be used to force the bow to always cast a normal arrow under some amount of pull
+  # cast_min_bowpull: 0.5
   protection:
     projectile: 0.5
 
@@ -1110,9 +1111,10 @@ magicsword:
     migrate_icon: gold_sword
     effect_color: '11FF11'
     hide_flags: 62
+    active_spell: missile
     protection:
       physical: 0.4
-    attributes:
+    item_attributes:
       GENERIC_ATTACK_DAMAGE: 6
 
 magictorch:
@@ -1135,7 +1137,6 @@ magneticleggings:
 
 master:
     inherit: apprentice
-    path: master
     icon: wood_hoe:4
     migrate_icon: gold_axe
     mana_regeneration: 50
@@ -1204,7 +1205,7 @@ mastersword:
     drop: alt_cast
     protection:
       physical: 0.5
-    attributes:
+    item_attributes:
       GENERIC_ATTACK_DAMAGE: 10
 
 minister:
@@ -1888,6 +1889,7 @@ wand:
     icon: wood_hoe:1
     migrate_icon: wood_hoe
     effect_color: random
+    active_spell: missile
 
 wizardboots:
     icon: chainmail_boots

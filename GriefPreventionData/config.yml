@@ -10,7 +10,6 @@ GriefPrevention:
     mainmenu: -1
     speedforce: -1
     titanstower: -1
-    starktower: -1
     fortressofsolitude: -1
     helicarrier: -1
     infiniteparkour: -1
@@ -61,7 +60,6 @@ GriefPrevention:
       speedforce: Disabled
       jail: Disabled
       mainmenu: Disabled
-      starktower: Disabled
       fortressofsolitude: Disabled
     PreventGlobalMonsterEggs: true
     PreventTheft: true
@@ -127,7 +125,6 @@ GriefPrevention:
       mainmenu: true
       speedforce: true
       titanstower: true
-      starktower: true
       fortressofsolitude: true
       helicarrier: true
       infiniteparkour: true
