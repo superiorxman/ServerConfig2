@@ -1,9 +1,8 @@
-bind('entity_damage', null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK/'), @e) {
-   
+bind('entity_damage', null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|MAGIC|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK|CUSTOM|ENTITY_SWEEP_ATTACK/'), @e) {
     if(ponline(@e['damager']) && has_permission(@e['damager'],'is.op')){
         die()
     }
-    if(has_permission(@e['player'], "powers.ultrainstinct"))
+    if(has_permission(@e['player'], "powers.ultrainstinct") && import(@attacker.'isDepowered') != true)
     {
         cancel()
         tmsg(@e['player'], color('RED').'Your Ultra Instinct saves you from damage!')

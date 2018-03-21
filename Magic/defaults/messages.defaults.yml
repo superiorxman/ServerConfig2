@@ -404,7 +404,7 @@ shops:
   no_class: "&cYou must be a $class"
   no_required_path: "&cYou must be at least $path!"
   no_path_exact: "&cYou must be at $path!"
-  no_path_end: "Y&cou must be ready to advance from $path!"
+  no_path_end: "&cYou must be ready to advance from $path!"
   insufficient: "&cCosts $cost"
   confirm_title: "Buy $item"
   unlock_confirm_title: "Unlock $item"
@@ -1786,7 +1786,7 @@ spells:
         description: "Spend Spell Points to learn new spells.\nWhen you have learned all the required spells on your current path, you will rank up to the next path!"
         cost_lore: "Costs: $cost"
         no_items: There are no spells for you to buy here
-        no_path: You may not learn with that $wand.
+        no_path: You may not learn here.
         no_upgrade: There is nothing more for you here.
         no_required_path: You must be at least $path!
         no_path_end: You must be ready to advance from $path!
@@ -2063,8 +2063,10 @@ wand:
     default_name: Wand
     upgrade_default_description: Will upgrade your wand.
     upgrade_item_description: "&eWill be absorbed by your wand"
-    spell_item_description: "&eWill be absorbed by your wand"
-    brush_item_description: "&eWill be absorbed by your wand"
+    #spell_item_description: "&eWill be absorbed by your wand"
+    spell_item_description: ""
+    #brush_item_description: "&eWill be absorbed by your wand"
+    brush_item_description: ""
     copy_material_name: Copy
     copy_material_description: Fills with the target material
     erase_material_name: Erase
@@ -2241,8 +2243,8 @@ wands:
         name: Starter Wand
         description: A Wand with Limited Potential
     beginner:
-        name: Beginner Wand
-        description: "For demonstration purposes"
+        name: (Outdated) Beginner Wand
+        description: "Don't use this anymore... Use 'wand' instead."
     master:
         name: Master Wand
         description: "For demonstration purposes"

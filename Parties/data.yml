@@ -27,13 +27,13 @@ players:
     party: TheTitans
     name:
       name: littlejoshboy
-      timestamp: 1519979137
-    rank: 5
+      timestamp: 1521668009
+    rank: 10
   52b6e861-9b1b-4e74-9fe9-85e81a7e6472:
     name:
-      timestamp: 1520044791
+      timestamp: 1521667963
       name: Christina1125
-    rank: 5
+    rank: 10
     party: TheTitans
   09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
     rank: 10
@@ -43,9 +43,9 @@ players:
     party: TheTitans
   e0870764-dcc8-49a5-ad33-6ec20d0be001:
     name:
-      timestamp: 1520049853
+      timestamp: 1521667976
       name: Spiderninja90
-    rank: 5
+    rank: 10
     party: TheTitans
   f94c3653-6191-4414-ab77-5a315fe93cd9:
     name:
@@ -110,9 +110,9 @@ players:
   a15f051c-1473-4f90-88f3-bad6e6b9dce2:
     party: TheTitans
     name:
-      timestamp: 1520566300
+      timestamp: 1521667994
       name: Amazonian_Miner
-    rank: 5
+    rank: 10
   b06401f9-844e-4fb8-80e3-55fa795b4eb3:
     name:
       name: Bethlagon
@@ -239,12 +239,6 @@ players:
       timestamp: 1521449586
       name: ItsDeathWing
     party: TheTitans
-  f475c2cf-ebbe-4314-8c6a-7211b32e55ae:
-    rank: 5
-    party: Chaos
-    name:
-      name: _The_Craftsman_
-      timestamp: 1521490297
   391762eb-24f6-4d95-84d6-bfac682d575a:
     options:
       spy: true
@@ -254,6 +248,12 @@ players:
       timestamp: 1521493037
     rank: 5
     party: XMen
+  f475c2cf-ebbe-4314-8c6a-7211b32e55ae:
+    rank: 20
+    party: CHAOS
+    name:
+      name: _The_Craftsman_
+      timestamp: 1521655215
 parties:
   TheTitans:
     members:
@@ -271,7 +271,8 @@ parties:
     - 524eb61e-b329-4b65-8cd2-8f6d0e9b1919
     - b67316ab-26b9-4329-8766-bb5a1eb164b3
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
-    motd: Hey Guys. New Gym on the very top floor.
+    motd: We need to vote what to do with the spare 2 floors. leave a sign
+    desc: Were The Titans
   Dude:
     leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
     members:
@@ -307,7 +308,6 @@ parties:
     - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
     - ff0fec80-b8d2-4d10-8951-3061c6e7181d
     - 861da66b-8eef-4143-93f1-dbab33665595
-    - f475c2cf-ebbe-4314-8c6a-7211b32e55ae
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -333,3 +333,7 @@ parties:
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+  CHAOS:
+    leader: f475c2cf-ebbe-4314-8c6a-7211b32e55ae
+    members:
+    - f475c2cf-ebbe-4314-8c6a-7211b32e55ae

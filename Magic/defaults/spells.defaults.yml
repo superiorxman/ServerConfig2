@@ -1512,6 +1512,7 @@ arrow_blink:
       speed: "bowpull * 3"
       spread: "1 - bowpull"
       vertical_range: 8
+      allow_passthrough: false
     costs:
       arrow: 1
 arrow_bomb:
@@ -3721,6 +3722,10 @@ collapse:
              iterations: 1
              radius: 4
              particle: falling_dust
+             particleCount: 2
+             particleOffsetX: 0.1
+             particleOffsetY: 0
+             particleOffsetZ: 0.1
         undo:
         -  class: EffectSingle
            sound: magic.shimmer
@@ -13501,11 +13506,12 @@ smite:
            effectlib:
              class: HelixEffect
              particle: smoke_large
-             particle_count: 20
-             particle_offset_x: 0.2
-             particle_offset_y: 4
-             particle_offset_z: 0.2
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 4
+             particleOffsetZ: 0.2
              iterations: 1
+             particles: 30
              radius: 4
              offset: 0,2,0
     parameters:
@@ -15380,7 +15386,7 @@ torture:
                radius: "sin(t/20)"
              effect:
                class: Sphere
-               particle: mob_spell
+               particle: spell_mob
                color: "010101"
                disappearWithOriginEntity: true
         -  class: EffectSingle

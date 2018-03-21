@@ -30,7 +30,7 @@ register_command('depower',
                     return()
                 }
                 
-                export(@player.'nerfOnePunch',true)
+                export(@player.'isDepowered',true)
 
                 runas('~console',"/gamemode survival ".@player)
                 runas('~console',"/minecraft:clear ".@player)
@@ -55,7 +55,7 @@ register_command('depower',
 
                 set_timeout(30000,closure(
                     unbind(@theBind)
-                    export(@player.'nerfOnePunch',false)
+                    export(@player.'isDepowered',false)
                     tmsg(@player,color('RED').'Your powers are restored.')
                 ))
 

@@ -488,19 +488,10 @@ battle:
 #
 # It is probably best to use the default "wand" for this now instead!
 #
-# Unless your intention is a wand that levels on its own, apart from player progression.
+# This wand will automatically migrate to the "wand" template.
 #
 beginner:
-  inherit: base_wand
-  icon: wood_hoe:1
-  migrate_icon: wood_hoe
-  effect_color: random
-  mana_max: 50
-  mana: 50
-  mana_regeneration: 5
-  active_spell: missile
-  spells:
-   - missile
+  migrate_to: wand
 
 borealis:
     inherit: master
@@ -1615,7 +1606,8 @@ starter:
 # A sampling of "pre-levelled up" wands
 #
 student:
-    inherit: beginner
+    inherit: base_wand
+    active_spell: missile
     icon: wood_hoe:2
     migrate_icon: wood_hoe
     effect_color: '00FF00'
