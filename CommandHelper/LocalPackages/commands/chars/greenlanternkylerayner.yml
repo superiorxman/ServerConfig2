@@ -12,15 +12,11 @@ class: greenlanternkylerayner
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.carryplayer
-  - ch.alias.dismountplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
 powers:
 - /buff
-- /carryplayer <player>
-- /dismountplayer
 - /haste <0-3>
 - /flyspeed <number>
 - /fly
