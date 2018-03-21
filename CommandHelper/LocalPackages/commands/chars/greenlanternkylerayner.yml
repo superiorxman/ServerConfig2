@@ -1,0 +1,27 @@
+costumes:
+- chatcolor: '&2'
+  name: §2Gr§8e§2en Lant§8e§2rn§8(KR)
+  sig: G4vwdhbC9W61wqDDtlMgf24yOvLSsQMNSw0xAVye2imLw1PzooaC6+W2GW9R4Hi1r8k6NUVVi0IGyEgc3+mTQYTI7LOLsWXKGGGrR09mv1KmxK6gUL9OUbRY3CqSl8S3rXEufg+HUm+kKs9j7YIlEgv+UVP1fW8XExuHtfkMIWa2GQQGajXQHe16PiNwxZS0tBrzzmZ6LfJGlj6cifu/C7zWchl8SUyf+UtGT9M3Fmetza+fPDh+xz7qJpmGHUHl9b27q5bUPUH3aU7qyLln+EvMFchAJ8il6WA6tlicnFe2CWKBAMEAFR1aBP89+tzpUDMWfkSTQjJPjgNVcRYbB/kboCw5fiurewOsKZzjW297EOmAut0bJMkZr4X9ZPwOWt7EuoKZqfFEVg/Ytc//32ZSYzuDXtsqmgQrMXflcJcbFoM6AVhRsde8+kjjcgeQYF/Cwkdv2UbfmolsfZ68MJFZbBZMPFzMONgUgSfSOd4Lf2cARArjVEiTcNOFNzkjWFw2EHuJXVO9he14SbMxDKtf6juNy0i/OnHeL73+QwbdkQdFPSFrpBaaBfakml0yTPkkEbzd9Ii6xOPLMcqceXEpueyiur/5aMAYxppRrW8sUmggrMyIzyxKLlXQipp7WBtRjZHYpb7sJj/mwMh8U5Xx0Yx65h6ktAPZFVRg+n4=
+  val: eyJ0aW1lc3RhbXAiOjE1MjA4NDc4ODU1NDYsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VhZTEyOTM3MTEyODc2Y2Q3YzgzZmQ5MTNhMjMxNWEyMDI1YWE3ZTliYTZiOTU0MThjYTQ1YWRkNmJkMjQifX19
+effects:
+- /effect <plr> 5 9999 5 true
+items:
+- /shot give <plr> greenenergybeam
+- /give <plr> 95:5 64
+- /give <plr> minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring
+class: greenlanternkylerayner
+maxHearts: 30
+permissions:
+  superherocity:
+  - essentials.fly
+  - essentials.speed.fly
+  - essentials.speed
+powers:
+- /buff
+- /haste <0-3>
+- /flyspeed <number>
+- /fly
+haste: 3
+speech: In the brightest day, in the blackest night, no evil shall escape my sight.
+trail: [
+]
