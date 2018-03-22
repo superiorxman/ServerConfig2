@@ -13,12 +13,12 @@ jump: 4
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-4>
 - /run <0-6>
 run: 6

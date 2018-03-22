@@ -19,7 +19,7 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.arrowspectral
   - ch.alias.arrow
   - ch.alias.arrowstrongregen
@@ -49,7 +49,7 @@ powers:
 - /haste <0-6>
 - /arrow
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /arrow regen
 - /arrow regen long
 - /arrow swiftness

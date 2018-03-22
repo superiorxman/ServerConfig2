@@ -19,7 +19,7 @@ permissions:
   - ch.alias.normalsize
   - libsdisguises.undisguise
   - -essentials.protect.damage.fall
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
 powers:
 - /effects
@@ -28,7 +28,7 @@ powers:
 - /run <0-4>
 - /haste <0-2>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /shrink
 - /normalsize
 - /grow

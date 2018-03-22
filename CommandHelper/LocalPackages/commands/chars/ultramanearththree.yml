@@ -22,13 +22,13 @@ permissions:
   - powers.wallrun
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /jump <0-9>

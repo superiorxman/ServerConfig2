@@ -20,7 +20,7 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -28,7 +28,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-6>
 - /run <0-4>
 - /haste <0-7>

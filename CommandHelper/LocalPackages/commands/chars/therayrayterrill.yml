@@ -19,7 +19,7 @@ permissions:
   - headdb.category.*
   - headdb.free.*
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - powers.fireballpunch
   - essentials.speed.fly
@@ -30,7 +30,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-2>
 - /run <0-8>
 - /haste <0-5>

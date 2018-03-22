@@ -17,7 +17,7 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -25,7 +25,7 @@ powers:
 - /run <0-6>
 - /haste <0-3>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /disguiseviewself
 run: 6
 speech: Our abilities are 3 times an average man

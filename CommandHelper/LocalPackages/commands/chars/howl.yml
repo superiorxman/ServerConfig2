@@ -16,7 +16,7 @@ permissions:
   superherocity:
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.immunity.fire
 powers:
 - /effects
@@ -26,7 +26,7 @@ powers:
 - /haste <0-5>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /disguise
 run: 3
 speech: All this is just sorcery to keep the Witch of the Waste away.

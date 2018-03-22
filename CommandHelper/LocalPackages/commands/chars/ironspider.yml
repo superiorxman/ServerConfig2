@@ -15,14 +15,14 @@ items:
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.websling
   - ch.alias.web
   - powers.wallclimb
   - -essentials.protect.damage.fall
 powers:
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /websling
 - /web
 - /wallclimb <on/off>

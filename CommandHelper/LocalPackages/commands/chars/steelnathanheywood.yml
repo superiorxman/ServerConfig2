@@ -15,13 +15,13 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /haste <0-5>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: My grand grand grand father was a hero in the past!
 trail: [
   ]

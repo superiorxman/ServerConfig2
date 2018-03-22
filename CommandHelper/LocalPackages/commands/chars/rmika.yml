@@ -12,14 +12,14 @@ jump: 2
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
 powers:
 - /effects
 - /items
 - /jump <0-2>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: The Superstar of the Ring, That's What I Wanna Be!
 trail: [
   ]

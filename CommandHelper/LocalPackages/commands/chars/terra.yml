@@ -14,7 +14,7 @@ jump: 2
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.earth
   - essentials.fly
@@ -28,7 +28,7 @@ powers:
 - /earth (launches an dirt shot)
 - /fly (uses telekinetic powers to fly)
 - /carryplayer <playername>
-- /dismountplayer
+- /dropplayer
 - /herotransform
 run: 1
 speech: My name is Terra... And I have done horrible things.

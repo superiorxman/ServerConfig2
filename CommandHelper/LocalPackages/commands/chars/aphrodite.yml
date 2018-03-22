@@ -18,7 +18,7 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.healing
   - ch.alias.goldcarrot
   - ch.alias.seeds
@@ -35,7 +35,7 @@ powers:
 - /fly
 - /flyspeed <number>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /healing
 - /healing <playername>
 - /goldcarrot

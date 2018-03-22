@@ -18,14 +18,14 @@ maxHearts: 20
 permissions:
   superherocity:
   - powers.wallrun
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.tppos
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /jump <0-3>

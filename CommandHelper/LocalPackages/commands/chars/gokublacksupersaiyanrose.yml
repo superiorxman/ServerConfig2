@@ -20,7 +20,7 @@ permissions:
   superherocity:
   - ch.alias.grouptp
   - powers.herotransform
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.tp
   - essentials.fly
@@ -37,7 +37,7 @@ powers:
 - /tp <player>
 - /grouptp <player>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /herotransform
 run: 9
 speech: I am looking at things from a much higher perspective than you

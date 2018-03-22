@@ -15,14 +15,14 @@ items:
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.fly
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /run <0-6>
 - /haste <0-6>
 - /fly

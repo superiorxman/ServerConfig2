@@ -15,7 +15,7 @@ maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - commandhelper.alias.wine
   - essentials.speed.fly
@@ -28,7 +28,7 @@ powers:
 - /run <0-3>
 - /haste <0-3>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /bread
 - /wine
 - /flyspeed <number>

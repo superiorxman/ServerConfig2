@@ -15,7 +15,7 @@ jump: 3
 maxHearts: 40
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
 powers:
 - /effects
@@ -24,7 +24,7 @@ powers:
 - /run <0-3>
 - /haste <0-3>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 3
 speech: You gain strength and can breathe underwater!
 trail: [

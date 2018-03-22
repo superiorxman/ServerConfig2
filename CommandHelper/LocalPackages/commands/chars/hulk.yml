@@ -18,7 +18,7 @@ maxHearts: 50
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - -essentials.protect.damage.fall
 powers:
 - /effects
@@ -27,7 +27,7 @@ powers:
 - /run <0-1>
 - /haste <0-9>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 1
 speech: HULK SMASH!
 trail: [

@@ -20,13 +20,13 @@ permissions:
   - ch.alias.rasengan
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.cloneself
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /rasengan (very powerful punches for 10 seconds)
 - /jump <0-7>
 - /run <0-4>

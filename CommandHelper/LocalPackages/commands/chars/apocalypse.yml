@@ -27,10 +27,58 @@ permissions:
   - ch.alias.confuse
   - ch.alias.unconfuse
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
-  - libsdisguises.disguise
+  - ch.alias.dropplayer
   - libsdisguises.undisguise
-  - libsdisguises.disguise.*.-setinvisible
+  - libsdisguises.disguise.bat.-setinvisible
+  - libsdisguises.disguise.chicken.-setinvisible
+  - libsdisguises.disguise.cow.-setinvisible
+  - libsdisguises.disguise.donkey.-setinvisible
+  - libsdisguises.disguise.horse.-setinvisible
+  - libsdisguises.disguise.mooshroom.-setinvisible
+  - libsdisguises.disguise.ocelot.-setinvisible
+  - libsdisguises.disguise.parrot.-setinvisible
+  - libsdisguises.disguise.pig.-setinvisible
+  - libsdisguises.disguise.rabbit.-setinvisible
+  - libsdisguises.disguise.sheep.-setinvisible
+  - libsdisguises.disguise.skeletonhorse.-setinvisible
+  - libsdisguises.disguise.squid.-setinvisible
+  - libsdisguises.disguise.villager.-setinvisible
+  - libsdisguises.disguise.cavespider.-setinvisible
+  - libsdisguises.disguise.enderman.-setinvisible
+  - libsdisguises.disguise.irongolem.-setinvisible
+  - libsdisguises.disguise.llama.-setinvisible
+  - libsdisguises.disguise.polarbear.-setinvisible
+  - libsdisguises.disguise.spider.-setinvisible
+  - libsdisguises.disguise.wolf.-setinvisible
+  - libsdisguises.disguise.pigzombie.-setinvisible
+  - libsdisguises.disguise.blaze.-setinvisible
+  - libsdisguises.disguise.creeper.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.endermite.-setinvisible
+  - libsdisguises.disguise.evoker.-setinvisible
+  - libsdisguises.disguise.ghast.-setinvisible
+  - libsdisguises.disguise.guardian.-setinvisible
+  - libsdisguises.disguise.husk.-setinvisible
+  - libsdisguises.disguise.magmacube.-setinvisible
+  - libsdisguises.disguise.shulker.-setinvisible
+  - libsdisguises.disguise.silverfish.-setinvisible
+  - libsdisguises.disguise.skeleton.-setinvisible
+  - libsdisguises.disguise.slime.-setinvisible
+  - libsdisguises.disguise.stray.-setinvisible
+  - libsdisguises.disguise.vex.-setinvisible
+  - libsdisguises.disguise.vindicator.-setinvisible
+  - libsdisguises.disguise.witch.-setinvisible
+  - libsdisguises.disguise.witherskeleton.-setinvisible
+  - libsdisguises.disguise.zombie.-setinvisible
+  - libsdisguises.disguise.zombievillager.-setinvisible
+  - libsdisguises.disguise.snowgolem.-setinvisible
+  - libsdisguises.disguise.enderdragon.-setinvisible
+  - libsdisguises.disguise.wither.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.giant.-setinvisible
+  - libsdisguises.disguise.illusioner.-setinvisible
+  - libsdisguises.disguise.killerbunny.-setinvisible
+  - libsdisguises.disguise.zombiehorse.-setinvisible
   - libsdisguises.disguise.player
   - ch.alias.underworld
   - -essentials.protect.damage.fall
@@ -52,7 +100,7 @@ powers:
 - /speak <playername>
 - /confuse <player>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /tp <player>
 - /jump <0-3>
 - /run <0-3>

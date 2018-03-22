@@ -27,12 +27,12 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-9>
 - /run <0-9>
 - /haste <0-9>

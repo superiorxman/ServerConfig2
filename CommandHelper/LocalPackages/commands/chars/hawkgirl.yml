@@ -18,14 +18,14 @@ permissions:
   - -essentials.protect.damage.fall
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /jump <0-3>
 - /fly
 - /carryplayer <playername>
-- /dismountplayer
+- /dropplayer
 speech: We carry justice on our wings!
 trail: [
   ]

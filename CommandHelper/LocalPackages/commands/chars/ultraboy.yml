@@ -26,12 +26,12 @@ permissions:
   - essentials.speed
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /jump <0-8>

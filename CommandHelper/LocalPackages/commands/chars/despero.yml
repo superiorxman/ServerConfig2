@@ -23,7 +23,7 @@ permissions:
   - ch.alias.confuse
   - ch.alias.unconfuse
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - -essentials.protect.damage.fall
   - essentials.fly
   - essentials.speed.fly
@@ -32,7 +32,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-4>
 - /run <0-4>
 - /haste <0-4>

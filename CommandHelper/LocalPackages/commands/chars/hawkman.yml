@@ -16,13 +16,13 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /jump <0-3>
 - /carryplayer <playername>
-- /dismountplayer
+- /dropplayer
 speech: We carry justice on our wings!
 trail: [
   ]

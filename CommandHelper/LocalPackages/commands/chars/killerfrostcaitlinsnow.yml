@@ -16,13 +16,13 @@ items:
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.freezewater
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /freezewater
 speech: Feel The Breeze!
 trail: [

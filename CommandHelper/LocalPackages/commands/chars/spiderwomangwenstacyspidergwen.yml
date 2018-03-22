@@ -19,7 +19,7 @@ permissions:
   - powers.wallclimb
   - ch.alias.websling
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.slingweb
   - -essentials.protect.damage.fall
   - ch.alias.web
@@ -27,7 +27,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-7>
 - /run <0-4>
 - /haste <0-3>

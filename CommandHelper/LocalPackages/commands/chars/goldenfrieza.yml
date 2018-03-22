@@ -19,7 +19,7 @@ maxHearts: 50
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.wallrun
   - essentials.fly
   - essentials.speed.fly
@@ -35,7 +35,7 @@ powers:
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 9
 speech: You thought you destroyed me!?!
 trail: [

@@ -17,7 +17,7 @@ maxHearts: 50
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.wallrun
   - essentials.fly
   - essentials.speed.fly
@@ -28,7 +28,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-9>
 - /run <0-9>
 - /haste <0-9>
@@ -37,7 +37,7 @@ powers:
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /destroyworld
 - Anything you attack, dies
 run: 9

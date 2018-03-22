@@ -434,13 +434,6 @@ brush_replacements:
   carrot: carrot_item
   potato: potato_item
 
-# The folder and file path to use for loading schematics. This will be relative to
-# The server's /plugins folder.
-# You can use WorldEdit's schematics folder for easy access to saved schematics.
-# You can use this folder to override the built-in schematics, such as replacing the schematics
-# used for Tent or Cage.
-schematic_files: WorldEdit/schematics/
-
 # How many casts to track in the undo queue
 undo_depth: 128
 
@@ -954,6 +947,13 @@ mobarena:
 
 # Skript integration will add cast events and effect
 skript_enabled: true;
+
+# The folder and file path to use for loading schematics. This will be relative to
+# The server's /plugins folder.
+# You can use WorldEdit's schematics folder for easy access to saved schematics.
+# You can use this folder to override the built-in schematics, such as replacing the schematics
+# used for Tent or Cage.
+schematic_files: WorldEdit/schematics/
 # This resource pack will automatically be used if none is defined in your server.properties
 # Set this to "" if you have some other plugin or Bungee managing resource packs.
 resource_pack: "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-RP-7.zip"

@@ -14,13 +14,13 @@ items:
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 speech: My name is Jaime Reyes and I'm Blue Beetle!
 trail: [

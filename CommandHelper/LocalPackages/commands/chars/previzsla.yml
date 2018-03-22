@@ -11,12 +11,12 @@ items:
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: ' Mandalore will be mine!'
 trail: [
   ]

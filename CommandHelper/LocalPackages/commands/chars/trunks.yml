@@ -18,7 +18,7 @@ jump: 5
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.fly
   - essentials.speed.fly
@@ -33,7 +33,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /carryplayer
-- /dismountplayer
+- /dropplayer
 - /herotransform
 run: 5
 speech: I am a trunk!

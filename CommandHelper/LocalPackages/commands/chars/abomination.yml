@@ -13,13 +13,13 @@ maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /jump <0-6>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: I am the Abomination!
 trail: [
   ]

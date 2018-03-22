@@ -61,7 +61,7 @@ permissions:
   - ch.alias.tangible
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - worldedit.navigation.thru.command
   - essentials.tppos
   - ch.alias.mindcontrol
@@ -75,7 +75,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /disguise
 - /undisguise
 - /jump <0-4>

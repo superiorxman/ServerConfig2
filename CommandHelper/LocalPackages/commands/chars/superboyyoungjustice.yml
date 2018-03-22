@@ -22,12 +22,12 @@ permissions:
   - -essentials.protect.damage.fall
   - ch.alias.superboykonel
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-8>
 - /run <0-8>
 - /haste <0-8>

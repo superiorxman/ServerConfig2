@@ -14,14 +14,14 @@ maxHearts: 20
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - powers.fireballpunch
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 - Shoots rockets with bare hands
 speech: This time we will get them all.

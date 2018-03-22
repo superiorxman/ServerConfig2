@@ -16,7 +16,7 @@ permissions:
   superherocity:
   - ch.alias.bodyslide
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.tppos
 powers:
 - /effects
@@ -25,7 +25,7 @@ powers:
 - /run <0-3>
 - /haste <0-3>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /tppos
 - /bodyslide
 run: 3

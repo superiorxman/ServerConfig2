@@ -1512,6 +1512,7 @@ arrow_blink:
       speed: "bowpull * 3"
       spread: "1 - bowpull"
       vertical_range: 8
+      ledge_range: 4
       allow_passthrough: false
     costs:
       arrow: 1
@@ -2291,6 +2292,7 @@ blink:
         prevent_passthrough: nopassthrough
         bypass_confusion: true
         vertical_range: 8
+        ledge_range: 4
     costs:
         mana: 50
 
@@ -3338,29 +3340,47 @@ camera:
         mana: 5
 
 capture:
-  icon: monster_egg
+  icon: diamond_axe:251
+  icon_disabled: diamond_hoe:251
+  worth: 750
+  earns_sp: 8
   actions:
     cast:
     - class: Capture
   effects:
       cast:
-      -  class: EffectSingle
-         sound: entity_endermen_teleport
-         sound_pitch: 0.1
-         sound_volume: 0.5
-         location: origin
-         effectlib:
+      - class: EffectSingle
+        sound: entity_endermen_teleport
+        sound_pitch: 0.1
+        sound_volume: 0.5
+        location: origin
+        effectlib:
            class: ConeEffect
            iterations: 11
            particle: spell_instant
            lengthGrow: 0.4
-      -  class: EffectSingle
-         location: target
-         color: "81F7D8"
-         firework: star
+      - class: EffectSingle
+        location: target
+        color: "81F7D8"
+        firework: star
+      - class: EffectSingle
+        location: target
+        sound: entity_endermen_teleport
+        sound_pitch: 0.2
+        sound_volume: 0.8
+        effectlib:
+         class: Modified
+         iterations: 30
+         parameters:
+          radius: "max(1, (1 - (t / i)) * 5 - 2)"
+         effect:
+           class: Sphere
+           particle: redstone
+           color: "F02020"
   parameters:
     cooldown: 5000
     range: 32
+  mana: 200
     
 cat:
     icon: diamond_axe:70
@@ -16008,6 +16028,7 @@ walls:
         brushcolor: true
         breakable: 3
         destructible: destructible_replace
+        volume_type: xzy
     costs:
         mana: 75
 

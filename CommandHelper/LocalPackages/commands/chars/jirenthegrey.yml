@@ -14,7 +14,7 @@ permissions:
   superherocity:
   - powers.fireballpunch
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -22,7 +22,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 - /flyspeed <number>
 - Shoots fireballs with bare hand

@@ -16,7 +16,7 @@ permissions:
   - powers.fireballPunch
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   survival112_nether:
   - essentials.warp
   - essentials.warp.*
@@ -27,7 +27,7 @@ powers:
 - /run <0-6>
 - /jump <0-4>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 run: 6
 speech: God of the Underworld!

@@ -15,7 +15,7 @@ jump: 7
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.float
   - essentials.back
   - essentials.tppos
@@ -27,7 +27,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /float <up/down/pause/unpause/stop>
 - /jump <0-7>
 - /run <0-7>

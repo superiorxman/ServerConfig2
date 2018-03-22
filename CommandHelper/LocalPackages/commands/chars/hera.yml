@@ -18,7 +18,7 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - commandhelper.alias.pig
   - commandhelper.alias.cow
   - commandhelper.alias.chicken
@@ -26,7 +26,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-3>

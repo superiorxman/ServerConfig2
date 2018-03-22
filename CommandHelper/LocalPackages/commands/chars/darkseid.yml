@@ -16,7 +16,7 @@ jump: 9
 maxHearts: 50
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.stopmindcontrol
   - ch.alias.mindcontrol
@@ -40,7 +40,7 @@ powers:
 - /apokolips (travels to your homeworld of Apokolips)
 - /tp
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /empower <playername> (gives player strength 10)
 - /speak <playername>
 - /grow

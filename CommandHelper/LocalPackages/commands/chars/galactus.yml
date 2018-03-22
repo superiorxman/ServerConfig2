@@ -20,7 +20,7 @@ permissions:
   superherocity:
   - immune.destroyworld
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.wallrun
   - essentials.fly
   - essentials.speed.fly
@@ -37,7 +37,7 @@ powers:
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /destroyworld <world>
 run: 9
 speech: I will begin consumption of this world immediately

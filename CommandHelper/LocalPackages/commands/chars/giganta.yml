@@ -19,7 +19,7 @@ permissions:
   - ch.alias.grow
   - ch.alias.normalform
   - essentials.protect.damage.fall
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
 powers:
 - /effects
@@ -29,7 +29,7 @@ powers:
 - /haste <0-4>
 - /gigantayell
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /normalform
 - /grow
 run: 4

@@ -22,7 +22,7 @@ permissions:
   - weakto.kryptonite
   - powers.wallrun
   - -essentials.protect.damage.fall
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.fly
   - essentials.speed.fly
@@ -31,7 +31,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /run <0-9>
 - /jump <0-9>
 - /haste <0-9>

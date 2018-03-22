@@ -55,10 +55,10 @@ register_command('carryplayer',
     )
 )
 
-register_command('dismountplayer',
+register_command('dropplayer',
     array(
         'description': 'Dismount player',
-        'permission': 'ch.alias.dismountplayer',
+        'permission': 'ch.alias.dropplayer',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
         'executor': closure() {
         

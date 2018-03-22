@@ -18,7 +18,7 @@ maxHearts: 20
 permissions:
   superherocity:
   - powers.herotransform
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.fly
   - essentials.speed.fly
@@ -32,7 +32,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /herotransform
 run: 3
 speech: ''

@@ -25,7 +25,7 @@ permissions:
   superherocity:
   - powers.wallrun
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -36,7 +36,7 @@ powers:
 - /run <0-7>
 - /haste <0-6>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>

@@ -15,7 +15,7 @@ maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.transform
   - ch.alias.untransform
 powers:
@@ -25,7 +25,7 @@ powers:
 - /run <0-6>
 - /haste <0-5>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /transform
 - /untransform
 run: 6

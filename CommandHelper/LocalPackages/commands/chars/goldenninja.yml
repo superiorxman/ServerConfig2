@@ -15,7 +15,7 @@ maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -23,7 +23,7 @@ powers:
 - /haste <0-8>
 - /run <0-5>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /spinjutsu (gives strength 5 for 10 seconds)
 run: 5
 speech: I am the master of spinjitsu!

@@ -15,14 +15,14 @@ maxHearts: 20
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /jump <0-2>
 - /run <0-1>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 1
 speech: EMBIGGEN!
 trail: [

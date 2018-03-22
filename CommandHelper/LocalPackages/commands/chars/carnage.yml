@@ -18,7 +18,7 @@ permissions:
   - powers.wallclimb
   - ch.alias.websling
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - -essentials.protect.damage.fall
   - ch.alias.web
   - weakto.antivenom
@@ -26,7 +26,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-7>
 - /run <0-5>
 - /haste <0-4>

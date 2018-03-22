@@ -18,7 +18,7 @@ permissions:
   superherocity:
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -27,7 +27,7 @@ powers:
 - /haste <0-8>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 8
 speech: I'm Piccolo!!
 trail: [

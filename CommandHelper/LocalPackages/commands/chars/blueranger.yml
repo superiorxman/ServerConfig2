@@ -20,12 +20,12 @@ permissions:
   - ch.alias.arrow
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /run <0-2>
 - /jump <0-4>
 - /haste <0-5>

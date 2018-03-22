@@ -20,7 +20,7 @@ permissions:
   - weakto.kryptonite
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed
   - essentials.speed.fly
@@ -29,7 +29,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 - /flyspeed
 - /run <0-8>

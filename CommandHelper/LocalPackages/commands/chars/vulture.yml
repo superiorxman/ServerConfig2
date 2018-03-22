@@ -13,14 +13,14 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
 - /items
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: I am the one who will finally destroy Spider-Man!
 trail: [
   ]

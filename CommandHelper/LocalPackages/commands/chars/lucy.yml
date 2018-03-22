@@ -12,13 +12,13 @@ permissions:
   superherocity:
   - powers.projectileinvulnerability
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.invishandsattack
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /invishandsattack <playername>
 speech: You know who isn't human? You know who isn't human?... PEOPLE LIKE YOU!
 trail: [

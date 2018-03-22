@@ -12,7 +12,7 @@ jump: 4
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -20,7 +20,7 @@ permissions:
   - ch.alias.undisguise
 powers:
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-4>
 - /flyspeed <number>
 - /fly

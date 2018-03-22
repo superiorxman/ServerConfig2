@@ -16,7 +16,7 @@ permissions:
   - ch.alias.normalsize
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
@@ -25,7 +25,7 @@ powers:
 - /normalsize
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /run <0-2>
 - /haste <0-2>
 run: 2

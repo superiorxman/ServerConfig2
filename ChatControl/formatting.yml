@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 12.03.2018 13:12:22
-#  to ChatControl 7.8.0
+#  Your file has been automatically updated at 22.03.2018 15:27:36
+#  to ChatControl 7.8.2
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
@@ -146,4 +146,16 @@ Formats:
         Action: SUGGEST_COMMAND
         Value: '/tell {player} '
     The_Rest:
+      Message: '{message}'
+  Spy_Party_Chat:
+    Everything:
+      Message: '&8SPY: [{party}&8]&f {pl_prefix}{player}:{pl_suffix} {message}'
+  Admin_Chat:
+    Bracket_Start:
+      Message: '&8[&2A-Chat '
+    Player:
+      Message: '{player}'
+    Bracket_End:
+      Message: '&8] &2'
+    Message:
       Message: '{message}'

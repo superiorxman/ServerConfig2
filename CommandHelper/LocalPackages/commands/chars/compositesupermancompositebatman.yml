@@ -33,7 +33,7 @@ permissions:
   - magic.cast.sunbeam
   - magic.cast.anitmatterray
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.intangible
   - ch.alias.tangible
   - magic.wand.use
@@ -56,7 +56,7 @@ powers:
 - /cast sunbeam
 - /cast antimatterray
 - /carryplayer
-- /dismountplayer
+- /dropplayer
 - /intangible
 - /tangible
 - /herotransform

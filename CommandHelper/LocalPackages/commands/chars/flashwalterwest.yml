@@ -26,7 +26,7 @@ permissions:
   - ch.alias.speedforceteleport
   - essentials.warps.speedforce
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -39,7 +39,7 @@ powers:
 - /speedforcebuffs
 - /speedforcewhirlwind
 - /carryplayer <playername>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /haste 0-7

@@ -16,7 +16,7 @@ permissions:
   - ch.alias.mindlock
   - ch.alias.stopmindcontrol
   - ch.alias.confuse
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.unconfuse
   - ch.alias.mindcontrol
@@ -25,7 +25,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-2>
 - /run <0-2>
 - /haste <0-2>

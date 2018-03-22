@@ -105,6 +105,15 @@ dummy:
   potion_effects:
   - type: slow
     amplifier: 10
+dummynoai:
+  type: husk
+  name: Dummy
+  health: 100
+  protection:
+    fire: 2
+  weakness:
+    water: 1
+  ai: false
 fire_elemental:
   type: blaze
   name: Fire Elemental

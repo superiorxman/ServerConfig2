@@ -11,12 +11,12 @@ items: [
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.flywithrider
 powers:
 - /flywithrider
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 speech: Roarrrrrrrr!
 trail: [
   ]

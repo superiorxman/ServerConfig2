@@ -19,13 +19,13 @@ permissions:
   - ch.alias.websling
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.web
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-7>
 - /run <0-4>
 - /haste <0-3>

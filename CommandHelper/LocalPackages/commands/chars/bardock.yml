@@ -14,7 +14,7 @@ jump: 4
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.fly
 powers:
@@ -25,7 +25,7 @@ powers:
 - /haste <0-4>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 6
 speech: I wanna be the strongest in the UNIVERSE!!
 trail: [

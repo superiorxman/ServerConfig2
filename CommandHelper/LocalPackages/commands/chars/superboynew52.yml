@@ -19,7 +19,7 @@ permissions:
   superherocity:
   - weakto.kryptonite
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -28,7 +28,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /run <0-8>
 - /haste <0-6>
 - /fly

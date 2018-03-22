@@ -17,7 +17,7 @@ permissions:
   superherocity:
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -26,7 +26,7 @@ powers:
 - /haste <0-3>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 6
 speech: The power of animals in my chain is a tradition in my family.
 trail: [

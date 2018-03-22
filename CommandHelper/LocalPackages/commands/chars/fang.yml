@@ -23,7 +23,7 @@ permissions:
   - essentials.speed
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -31,7 +31,7 @@ powers:
 - /run <0-2>
 - /haste <0-2>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /flyspeed <number>
 - /fly
 - /invis (automatically de-cloak if you move)

@@ -17,7 +17,7 @@ permissions:
   superherocity:
   - powers.wallrun
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
@@ -25,7 +25,7 @@ powers:
 - /run <0-9>
 - /haste <0-9>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 run: 9

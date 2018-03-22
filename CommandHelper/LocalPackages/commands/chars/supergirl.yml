@@ -29,13 +29,13 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - powers.herotransform
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-8>
 - /run <0-8>
 - /haste <0-8>

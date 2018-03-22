@@ -34,7 +34,7 @@ permissions:
   - powers.herotransform
   - essentials.tppos
   - is.telepathicallyresistant
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.speedforceteleport
   - essentials.warps.speedforce
@@ -50,7 +50,7 @@ powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-6>
 - /run <0-9>
 - /haste <0-9>

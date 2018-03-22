@@ -19,12 +19,12 @@ maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer <player>
+- /dropplayer <player>
 speech: I do more than live! I do what I was created for! I DESTROY!!
 trail: [
   ]

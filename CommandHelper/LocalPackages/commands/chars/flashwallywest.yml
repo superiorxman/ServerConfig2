@@ -35,7 +35,7 @@ permissions:
   - ch.alias.vibrate
   - ch.alias.stopvibrating
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.warps.speedforce
   - essentials.tppos
 powers:
@@ -52,7 +52,7 @@ powers:
 - /speedforcebuffs
 - /speedforceheal <playername>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /tppos <x> <y> <z>
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.

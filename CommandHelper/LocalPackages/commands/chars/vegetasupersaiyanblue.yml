@@ -20,7 +20,7 @@ permissions:
   superherocity:
   - powers.herotransform
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -33,7 +33,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /herotransform
 run: 9
 speech: I WILL BE THE STRONGEST SAIYAN!

@@ -11,7 +11,7 @@ items: [
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.fly
   - ch.alias.mindcontrol
   - ch.alias.mindlock
@@ -23,7 +23,7 @@ powers:
 - /items
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /mindcontrol <player>
 - /mindlock
 - /speak <player>

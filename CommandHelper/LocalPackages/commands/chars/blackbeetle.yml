@@ -18,7 +18,7 @@ maxHearts: 30
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
@@ -27,7 +27,7 @@ powers:
 - /run <0-3>
 - /haste <0-5>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /fly
 run: 3
 speech: I'm going to exterminate all of the flesh on this planet!

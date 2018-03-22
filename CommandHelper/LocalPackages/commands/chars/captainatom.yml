@@ -16,13 +16,13 @@ permissions:
   superherocity:
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
 powers:
 - /effects
 - /items
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /haste <0-3>
 - /run <0-3>
 - /fly

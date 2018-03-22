@@ -22,13 +22,13 @@ permissions:
   - weakto.kryptonite
   - essentials.fly
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-5>
 - /run <0-6>
 - /haste <0-9>

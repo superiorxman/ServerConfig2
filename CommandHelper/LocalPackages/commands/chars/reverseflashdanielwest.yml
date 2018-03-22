@@ -23,7 +23,7 @@ permissions:
   superherocity:
   - powers.wallrun
   - ch.alias.speedforceteleport
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.tppos
   - essentials.warps.speedforce
@@ -38,7 +38,7 @@ powers:
 - /speedforceteleport <playername>
 - /speedforcebuffs
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /run 0-1 (In the speedforce)

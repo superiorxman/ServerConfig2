@@ -20,7 +20,7 @@ maxHearts: 50
 permissions:
   superherocity:
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - -essentials.protect.damage.fall
   - essentials.fly
   - essentials.speed.fly
@@ -34,7 +34,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 run: 6
 speech: The power of Kandor protects me!
 trail: [

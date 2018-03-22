@@ -24,7 +24,7 @@ permissions:
   - powers.wallrun
   - ch.alias.speedforceteleport
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.tppos
   - essentials.warps.speedforce
 powers:
@@ -36,7 +36,7 @@ powers:
 - /speedforceteleport <playername>
 - /speedforcebuffs
 - /carryplayer <player name>
-- /dismountplayer
+- /dropplayer
 - /run 0-1 (In the speedforce)
 - /jump <0-3>
 - /run <0-8>

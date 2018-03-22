@@ -30,7 +30,7 @@ permissions:
   - powers.lightningpunch
   - powers.wallrun
   - ch.alias.speedforceteleport
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.carryplayer
   - essentials.tppos
   - essentials.warps.speedforce
@@ -50,7 +50,7 @@ powers:
 - /speedforcebuffs
 - /whirlwind <player>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /invis
 - /vis
 - /run <0-9>

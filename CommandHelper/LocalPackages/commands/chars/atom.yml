@@ -20,7 +20,7 @@ permissions:
   - libsdisguises.undisguise
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
@@ -34,7 +34,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /jump <0-7>
 - /run <0-4>
 - /haste <0-2>

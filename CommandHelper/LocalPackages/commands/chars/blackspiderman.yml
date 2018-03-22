@@ -19,7 +19,7 @@ permissions:
   - powers.wallclimb
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
-  - ch.alias.dismountplayer
+  - ch.alias.dropplayer
   - ch.alias.web
   - weakto.antivenom
 powers:
@@ -29,7 +29,7 @@ powers:
 - /run <0-5>
 - /haste <0-4>
 - /carryplayer <player>
-- /dismountplayer
+- /dropplayer
 - /wallclimb <on/off>
 - Wall climb by standing next to a wall and pressing crouch and vines will appear.
   The vines are only visible to you, not to other people, so it looks like you're
