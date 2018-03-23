@@ -5,7 +5,7 @@
 # 
 # This file is merged from the files in the following folder:
 #
-# https://github.com/elBukkit/MagicPlugin/tree/master/src/main/resources/defaults/messages
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/messages
 #
 automata:
     awaken: "&c&o$name &r&5has awakened"
@@ -219,9 +219,9 @@ mage:
     earned_sp: "a:&6+&e$amount &6SP"
     no_class: "You are not trained to use $name"
     player_spell_upgraded: "$players's &r&6$name &d&ohas been upgraded to &3$level"
-    spell_upgraded: "&r&6$name &d&ohas been upgraded to &3$level"
-    spell_added: "The &r&6$name &d&ospell has been added"
-    brush_added: "The &r&7$name &d&obrush has been added"
+    spell_upgraded: "Your &r&6$name &d&ospell has been upgraded to &3$level"
+    spell_added: "You have learned the &r&6$name &d&ospell"
+    brush_added: "You have acquired the &r&7$name &d&obrush"
 general:
     no_spells: You don't know any spells
     no_spells_in_category: You don't know any spells in the $category category
@@ -2125,6 +2125,22 @@ wand:
       fire: "&2Fire Protection $roman"
       explosion: "&2Blast Protection $roman"
       unknown: "&2$type Protection $roman"
+    strength:
+      overall: "&2Damage $roman"
+      physical: "&2Physical Damage $roman"
+      projectile: "&2Projectile Damage $roman"
+      fall: "&2Fall Damage $roman"
+      fire: "&2Fire Damage $roman"
+      explosion: "&2Blast Damage $roman"
+      unknown: "&2$type Damage $roman"
+    weakness:
+      overall: "&2Weakness $roman"
+      physical: "&2Physical Weakness $roman"
+      projectile: "&2Projectile Weakness $roman"
+      fall: "&2Fall Weakness $roman"
+      fire: "&2Fire Weakness $roman"
+      explosion: "&2Blast Weakness $roman"
+      unknown: "&2$type Weakness $roman"
     potion_effect: "&b$effect $roman"
     super_powered: "&3Superpowered"
     super_protected: "&3Invulnerability"

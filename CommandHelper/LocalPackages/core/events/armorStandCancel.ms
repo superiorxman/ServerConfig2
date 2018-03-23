@@ -24,8 +24,26 @@ bind('player_interact_entity',null,array('clicked':'ITEM_FRAME'),@e){
 
 bind('entity_damage',null,array('type':'/ARMOR_STAND|ITEM_FRAME|PAINTING|MINECART|CHEST_MINECART|TNT_MINECART|FURNACE_MINECART|HOPPER_MINECART/'),@e){
     cancel()
+    @damager = ''
+
     if(array_index_exists(@e,'damager')){
+        @damager = @e['damager']
+    }
+
+    if(@damager != ''){
         if(has_permission(@e['damager'],'cancel.entityclicks') == false){
+            cancel(false)
+            die()
+        }
+    }
+
+    @loc = entity_loc(@e['id'])
+    @id = get_claim_id(@loc)
+    if(@id != null){
+        @info = get_claim_info(@loc)
+        if(@info['owner'] != @damager){
+            die()
+        }else{
             cancel(false)
         }
     }

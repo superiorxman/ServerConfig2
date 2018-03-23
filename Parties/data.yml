@@ -95,12 +95,6 @@ players:
       timestamp: 1520539203
     rank: 5
     party: orkhorl
-  d1fbaab7-bde3-4405-8282-9fc15d90209d:
-    name:
-      timestamp: 1520547995
-      name: TheDarkAura_
-    rank: 20
-    party: JSA
   a15f051c-1473-4f90-88f3-bad6e6b9dce2:
     party: TheTitans
     name:
@@ -110,8 +104,8 @@ players:
   b06401f9-844e-4fb8-80e3-55fa795b4eb3:
     name:
       name: Bethlagon
-      timestamp: 1520655664
-    rank: 5
+      timestamp: 1521840095
+    rank: 20
     party: JSA
   fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
     party: JSA
@@ -260,6 +254,24 @@ players:
     name:
       timestamp: 1521769533
       name: DomZilla04
+  d1fbaab7-bde3-4405-8282-9fc15d90209d:
+    name:
+      timestamp: 1521840162
+      name: TheDarkAura_
+    rank: 20
+    party: TheJL
+  bc220f87-ddd9-4805-aa20-349870def333:
+    rank: 5
+    name:
+      timestamp: 1521840175
+      name: RyannDelRey
+    party: TheJL
+  d391e228-e57b-4503-a7ea-c101f9c4d9f4:
+    rank: 5
+    name:
+      name: Egger227
+      timestamp: 1521840191
+    party: TheJL
 parties:
   TheTitans:
     members:
@@ -302,9 +314,8 @@ parties:
     - e6de8cf0-af45-44e4-882f-d98446f4b31b
     leader: e6de8cf0-af45-44e4-882f-d98446f4b31b
   JSA:
-    leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
+    leader: b06401f9-844e-4fb8-80e3-55fa795b4eb3
     members:
-    - d1fbaab7-bde3-4405-8282-9fc15d90209d
     - b06401f9-844e-4fb8-80e3-55fa795b4eb3
     - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
   Chaos:
@@ -350,3 +361,11 @@ parties:
     leader: 58a41365-71bd-4656-8dc1-5339e97abed7
     members:
     - 58a41365-71bd-4656-8dc1-5339e97abed7
+  TheJL:
+    members:
+    - d1fbaab7-bde3-4405-8282-9fc15d90209d
+    - bc220f87-ddd9-4805-aa20-349870def333
+    - d391e228-e57b-4503-a7ea-c101f9c4d9f4
+    leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
+    desc: Justice League
+    motd: Looking for Batman Martian M. and Aquaman

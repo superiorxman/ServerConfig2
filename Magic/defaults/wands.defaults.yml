@@ -8,7 +8,7 @@
 # 
 # This file is merged from the files in the following folder:
 #
-# https://github.com/elBukkit/MagicPlugin/tree/master/src/main/resources/defaults/wands
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/wands
 #
 admin:
     inherit: conduit
@@ -1103,6 +1103,8 @@ magicsword:
     effect_color: '11FF11'
     hide_flags: 62
     active_spell: missile
+    limit_spells_to_path: true
+    limit_brushes_to_path: true
     protection:
       physical: 0.4
     item_attributes:

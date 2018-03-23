@@ -2,7 +2,7 @@ bind('entity_damage', null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|MA
     if(ponline(@e['damager']) && has_permission(@e['damager'],'is.op')){
         die()
     }
-    if(has_permission(@e['player'], "powers.ultrainstinct") && import(@e['player'].'isDepowered') != true)
+    if(has_permission(@e['player'], "powers.ultrainstinct") && import(@e['player'].'isDepowered') != true && pmode(@e['player']) == 'SURVIVAL')
     {
         cancel()
         tmsg(@e['player'], color('RED').'Your Ultra Instinct saves you from damage!')
