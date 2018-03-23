@@ -6,13 +6,13 @@ bind('player_chat', null, null, @e) {
     @class = _getheroclass(@player)
     @cooldown = 0
 
-    if(@player == 'Txmmeh'){
+    /*if(@player == 'Txmmeh'){
         @msgg = split(' ',@msg)
         @finMsg = ''
         foreach(@word in @msgg){
-            if(to_lower(@word) == 'xp'){
+            if(string_contains(to_lower(@word),'xp')){
                 @word = 'Windows '.@word
-            }else if (to_lower(@word) == 'xi'){
+            }else if (string_contains(to_lower(@word),'xi')){
                 @word = 'Superbowl '.@word
             }
             @finMsg = @finMsg.@word.' '
@@ -26,7 +26,7 @@ bind('player_chat', null, null, @e) {
             @msg = replace(@msg,@origWord,@word)
             modify_event(message,@msg)
         }
-    }
+    }*/
 
     if(import(@player.'mindControlling')){
         cancel()
