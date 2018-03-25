@@ -555,15 +555,13 @@ camera:
     icon: skull_item:http://textures.minecraft.net/texture/e49b4f3261328c05350ee4031212d2fc7555f211af91c0f0278a5aaf9cec65
     indestructible: false
     locked: true
-    boostable: false
-    mana: 5
-    mana_max: 5
-    mana_regeneration: 2
     effect_color: '888888'
     spells:
-        - camera
+    - camera
     lore:
     - $description
+    - "&3Takes 5 seconds to charge"
+    - "&bRequires 1 &fPaper"
 
 clericchestplate:
     icon: chainmail_chestplate
@@ -1554,9 +1552,15 @@ spellbook:
     keep: true
     bound: true
     class: mage
-    # This parameter in skills mode determines if the skill items are quick cast
-    # or if they must be held and right-clicked to cast.
-    quick_cast: true
+    skills:
+      # Set this to false if you want skills to be held and right-clicked to cast
+      # quick_cast: false
+
+      # Don't lose skill items on death (they will disappear otherwise, they are never dropped)
+      keep: true
+
+      # Make skill items undroppable
+      # undroppable: true
 spleef:
     locked: true
     icon: stick

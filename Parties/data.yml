@@ -181,8 +181,8 @@ players:
     rank: 5
   f621586e-8ef8-448d-9264-86b61375052e:
     name:
-      timestamp: 1521150294
-      name: xMqthy
+      timestamp: 1521917931
+      name: Mythification
     rank: 5
     party: XMen
   2a402832-0240-4587-89ae-4541eb4ed088:
@@ -272,6 +272,24 @@ players:
       name: Egger227
       timestamp: 1521840191
     party: TheJL
+  6f4c8bf6-f5b6-4859-b75a-e47a7341ccca:
+    name:
+      timestamp: 1521862820
+      name: Fisherbear9
+    party: TheJL
+    rank: 5
+  2a63e405-eecf-480a-9fcf-1e22b996d998:
+    party: help
+    name:
+      timestamp: 1521930577
+      name: RoryDaPanda
+    rank: 20
+  ead1c0c7-8608-446c-bf5e-05b64c9fa236:
+    rank: 5
+    party: help
+    name:
+      timestamp: 1521930598
+      name: BountyHunterFett
 parties:
   TheTitans:
     members:
@@ -366,6 +384,12 @@ parties:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
     - bc220f87-ddd9-4805-aa20-349870def333
     - d391e228-e57b-4503-a7ea-c101f9c4d9f4
+    - 6f4c8bf6-f5b6-4859-b75a-e47a7341ccca
     leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
     desc: Justice League
-    motd: Looking for Batman Martian M. and Aquaman
+    motd: motd
+  help:
+    members:
+    - 2a63e405-eecf-480a-9fcf-1e22b996d998
+    - ead1c0c7-8608-446c-bf5e-05b64c9fa236
+    leader: 2a63e405-eecf-480a-9fcf-1e22b996d998

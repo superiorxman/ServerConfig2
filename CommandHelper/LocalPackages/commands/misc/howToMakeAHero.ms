@@ -6,7 +6,7 @@ register_command('makehero',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
         'executor': closure(@alias, @sender, @args) {
         
-            tmsg(@sender,color('RED').'http://mynecraft.servegame.com/howtomakeahero.html')
+            tmsg(@sender,color('RED').'http://omnivs.hopto.org/howtomakeahero.html')
                     
         
         }

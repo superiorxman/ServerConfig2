@@ -92,7 +92,7 @@ register_command('removeglitch',
                 @removed = @list['reportglitch.list'][@num]
                 array_remove(@list['reportglitch.list'],@num)
                 store_value('reportglitch.list',@list['reportglitch.list'])
-                msg(color('RED').'You removed '.color('WHITE').@removed)
+                broadcast(color('RED').'Removed '.color('WHITE').@removed)
             }else{
                 store_value('reportglitch.list',array())
             }

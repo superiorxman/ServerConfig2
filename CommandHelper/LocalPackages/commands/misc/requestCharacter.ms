@@ -92,7 +92,7 @@ register_command('removerequest',
                 @removed = @list['characterrequests.list'][@num]
                 array_remove(@list['characterrequests.list'],@num)
                 store_value('characterrequests.list',@list['characterrequests.list'])
-                msg(color('RED').'You removed '.color('WHITE').@removed)
+                broadcast(color('RED').'Removed '.color('WHITE').@removed)
             }else{
                 store_value('characterrequests.list',array())
             }
