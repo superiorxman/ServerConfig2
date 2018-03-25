@@ -209,12 +209,6 @@ players:
       timestamp: 1521324117
     party: TheTitans
     rank: 5
-  d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
-    rank: 20
-    party: HEROES
-    name:
-      name: LoneRanger13
-      timestamp: 1521393937
   861da66b-8eef-4143-93f1-dbab33665595:
     name:
       timestamp: 1521421688
@@ -290,6 +284,24 @@ players:
     name:
       timestamp: 1521930598
       name: BountyHunterFett
+  d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
+    rank: 20
+    party: LostHEROES
+    name:
+      name: LoneRanger13
+      timestamp: 1522003890
+  90b2ba6d-43e6-4e5c-8f77-9126b6969a9c:
+    name:
+      name: WingArmor
+      timestamp: 1522003994
+    rank: 5
+    party: LostHEROES
+  474707f7-f8b4-43ea-8978-9cae17917e82:
+    party: LostHEROES
+    name:
+      timestamp: 1522004040
+      name: ThatCraftLifeMCU
+    rank: 5
 parties:
   TheTitans:
     members:
@@ -363,10 +375,6 @@ parties:
     - 4d2c833f-8b88-4269-887d-3b84a57435c2
     - f621586e-8ef8-448d-9264-86b61375052e
     - 4082517f-c021-411b-b302-ccb2d61c84c1
-  HEROES:
-    leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
-    members:
-    - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
   CHAOS:
     leader: f475c2cf-ebbe-4314-8c6a-7211b32e55ae
     members:
@@ -393,3 +401,10 @@ parties:
     - 2a63e405-eecf-480a-9fcf-1e22b996d998
     - ead1c0c7-8608-446c-bf5e-05b64c9fa236
     leader: 2a63e405-eecf-480a-9fcf-1e22b996d998
+  LostHEROES:
+    members:
+    - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+    - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
+    - 474707f7-f8b4-43ea-8978-9cae17917e82
+    leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
+    motd: ThatCraftLifeMCU

@@ -8,11 +8,11 @@ effects: [
   ]
 haste: 2
 items:
-- /shot give <plr> pistol
-- /shot give <plr> pistol
-- /shot give <plr> hunting
-- /shot give <plr> bazooka
 - /mgive <plr> stungrenadewand
+- /mgive <plr> pistol
+- /mgive <plr> pistol
+- /mgive <plr> sniper
+- /mgive <plr> rocketlauncher
 jump: 2
 maxHearts: 20
 permissions:
