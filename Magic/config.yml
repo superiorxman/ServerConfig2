@@ -28,9 +28,12 @@
 
 # Add one or more of the included example configurations on top of the defaults.
 # The config.yml potion is not loaded, for sanity's sake.
-# add_examples:
-#   - potter
-#   - survival
+add_examples:
+  - potter
+  - survival
+  - war
+  - bending
+  - stars
 
 # Some common fields that you might like to override:
 
@@ -87,4 +90,3 @@ default_resource_pack: ""
 show_messages: false
 enable_enchanting: false
 wand_undroppable: true
-example: war

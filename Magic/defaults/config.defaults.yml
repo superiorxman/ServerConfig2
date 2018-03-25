@@ -60,6 +60,10 @@ damage_types:
     max_reduction: 0.2
     max_strength: 5
     max_weakness: 10
+  magic:
+    max_reduction: 0.5
+    max_strength: 5
+    max_weakness: 10
 # This can be used to turn off loading all of the default configs
 # This is the same as setting all of the following "load_default_*" to false.
 load_default_configs: true
