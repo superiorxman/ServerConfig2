@@ -1,7 +1,7 @@
 technokinesis:
-    icon: diamond_axe:125
-    icon_disabled: diamond_hoe:125
-    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    icon: ink_sack:12
+    icon_disabled: ink_sack:12
+    icon_url: http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2
     category: engineering
     tags: noduel
     cancellable: false
@@ -9,50 +9,53 @@ technokinesis:
     earns_sp: 12
     actions:
       cast:
-      - class: CycleBlock
-      - class: CycleEntity
+      - class: CustomProjectile
+        actions:
+        - class: Disc
+          actions:
+          - class: Cover
+            actions:
+            - class: CycleBlock
+            - class: CycleEntity
     effects:
         cast:
         -  class: EffectSingle
-           sound: magic.shield
+           sound: block_cloth_break
            effectlib:
              class: ConeEffect
              iterations: 10
-             particle: fireworks_spark
-             speed: 5
-             lengthGrow: 0.1
-             radiusGrow: 0.003
+             particle: dragon_breath
              updateLocations: false
              updateDirections: false
         -  class: EffectTrail
-           particle: fireworks_spark
+           particle: dragon_breath
     parameters:
         target_type: Entity
+        target: block
+        hitbox: true
+        cooldown: 150
+        bypass_build: true
         allow_max_range: false
         range: 64
-        radius: 5
-        undo: 100000
+        radius: 2
+        undo: 1000
         transparent: transparent_to_construction
         materials:
-        - - stone
-          - redstonetorch
+        - - redstone_lamp
+          - li_redstone_lamp
+        - - lit_redstone_lamp
+          - redstone_lamp
+        - - unlit_redstone_torch
+          - redstone_torch
         - - redstone_torch
           - unlit_redstone_torch
         - - unpowered_repeater
           - powered_repeater
         - - powered_repeater
           - unpowered_repeater
-        - - redstone_lamp
-          - lit_redstone_lamp
-        - - lit_redstone_lamp
-          - redstone_lamp
         - - unpowered_comparator
           - powered_comparator
         - - powered_comparator
           - unpowered_comparator
-        - - furnance
-          - lit_furnance
-        - - lit_furnance
-          - furnance
     costs:
         mana: 5
