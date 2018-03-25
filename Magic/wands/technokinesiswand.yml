@@ -1,7 +1,7 @@
 technokinesiswand:
   version: 5
   spell_inventory:
-    electrictp: 0
+    technokinesis: 0
   active_spell: technokinesis
   spell_levels: {}
   mana: 200.0
@@ -29,7 +29,7 @@ technokinesiswand:
   attributes:
     GENERIC_ATTACK_SPEED: 10
   attribute_slot: mainhand
-  icon: blaze_rod
+  icon: sugar
   path: beginner
   creator_id: 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
   creator: WingArmor
