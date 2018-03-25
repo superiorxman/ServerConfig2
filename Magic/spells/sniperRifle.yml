@@ -156,8 +156,6 @@ sniper:
         target_armor_stand: true
         spread_movement_max: 0.2
         spread_movement: 5
-    costs:
-      mana: 1
       
 reload_rifle:
   inherit: incremental_reload
@@ -191,4 +189,4 @@ rifle:
     block_hit_count: 2
     velocity: 5000
     player_damage: 10
-entity_damage: 15
+    entity_damage: 15

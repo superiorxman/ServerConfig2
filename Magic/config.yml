@@ -81,11 +81,11 @@ add_examples:
 # worth_base: 1
 
 # Disable the resource pack
-default_resource_pack: ""
+# default_resource_pack: ""
 
 # Turn on skull-based spell icons (may be needed if you're not using the RP)
 # url_icons_enabled: true
 
-show_messages: false
+show_messages: true
 enable_enchanting: false
 wand_undroppable: true

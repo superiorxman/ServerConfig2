@@ -11,15 +11,12 @@ items:
 - /mgive <plr> forcepullwand
 - /mgive <plr> forcepushwand
 - /mgive <plr> forcegripwand
+- /mgive <plr> forcespeedwand
 jump: 4
-permissions:
-  superherocity:
-  - ch.alias.forcespeed
 powers:
 - /effects
 - /items
 - /jump <0-4>
-- /forcespeed
 speech: Do or do not there is no try!
 trail: [
   ]

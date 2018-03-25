@@ -1,0 +1,10 @@
+forcespeed:
+    icon: ink_sack:14
+    actions:
+        cast:
+        - class: PotionEffect
+    parameters:
+        target: self
+        cooldown: 15000
+        duration: 7000
+        effect_speed: 3
