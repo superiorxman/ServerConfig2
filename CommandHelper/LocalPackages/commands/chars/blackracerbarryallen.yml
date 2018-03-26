@@ -33,13 +33,13 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-5>
-- /run <0-9>
-- /haste <0-5>
-- /wallrun <on/off>
+- /jump 0-5
+- /run 0-9
+- /haste 0-5
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /warp speedforce
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
 - /speedforcebuffs

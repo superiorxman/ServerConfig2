@@ -62,9 +62,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
-- /run <0-2>
+- /run 0-2
 - /disguise
 - /tppos <x> <y> <z>
 run: 2

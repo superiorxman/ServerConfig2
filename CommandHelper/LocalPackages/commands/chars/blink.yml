@@ -15,9 +15,9 @@ permissions:
   - essentials.tppos
 powers:
 - /tppos <x> <y> <z>
-- /jump <0-2>
-- /run <0-2>
-- /haste <0-2>
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 run: 2
 speech: Blink and you'll miss me!
 trail: [

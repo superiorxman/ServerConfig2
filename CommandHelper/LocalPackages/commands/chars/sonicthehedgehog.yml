@@ -17,8 +17,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /run <0-8>
-- /jump <0-6>
+- /run 0-8
+- /jump 0-6
 run: 8
 speech: Gotta Go Fast!
 trail: [

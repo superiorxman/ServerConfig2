@@ -43,22 +43,22 @@ powers:
 - /items
 - /warp speedforce
 - /run 0-1 (In the speedforce)
-- /run <0-9>
-- /jump <0-3>
-- /haste <0-7>
+- /run 0-9
+- /jump 0-3
+- /haste 0-7
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
-- /speedforceheal <playername>
+- /speedforceheal <player>
 - /carryplayer <player>
 - /dropplayer
 - /tppos <x> <y> <z>
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /thru (phases through walls)
 - /thrudestabilize
-- /modifyspeed <playername> <number>
+- /modifyspeed <player> <number>
 - /cast infinitemasspunch
 run: 9
 speech: I am Wally West, unleash the speedforce inside of me!

@@ -22,10 +22,10 @@ permissions:
 powers:
 - /effects
 - /items
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
-- /haste <0-4>
-- /jump <0-4>
+- /haste 0-4
+- /jump 0-4
 speech: I am one with the plants
 trail: [
   ]

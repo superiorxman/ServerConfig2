@@ -16,9 +16,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-2>
-- /run <0-1>
-- /haste <0-1>
+- /jump 0-2
+- /run 0-1
+- /haste 0-1
 run: 1
 speech: I am the KING!
 trail: [

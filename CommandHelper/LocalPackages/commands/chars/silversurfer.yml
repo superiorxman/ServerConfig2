@@ -78,9 +78,9 @@ powers:
 - /dropplayer
 - /disguise
 - /undisguise
-- /jump <0-4>
-- /run <0-6>
-- /haste <0-5>
+- /jump 0-4
+- /run 0-6
+- /haste 0-5
 - /fly
 - /tppos <x> <y> <z>
 - /tangible
@@ -92,7 +92,7 @@ powers:
 - /unconfuse
 - /disguiseviewself
 - /healing
-- /healing <playername>
+- /healing <player>
 run: 6
 speech: Surf's up, dude!
 trail: [

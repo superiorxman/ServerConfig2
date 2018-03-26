@@ -20,9 +20,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-6>
-- /run <0-7>
-- /haste <0-3>
+- /jump 0-6
+- /run 0-7
+- /haste 0-3
 run: 7
 speech: Gre, greninja!
 trail: [

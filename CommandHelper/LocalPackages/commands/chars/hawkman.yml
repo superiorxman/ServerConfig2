@@ -20,8 +20,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
-- /carryplayer <playername>
+- /jump 0-3
+- /carryplayer <player>
 - /dropplayer
 speech: We carry justice on our wings!
 trail: [

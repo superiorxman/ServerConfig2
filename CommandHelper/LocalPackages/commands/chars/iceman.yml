@@ -14,7 +14,7 @@ maxHearts: 30
 powers:
 - /effects
 - /items
-- /run <0-2>
+- /run 0-2
 - /cast freezeray
 run: 2
 speech: Chill out!

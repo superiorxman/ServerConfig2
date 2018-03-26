@@ -14,8 +14,8 @@ maxHearts: 20
 powers:
 - /effects
 - /items
-- /run <0-2>
-- /jump <0-1>
+- /run 0-2
+- /jump 0-1
 run: 2
 speech: It's Clobbering time!
 trail: [

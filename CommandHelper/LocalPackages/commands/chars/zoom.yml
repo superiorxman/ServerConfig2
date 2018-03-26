@@ -31,19 +31,19 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
+- /jump 0-3
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /run <0-9>
-- /run <0-1> (In the speedforce)
-- /haste <0-4>
+- /run 0-9
+- /run 0-1 (In the speedforce)
+- /haste 0-4
 run: 9
 speech: Zoom!
 trail: [

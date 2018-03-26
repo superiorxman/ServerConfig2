@@ -27,12 +27,12 @@ powers:
 - /items
 - /flyspeed <number>
 - /fly
-- /jump <0-8>
-- /run <0-8>
-- /haste <0-8>
-- /wallrun <on/off>
+- /jump 0-8
+- /run 0-8
+- /haste 0-8
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /carryplayer <playername>
+- /carryplayer <player>
 run: 8
 speech: MISS MARVEL, FUCK YOU SHAZAM YOU RUINED ME!
 trail: [

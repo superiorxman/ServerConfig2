@@ -15,8 +15,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /run <0-1>
-- /jump <0-1>
+- /run 0-1
+- /jump 0-1
 run: 1
 speech: I was raised by wolves!
 trail: [

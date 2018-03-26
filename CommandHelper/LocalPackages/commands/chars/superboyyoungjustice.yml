@@ -28,9 +28,9 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-8>
-- /run <0-8>
-- /haste <0-8>
+- /jump 0-8
+- /run 0-8
+- /haste 0-8
 - /useshield
 run: 8
 speech: Call me Superboy. I'm not a sidekick.

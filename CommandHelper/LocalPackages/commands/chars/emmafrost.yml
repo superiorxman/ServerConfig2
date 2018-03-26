@@ -26,15 +26,15 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-2>
-- /run <0-2>
-- /haste <0-2>
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 - /speak <player> <message>
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /confuse <player>
-- /mindlock <playername>
-- /msg <playername>
+- /mindlock <player>
+- /msg <player>
 run: 2
 speech: Despite the name, I'm not that cold
 trail: [

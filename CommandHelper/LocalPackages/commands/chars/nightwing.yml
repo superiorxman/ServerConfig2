@@ -19,9 +19,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
-- /run <0-3>
-- /haste <0-2>
+- /jump 0-3
+- /run 0-3
+- /haste 0-2
 - /herotransform
 run: 3
 speech: You'll never know if you can fly unless you take the risk of falling.

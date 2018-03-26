@@ -19,10 +19,10 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-6>
+- /jump 0-6
 - /regen
-- /regen <playername>
-- /carryplayer <playername>
+- /regen <player>
+- /carryplayer <player>
 - /dropplayer
 speech: Flower, gleam and glow let your powers shine heal what has been hurt bring
   back what once was mine.

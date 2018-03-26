@@ -16,8 +16,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /run <0-2>
-- /jump <0-1>
+- /run 0-2
+- /jump 0-1
 run: 2
 speech: Your in for a real SHOCK!
 trail: [

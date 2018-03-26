@@ -69,14 +69,14 @@ powers:
 - /items
 - /flyspeed <number>
 - /fly
-- /jump <0-3>
-- /run <0-3>
-- /haste <0-2>
+- /jump 0-3
+- /run 0-3
+- /haste 0-2
 - /confuse <player>
 - /disguise
 - /msg
-- /mindlock <playername>
-- /mindcontrol <playername>
+- /mindlock <player>
+- /mindcontrol <player>
 - /stopmindcontrol
 run: 3
 speech: I'm a mind reader!

@@ -27,12 +27,12 @@ powers:
 - /items
 - /intangible
 - /tangible
-- /jump <0-1>
-- /run <0-2>
+- /jump 0-1
+- /run 0-2
 - /thru (phases through walls)
 - /fly
 - /fly speed <number>
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 run: 2
 speech: I'm going ghost!

@@ -18,9 +18,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-4>
-- /run <0-4>
-- /haste <0-2>
+- /jump 0-4
+- /run 0-4
+- /haste 0-2
 - /vis
 - /shadowhide
 - /jumpto

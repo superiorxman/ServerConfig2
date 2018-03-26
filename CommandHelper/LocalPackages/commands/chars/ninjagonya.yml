@@ -15,10 +15,10 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-1>
+- /jump 0-1
 - /carryplayer <player>
 - /dropplayer
-- /run <0-2>
+- /run 0-2
 - /spinjutsu (gives strength 5 for 10 seconds)
 run: 2
 speech: GirlPower!

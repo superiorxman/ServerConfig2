@@ -46,21 +46,21 @@ powers:
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /whirlwind <player>
 - /carryplayer <player>
 - /dropplayer
 - /invis
 - /vis
-- /run <0-9>
-- /jump <0-3>
-- /haste <0-4>
+- /run 0-9
+- /jump 0-3
+- /haste 0-4
 - /run 0-1 (In the speedforce)
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - Throw lightning with an empty hand.
-- /lightningpunch <on/off>
+- /lightningpunch on/off
 - /thru
 - /tppos <x> <y> <z>
 - /timeremnant (Creates a clone of you.)

@@ -19,9 +19,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-2>
-- /run <0-2>
-- /haste <0-2>
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 - /herotransform
 run: 2
 speech: I'm no "Boy Wonder" anymore, but that old training never goes away, even at

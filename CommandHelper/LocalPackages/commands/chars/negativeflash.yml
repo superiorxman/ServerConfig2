@@ -32,20 +32,20 @@ powers:
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /carryplayer <player>
 - /dropplayer
 - /run 0-1 (In the speedforce)
-- /run <0-9>
-- /haste <0-4>
-- /jump <0-4>
-- /wallrun <on/off>
+- /run 0-9
+- /haste 0-4
+- /jump 0-4
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /tppos <x> <y> <z>
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /modifyspeed <playername> <number>
+- /modifyspeed <player> <number>
 run: 9
 speech: Now the negative speedforce streams trough me, I doubt if I can stay the hero,
   but I will stay the fastest man alive!

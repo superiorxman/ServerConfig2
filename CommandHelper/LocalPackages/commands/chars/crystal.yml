@@ -22,13 +22,13 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-2>
-- /run <0-3>
+- /jump 0-2
+- /run 0-3
 - /fly
 - /earth
-- /wind <playername>
+- /wind <player>
 - /crystallightning
-- /fireballpunch <on/off>
+- /fireballpunch on/off
 - You can throw a fireball with your bare hand
 run: 3
 speech: Lockjaw, come here boy!

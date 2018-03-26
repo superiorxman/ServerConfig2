@@ -33,15 +33,15 @@ powers:
 - /warp speedforce
 - /back (in the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /run <0-9>
-- /haste <0-4>
-- /jump <0-3>
+- /run 0-9
+- /haste 0-4
+- /jump 0-3
 run: 9
 speech: I..am... The Rival!
 trail: [

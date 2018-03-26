@@ -21,12 +21,12 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-9>
-- /run <0-9>
-- /haste <0-9>
+- /jump 0-9
+- /run 0-9
+- /haste 0-9
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 run: 9
 speech: I never back down from a fight, after all I am rank 1 of the highest hero

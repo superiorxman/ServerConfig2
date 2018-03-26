@@ -20,12 +20,12 @@ permissions:
 powers:
 - /effects
 - /items
-- /lightningpunch <on/off>
+- /lightningpunch on/off
 - When punching with an empty hand, you throw lightning
 - /fly
-- /run <0-6>
-- /jump <0-4>
-- /haste <0-5>
+- /run 0-6
+- /jump 0-4
+- /haste 0-5
 run: 6
 speech: Zeus Almighty.
 trail: [

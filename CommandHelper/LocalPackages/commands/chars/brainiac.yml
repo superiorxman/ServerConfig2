@@ -27,15 +27,15 @@ permissions:
 powers:
 - /effects
 - /items
-- /carryplayer <playername>
+- /carryplayer <player>
 - /dropplayer
-- /jump <0-4>
-- /run <0-6>
-- /haste <0-5>
+- /jump 0-4
+- /run 0-6
+- /haste 0-5
 - /fly
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
-- /speak <playername>
+- /speak <player>
 - /confuse
 - /unconfuse
 - /mindlock

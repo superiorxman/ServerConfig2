@@ -32,9 +32,9 @@ powers:
 - /dropplayer
 - /fly
 - /flyspeed
-- /run <0-8>
-- /haste <0-8>
-- /jump <0-8>
+- /run 0-8
+- /haste 0-8
+- /jump 0-8
 run: 8
 speech: Don't ever call me Superboy!
 trail: [

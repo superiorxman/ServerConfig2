@@ -32,11 +32,11 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /jump <0-8>
-- /run <0-8>
-- /haste <0-8>
+- /jump 0-8
+- /run 0-8
+- /haste 0-8
 - /flyspeed <number>
 - /fly
 run: 8

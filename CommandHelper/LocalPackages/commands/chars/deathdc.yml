@@ -16,8 +16,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /tp <playername>
-- /tp <playername> <playername>
+- /tp <player>
+- /tp <player> <player>
 - Anything you attack, dies
 speech: Your time has come little piece of life.
 trail: [

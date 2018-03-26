@@ -18,9 +18,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-6>
-- /run <0-7>
-- /haste <0-5>
+- /jump 0-6
+- /run 0-7
+- /haste 0-5
 run: 7
 speech: I will kill my brother.
 trail: [

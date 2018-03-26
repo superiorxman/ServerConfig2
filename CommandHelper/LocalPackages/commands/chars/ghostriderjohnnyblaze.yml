@@ -23,11 +23,11 @@ powers:
 - /effects
 - /items
 - Can throw fireballs by punching with an empty hand
-- /run <0-5>
-- /haste <0-5>
-- /wallrun <on/off>
+- /run 0-5
+- /haste 0-5
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /flame <playername>
+- /flame <player>
 run: 5
 speech: LOOK INTO MY EYES...YOU SEE NOTHING.
 trail: [

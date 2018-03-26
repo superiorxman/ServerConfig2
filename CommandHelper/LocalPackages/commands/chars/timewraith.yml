@@ -43,12 +43,12 @@ permissions:
 powers:
 - /effects
 - /items
-- /run <0-9>
-- /haste <0-2>
+- /run 0-9
+- /haste 0-2
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /run 0-1 (In the speedforce)
 - /wither

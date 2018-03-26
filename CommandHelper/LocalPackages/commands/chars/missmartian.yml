@@ -46,26 +46,26 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-8>
-- /run <0-7>
-- /haste <0-6>
+- /jump 0-8
+- /run 0-7
+- /haste 0-6
 - /flyspeed <number>
 - /fly
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /intangible
 - /tangible
 - /disguise
 - /speak <player> <message>
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /invis
 - /vis
 - /confuse <player>
 - /disguiseviewself
 - /undisguise
-- /mindlock <playername>
-- /msg <playername>
+- /mindlock <player>
+- /msg <player>
 run: 7
 speech: Miss Martian is here to save the day!
 trail: [

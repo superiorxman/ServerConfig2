@@ -20,9 +20,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-5>
-- /run <0-2>
-- /haste <0-8>
+- /jump 0-5
+- /run 0-2
+- /haste 0-8
 run: 2
 speech: I shall defeat you like my father before me!
 trail: [

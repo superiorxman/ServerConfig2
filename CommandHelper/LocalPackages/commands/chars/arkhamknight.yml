@@ -9,10 +9,10 @@ effects: [
 haste: 2
 items:
 - /mgive <plr> stungrenadewand
-- /mgive <plr> pistolwand
-- /mgive <plr> pistolwand
-- /mgive <plr> sniperwand
-- /mgive <plr> rocketlauncherwand
+- /mgive <plr> pistol
+- /mgive <plr> pistol
+- /mgive <plr> sniper
+- /mgive <plr> rocketlauncher
 jump: 2
 maxHearts: 20
 permissions:
@@ -25,9 +25,9 @@ powers:
 - /items
 - /grapplinghook
 - /shadowhide (Allows you to become invisible in dark areas)
-- /run <0-2>
-- /jump <0-2>
-- /haste <0-2>
+- /run 0-2
+- /jump 0-2
+- /haste 0-2
 run: 2
 speech: You always told me Bruce... focus on what I want to achieve... and it'll happen.
   Well you wanna know what I want now, huh? I want you dead!

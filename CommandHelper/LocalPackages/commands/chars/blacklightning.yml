@@ -22,9 +22,9 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-4>
-- /run <0-6>
-- /haste <0-3>
+- /jump 0-4
+- /run 0-6
+- /haste 0-3
 run: 6
 speech: I am Black Lightning!
 trail: [

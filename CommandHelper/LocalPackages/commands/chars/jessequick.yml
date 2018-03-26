@@ -33,14 +33,14 @@ powers:
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /carryplayer <player name>
 - /dropplayer
 - /run 0-1 (In the speedforce)
-- /jump <0-3>
-- /run <0-8>
-- /haste <0-4>
+- /jump 0-3
+- /run 0-8
+- /haste 0-4
 run: 8
 speech: My name is Jesse Quick... and im the fastest woman alive!
 trail: [

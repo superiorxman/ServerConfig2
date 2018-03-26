@@ -45,19 +45,19 @@ powers:
 - /fly
 - /carryplayer <player>
 - /dropplayer
-- /run <0-8>
-- /jump <0-8>
-- /haste <0-8>
+- /run 0-8
+- /jump 0-8
+- /haste 0-8
 - /yell
 - /create <item> <quantity> <color>
 - /headdb
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /msg <playername>
-- /mindlock <playername>
-- /mindcontrol <playername>
+- /msg <player>
+- /mindlock <player>
+- /mindcontrol <player>
 - /stopmindcontrol
-- /confuse <playername>
+- /confuse <player>
 - /unconfuse
 run: 8
 speech: '...!'

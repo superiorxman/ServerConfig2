@@ -24,11 +24,11 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-3>
-- /run <0-3>
-- /haste <0-5>
+- /jump 0-3
+- /run 0-3
+- /haste 0-5
 - /healing
-- /healing <playername>
+- /healing <player>
 run: 3
 speech: You cannot shake hands with a clenched fist.
 trail: [

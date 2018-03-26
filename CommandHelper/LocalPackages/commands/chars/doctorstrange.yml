@@ -30,10 +30,10 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-3>
-- /run <0-1>
-- /haste <0-1>
-- /float <up/down/pause/unpause/stop>
+- /jump 0-3
+- /run 0-1
+- /haste 0-1
+- /float up/down/pause/unpause/stop
 - /gravityshift
 - /gravityshiftstop
 run: 1

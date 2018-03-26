@@ -18,10 +18,10 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-7>
-- /run <0-4>
-- /haste <0-1>
-- /forcepush <playername>
+- /jump 0-7
+- /run 0-4
+- /haste 0-1
+- /forcepush <player>
 run: 4
 speech: Im a new hope.
 trail: [

@@ -22,9 +22,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
+- /jump 0-3
 - /fly
-- /carryplayer <playername>
+- /carryplayer <player>
 - /dropplayer
 speech: We carry justice on our wings!
 trail: [

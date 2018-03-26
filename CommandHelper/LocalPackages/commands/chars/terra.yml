@@ -22,12 +22,12 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-2>
-- /run <0-1>
-- /haste <0-2>
+- /jump 0-2
+- /run 0-1
+- /haste 0-2
 - /earth (launches an dirt shot)
 - /fly (uses telekinetic powers to fly)
-- /carryplayer <playername>
+- /carryplayer <player>
 - /dropplayer
 - /herotransform
 run: 1

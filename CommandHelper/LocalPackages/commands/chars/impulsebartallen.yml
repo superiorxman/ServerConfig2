@@ -29,15 +29,15 @@ powers:
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
-- /carryplayer <playername>
+- /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /run 0-1 (In speedforce)
-- /run <0-9>
-- /haste <0-4>
+- /run 0-9
+- /haste 0-4
 - /tppos <x> <y> <z>
 run: 9
 speech: Dude! That is so crash!

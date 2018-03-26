@@ -20,8 +20,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-5>
-- /run <0-6>
+- /jump 0-5
+- /run 0-6
 - /disguise wolf
 - /normalform
 run: 6

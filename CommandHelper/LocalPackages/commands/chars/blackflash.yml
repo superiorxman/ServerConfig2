@@ -29,16 +29,16 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
-- /run <0-9>
-- /haste <0-4>
+- /jump 0-3
+- /run 0-9
+- /haste 0-4
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /run 0-1 (In the speedforce)
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - Anything you attack, dies
 run: 9

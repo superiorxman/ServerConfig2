@@ -34,13 +34,13 @@ powers:
 - /items
 - /flyspeed <number>
 - /fly
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /tp
-- /speak <playername>
-- /jump <0-2>
-- /run <0-2>
-- /haste <0-2>
+- /speak <player>
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 - /confuse <player>
 run: 2
 speech: I am the protector!

@@ -17,9 +17,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-3>
-- /run <0-3>
-- /haste <0-5>
+- /jump 0-3
+- /run 0-3
+- /haste 0-5
 - /thru
 - /mrshiftytp
 run: 3

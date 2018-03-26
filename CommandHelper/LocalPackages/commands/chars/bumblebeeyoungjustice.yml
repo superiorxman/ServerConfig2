@@ -26,8 +26,8 @@ powers:
 - /fly
 - /carryplayer <player>
 - /dropplayer
-- /run <0-2>
-- /haste <0-2>
+- /run 0-2
+- /haste 0-2
 run: 2
 speech: I can shrink to the size of a bumblebee!
 trail: [

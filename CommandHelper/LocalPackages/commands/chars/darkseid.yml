@@ -35,23 +35,23 @@ powers:
 - /effects
 - /items
 - /levitate
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /apokolips (travels to your homeworld of Apokolips)
 - /tp
 - /carryplayer <player>
 - /dropplayer
-- /empower <playername> (gives player strength 10)
-- /speak <playername>
+- /empower <player> (gives player strength 10)
+- /speak <player>
 - /grow
 - /normalsize
-- /jump <0-9>
-- /run <0-9>
-- /haste <0-9>
+- /jump 0-9
+- /run 0-9
+- /haste 0-9
 - /confuse <player>
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /float <up/down/pause/unpause/stop>
+- /float up/down/pause/unpause/stop
 run: 9
 speech: I am the Destroyer of Worlds!
 trail: [

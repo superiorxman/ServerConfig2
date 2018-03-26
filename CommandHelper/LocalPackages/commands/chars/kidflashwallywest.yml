@@ -40,17 +40,17 @@ powers:
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /whirlwind <player>
 - /run 0-1 (In the speedforce)
-- /run <0-9>
-- /haste <0-4>
-- /jump <0-3>
+- /run 0-9
+- /haste 0-4
+- /jump 0-3
 - /thru (phases through walls)
 - /herotransform
 run: 9

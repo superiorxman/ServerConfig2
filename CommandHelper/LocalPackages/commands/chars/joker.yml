@@ -9,11 +9,19 @@ effects: [
 items:
 - /give <plr> minecraft:stick 1 16:2 name:&6Baseball_Bat
 - /give <plr> minecraft:stick 1 16:2 name:&7Crow_Bar
-- /shot give <plr> pistol
+- /mgive <plr> pistol
 - /shot give <plr> cakebomb
+- /mgive <plr> rocketlauncher
+- /mgive <plr> jokerfloweracidwand
+permissions:
+  superherocity:
+  - powers.jokervenom
+  - powers.joybuzzer
 powers:
-- /effects
 - /items
+- /effects
+- /joybuzzer <player>
+- /jokervenom
 speech: I'm the Joker!
 trail: [
   ]

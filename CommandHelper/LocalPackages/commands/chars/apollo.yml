@@ -44,9 +44,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-6>
-- /run <0-7>
-- /haste <0-6>
+- /jump 0-6
+- /run 0-7
+- /haste 0-6
 - /arrow
 - /carryplayer <player>
 - /dropplayer
@@ -69,7 +69,7 @@ powers:
 - /arrow harming
 - /arrow waterbreathing
 - /arrow luck
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>
 - /fly

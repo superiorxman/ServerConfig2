@@ -22,11 +22,11 @@ permissions:
   - ch.alias.mindcontrol
 powers:
 - /speak <player> <message>
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /confuse <player>
-- /mindlock <playername>
-- /msg <playername>
+- /mindlock <player>
+- /msg <player>
 speech: Mutants and Humans, together!
 trail: [
   ]

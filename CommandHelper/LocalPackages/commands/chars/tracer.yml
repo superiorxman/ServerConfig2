@@ -14,7 +14,7 @@ permissions:
   - command.rewind
 powers:
 - /rewind
-- /run <0-5>
+- /run 0-5
 - /jumpto
 run: 5
 speech: Cheers love the calvery's here!

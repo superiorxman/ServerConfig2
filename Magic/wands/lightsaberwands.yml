@@ -137,14 +137,12 @@ lightsaber_blue:
     effect_color: '0000FF'
 
 lightsaber_red:
-  class: ""
-  path: acolyte
-  mana_max: 50
-  mana: 50
-  mana_regeneration: 5
-  spells:
-    - forcepush
-    - forceignite
+    inherit: base_lightsaber
+    class: ""
+    icon: shield:4
+    mode: none
+    effect_color: 'FF0000'
+    path: acolyte
 
 lightsaber_orange:
     inherit: base_lightsaber

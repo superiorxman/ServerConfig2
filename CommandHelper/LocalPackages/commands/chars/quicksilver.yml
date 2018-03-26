@@ -26,11 +26,11 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /wallrun <on/off>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /jump <0-3>
-- /run <0-9>
-- /haste <0-4>
+- /jump 0-3
+- /run 0-9
+- /haste 0-4
 run: 9
 speech: I Am Not Ze Fastest Man Alive!
 trail: [

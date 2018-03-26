@@ -32,20 +32,20 @@ permissions:
 powers:
 - /effects
 - /items
-- /carryplayer <playername>
+- /carryplayer <player>
 - /dropplayer
-- /jump <0-3>
-- /run <0-9>
-- /haste <0-6>
-- /mindcontrol <playername>
+- /jump 0-3
+- /run 0-9
+- /haste 0-6
+- /mindcontrol <player>
 - /stopmindcontrol
 - /warp speedforce
 - /back (In the speedforce)
 - /tp <player> (In the speedforce)
-- /speedforceteleport <playername>
+- /speedforceteleport <player>
 - /speedforcebuffs
 - /speedforcewhirlwind
-- /speak <playername>
+- /speak <player>
 run: 9
 speech: I am a telepathic gorilla!
 trail: [

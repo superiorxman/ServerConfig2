@@ -29,8 +29,8 @@ powers:
 - /effects
 - /items
 - /hyenas
-- /run <0-1>
-- /jump <0-1>
+- /run 0-1
+- /jump 0-1
 - /poisonimmunity
 run: 1
 speech: Oh that's cute...

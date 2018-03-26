@@ -23,9 +23,9 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-2>
-- /run <0-2>
-- /haste <0-2>
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 - /fly
 run: 2
 speech: For the record, I don't have powers, it's the staff!

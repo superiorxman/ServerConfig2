@@ -20,11 +20,11 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump <0-7>
-- /run <0-4>
-- /haste <0-1>
-- /forcepush <playername>
-- /forcechoke <playername>
+- /jump 0-7
+- /run 0-4
+- /haste 0-1
+- /forcepush <player>
+- /forcechoke <player>
 run: 4
 speech: Let the hate flow through you.
 trail: [

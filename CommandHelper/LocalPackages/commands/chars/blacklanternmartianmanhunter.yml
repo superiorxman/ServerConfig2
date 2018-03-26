@@ -46,16 +46,16 @@ powers:
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /jump <0-9>
-- /run <0-8>
-- /haste <0-7>
+- /jump 0-9
+- /run 0-8
+- /haste 0-7
 - /flyspeed <number>
 - /fly
 - /intangible
 - /tangible
 - /disguise
 - /speak <player> <message>
-- /mindcontrol <playername>
+- /mindcontrol <player>
 - /stopmindcontrol
 - /invis
 - /vis
@@ -63,10 +63,10 @@ powers:
 - /confuse <player>
 - /undisguise
 - You are protected by Nekron so mobs will fear you and wont attack you
-- /mindlock <playername>
-- /wallrun <on/off>
+- /mindlock <player>
+- /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
-- /msg <playername>
+- /msg <player>
 run: 8
 speech: The DEATH is worth it. The pain. The suffering. The future is DEATH.
 trail: [
