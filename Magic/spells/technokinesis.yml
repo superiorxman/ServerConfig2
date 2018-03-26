@@ -2,51 +2,61 @@ technokinesis:
     icon: diamond_axe:140
     icon_disabled: diamond_hoe:140
     icon_url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
-   category: combat
-    worth: 150
-    earns_sp: 2
-    upgrade_required_path: student
-    upgrade_required_casts: 50
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
     actions:
-        cast:
-        -  class: CustomProjectile
-           actions:
-           - class: Sphere
-             actions:
-             -  class: ModifyBlock
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: Disc
+          actions:
+          - class: Cover
+            actions:
+            - class: CycleBlock
+            - class: CycleEntity
     effects:
         cast:
         -  class: EffectSingle
-           sound: magic.shield
-        tick:
-        -  location: target
-           particle: block_crack
-        hit:
-        -  location: target
+           sound: block_cloth_break
            effectlib:
-             class: SphereEffect
-             particle: block_crack
-             radius: $radius
-             duration: 10000
+             class: ConeEffect
+             iterations: 10
+             particle: dragon_breath
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectTrail
+           particle: dragon_breath
     parameters:
-        target: other
-        allow_max_range: false
-        velocity: 50
-        target_type: LivingEntity
-        range: 64
-        thickness: 1
-        radius: 2
-        type: sphere
-        power: true
-        transparent: transparent_to_construction
-        destructible: destructible_replace
-        check_destructible: true
-        undo: 40000
+        target_type: Entity
+        target: block
+        hitbox: true
         cooldown: 150
-        breakable: 4
         bypass_build: true
-        reflect_chance: 0.25
-        miss_effects: hit
-        miss: actions
+        allow_max_range: false
+        range: 64
+        radius: 20
+        power: true
+        undo: 1000
+        transparent: transparent_to_construction
+        materials:
+        - - redstone_lamp
+          - li_redstone_lamp
+        - - lit_redstone_lamp
+          - redstone_lamp
+        - - unlit_redstone_torch
+          - redstone_torch
+        - - redstone_torch
+          - unlit_redstone_torch
+        - - unpowered_repeater
+          - powered_repeater
+        - - powered_repeater
+          - unpowered_repeater
+        - - unpowered_comparator
+          - powered_comparator
+        - - powered_comparator
+          - unpowered_comparator
     costs:
         mana: 5
