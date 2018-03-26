@@ -65,18 +65,6 @@ players:
       name: Shokorana
       timestamp: 1520289503
     party: TheTitans
-  fbb8c072-4c4b-49c8-948b-26e8ad73099e:
-    rank: 20
-    name:
-      timestamp: 1520294493
-      name: Eiilonwy
-    party: orkhorl
-  dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
-    name:
-      name: _AnnieMay_
-      timestamp: 1520975074
-    party: orkhorl
-    rank: 5
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     name:
       name: LordOfGallifrey
@@ -89,12 +77,6 @@ players:
     name:
       timestamp: 1520456387
       name: xThqsey
-  28556dea-667d-409f-b2ff-fb4177a20ff2:
-    name:
-      name: Marielia
-      timestamp: 1520539203
-    rank: 5
-    party: orkhorl
   a15f051c-1473-4f90-88f3-bad6e6b9dce2:
     party: TheTitans
     name:
@@ -155,18 +137,6 @@ players:
       timestamp: 1520794210
     party: Wwkq
     rank: 20
-  05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85:
-    rank: 5
-    party: orkhorl
-    name:
-      name: Space71
-      timestamp: 1520959044
-  57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
-    rank: 5
-    name:
-      name: Nightur
-      timestamp: 1520976747
-    party: orkhorl
   55679107-589e-4487-abb4-4fca48b26f25:
     name:
       name: AgentNuggets
@@ -185,12 +155,6 @@ players:
       name: Mythification
     rank: 5
     party: XMen
-  2a402832-0240-4587-89ae-4541eb4ed088:
-    party: orkhorl
-    name:
-      name: AboveIsTripleGay
-      timestamp: 1521238789
-    rank: 5
   ae37c994-7b2c-4927-923c-33fc87301321:
     rank: 5
     name:
@@ -308,6 +272,18 @@ players:
       timestamp: 1522010093
       name: BBonless
     party: LostHEROES
+  fbb8c072-4c4b-49c8-948b-26e8ad73099e:
+    rank: 20
+    name:
+      timestamp: 1522023785
+      name: Eiilonwy
+    party: omfg
+  28556dea-667d-409f-b2ff-fb4177a20ff2:
+    name:
+      name: Marielia
+      timestamp: 1522023798
+    rank: 5
+    party: omfg
 parties:
   TheTitans:
     members:
@@ -336,15 +312,6 @@ parties:
     members:
     - 8cb79cd3-1e48-4087-9137-a37e164f1494
     leader: 8cb79cd3-1e48-4087-9137-a37e164f1494
-  orkhorl:
-    leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
-    members:
-    - fbb8c072-4c4b-49c8-948b-26e8ad73099e
-    - dbb47887-bfbd-40e6-bfec-3d1053ea3aff
-    - 28556dea-667d-409f-b2ff-fb4177a20ff2
-    - 05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85
-    - 57b29f1f-dc6b-4d30-80ac-cf64c4df3428
-    - 2a402832-0240-4587-89ae-4541eb4ed088
   oof:
     members:
     - e6de8cf0-af45-44e4-882f-d98446f4b31b
@@ -415,3 +382,8 @@ parties:
     - 8920283f-1ad7-4e8f-a524-dece38451dd8
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
     motd: ThatCraftLifeMCU
+  omfg:
+    members:
+    - fbb8c072-4c4b-49c8-948b-26e8ad73099e
+    - 28556dea-667d-409f-b2ff-fb4177a20ff2
+    leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
