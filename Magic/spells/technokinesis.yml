@@ -2,61 +2,58 @@ technokinesis:
     icon: diamond_axe:140
     icon_disabled: diamond_hoe:140
     icon_url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
-    category: engineering
-    tags: noduel
-    cancellable: false
-    worth: 1500
-    earns_sp: 12
+       category: utility
+    worth: 20
+    earns_sp: 10
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 20
     actions:
-      cast:
-      - class: CustomProjectile
-        actions:
-        - class: Disc
-          actions:
-          - class: Cover
-            actions:
-            - class: CycleBlock
-            - class: CycleEntity
+        cast:
+        - class: Door
     effects:
         cast:
-        -  class: EffectSingle
-           sound: block_cloth_break
-           effectlib:
-             class: ConeEffect
-             iterations: 10
+        - sound: magic.shimmer
+        - class: EffectTrail
+          particle: dragon_breath
+          particle_data: 2
+          particle_count: 20
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        - class: EffectSingle
+          location: target
+          sound: magic.bonk
+          sound_volume: 0.5
+        - class: EffectSingle
+          location: target
+          use_block_location: true
+          effectlib:
+           class: Modified
+           iterations: 30
+           parameters:
+            edgeLength: "max(1, (t / i) * 5 - 2)"
+           effect:
+             class: CubeEffect
              particle: dragon_breath
-             updateLocations: false
-             updateDirections: false
-        -  class: EffectTrail
-           particle: dragon_breath
+             speed: 2
+             enableRotation: false
+             offset: 0.5,0.5,0.5
+        no_target:
+        - sound: magic.shimmer
+        - class: EffectTrail
+          particle: dragon_breath
+          particle_data: 2
+          particle_count: 10
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
     parameters:
-        target_type: Entity
-        target: block
-        hitbox: true
-        cooldown: 150
-        bypass_build: true
-        allow_max_range: false
         range: 64
-        radius: 20
-        power: true
-        undo: 1000
+        radius: 3
+        allow_max_range: true
+        destructible: unlocked_doors
         transparent: transparent_to_construction
-        materials:
-        - - redstone_lamp
-          - li_redstone_lamp
-        - - lit_redstone_lamp
-          - redstone_lamp
-        - - unlit_redstone_torch
-          - redstone_torch
-        - - redstone_torch
-          - unlit_redstone_torch
-        - - unpowered_repeater
-          - powered_repeater
-        - - powered_repeater
-          - unpowered_repeater
-        - - unpowered_comparator
-          - powered_comparator
-        - - powered_comparator
-          - unpowered_comparator
+        undo: 8000
+        cooldown: 50
     costs:
         mana: 5
