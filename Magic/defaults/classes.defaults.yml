@@ -39,12 +39,12 @@ battle_mage:
   parent: caster
   locked: false
   path: battle
-#  spells:
-#    - missile
-#    - arrow
-#    - curse
-#    - fire
-#    - push
+  spells:
+    - missile
+    - arrow
+    - curse
+    - fire
+    - push
 
 broomrider:
   storage:
@@ -63,6 +63,6 @@ mage:
   parent: caster
   locked: false
   path: beginner
-#  spells:
-#   - missile
+  spells:
+  - missile
 

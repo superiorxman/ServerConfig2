@@ -200,12 +200,6 @@ players:
     name:
       name: _The_Craftsman_
       timestamp: 1521655215
-  fdbd1274-eb12-4fd1-b9c5-a44917d58637:
-    party: team
-    name:
-      name: StealthFox007
-      timestamp: 1521695491
-    rank: 20
   58a41365-71bd-4656-8dc1-5339e97abed7:
     rank: 20
     party: ohhaan
@@ -284,18 +278,24 @@ players:
       timestamp: 1522023798
     rank: 5
     party: omfg
-  fc3bf70e-2dda-441d-9c19-8d682a2b0183:
-    party: LostHEROES
-    name:
-      timestamp: 1522069107
-      name: ZwaagGirls
-    rank: 5
   748c7d68-79e5-4194-9bc8-e446d948ee8a:
     party: LostHEROES
     name:
       name: alex363
       timestamp: 1522080266
     rank: 5
+  fdbd1274-eb12-4fd1-b9c5-a44917d58637:
+    party: Chaos
+    name:
+      name: StealthFox007
+      timestamp: 1522125715
+    rank: 5
+  21e726fd-af17-4454-bb61-25e55d7300ef:
+    party: Chaos
+    rank: 5
+    name:
+      name: Naterrss
+      timestamp: 1522127839
 parties:
   TheTitans:
     members:
@@ -339,6 +339,8 @@ parties:
     - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
     - ff0fec80-b8d2-4d10-8951-3061c6e7181d
     - 861da66b-8eef-4143-93f1-dbab33665595
+    - fdbd1274-eb12-4fd1-b9c5-a44917d58637
+    - 21e726fd-af17-4454-bb61-25e55d7300ef
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -364,10 +366,6 @@ parties:
     leader: f475c2cf-ebbe-4314-8c6a-7211b32e55ae
     members:
     - f475c2cf-ebbe-4314-8c6a-7211b32e55ae
-  team:
-    members:
-    - fdbd1274-eb12-4fd1-b9c5-a44917d58637
-    leader: fdbd1274-eb12-4fd1-b9c5-a44917d58637
   ohhaan:
     leader: 58a41365-71bd-4656-8dc1-5339e97abed7
     members:
@@ -392,7 +390,6 @@ parties:
     - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
     - 474707f7-f8b4-43ea-8978-9cae17917e82
     - 8920283f-1ad7-4e8f-a524-dece38451dd8
-    - fc3bf70e-2dda-441d-9c19-8d682a2b0183
     - 748c7d68-79e5-4194-9bc8-e446d948ee8a
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
     motd: ThatCraftLifeMCU

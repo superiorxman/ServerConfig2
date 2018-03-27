@@ -1250,29 +1250,40 @@ anvil:
     icon_disabled: diamond_hoe:90
     icon_url: http://textures.minecraft.net/texture/505b8ba793c372d9fb45db20df80c1606b19b7421a9bbcc258ae2a65d65ea7
     category: utility
-    class: PlaceSpell
+    actions:
+      cast:
+      - class: ChangeContext
+        target_attachment: true
+        target_offset: 0,8,0
+        actions:
+        - class: ModifyBlock
     worth: 100
     effects:
         cast:
         -  class: EffectSingle
            particle: block_crack
            location: target
+           particle_count: 30
+           particle_offset_x: 2
+           particle_offset_y: 0.1
+           particle_offset_z: 2
     parameters:
         target: other
         target_type: LivingEntity
         allow_max_range: true
         range: 16
-        oty: 4
         undo: 30000
         cooldown: 20000
         brush: anvil
+        destructible: air
     costs:
         mana: 100
 
 appearanceshop:
     icon: diamond_axe:233
     icon_disabled: diamond_hoe:233
-    hide: true
+    icon_url: http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7
+    hidden: true
     actions:
         cast:
         -  class: Selector
@@ -1442,7 +1453,7 @@ arrow_blink:
     icon_disabled: diamond_hoe:248
     icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
     category: combat
-    worth: 100
+    worth: 1000
     earns_sp: 8
     actions:
         cast:
@@ -1514,6 +1525,7 @@ arrow_blink:
       vertical_range: 8
       ledge_range: 4
       allow_passthrough: false
+      damage: 1
     costs:
       arrow: 1
 arrow_bomb:
@@ -1521,11 +1533,12 @@ arrow_bomb:
     icon_disabled: diamond_hoe:247
     icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
     category: combat
-    worth: 200
+    worth: 1500
     earns_sp: 8
     actions:
         cast:
         - class: Projectile
+          damage: 2
           actions:
           - class: AreaOfEffect
             actions:
@@ -1622,6 +1635,140 @@ arrow_bomb:
 
 
 
+arrow_fire:
+    icon: diamond_axe:246
+    icon_disabled: diamond_hoe:246
+    icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+    category: combat
+    worth: 800
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Projectile
+          actions:
+          - class: Ignite
+          - class: Disc
+            actions:
+            - class: Cover
+              actions:
+              - class: Burn
+    effects:
+        cast:
+        - sound: entity_arrow_shoot
+          sound_pitch: 0.8
+          sound_volume: 0.8
+        - sound: magic.burn
+          sound_volume: 0.9
+          sound_pitch: 1.1
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 4
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: smoke_large
+             disappearWithOriginEntity: true
+        hit:
+        - location: target
+          particle: lava
+          particle_count: 20
+          particle_offset_x: 2
+          particle_offset_y: 0.2
+          particle_offset_z: 2
+          sound: magic.zap
+          sound_pitch: 1.2
+          sound_volume: 0.5
+    parameters:
+      target: none
+      projectile: TippedArrow
+      fire: true
+      tick_increase: 500
+      entity_undo: false
+      undo: 10000
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      damage: "bowpull * 4"
+      radius: "1 + 2 * bowpull"
+    costs:
+      arrow: 1
+arrow_ice:
+    icon: diamond_axe:244
+    icon_disabled: diamond_hoe:244
+    icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+    category: combat
+    worth: 700
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Projectile
+          actions:
+          - class: AreaOfEffect
+            actions:
+            - class: PotionEffect
+            - class: Damage
+              damage: 1
+            - class: Ignite
+              duration: 0
+          - class: Sphere
+            ignore_result: true
+            actions:
+            - class: Freeze
+            - class: ModifyBreakable
+    effects:
+        cast:
+        - sound: entity_arrow_shoot
+          sound_pitch: 0.8
+          sound_volume: 0.8
+        - class: EffectSingle
+          sound: magic.zap_crack
+          sound_pitch: 1.5
+          location: origin
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: snowball
+             disappearWithOriginEntity: true
+        hit:
+        - class: EffectSingle
+          location: target
+          target_offset: 0,0.2,0
+          effectlib:
+             class: Shield
+             duration: $undo
+             period: 4
+             particle: snowball
+             radius: $radius
+    parameters:
+      target: none
+      projectile: TippedArrow
+      tick_increase: 500
+      entity_undo: false
+      undo: 10000
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      damage: "bowpull * 4"
+      radius: "1 + 3 * bowpull"
+      transparent: freeze_transparent
+      destructible: freezeable
+      duration: 2000
+      effect_slow: 1
+      breakable: 4
+      ice: frosted_ice
+    costs:
+      arrow: 1
 arrow_light:
     icon: diamond_axe:242
     icon_disabled: diamond_hoe:242
@@ -1639,15 +1786,18 @@ arrow_light:
           - class: ModifyBlock
             ignore_result: true
           - class: PotionEffect
-            duration: 3000
+            duration: 4000
+          - class: Delay
+            delay: 200
           - class: Asynchronous
+            requires_entity_target: true
             actions:
             - class: Repeat
-              repeat: 3
+              repeat: 10
               actions:
               - class: Damage
               - class: Delay
-                delay: 1000
+                delay: 300
     effects:
         cast:
         -  class: EffectSingle
@@ -1747,8 +1897,8 @@ arrow_light:
         block_hit_count: 4
         entity_hit_count: 5
         target_type: Damageable
-        player_damage: 3
-        entity_damage: 10
+        player_damage: 1
+        entity_damage: 4
         target_breakables: 1
         reorient: false
         potion_effects:
@@ -1763,7 +1913,7 @@ arrow_poison:
     icon_disabled: diamond_hoe:245
     icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
     category: combat
-    worth: 100
+    worth: 500
     earns_sp: 8
     actions:
         cast:
@@ -1805,12 +1955,14 @@ arrow_poison:
         duration: 10000
       speed: "bowpull * 3"
       spread: "1 - bowpull"
+      radius: "2 + 4 * bowpull"
+      damage: 2
     costs:
       arrow: 1
 arrow_regular:
     icon: arrow
     category: combat
-    worth: 20
+    worth: 100
     earns_sp: 2
     actions:
         cast:
@@ -1820,8 +1972,103 @@ arrow_regular:
       projectile: TippedArrow
       speed: "bowpull * 3"
       spread: "1 - bowpull"
+      damage: "10 * bowpull"
       tick_increase: 0
       pickup: allowed
+    costs:
+      arrow: 1
+arrow_shock:
+    icon: diamond_axe:250
+    icon_disabled: diamond_hoe:250
+    icon_url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+    category: combat
+    worth: 1200
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Projectile
+          actions:
+          - class: Disarm
+          - class: Electrify
+          - class: PotionEffect
+            duration: 4000
+          - class: Repeat
+            requires_entity_target: true
+            actions:
+            - class: Damage
+            - class: Delay
+              delay: 300
+    effects:
+        cast:
+        - sound: entity_arrow_shoot
+          sound_pitch: 0.9
+          sound_volume: 0.8
+        - class: EffectSingle
+          sound: magic.zap_crack
+          sound_pitch: 1.5
+          location: origin
+        projectile:
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 40
+             particle: redstone
+             color: "FFF000"
+             disappearWithOriginEntity: true
+        - location: origin
+          effectlib:
+             class: Sphere
+             iterations: 10
+             period: 2
+             particles: 5
+             particleCount: 10
+             particleOffsetX: 0.2
+             particleOffsetY: 0.2
+             particleOffsetZ: 0.2
+             particle: fireworks_spark
+             disappearWithOriginEntity: true
+        hit_entity:
+        - class: EffectSingle
+          location: target
+          target_location: body
+          particle: fireworks_spark
+          particle_count: 40
+          particle_offset_x: 0.4
+          particle_offset_y: 1
+          particle_offset_z: 0.4
+          effectlib:
+            class: AnimatedBall
+            particle: redstone
+            color: "FFF000"
+            duration: 3000
+            yFactor: 1.5
+            offset: 0,-0.2,0
+            size: 0.6
+            disappearWithOriginEntity: true
+        hit:
+        - class: EffectSingle
+          location: target
+          particle: fireworks_spark
+          particle_count: 10
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+          particle_data: 0.4
+          sound: magic.zap
+          sound_pitch: 1.2
+          sound_volume: 0.5
+    parameters:
+      target: none
+      projectile: TippedArrow
+      tick_increase: 500
+      speed: "bowpull * 3"
+      spread: "1 - bowpull"
+      damage: "bowpull * 2"
+      repeat: "bowpull * 5 + 10"
+      effect_slow: 10
+      keep_in_inventory: true
     costs:
       arrow: 1
 arrowrain:
@@ -3943,6 +4190,7 @@ collapse|2:
 colorshop:
     icon: diamond_axe:125
     icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
     category: npc
     hidden: true
     actions:
@@ -4081,6 +4329,7 @@ conduitshop:
 controlsmenu:
     icon: diamond_axe:214
     disabled_icon: diamond_hoe:214
+    icon_url: http://textures.minecraft.net/texture/f6d6ac2ee323f6497c6e2663a7e56ed9523567b68d18a17f8f39736b06ac3cd
     category: npc
     hidden: true
     actions:
@@ -5714,7 +5963,7 @@ fire:
         -  class: EffectSingle
            sound: magic.burn
            sound_volume: 1
-           location: both
+           location: origin
         tick:
         -  class: EffectSingle
            location: target
@@ -6393,7 +6642,6 @@ frost:
         damage: 1
         duration: 1000
         effect_slow: 1
-        ice: ice
         undo: 4000
         cooldown: 10000
         entity_undo: false
@@ -13876,6 +14124,8 @@ spawnershop:
 
 spellshop:
     icon: diamond_axe:160
+    icon_disabled: diamond_hoe:160
+    icon_url: http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac
     category: npc
     hidden: true
     actions:
@@ -15799,6 +16049,7 @@ tunnel:
 
 tweakshop:
     icon: nether_star
+    icon_url: http://textures.minecraft.net/texture/f6d6ac2ee323f6497c6e2663a7e56ed9523567b68d18a17f8f39736b06ac3cd
     category: npc
     hidden: true
     actions:
@@ -16182,6 +16433,7 @@ walls:
 wandbuffshop:
   icon: diamond_axe:234
   icon_disabled: diamond_hoe:234
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   category: npc
   hidden: true
   actions:
@@ -16252,6 +16504,7 @@ wandbuffshop:
 add_protection:
   icon: diamond_axe:234
   icon_disabled: diamond_hoe:234
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16268,6 +16521,7 @@ add_protection:
 add_explosion_protection:
   icon: diamond_axe:235
   icon_disabled: diamond_hoe:235
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16284,6 +16538,7 @@ add_explosion_protection:
 add_fall_protection:
   icon: diamond_axe:236
   icon_disabled: diamond_hoe:236
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16300,6 +16555,7 @@ add_fall_protection:
 add_fire_protection:
   icon: diamond_axe:237
   icon_disabled: diamond_hoe:237
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16316,6 +16572,7 @@ add_fire_protection:
 add_physical_protection:
   icon: diamond_axe:238
   icon_disabled: diamond_hoe:238
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16332,6 +16589,7 @@ add_physical_protection:
 add_projectile_protection:
   icon: diamond_axe:239
   icon_disabled: diamond_hoe:239
+  icon_url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
   hidden: true
   actions:
     cast:
@@ -16348,6 +16606,7 @@ add_projectile_protection:
 add_damage:
   icon: diamond_axe:178
   icon_disabled: diamond_hoe:178
+  icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
   hidden: true
   actions:
     cast:
@@ -16364,6 +16623,7 @@ add_damage:
 add_sharpness:
   icon: diamond_axe:240
   icon_disabled: diamond_hoe:240
+  icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
   hidden: true
   actions:
     cast:

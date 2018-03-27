@@ -2,11 +2,6 @@ technokinesis:
     icon: diamond_axe:140
     icon_disabled: diamond_hoe:140
     icon_url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
-    category: utility
-    worth: 20
-    earns_sp: 10
-    upgrade_required_path: apprentice
-    upgrade_required_casts: 20
     actions:
         cast:
         - class: Door
@@ -48,12 +43,12 @@ technokinesis:
           particle_offset_y: 0.2
           particle_offset_z: 0.2
     parameters:
-        range: 64
+        range: 10
         radius: 3
         allow_max_range: true
         destructible: unlocked_doors
         transparent: transparent_to_construction
         undo: 8000
-        cooldown: 50
+        cooldown: 14000
     costs:
-        mana: 5
+        mana: 0
