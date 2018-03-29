@@ -23,7 +23,7 @@ permissions:
   - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.tp
-  - essentials.fly
+  - powers.float
   - essentials.speed.fly
   - essentials.speed
   - powers.ultrainstinct
@@ -34,7 +34,7 @@ powers:
 - /run 0-9
 - /haste 0-9
 - /flyspeed <number>
-- /fly
+- /float up/down/pause/unpause/stop
 - /tp <player>
 - /grouptp <player>
 - /carryplayer <player>

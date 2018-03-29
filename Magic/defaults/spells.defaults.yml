@@ -21,8 +21,8 @@ default:
            iterations: 15
            particle: redstone
            color: "00FFAA"
-           edgeLength: 1.2
-           enableRotation: false
+           edge_length: 1.2
+           enable_rotation: false
            offset: 0.5,0.5,0.5
        - class: EffectTrail
          particle: spell_mob
@@ -162,11 +162,11 @@ absorb:
              class: Modified
              iterations: 30
              parameters:
-               edgeLength: "max(1, (t / i) * 5 - 2)"
+               edge_length: "max(1, (t / i) * 5 - 2)"
              effect:
                class: CubeEffect
                particle: block_crack
-               enableRotation: false
+               enable_rotation: false
                offset: 0.5,0.5,0.5
     parameters:
         target: block
@@ -250,12 +250,12 @@ admission:
            class: Modified
            iterations: 30
            parameters:
-            edgeLength: "max(1, (t / i) * 5 - 2)"
+            edge_length: "max(1, (t / i) * 5 - 2)"
            effect:
              class: CubeEffect
              particle: redstone
              speed: 2
-             enableRotation: false
+             enable_rotation: false
              offset: 0.5,0.5,0.5
         no_target:
         - sound: magic.shimmer
@@ -314,13 +314,13 @@ airscooter:
                  class: AnimatedBall
                  duration: $duration
                  particle: spell
-                 particleCount: 10
+                 particle_count: 10
                  particles: 50
-                 particleOffsetX: 0.05
-                 particleOffsetY: 0.05
-                 particleOffsetZ: 0.05
-                 yOffset: 0
-                 yFactor: 1
+                 particle_offset_x: 0.05
+                 particle_offset_y: 0.05
+                 particle_offset_z: 0.05
+                 y_offset: 0
+                 y_factor: 1
                  size: 1.0
                  offset: 0,-2.5,0
         deactivate:
@@ -1474,12 +1474,12 @@ arrow_blink:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 20
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 20
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: portal
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         - location: origin
           effectlib:
              class: Sphere
@@ -1488,7 +1488,7 @@ arrow_blink:
              particles: 10
              particle: redstone
              color: "FF00FF"
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         -  class: EffectSingle
            target_offset: 0,0.5,0
@@ -1499,13 +1499,13 @@ arrow_blink:
         - class: EffectSingle
           sound: magic.teleport
           location: target
-          particle_override: particleNucleus
+          particle_override: particle_nucleus
           color_override: colorOrbital
           source_location: eyes
           effectlib:
              class: AtomEffect
-             particleNucleus: fireworks_spark
-             particleOrbital: redstone
+             particle_nucleus: fireworks_spark
+             particle_orbital: redstone
              iterations: 16
              offset: 0,-1,0
         - class: EffectSingle
@@ -1514,8 +1514,8 @@ arrow_blink:
           color_override: colorNucleus
           effectlib:
              class: AtomEffect
-             particleNucleus: redstone
-             particleOrbital: fireworks_spark
+             particle_nucleus: redstone
+             particle_orbital: fireworks_spark
              iterations: 8
     parameters:
       target: none
@@ -1568,12 +1568,12 @@ arrow_bomb:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 5
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 5
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: lava
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         -  class: EffectSingle
            target_offset: 0,0.5,0
@@ -1598,12 +1598,12 @@ arrow_bomb:
             effect:
               class: Sphere
               particle: block_crack
-              yOffset: 0
+              y_offset: 0
               offset: 0,0.7,0
-              particleCount: 4
-              particleOffsetX: 0.1
-              particleOffsetY: 0.1
-              particleOffsetZ: 0.1
+              particle_count: 4
+              particle_offset_x: 0.1
+              particle_offset_y: 0.1
+              particle_offset_z: 0.1
     parameters:
       target: none
       projectile: TippedArrow
@@ -1667,12 +1667,12 @@ arrow_fire:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 4
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 4
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: smoke_large
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         - location: target
           particle: lava
@@ -1735,12 +1735,12 @@ arrow_ice:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: snowball
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         - class: EffectSingle
           location: target
@@ -1830,15 +1830,15 @@ arrow_light:
             class: AnimatedBall
             particle: end_rod
             duration: 3000
-            yFactor: 1.5
+            y_factor: 1.5
             particles: 50
-            particleCount: 4
-            particleOffsetX: 0.02
-            particleOffsetY: 0.01
-            particleOffsetZ: 0.02
+            particle_count: 4
+            particle_offset_x: 0.02
+            particle_offset_y: 0.01
+            particle_offset_z: 0.02
             offset: 0,-0.2,0
             size: 0.6
-            disappearWithOriginEntity: true
+            disappear_with_origin_entity: true
         hit:
         -  class: EffectSingle
            location: target
@@ -1934,12 +1934,12 @@ arrow_poison:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 5
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 5
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: slime
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         -  class: EffectSingle
            target_offset: 0,0.5,0
@@ -2022,19 +2022,19 @@ arrow_shock:
              particles: 40
              particle: redstone
              color: "FFF000"
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         - location: origin
           effectlib:
              class: Sphere
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: fireworks_spark
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         - class: EffectSingle
           location: target
@@ -2060,10 +2060,10 @@ arrow_shock:
             particle: redstone
             color: "FFF000"
             duration: 3000
-            yFactor: 1.5
+            y_factor: 1.5
             offset: 0,-0.2,0
             size: 0.6
-            disappearWithOriginEntity: true
+            disappear_with_origin_entity: true
         - location: target
           requires_entity_target: true
           target_location: body
@@ -2076,15 +2076,15 @@ arrow_shock:
             class: AnimatedBall
             particle: fireworks_spark
             particles: 20
-            particleCount: 4
-            particleOffsetX: 0.05
-            particleOffsetY: 0.05
-            particleOffsetZ: 0.05
+            particle_count: 4
+            particle_offset_x: 0.05
+            particle_offset_y: 0.05
+            particle_offset_z: 0.05
             duration: 3000
-            yFactor: 1.5
+            y_factor: 1.5
             offset: 0,-0.2,0
             size: 0.4
-            disappearWithOriginEntity: true
+            disappear_with_origin_entity: true
     parameters:
       target: none
       projectile: TippedArrow
@@ -2095,6 +2095,7 @@ arrow_shock:
       repeat: "bowpull * 5 + 10"
       effect_slow: 10
       keep_in_inventory: true
+      undo: 4000
     costs:
       arrow: 1
 arrowrain:
@@ -2130,13 +2131,13 @@ arrowrain:
             iterations: 10
             parameters:
                 radius: "(t / i) * 3"
-                particleOffsetY: "(t / i) * 2"
+                particle_offset_y: "(t / i) * 2"
             effect:
                 class: Shield
                 particles: 20
-                particleCount: 10
-                particleOffsetX: 0.5
-                particleOffsetZ: 0.5
+                particle_count: 10
+                particle_offset_x: 0.5
+                particle_offset_z: 0.5
                 particle: water_drop
         projectile:
         - location: origin
@@ -2145,10 +2146,10 @@ arrowrain:
              iterations: 10
              period: 2
              particles: 5
-             particleCount: 5
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 5
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
              particle: water_drop
     parameters:
         target: none
@@ -2216,27 +2217,27 @@ backflip:
         - class: EffectSingle
           sound: magic.teleport
           location: target
-          particle_override: particleNucleus
+          particle_override: particle_nucleus
           color_override: colorOrbital
           source_location: eyes
           effectlib:
              class: AtomEffect
-             particleNucleus: dragon_breath
-             particleOrbital: redstone
+             particle_nucleus: dragon_breath
+             particle_orbital: redstone
              iterations: 8
              offset: 0,-1,0
         precast:
          - class: EffectSingle
            sound: magic.teleport
            location: origin
-           particle_override: particleNucleus
+           particle_override: particle_nucleus
            color_override: colorOrbital
            source_location: eyes
            effectlib:
                class: AtomEffect
                updateLocations: false
-               particleNucleus: dragon_breath
-               particleOrbital: redstone
+               particle_nucleus: dragon_breath
+               particle_orbital: redstone
                iterations: 8
                offset: 0,-1,0
          - class: EffectSingle
@@ -2419,12 +2420,12 @@ blast:
             effect:
               class: Sphere
               particle: block_crack
-              yOffset: 0
+              y_offset: 0
               offset: 0,0.7,0
-              particleCount: 4
-              particleOffsetX: 0.1
-              particleOffsetY: 0.1
-              particleOffsetZ: 0.1
+              particle_count: 4
+              particle_offset_x: 0.1
+              particle_offset_y: 0.1
+              particle_offset_z: 0.1
     parameters:
         velocity: 2000
         allow_max_range: false
@@ -2516,10 +2517,10 @@ blessing:
              particle: end_rod
              iterations: 1
              particles: 40
-             particleCount: 4
-             particleOffsetX: 0.2
-             particleOffsetY: 0.01
-             particleOffsetZ: 0.2
+             particle_count: 4
+             particle_offset_x: 0.2
+             particle_offset_y: 0.01
+             particle_offset_z: 0.2
              offset: 0,0.1,0
              radius: $radius
         cast_finish:
@@ -2567,10 +2568,10 @@ blind:
              particle: smoke_normal
              lengthGrow: 0.05
              radiusGrow: 0.002
-             particleCount: 4
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 4
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
         tick:
         - location: target
           particle: smoke_normal
@@ -2589,7 +2590,7 @@ blind:
              effect:
                class: SphereEffect
                particle: smoke_normal
-               particleCount: 5
+               particle_count: 5
              duration: $duration
              parameters:
                particles: "select(t - 10, t * 5, 50, select(t - i + 10, 50, 50, abs(t - i) * 5))"
@@ -2634,13 +2635,13 @@ blink:
         - class: EffectSingle
           sound: magic.teleport
           location: target
-          particle_override: particleNucleus
+          particle_override: particle_nucleus
           color_override: colorOrbital
           source_location: eyes
           effectlib:
              class: AtomEffect
-             particleNucleus: fireworks_spark
-             particleOrbital: redstone
+             particle_nucleus: fireworks_spark
+             particle_orbital: redstone
              iterations: 16
              offset: 0,-1,0
         - class: EffectSingle
@@ -2649,21 +2650,21 @@ blink:
           color_override: colorNucleus
           effectlib:
              class: AtomEffect
-             particleNucleus: redstone
-             particleOrbital: fireworks_spark
+             particle_nucleus: redstone
+             particle_orbital: fireworks_spark
              iterations: 8
         precast:
          - class: EffectSingle
            sound: magic.teleport
            location: origin
-           particle_override: particleNucleus
+           particle_override: particle_nucleus
            color_override: colorOrbital
            source_location: body
            effectlib:
                class: AtomEffect
                updateLocations: false
-               particleNucleus: fireworks_spark
-               particleOrbital: redstone
+               particle_nucleus: fireworks_spark
+               particle_orbital: redstone
                iterations: 16
          - class: EffectSingle
            location: origin
@@ -2672,8 +2673,8 @@ blink:
            effectlib:
                class: AtomEffect
                updateLocations: false
-               particleNucleus: redstone
-               particleOrbital: fireworks_spark
+               particle_nucleus: redstone
+               particle_orbital: fireworks_spark
                iterations: 8
          - class: EffectSingle
            color_override: color
@@ -2687,10 +2688,10 @@ blink:
                class: LineEffect
                particle: fireworks_spark
                particles: 50
-               particleCount: 5
-               particleOffsetX: 0.5
-               particleOffsetY: 0.5
-               particleOffsetZ: 0.5
+               particle_count: 5
+               particle_offset_x: 0.5
+               particle_offset_y: 0.5
+               particle_offset_z: 0.5
                updateLocations: false
     parameters:
         target: block
@@ -2788,11 +2789,11 @@ blob:
            effectlib:
              class: SphereEffect
              particle: block_crack
-             particleCount: 20
+             particle_count: 20
              particles: 20
-             particleOffsetX: 0.3
-             particleOffsetY: 0.3
-             particleOffsetZ: 0.3
+             particle_offset_x: 0.3
+             particle_offset_y: 0.3
+             particle_offset_z: 0.3
              radius: $radius
              duration: 2000
     parameters:
@@ -2876,10 +2877,10 @@ bomb:
              effect:
                class: Helix
                particle: spell_witch
-               particleCount: 2
-               particleOffsetX: 0.2
-               particleOffsetY: 0.01
-               particleOffsetZ: 0.2
+               particle_count: 2
+               particle_offset_x: 0.2
+               particle_offset_y: 0.01
+               particle_offset_z: 0.2
                updateLocations: false
                particles: 20
         projectile:
@@ -3116,11 +3117,11 @@ boomstown:
           firework: star
        - class: EffectSingle
          location: target
-         particle_override: particleOrbital
+         particle_override: particle_orbital
          effectlib:
             class: AtomEffect
-            particleNucleus: spell_instant
-            particleOrbital: spell_instant
+            particle_nucleus: spell_instant
+            particle_orbital: spell_instant
             iterations: 16
        no_target:
        -  class: EffectSingle
@@ -3348,7 +3349,7 @@ bridge:
            effectlib:
              class: LineEffect
              particle: block_crack
-             particleCount: 8
+             particle_count: 8
              particles: 40
              offset: 0,-1,0
     parameters:
@@ -3658,10 +3659,10 @@ bubble:
              particle: water_splash
              radius: 1.8
              particles: 30
-             particleCount: 20
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 20
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
     parameters:
         velocity: 250
         target_type: LivingEntity
@@ -3817,15 +3818,15 @@ cat:
            sound: entity_cat_purreow
            effectlib:
              class: DnaEffect
-             particleHelix: drip_lava
+             particle_helix: drip_lava
              iterations: 24
-             particleBase1: drip_water
+             particle_base1: drip_water
         -  class: EffectSingle
            location: target
            effectlib:
              class: AtomEffect
              iterations: 32
-             particleNucleus: drip_water
+             particle_nucleus: drip_water
     parameters:
         target_type: LivingEntity
         max_ocelots: 5
@@ -3895,10 +3896,10 @@ chainlightning:
              length: 10
              particles: 20
              particle: fireworks_spark
-             particleCount: 4
-             particleOffsetX: 0.1
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.1
+             particle_count: 4
+             particle_offset_x: 0.1
+             particle_offset_y: 0.1
+             particle_offset_z: 0.1
              duration: 2000
         tick:
         - particle: fireworks_spark
@@ -3979,10 +3980,10 @@ chop:
              period: 2
              particles: 2
              particle: block_crack
-             particleCount: 3
-             particleOffsetX: 0.1
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.1
+             particle_count: 3
+             particle_offset_x: 0.1
+             particle_offset_y: 0.1
+             particle_offset_z: 0.1
     parameters:
         velocity: 10
         right_arm_item: iron_axe
@@ -4082,10 +4083,10 @@ cluster:
             class: AnimatedBall
             duration: 2500
             particle: spell_witch
-            particleCount: 3
+            particle_count: 3
             offset: 0,0.5,0
-            yFactor: 1
-            yOffset: 0
+            y_factor: 1
+            y_offset: 0
         little:
         - location: origin
           sound: entity_creeper_primed
@@ -4164,10 +4165,10 @@ collapse:
              iterations: 1
              radius: 4
              particle: falling_dust
-             particleCount: 2
-             particleOffsetX: 0.1
-             particleOffsetY: 0
-             particleOffsetZ: 0.1
+             particle_count: 2
+             particle_offset_x: 0.1
+             particle_offset_y: 0
+             particle_offset_z: 0.1
         undo:
         -  class: EffectSingle
            sound: magic.shimmer
@@ -4185,12 +4186,12 @@ collapse:
             effect:
               class: Sphere
               particle: block_crack
-              yOffset: 0
+              y_offset: 0
               offset: 0,0.7,0
-              particleCount: 4
-              particleOffsetX: 0.1
-              particleOffsetY: 0.1
-              particleOffsetZ: 0.1
+              particle_count: 4
+              particle_offset_x: 0.1
+              particle_offset_y: 0.1
+              particle_offset_z: 0.1
     parameters:
         velocity: 1500
         allow_max_range: false
@@ -4399,7 +4400,7 @@ convert:
              class: ConeEffect
              iterations: 10
              particle: block_crack
-             particleCount: 3
+             particle_count: 3
              lengthGrow: 0.1
              radiusGrow: 0.003
              updateLocations: false
@@ -4476,11 +4477,11 @@ counterspell:
             yEquation: "sin(t)"
             zEquation: "cos(t)"
             particle: enchantment_table
-            particleCount: 20
+            particle_count: 20
             speed: 1
-            particleOffsetX: 0.2
-            particleOffsetY: 0.2
-            particleOffsetZ: 0.2
+            particle_offset_x: 0.2
+            particle_offset_y: 0.2
+            particle_offset_z: 0.2
             updateDirections: false
         - location: source
           use_target_location: false
@@ -4491,10 +4492,10 @@ counterspell:
             yEquation: "sin(t) * (t/50)"
             zEquation: "cos(t) * (t/50) + 1"
             particle: crit
-            particleCount: 10
-            particleOffsetX: 0.1
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.1
+            particle_count: 10
+            particle_offset_x: 0.1
+            particle_offset_y: 0.1
+            particle_offset_z: 0.1
             updateDirections: false
             particles: 20
         - location: target
@@ -4512,10 +4513,10 @@ counterspell:
             yEquation: "sin(t) * (t/50)"
             zEquation: "cos(t) * (t/50) + 1"
             particle: crit
-            particleCount: 10
-            particleOffsetX: 0.1
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.1
+            particle_count: 10
+            particle_offset_x: 0.1
+            particle_offset_y: 0.1
+            particle_offset_z: 0.1
             updateDirections: false
             particles: 20
     parameters:
@@ -4573,10 +4574,10 @@ cure:
                  radiusNucleus: "(t/i) * 0.5 + 0.4"
              effect:
                  class: AtomEffect
-                 particleNucleus: heart
-                 particleOrbital: crit
-                 particlesNucleus: 1
-                 particlesOrbital: 30
+                 particle_nucleus: heart
+                 particle_orbital: crit
+                 particles_nucleus: 1
+                 particles_orbital: 30
     parameters:
         bypass_mage_cooldown: true
         target_type: LivingEntity
@@ -4700,7 +4701,7 @@ curse:
                  particle: spell_mob
                  color: 210B61
                  particles: 20
-                 disappearWithOriginEntity: true
+                 disappear_with_origin_entity: true
         -  location: target
            source_location: body
            effectlib:
@@ -4709,11 +4710,11 @@ curse:
              particle: villager_happy
              radius: 0.8
              particles: 2
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
-             disappearWithOriginEntity: true
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
+             disappear_with_origin_entity: true
     costs:
         mana: 50
     parameters:
@@ -4902,10 +4903,10 @@ day:
               class: Sphere
               radius: 3
               particle: end_rod
-              particleCount: 10
-              particleOffsetX: 0.2
-              particleOffsetY: 0.2
-              particleOffsetZ: 0.2
+              particle_count: 10
+              particle_offset_x: 0.2
+              particle_offset_y: 0.2
+              particle_offset_z: 0.2
               updateLocations: false
               updateDirections: false
     parameters:
@@ -5095,7 +5096,7 @@ defender_attack:
              class: ConeEffect
              iterations: 10
              particle: block_crack
-             particleCount: 3
+             particle_count: 3
              lengthGrow: 0.1
              radiusGrow: 0.003
              updateLocations: false
@@ -5250,9 +5251,9 @@ disintegrate:
               radius: "(t/i)*2 + 0.2"
             effect:
                 class: AtomEffect
-                particleNucleus: smoke_large
-                particlesNucleus: 5
-                particlesOrbital: 5
+                particle_nucleus: smoke_large
+                particles_nucleus: 5
+                particles_orbital: 5
                 orbitals: 2
         removed:
         - location: target
@@ -5304,10 +5305,10 @@ disposal:
             particle: block_crack
             material: obsidian
             duration: 1000
-            particleCount: 10
-            particleOffsetX: 1
-            particleOffsetZ: 1
-            particleOffsetY: 1
+            particle_count: 10
+            particle_offset_x: 1
+            particle_offset_z: 1
+            particle_offset_y: 1
     parameters:
         target: self
         type: disposal
@@ -5483,10 +5484,10 @@ earthquake:
              iterations: 10
              particle: spell_witch
              lengthGrow: 0.3
-             particleCount: 10
-             particleOffsetX: 0.1
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.1
+             particle_count: 10
+             particle_offset_x: 0.1
+             particle_offset_y: 0.1
+             particle_offset_z: 0.1
         hit:
         -  class: EffectSingle
            location: target
@@ -5503,10 +5504,10 @@ earthquake:
                particle: block_crack
                cloudParticle: redstone
                cloudColor: "835C3B"
-               particleCount: 4
-               particleOffsetX: 0.01
-               particleOffsetY: 0.01
-               particleOffsetZ: 0.01
+               particle_count: 4
+               particle_offset_x: 0.01
+               particle_offset_y: 0.01
+               particle_offset_z: 0.01
                particlesFront: 8
                particlesBack: 8
                rows: 10
@@ -5620,12 +5621,12 @@ emp:
              class: Modified
              duration: 2000
              parameters:
-               yFactor: "(t/i)*1.5"
+               y_factor: "(t/i)*1.5"
                size: "(t/i)*2 + 0.5"
              effect:
                class: AnimatedBall
                particle: redstone
-               yOffset: 0
+               y_offset: 0
     parameters:
         target_type: LivingEntity
         allow_max_range: true
@@ -5706,11 +5707,11 @@ entangle:
                class: AnimatedBall
                particle: block_crack
                particles: 50
-               particleCount: 5
-               particleOffsetX: 0.05
-               particleOffsetY: 0.05
-               particleOffsetZ: 0.05
-               yFactor: 0.2
+               particle_count: 5
+               particle_offset_x: 0.05
+               particle_offset_y: 0.05
+               particle_offset_z: 0.05
+               y_factor: 0.2
 
     parameters:
         target: other
@@ -5834,11 +5835,11 @@ familiar:
              effect:
                class: DnaEffect
                grow: 0.1
-               particlesHelix: 5
+               particles_helix: 5
                length: 50
-               particleHelix: drip_water
-               particleBase1: drip_water
-               particleBase2: drip_water
+               particle_helix: drip_water
+               particle_base1: drip_water
+               particle_base2: drip_water
         -  class: EffectSingle
            location: target
            effectlib:
@@ -5848,8 +5849,8 @@ familiar:
                 radius: "(t / i) * 4 + 1"
               effect:
                class: AtomEffect
-               particleNucleus: drip_water
-               particleOrbital: drip_water
+               particle_nucleus: drip_water
+               particle_orbital: drip_water
     parameters:
         entity_types:
             chicken: 30
@@ -5895,11 +5896,11 @@ farm:
              effect:
                class: DnaEffect
                grow: 0.1
-               particlesHelix: 5
+               particles_helix: 5
                length: 50
-               particleHelix: drip_water
-               particleBase1: drip_water
-               particleBase2: drip_water
+               particle_helix: drip_water
+               particle_base1: drip_water
+               particle_base2: drip_water
         spawned:
         -  class: EffectSingle
            location: target
@@ -5910,8 +5911,8 @@ farm:
                 radius: "(t / i) * 4 + 1"
               effect:
                class: AtomEffect
-               particleNucleus: drip_water
-               particleOrbital: drip_water
+               particle_nucleus: drip_water
+               particle_orbital: drip_water
     parameters:
         target_type: LivingEntity
         allow_max_range: false
@@ -6075,7 +6076,7 @@ fireball:
              period: 2
              particles: 5
              particle: lava
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         - class: EffectSingle
           location: target
@@ -6138,10 +6139,10 @@ flamethrower:
              length: $size
              stepsPerIteration: 1
              particles: 10
-             particleCount: 20
-             particleOffsetX: 0.3
-             particleOffsetY: 0.3
-             particleOffsetZ: 0.3
+             particle_count: 20
+             particle_offset_x: 0.3
+             particle_offset_y: 0.3
+             particle_offset_z: 0.3
              relativeOffset: 2,0,0
         iterate:
         - location: target
@@ -6313,10 +6314,10 @@ flashbang:
                class: SphereEffect
                particle: smoke_large
                particles: 20
-               particleCount: 10
-               particleOffsetX: 0.5
-               particleOffsetY: 0.5
-               particleOffsetZ: 0.5
+               particle_count: 10
+               particle_offset_x: 0.5
+               particle_offset_y: 0.5
+               particle_offset_z: 0.5
         reflect:
         - class: EffectSingle
           location: target
@@ -6367,10 +6368,10 @@ fling:
            effectlib:
              class: Trace
              iterations: 30
-             particleOffsetX: 1
-             particleOffsetY: 1
-             particleOffsetZ: 1
-             particleCount: 10
+             particle_offset_x: 1
+             particle_offset_y: 1
+             particle_offset_z: 1
+             particle_count: 10
              speed: 2
              particle: spell
         land:
@@ -6476,10 +6477,10 @@ force:
         effectlib:
            class: DnaEffect
            particlesBase: 0
-           particlesHelix: 7
-           particleHelix: spell_mob
-           particleBase1: spell_mob
-           particleBase2: spell_mob
+           particles_helix: 7
+           particle_helix: spell_mob
+           particle_base1: spell_mob
+           particle_base2: spell_mob
            iterations: 10
       target_selected:
       - class: EffectSingle
@@ -6507,7 +6508,7 @@ force:
           particle: redstone
           color: "222222"
           period: 1
-          yOffset: 0
+          y_offset: 0
           offset: 0,0.7,0
       - class: EffectTrail
         particle: spell_mob
@@ -6779,10 +6780,10 @@ fury:
              duration: 5000
              particle: fireworks_spark
              particles: 5
-             particleCount: 5
-             particleOffsetX: 0.5
-             particleOffsetY: 0.5
-             particleOffsetZ: 0.5
+             particle_count: 5
+             particle_offset_x: 0.5
+             particle_offset_y: 0.5
+             particle_offset_z: 0.5
     parameters:
         target: self
         target_self: false
@@ -7485,9 +7486,9 @@ ghast:
            sound: entity_villager_yes
            effectlib:
              class: DnaEffect
-             particleHelix: drip_lava
+             particle_helix: drip_lava
              iterations: 24
-             particleBase1: redstone
+             particle_base1: redstone
              radius: 0.2
         -  location: origin
            use_target_location: false
@@ -7596,11 +7597,11 @@ glide:
              class: IconEffect
              duration: 30000
              particle: end_rod
-             particleOffsetX: 1
-             particleOffsetY: 1
-             particleOffsetZ: 1
-             particleCount: 40
-             yOffset: 0
+             particle_offset_x: 1
+             particle_offset_y: 1
+             particle_offset_z: 1
+             particle_count: 40
+             y_offset: 0
     parameters:
         target: self
         duration: 50000
@@ -7762,10 +7763,10 @@ grow:
              iterations: 11
              particle: spell_instant
              lengthGrow: 0.32
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
         hit:
         - class: EffectSingle
           location: target
@@ -7819,10 +7820,10 @@ harden:
           effectlib:
              class: Helix
              particle: block_crack
-             particleCount: 8
-             particleOffsetX: 0.2
-             particleOffsetY: 0.5
-             particleOffsetZ: 0.2
+             particle_count: 8
+             particle_offset_x: 0.2
+             particle_offset_y: 0.5
+             particle_offset_z: 0.2
              iterations: 1
              radius: $size
     parameters:
@@ -8226,15 +8227,15 @@ horse:
            sound: entity_villager_yes
            effectlib:
              class: DnaEffect
-             particleHelix: drip_lava
+             particle_helix: drip_lava
              iterations: 24
-             particleBase1: drip_water
+             particle_base1: drip_water
         -  class: EffectSingle
            location: target
            effectlib:
              class: AtomEffect
              iterations: 32
-             particleNucleus: drip_water
+             particle_nucleus: drip_water
     parameters:
         target: block
         set_target: true
@@ -8405,26 +8406,26 @@ icbm:
             class: Sphere
             particle: smoke_large
             particles: 4
-            particleCount: 8
-            particleOffsetX: 0.1
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.1
+            particle_count: 8
+            particle_offset_x: 0.1
+            particle_offset_y: 0.1
+            particle_offset_z: 0.1
             radius: 0.3
             duration: 2000
             delay: 6
-            disappearWithOriginEntity: true
+            disappear_with_origin_entity: true
         - location: origin
           effectlib:
             class: Sphere
             particle: lava
             particles: 2
-            particleCount: 2
-            particleOffsetX: 0.2
-            particleOffsetY: 0.2
-            particleOffsetZ: 0.2
+            particle_count: 2
+            particle_offset_x: 0.2
+            particle_offset_y: 0.2
+            particle_offset_z: 0.2
             radius: 0.2
             duration: 2000
-            disappearWithOriginEntity: true
+            disappear_with_origin_entity: true
         hit:
         - class: EffectSingle
           particle: explosion_huge
@@ -8433,10 +8434,10 @@ icbm:
             class: Helix
             particles: 10
             particle: lava
-            particleCount: 4
-            particleOffsetX: 0.2
-            particleOffsetY: 0.2
-            particleOffsetZ: 0.2
+            particle_count: 4
+            particle_offset_x: 0.2
+            particle_offset_y: 0.2
+            particle_offset_z: 0.2
             radius: $radius
             iterations: 1
         - class: EffectSingle
@@ -8445,10 +8446,10 @@ icbm:
             class: Helix
             particles: 10
             particle: smoke_large
-            particleCount: 4
-            particleOffsetX: 0.2
-            particleOffsetY: 0.2
-            particleOffsetZ: 0.2
+            particle_count: 4
+            particle_offset_x: 0.2
+            particle_offset_y: 0.2
+            particle_offset_z: 0.2
             radius: $radius
             iterations: 1
     parameters:
@@ -8496,8 +8497,8 @@ invincible:
                particle: redstone
                color: "FFD700"
                particles: 60
-               yOffset: -0.5
-               yFactor: 1
+               y_offset: -0.5
+               y_factor: 1
         - location: target
           effectlib:
              class: Modified
@@ -8510,8 +8511,8 @@ invincible:
                particle: redstone
                color: "C0C0C0"
                particles: 60
-               yOffset: -0.5
-               yFactor: 1
+               y_offset: -0.5
+               y_factor: 1
     parameters:
         target: self
         duration: 5000
@@ -8632,9 +8633,9 @@ kill:
           location: origin
           effectlib:
              class: AtomEffect
-             particleNucleus: spell_mob
+             particle_nucleus: spell_mob
              colorNucleus: "00FF00"
-             particleOrbital: redstone
+             particle_orbital: redstone
              colorOrbital: "00FF00"
              iterations: 16
              radius: 5
@@ -8674,7 +8675,7 @@ kill:
              parameters:
               size: "max(0, (t / i) * 5 - 3) + 0.2"
              effect:
-               enableRotation: false
+               enable_rotation: false
                class: ColoredImageEffect
                fileName: https://i.imgur.com/47aVrwT.gif
                stepX: 1
@@ -8943,11 +8944,11 @@ levitate:
                  particle: redstone
                  radius: 1.2
                  height: 0
-                 enableRotation: false
+                 enable_rotation: false
                  particles: 20
                  offset: 0,-0.1,0
                  duration: 1200000
-                 disappearWithOriginEntity: true
+                 disappear_with_origin_entity: true
            - class: EffectSingle
              location: origin
              source_location: feet
@@ -8956,15 +8957,15 @@ levitate:
                  particle: cloud
                  radius: 0.6
                  height: 0
-                 enableRotation: false
+                 enable_rotation: false
                  particles: 20
-                 particleCount: 4
-                 particleOffsetX: 0.2
-                 particleOffsetY: 0
-                 particleOffsetZ: 0.2
+                 particle_count: 4
+                 particle_offset_x: 0.2
+                 particle_offset_y: 0
+                 particle_offset_z: 0.2
                  offset: 0,-0.1,0
                  duration: 1200000
-                 disappearWithOriginEntity: true
+                 disappear_with_origin_entity: true
         deactivate:
         -  class: EffectSingle
            sound: entity_enderdragon_flap
@@ -9255,10 +9256,10 @@ lightning:
              class: HelixEffect
              particle: smoke_large
              iterations: 1
-             particleCount: 10
-             particleOffsetX: 1
-             particleOffsetY: 0.1
-             particleOffsetZ: 1
+             particle_count: 10
+             particle_offset_x: 1
+             particle_offset_y: 0.1
+             particle_offset_z: 1
     parameters:
         target_type: LivingEntity
         allow_max_range: true
@@ -9318,12 +9319,12 @@ lockpick:
            class: Modified
            iterations: 30
            parameters:
-            edgeLength: "max(1, (t / i) * 5 - 2)"
+            edge_length: "max(1, (t / i) * 5 - 2)"
            effect:
              class: CubeEffect
              particle: redstone
              color: "D0C0C0"
-             enableRotation: false
+             enable_rotation: false
              offset: 0.5,0.5,0.5
         no_target:
         - class: EffectSingle
@@ -9355,8 +9356,8 @@ lockpick:
            iterations: 2
            particle: redstone
            color: "660000"
-           edgeLength: 1
-           enableRotation: false
+           edge_length: 1
+           enable_rotation: false
            offset: 0.5,0.5,0.5
     parameters:
         bypass_build: true
@@ -9784,10 +9785,10 @@ mine:
               duration: 1000
               particles: 15
               period: 1
-              particleCount: 4
-              particleOffsetX: 0.1
-              particleOffsetY: 0.1
-              particleOffsetZ: 0.1
+              particle_count: 4
+              particle_offset_x: 0.1
+              particle_offset_y: 0.1
+              particle_offset_z: 0.1
         no_target:
         -  class: EffectSingle
            sound: vanish,1,0.5
@@ -9991,11 +9992,11 @@ mob:
              effect:
                class: DnaEffect
                grow: 0.1
-               particlesHelix: 5
+               particles_helix: 5
                length: 50
-               particleHelix: drip_lava
-               particleBase1: drip_lava
-               particleBase2: drip_lava
+               particle_helix: drip_lava
+               particle_base1: drip_lava
+               particle_base2: drip_lava
         spawned:
         -  class: EffectSingle
            location: target
@@ -10006,8 +10007,8 @@ mob:
                 radius: "(t / i) * 5 + 1"
               effect:
                class: AtomEffect
-               particleNucleus: drip_lava
-               particleOrbital: drip_lava
+               particle_nucleus: drip_lava
+               particle_orbital: drip_lava
     parameters:
         entity_types:
             zombie: 100
@@ -10075,11 +10076,11 @@ monster:
              effect:
                class: DnaEffect
                grow: 0.1
-               particlesHelix: 5
+               particles_helix: 5
                length: 50
-               particleHelix: drip_lava
-               particleBase1: drip_lava
-               particleBase2: drip_lava
+               particle_helix: drip_lava
+               particle_base1: drip_lava
+               particle_base2: drip_lava
         -  class: EffectSingle
            location: target
            effectlib:
@@ -10089,8 +10090,8 @@ monster:
                 radius: "(t / i) * 4 + 1"
               effect:
                class: AtomEffect
-               particleNucleus: drip_lava
-               particleOrbital: drip_lava
+               particle_nucleus: drip_lava
+               particle_orbital: drip_lava
     parameters:
         target_type: LivingEntity
         allow_max_range: false
@@ -10176,7 +10177,7 @@ music:
              duration: 8000
              period: 2
              parameters:
-               yFactor: "(t/i)*0.5"
+               y_factor: "(t/i)*0.5"
                size: "(t/i)*2 + 0.5"
              effect:
                class: AnimatedBall
@@ -10207,10 +10208,10 @@ note:
           effectlib:
              class: SmokeEffect
              particle: note
-             particleCount: 4
-             particleOffsetX: 2
-             particleOffsetY: 0.1
-             particleOffsetZ: 2
+             particle_count: 4
+             particle_offset_x: 2
+             particle_offset_y: 0.1
+             particle_offset_z: 2
              iterations: 3
                      
 note01:
@@ -10458,10 +10459,10 @@ night:
               class: Sphere
               radius: 3
               particle: smoke_large
-              particleCount: 10
-              particleOffsetX: 0.2
-              particleOffsetY: 0.2
-              particleOffsetZ: 0.2
+              particle_count: 10
+              particle_offset_x: 0.2
+              particle_offset_y: 0.2
+              particle_offset_z: 0.2
               updateLocations: false
               updateDirections: false
     parameters:
@@ -10575,17 +10576,17 @@ nuke:
                particles: 20
                strands: 4
                particle: explosion_large
-               particleCount: 2
-               particleOffsetX: 1
-               particleOffsetY: 0
-               particleOffsetZ: 1
+               particle_count: 2
+               particle_offset_x: 1
+               particle_offset_y: 0
+               particle_offset_z: 1
                period: 4
         -  location: target
            effectlib:
              class: Modified
              duration: 8000
              parameters:
-               yFactor: "min(20, (t/i) * 30)"
+               y_factor: "min(20, (t/i) * 30)"
              effect:
                class: AnimatedBall
                particles: 20
@@ -10605,7 +10606,7 @@ nuke:
                particle: explosion_huge
                size: 1
                period: 4
-               yFactor: 0.3
+               y_factor: 0.3
     parameters:
         velocity: 20
         target: block
@@ -10893,12 +10894,12 @@ petrify:
           sound: block_stone_hit
           location: target
           requires_entity_target: true
-          particle_override: particleOrbital
+          particle_override: particle_orbital
           target_location: body
           effectlib:
              class: AtomEffect
-             particleNucleus: fireworks_spark
-             particleOrbital: fireworks_spark
+             particle_nucleus: fireworks_spark
+             particle_orbital: fireworks_spark
              duration: $duration
              radius: 2
         - class: EffectSingle
@@ -10908,8 +10909,8 @@ petrify:
           material: stone
           effectlib:
              class: AtomEffect
-             particleNucleus: block_crack
-             particleOrbital: block_dust
+             particle_nucleus: block_crack
+             particle_orbital: block_dust
              duration: $duration
              radius: 1
     costs:
@@ -10967,11 +10968,11 @@ phase:
              class: AnimatedBall
              particle: portal
              duration: 5000
-             yOffset: -0.5
-             particleCount: 8
-             particleOffsetX: 0.9
-             particleOffsetY: 2
-             particleOffsetZ: 0.9
+             y_offset: -0.5
+             particle_count: 8
+             particle_offset_x: 0.9
+             particle_offset_y: 2
+             particle_offset_z: 0.9
         -  location: source
            source_location: eyes
            effectlib:
@@ -10979,7 +10980,7 @@ phase:
              particle: redstone
              color: "F000F0"
              duration: 5000
-             yOffset: -0.5
+             y_offset: -0.5
         phase:
         - class: EffectSingle
           source_location: eyes
@@ -11002,11 +11003,11 @@ phase:
              class: AnimatedBall
              particle: portal
              duration: 2500
-             yOffset: -0.5
-             particleCount: 8
-             particleOffsetX: 0.9
-             particleOffsetY: 2
-             particleOffsetZ: 0.9
+             y_offset: -0.5
+             particle_count: 8
+             particle_offset_x: 0.9
+             particle_offset_y: 2
+             particle_offset_z: 0.9
         -  location: target
            source_location: eyes
            effectlib:
@@ -11014,7 +11015,7 @@ phase:
              particle: redstone
              color: "F000F0"
              duration: 5000
-             yOffset: -0.5
+             y_offset: -0.5
     parameters:
         warmup: 5000
         cancel_on_damage: 1
@@ -11287,11 +11288,11 @@ poison:
                period: 0.1
                particle: slime
                particles: 10
-               particleCount: 10
-               particleOffsetX: 0.1
-               particleOffsetY: 0.1
-               particleOffsetZ: 0.1
-               disappearWithOriginEntity: true
+               particle_count: 10
+               particle_offset_x: 0.1
+               particle_offset_y: 0.1
+               particle_offset_z: 0.1
+               disappear_with_origin_entity: true
     costs:
         mana: 50
     parameters:
@@ -11361,8 +11362,8 @@ pollinate:
            location: source
            effectlib:
               class: AtomEffect
-              particleNucleus: redstone
-              particleOrbital: drip_water
+              particle_nucleus: redstone
+              particle_orbital: drip_water
               colorNucleus: "0000FF"
               iterations: 16
               radius: 4
@@ -11457,11 +11458,11 @@ polymorph:
           sound: entity_experience_orb_pickup
           location: target
           requires_entity_target: true
-          particle_override: particleOrbital
+          particle_override: particle_orbital
           effectlib:
              class: AtomEffect
-             particleNucleus: fireworks_spark
-             particleOrbital: fireworks_spark
+             particle_nucleus: fireworks_spark
+             particle_orbital: fireworks_spark
              iterations: 40
     costs:
         mana: 150
@@ -11732,10 +11733,10 @@ pull:
             particle: spell
             particles: 20
             iterations: 20
-            particleCount: 5
-            particleOffsetX: 0.5
-            particleOffsetY: 0.5
-            particleOffsetZ: 0.5
+            particle_count: 5
+            particle_offset_x: 0.5
+            particle_offset_y: 0.5
+            particle_offset_z: 0.5
             radius: 1.5
         alternate_down:
         - class: EffectSingle
@@ -11793,20 +11794,20 @@ push:
                effect:
                  class: DnaEffect
                  particlesBase: 0
-                 particlesHelix: 7
-                 particleHelix: spell
-                 particleBase1: spell
-                 particleBase2: spell
+                 particles_helix: 7
+                 particle_helix: spell
+                 particle_base1: spell
+                 particle_base2: spell
         - location: target
           effectlib:
             class: Sphere
             particle: spell
             particles: 5
             iterations: 20
-            particleCount: 10
-            particleOffsetX: 0.5
-            particleOffsetY: 0.5
-            particleOffsetZ: 0.5
+            particle_count: 10
+            particle_offset_x: 0.5
+            particle_offset_y: 0.5
+            particle_offset_z: 0.5
             radius: 1.5
         iterate:
         - class: EffectSingle
@@ -11819,20 +11820,20 @@ push:
                effect:
                  class: DnaEffect
                  particlesBase: 0
-                 particlesHelix: 7
-                 particleHelix: spell
-                 particleBase1: spell
-                 particleBase2: spell
+                 particles_helix: 7
+                 particle_helix: spell
+                 particle_base1: spell
+                 particle_base2: spell
         - location: target
           effectlib:
             class: Sphere
             particle: spell
             particles: 5
             iterations: 20
-            particleCount: 10
-            particleOffsetX: 0.5
-            particleOffsetY: 0.5
-            particleOffsetZ: 0.5
+            particle_count: 10
+            particle_offset_x: 0.5
+            particle_offset_y: 0.5
+            particle_offset_z: 0.5
             radius: 1.5
     parameters:
         target_type: Entity
@@ -12121,9 +12122,9 @@ recall:
             duration: $warmup
             period: 1
             particle: redstone
-            particleOffsetX: 0.9
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.9
+            particle_offset_x: 0.9
+            particle_offset_y: 0.1
+            particle_offset_z: 0.9
             radius: 1
             offset: 0,-1,0
         -  class: EffectSingle
@@ -12133,10 +12134,10 @@ recall:
             duration: $warmup
             period: 2
             particle: portal
-            particleCount: 10
-            particleOffsetX: 0.9
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.9
+            particle_count: 10
+            particle_offset_x: 0.9
+            particle_offset_y: 0.1
+            particle_offset_z: 0.9
             radius: 1
             offset: 0,-1,0
         teleport:
@@ -12147,9 +12148,9 @@ recall:
            effectlib:
              class: WarpEffect
              particle: redstone
-             particleOffsetX: 0.9
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.9
+             particle_offset_x: 0.9
+             particle_offset_y: 0.1
+             particle_offset_z: 0.9
              offset: 0,-1,0
              period: 2
         -  class: EffectSingle
@@ -12161,10 +12162,10 @@ recall:
              class: WarpEffect
              period: 1
              particle: portal
-             particleCount: 10
-             particleOffsetX: 0.9
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.9
+             particle_count: 10
+             particle_offset_x: 0.9
+             particle_offset_y: 0.1
+             particle_offset_z: 0.9
              offset: 0,-1,0
     parameters:
         warmup: 5000
@@ -12227,10 +12228,10 @@ recurse:
              class: ConeEffect
              iterations: 10
              particle: block_crack
-             particleCount: 8
-             particleOffsetX: 0.8
-             particleOffsetY: 0.8
-             particleOffsetZ: 0.8
+             particle_count: 8
+             particle_offset_x: 0.8
+             particle_offset_y: 0.8
+             particle_offset_z: 0.8
              lengthGrow: 0.2
              radiusGrow: 0.004
              updateLocations: false
@@ -12523,10 +12524,10 @@ rollback:
             yEquation: "sin(t) * (t/50)"
             zEquation: "cos(t) * (t/50) + 1"
             particle: crit
-            particleCount: 10
-            particleOffsetX: 0.1
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.1
+            particle_count: 10
+            particle_offset_x: 0.1
+            particle_offset_y: 0.1
+            particle_offset_z: 0.1
             updateDirections: false
             particles: 20
         alternate_up:
@@ -12534,12 +12535,12 @@ rollback:
           sound: magic.shimmer
           sound_volume: 1
           location: both
-          particle_override: particleNucleus
+          particle_override: particle_nucleus
           color_override: colorOrbital
           effectlib:
                class: AtomEffect
-               particleNucleus: enchantment_table
-               particleOrbital: redstone
+               particle_nucleus: enchantment_table
+               particle_orbital: redstone
                iterations: 8
         cast:
         - sound: magic.shimmer
@@ -12554,11 +12555,11 @@ rollback:
             yEquation: "sin(t)"
             zEquation: "cos(t)"
             particle: enchantment_table
-            particleCount: 20
+            particle_count: 20
             speed: 1
-            particleOffsetX: 0.2
-            particleOffsetY: 0.2
-            particleOffsetZ: 0.2
+            particle_offset_x: 0.2
+            particle_offset_y: 0.2
+            particle_offset_z: 0.2
             updateDirections: false
         - location: source
           use_target_location: false
@@ -12569,10 +12570,10 @@ rollback:
             yEquation: "sin(t) * (t/50)"
             zEquation: "cos(t) * (t/50) + 1"
             particle: crit
-            particleCount: 10
-            particleOffsetX: 0.1
-            particleOffsetY: 0.1
-            particleOffsetZ: 0.1
+            particle_count: 10
+            particle_offset_x: 0.1
+            particle_offset_y: 0.1
+            particle_offset_z: 0.1
             updateDirections: false
             particles: 20
         - location: target
@@ -12615,10 +12616,10 @@ rubberize:
            effectlib:
              class: Helix
              particle: block_crack
-             particleCount: 8
-             particleOffsetX: 0.2
-             particleOffsetY: 0.5
-             particleOffsetZ: 0.2
+             particle_count: 8
+             particle_offset_x: 0.2
+             particle_offset_y: 0.5
+             particle_offset_z: 0.2
              iterations: 1
              radius: $size
     parameters:
@@ -12733,12 +12734,12 @@ secure:
            class: Modified
            iterations: 30
            parameters:
-            edgeLength: "max(1, (1 - (t / i)) * 5 - 2)"
+            edge_length: "max(1, (1 - (t / i)) * 5 - 2)"
            effect:
              class: CubeEffect
              particle: redstone
              color: "C0C0C0"
-             enableRotation: false
+             enable_rotation: false
              offset: 0.5,0.5,0.5
         no_target:
         - class: EffectSingle
@@ -12759,8 +12760,8 @@ secure:
            iterations: 2
            particle: redstone
            color: "660000"
-           edgeLength: 1
-           enableRotation: false
+           edge_length: 1
+           enable_rotation: false
            offset: 0.5,0.5,0.5
         alternate_up:
         - class: EffectSingle
@@ -12797,12 +12798,12 @@ secure:
            class: Modified
            iterations: 30
            parameters:
-            edgeLength: "max(1, (t / i) * 5 - 2)"
+            edge_length: "max(1, (t / i) * 5 - 2)"
            effect:
              class: CubeEffect
              particle: redstone
              color: "C0C0C0"
-             enableRotation: false
+             enable_rotation: false
              offset: 0.5,0.5,0.5
     alternate_up_parameters:
       type: key
@@ -12870,11 +12871,11 @@ shell:
            effectlib:
              class: SphereEffect
              particle: block_crack
-             particleCount: 15
+             particle_count: 15
              particles: 20
-             particleOffsetX: 0.3
-             particleOffsetY: 0.3
-             particleOffsetZ: 0.3
+             particle_offset_x: 0.3
+             particle_offset_y: 0.3
+             particle_offset_z: 0.3
              radius: $radius
              duration: 2000
     parameters:
@@ -13554,10 +13555,10 @@ shrink:
              iterations: 11
              particle: spell_instant
              lengthGrow: 0.4
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 0.2
-             particleOffsetZ: 0.2
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 0.2
+             particle_offset_z: 0.2
         hit:
         - class: EffectSingle
           location: target
@@ -13628,10 +13629,10 @@ shuriken:
                class: HelixEffect
                particle: block_crack
                particles: 20
-               particleCount: 4
-               particleOffsetX: 1
-               particleOffsetY: 0.05
-               particleOffsetZ: 1
+               particle_count: 4
+               particle_offset_x: 1
+               particle_offset_y: 0.05
+               particle_offset_z: 1
     parameters:
         range: 32
         target_type: Damageable
@@ -13873,10 +13874,10 @@ singularity:
                particle: block_crack
                color: 010101
                particles: 100
-               particleCount: 20
-               particleOffsetX: 1
-               particleOffsetY: 1
-               particleOffsetZ: 1
+               particle_count: 20
+               particle_offset_x: 1
+               particle_offset_y: 1
+               particle_offset_z: 1
     parameters:
       target_type: Entity
       velocity: 10
@@ -13947,10 +13948,10 @@ smite:
            effectlib:
              class: HelixEffect
              particle: smoke_large
-             particleCount: 10
-             particleOffsetX: 0.2
-             particleOffsetY: 4
-             particleOffsetZ: 0.2
+             particle_count: 10
+             particle_offset_x: 0.2
+             particle_offset_y: 4
+             particle_offset_z: 0.2
              iterations: 1
              particles: 30
              radius: 4
@@ -14112,8 +14113,8 @@ snoop:
              iterations: 15
              particle: redstone
              color: "00FFAA"
-             edgeLength: 1.2
-             enableRotation: false
+             edge_length: 1.2
+             enable_rotation: false
              offset: 0.5,0.5,0.5
          - class: EffectTrail
            particle: spell_mob
@@ -14219,14 +14220,14 @@ sponge:
       - location: target
         effectlib:
           class: Cube
-          edgeLength: 0.5
-          particleCount: 2
+          edge_length: 0.5
+          particle_count: 2
           particles: 4
-          particleOffsetX: 0.5
-          particleOffsetY: 0.5
-          particleOffsetZ: 0.5
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
           particle: drip_water
-          enableRotation: false
+          enable_rotation: false
           iterations: 4
       cast:
       - sound: magic.shimmer
@@ -14248,10 +14249,10 @@ sponge:
           duration: 4000
           particles: 5
           period: 1
-          particleCount: 10
-          particleOffsetX: 0.01
-          particleOffsetY: 0.01
-          particleOffsetZ: 0.01
+          particle_count: 10
+          particle_offset_x: 0.01
+          particle_offset_y: 0.01
+          particle_offset_z: 0.01
           delay: 10
     parameters:
       allow_max_range: false
@@ -14310,10 +14311,10 @@ stash:
             particle: block_crack
             material: obsidian
             duration: 1000
-            particleCount: 10
-            particleOffsetX: 1
-            particleOffsetZ: 1
-            particleOffsetY: 1
+            particle_count: 10
+            particle_offset_x: 1
+            particle_offset_z: 1
+            particle_offset_y: 1
     parameters:
         target: self
         type: ender_chest
@@ -14373,10 +14374,10 @@ sticky:
                class: SphereEffect
                particle: redstone
                particles: 10
-               particleCount: 4
-               particleOffsetX: 0.01
-               particleOffsetY: 0.01
-               particleOffsetZ: 0.01
+               particle_count: 4
+               particle_offset_x: 0.01
+               particle_offset_y: 0.01
+               particle_offset_z: 0.01
         explode:
         - location: target
           particle: explosion_huge
@@ -15034,9 +15035,9 @@ superkill:
           location: origin
           effectlib:
              class: AtomEffect
-             particleNucleus: spell_mob
+             particle_nucleus: spell_mob
              colorNucleus: "00FF00"
-             particleOrbital: redstone
+             particle_orbital: redstone
              colorOrbital: "00FF00"
              iterations: 16
              radius: 5
@@ -15102,10 +15103,10 @@ superlaser:
            effectlib:
              class: DnaEffect
              particlesBase: 0
-             particlesHelix: 7
-             particleHelix: redstone
-             particleBase1: drip_lava
-             particleBase2: smoke_normal
+             particles_helix: 7
+             particle_helix: redstone
+             particle_base1: drip_lava
+             particle_base2: smoke_normal
              iterations: 10
              radius: 1.5
              grow: 0.2
@@ -15412,7 +15413,7 @@ tag:
              text: $target
              iterations: 5
              period: 4
-             particleCount: 20
+             particle_count: 20
              particle: fireworks_spark
     parameters:
         target_type: Player
@@ -15727,8 +15728,8 @@ tornado:
              distance: 0.8
              cloudSize: 1
              tornadoParticle: spell
-             particleCount: 4
-             particleOffsetY: 0.2
+             particle_count: 4
+             particle_offset_y: 0.2
              offset: 0,-2,0
              maxTornadoRadius: 3
         cast:
@@ -15809,10 +15810,10 @@ torture:
         tick:
         -  location: target
            particle: spell_mob
-           particleCount: 4
-           particleOffsetX: 0.2
-           particleOffsetY: 0.2
-           particleOffsetZ: 0.2
+           particle_count: 4
+           particle_offset_x: 0.2
+           particle_offset_y: 0.2
+           particle_offset_z: 0.2
         -  location: target
            particle: spell_mob
            color: "010101"
@@ -15831,7 +15832,7 @@ torture:
                class: Sphere
                particle: spell_mob
                color: "010101"
-               disappearWithOriginEntity: true
+               disappear_with_origin_entity: true
         -  class: EffectSingle
            requires_entity_target: true
            location: target
@@ -15840,7 +15841,7 @@ torture:
            effectlib:
              class: BleedEffect
              duration: 500
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
     costs:
         mana: 100
     parameters:
@@ -15932,10 +15933,10 @@ tracking:
            effectlib:
              class: LineEffect
              particle: redstone
-             particleCount: 5
-             particleOffsetX: 0.1
-             particleOffsetY: 0.1
-             particleOffsetZ: 0.1
+             particle_count: 5
+             particle_offset_x: 0.1
+             particle_offset_y: 0.1
+             particle_offset_z: 0.1
     parameters:
         range: 32
         fov: 3
@@ -16315,10 +16316,10 @@ virus_death:
              duration: 5000
              particle: fireworks_spark
              particles: 5
-             particleCount: 5
-             particleOffsetX: 0.5
-             particleOffsetY: 0.5
-             particleOffsetZ: 0.5
+             particle_count: 5
+             particle_offset_x: 0.5
+             particle_offset_y: 0.5
+             particle_offset_z: 0.5
     parameters:
         target: self
         target_self: false
@@ -16788,10 +16789,10 @@ wave:
              zEquation: "t/16*4-4"
              iterations: 2
              particles: 16
-             particleCount: 4
-             particleOffsetX: 1
-             particleOffsetY: 0.2
-             particleOffsetZ: 1
+             particle_count: 4
+             particle_offset_x: 1
+             particle_offset_y: 0.2
+             particle_offset_z: 1
              particle: smoke_large
              orient: true
              orientPitch: false
@@ -17002,7 +17003,7 @@ wither:
              particles: 5
              particle: redstone
              color: "010101"
-             disappearWithOriginEntity: true
+             disappear_with_origin_entity: true
         hit:
         - location: target
           sound: entity_wither_break_block
@@ -17016,11 +17017,11 @@ wither:
            effect:
              class: AnimatedBall
              particle: smoke_normal
-             particleCount: 20
-             particleOffsetX: 0.05
-             particleOffsetY: 0.05
-             particleOffsetZ: 0.05
-             yFactor: 1
+             particle_count: 20
+             particle_offset_x: 0.05
+             particle_offset_y: 0.05
+             particle_offset_z: 0.05
+             y_factor: 1
     parameters:
         target: none
         projectile: WitherSkull
@@ -17063,15 +17064,15 @@ wolf:
            sound: entity_wolf_howl
            effectlib:
              class: DnaEffect
-             particleHelix: drip_lava
+             particle_helix: drip_lava
              iterations: 24
-             particleBase1: drip_water
+             particle_base1: drip_water
         -  class: EffectSingle
            location: target
            effectlib:
              class: AtomEffect
              iterations: 32
-             particleNucleus: drip_water
+             particle_nucleus: drip_water
     parameters:
         target_type: LivingEntity
         max_wolves: 5
@@ -17155,10 +17156,10 @@ workbench:
             particle: block_crack
             material: workbench
             duration: 1000
-            particleCount: 10
-            particleOffsetX: 1
-            particleOffsetZ: 1
-            particleOffsetY: 1
+            particle_count: 10
+            particle_offset_x: 1
+            particle_offset_z: 1
+            particle_offset_y: 1
     parameters:
         target: none
         cooldown: 5000
@@ -17324,10 +17325,10 @@ wound:
              iterations: 50
              particles: 20
              particle: drip_lava
-             particleCount: 20
-             particleOffsetX: 0
-             particleOffsetY: 0.1
-             particleOffsetZ: 0
+             particle_count: 20
+             particle_offset_x: 0
+             particle_offset_y: 0.1
+             particle_offset_z: 0
              xEquation: "1.5"
              yEquation: "-t/20 + 0.5"
              zEquation: "-t/20 + 0.5"
