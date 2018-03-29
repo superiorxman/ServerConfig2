@@ -1,0 +1,32 @@
+class: krypto
+costumes:
+- chatcolor: '&9'
+  name: §cK§9r§ey§9p§9t§co
+  sig: wolf
+  val: ''
+effects:
+- /effect <plr> 5 9999 20 true
+- /effect <plr> 11 9999 3 true
+items:
+- /mgive <plr> kryptonianlaservisionwand
+maxHearts: 40
+permissions:
+  superherocity:
+  - weakto.kryptonite
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
+  - essentials.fly
+  - essentials.speed.fly
+  - essentials.speed
+powers:
+- /effects
+- /items
+- /carryplayer <player>
+- /dropplayer
+- /run 0-9
+- /flyspeed <number>
+- /fly
+run: 9
+speech: Meow
+trail: [
+  ]
