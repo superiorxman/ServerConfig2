@@ -1,21 +1,18 @@
 class: krypto
 costumes:
 - chatcolor: '&9'
-  name: §cK§9r§ey§9p§9rt§co
+  name: §cK§9r§ey§9p§9t§co
   sig: wolf
   val: ''
 effects:
 - /effect <plr> 5 9999 20 true
-- /effect <plr> 10 9999 1 true
 - /effect <plr> 11 9999 3 true
 items:
 - /mgive <plr> kryptonianlaservisionwand
-maxHearts: 50
+maxHearts: 40
 permissions:
   superherocity:
   - weakto.kryptonite
-  - powers.nofalldamage
-  - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - ch.alias.dropplayer
   - essentials.fly
