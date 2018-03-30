@@ -15,16 +15,13 @@ permissions:
   - powers.fireballpunch
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - essentials.fly
-  - essentials.speed.fly
-  - essentials.speed
+  - powers.hover
 powers:
 - /effects
 - /items
 - /carryplayer <player>
 - /dropplayer
-- /fly
-- /flyspeed <number>
+- /float up/down/pause/unpause/stop
 - Shoots fireballs with bare hand
 - /fireballpunch on/off
 speech: I'll take this.

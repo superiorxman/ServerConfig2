@@ -4651,6 +4651,7 @@ curse:
         - class: CustomProjectile
           actions:
           - class: PotionEffect
+          - class: Aggro
           - class: Deactivate
     effects:
         cast:
@@ -7317,6 +7318,39 @@ tosurvival:
   parameters:
     target: self
     game_mode: survival
+gasp:
+    icon: diamond_axe:186
+    icon_disabled: diamond_hoe:186
+    icon_url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+    category: utility
+    worth: 20
+    earns_sp: 2
+    actions:
+      cast:
+      - class: AirSupply
+    effects:
+      cast:
+      - sound: magic.shimmer
+      - sound: entity_generic_drink
+        sound_pitch: 0.8
+      - location: origin
+        effectlib:
+          class: Sphere
+          particle_count: 2
+          particles: 10
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+          particle: cloud
+          radius: 1
+          duration: 1000
+    parameters:
+      target: self
+      air: 10
+      cooldown: 30000
+    costs:
+      mana: 10
+
 gather:
     icon: diamond_axe:48
     icon_disabled: diamond_hoe:48
@@ -10441,10 +10475,10 @@ night:
         cast:
         - class: Delay
         - class: Time
+        - class: Weather
     effects:
         cast:
-        -  class: EffectSingle
-           sound: magic.shimmer
+        -  sound: magic.shimmer
            location: source
            effectlib:
              class: Modified
@@ -10460,6 +10494,28 @@ night:
               radius: 3
               particle: smoke_large
               particle_count: 10
+              particles: 40
+              particle_offset_x: 0.2
+              particle_offset_y: 0.2
+              particle_offset_z: 0.2
+              updateLocations: false
+              updateDirections: false
+        -  location: source
+           effectlib:
+             class: Modified
+             duration: $delay
+             updateLocations: false
+             yEquation: "select(t-50,0,0,((t-50)/i) * 40)"
+             relativeOffset: "5,1,0"
+             orient: false
+             parameters:
+              radius: "select((t/i)-0.9, min(3, t/60), 0, ((t/i)-0.9) * 300 + 3)"
+             effect:
+              class: Sphere
+              radius: 3
+              particle: water_drop
+              particle_count: 10
+              particles: 20
               particle_offset_x: 0.2
               particle_offset_y: 0.2
               particle_offset_z: 0.2
@@ -10471,6 +10527,7 @@ night:
         delay: 10000
         time: night
         cycle_moon_phase: true
+        weather: storm
     costs:
         mana: 150
 nuke:
@@ -13839,14 +13896,14 @@ singularity:
         tick:
         - location: target
           particle: smoke_normal
-          particle_count: 20
+          particle_count: 15
           particle_offset_x: 0.4
           particle_offset_y: 0.4
           particle_offset_z: 0.4
         - location: target
           particle: block_crack
           material: obsidian
-          particle_count: 50
+          particle_count: 30
           particle_offset_x: 0.6
           particle_offset_y: 0.6
           particle_offset_z: 0.6
@@ -14196,7 +14253,6 @@ sphere:
 sponge:
     icon: diamond_axe:186
     icon_disabled: diamond_hoe:186
-    alias: gasp
     icon_url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
     example_thumbnail: https://thumbs.gfycat.com/EcstaticVictoriousBunny-size_restricted.gif
     example_link: https://thumbs.gfycat.com/EcstaticVictoriousBunny

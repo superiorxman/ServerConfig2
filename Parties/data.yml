@@ -89,12 +89,6 @@ players:
       timestamp: 1521840095
     rank: 20
     party: JSA
-  fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
-    party: JSA
-    name:
-      timestamp: 1520675492
-      name: simon2008
-    rank: 5
   e17d8de4-9fa8-474a-a6c1-54d28c9a5591:
     rank: 5
     name:
@@ -218,24 +212,12 @@ players:
       timestamp: 1521840175
       name: RyannDelRey
     party: TheJL
-  d391e228-e57b-4503-a7ea-c101f9c4d9f4:
-    rank: 5
-    name:
-      name: Egger227
-      timestamp: 1521840191
-    party: TheJL
   2a63e405-eecf-480a-9fcf-1e22b996d998:
     party: help
     name:
       timestamp: 1521930577
       name: RoryDaPanda
     rank: 20
-  ead1c0c7-8608-446c-bf5e-05b64c9fa236:
-    rank: 5
-    party: help
-    name:
-      timestamp: 1521930598
-      name: BountyHunterFett
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     rank: 20
     party: LostHEROES
@@ -248,12 +230,6 @@ players:
       timestamp: 1522003994
     rank: 5
     party: LostHEROES
-  474707f7-f8b4-43ea-8978-9cae17917e82:
-    party: LostHEROES
-    name:
-      timestamp: 1522004040
-      name: ThatCraftLifeMCU
-    rank: 5
   8920283f-1ad7-4e8f-a524-dece38451dd8:
     rank: 5
     name:
@@ -296,6 +272,42 @@ players:
     name:
       name: kyle_rayner_dc
       timestamp: 1522230235
+  f9e3d8f3-f579-478f-a458-a7efaaf7bcdd:
+    name:
+      timestamp: 1522371138
+      name: SantaClad
+    rank: 5
+    party: Chaos
+  575e16ba-7021-4677-82b3-f97f15e9ef3e:
+    name:
+      name: ronq23
+      timestamp: 1522396259
+    rank: 20
+    party: TheFlash
+  3639172b-aa0f-498d-9322-18addf094675:
+    name:
+      timestamp: 1522396276
+      name: MasterofDevil
+    party: TheFlash
+    rank: 5
+  b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857:
+    party: TheJL
+    name:
+      timestamp: 1522405539
+      name: Guitar_Hero
+    rank: 5
+  fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
+    party: TheJL
+    name:
+      timestamp: 1522405562
+      name: simon2008
+    rank: 5
+  ead1c0c7-8608-446c-bf5e-05b64c9fa236:
+    rank: 20
+    party: meme
+    name:
+      timestamp: 1522423772
+      name: BountyHunterFett
 parties:
   TheTitans:
     members:
@@ -332,7 +344,6 @@ parties:
     leader: b06401f9-844e-4fb8-80e3-55fa795b4eb3
     members:
     - b06401f9-844e-4fb8-80e3-55fa795b4eb3
-    - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
   Chaos:
     members:
     - e17d8de4-9fa8-474a-a6c1-54d28c9a5591
@@ -341,6 +352,7 @@ parties:
     - 861da66b-8eef-4143-93f1-dbab33665595
     - fdbd1274-eb12-4fd1-b9c5-a44917d58637
     - 21e726fd-af17-4454-bb61-25e55d7300ef
+    - f9e3d8f3-f579-478f-a458-a7efaaf7bcdd
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -374,21 +386,20 @@ parties:
     members:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
     - bc220f87-ddd9-4805-aa20-349870def333
-    - d391e228-e57b-4503-a7ea-c101f9c4d9f4
     - 3e36ae61-810a-44bc-8041-fd70a20b92aa
+    - b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857
+    - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
     leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
     desc: Justice League
     motd: motd
   help:
     members:
     - 2a63e405-eecf-480a-9fcf-1e22b996d998
-    - ead1c0c7-8608-446c-bf5e-05b64c9fa236
     leader: 2a63e405-eecf-480a-9fcf-1e22b996d998
   LostHEROES:
     members:
     - d1ad3f3c-2a47-4921-81bb-68a9f2862c34
     - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
-    - 474707f7-f8b4-43ea-8978-9cae17917e82
     - 8920283f-1ad7-4e8f-a524-dece38451dd8
     - 748c7d68-79e5-4194-9bc8-e446d948ee8a
     leader: d1ad3f3c-2a47-4921-81bb-68a9f2862c34
@@ -398,3 +409,12 @@ parties:
     - fbb8c072-4c4b-49c8-948b-26e8ad73099e
     - 28556dea-667d-409f-b2ff-fb4177a20ff2
     leader: fbb8c072-4c4b-49c8-948b-26e8ad73099e
+  TheFlash:
+    leader: 575e16ba-7021-4677-82b3-f97f15e9ef3e
+    members:
+    - 575e16ba-7021-4677-82b3-f97f15e9ef3e
+    - 3639172b-aa0f-498d-9322-18addf094675
+  meme:
+    members:
+    - ead1c0c7-8608-446c-bf5e-05b64c9fa236
+    leader: ead1c0c7-8608-446c-bf5e-05b64c9fa236
