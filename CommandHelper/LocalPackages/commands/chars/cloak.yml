@@ -21,11 +21,8 @@ permissions:
   - worldedit.navigation.thru.command
   - essentials.tppos
   - essentials.fly
-  - essentials.speed.fly
   - ch.alias.tp
   - essentials.back
-  - powers.ultrainstinct
-  - powers.depower
 powers:
 - /effects
 - /items
@@ -38,7 +35,6 @@ powers:
 - /thru
 - /tp
 - /grouptp <player>
-- /depower <player>
 speech: Peekabo!
 trail: [
   ]
