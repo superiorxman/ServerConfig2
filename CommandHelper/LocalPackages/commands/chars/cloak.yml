@@ -1,0 +1,41 @@
+class: cloak
+costumes:
+- chatcolor: '&0'
+  name: §0Cloak
+  sig: veCudF/tLDIXyHf0WMg8uipP7UC8K4hwW0NAdyZ8xud6p9pSBHywO7VNEtXJuC9VKVol09JG8WyUzSphpvIvPJy5yhU3S7KvX1+mXJGNkv5OA5u0qQY5OeYWW7E+kJTRmzSungyDHpjAqOe2BnWtua1wPFl9x5cg039fWp1aRkfo5GdEU7RpMk39+L1mBHVPzNFFv9/yjPe4NpciIYpJXHQIkCCUdXIrdzNezFj9jwwbMuXW9Rj/LPlQ7vXr+3/CDHDUNAkjuL426Ke6kdzWQZi4IfmlO6Rb3vHn74iQF+43YX4p8rO2MqJZRziLzPsLB8lPPbUhCJGMcS9Yk3H8uLsRMl/oSpPbMpm/exowYDx0FzQFvWBTEzDuTdgIM4Lqc5pdSPdr/Re0xsUZPPuZWr1q6wsvumD0/6BFLnnS3RHdIfXYZXhxXas9JXL3T1T5lgDZYSaf4pu8s/7fhSdBkAVkQXEVInq1jS3zSgDXJce+K1qF7iiPx9nI1xTwL+CjQAfzbyPSaSIFwB0ERNSXdwppK1sMAdZpLKvOEstLU73GU1tMBGRSCB0JSIX4isSRsut68g/i6qWGiG6n4glmsCtW8PdCURzAn3wk2DD5swKx+3mQMkW+yBi5HzMWHxuijShXCUCggLX/ApBeURALP/iEwf8PCeXBHZh1B2+RkAU=
+  val: eyJ0aW1lc3RhbXAiOjE1MjI0NDMzMzk5MDAsInByb2ZpbGVJZCI6IjQ3NDcwN2Y3ZjhiNDQzZWE4OTc4OWNhZTE3OTE3ZTgyIiwicHJvZmlsZU5hbWUiOiJUaGF0Q3JhZnRMaWZlTUNVIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kOGU0NTczM2NiNTBlZTRlODQxZDI1MmM4MGYyOTBkOGQyZDcxYzRkZjBiZjdiZTY0MmNlNjdmNTYyNzA1ZjY4In19fQ==
+effects:
+- /effect <plr> 11 9999 3 true
+- /effect <plr> 10 9999 1 true
+items: [
+  ]
+maxHearts: 20
+permissions:
+  superherocity:
+  - ch.alias.grouptp
+  - ch.alias.intangible
+  - ch.alias.tangible
+  - -essentials.protect.damage.fall
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
+  - worldedit.navigation.thru.command
+  - essentials.tppos
+  - essentials.fly
+  - essentials.speed.fly
+  - ch.alias.tp
+  - essentials.back
+powers:
+- /effects
+- /items
+- /carryplayer <player>
+- /dropplayer
+- /fly
+- /tppos <x> <y> <z>
+- /tangible
+- /intangible
+- /thru
+- /tp
+- /grouptp <player>
+speech: Peekabo!
+trail: [
+  ]
