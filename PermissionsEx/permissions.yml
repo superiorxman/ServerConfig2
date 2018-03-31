@@ -7122,18 +7122,6 @@ groups:
         - essentials.tppos
         - ch.alias.carryplayer
         - essentials.back
-  deathdc:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tphere
-        - ch.alias.tp
-        - powers.onepunch
   hawkeye:
     inheritance:
     - commonherotraits
@@ -9595,21 +9583,6 @@ groups:
       superherocity:
         permissions:
         - -essentials.protect.damage.fall
-  ironmanmkxv:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4V'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - ch.alias.hulkbuster
-        - essentials.fly
-        - ch.alias.invis
-        - ch.alias.vis
   supergirl:
     inheritance:
     - commonherotraits
@@ -9797,21 +9770,6 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
-  ironspider:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&4I&er&4o&en &4Sp&bi&eder'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - powers.wallclimb
-        - ch.alias.web
-        - ch.alias.websling
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   spidermanpeterparker:
     inheritance:
     - commonherotraits
@@ -9848,6 +9806,48 @@ groups:
       superherocity:
         permissions:
         - -essentials.protect.damage.fall
+  deathdc:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tphere
+        - ch.alias.tp
+        - powers.onepunch
+  ironspider:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&4I&er&4o&en &4Sp&bi&eder'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - powers.wallclimb
+        - ch.alias.web
+        - ch.alias.websling
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  ironmanmkxv:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4V'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - ch.alias.hulkbuster
+        - essentials.fly
+        - ch.alias.invis
+        - ch.alias.vis
 schema-version: 1
 worlds:
   checkers:
@@ -10950,12 +10950,12 @@ users:
       name: Soundsa_Shady
   00fab34c-fb2c-46db-8283-2f436aba83cf:
     group:
-    - spidermanpeterparker
+    - ironspider
     options:
       name: BepisPupper
   9be9782d-5fe1-49bd-8233-8f2011149e4c:
     group:
-    - ironmanmkxlvi
+    - ironmanmkxv
     options:
       name: TeslaTsuki
   a7c699a6-30a1-42c5-a49a-d1720f5f69de:
@@ -11761,8 +11761,7 @@ users:
     options:
       name: Ace_Monce
   2018813a-5b7f-4a58-8ed8-9e7194f85831:
-    group:
-    - ironmanmkxv
+    group: []
     options:
       name: ThePaulMartin
   2a402832-0240-4587-89ae-4541eb4ed088:
@@ -12102,8 +12101,7 @@ users:
     options:
       name: Mindtaro
   ff775218-4682-4150-9e82-1d46ccc06003:
-    group:
-    - deathdc
+    group: []
     options:
       name: Thomp
   be0cee0d-5ce4-456d-b09b-cbb1045b37bb:
@@ -12401,7 +12399,7 @@ users:
       name: The_Noid
   d6afc769-2706-479f-9653-475712b9902a:
     group:
-    - mortal
+    - deathdc
     options:
       name: cms650
   969d0de0-01a3-4afa-b82e-8cfc07b7bf31:
