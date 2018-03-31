@@ -8428,12 +8428,6 @@ groups:
     options:
       suffix: '&d'
       prefix: '&5Ki&dl&5g&6%&5r&de'
-  harrypotter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&4Har&6ry &4Pot&6ter'
   lordvoldemort:
     inheritance:
     - commonherotraits
@@ -9589,12 +9583,6 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
-  captainuniversepeterparker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&4C&1a&9p&ft&1a&f&1&fin &fUniverse&8(PP&8)'
   martianmanhunter:
     inheritance:
     - commonherotraits
@@ -9846,6 +9834,18 @@ groups:
         - essentials.fly
         - ch.alias.dropplayer
         - ch.alias.carryplayer
+  captainuniversepeterparker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&4C&1a&9p&ft&1a&f&1&fin &fUniverse&8(PP&8)'
+  harrypotter:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&4Har&6ry &4Pot&6ter'
 schema-version: 1
 worlds:
   checkers:
@@ -10551,7 +10551,7 @@ users:
       name: iFrodoFezbear
   f9e3d8f3-f579-478f-a458-a7efaaf7bcdd:
     group:
-    - hela
+    - mortal
     options:
       name: SantaClad
   e6de8cf0-af45-44e4-882f-d98446f4b31b:
@@ -10947,7 +10947,7 @@ users:
       name: Soundsa_Shady
   00fab34c-fb2c-46db-8283-2f436aba83cf:
     group:
-    - mortal
+    - captainuniversepeterparker
     options:
       name: BepisPupper
   9be9782d-5fe1-49bd-8233-8f2011149e4c:
@@ -12090,7 +12090,8 @@ users:
     options:
       name: ElegantDeath
   6f4c8bf6-f5b6-4859-b75a-e47a7341ccca:
-    group: []
+    group:
+    - harrypotter
     options:
       name: Fisherbear9
   c71b4a7e-84f4-4518-99b2-3e942d49a9e1:
