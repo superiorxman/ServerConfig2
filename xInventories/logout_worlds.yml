@@ -1,6 +1,6 @@
 v2-logout:
   391762eb-24f6-4d95-84d6-bfac682d575a:
-    world: titanstower
+    world: survival112
     group: superherocities
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     world: survival112
@@ -223,8 +223,8 @@ v2-logout:
     group: superherocities
     world: survival112
   f9e3d8f3-f579-478f-a458-a7efaaf7bcdd:
-    world: mainmenu
-    group: mainmenu
+    world: survival112
+    group: superherocities
   f7f12b7c-ea49-4011-96cc-12f7dce4be2d:
     group: superherocities
     world: starlabs
@@ -420,8 +420,8 @@ v2-logout:
     group: superherocities
     world: starlabs
   09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
-    world: mainmenu
-    group: mainmenu
+    world: survival112
+    group: superherocities
   df772262-b004-43a6-ab1d-862d3dfa9973:
     group: mainmenu
     world: mainmenu
@@ -618,11 +618,11 @@ v2-logout:
     group: superherocities
     world: metropolis
   00fab34c-fb2c-46db-8283-2f436aba83cf:
-    group: superherocities
-    world: nyc
-  9be9782d-5fe1-49bd-8233-8f2011149e4c:
     group: mainmenu
     world: mainmenu
+  9be9782d-5fe1-49bd-8233-8f2011149e4c:
+    group: superherocities
+    world: nyc
   3076b843-e317-4739-b3cd-ef6c579e0b2e:
     group: superherocities
     world: infinitycity
@@ -1754,7 +1754,7 @@ v2-logout:
     world: nyc
   d6afc769-2706-479f-9653-475712b9902a:
     group: superherocities
-    world: hogwarts
+    world: nyc
   969d0de0-01a3-4afa-b82e-8cfc07b7bf31:
     group: superherocities
     world: survival112
@@ -1881,3 +1881,6 @@ v2-logout:
   b796e870-f350-4d39-b783-7d3b474c080a:
     group: superherocities
     world: gotham
+  96c34440-0aaa-4a6e-8795-5045fb9cd88c:
+    group: superherocities
+    world: nyc
