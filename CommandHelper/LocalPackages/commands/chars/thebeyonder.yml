@@ -31,9 +31,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /disguise
+- /disguise <player> <name>
 - /intangible
-- /tangible\
+- /tangible
 - /tp
 - /create <item> <quantity> <color>
 - /headdb

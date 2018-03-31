@@ -19,15 +19,11 @@ register_command('float',
                     runas('~console','/effect '.@player.' minecraft:levitation 0')
                     runas('~console','/effect '.@player.' minecraft:levitation 9999 254 true')
                     break()
-                case 'pause':
-                    set_pflight(@player,true)
-                    set_pflying(@player,true)
-                    break()
-                case 'unpause':
-                    set_pflight(@player,false)
+                case 'hover':
+                    runas('~console','/effect '.@player.' minecraft:levitation 0')
+                    runas('~console','/effect '.@player.' minecraft:levitation 9999 255 true')
                     break()
                 case 'stop':
-                    set_pflight(@player,false)
                     runas('~console','/effect '.@player.' minecraft:levitation 0')
                     break()
                 default:
