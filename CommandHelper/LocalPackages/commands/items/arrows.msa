@@ -123,4 +123,8 @@ arrowphantomzone:/arrow phantomzone = >>>
     tmsg(player(),concat(color('GREEN'),
     'This is where the bad guys go!'))
 <<<
-
+custpotion:/custpotion $player jokervenom = >>>
+    sudo('/minecraft:give '.$player.' minecraft:splash_potion 1 0 {display:{Name:"'.color('DARK_PURPLE').'Joker '.color('WHITE').'Venom"}}')
+    tmsg(player(),concat(color('GREEN'),
+    'This is where the bad guys go!'))
+<<<

@@ -13,15 +13,14 @@ items:
 - /shot give <plr> cakebomb
 - /mgive <plr> rocketlauncher
 - /mgive <plr> jokerfloweracidwand
+- /give <plr> minecraft:splash_potion 3 0 {display:{Name:"§5Joker §fVenom"}}
 permissions:
   superherocity:
-  - powers.jokervenom
   - powers.joybuzzer
 powers:
 - /items
 - /effects
 - /joybuzzer <player>
-- /jokervenom
 speech: I'm the Joker!
 trail: [
   ]
