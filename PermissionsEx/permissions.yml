@@ -8049,17 +8049,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
         - powers.immunity.poison
-  ironmanmkxlvi:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4L&6V&4I'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   brainiac:
     inheritance:
     - commonherotraits
@@ -9808,6 +9797,21 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
+  ironspider:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&4I&er&4o&en &4Sp&bi&eder'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - powers.wallclimb
+        - ch.alias.web
+        - ch.alias.websling
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
   spidermanpeterparker:
     inheritance:
     - commonherotraits
@@ -9823,19 +9827,15 @@ groups:
         - -essentials.protect.damage.fall
         - ch.alias.websling
         - powers.wallclimb
-  ironspider:
+  ironmanmkxlvi:
     inheritance:
     - commonherotraits
     options:
-      suffix: '&b'
-      prefix: '&4I&er&4o&en &4Sp&bi&eder'
+      suffix: '&6'
+      prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4L&6V&4I'
     worlds:
       superherocity:
         permissions:
-        - -essentials.protect.damage.fall
-        - powers.wallclimb
-        - ch.alias.web
-        - ch.alias.websling
         - ch.alias.dropplayer
         - ch.alias.carryplayer
   deku:
@@ -10696,7 +10696,8 @@ users:
     options:
       name: tplu
   09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
-    group: []
+    group:
+    - mortal
     options:
       name: ItzWallyW_
     permissions:
@@ -10949,12 +10950,12 @@ users:
       name: Soundsa_Shady
   00fab34c-fb2c-46db-8283-2f436aba83cf:
     group:
-    - mortal
+    - spidermanpeterparker
     options:
       name: BepisPupper
   9be9782d-5fe1-49bd-8233-8f2011149e4c:
     group:
-    - mortal
+    - ironmanmkxlvi
     options:
       name: TeslaTsuki
   a7c699a6-30a1-42c5-a49a-d1720f5f69de:
@@ -12400,7 +12401,7 @@ users:
       name: The_Noid
   d6afc769-2706-479f-9653-475712b9902a:
     group:
-    - ironspider
+    - mortal
     options:
       name: cms650
   969d0de0-01a3-4afa-b82e-8cfc07b7bf31:
