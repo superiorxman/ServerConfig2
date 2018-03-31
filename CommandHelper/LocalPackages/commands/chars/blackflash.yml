@@ -26,6 +26,7 @@ permissions:
   - essentials.warps.speedforce
   - kill.immune
   - powers.onepunch
+  - worldedit.navigation.thru.command
 powers:
 - /effects
 - /items
@@ -41,6 +42,7 @@ powers:
 - /wallrun on/off
 - Look Up+Jump+Crouch to perform a wallrun.
 - Anything you attack, dies
+- /thru
 run: 9
 speech: The death of a speedster is near!
 trail: [
