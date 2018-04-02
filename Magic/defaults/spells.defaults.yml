@@ -10452,6 +10452,21 @@ note24:
     parameters:
       sound: flute.24B
 
+mute:
+    icon: paper
+    category: staff
+    hidden: true
+    actions:
+        cast:
+        - class: Command
+    parameters:
+        commands:
+        - mute @t
+        - msg @t You've been muted!
+        - msg @p You've muted @t
+        target_type: Player
+        target: other
+        range: 16
 neutron:
     icon: diamond_axe:52
     icon_disabled: diamond_hoe:52
@@ -10566,6 +10581,20 @@ night:
         weather: storm
     costs:
         mana: 150
+nobabies:
+  icon: egg
+  actions:
+    cast:
+      - class: AllEntities
+        actions:
+          - class: GrowEntity
+  parameters:
+    target: self
+    target_type: Ageable
+    target_all_worlds: true
+    cooldown: 8000
+  costs:
+    mana: 20
 nuke:
     inherit: false
     icon: diamond_axe:36
