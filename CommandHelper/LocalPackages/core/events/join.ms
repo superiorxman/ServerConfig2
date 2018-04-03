@@ -1,7 +1,7 @@
 bind('player_join',null,null,@event){
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-    @plr = @e['player']
+    @plr = @event['player']
     @class = _getheroclass(@plr)
     try(
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
