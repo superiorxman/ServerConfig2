@@ -1,7 +1,7 @@
 bind('player_join',null,null,@event){
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-    @plr = player()
+    @plr = @e['player']
     @class = _getheroclass(@plr)
     try(
         @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
@@ -14,8 +14,18 @@ bind('player_join',null,null,@event){
     
     
     @plrs = all_players()
-    
-    if(@hero['class'] == 'jailed')
+    foreach(@slot:@player in @plrs){
+        if(has_permission(@player,'is.criminal')){
+            array_remove(@plrs,@slot)
+        }
+    }
+    @randName = array_rand(@plrs)
+    @it = array(@plrs[@randName[0]],time())
+    export('it',@it)
+    broadcast(color('GRAY').color('ITALIC').@plrs[@randName[0]].' is IT! Tag someone!')
+
+
+    if(has_permission(@plr,'is.criminal'))
     {
         sudo("/undisguise ".@plr)
         sudo("/minecraft:clear ".@plr)

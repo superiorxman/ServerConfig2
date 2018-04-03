@@ -1,5 +1,5 @@
 bind('player_quit',null,null,@event){
-    @player = player()
+    @player = @event['player']
 
     @eventID = import(@player."isVibrating")
     clear_task(@eventID)
@@ -22,5 +22,20 @@ bind('player_quit',null,null,@event){
     } 
     if(has_permission(@player,'tick.kill')){
         runas('~console','/stoptorture')
+    }
+
+    @it = import('it')
+    if(@it != null && @player == @it[0]){
+        @players = all_players()
+        array_remove_values(@players,@player)
+        foreach(@slot:@plr in @players){
+            if(has_permission(@plr,'is.criminal')){
+                array_remove(@players,@slot)
+            }
+        }
+        @randName = array_rand(@players)
+        @it = array(@players[@randName[0]],time())
+        export('it',@it)
+        broadcast(color('GRAY').color('ITALIC').@player.' quit, so now '.@players[@randName[0]].' is IT! Tag someone!')
     }
 }

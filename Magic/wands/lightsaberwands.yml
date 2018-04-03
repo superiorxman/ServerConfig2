@@ -126,15 +126,19 @@ base_lightsaber:
 
 lightsaber_green:
     inherit: base_lightsaber
-    class: jedi
+    class: ""
     icon: shield:2
+    mode: none
     effect_color: '00FF00'
+    path: acolyte
 
 lightsaber_blue:
     inherit: base_lightsaber
-    class: jedi
+    class: ""
     icon: shield:3
+    mode: none
     effect_color: '0000FF'
+    path: acolyte
 
 lightsaber_red:
     inherit: base_lightsaber
@@ -146,15 +150,19 @@ lightsaber_red:
 
 lightsaber_orange:
     inherit: base_lightsaber
-    class: jedi
+    class: ""
     icon: shield:5
+    mode: none
     effect_color: 'FF00FF'
+    path: acolyte
 
 lightsaber_purple:
     inherit: base_lightsaber
-    class: jedi
+    class: ""
     icon: shield:6
+    mode: none
     effect_color: 'FFFF00'
+    path: acolyte
 
 detonator:
   icon: tnt

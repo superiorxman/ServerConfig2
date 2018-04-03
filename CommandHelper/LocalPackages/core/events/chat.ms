@@ -246,6 +246,11 @@ bind('player_chat', null, null, @e) {
         @msg = replace(@msg,'AGE','YAGE')
     }
 
+    @it = import('it')
+    if(@it != null && @it[0] == @player){
+        @msg = color('DARK_RED').color('BOLD').'[IT] '.@msg    
+    }
+
 
     if(has_permission("is.criminal")){
         @cooldown = 60

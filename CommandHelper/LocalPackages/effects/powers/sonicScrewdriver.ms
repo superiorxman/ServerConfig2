@@ -20,32 +20,6 @@ bind('player_interact',null,array('button': 'RIGHT'),@event){
      switch(@item['meta']['display']){
         case '§4S§7onic §0S§7crewdr§8i§7ver':
             break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
-        case '§4S§7onic §0S§7crewdr§8i§7ver':
-            break()
         default:
             return()
      } 

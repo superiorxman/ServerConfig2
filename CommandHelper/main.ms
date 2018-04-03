@@ -63,3 +63,13 @@ set_interval(5000,closure(
         }
     }
 ))
+@players = all_players()
+foreach(@slot:@player in @players){
+    if(has_permission(@player,'is.criminal')){
+        array_remove(@players,@slot)
+    }
+}
+@randName = array_rand(@players)
+@it = array(@players[@randName[0]],time())
+export('it',@it)
+broadcast(color('GRAY').color('ITALIC').@players[@randName[0]].' is IT! Tag someone!')
