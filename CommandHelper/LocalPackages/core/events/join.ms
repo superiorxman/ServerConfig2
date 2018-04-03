@@ -25,8 +25,7 @@ bind('player_join',null,null,@event){
     broadcast(color('GRAY').color('ITALIC').@plrs[@randName[0]].' is IT! Tag someone!')
 
 
-    if(has_permission(@plr,'is.criminal'))
-    {
+    if(has_permission(@plr,'is.criminal')){
         sudo("/undisguise ".@plr)
         sudo("/minecraft:clear ".@plr)
         die()
