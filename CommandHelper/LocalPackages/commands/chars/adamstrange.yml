@@ -8,11 +8,6 @@ items:
 - /give <plr> minecraft:fireworks 64 name:&8Jetpack Fuel
 - /give <plr> minecraft:elytra 1 70:1 34:5 name:&6Jetpack
 - /shot give <plr> energypistol
-permissions:
-  superherocity:
-  - essentials.tppos
-powers:
-- /tppos <x> <y> <z>
-speech: I am Adam Strange, I can teleport.
-trail: [
-  ]
+powers: []
+speech: I am Adam Strange, I might be able teleport if someone finds proofs.
+trail: []
