@@ -290,30 +290,30 @@ players:
       name: darthvenomir
     rank: 5
     party: TheTitans
-  cb1a7a9b-e719-42c4-a35a-ad0b081488ec:
-    name:
-      name: DodiThunder
-      timestamp: 1522682574
-    party: Lanterns
-    rank: 20
-  b09b6618-e035-4e1f-be4e-f01ec6888001:
-    name:
-      timestamp: 1522686261
-      name: Bcrulez
-    party: Lanterns
-    rank: 5
-  90b2ba6d-43e6-4e5c-8f77-9126b6969a9c:
-    name:
-      name: WingArmor
-      timestamp: 1522686267
-    rank: 5
-    party: Lanterns
   474707f7-f8b4-43ea-8978-9cae17917e82:
-    party: Lanterns
+    party: Chaos
     name:
-      timestamp: 1522696890
+      timestamp: 1522790723
       name: ThatCraftLifeMCU
     rank: 5
+  ff775218-4682-4150-9e82-1d46ccc06003:
+    name:
+      timestamp: 1522862148
+      name: Thomp
+    party: Hell
+    rank: 20
+  3639172b-aa0f-498d-9322-18addf094675:
+    name:
+      timestamp: 1522862161
+      name: MasterofDevil
+    party: Hell
+    rank: 5
+  2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
+    name:
+      name: TheoreticalGame
+      timestamp: 1522862171
+    rank: 5
+    party: Hell
 parties:
   TheTitans:
     members:
@@ -359,6 +359,7 @@ parties:
     - 861da66b-8eef-4143-93f1-dbab33665595
     - fdbd1274-eb12-4fd1-b9c5-a44917d58637
     - 21e726fd-af17-4454-bb61-25e55d7300ef
+    - 474707f7-f8b4-43ea-8978-9cae17917e82
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -421,10 +422,9 @@ parties:
     members:
     - ead1c0c7-8608-446c-bf5e-05b64c9fa236
     leader: ead1c0c7-8608-446c-bf5e-05b64c9fa236
-  Lanterns:
-    leader: cb1a7a9b-e719-42c4-a35a-ad0b081488ec
+  Hell:
+    leader: ff775218-4682-4150-9e82-1d46ccc06003
     members:
-    - cb1a7a9b-e719-42c4-a35a-ad0b081488ec
-    - b09b6618-e035-4e1f-be4e-f01ec6888001
-    - 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
-    - 474707f7-f8b4-43ea-8978-9cae17917e82
+    - ff775218-4682-4150-9e82-1d46ccc06003
+    - 3639172b-aa0f-498d-9322-18addf094675
+    - 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303

@@ -429,6 +429,8 @@ shops:
   unlock_class: "$class"
   nothing: "Nothing"
   cost_lore: "&6Costs: &e$cost"
+  cost_heading: ""
+  #cost_heading: "&6Click to purchase"
   unlock_cost_lore: "&6Unlock Cost: &e$cost"
   required_cost_lore: "&cCosts: &4$cost"
   required_unlock_cost_lore: "&cUnlock Cost: &4$cost"
@@ -1954,6 +1956,9 @@ spells:
     fxdemo:
         name: FX Demo
         description: Show off various EffectLib effects
+    fx:
+        name: FX Particle
+        description: Show off a specific particle, use with /cast fx particle redstone
     randomtp:
       name: Random Teleport
       description: Teleports you to a random location    
@@ -2217,7 +2222,7 @@ wand:
     player_unenchanted: $name's wand has been turned into a normal item
     no_path: "&r&4Your $wand &4can not be enchanted"
     max_enchanted: "&r&4Your $wand &4can not be enchanted any further"
-    level_up: "&r&bYou have progressed to to &r&5$path"
+    level_up: "&r&bYou have progressed to &r&5$path"
     duplicated: Your wand has been duplicated
     player_duplicated: $name's wand has been duplicated
     restored: Your wands have been restored
