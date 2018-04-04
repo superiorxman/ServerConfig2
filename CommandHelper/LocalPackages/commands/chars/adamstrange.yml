@@ -1,0 +1,18 @@
+class: adamstrange
+costumes:
+- chatcolor: '&c'
+  name: §4A§fd§ea§4m St§fr§ean§4ge
+  sig: pqHYvlsl5vT83jNnUwLwCDcV7G2qXQDztxwVdatHX/GePIxvfCyeq97mq2uXMJFGgh+xT0MVpfSAEgCKWZFyNK2+IUNJXlwnlhfFoSnVUfiIorbMhHDFAzpIo0XWExdj+tMYxWpMMknkAPHZnaevv/ME1tLlsNbYimtzvPzCuQIsVdEit/49wy86KqmM2F1zNdsTl6lOygYpqecmZjAnJHMbcyGUx2CKwrmYAfRbn7Ba3As5/bqQInCA/4Du9G8398U3HPyTKjWWBhoKoxp+O6bjp68vY4kLcJq4oOA4ZJ7pFv42UMIF3Eur+yFeK4vg3MOJcLfHHn7CbACbzRjY0E0AuUDDEEZzIILxhK/M1BE3fhFlOdylKR2XJG5/ifWrn4wEmjEgkRT5KBD4Xj1AAhv0Vv1IyGWvYfBkV+6NGMDkwFgEPYrWUyqps+yRDDOIJlmzRkQlQAmMtUSyBxMiXNOgsAJNEAqCyO8lLAyRBVpNCN3pv3lZJpfcFipYgq5HQBgc/eZy+CDK3HpglDekg/8E8prgHobRwGBaD+Kck2wU2BCrq9gbIsoIjYSl1vUkpJ47NHHCfP3QrVl/9MsgllAndzsYwFc8vSLCGhYn8OblMZltaYhs7pwcicZGAQKb47EhvIxCsGVTCm+ah6Bx6LwUeGDVbwmKJA/2p0X5CWk=
+  val: eyJ0aW1lc3RhbXAiOjE1MjE3ODUyMzUxODMsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk5NjUzZjNiMTY2ZTU3NmQ5ZDJkNjJkNTM0MWQ5ZTgyNjg5NTkyMWExNjA0YWQzYTFlOTQwZjVhNmUzYjU5In19fQ==
+items:
+- /give <plr> minecraft:fireworks 64 name:&8Jetpack Fuel
+- /give <plr> minecraft:elytra 1 70:1 34:5 name:&6Jetpack
+- /shot give <plr> energypistol
+permissions:
+  superherocity:
+  - essentials.tppos
+powers:
+- /tppos <x> <y> <z>
+speech: I am Adam Strange, I can teleport.
+trail: [
+  ]
