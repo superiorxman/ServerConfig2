@@ -8,7 +8,13 @@ register_command('whosit',
 
             @it = import('it')
             if(@it != null){
-                tmsg(@sender,@it[0].' is it!')
+                tmsg(@sender,@it.' is it!')
+                tmsg(@sender,'They are at ')
+                @ploc = ploc(@it)
+                tmsg(@sender,color('RED').'X: '.color('GOLD').integer(@ploc['x']))
+                tmsg(@sender,color('RED').'Y: '.color('GOLD').integer(@ploc['y']))
+                tmsg(@sender,color('RED').'Z: '.color('GOLD').integer(@ploc['z']))
+                tmsg(@sender,color('RED').'world: '.color('GOLD').@ploc['world'])
             }else{
                 tmsg(@sender,'No one is it at the moment.')
             }
@@ -18,14 +24,15 @@ register_command('whosit',
 )
 
 bind('entity_damage_player',null,array('type':'PLAYER'),@e){
-    @playerDoingDamage = get_player_from_entity_id(@e['id'])
+    @playerGettingDamaged = @e['player']
     @it = import('it')
-    if(@it != null && @playerDoingDamage == @it[0]){
-        @playerGettingDamaged = @e['player']
-        @it[0] = @playerGettingDamaged
-        @it[1] = time()
+    if(@it != null  && @playerGettingDamaged == @it){
+        @playerDoingDamage = player(@e['id'])
+        @it = @playerDoingDamage
+        //@it[1] = time()
         export('it',@it)
 
-        broadcast(color('GRAY').color('ITALIC').@playerDoingDamage.' tagged '.@playerGettingDamaged.'! '.@playerGettingDamaged.' is IT!')
+        broadcast(color('GRAY').color('ITALIC').@playerDoingDamage.' tagged '.@playerGettingDamaged.'! '.@playerDoingDamage.' is IT!')
+        broadcast(color('GRAY').color('ITALIC').'Do '.color('GREEN').'/whosit'.color('GRAY').color('ITALIC').' to find them!')
     }
 }

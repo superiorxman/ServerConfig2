@@ -247,9 +247,9 @@ bind('player_chat', null, null, @e) {
     }
 
     @it = import('it')
-    if(@it != null && @it[0] == @player){
-        @msg = color('DARK_RED').color('BOLD').'[IT] '.color('BLACK').color('ITALIC').color('UNDERLINE').color('STRIKETHROUGH').@msg    
-        //@msg = color('DARK_RED').color('BOLD').'[IT] '.@msg    
+    if(@it != null && @it == @player){
+        //@msg = color('DARK_RED').color('BOLD').'[IT] '.color('BLACK').color('ITALIC').color('UNDERLINE').color('STRIKETHROUGH').@msg    
+        @msg = color('DARK_RED').color('BOLD').'[IT] '.@msg    
     }
 
 

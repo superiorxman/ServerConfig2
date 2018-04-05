@@ -62,6 +62,11 @@ set_interval(5000,closure(
             }
         }
     }
+    @it = import('it')
+    @score = get_pscore('ReverseTag',@it)
+    @score += 1
+    set_pscore('ReverseTag',@it,@score)
+
 ))
 @players = all_players()
 foreach(@slot:@player in @players){
@@ -70,6 +75,8 @@ foreach(@slot:@player in @players){
     }
 }
 @randName = array_rand(@players)
-@it = array(@players[@randName[0]],time())
-export('it',@it)
-broadcast(color('GRAY').color('ITALIC').@players[@randName[0]].' is IT! Tag someone!')
+@randName = @players[@randName[0]]
+//@it = array(@players[@randName[0]],time())
+export('it',@randName)
+broadcast(color('GRAY').color('ITALIC').@randName.' is IT! Don\'t get tagged! You get points for being IT! ')
+broadcast(color('GRAY').color('ITALIC').'Do '.color('GREEN').'/whosit'.color('GRAY').color('ITALIC').' to find them!')

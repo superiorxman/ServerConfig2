@@ -20,9 +20,11 @@ bind('player_join',null,null,@event){
         }
     }
     @randName = array_rand(@plrs)
-    @it = array(@plrs[@randName[0]],time())
-    export('it',@it)
-    broadcast(color('GRAY').color('ITALIC').@plrs[@randName[0]].' is IT! Tag someone!')
+    @randName = @plrs[@randName[0]]
+    //@it = array(@plrs[@randName[0]],time())
+    export('it',@randName)
+    broadcast(color('GRAY').color('ITALIC').@randName.' is IT! Don\'t get tagged! You get points for being IT!')
+    broadcast(color('GRAY').color('ITALIC').'Do '.color('GREEN').'/whosit'.color('GRAY').color('ITALIC').' to find them!')
 
 
     if(has_permission(@plr,'is.criminal')){

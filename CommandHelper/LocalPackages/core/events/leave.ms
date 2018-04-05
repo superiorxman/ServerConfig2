@@ -25,7 +25,7 @@ bind('player_quit',null,null,@event){
     }
 
     @it = import('it')
-    if(@it != null && @player == @it[0]){
+    if(@it != null && @player == @it){
         @players = all_players()
         array_remove_values(@players,@player)
         foreach(@slot:@plr in @players){
@@ -34,8 +34,10 @@ bind('player_quit',null,null,@event){
             }
         }
         @randName = array_rand(@players)
-        @it = array(@players[@randName[0]],time())
-        export('it',@it)
-        broadcast(color('GRAY').color('ITALIC').@player.' quit, so now '.@players[@randName[0]].' is IT! Tag someone!')
+        @randName = @players[@randName[0]]
+        //@it = array(@players[@randName[0]],time())
+        export('it',@randName)
+        broadcast(color('GRAY').color('ITALIC').@player.' quit, so now '.@randName.' is IT! Don\'t get tagged! You get points for being IT!')
+        broadcast(color('GRAY').color('ITALIC').'Do '.color('GREEN').'/whosit'.color('GRAY').color('ITALIC').' to find them!')
     }
 }

@@ -765,6 +765,7 @@ groups:
       default: true
       prefix: '&f&lMortal&r'
     permissions:
+    - whos.it
     - command.quitjob
     - multiverse.access.infiniteparkour
     - command.effects
@@ -1939,6 +1940,7 @@ groups:
         - ch.alias.fanficlaser
   op:
     permissions:
+    - -powers.ultrainstinct
     - -powers.sunhealing
     - -chat.tictac
     - -chat.tofood
@@ -2214,25 +2216,6 @@ groups:
     options:
       prefix: '&2A&er&bc&4a&dd&6e &fTechnician'
       suffix: '&d&l&o'
-  fanfic8ca7fc56614b482a91dfbf8580ba273d:
-    inheritance:
-    - commonherotraits
-    worlds:
-      superherocity:
-        permissions:
-        - is.fanfic
-        - ch.alias.fanficchatcolor
-        - ch.alias.fanficname
-        - ch.alias.fanficlaser
-        - ch.alias.jump2
-        - ch.alias.jump1
-        - ch.alias.jump0
-        - ch.alias.haste2
-        - ch.alias.haste1
-        - ch.alias.haste0
-        - ch.alias.run2
-        - ch.alias.run1
-        - ch.alias.run0
   damienwayne:
     inheritance:
     - commonherotraits
@@ -2905,22 +2888,6 @@ groups:
     options:
       suffix: '&f'
       prefix: '&fNick Cage'
-  marshalllee:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&8M&bar&4sha&bl&8l &9Le&ce'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.entitytarget.bypass
-        - ch.alias.normalform
-        - libsdisguises.disguise.bat.-setinvisible
-        - libsdisguises.disguise.bat
-        - can.burninsun
-        - powers.float
-        - is.burningInSunlight
   hawkgirl:
     inheritance:
     - commonherotraits
@@ -3500,16 +3467,6 @@ groups:
         permissions:
         - powers.float
         - -essentials.protect.damage.fall
-  karadanvers:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&7Kara Danvers'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
   starsapphirecarolferris:
     inheritance:
     - commonherotraits
@@ -3590,18 +3547,6 @@ groups:
     options:
       suffix: '&A'
       prefix: '&AAlexa &CBliss'
-  bardock:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6Bar&edock'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
   batgirl:
     inheritance:
     - commonherotraits
@@ -3972,16 +3917,6 @@ groups:
         - headdb.category.*
         - headdb.open
         - ch.alias.create
-  johndoe:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&fJ&0o&4h&fn &4D&fo&4e'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.cat
   emmafrost:
     inheritance:
     - commonherotraits
@@ -4149,33 +4084,6 @@ groups:
       superherocity:
         permissions:
         - ch.alias.carryplayer
-  multiplex:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&3'
-      prefix: '&0M&3ul&0t&3ip&0l&3ex'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.cloneself
-  thelivingtribunal:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&e'
-      prefix: '&eThe &6L&ei&7v&9i&bn&6g &eT&9r&bi&9b&7u&ena&6l'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.destroyworld
-        - ch.alias.mindlock
-        - ch.alias.tp
-        - essentials.fly
-        - ch.alias.normalform
-        - ch.alias.grow
-        - kill.immune
-        - immune.destroyworld
   kirito:
     inheritance:
     - commonherotraits
@@ -4269,12 +4177,6 @@ groups:
       superherocity:
         permissions:
         - powers.throwfeather
-  colossus:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&7C&8o&4l&7o&ess&7u&4s'
   sasuke:
     inheritance:
     - commonherotraits
@@ -4402,17 +4304,6 @@ groups:
         - ch.alias.dropplayer
         - powers.herotransform
         - ch.alias.grouptp
-  poseidon:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&3P&9o&3s&9e&3i&9d&3o&9n'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   dannyphantom:
     inheritance:
     - commonherotraits
@@ -4601,12 +4492,6 @@ groups:
         - powers.float
         - powers.wallrun
         - -essentials.protect.damage.fall
-  captainuniversepeterparker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&4C&1a&9p&ft&1a&f&1&fin &fUniverse&8(PP&8)'
   scorpion:
     inheritance:
     - commonherotraits
@@ -4702,16 +4587,6 @@ groups:
     options:
       suffix: '&b'
       prefix: '&6S&4pee&6d &6D&1emo&6n'
-  theseconddoctor:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&1'
-      prefix: '&0T&fh&0e &8D&6o&8c&6t&8o&6r&8(&f2nd&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.sonicscrewdriver
   dva:
     inheritance:
     - commonherotraits
@@ -4755,12 +4630,6 @@ groups:
     options:
       suffix: '&7'
       prefix: '&7R&be&7y'
-  riphunter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&8R&6i&1p &8Hu&6nt&1er'
   raypalmer:
     inheritance:
     - commonherotraits
@@ -4850,12 +4719,6 @@ groups:
         permissions:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
-  dumbledore:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&d'
-      prefix: '&5Dum&dbl&5edo&dre'
   rasalghul:
     inheritance:
     - commonherotraits
@@ -4930,28 +4793,6 @@ groups:
     options:
       suffix: '&a'
       prefix: '&8X&0e&8n&ao&0m&ao&8r&0p&8h'
-  freddykrueger:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&4F&8r&4e&8d&4d&8y &4K&cr&8u&7e&6g&7e&6r'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.tppos
-  maxsteel:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&fMax &9Steel'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - ch.alias.vis
-        - ch.alias.invis
   timdrake:
     inheritance:
     - commonherotraits
@@ -4988,27 +4829,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
         - -essentials.protect.damage.fall
-  lebronjamesmiamiheat:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&4Le&fbr&con &cJa&fm&4es&8(&4M&fH&8)'
-  crystal:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6C&er&6y&es&6t&ea&6l'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - essentials.speed.fly
-        - ch.alias.earth
-        - powers.crystallightning
-        - ch.alias.wind
-        - powers.fireballpunch
   jackjoyce:
     inheritance:
     - commonherotraits
@@ -5066,22 +4886,6 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
-  antivenom:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&fA&7n&0t&7i-&fV&7e&0n&7o&fm'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.web
-        - -essentials.protect.damage.fall
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - ch.alias.websling
-        - powers.wallclimb
-        - powers.antivenomattack
   mysterio:
     inheritance:
     - commonherotraits
@@ -5325,32 +5129,6 @@ groups:
     options:
       suffix: '&6'
       prefix: '&1Ne&9wt &6Sc&eama&4n&eder'
-  scarletwitch:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&4S&ccar&4let &4W&citc&4h'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.float
-        - ch.alias.confuse
-  doctorfatekentnelson:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&6D&9o&6ct&9o&6r F&9a&6te&8(KN&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - weakto.magicarrow
   stargirl:
     inheritance:
     - commonherotraits
@@ -5361,17 +5139,6 @@ groups:
       superherocity:
         permissions:
         - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  goldenninja:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6Golden &eNinja'
-    worlds:
-      superherocity:
-        permissions:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
   galactus:
@@ -5409,93 +5176,6 @@ groups:
         - powers.immunity.poison
         - ch.alias.dropplayer
         - ch.alias.carryplayer
-  loki:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&6L&2o&8k&bi'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.disguise
-        - essentials.tppos
-        - ch.alias.stopmindcontrol
-        - ch.alias.mindcontrol
-        - libsdisguises.disguise.zombie_villager.-setinvisible
-        - libsdisguises.disguise.zombie.-setinvisible
-        - libsdisguises.disguise.wolf.-setinvisible
-        - libsdisguises.disguise.wither_skeleton.-setinvisible
-        - libsdisguises.disguise.wither.-setinvisible
-        - libsdisguises.disguise.witch.-setinvisible
-        - libsdisguises.disguise.villager.-setinvisible
-        - libsdisguises.disguise.undead_horse.-setinvisible
-        - libsdisguises.disguise.squid.-setinvisible
-        - libsdisguises.disguise.spider.-setinvisible
-        - libsdisguises.disguise.snowman.-setinvisible
-        - libsdisguises.disguise.slime.-setinvisible
-        - libsdisguises.disguise.skeleton_horse.-setinvisible
-        - libsdisguises.disguise.skeleton.-setinvisible
-        - libsdisguises.disguise.silverfish.-setinvisible
-        - libsdisguises.disguise.sheep.-setinvisible
-        - libsdisguises.disguise.rabbit.-setinvisible
-        - libsdisguises.disguise.player.-setinvisible
-        - libsdisguises.disguise.pig_zombie.-setinvisible
-        - libsdisguises.disguise.pig.-setinvisible
-        - libsdisguises.disguise.ocelot.-setinvisible
-        - libsdisguises.disguise.mushroom_cow.-setinvisible
-        - libsdisguises.disguise.mule.-setinvisible
-        - libsdisguises.disguise.magma_cube.-setinvisible
-        - libsdisguises.disguise.iron_golem.-setinvisible
-        - libsdisguises.disguise.horse.-setinvisible
-        - libsdisguises.disguise.guardian.-setinvisible
-        - libsdisguises.disguise.giant.-setinvisible
-        - libsdisguises.disguise.ghast.-setinvisible
-        - libsdisguises.disguise.endermite.-setinvisible
-        - libsdisguises.disguise.enderman.-setinvisible
-        - libsdisguises.disguise.elder_guardian.-setinvisible
-        - libsdisguises.disguise.donkey.-setinvisible
-        - libsdisguises.disguise.creeper.-setinvisible
-        - libsdisguises.disguise.cow.-setinvisible
-        - libsdisguises.disguise.chicken.-setinvisible
-        - libsdisguises.disguise.cave_spider.-setinvisible
-        - libsdisguises.disguise.blaze.-setinvisible
-        - libsdisguises.disguise.bat.-setinvisible
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-  thorjanefoster:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&8T&7h&8o&7r&8(&7JF&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - essentials.lightning
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  supergirl:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&cS&9u&ep&9e&9rg&cirl'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - -essentials.protect.damage.fall
-        - powers.wallrun
-        - weakto.kryptonite
   firefly:
     inheritance:
     - commonherotraits
@@ -5517,18 +5197,6 @@ groups:
       superherocity:
         permissions:
         - -essentials.protect.damage.fall
-  killerfrostcaitlinsnow:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&9K&1i&9l&8ler &9F&1r&9o&8st&8(&bCS&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.freezewater
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   jeangrey:
     inheritance:
     - commonherotraits
@@ -5541,20 +5209,6 @@ groups:
         - powers.float
         - ch.alias.msg
         - powers.herotransform
-  invisiblewoman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&9Inv&bi&9s&1ible &9W&bo&9m&0a&9n'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.vis
-        - ch.alias.invis
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
   trigon:
     inheritance:
     - commonherotraits
@@ -5795,17 +5449,6 @@ groups:
     options:
       suffix: '&9'
       prefix: '&9C&4y&9c&el&9ops'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  percyjackson:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&3'
-      prefix: '&3P&9e&3r&9c&3y&9 J&3a&9c&3k&9s&3o&9n'
     worlds:
       superherocity:
         permissions:
@@ -6191,18 +5834,6 @@ groups:
         permissions:
         - powers.fireballpunch
         - essentials.fly
-  redtornado:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&cRe&4d &6To&9r&1n&ea&6d&co'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   greenlanternjessicacruz:
     inheritance:
     - commonherotraits
@@ -6229,17 +5860,6 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.transmute
         - -essentials.protect.entitytarget.bypass
-  jackfrostriseoftheguardians:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&1J&9a&3ck &fF&1r&bo&9st&8(&1R&9O&3T&fG&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.freezewater
-        - essentials.fly
   kyloren:
     inheritance:
     - commonherotraits
@@ -6255,22 +5875,6 @@ groups:
     worlds:
       superherocity:
         permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  whitemartian:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&fWh&7it&0e &7Ma&frti&7a&0n'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.undisguise
-        - ch.alias.disguise
         - essentials.speed
         - essentials.speed.fly
         - essentials.fly
@@ -6301,36 +5905,6 @@ groups:
         permissions:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
-  blacklanternmartianmanhunter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&8(&fM&7M&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - libsdisguises.disguise.player
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - ch.alias.vis
-        - ch.alias.invis
-        - ch.alias.speak
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.mindcontrol
-        - ch.alias.unconfuse
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - ch.alias.confuse
-        - ch.alias.stopmindcontrol
-        - powers.wallrun
-        - -essentials.protect.entitytarget.bypass
-        - ch.alias.mindlock
-        - ch.alias.msg
   carnage:
     inheritance:
     - commonherotraits
@@ -6456,55 +6030,6 @@ groups:
         - ch.alias.dropplayer
         - powers.herotransform
         - ch.alias.grouptp
-  gokukaioken:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&cG&1o&6ku&8(&cK&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.tp
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - powers.herotransform
-        - ch.alias.grouptp
-  gokusupersaiyanbluekaioken:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&bG&1o&6ku&8(&bSSB&f+&cK&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.tp
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - powers.herotransform
-        - ch.alias.grouptp
-  cyborg:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&7C&by&8b&4o&7r&8g'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tp
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   fanfic391762eb24f64d9584d6bfac682d575a:
     inheritance:
     - commonherotraits
@@ -6768,37 +6293,6 @@ groups:
     options:
       suffix: '&7'
       prefix: '&8Wint&7er &4Sol&cdier'
-  doctorstrange:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&cD&9octo&cr &9S&ctrang&9e'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - powers.float
-        - essentials.enchant
-        - -essentials.enchantments.allowunsafe
-        - essentials.enchantments.*
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - powers.gravityshift
-  dormammu:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&eD&6o&cr&4m&7a&8m&8m&0u'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - essentials.tppos
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - ch.alias.disguise
   ironmanmkxv:
     inheritance:
     - commonherotraits
@@ -6949,12 +6443,6 @@ groups:
     options:
       suffix: '&9'
       prefix: '&9Gr&de&9nin&dj&9a'
-  deathstroke:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&8Death&6stroke'
   vibe:
     inheritance:
     - commonherotraits
@@ -6967,44 +6455,6 @@ groups:
         - essentials.tppos
         - ch.alias.carryplayer
         - essentials.back
-  bigchill:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&bB&0i&bg &0C&bh&0i&bl&0l'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - powers.chill
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - essentials.fly
-  savitar:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&e'
-      prefix: '&eS&4a&9v&ei&9t&4a&er'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.modifyspeed
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - ch.alias.vis
-        - ch.alias.invis
-        - essentials.warps.speedforce
-        - ch.alias.speedforceteleport
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.tppos
-        - powers.wallrun
   zoom:
     inheritance:
     - commonherotraits
@@ -7057,84 +6507,6 @@ groups:
         - worldedit.navigation.thru.command
         - powers.wallrun
         - ch.alias.thrudestabilize
-  apocalypse:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&3'
-      prefix: '&3A&9p&3o&9ca&3lypse'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.tounderworld
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.tp
-        - -essentials.protect.damage.fall
-        - ch.alias.underworld
-        - libsdisguises.disguise.player
-        - libsdisguises.disguise.zombiehorse.-setinvisible
-        - libsdisguises.disguise.killerbunny.-setinvisible
-        - libsdisguises.disguise.illusioner.-setinvisible
-        - libsdisguises.disguise.giant.-setinvisible
-        - libsdisguises.disguise.elderguardian.-setinvisible
-        - libsdisguises.disguise.wither.-setinvisible
-        - libsdisguises.disguise.enderdragon.-setinvisible
-        - libsdisguises.disguise.snowgolem.-setinvisible
-        - libsdisguises.disguise.zombievillager.-setinvisible
-        - libsdisguises.disguise.zombie.-setinvisible
-        - libsdisguises.disguise.witherskeleton.-setinvisible
-        - libsdisguises.disguise.witch.-setinvisible
-        - libsdisguises.disguise.vindicator.-setinvisible
-        - libsdisguises.disguise.vex.-setinvisible
-        - libsdisguises.disguise.stray.-setinvisible
-        - libsdisguises.disguise.slime.-setinvisible
-        - libsdisguises.disguise.skeleton.-setinvisible
-        - libsdisguises.disguise.silverfish.-setinvisible
-        - libsdisguises.disguise.shulker.-setinvisible
-        - libsdisguises.disguise.magmacube.-setinvisible
-        - libsdisguises.disguise.husk.-setinvisible
-        - libsdisguises.disguise.guardian.-setinvisible
-        - libsdisguises.disguise.ghast.-setinvisible
-        - libsdisguises.disguise.evoker.-setinvisible
-        - libsdisguises.disguise.endermite.-setinvisible
-        - libsdisguises.disguise.creeper.-setinvisible
-        - libsdisguises.disguise.blaze.-setinvisible
-        - libsdisguises.disguise.pigzombie.-setinvisible
-        - libsdisguises.disguise.wolf.-setinvisible
-        - libsdisguises.disguise.spider.-setinvisible
-        - libsdisguises.disguise.polarbear.-setinvisible
-        - libsdisguises.disguise.llama.-setinvisible
-        - libsdisguises.disguise.irongolem.-setinvisible
-        - libsdisguises.disguise.enderman.-setinvisible
-        - libsdisguises.disguise.cavespider.-setinvisible
-        - libsdisguises.disguise.villager.-setinvisible
-        - libsdisguises.disguise.squid.-setinvisible
-        - libsdisguises.disguise.skeletonhorse.-setinvisible
-        - libsdisguises.disguise.sheep.-setinvisible
-        - libsdisguises.disguise.rabbit.-setinvisible
-        - libsdisguises.disguise.pig.-setinvisible
-        - libsdisguises.disguise.parrot.-setinvisible
-        - libsdisguises.disguise.ocelot.-setinvisible
-        - libsdisguises.disguise.mooshroom.-setinvisible
-        - libsdisguises.disguise.horse.-setinvisible
-        - libsdisguises.disguise.donkey.-setinvisible
-        - libsdisguises.disguise.cow.-setinvisible
-        - libsdisguises.disguise.chicken.-setinvisible
-        - libsdisguises.disguise.bat.-setinvisible
-        - libsdisguises.undisguise
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - ch.alias.unconfuse
-        - ch.alias.confuse
-        - ch.alias.speak
-        - ch.alias.mindcontrol
-        - ch.alias.stopmindcontrol
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
   blackcanarydinahlance:
     inheritance:
     - commonherotraits
@@ -7179,17 +6551,6 @@ groups:
       superherocity:
         permissions:
         - ch.alias.psypush
-  lukeskywalker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&8L&0u&8ke &0S&8ky&0w&8a&al&8ker'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - ch.alias.forcepush
   junkrat:
     inheritance:
     - commonherotraits
@@ -7269,18 +6630,6 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.websling
         - powers.wallclimb
-  darthmaul:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&4D&0a&4r&0t&4h M&0au&4l'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - ch.alias.forcechoke
-        - ch.alias.forcepush
   deadmanbostonbrand:
     inheritance:
     - commonherotraits
@@ -7302,31 +6651,6 @@ groups:
     options:
       suffix: '&c'
       prefix: '&eSh&4o&ec&7k&4e&7r'
-  toothless:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&0T&eoo&0th&8le&0ss'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.flywithrider
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  captainatom:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&bC&4a&bptai&4n &bAt&4om'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - -essentials.protect.damage.fall
   godfallsuperman:
     inheritance:
     - commonherotraits
@@ -7377,21 +6701,6 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.dropplayer
         - powers.wallrun
-  thor:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&eT&4h&9o&fr'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.lightning
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   agentvenom:
     inheritance:
     - commonherotraits
@@ -7433,20 +6742,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
         - ch.alias.bodyslide
-  terra:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&eT&8e&6r&8r&7a'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - essentials.fly
-        - ch.alias.earth
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
   zatanna:
     inheritance:
     - commonherotraits
@@ -7476,31 +6771,6 @@ groups:
         - -essentials.protect.damage.fall
         - powers.wallrun
         - weakto.kryptonite
-  blacklanterneobardthawne:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&0B&8l&7a&fc&0k&8-&7L&fa&0nte&8r&7n&8(&fE&8T&8)'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.powers
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - essentials.warps.speedforce
-        - essentials.tppos
-        - ch.alias.carryplayer
-        - ch.alias.speedforceteleport
-        - powers.wallrun
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - -essentials.protect.entitytarget.bypass
   firestormraymondstein:
     inheritance:
     - commonherotraits
@@ -7547,31 +6817,6 @@ groups:
     options:
       suffix: '&a'
       prefix: '&2Y&ao&2d&aa'
-  bluelanternbarryallen:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&fB&1l&9u&fe&8-&fL&1a&9nte&1r&fn&8(&fB&bA&8)'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.powers
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - essentials.warps.speedforce
-        - essentials.tppos
-        - ch.alias.carryplayer
-        - ch.alias.speedforceteleport
-        - powers.wallrun
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - worldedit.navigation.thru.command
   greenlanternhaljordan:
     inheritance:
     - commonherotraits
@@ -7638,18 +6883,6 @@ groups:
         - ch.alias.normalsize
         - ch.alias.shrink
         - ch.alias.grow
-  darthvader:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&8D&0a&8r&0t&8h V&0ade&8r'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - ch.alias.forcechoke
-        - ch.alias.forcepush
   shazam:
     inheritance:
     - commonherotraits
@@ -7718,28 +6951,6 @@ groups:
         - -essentials.protect.damage.fall
         - ch.alias.dropplayer
         - ch.alias.carryplayer
-  darthsidious:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&0'
-      prefix: '&0Darth Sidious'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - ch.alias.forcechoke
-        - ch.alias.forcepush
-  anakinskywalker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&8A&7n&0a&7k&8i&7n &8S&7k&0y&8w&7a&bl&8k&0e&7r'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
   bluebeetlejaimereyes:
     inheritance:
     - commonherotraits
@@ -7780,36 +6991,6 @@ groups:
         - ch.alias.websling
         - ch.alias.dropplayer
         - ch.alias.carryplayer
-  greenarrow:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2Gre&0e&2n A&0r&2row'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.arrowluck
-        - ch.alias.arrowwaterbreathe
-        - ch.alias.arrowharm
-        - ch.alias.arrowslow
-        - ch.alias.arrowweak
-        - ch.alias.arrowlongpoison
-        - ch.alias.arrowstrongpoison
-        - ch.alias.arrowinvisible
-        - ch.alias.arrowlongleaping
-        - ch.alias.arrowstrongleaping
-        - ch.alias.arrowlongstrength
-        - ch.alias.arrowstrongstrength
-        - ch.alias.arrownightvision
-        - ch.alias.arrowhealing
-        - ch.alias.arrowfireresist
-        - ch.alias.arrowlongswift
-        - ch.alias.arrowstrongswift
-        - ch.alias.arrowlongregen
-        - ch.alias.arrowstrongregen
-        - ch.alias.arrow
-        - ch.alias.arrowspectral
   blackbolt:
     inheritance:
     - commonherotraits
@@ -7896,16 +7077,6 @@ groups:
     options:
       suffix: '&4'
       prefix: '&fU&4gandan &fK&4nuckles'
-  joker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&5'
-      prefix: '&fJo&2k&5er'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.joybuzzer
   acceleratedman:
     inheritance:
     - commonherotraits
@@ -7928,48 +7099,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.speedforceteleport
         - powers.wallrun
-  clarkkent:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&7Clark Kent'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-  superman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&cS&9u&ep&9e&9rm&can'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - -essentials.protect.damage.fall
-        - powers.wallrun
-        - powers.nofalldamage
-        - weakto.kryptonite
-  adamwarlock:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&4A&6d&ea&6m &4W&ba&er&6l&bo&ec&4k'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - essentials.fly
-        - ch.alias.magicpush
   destroyer:
     inheritance:
     - commonherotraits
@@ -8017,36 +7146,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.speedforceteleport
         - powers.wallrun
-  arsenal:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&4Ar&cse&4na&cl'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - ch.alias.arrowluck
-        - ch.alias.arrowwaterbreathe
-        - ch.alias.arrowharm
-        - ch.alias.arrowslow
-        - ch.alias.arrowweak
-        - ch.alias.arrowlongpoison
-        - ch.alias.arrowstrongpoison
-        - ch.alias.arrowinvisible
-        - ch.alias.arrowlongleaping
-        - ch.alias.arrowstrongleaping
-        - ch.alias.arrowlongstrength
-        - ch.alias.arrowstrongstrength
-        - ch.alias.arrownightvision
-        - ch.alias.arrowhealing
-        - ch.alias.arrowfireresist
-        - ch.alias.arrowlongswift
-        - ch.alias.arrowstrongswift
-        - ch.alias.arrowlongregen
-        - ch.alias.arrowstrongregen
-        - ch.alias.arrow
   kilgore:
     inheritance:
     - commonherotraits
@@ -8189,17 +7288,6 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
-  killercroc:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2Killer &aCroc'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   arkhamknight:
     inheritance:
     - commonherotraits
@@ -8439,81 +7527,6 @@ groups:
         - kill.immune
         - ch.alias.tp
         - -essentials.protect.entitytarget.bypass
-  ninjagocoleghost:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&6Ninjago &0Co&8le&b(Ghost)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - worldedit.navigation.thru.command
-        - ch.alias.spinjutsu
-  pennywise:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&4P&ce&fn&eny&4w&ei&fs&4e'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.vis
-        - ch.alias.invis
-        - libsdisguises.disguise.play
-        - libsdisguises.disguise.zombiehorse.-setinvisible
-        - libsdisguises.disguise.killerbunny.-setinvisible
-        - libsdisguises.disguise.illusioner.-setinvisible
-        - libsdisguises.disguise.giant.-setinvisible
-        - libsdisguises.disguise.elderguardian.-setinvisible
-        - libsdisguises.disguise.wither.-setinvisible
-        - libsdisguises.disguise.enderdragon.-setinvisible
-        - libsdisguises.disguise.snowgolem.-setinvisible
-        - libsdisguises.disguise.zombievillager.-setinvisible
-        - libsdisguises.disguise.zombie.-setinvisible
-        - libsdisguises.disguise.witherskeleton.-setinvisible
-        - libsdisguises.disguise.witch.-setinvisible
-        - libsdisguises.disguise.vindicator.-setinvisible
-        - libsdisguises.disguise.vex.-setinvisible
-        - libsdisguises.disguise.stray.-setinvisible
-        - libsdisguises.disguise.slime.-setinvisible
-        - libsdisguises.disguise.skeleton.-setinvisible
-        - libsdisguises.disguise.silverfish.-setinvisible
-        - libsdisguises.disguise.shulker.-setinvisible
-        - libsdisguises.disguise.magmacube.-setinvisible
-        - libsdisguises.disguise.husk.-setinvisible
-        - libsdisguises.disguise.guardian.-setinvisible
-        - libsdisguises.disguise.ghast.-setinvisible
-        - libsdisguises.disguise.evoker.-setinvisible
-        - libsdisguises.disguise.endermite.-setinvisible
-        - libsdisguises.disguise.creeper.-setinvisible
-        - libsdisguises.disguise.blaze.-setinvisible
-        - libsdisguises.disguise.pigzombie.-setinvisible
-        - libsdisguises.disguise.wolf.-setinvisible
-        - libsdisguises.disguise.spider.-setinvisible
-        - libsdisguises.disguise.polarbear.-setinvisible
-        - libsdisguises.disguise.llama.-setinvisible
-        - libsdisguises.disguise.irongolem.-setinvisible
-        - libsdisguises.disguise.enderman.-setinvisible
-        - libsdisguises.disguise.cavespider.-setinvisible
-        - libsdisguises.disguise.villager.-setinvisible
-        - libsdisguises.disguise.squid.-setinvisible
-        - libsdisguises.disguise.skeletonhorse.-setinvisible
-        - libsdisguises.disguise.sheep.-setinvisible
-        - libsdisguises.disguise.rabbit.-setinvisible
-        - libsdisguises.disguise.pig.-setinvisible
-        - libsdisguises.disguise.parrot.-setinvisible
-        - libsdisguises.disguise.ocelot.-setinvisible
-        - libsdisguises.disguise.mooshroom.-setinvisible
-        - libsdisguises.disguise.horse.-setinvisible
-        - libsdisguises.disguise.donkey.-setinvisible
-        - libsdisguises.disguise.cow.-setinvisible
-        - libsdisguises.disguise.chicken.-setinvisible
-        - libsdisguises.disguise.bat.-setinvisible
-        - libsdisguises.undisguise
-        - powers.pennywiseillusion
   blackflash:
     inheritance:
     - commonherotraits
@@ -8635,25 +7648,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
         - weakto.kryptonite
-  cosmicarmorsuperman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&cC&eo&9s&6mi&9c &4A&2r&9m&6o&4r S&9u&ep&9er&4man'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.fly
-        - weakto.kryptonite
-        - powers.forget
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - powers.cantdie
   orangelanternlarfleeze:
     inheritance:
     - commonherotraits
@@ -8717,23 +7711,6 @@ groups:
         - ch.alias.dropplayer
         - essentials.tppos
         - powers.wallrun
-  hela:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2H&8e&0l&aa'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.enchant
-        - -essentials.enchantments.allowunsafe
-        - essentials.enchantments.*
-        - ch.alias.portaltp
-        - ch.alias.speak
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
   hit:
     inheritance:
     - commonherotraits
@@ -8823,21 +7800,6 @@ groups:
         - ch.alias.carryplayer
         - -essentials.protect.damage.fall
         - powers.wallrun
-  spidermanpeterparker:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&4Sp&fi&4d&0e&4r-M&0a&4n&8(PP)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.web
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - -essentials.protect.damage.fall
-        - ch.alias.websling
-        - powers.wallclimb
   goku:
     inheritance:
     - commonherotraits
@@ -8906,24 +7868,6 @@ groups:
         - ch.alias.dropplayer
         - powers.herotransform
         - ch.alias.grouptp
-  deathdc:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tphere
-        - ch.alias.tp
-        - powers.onepunch
-  daredevil:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&c'
-      prefix: '&4D&care&4d&cevil'
   doctordoom:
     inheritance:
     - commonherotraits
@@ -8935,19 +7879,6 @@ groups:
         permissions:
         - essentials.tppos
         - ch.alias.explode
-  ghostriderjohnnyblaze:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&8'
-      prefix: '&8Gh&0o&8st R&7i&8der&8(&6J&cB&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - powers.fireballpunch
-        - powers.wallrun
-        - ch.alias.flame
   batman:
     inheritance:
     - commonherotraits
@@ -8958,71 +7889,6 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
-  spectre:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2S&0p&7e&ac&0t&7r&2e'
-    worlds:
-      superherocity:
-        permissions:
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - ch.alias.vis
-        - ch.alias.invis
-        - ch.alias.normalsize
-        - ch.alias.grow
-        - essentials.fly
-        - powers.onepunch
-  hades:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&4Hades'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.fly
-        - powers.fireballPunch
-      survival112_nether:
-        permissions:
-        - essentials.warp.*
-        - essentials.warp
-  martianmanhunter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2M&4a&2rt&9i&2an &9Man&2hunter'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - libsdisguises.disguise.player
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - ch.alias.vis
-        - ch.alias.invis
-        - ch.alias.speak
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.mindcontrol
-        - ch.alias.unconfuse
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - ch.alias.confuse
-        - ch.alias.stopmindcontrol
-        - powers.wallrun
-        - ch.alias.mindlock
-        - ch.alias.msg
   onepunchman:
     inheritance:
     - commonherotraits
@@ -9064,72 +7930,12 @@ groups:
     options:
       suffix: '&2'
       prefix: '&aT&8h&2e &2R&2i&5d&5dler'
-  fanfic3639172baa0f498d932218addf094675:
-    inheritance:
-    - commonherotraits
-    worlds:
-      superherocity:
-        permissions:
-        - is.fanfic
-        - ch.alias.fanficchatcolor
-        - ch.alias.fanficname
-        - ch.alias.fanficlaser
-        - ch.alias.jump2
-        - ch.alias.jump1
-        - ch.alias.jump0
-        - ch.alias.haste2
-        - ch.alias.haste1
-        - ch.alias.haste0
-        - ch.alias.run2
-        - ch.alias.run1
-        - ch.alias.run0
-    options:
-      prefix: '&rDa wea'
-  killmonger:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6Er&0ik &6Kill&0monger'
-  redhulk:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&4Red &lH&c&lU&4&lLK'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-  deadpool:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&4'
-      prefix: '&4D&0ea&4dp&0oo&4l'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.bodyslide
-        - ch.alias.tpradius
   santaclaus:
     inheritance:
     - commonherotraits
     options:
       suffix: '&c'
       prefix: '&4S&fa&0n&4t&0a &4C&0l&fa&4u&fs'
-  theeleventhdoctor:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&1'
-      prefix: '&5The &4Doc&5tor&8(&f11th&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.sonicscrewdriver
   thanos:
     inheritance:
     - commonherotraits
@@ -9236,73 +8042,6 @@ groups:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dropplayer
-  blackracerbarryallen:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&8B&7l&6a&8c&7k &6R&ea&8c&6e&er&8(&6B&8)'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.powers
-        - powers.onepunch
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - essentials.warps.speedforce
-        - essentials.tppos
-        - ch.alias.speedforceteleport
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - powers.wallrun
-        - -essentials.protect.entitytarget.bypass
-        - kill.immune
-        - powers.onepunch
-  doctormanhattan:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&bD&3o&bct&3o&br &bM&3a&bnhatt&3a&bn'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.skull.*
-        - essentials.skull
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - essentials.fly
-        - ch.alias.tphere
-        - ch.alias.tp
-        - ch.alias.explode
-  fanfic2aaef4d11ff74a46ac2b7e07aa9c3303:
-    inheritance:
-    - commonherotraits
-    worlds:
-      superherocity:
-        permissions:
-        - is.fanfic
-        - ch.alias.fanficchatcolor
-        - ch.alias.fanficname
-        - ch.alias.fanficlaser
-        - ch.alias.jump2
-        - ch.alias.jump1
-        - ch.alias.jump0
-        - ch.alias.haste2
-        - ch.alias.haste1
-        - ch.alias.haste0
-        - ch.alias.run2
-        - ch.alias.run1
-        - ch.alias.run0
-    options:
-      prefix: '&r&fU&1S&4A'
   dickgrayson:
     inheritance:
     - commonherotraits
@@ -9347,42 +8086,6 @@ groups:
         - worldedit.navigation.thru.command
         - powers.wallrun
         - ch.alias.darkflash
-  apollo:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&eA&fp&eo&fll&eo'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.arrowluck
-        - ch.alias.arrowwaterbreathe
-        - ch.alias.arrowharm
-        - ch.alias.arrowslow
-        - ch.alias.arrowweak
-        - ch.alias.arrowlongpoison
-        - ch.alias.arrowstrongpoison
-        - ch.alias.arrowinvisible
-        - ch.alias.arrowlongleaping
-        - ch.alias.arrowstrongleaping
-        - ch.alias.arrowlongstrength
-        - ch.alias.arrowstrongstrength
-        - ch.alias.arrownightvision
-        - ch.alias.arrowhealing
-        - ch.alias.arrowfireresist
-        - ch.alias.arrowlongswift
-        - ch.alias.arrowstrongswift
-        - ch.alias.arrowlongregen
-        - ch.alias.arrowstrongregen
-        - ch.alias.arrow
-        - ch.alias.arrowspectral
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - powers.wallrun
   boostergold:
     inheritance:
     - commonherotraits
@@ -9445,142 +8148,6 @@ groups:
         - ch.alias.speedforceteleport
         - -essentials.protect.entitytarget.bypass
         - kill.immune
-  mrmxyzptlk:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&6M&5r&6. &5M&6x&5y&6z&5p&6t&5l&6k'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.fly
-        - essentials.tppos
-        - -essentials.protect.damage.fall
-        - essentials.back
-        - -esssentials.warps.*
-        - powers.depower
-        - libsdisguises.disguise.zombie_villager.-setinvisible
-        - libsdisguises.disguise.zombie.-setinvisible
-        - libsdisguises.disguise.wolf.-setinvisible
-        - libsdisguises.disguise.wither_skeleton.-setinvisible
-        - libsdisguises.disguise.wither.-setinvisible
-        - libsdisguises.disguise.witch.-setinvisible
-        - libsdisguises.disguise.villager.-setinvisible
-        - libsdisguises.disguise.undead_horse.-setinvisible
-        - libsdisguises.disguise.squid.-setinvisible
-        - libsdisguises.disguise.spider.-setinvisible
-        - libsdisguises.disguise.snowman.-setinvisible
-        - libsdisguises.disguise.slime.-setinvisible
-        - libsdisguises.disguise.skeleton_horse.-setinvisible
-        - libsdisguises.disguise.skeleton.-setinvisible
-        - libsdisguises.disguise.silverfish.-setinvisible
-        - libsdisguises.disguise.sheep.-setinvisible
-        - libsdisguises.disguise.rabbit.-setinvisible
-        - libsdisguises.disguise.pig_zombie.-setinvisible
-        - libsdisguises.disguise.pig.-setinvisible
-        - libsdisguises.disguise.ocelot.-setinvisible
-        - libsdisguises.disguise.mushroom_cow.-setinvisible
-        - libsdisguises.disguise.mule.-setinvisible
-        - libsdisguises.disguise.magma_cube.-setinvisible
-        - libsdisguises.disguise.iron_golem.-setinvisible
-        - libsdisguises.disguise.horse.-setinvisible
-        - libsdisguises.disguise.guardian.-setinvisible
-        - libsdisguises.disguise.giant.-setinvisible
-        - libsdisguises.disguise.ghast.-setinvisible
-        - libsdisguises.disguise.endermite.-setinvisible
-        - libsdisguises.disguise.enderman.-setinvisible
-        - libsdisguises.disguise.elder_guardian.-setinvisible
-        - libsdisguises.disguise.donkey.-setinvisible
-        - libsdisguises.disguise.creeper.-setinvisible
-        - libsdisguises.disguise.cow.-setinvisible
-        - libsdisguises.disguise.chicken.-setinvisible
-        - libsdisguises.disguise.cave_spider.-setinvisible
-        - libsdisguises.disguise.blaze.-setinvisible
-        - libsdisguises.disguise.bat.-setinvisible
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - ch.alias.empower
-        - ch.alias.tp
-        - ch.alias.tphere
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-  kidflashwallywest:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&e'
-      prefix: '&eK&4i&ed &4F&el&4a&es&4h&e&8(&4W&eW&8)'
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.back
-        - ch.alias.powers
-        - ch.alias.tp
-        - ch.alias.speedforceteleport
-        - ch.alias.speedforcebuffs
-      superherocity:
-        permissions:
-        - essentials.warps.speedforce
-        - essentials.tppos
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - ch.alias.speedforceteleport
-        - powers.thru.destabilize
-        - worldedit.navigation.thru.command
-        - powers.wallrun
-        - ch.alias.speedforcewhirlwind
-        - powers.herotransform
-  odin:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&6O&ed&bi&7n'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.destroyworld
-        - essentials.fly
-        - ch.alias.mindlock
-        - ch.alias.yell
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - essentials.enchant
-        - -essentials.enchantments.allowunsafe
-        - essentials.enchantments.*
-        - powers.depower
-        - ch.alias.normalform
-        - ch.alias.grow
-        - ch.alias.tp
-  thebeyonder:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&e'
-      prefix: '&7Th&fe &7B&fe&ey&7o&en&fd&7er'
-    worlds:
-      superherocity:
-        permissions:
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
-        - powers.depower
-        - powers.destroyworld
-        - essentials.fly
-        - ch.alias.mindcontrol
-        - ch.alias.tp
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - libsdisguises.disguise.player
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - immune.destroyworld
   xlr8:
     inheritance:
     - commonherotraits
@@ -9611,18 +8178,6 @@ groups:
         - ch.alias.carryplayer
         - -essentials.protect.damage.fall
         - ch.alias.rasengan
-  alienx:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&0A&8li&7en &2X'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-        - powers.destroyworld
-        - essentials.fly
   gokusupersaiyan2:
     inheritance:
     - commonherotraits
@@ -9646,110 +8201,6 @@ groups:
     options:
       suffix: '&5'
       prefix: '&5B&0lac&5k &5W&0ido&5w'
-  gokuultrainstinct:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&7G&1o&6ku&8(&bU&7I&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.ultrainstinct
-        - powers.float
-        - ch.alias.tp
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - powers.herotransform
-        - ch.alias.grouptp
-  beastboychangeling:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&5B&2ea&0s&5t B&7o&2y'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.wallclimb
-        - ch.alias.grow
-        - ch.alias.normalsize
-        - ch.alias.shrink
-        - libsdisguises.disguise.zombiehorse.-setinvisible
-        - libsdisguises.disguise.killerbunny.-setinvisible
-        - libsdisguises.disguise.illusioner.-setinvisible
-        - libsdisguises.disguise.giant.-setinvisible
-        - libsdisguises.disguise.elderguardian.-setinvisible
-        - libsdisguises.disguise.wither.-setinvisible
-        - libsdisguises.disguise.enderdragon.-setinvisible
-        - libsdisguises.disguise.snowgolem.-setinvisible
-        - libsdisguises.disguise.zombievillager.-setinvisible
-        - libsdisguises.disguise.zombie.-setinvisible
-        - libsdisguises.disguise.witherskeleton.-setinvisible
-        - libsdisguises.disguise.witch.-setinvisible
-        - libsdisguises.disguise.vindicator.-setinvisible
-        - libsdisguises.disguise.vex.-setinvisible
-        - libsdisguises.disguise.stray.-setinvisible
-        - libsdisguises.disguise.slime.-setinvisible
-        - libsdisguises.disguise.skeleton.-setinvisible
-        - libsdisguises.disguise.silverfish.-setinvisible
-        - libsdisguises.disguise.shulker.-setinvisible
-        - libsdisguises.disguise.magmacube.-setinvisible
-        - libsdisguises.disguise.husk.-setinvisible
-        - libsdisguises.disguise.guardian.-setinvisible
-        - libsdisguises.disguise.ghast.-setinvisible
-        - libsdisguises.disguise.evoker.-setinvisible
-        - libsdisguises.disguise.endermite.-setinvisible
-        - libsdisguises.disguise.creeper.-setinvisible
-        - libsdisguises.disguise.blaze.-setinvisible
-        - libsdisguises.disguise.pigzombie.-setinvisible
-        - libsdisguises.disguise.wolf.-setinvisible
-        - libsdisguises.disguise.spider.-setinvisible
-        - libsdisguises.disguise.polarbear.-setinvisible
-        - libsdisguises.disguise.llama.-setinvisible
-        - libsdisguises.disguise.irongolem.-setinvisible
-        - libsdisguises.disguise.enderman.-setinvisible
-        - libsdisguises.disguise.cavespider.-setinvisible
-        - libsdisguises.disguise.villager.-setinvisible
-        - libsdisguises.disguise.squid.-setinvisible
-        - libsdisguises.disguise.skeletonhorse.-setinvisible
-        - libsdisguises.disguise.sheep.-setinvisible
-        - libsdisguises.disguise.rabbit.-setinvisible
-        - libsdisguises.disguise.pig.-setinvisible
-        - libsdisguises.disguise.parrot.-setinvisible
-        - libsdisguises.disguise.ocelot.-setinvisible
-        - libsdisguises.disguise.mooshroom.-setinvisible
-        - libsdisguises.disguise.horse.-setinvisible
-        - libsdisguises.disguise.donkey.-setinvisible
-        - libsdisguises.disguise.cow.-setinvisible
-        - libsdisguises.disguise.chicken.-setinvisible
-        - libsdisguises.disguise.bat.-setinvisible
-  obiwankenobi:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&7O&bb&7i-&bW&7a&bn &7K&be&7n&bo&7b&bi'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-  wonderwomangodmode:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&b'
-      prefix: '&4W&fon&eder &4W&fom&9an&8(&bGM&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - -essentials.protect.damage.fall
-        - powers.herotransform
   upgrade:
     inheritance:
     - commonherotraits
@@ -9827,26 +8278,6 @@ groups:
         - essentials.speed
         - essentials.speed.fly
         - essentials.fly
-  ben10:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2B&fe&8n &210'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.herotransform
-  christianicgod:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&f&lChristianic God'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.watertowine
   annabethchase:
     inheritance:
     - commonherotraits
@@ -9864,6 +8295,218 @@ groups:
     options:
       suffix: '&6'
       prefix: '&4Har&6ry &4Pot&6ter'
+  clarkkent:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&7Clark Kent'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+  captainatom:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&bC&4a&bptai&4n &bAt&4om'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - -essentials.protect.damage.fall
+  doctorstrange:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&cD&9octo&cr &9S&ctrang&9e'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - powers.float
+        - essentials.enchant
+        - -essentials.enchantments.allowunsafe
+        - essentials.enchantments.*
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - powers.gravityshift
+  goldenninja:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6Golden &eNinja'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  greenarrow:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2Gre&0e&2n A&0r&2row'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.arrowluck
+        - ch.alias.arrowwaterbreathe
+        - ch.alias.arrowharm
+        - ch.alias.arrowslow
+        - ch.alias.arrowweak
+        - ch.alias.arrowlongpoison
+        - ch.alias.arrowstrongpoison
+        - ch.alias.arrowinvisible
+        - ch.alias.arrowlongleaping
+        - ch.alias.arrowstrongleaping
+        - ch.alias.arrowlongstrength
+        - ch.alias.arrowstrongstrength
+        - ch.alias.arrownightvision
+        - ch.alias.arrowhealing
+        - ch.alias.arrowfireresist
+        - ch.alias.arrowlongswift
+        - ch.alias.arrowstrongswift
+        - ch.alias.arrowlongregen
+        - ch.alias.arrowstrongregen
+        - ch.alias.arrow
+        - ch.alias.arrowspectral
+  jackfrostriseoftheguardians:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&1J&9a&3ck &fF&1r&bo&9st&8(&1R&9O&3T&fG&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.freezewater
+        - essentials.fly
+  johndoe:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&fJ&0o&4h&fn &4D&fo&4e'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.cat
+  killerfrostcaitlinsnow:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&9K&1i&9l&8ler &9F&1r&9o&8st&8(&bCS&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.freezewater
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  lebronjamesmiamiheat:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&4Le&fbr&con &cJa&fm&4es&8(&4M&fH&8)'
+  ninjagocoleghost:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&6Ninjago &0Co&8le&b(Ghost)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - worldedit.navigation.thru.command
+        - ch.alias.spinjutsu
+  percyjackson:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&3'
+      prefix: '&3P&9e&3r&9c&3y&9 J&3a&9c&3k&9s&3o&9n'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  poseidon:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&3P&9o&3s&9e&3i&9d&3o&9n'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  theeleventhdoctor:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&1'
+      prefix: '&5The &4Doc&5tor&8(&f11th&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.sonicscrewdriver
+  redtornado:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&cRe&4d &6To&9r&1n&ea&6d&co'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  scarletwitch:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&4S&ccar&4let &4W&citc&4h'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.float
+        - ch.alias.confuse
+  bluelanternbarryallen:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&fB&1l&9u&fe&8-&fL&1a&9nte&1r&fn&8(&fB&bA&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.carryplayer
+        - ch.alias.speedforceteleport
+        - powers.wallrun
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - worldedit.navigation.thru.command
   barryallen:
     inheritance:
     - commonherotraits
@@ -9874,12 +8517,295 @@ groups:
       superherocity:
         permissions:
         - powers.herotransform
-  lordvoldemort:
+  wonderwomangodmode:
     inheritance:
     - commonherotraits
     options:
-      suffix: '&a'
-      prefix: '&8L&fo&7r&8d &8V&ao&7l&8d&7e&fm&ao&8r&7t'
+      suffix: '&b'
+      prefix: '&4W&fon&eder &4W&fom&9an&8(&bGM&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - -essentials.protect.damage.fall
+        - powers.herotransform
+  karadanvers:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&7Kara Danvers'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+  supergirl:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&cS&9u&ep&9e&9rg&cirl'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - -essentials.protect.damage.fall
+        - powers.wallrun
+        - weakto.kryptonite
+  alienx:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&0A&8li&7en &2X'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - powers.destroyworld
+        - essentials.fly
+  whitemartian:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&fWh&7it&0e &7Ma&frti&7a&0n'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.undisguise
+        - ch.alias.disguise
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  captainuniversepeterparker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&4C&1a&9p&ft&1a&f&1&fin &fUniverse&8(PP&8)'
+  gokuultrainstinct:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&7G&1o&6ku&8(&bU&7I&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.ultrainstinct
+        - powers.float
+        - ch.alias.tp
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - powers.herotransform
+        - ch.alias.grouptp
+  pennywise:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&4P&ce&fn&eny&4w&ei&fs&4e'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.vis
+        - ch.alias.invis
+        - libsdisguises.disguise.play
+        - libsdisguises.disguise.zombiehorse.-setinvisible
+        - libsdisguises.disguise.killerbunny.-setinvisible
+        - libsdisguises.disguise.illusioner.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.elderguardian.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.enderdragon.-setinvisible
+        - libsdisguises.disguise.snowgolem.-setinvisible
+        - libsdisguises.disguise.zombievillager.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.witherskeleton.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.vindicator.-setinvisible
+        - libsdisguises.disguise.vex.-setinvisible
+        - libsdisguises.disguise.stray.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.shulker.-setinvisible
+        - libsdisguises.disguise.magmacube.-setinvisible
+        - libsdisguises.disguise.husk.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.evoker.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.pigzombie.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.polarbear.-setinvisible
+        - libsdisguises.disguise.llama.-setinvisible
+        - libsdisguises.disguise.irongolem.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.cavespider.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.skeletonhorse.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.parrot.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.mooshroom.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.undisguise
+        - powers.pennywiseillusion
+  invisiblewoman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&9Inv&bi&9s&1ible &9W&bo&9m&0a&9n'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.vis
+        - ch.alias.invis
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+  toothless:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&0T&eoo&0th&8le&0ss'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.flywithrider
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  marshalllee:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&8M&bar&4sha&bl&8l &9Le&ce'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.entitytarget.bypass
+        - ch.alias.normalform
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.disguise.bat
+        - can.burninsun
+        - powers.float
+        - is.burningInSunlight
+  blacklanternmartianmanhunter:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&8(&fM&7M&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - libsdisguises.disguise.player
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - ch.alias.vis
+        - ch.alias.invis
+        - ch.alias.speak
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.mindcontrol
+        - ch.alias.unconfuse
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - ch.alias.confuse
+        - ch.alias.stopmindcontrol
+        - powers.wallrun
+        - -essentials.protect.entitytarget.bypass
+        - ch.alias.mindlock
+        - ch.alias.msg
+  martianmanhunter:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2M&4a&2rt&9i&2an &9Man&2hunter'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - libsdisguises.disguise.player
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - ch.alias.vis
+        - ch.alias.invis
+        - ch.alias.speak
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.mindcontrol
+        - ch.alias.unconfuse
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - ch.alias.confuse
+        - ch.alias.stopmindcontrol
+        - powers.wallrun
+        - ch.alias.mindlock
+        - ch.alias.msg
+  terra:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&eT&8e&6r&8r&7a'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - essentials.fly
+        - ch.alias.earth
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+  gokukaioken:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&cG&1o&6ku&8(&cK&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.tp
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - powers.herotransform
+        - ch.alias.grouptp
   flashbarryallen:
     inheritance:
     - commonherotraits
@@ -9911,6 +8837,1127 @@ groups:
         - powers.lightningpunch
         - worldedit.navigation.thru.command
         - needsto.eat
+  superman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&cS&9u&ep&9e&9rm&can'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - -essentials.protect.damage.fall
+        - powers.wallrun
+        - powers.nofalldamage
+        - weakto.kryptonite
+  killercroc:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2Killer &aCroc'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  fanficef7bcc963ac04dc6aae7019e5c6dda2e:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&rStrikerMax'
+  deadpool:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4D&0ea&4dp&0oo&4l'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.bodyslide
+        - ch.alias.tpradius
+  obiwankenobi:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&7O&bb&7i-&bW&7a&bn &7K&be&7n&bo&7b&bi'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+  fanfic8ca7fc56614b482a91dfbf8580ba273d:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&rxSp4rkz'
+  fanficde5871d317d4485f8ddbb45b30ee6591:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&rsuperiorxman'
+  lukeskywalker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&8L&0u&8ke &0S&8ky&0w&8a&al&8ker'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.forcepush
+  beastboychangeling:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&5B&2ea&0s&5t B&7o&2y'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.wallclimb
+        - ch.alias.grow
+        - ch.alias.normalsize
+        - ch.alias.shrink
+        - libsdisguises.disguise.zombiehorse.-setinvisible
+        - libsdisguises.disguise.killerbunny.-setinvisible
+        - libsdisguises.disguise.illusioner.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.elderguardian.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.enderdragon.-setinvisible
+        - libsdisguises.disguise.snowgolem.-setinvisible
+        - libsdisguises.disguise.zombievillager.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.witherskeleton.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.vindicator.-setinvisible
+        - libsdisguises.disguise.vex.-setinvisible
+        - libsdisguises.disguise.stray.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.shulker.-setinvisible
+        - libsdisguises.disguise.magmacube.-setinvisible
+        - libsdisguises.disguise.husk.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.evoker.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.pigzombie.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.polarbear.-setinvisible
+        - libsdisguises.disguise.llama.-setinvisible
+        - libsdisguises.disguise.irongolem.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.cavespider.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.skeletonhorse.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.parrot.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.mooshroom.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.bat.-setinvisible
+  arsenal:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&4Ar&cse&4na&cl'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - ch.alias.arrowluck
+        - ch.alias.arrowwaterbreathe
+        - ch.alias.arrowharm
+        - ch.alias.arrowslow
+        - ch.alias.arrowweak
+        - ch.alias.arrowlongpoison
+        - ch.alias.arrowstrongpoison
+        - ch.alias.arrowinvisible
+        - ch.alias.arrowlongleaping
+        - ch.alias.arrowstrongleaping
+        - ch.alias.arrowlongstrength
+        - ch.alias.arrowstrongstrength
+        - ch.alias.arrownightvision
+        - ch.alias.arrowhealing
+        - ch.alias.arrowfireresist
+        - ch.alias.arrowlongswift
+        - ch.alias.arrowstrongswift
+        - ch.alias.arrowlongregen
+        - ch.alias.arrowstrongregen
+        - ch.alias.arrow
+  joker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&5'
+      prefix: '&fJo&2k&5er'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.joybuzzer
+  darthmaul:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4D&0a&4r&0t&4h M&0au&4l'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.forcechoke
+        - ch.alias.forcepush
+  anakinskywalker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&8A&7n&0a&7k&8i&7n &8S&7k&0y&8w&7a&bl&8k&0e&7r'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+  spidermanpeterparker:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4Sp&fi&4d&0e&4r-M&0a&4n&8(PP)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.web
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - -essentials.protect.damage.fall
+        - ch.alias.websling
+        - powers.wallclimb
+  savitar:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&eS&4a&9v&ei&9t&4a&er'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.modifyspeed
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - ch.alias.vis
+        - ch.alias.invis
+        - essentials.warps.speedforce
+        - ch.alias.speedforceteleport
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.tppos
+        - powers.wallrun
+  darthsidious:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&0'
+      prefix: '&0Darth Sidious'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.forcechoke
+        - ch.alias.forcepush
+  darthvader:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&8D&0a&8r&0t&8h V&0ade&8r'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.forcechoke
+        - ch.alias.forcepush
+  christianicgod:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&f&lChristianic God'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.watertowine
+  daredevil:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&4D&care&4d&cevil'
+  loki:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&6L&2o&8k&bi'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.disguise
+        - essentials.tppos
+        - ch.alias.stopmindcontrol
+        - ch.alias.mindcontrol
+        - libsdisguises.disguise.zombie_villager.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.wither_skeleton.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.undead_horse.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.snowman.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.skeleton_horse.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.player.-setinvisible
+        - libsdisguises.disguise.pig_zombie.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.mushroom_cow.-setinvisible
+        - libsdisguises.disguise.mule.-setinvisible
+        - libsdisguises.disguise.magma_cube.-setinvisible
+        - libsdisguises.disguise.iron_golem.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.elder_guardian.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.cave_spider.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+  thor:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&eT&4h&9o&fr'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.lightning
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  freddykrueger:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&4F&8r&4e&8d&4d&8y &4K&cr&8u&7e&6g&7e&6r'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.tppos
+  multiplex:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&3'
+      prefix: '&0M&3ul&0t&3ip&0l&3ex'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.cloneself
+  hela:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2H&8e&0l&aa'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.enchant
+        - -essentials.enchantments.allowunsafe
+        - essentials.enchantments.*
+        - ch.alias.portaltp
+        - ch.alias.speak
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  gokusupersaiyanbluekaioken:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&bG&1o&6ku&8(&bSSB&f+&cK&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.tp
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - powers.herotransform
+        - ch.alias.grouptp
+  deathdc:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tphere
+        - ch.alias.tp
+        - powers.onepunch
+  blackracerbarryallen:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&8B&7l&6a&8c&7k &6R&ea&8c&6e&er&8(&6B&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - powers.onepunch
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.speedforceteleport
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - powers.wallrun
+        - -essentials.protect.entitytarget.bypass
+        - kill.immune
+        - powers.onepunch
+  kidflashwallywest:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&eK&4i&ed &4F&el&4a&es&4h&e&8(&4W&eW&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - ch.alias.speedforceteleport
+        - powers.thru.destabilize
+        - worldedit.navigation.thru.command
+        - powers.wallrun
+        - ch.alias.speedforcewhirlwind
+        - powers.herotransform
+  mrmxyzptlk:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6M&5r&6. &5M&6x&5y&6z&5p&6t&5l&6k'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - essentials.tppos
+        - -essentials.protect.damage.fall
+        - essentials.back
+        - -esssentials.warps.*
+        - powers.depower
+        - libsdisguises.disguise.zombie_villager.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.wither_skeleton.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.undead_horse.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.snowman.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.skeleton_horse.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.pig_zombie.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.mushroom_cow.-setinvisible
+        - libsdisguises.disguise.mule.-setinvisible
+        - libsdisguises.disguise.magma_cube.-setinvisible
+        - libsdisguises.disguise.iron_golem.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.elder_guardian.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.cave_spider.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - ch.alias.empower
+        - ch.alias.tp
+        - ch.alias.tphere
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+  ghostriderjohnnyblaze:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&8Gh&0o&8st R&7i&8der&8(&6J&cB&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - powers.fireballpunch
+        - powers.wallrun
+        - ch.alias.flame
+  cosmicarmorsuperman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&c'
+      prefix: '&cC&eo&9s&6mi&9c &4A&2r&9m&6o&4r S&9u&ep&9er&4man'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.fly
+        - weakto.kryptonite
+        - powers.forget
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - powers.cantdie
+  riphunter:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&8R&6i&1p &8Hu&6nt&1er'
+  blacklanterneobardthawne:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&0B&8l&7a&fc&0k&8-&7L&fa&0nte&8r&7n&8(&fE&8T&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.carryplayer
+        - ch.alias.speedforceteleport
+        - powers.wallrun
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - -essentials.protect.entitytarget.bypass
+  apocalypse:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&3'
+      prefix: '&3A&9p&3o&9ca&3lypse'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.tounderworld
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.tp
+        - -essentials.protect.damage.fall
+        - ch.alias.underworld
+        - libsdisguises.disguise.player
+        - libsdisguises.disguise.zombiehorse.-setinvisible
+        - libsdisguises.disguise.killerbunny.-setinvisible
+        - libsdisguises.disguise.illusioner.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.elderguardian.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.enderdragon.-setinvisible
+        - libsdisguises.disguise.snowgolem.-setinvisible
+        - libsdisguises.disguise.zombievillager.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.witherskeleton.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.vindicator.-setinvisible
+        - libsdisguises.disguise.vex.-setinvisible
+        - libsdisguises.disguise.stray.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.shulker.-setinvisible
+        - libsdisguises.disguise.magmacube.-setinvisible
+        - libsdisguises.disguise.husk.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.evoker.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.pigzombie.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.polarbear.-setinvisible
+        - libsdisguises.disguise.llama.-setinvisible
+        - libsdisguises.disguise.irongolem.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.cavespider.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.skeletonhorse.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.parrot.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.mooshroom.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.undisguise
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - ch.alias.unconfuse
+        - ch.alias.confuse
+        - ch.alias.speak
+        - ch.alias.mindcontrol
+        - ch.alias.stopmindcontrol
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+  redhulk:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4Red &lH&c&lU&4&lLK'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  apollo:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&eA&fp&eo&fll&eo'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.arrowluck
+        - ch.alias.arrowwaterbreathe
+        - ch.alias.arrowharm
+        - ch.alias.arrowslow
+        - ch.alias.arrowweak
+        - ch.alias.arrowlongpoison
+        - ch.alias.arrowstrongpoison
+        - ch.alias.arrowinvisible
+        - ch.alias.arrowlongleaping
+        - ch.alias.arrowstrongleaping
+        - ch.alias.arrowlongstrength
+        - ch.alias.arrowstrongstrength
+        - ch.alias.arrownightvision
+        - ch.alias.arrowhealing
+        - ch.alias.arrowfireresist
+        - ch.alias.arrowlongswift
+        - ch.alias.arrowstrongswift
+        - ch.alias.arrowlongregen
+        - ch.alias.arrowstrongregen
+        - ch.alias.arrow
+        - ch.alias.arrowspectral
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - powers.wallrun
+  thelivingtribunal:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&eThe &6L&ei&7v&9i&bn&6g &eT&9r&bi&9b&7u&ena&6l'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.destroyworld
+        - ch.alias.mindlock
+        - ch.alias.tp
+        - essentials.fly
+        - ch.alias.normalform
+        - ch.alias.grow
+        - kill.immune
+        - immune.destroyworld
+  lordvoldemort:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&a'
+      prefix: '&8L&fo&7r&8d &8V&ao&7l&8d&7e&fm&ao&8r&7t'
+  maxsteel:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&fMax &9Steel'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - ch.alias.vis
+        - ch.alias.invis
+  thorjanefoster:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&8T&7h&8o&7r&8(&7JF&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - essentials.lightning
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  bardock:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6Bar&edock'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+  doctorfatekentnelson:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&6D&9o&6ct&9o&6r F&9a&6te&8(KN&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - weakto.magicarrow
+  doctormanhattan:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&bD&3o&bct&3o&br &bM&3a&bnhatt&3a&bn'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.skull.*
+        - essentials.skull
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - essentials.fly
+        - ch.alias.tphere
+        - ch.alias.tp
+        - ch.alias.explode
+  theseconddoctor:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&1'
+      prefix: '&0T&fh&0e &8D&6o&8c&6t&8o&6r&8(&f2nd&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.sonicscrewdriver
+  crystal:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6C&er&6y&es&6t&ea&6l'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - essentials.speed.fly
+        - ch.alias.earth
+        - powers.crystallightning
+        - ch.alias.wind
+        - powers.fireballpunch
+  colossus:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&7C&8o&4l&7o&ess&7u&4s'
+  dumbledore:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&d'
+      prefix: '&5Dum&dbl&5edo&dre'
+  adamwarlock:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&4A&6d&ea&6m &4W&ba&er&6l&bo&ec&4k'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - essentials.fly
+        - ch.alias.magicpush
+  ben10:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2B&fe&8n &210'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+  deathstroke:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&8Death&6stroke'
+  odin:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&6O&ed&bi&7n'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.destroyworld
+        - essentials.fly
+        - ch.alias.mindlock
+        - ch.alias.yell
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - essentials.enchant
+        - -essentials.enchantments.allowunsafe
+        - essentials.enchantments.*
+        - powers.depower
+        - ch.alias.normalform
+        - ch.alias.grow
+        - ch.alias.tp
+  bigchill:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&b'
+      prefix: '&bB&0i&bg &0C&bh&0i&bl&0l'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+        - powers.chill
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - essentials.fly
+  dormammu:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&eD&6o&cr&4m&7a&8m&8m&0u'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.fly
+        - essentials.tppos
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - ch.alias.disguise
+  fanfic3639172baa0f498d932218addf094675:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&r&8Red &4X'
+      suffix: '&r&4'
+  fanfic2aaef4d11ff74a46ac2b7e07aa9c3303:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&r&fD&0eath''s &4S&fo&4lder'
+  thebeyonder:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&7Th&fe &7B&fe&ey&7o&en&fd&7er'
+    worlds:
+      superherocity:
+        permissions:
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - powers.depower
+        - powers.destroyworld
+        - essentials.fly
+        - ch.alias.mindcontrol
+        - ch.alias.tp
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - libsdisguises.disguise.player
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - immune.destroyworld
+  cyborg:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&7C&by&8b&4o&7r&8g'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tp
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+  antivenom:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&fA&7n&0t&7i-&fV&7e&0n&7o&fm'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.web
+        - -essentials.protect.damage.fall
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - ch.alias.websling
+        - powers.wallclimb
+        - powers.antivenomattack
+  killmonger:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&6'
+      prefix: '&6Er&0ik &6Kill&0monger'
+  hades:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4Hades'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - essentials.fly
+        - powers.fireballPunch
+      survival112_nether:
+        permissions:
+        - essentials.warp.*
+        - essentials.warp
+  spectre:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2S&0p&7e&ac&0t&7r&2e'
+    worlds:
+      superherocity:
+        permissions:
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
+        - ch.alias.vis
+        - ch.alias.invis
+        - ch.alias.normalsize
+        - ch.alias.grow
+        - essentials.fly
+        - powers.onepunch
 schema-version: 1
 worlds:
   checkers:
@@ -10081,8 +10128,7 @@ users:
     - is.builder
   8ca7fc56-614b-482a-91df-bf8580ba273d:
     group:
-    - police
-    - beastboychangeling
+    - mortal
     permissions:
     - is.police
     options:
@@ -10197,12 +10243,13 @@ users:
     - is.builder
   524eb61e-b329-4b65-8cd2-8f6d0e9b1919:
     group:
-    - mortal
+    - terra
     options:
       name: carolinacub
     permissions: []
   3639172b-aa0f-498d-9322-18addf094675:
-    group: []
+    group:
+    - fanfic3639172baa0f498d932218addf094675
     options:
       name: MasterofDevil
     permissions: []
@@ -10224,13 +10271,10 @@ users:
     options:
       name: Deadskull20078
   1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99:
-    group:
-    - headpolice
-    - obiwankenobi
+    group: []
     options:
       name: MisserMan
-    permissions:
-    - is.headpolice
+    permissions: []
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
     - criminal
@@ -10489,8 +10533,7 @@ users:
     options:
       name: superiorxman
     group:
-    - headbuilder
-    - mrmxyzptlk
+    - joker
     worlds:
       buildworld:
         permissions:
@@ -10506,7 +10549,8 @@ users:
     options:
       name: DiamondRCJ
   d7757e01-cf3f-4305-9590-c688214bff78:
-    group: []
+    group:
+    - mortal
     options:
       name: minecraft882001
   2c2de5e0-bf4e-4def-a7bb-507648fb9d66:
@@ -10523,7 +10567,7 @@ users:
       name: SuperKarateGamer
   b5224355-6e3b-4514-a833-6208f459f9c5:
     group:
-    - martianmanhunter
+    - mortal
     options:
       name: jaguareyes2
   cb871f86-94e5-4bf3-a78e-42f73c2215c4:
@@ -10546,7 +10590,8 @@ users:
     options:
       name: SlamBam345
   f621586e-8ef8-448d-9264-86b61375052e:
-    group: []
+    group:
+    - mortal
     options:
       name: Mythification
     permissions: []
@@ -10653,7 +10698,8 @@ users:
     - is.police
   de5871d3-17d4-485f-8ddb-b45b30ee6591:
     group:
-    - mortal
+    - police
+    - arsenal
     options:
       name: Shokorana
     permissions:
@@ -10795,7 +10841,8 @@ users:
     options:
       name: MacLightning
   8efe1a15-da4a-430c-a6c6-8a1344a1618f:
-    group: []
+    group:
+    - thebeyonder
     options:
       name: Alexandro8
     permissions:
@@ -10912,7 +10959,8 @@ users:
     options:
       name: Butterbrine
   7dff91dd-96e6-4b73-9dfa-17992e055694:
-    group: []
+    group:
+    - gokuultrainstinct
     options:
       name: Txmmeh
   e1e34998-0cba-4fb1-9bdf-f2969fbd9b39:
@@ -11012,11 +11060,13 @@ users:
     options:
       name: Soundsa_Shady
   00fab34c-fb2c-46db-8283-2f436aba83cf:
-    group: []
+    group:
+    - mortal
     options:
       name: BepisPupper
   9be9782d-5fe1-49bd-8233-8f2011149e4c:
-    group: []
+    group:
+    - mortal
     options:
       name: TeslaTsuki
   a7c699a6-30a1-42c5-a49a-d1720f5f69de:
@@ -11145,7 +11195,7 @@ users:
     group: []
   fbfcb190-4cdb-400e-a8aa-fc30cc822caf:
     group:
-    - mortal
+    - spectre
     options:
       name: simon2008
   1a64c484-a003-4160-bf90-f7c26692ff6b:
@@ -11194,19 +11244,17 @@ users:
     options:
       name: Brosco09
   861da66b-8eef-4143-93f1-dbab33665595:
-    group:
-    - police
-    - blackracerbarryallen
+    group: []
     options:
       name: MageOfSixPaths
-    permissions:
-    - is.police
+    permissions: []
   85566a08-cede-46db-9c94-331f13f58927:
     group: []
     options:
       name: Gunnie21
   d1fbaab7-bde3-4405-8282-9fc15d90209d:
-    group: []
+    group:
+    - flashbarryallen
     options:
       name: TheDarkAura_
   8ae48244-2f6d-4443-8b3e-90178f08e68d:
@@ -11215,8 +11263,7 @@ users:
     options:
       name: _Blaidake_
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
-    group:
-    - cyborg
+    group: []
     options:
       name: xValen
   dbe7df28-f1c7-407e-ac72-6543f68e817d:
@@ -11549,7 +11596,7 @@ users:
       name: gabriel_hicks
   2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
     group:
-    - lordvoldemort
+    - cyborg
     options:
       name: TheoreticalGame
     permissions: []
@@ -11788,7 +11835,8 @@ users:
     options:
       name: WhiteTiger252
   fdbd1274-eb12-4fd1-b9c5-a44917d58637:
-    group: []
+    group:
+    - mortal
     options:
       name: StealthFox007
   8d4c4aa3-468d-49a2-b393-011cd552eadb:
@@ -12154,7 +12202,7 @@ users:
       name: ElegantDeath
   6f4c8bf6-f5b6-4859-b75a-e47a7341ccca:
     group:
-    - reverseflasheobardthawne
+    - mortal
     options:
       name: Fisherbear9
   c71b4a7e-84f4-4518-99b2-3e942d49a9e1:
@@ -12264,7 +12312,7 @@ users:
       name: SwordOfAce
   474707f7-f8b4-43ea-8978-9cae17917e82:
     group:
-    - mortal
+    - killmonger
     options:
       name: ThatCraftLifeMCU
   96c551d1-1ad5-43a8-9350-3716beb11ec0:
@@ -12500,8 +12548,7 @@ users:
     options:
       name: ReesesPC3S
   b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857:
-    group:
-    - mortal
+    group: []
     options:
       name: Guitar_Hero
   9c91fd83-2115-46b7-bd9e-925633cc5a25:
@@ -12510,8 +12557,7 @@ users:
     options:
       name: KazutoKun_
   c093d7be-a148-44b5-a80a-fcc41196b149:
-    group:
-    - alienx
+    group: []
     options:
       name: C4PT41NJD4Y
   7fe887d4-3338-4ff7-b5a2-e1b3499b09e5:
@@ -12540,7 +12586,8 @@ users:
     options:
       name: Champchillin
   3598abf8-7572-49f8-8ff6-c8819c72d0fb:
-    group: []
+    group:
+    - dumbledore
     options:
       name: Kacpers23
   b017812c-ee99-4f21-a0ea-286049f48e9c:
@@ -12667,7 +12714,8 @@ users:
     options:
       name: JediNanth
   1cb4fc41-4aec-488f-83a3-2edffcd21711:
-    group: []
+    group:
+    - wonderwomangodmode
     options:
       name: imcoolbo
   8cb78b61-68f6-4a70-8a24-fad18ff758c0:
@@ -12688,12 +12736,10 @@ users:
       name: ironsquid
   cb1a7a9b-e719-42c4-a35a-ad0b081488ec:
     group:
-    - police
-    - kidflashwallywest
+    - mortal
     options:
       name: DodiThunder
-    permissions:
-    - is.police
+    permissions: []
   ee4224f0-2b04-40b6-a5b2-ca6708fd68b0:
     group: []
     options:
@@ -12762,12 +12808,12 @@ users:
     options:
       name: wendydarling18
   22c1fb7b-23ef-4a6b-9315-481488de0ce9:
-    group:
-    - darthsidious
+    group: []
     options:
       name: BigBuddyYo
   195aa60c-a99b-41ce-954c-96e8ef789a96:
-    group: []
+    group:
+    - alienx
     options:
       name: CountMacDaft
   33442d45-12eb-423c-b67d-89db8e58057b:
@@ -12835,7 +12881,21 @@ users:
     options:
       name: EmilyTheEpic
   c1da0567-bcd9-48a0-9bf3-263be1439205:
-    group:
-    - flashbarryallen
+    group: []
     options:
       name: ElementalFox1
+  3223e009-04d7-4aef-b0a9-fa6e25928987:
+    group:
+    - thor
+    options:
+      name: _SaltyDonut
+  0ef87a95-eca4-431f-94bd-1b2ac58616fa:
+    group:
+    - spidermanpeterparker
+    options:
+      name: 4fantastic
+  6c79e25d-0328-44c7-b2ea-03a8d807b4e0:
+    group:
+    - antivenom
+    options:
+      name: FireDragonQX
