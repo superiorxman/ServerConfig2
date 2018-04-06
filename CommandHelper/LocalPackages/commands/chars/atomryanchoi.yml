@@ -1,0 +1,26 @@
+class: atomryanchoi
+costumes:
+- chatcolor: '&9'
+  name: §4A§9to§4m§8(§9RC§8)
+  sig: Nv60JcKUDIBczkOSzRcSsLJTwMCze4LzLV2tuVyqD0XklIqGEe4tUrakTcr6d3kLACC+ol8c3/+Ghb1tgve1LcnefryFlFnPjkz5/6MslNdqFxQotH3dCTPfcSJTxla9lkWQKQBACfPvWzpcjw85w7uxT7XscFwXwzunpXi4jwu2a1dfN1fnOIfcXqyypHtm9Nge3Wc9FjtlPOCSM2pw06PxbdGuYYnWtCj5bSW97obSe726WJHh5q+oOa+rKR9HsmXuq+HlyGNpfGtluOYiypAeVlXCKgX46l6dqjieNmivZCUmn+/myzr5bf+CMLhr0oXdXZaXpa3ejwmDXXifltYwxAMYXEnz+GxshL8jw8fPodMecBBu1GEQIo1QJ/ZqTvhly2Z+kSom8lp2MJaHkvu82uEyrFwwCPUQpA2VcQM6mXGBzJbOZjvK2MFOU7rlsw/HWM8TlQ8gqHgIECve4ERQh0CtZ9ZHwRGDtxkpvLRuIcxtFIZEn3N/rNSv6pBOE57QHKPFR2q2yoHO0k/qIbS1NN7+vHxoh13mrUhpABeu8hr3vp6JK1P4g0QNia3PIVqZykJzHqu6CmDtPPUWgWJ6MuXIjwFJjHsAK53+QgPEMWgCBWAzM9szSBjvWR+tB+3Qg7xn4rkTKPr1c+MRbv5jPpnvizWYQtNKakeIUbA=
+  val: eyJ0aW1lc3RhbXAiOjE1MjI5OTMxNTkzOTIsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E4NTY0NWI1M2U4MjRiODY5YTJmM2FkNjA3ZDQzZmRhNmVlODk5ZDcxODI4NDViYWI3YTM0Y2Y4ZDQ0NzliIn19fQ==
+effects: [
+  ]
+haste: 2
+items: [
+  ]
+permissions:
+  superherocity:
+  - ch.alias.shrink
+  - ch.alias.normalsize
+  - essentials.fly
+powers:
+- /shrink
+- /normalsize
+- /fly
+- /run 0-3
+- /haste 0-2
+run: 3
+speech: My name is Ryan Choi, and I can shrink to the size of an Atom!
+trail: [
+  ]
