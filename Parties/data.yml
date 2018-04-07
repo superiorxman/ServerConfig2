@@ -320,12 +320,6 @@ players:
       timestamp: 1522958210
     party: Assassins
     rank: 5
-  2a63e405-eecf-480a-9fcf-1e22b996d998:
-    party: Assassins
-    name:
-      timestamp: 1522963168
-      name: RoryDaPanda
-    rank: 5
   2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
     name:
       name: TheoreticalGame
@@ -338,17 +332,17 @@ players:
     name:
       timestamp: 1522971059
       name: ElementalFox1
-  ccecc513-b84b-44cb-8bcd-bf6cf31d4393:
-    name:
-      timestamp: 1523061269
-      name: jefferunfaster
-    party: Assassins
-    rank: 10
   1cb4fc41-4aec-488f-83a3-2edffcd21711:
     name:
       timestamp: 1523067037
       name: imcoolbo
     party: Assassins
+    rank: 5
+  fc3bf70e-2dda-441d-9c19-8d682a2b0183:
+    party: TheJL
+    name:
+      timestamp: 1523098802
+      name: ZwaagGirls
     rank: 5
 parties:
   TheTitans:
@@ -432,6 +426,7 @@ parties:
     - 3e36ae61-810a-44bc-8041-fd70a20b92aa
     - b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857
     - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
+    - fc3bf70e-2dda-441d-9c19-8d682a2b0183
     leader: d1fbaab7-bde3-4405-8282-9fc15d90209d
     desc: Justice League
     motd: motd
@@ -466,8 +461,6 @@ parties:
     members:
     - 474707f7-f8b4-43ea-8978-9cae17917e82
     - 98eaee4f-eb44-4674-ac95-9944a0da2861
-    - 2a63e405-eecf-480a-9fcf-1e22b996d998
-    - ccecc513-b84b-44cb-8bcd-bf6cf31d4393
     - 1cb4fc41-4aec-488f-83a3-2edffcd21711
     leader: 474707f7-f8b4-43ea-8978-9cae17917e82
     desc: You buy We kill
