@@ -1,0 +1,28 @@
+class: tempest
+costumes:
+- chatcolor: '&3'
+  info: The Titans
+  name: §3T§1e§0m§3p§1e§0s§3t
+  sig: iaSWFib+49cbEb45XNUDr23SblKcHJKGj7MENvtByDxbJavyeH+5zSuweJBS37iUpf8smEgDYNnBMkEERg2sfDZBRGGJhzzVX+rv38a5yUd+d04I8J5BMiRLGK7Fb8LyTjnGDuffXzImOpjVXkmsdfpxRNhBWLlZH2cidVB47XXC4Hn/Unp8Fkqz4oDcdGIQnigDkPel/PVKrN7946Kil2CkGNkqv4ZzT4GyuLtDaDXF3K27UL+ROAMdH96mqPtu/LVtU9FILbHBTxlofOmvObId2nCraD4rbERF9Nc50NE3whliIgBXCe7ZzZ2OOcyWpSfSKPZ0LnUE0WV9Kp3m1/QoA/sTF58GQBJ4bBGXuRQhRAYZ2E6zZPTqB1wbcpm/w00hAypCB8TiVLkVA/oAuZm/L78w7ZqDwURj8xKDTjkKMHMlYOK//yVDQjVMwZHk7gu67AzROVzvzOlsh6jn6ZY7iK4h9SJVghiRSgnktevJc8dbL0UGAt97XqGzHD40n5Hzalg/otFTld4qJaeMr98JRKZJFNTp7y5Tbc+bnDdUtQnnyISJCjIdywlIQiMNQVeZooXRd/rLRleZGUuL2x3ewaqvOu0AOH66gcKVeDCKfZmpjg0G8m6aFM62OFBVjWOvvO20tORFkiFlJO/7YJIJcRA0VmSV+ZT/W/38kC0=
+  val: eyJ0aW1lc3RhbXAiOjE1MTc4MTc1MjQ4NDksInByb2ZpbGVJZCI6IjhjYTdmYzU2NjE0YjQ4MmE5MWRmYmY4NTgwYmEyNzNkIiwicHJvZmlsZU5hbWUiOiJUaGVMaWdodFNoYWRvd18iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE0NzNkNWNmODk3OWQyZmMzMDE4ZDA0YWYxYTI0ZDZkZWU5MzMzODRkOWQyZGY1OGM3MzI1ZjY3YzZiMWNhMSJ9fX0=
+- chatcolor: '&9'
+  info: Teen Titans
+  name: §9Aq§3ua§4la§1d§8(§9G§8)
+  sig: GUARl60lq9ZWrBT/iFaI9hsm8d2b6jrk9gPv8jnU8+BYI5vuaUaYb+OkbuvmVsGQl9r4kCyp864fKwMOlYE9FO2A6XBA2UdzctH3FjJ8pAET3UTAfi2jS+p8a8hQeXuduqccKaeWsf9IaPKk24YS8w8nrFgSG9gX1UGAzfsfT7I1sy/oak3tUFWsXW6yAqyn7awj9ZsVXamhjOScNXvJD5xQybdlZMkRn/N2GnEY9z3ovXRWN7rY7uKZsOTW7uT5pDgfQdM9M8j6QDm/ZEkQGAK9jatTVR4wkRFDQnShhmscaXcyYv3Eg5Otiohx3OZWnZfbq5eMiEEuJW4De8Ou4OJWhcXe+t9vL9sKZHJfktlBI/ASYHvGKDSM7nfkktt9fP+VLjRXOIIvYKNj6kIQyDv5oGa/crPFC7druE8v7E9b+TOb2NqX9nc8hbkBhfzUYxF9yFa8RBRKLK6Druxd0wcgniMoj8srYt/bADihez/zLg/v3ZKpjKMxaSi5OmQKBXeHtH/mtwDSuyo+uDAqBLfHCFmPFqHv+xNQHrbGLJdOpMWdcKygf2rXnvJFz57YNcufpxIaVcDFDYyjnj5wq/B+5YMbvxXgL/Sm7RPEi5nOMyBKoCUGD6izb82elfmVI61irSaNrua0WvVOGlz2o3jKdMahUQup8Qet8Kks1Uc=
+  val: eyJ0aW1lc3RhbXAiOjE1MjMwOTAyMjc5NzAsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y5ZGZiNzg0MDYzNWE1ODFkMjc0MTlmNGE5NzZjZjEyZDk1NzIxNWU4MWRmNjc5ODViYmY4ZmZkZjI0NmUifX19
+effects:
+- /effect <plr> 5 9999 4 true
+- /effect <plr> 13 9999 1 true
+items:
+- /shot give <plr> watershot
+- /shot give <plr> atlanteanlaservision
+- /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
+maxHearts: 40
+permissions: [
+  ]
+powers:
+- /effects
+- /items
+speech: I am Garth of Atlantis!
+trail: [
+  ]
