@@ -48,7 +48,7 @@ bind('player_death', null, null, @event){
         return()
     }
 
-    @oes = ''
+    /*@oes = ''
     for(@i = 0, @i < 10, @i++){
         if(rand(0,2) == 1){
             @oes = @oes.'o'
@@ -56,5 +56,6 @@ bind('player_death', null, null, @event){
     }
 
     chatas(@player,@oes.'oof')
+    */
 
 }
