@@ -1,0 +1,92 @@
+class: emperorjoker
+costumes:
+- chatcolor: '&6'
+  name: §6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k
+  sig: JNu10O6w4k0dNi9VniFKg4M33BVPBaWqm/+u+zWUO/WmeFZ1eDK+IhwKbZtK5FWKGbvqOLXOA41UIJXPBrPkjaOBANmjAJmv11CVBmTXDxcnv90OAvebkSInhyQQyLyFPZ+DJJCBNWJmvtHRHWb32mXeKId6pHr6bK7M0tBcAdENWIG2nhGrOoEbWrsaOEU9m/dU0y+rF4oe/FGKh//gUN/VplBHt7Tw6o+EPz7/ggYiXs3NaAbh5FmOu5N0JBy+GeFXIatRzJ+yNN0BDHMuDLTQ8O0sTtHn3hvsI/B1wamMj4Iy21a1QL2gYmvZr6kTR14sYQG4qFaPp7z5sq0ltwnePV/ZtGPg4yOkMXiPZVDZrvRTYHapP0FNR1Jexxh0wG8LM2u2u8Qljt6RZpG0dQY3mZNGsP9xFMV9PTkRs5VMSRXpZjfbzJw+K4n4ICkFtjSM4KjmcZSTfO1UFtWqR7cq+awHFRzNvWYZCoAumgBii3HhEwgwz13d27pUZg0PyeB9V+Ll2/5LxbB4HaR1uGIYgii2f9AIQt8rJ3b8ASF3dDu1AnCehT3e6K1dqY+LOc96ZM3/9NDfn8Q3RUdcXvT1FCLdkRXRTQ7cYMAXR1fjJjDpTXHntEDx15GFLfICBZzNlNAFZilqm0B7HjFLPcwk/FpkyTIp18A/YlDcB2A=
+  val: eyJ0aW1lc3RhbXAiOjE1MjMxNTAzMTcyNTcsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FiYzVhYmJhYTJkNGM1NTRmYTg3MzJmZjg5NDhhZjQwMjgzODI3ZTVhYTFhNDMyOWVkNjA0Mjg2YzlkYzg2In19fQ==
+  ]
+haste: 3
+items: [
+  ]
+jump: 4
+permissions:
+  superherocity:
+  - kill.immune
+  - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
+  - ch.alias.tphere
+  - ch.alias.tp
+  - ch.alias.empower
+  - libsdisguises.disguise
+  - libsdisguises.undisguise
+  - libsdisguises.disguise.bat.-setinvisible
+  - libsdisguises.disguise.blaze.-setinvisible
+  - libsdisguises.disguise.cave_spider.-setinvisible
+  - libsdisguises.disguise.chicken.-setinvisible
+  - libsdisguises.disguise.cow.-setinvisible
+  - libsdisguises.disguise.creeper.-setinvisible
+  - libsdisguises.disguise.donkey.-setinvisible
+  - libsdisguises.disguise.elder_guardian.-setinvisible
+  - libsdisguises.disguise.enderman.-setinvisible
+  - libsdisguises.disguise.endermite.-setinvisible
+  - libsdisguises.disguise.ghast.-setinvisible
+  - libsdisguises.disguise.giant.-setinvisible
+  - libsdisguises.disguise.guardian.-setinvisible
+  - libsdisguises.disguise.horse.-setinvisible
+  - libsdisguises.disguise.iron_golem.-setinvisible
+  - libsdisguises.disguise.magma_cube.-setinvisible
+  - libsdisguises.disguise.mule.-setinvisible
+  - libsdisguises.disguise.mushroom_cow.-setinvisible
+  - libsdisguises.disguise.ocelot.-setinvisible
+  - libsdisguises.disguise.pig.-setinvisible
+  - libsdisguises.disguise.pig_zombie.-setinvisible
+  - libsdisguises.disguise.rabbit.-setinvisible
+  - libsdisguises.disguise.sheep.-setinvisible
+  - libsdisguises.disguise.silverfish.-setinvisible
+  - libsdisguises.disguise.skeleton.-setinvisible
+  - libsdisguises.disguise.skeleton_horse.-setinvisible
+  - libsdisguises.disguise.slime.-setinvisible
+  - libsdisguises.disguise.snowman.-setinvisible
+  - libsdisguises.disguise.spider.-setinvisible
+  - libsdisguises.disguise.squid.-setinvisible
+  - libsdisguises.disguise.undead_horse.-setinvisible
+  - libsdisguises.disguise.villager.-setinvisible
+  - libsdisguises.disguise.witch.-setinvisible
+  - libsdisguises.disguise.wither.-setinvisible
+  - libsdisguises.disguise.wither_skeleton.-setinvisible
+  - libsdisguises.disguise.wolf.-setinvisible
+  - libsdisguises.disguise.zombie.-setinvisible
+  - libsdisguises.disguise.zombie_villager.-setinvisible
+  - powers.depower
+  - -esssentials.warps.*
+  - essentials.back
+  - -essentials.protect.damage.fall
+  - essentials.tppos
+  - essentials.fly
+powers:
+- /effects
+- /items
+- /jump 0-4
+- /run 0-6
+- /haste 0-3
+- /grow
+- /normalsize
+- /fly
+- /depower <player>
+- /disguise
+- /create <item> <quantity> <color>
+- /headdb
+- /mindcontrol
+- /undisguise
+- /disguiseviewself
+- /empower <player>
+- /back
+- /tppos <x> <y> <z>
+- /tp
+- /destroyworld
+run: 6
+speech: Let's play a game.
+trail: [
+  ]
