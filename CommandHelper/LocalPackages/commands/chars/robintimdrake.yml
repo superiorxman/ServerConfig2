@@ -1,0 +1,31 @@
+class: robintimdrake
+costumes:
+- chatcolor: '&4'
+  name: §4R§eo§8b§ei§4n§8(§4T§eD§8)
+  sig: RPyxaQ4RXiFtyGiRBdSGcmz8deqef4BZECe5Pp1Z84jLwyW9Zy2KaesEDL/q45SsiDL1OkbQLPF9UHGRu3xT9/nWdLuhWR+Y2hv+dyXd3aep3QTyL3HZVYrD3Y+aTHjRu2zDMAYDgbg8eZR8oSvwDyjn3vuQPv+N2snOsiqg5mHURV5kg2Lv/TwJ0E0lv5WVAze1iS5fdzEUoFNsoVjLsl+fEA/Id+gZCh8a8HYoD095no1/DOydX6LPP59AVqIc7BtStXRucCWkMW7Cb0xahJgBWWlCCRHROYudUgV7u8zP1VE3pQeAq7AwCkP8J687sfb731ii2KCi2cxxZkQ0PDz4DiCSZixE0xxgmTqjGPFpHFAYNE7700X4wtha7jsCZmrE0TBqVOw1mw4aM2stIcZoRWwuoCrYpU+uLnWHa45/1pZXyXIUxXgcMIekgfhju9HoMORmzsKTcgzIe2ygRKVjn3OTSHMs/fxFpo/RM0TvsWiyWS9yN69c1SRTBfi4pk5WmMGTPExBKa91uOcQW1bqHfQDc4PkMsamMe8vDJTPfU+jEDzKnr3PCeJg537vD/RtrmaP0pFxTGoDqEr3ihbYh7p4SCQR5BfvZqJIqtqXPpYTLomp9oq1MKjUeHgtHufaYhzVouqNpaXtarisujrSRL38WAEnEi/qy54T1Xk=
+  vig: eyJ0aW1lc3RhbXAiOjE1MjMxNDg0MDc3MDQsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5YjRlZDhjNjdjMzk2ZGJkY2JlZTU3MDZiZTBjODhmN2MxN2M3Y2NmNGY5ZDZkZDcyNzVlMGU3ZjM4ZCJ9fX0=
+effects:
+- /effect <plr> 5 9999 2 true
+haste: 2
+items:
+- /give <plr> minecraft:elytra 1 70:1 34:3 name:&4R&eo&8b&ei&4n&8(&4T&eD&8)'s_Glide_Wings
+- /give <plr> minecraft:ender_pearl 10 name:&4R&eo&8b&ei&4n&8(&4T&eD&8)'s_Grappling_Hook
+- /give <plr> minecraft:stick 1 19:2 16:2 name:&4R&eo&8b&ei&4n&8(&4T&eD&8)'s_Battle_Staff
+jump: 2
+maxHearts: 20
+permissions:
+  superherocity:
+  - powers.herotransform
+powers:
+- /effects
+- /items
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
+- /herotransform
+run: 2
+speech: I am the 3rd Boy Wonder!
+trail: [
+  ]
+transformations:
+- timdrake
