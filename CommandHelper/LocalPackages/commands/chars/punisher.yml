@@ -1,0 +1,34 @@
+class: punisher
+costumes:
+- chatcolor: '&7'
+  name: §fDe§cad§8sh§co§8t
+  sig: uz+HdmMGmikhjPDcZbnrN9l6ER4b9iU47RXCiNO1NLVL+nGtvMzqXO/29O7j8WoORF5xxkDaNzio7sKlCgEnV4RtSISmqFo1R8N9HeiooLjOxju5dAhUMTf3UhN0XgqnBeUg3ePwUpWCARZXsugVNlLYdUgJZnrPrg+wSrP9Y8XAzFZe3VvDQRLz5RLdiB0qXZqwQOXLvSTXFhRKQldR4nbYXf5UJ8yblZpNUHXnM0OlUN/4juL2dWvK4ZU1Jn3fkJ4fXmksu3W1OPUv2eQTjG7lznZsn/TPeay4oO5mblcpfjKFM/ApO66WUv4Xv8IZVeYmbJIYa0/+f83XXSAFOSc+L6BQ73mbaCLxEG8C6Xm79s3mNC23ZdLU5v8L3sSM57ZvoI3ni5jPe5cptN0nLE3SSwhXkFnlx1+mtUDrLwfUcMFRWPWKd+w1igVeQERh4INdqunVRaI3Nv0HPQim9HGwF4ePhRu2M4h1yLAacMkCk6q1unCOCvnrA0gUNUtg1W+BPVvQl0kpP+zUIBOKJy/pg26kq0dfPipsBR/CTbHhlZppyGNXJVDrbEmE3U5bO6IGISdXZcD0Zk37OGlZgUShXNWNMQ2++ZAzAk3Adp3SA0VA+/bXWz8lM/1kqHet5lqXito1/8GKsCljR8tWbhA/EoPduzQrVX0+awpnDE0=
+  val: eyJ0aW1lc3RhbXAiOjE1MjMxNTkzMjAzNjUsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5Mjc2M2ViOTRiMmZiYTk4Y2E4ZTlkNTg3NzU3NGU3ZDQ0ZmU0ZThmMTM2NzE4MzkxZmY5NDQ2ZWRjYWI1In19fQ==
+effects:
+- /effect <plr> 5 9999 3 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 1 true
+haste: 1
+items:
+- /shot give <plr> pistol
+- /shot give <plr> AK-47
+- /shot give <plr> Type95
+- /shot give <plr> Olympia
+- /shot give <plr> Python
+- /shot give <plr> Gauss
+- /shot give <plr> Grenade
+- /shot give <plr> Hunting
+jump: 1
+maxHearts: 20
+permissions:
+  superherocity: [
+    ]
+powers:
+- /effects
+- /items
+- /run 0-3
+- /jump 0-1
+- /haste 0-1
+run: 1
+speech: Death is the only solution for crime.
+trail: [
