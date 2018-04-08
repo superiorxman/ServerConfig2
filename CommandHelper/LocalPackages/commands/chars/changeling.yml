@@ -1,0 +1,96 @@
+class: changeling
+costumes:
+- chatcolor: '&2'
+  info: Teen Titans 1980
+  name: §2Ch§fan§4ge§fl§2i§4ng
+  sig: I6zBYUrxQFI/4v/5HOJVcKpzT24CbPzEuKUmkY74gvrE2yjhd6AgmxNrety8ono3ihwVgRL+ASQHtPqbrktfT0hY4VxBwsdiEWlmn9DtExe5QzdauvDyDG96gG5o+dBfv1vEm/pZG8DuwaEvSiMpD2hKCSrAhB186gKk/GQVUWhSS6a3kB0use+CX4VGGKoCy+IpsW19XYwxCyDD2Oxz8Y3xC1xxNR0P4b9LQQr3IukBs7e1Yhj2H7j5l7j1pDLqOx+jZfc+FwgdOozn6+tDeTPfIq2wyDOGzFLRvhFj6WDua0NTbxOmWGy3XYQsiUtzV+BdFyKQLau/3ugn2JEr3W3Ir33l09QLrfqkAtj1LcM3COV7k+YH7gxyayCEjDJsOaJ6GQFsV5dQlNil4hgxKMUEAdV10GxWmdDJvx4kFK+fOnO3o/QvsRCwCRXmoHAoi1Awtbrz2X8VOd6xRU+eYrlUFlJY1AdADAMUYSNBbHyvYELdfoZze1m2fT4j13VRm9QhaN77wspVv5pEr+sIQ4goI/yxs7QA/LY8i23mIcjDOX3oecK5vo+eUKngbfIm77wjrf59c/RqFHnNX6FgtYdfGHFtNsE1y9QiS2FKZEWUnjQccBa6Nn8IlxhEWc/dHu/haRhYYNmuzzLUkZAh925Tfex6JbKr/ip3f6onSuo=
+  val: eyJ0aW1lc3RhbXAiOjE1MjA4NDM1MzMwNjYsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q3YjdmYTk4M2I4OGJiZDU5ZjNkNDU5NmYxZDQxYmI5ZjBiOWE4ZWQ3MGYyMmI4MWUzZjExNjZjNTg0OSJ9fX0=
+effects:
+- /effect <plr> 5 9999 5 true
+- /effect <plr> 10 9999 1 true
+- /effect <plr> 11 9999 2 true
+- /effect <plr> 12 9999 1 true
+- /effect <plr> 13 9999 1 true
+- /effect <plr> 16 9999 1 true
+haste: 6
+items:
+- /give <plr> minecraft:fireworks 64 name:&7Propelled_Flight
+- /give <plr> minecraft:elytra 1 70:1 34:5 name:&6Wings
+- /give <plr> minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts
+jump: 8
+maxHearts: 30
+permissions:
+  superherocity:
+  - libsdisguises.disguise.bat.-setinvisible
+  - libsdisguises.disguise.chicken.-setinvisible
+  - libsdisguises.disguise.cow.-setinvisible
+  - libsdisguises.disguise.donkey.-setinvisible
+  - libsdisguises.disguise.horse.-setinvisible
+  - libsdisguises.disguise.mooshroom.-setinvisible
+  - libsdisguises.disguise.ocelot.-setinvisible
+  - libsdisguises.disguise.parrot.-setinvisible
+  - libsdisguises.disguise.pig.-setinvisible
+  - libsdisguises.disguise.rabbit.-setinvisible
+  - libsdisguises.disguise.sheep.-setinvisible
+  - libsdisguises.disguise.skeletonhorse.-setinvisible
+  - libsdisguises.disguise.squid.-setinvisible
+  - libsdisguises.disguise.villager.-setinvisible
+  - libsdisguises.disguise.cavespider.-setinvisible
+  - libsdisguises.disguise.enderman.-setinvisible
+  - libsdisguises.disguise.irongolem.-setinvisible
+  - libsdisguises.disguise.llama.-setinvisible
+  - libsdisguises.disguise.polarbear.-setinvisible
+  - libsdisguises.disguise.spider.-setinvisible
+  - libsdisguises.disguise.wolf.-setinvisible
+  - libsdisguises.disguise.pigzombie.-setinvisible
+  - libsdisguises.disguise.blaze.-setinvisible
+  - libsdisguises.disguise.creeper.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.endermite.-setinvisible
+  - libsdisguises.disguise.evoker.-setinvisible
+  - libsdisguises.disguise.ghast.-setinvisible
+  - libsdisguises.disguise.guardian.-setinvisible
+  - libsdisguises.disguise.husk.-setinvisible
+  - libsdisguises.disguise.magmacube.-setinvisible
+  - libsdisguises.disguise.shulker.-setinvisible
+  - libsdisguises.disguise.silverfish.-setinvisible
+  - libsdisguises.disguise.skeleton.-setinvisible
+  - libsdisguises.disguise.slime.-setinvisible
+  - libsdisguises.disguise.stray.-setinvisible
+  - libsdisguises.disguise.vex.-setinvisible
+  - libsdisguises.disguise.vindicator.-setinvisible
+  - libsdisguises.disguise.witch.-setinvisible
+  - libsdisguises.disguise.witherskeleton.-setinvisible
+  - libsdisguises.disguise.zombie.-setinvisible
+  - libsdisguises.disguise.zombievillager.-setinvisible
+  - libsdisguises.disguise.snowgolem.-setinvisible
+  - libsdisguises.disguise.enderdragon.-setinvisible
+  - libsdisguises.disguise.wither.-setinvisible
+  - libsdisguises.disguise.elderguardian.-setinvisible
+  - libsdisguises.disguise.giant.-setinvisible
+  - libsdisguises.disguise.illusioner.-setinvisible
+  - libsdisguises.disguise.killerbunny.-setinvisible
+  - libsdisguises.disguise.zombiehorse.-setinvisible
+  - ch.alias.shrink
+  - ch.alias.normalsize
+  - ch.alias.grow
+  - powers.wallclimb
+powers:
+- /effects
+- /items
+- /jump 0-8
+- /run 0-6
+- /haste 0-6
+- /disguise
+- /shrink
+- /normalsize
+- /grow
+- /wallclimb
+- Wall climb by standing next to a wall and pressing crouch and vines will appear.
+  The vines are only visible to you, not to other people, so it looks like you're
+  really climbing the wall! You can stop climbing but continue to press crouch to
+  stick to the wall in place and look around.
+run: 6
+speech: Changling is here to save the day!
+trail: [
+  ]
