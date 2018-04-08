@@ -17,13 +17,11 @@ permissions:
 powers:
 - /effects
 - /items
-- /run <0-4>
-- /jump <0-5>
+- /jump <0-4>
 - /flame <player>
 - /fireballpunch on/off
 - Can throw fireballs by punching with an empty hand
-run: 4
-jump: 5
+jump: 4
 speech: GET OVER HERE!
 trail: [
   ]
