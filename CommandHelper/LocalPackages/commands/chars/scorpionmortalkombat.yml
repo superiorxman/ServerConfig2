@@ -13,11 +13,13 @@ items:
 permissions:
   superherocity:
   - powers.fireballpunch
+  - ch.alias.flame
 powers:
 - /effects
 - /items
 - /run <0-4>
 - /jump <0-5>
+- /flame <player>
 - /fireballpunch on/off
 - Can throw fireballs by punching with an empty hand
 run: 4
