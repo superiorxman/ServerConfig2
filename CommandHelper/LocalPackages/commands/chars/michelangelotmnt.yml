@@ -1,0 +1,24 @@
+class: michelangelotmnt
+costumes:
+- chatcolor: '&6'
+  name: §2Mich§6elan§2gelo§8(§2TMNT§8)
+  sig: 
+  val: 
+effects: [
+  ]
+haste: 2
+items:
+- /give <plr> minecraft:fishing_rod 1 16:5 name:&2Mich&6elan&2gelo&8(&2TMNT&8)'s_Nunchucks
+jump: 2
+maxHearts: 20
+permissions: [
+  ]
+powers:
+- /items
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
+run: 2
+speech: Cowabunga, dude!
+trail: [
+  ]
