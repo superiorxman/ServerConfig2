@@ -338,6 +338,10 @@ fill_wands: false
 # 1 would be only the level 1 versions
 fill_wand_level: 0
 
+# Set this to true to only fill wands with spells created by the player
+# Useful in sandbox configs
+fill_wand_creator: false
+
 # Players can remove spells from their wands
 allow_spell_dropping: false
 
@@ -677,6 +681,12 @@ max_velocity: 10
 
 # Commands like /mgive and /wand will bind wands to players
 bind_on_give: false
+
+# This can be used for a server that is hooked up with a live editor
+# The editor will touch this file, and the server will automatically
+# reload configurations when the configs have changed.
+config_update_file: updated.json
+config_update_interval: 0
 ## Work-in-Progress or not-fully-functional options
 
 # Whether or not to show (or broadcast) cast messages as holotext

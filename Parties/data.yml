@@ -11,12 +11,6 @@ players:
     name:
       name: PsychicVictini
       timestamp: 1519635597
-  1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99:
-    party: Dude
-    name:
-      name: MisserMan
-      timestamp: 1519677753
-    rank: 20
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     name:
       name: TheRealSans_
@@ -47,12 +41,6 @@ players:
       name: Spiderninja90
     rank: 10
     party: TheTitans
-  f94c3653-6191-4414-ab77-5a315fe93cd9:
-    name:
-      timestamp: 1520101461
-      name: Clutonov
-    rank: 5
-    party: Dude
   8cd908e9-a758-41fa-99b9-1a8f8ffc5297:
     name:
       timestamp: 1520211151
@@ -143,24 +131,12 @@ players:
       name: Mythification
     rank: 5
     party: XMen
-  ae37c994-7b2c-4927-923c-33fc87301321:
-    rank: 5
-    name:
-      timestamp: 1521242216
-      name: AdoBoy
-    party: TheTitans
   ff0fec80-b8d2-4d10-8951-3061c6e7181d:
     rank: 5
     party: Chaos
     name:
       timestamp: 1521318126
       name: Ultimate_Gamer00
-  524eb61e-b329-4b65-8cd2-8f6d0e9b1919:
-    name:
-      name: carolinacub
-      timestamp: 1521324117
-    party: TheTitans
-    rank: 5
   861da66b-8eef-4143-93f1-dbab33665595:
     name:
       timestamp: 1521421688
@@ -308,18 +284,6 @@ players:
       timestamp: 1522932762
     party: Hell
     rank: 5
-  474707f7-f8b4-43ea-8978-9cae17917e82:
-    party: Revengers
-    name:
-      timestamp: 1522957634
-      name: ThatCraftLifeMCU
-    rank: 20
-  98eaee4f-eb44-4674-ac95-9944a0da2861:
-    name:
-      name: LittlePenguin022
-      timestamp: 1522958210
-    party: Revengers
-    rank: 5
   2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
     name:
       name: TheoreticalGame
@@ -338,12 +302,24 @@ players:
       timestamp: 1523098802
       name: ZwaagGirls
     rank: 5
-  62cc01ec-2e7b-4243-91ab-6394b6007d55:
-    rank: 5
-    party: Revengers
+  1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99:
+    party: TheTitans
     name:
-      timestamp: 1523122890
-      name: sparklingsalt
+      name: MisserMan
+      timestamp: 1523232185
+    rank: 5
+  1cb4fc41-4aec-488f-83a3-2edffcd21711:
+    name:
+      timestamp: 1523232549
+      name: imcoolbo
+    party: TheTitans
+    rank: 5
+  ccecc513-b84b-44cb-8bcd-bf6cf31d4393:
+    name:
+      timestamp: 1523236264
+      name: jefferunfaster
+    party: Chaos
+    rank: 5
 parties:
   TheTitans:
     members:
@@ -357,18 +333,13 @@ parties:
     - de5871d3-17d4-485f-8ddb-b45b30ee6591
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - a15f051c-1473-4f90-88f3-bad6e6b9dce2
-    - ae37c994-7b2c-4927-923c-33fc87301321
-    - 524eb61e-b329-4b65-8cd2-8f6d0e9b1919
     - b67316ab-26b9-4329-8766-bb5a1eb164b3
     - 7148a878-534c-46f8-9f81-7f5598807c6e
+    - 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
+    - 1cb4fc41-4aec-488f-83a3-2edffcd21711
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
     motd: Supergirl and Superboy are now the Titans Leaders.
     desc: Were The Titans
-  Dude:
-    leader: 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
-    members:
-    - 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
-    - f94c3653-6191-4414-ab77-5a315fe93cd9
   Overwatch:
     members:
     - 8cb79cd3-1e48-4087-9137-a37e164f1494
@@ -391,6 +362,7 @@ parties:
     - 21e726fd-af17-4454-bb61-25e55d7300ef
     - 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303
     - c1da0567-bcd9-48a0-9bf3-263be1439205
+    - ccecc513-b84b-44cb-8bcd-bf6cf31d4393
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -457,10 +429,3 @@ parties:
     - 3639172b-aa0f-498d-9322-18addf094675
     - 8efe1a15-da4a-430c-a6c6-8a1344a1618f
     - b5224355-6e3b-4514-a833-6208f459f9c5
-  Revengers:
-    members:
-    - 474707f7-f8b4-43ea-8978-9cae17917e82
-    - 98eaee4f-eb44-4674-ac95-9944a0da2861
-    - 62cc01ec-2e7b-4243-91ab-6394b6007d55
-    leader: 474707f7-f8b4-43ea-8978-9cae17917e82
-    desc: Revenge is key

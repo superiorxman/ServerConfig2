@@ -49,5 +49,10 @@ proc('_checkJobs',@player,
         return(false)
     }
 
+    //if(has_permission(@player,'is.coowner')){
+    //    msg(color('RED').'That player is already a Co-Owner')
+    //    return(false)
+    //}
+
     return(true)
 )

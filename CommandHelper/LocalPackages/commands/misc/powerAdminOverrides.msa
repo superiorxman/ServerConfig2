@@ -1,3 +1,11 @@
 /chtptoggle $bool = >>>
-    export(player().'tpallow',boolean($bool))
+
+    if($bool == 'true'){
+        @bool = true
+    }else{
+        @bool = false
+    }
+    @name = 'tpallow'
+    msg(@name.' set as '.@bool)
+    export(player().'tpallow',@bool)
 <<<
