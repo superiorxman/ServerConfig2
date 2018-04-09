@@ -6,24 +6,18 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MjMyMjQ1NTQxNjQsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JiNjQ1ZjczOTY5ZTExODg0MmJkZjg4MmYxOTNjNjJhOTA1OThjYzkzMzlmMTEzNDNhMTM5YzM0NTE3NjNiZDYifX19
 effects: [
   ]
+mindControlDist: 1
 items: 
 - /mgive <plr> pistol
 permissions:
   superherocity:
-  - ch.alias.msg
-  - ch.alias.mindlock
+  - ch.alias.mindcontrol
   - ch.alias.stopmindcontrol
-  - ch.alias.confuse
-  - ch.alias.unconfuse
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - ch.alias.mindcontrol
 powers:
 - /mindcontrol <player>
 - /stopmindcontrol
-- /confuse <player>
-- /mindlock <player>
-- /msg <player>
 speech: WElcome to the MAD TEA PARTY!
 trail: [
   ]
