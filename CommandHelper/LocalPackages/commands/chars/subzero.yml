@@ -1,18 +1,16 @@
 class: subzero
 costumes:
 - chatcolor: '&9'
-  name: &1S&9u&bb&8-&8Z&7e&fro
+  name: S§9u§bb§8-§8Z§7e§fro
   sig: wk5u1bqYfD3mLN6c/fK2a8sq++5CK9eYU13lWeXYh4Z3DkuHFD4rW3iv71WWvESuqydDdZppSBm+UK9Nx4We8teLQXkIyR9EhTTNdA2iP3bHbdmVo634XpsFpyhNtC33Txd98/J0WiEw8OA1WG8BocGVJNHirMn7Up40xrRwbpT1rm+egLrFr5Szm6SngSMdApka3CVqYQpvS7T7v/ZHmNZMQX1A/3F+aNjAV3OSEj9eEWzDCYujWlLcaUmKITJHHQTHAJi6Bi72c+rcOxR394PVqF0doLFTg3M0NxKXZEz7neUUVVLpgNzNVVAihhoAwELKaF10czdFSgfzbP5xoRQ4jFJqYJR2YCTamct4AYTKSUstgiMVFGk92QjuX+njPP/KUYIfX2WynEFqWvELBag8Db8TfeC6s2enjS4QcKx9RHs6oE2qpADHxvCfiS/FHAMsSYJwHg/yoNlGHSLbiGqJbOaLkR+Y1bQ7JMyx4acNJUW1w+3acLQxR0WSflPvuIxPbsn/3jyoG/+WOVNglLnN2vVEU1o5zSxMF1MmMurnPP26Qc1VU4Dzyw7rIA0I6qqRSJx/iT8hdcnwlFmQyJdR9rwC/erXpw+LKlQykrypGOl2Uyt118+0bE/Au6ctTYj4tK4ePtdXOZyOeBVj8YCamIn+aF3xZED/RlkWpnU=
   val: eyJ0aW1lc3RhbXAiOjE1MjMxNjMzNDM2MzAsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlhNTk5MGFkNGNiYjVlZTNlNzQ1YjYzOWY4MjM0ODQzODY3MzQyYjlmNDZmNWEyMDJhODNkY2QyYmM1ODUxIn19fQ==
 effects:
-- /effect <plr> 10 9999 2 true
 - /effect <plr> 11 9999 1 true
 items:
 - /shot give <plr> icebeam
-- /give <plr> minecraft:ice 5 16:10 17:10 name:Subzero's Ice Fist
+- /give <plr> minecraft:ice 5 16:3 name:Subzero's_Ice_Fist
 - /give <plr> minecraft:iron_boots 1 9:3 name:Subzero's(&bM&8)_&9B&3o&8ot&fs
 - /mgive <plr> frostwand
-- /mgive <plr> iceshieldwand
 permissions:
   superherocity:
   - ch.alias.carryplayer
