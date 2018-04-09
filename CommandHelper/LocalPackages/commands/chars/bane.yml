@@ -14,14 +14,17 @@ items:
 jump: 3
 maxHearts: 20
 permissions:
-  superherocity: [
-    ]
+  superherocity:
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
 powers:
 - /effects
 - /items
 - /run 0-6
 - /jump 0-3
-- /haste 0-1
+- /haste 0-3
+- /carryplayer <player>
+- /dropplayer
 run: 6
 speech: I WILL BREAK YOU!
 trail: [
