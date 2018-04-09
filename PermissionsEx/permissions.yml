@@ -4252,27 +4252,6 @@ groups:
         - ch.alias.dropplayer
         - ch.alias.carryplayer
         - -essentials.protect.entitytarget.bypass
-  therayrayterrill:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&8Th&ee &8R&ea&8y(&eRT&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.vis
-        - ch.alias.invis
-        - essentials.speed
-        - essentials.speed.fly
-        - powers.fireballpunch
-        - essentials.fly
-        - ch.alias.dropplayer
-        - ch.alias.carryplayer
-        - headdb.free.*
-        - headdb.category.*
-        - headdb.open
-        - ch.alias.create
   darkarchermalcolmmerlyn:
     inheritance:
     - commonherotraits
@@ -9765,35 +9744,6 @@ groups:
         - ch.alias.normalform
         - ch.alias.grow
         - ch.alias.tp
-  martianmanhunter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2M&4a&2rt&9i&2an &9Man&2hunter'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tangible
-        - ch.alias.intangible
-        - libsdisguises.disguise.player
-        - libsdisguises.undisguise
-        - libsdisguises.disguise
-        - ch.alias.vis
-        - ch.alias.invis
-        - ch.alias.speak
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.mindcontrol
-        - ch.alias.unconfuse
-        - ch.alias.carryplayer
-        - ch.alias.dropplayer
-        - ch.alias.confuse
-        - ch.alias.stopmindcontrol
-        - powers.wallrun
-        - ch.alias.mindlock
-        - ch.alias.msg
   thebeyonder:
     inheritance:
     - commonherotraits
@@ -10117,6 +10067,56 @@ groups:
         - ch.alias.dropplayer
         - powers.herotransform
         - ch.alias.grouptp
+  martianmanhunter:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2M&4a&2rt&9i&2an &9Man&2hunter'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tangible
+        - ch.alias.intangible
+        - libsdisguises.disguise.player
+        - libsdisguises.undisguise
+        - libsdisguises.disguise
+        - ch.alias.vis
+        - ch.alias.invis
+        - ch.alias.speak
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.mindcontrol
+        - ch.alias.unconfuse
+        - ch.alias.carryplayer
+        - ch.alias.dropplayer
+        - ch.alias.confuse
+        - ch.alias.stopmindcontrol
+        - powers.wallrun
+        - ch.alias.mindlock
+        - ch.alias.msg
+  therayrayterrill:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&8Th&ee &8R&ea&8y(&eRT&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.vis
+        - ch.alias.invis
+        - essentials.speed
+        - essentials.speed.fly
+        - powers.fireballpunch
+        - essentials.fly
+        - ch.alias.dropplayer
+        - ch.alias.carryplayer
+        - headdb.free.*
+        - headdb.category.*
+        - headdb.open
+        - ch.alias.create
 schema-version: 1
 worlds:
   checkers:
@@ -12717,7 +12717,7 @@ users:
       name: ReesesPC3S
   b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857:
     group:
-    - doctormanhattan
+    - therayrayterrill
     options:
       name: Guitar_Hero
   9c91fd83-2115-46b7-bd9e-925633cc5a25:
