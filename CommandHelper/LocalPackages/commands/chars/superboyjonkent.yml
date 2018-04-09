@@ -14,15 +14,11 @@ maxHearts: 40
 permissions:
   superherocity:
   - weakto.kryptonite
-  - essentials.fly
-  - essentials.speed.fly
 powers:
 - /effects
 - /items
 - /run 0-8
 - /haste 0-6
-- /fly
-- /flyspeed <number>
 run: 8
 speech: I am Jon Kent, Son of Superman!
 trail: [
