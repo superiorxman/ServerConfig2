@@ -5,11 +5,10 @@ costumes:
   sig: QbqsdnD9NszjhGYG2DfGDOTpgpBc/bE6UQeebNwOz7e5dGw3KpzqjN1Rsfa6x7v5hWwTnpdBo39oTEK+8eWRzMXrB7xjmLFkVly1KE4QBRRlrSUsOh0OPcXJnHX0OcJOHAIjPvZmv2haVT1QCWAUZrT9xmLdEExZo96ka4QAz3XGG9fwqIgGCOGFgHWMCKE3bFG3dv/bxaSO9zDA22rKd+9tZC2enfa2C58rYw9jtaHxfSAbwpqTLsHWth4JtuWQZtBqz5ORtOidpbNylk31z1igNmUu5MdP6ClienTglS1jk9HJ1enAE6o65vJKpfrDssVsOUpOyDzcJZCAEPMLH/JpcrjFSZj3bOO++lRbJGlY0BQjOiGfqFU9M92JKPazRa+lM0IvaFWPuRYCSHLCVJDBzsWmlmQkbppLSb18aIl/C+MJbOZnEfOY6IOejd1c41bG+G3z4TWCYHt+ZBRQq+Hk+xeqNC9459WqWZNkvav7H61ZOfyQVhNSUAKdUPs3ZtJEUVr58pwuYePV3f66GsYc2SLm9HxJnphLYwKDBPOMUZvbgSSGHdm4jWWMHDIcUV272p2Nx/+x6drRdBlU8dyCt+vUg37j89NYk+E6zp1jpAK10hExJ3h7188BH5nZ1LiMF/RQPUS9kz0emCSmSIN3AZLuYZTSUbeXAgnfW+s= 
   val: eyJ0aW1lc3RhbXAiOjE1MjMyNDg4MTc2MTcsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M4ZDI2OGI0YTNmNThkN2ZlNzU5MzYxOWM0NDIwNTJkOTJlY2IzNTMzMjhiOWRkN2U5OTI2N2RiNjE0ODIyIn19fQ==
 effects:
-- /effect <plr> 5 9999 15 true
+- /effect <plr> 5 9999 5 true
 - /effect <plr> 11 9999 1 true
 haste: 3
-items:
-- /shot give <plr> AK-47
+items: []
 jump: 3
 maxHearts: 20
 permissions:
@@ -19,12 +18,10 @@ permissions:
 powers:
 - /effects
 - /items
-- /run 0-6
 - /jump 0-3
 - /haste 0-3
 - /carryplayer <player>
 - /dropplayer
-run: 6
 speech: I WILL BREAK YOU!
 trail: [
   ]
