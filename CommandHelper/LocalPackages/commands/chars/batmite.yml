@@ -63,6 +63,8 @@ permissions:
   - -essentials.protect.damage.fall
   - essentials.tppos
   - essentials.fly
+  - ch.alias.mindcontrol
+  - ch.alias.stopmindcontrol
 powers:
 - /effects
 - /items
@@ -79,6 +81,8 @@ powers:
 - /tppos <x> <y> <z>
 - /tp <plr>
 - /tphere <plr>
+- /mindcontrol <player>
+- /stopmindcontrol
 run: 2
 speech: Batman is the best superhero of all time!
 trail: [
