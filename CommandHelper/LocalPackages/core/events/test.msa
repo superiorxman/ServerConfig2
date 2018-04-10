@@ -34,6 +34,15 @@ nametransfer:/nametransfer = >>>
 
 aahh:/aahh = >>>
 
-    msg(ploc())
+    @plrs = array('a','b','c','d')
+    @successfulVics = array()
+    @i = 1
+    foreach (@plr in @plrs){
+        @mindControlledPeople = array(@plr,@i)
+        array_push(@successfulVics,@mindControlledPeople)
+        @i++
+    }
+
+    msg(@successfulVics)
 
 <<<

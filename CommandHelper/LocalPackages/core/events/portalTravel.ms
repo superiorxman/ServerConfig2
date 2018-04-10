@@ -1,4 +1,4 @@
-bind('player_portal_travel', null, null, @e) {
+/*bind('player_portal_travel', null, null, @e) {
 
     @to = @e['to']    
 
@@ -23,3 +23,4 @@ bind('player_portal_travel', null, null, @e) {
     ))
 
 }
+*/
