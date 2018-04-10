@@ -22,6 +22,8 @@ permissions:
 powers:
 - /effects
 - /items
+- /jump <0-4>
+- /run <0-5>
 - /carryplayer <player>
 - /dropplayer
 - /freezewater
