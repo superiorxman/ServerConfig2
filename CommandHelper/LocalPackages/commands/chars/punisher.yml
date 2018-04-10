@@ -6,14 +6,11 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MjMxNTkzMjAzNjUsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzM5Mjc2M2ViOTRiMmZiYTk4Y2E4ZTlkNTg3NzU3NGU3ZDQ0ZmU0ZThmMTM2NzE4MzkxZmY5NDQ2ZWRjYWI1In19fQ==
 effects: []
 items:
-- /shot give <plr> pistol
-- /shot give <plr> AK-47
-- /shot give <plr> Type95
-- /shot give <plr> Olympia
-- /shot give <plr> Python
-- /shot give <plr> Gauss
-- /shot give <plr> Grenade
-- /shot give <plr> Hunting
+- /mgive <plr> stungrenadewand
+- /mgive <plr> pistol
+- /mgive <plr> pistol
+- /mgive <plr> sniper
+- /mgive <plr> rocketlauncher
 powers: []
 speech: Death is the only solution for crime.
 trail: []
