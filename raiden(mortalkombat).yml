@@ -21,6 +21,7 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.dropplayer
+  - ch.alias.tp
 powers:
 - /effects
 - /items
@@ -33,6 +34,7 @@ powers:
 - Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>
 - /fly
+- /tp
 run: 9
 speech: 
 trail: [
