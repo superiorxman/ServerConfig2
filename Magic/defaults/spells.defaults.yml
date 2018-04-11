@@ -13081,6 +13081,7 @@ shell|4:
         breakable: 1
 
 woolshop:
+    hidden: true
     inherit: buyshop
     parameters:
         items:
@@ -14426,6 +14427,7 @@ sponge:
       mana: 65
 
 spsellshop:
+    hidden: true
     inherit: sellshop
     parameters:
         items:
@@ -16156,6 +16158,7 @@ tree:
 
 trinketshop:
     inherit: buyshop
+    hidden: true
     parameters:
         items:
         - skull_ale

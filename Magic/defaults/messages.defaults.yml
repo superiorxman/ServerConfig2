@@ -1602,6 +1602,7 @@ spells:
         cast: You transmute your structure to $material
     masterattack:
         name: Master Blast
+        description: "A long-range attack that can only be performed when your health is full"
         insufficient_resources: ""
         cooldown: ""
     missile:
@@ -2038,7 +2039,7 @@ spells:
       description: Randomly teleport to a nearby location
     backflip:
       name: Backflip
-      descripttion: Quickly move backwards to evade your foes
+      description: Quickly move backwards to evade your foes
       fail: "a:There's nowhere to go!"
     birth_hunter:
       name: Create Hunter
@@ -2079,6 +2080,7 @@ spells:
       description: "Add the sharpness enchantment to your magic sword."
     magictorch:
       name: Magic Torch
+      description: A light that follows you around
     wandbuffshop:
       name: Wand Buffs
       description: "Add buffs to your wand.\nThese are only active while you are holding your wand."
