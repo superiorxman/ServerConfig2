@@ -6,7 +6,7 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MjMyMzU0MzA0NjMsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFlYTMyNDE1NzVhYTM1NGNkODc1ZGM2NzRhZGI0NTdmZjUyNTdhOGEwZTEzNTY0YzNiNTUwODRhZjUyNDAifX19
 effects:
 - /effect <plr> 5 9999 10 true
-haste: 6
+run: 5
 items:
 - /shot give <plr> kryptonianlaservision
 maxHearts: 40
@@ -16,9 +16,9 @@ permissions:
 powers:
 - /effects
 - /items
-- /run 0-6
-- /haste 0-5
-run: 8
+- /run 0-5
+- /jump 0-5
+jump: 5
 speech: I am Jon Kent, Son of Superman!
 trail: [
   ]
