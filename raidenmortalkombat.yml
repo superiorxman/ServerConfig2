@@ -6,8 +6,7 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MjM0MDA0MDczNzcsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI2MzA2OGRmMmJlMjU1MzIzYWI4ZTRkM2VjYzhkY2JhMzc4ODVjYjJmZWIwOTlmMzNmNjNlZTI2NTQ4YjkifX19
 effects: []
 haste: 2
-items:
-- /shot give <plr> whitelightning
+items: []
 jump: 2
 maxHearts: 30
 permissions:
@@ -19,9 +18,8 @@ permissions:
   - essentials.speed
   - ch.alias.dropplayer
   - ch.alias.tpradius
+  - powers.lightningpunch
 powers:
-- /effects
-- /items
 - /jump 0-2
 - /run 0-2
 - /haste 0-2
@@ -30,6 +28,7 @@ powers:
 - /flyspeed <number>
 - /fly
 - /tpradius
+- /lightningpunch on/off
 run: 2
 speech: 
 trail: [
