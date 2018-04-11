@@ -6,20 +6,16 @@ costumes:
   val: eyJ0aW1lc3RhbXAiOjE1MjM0MDk2NjU3NjksInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQyMTQyOTIzNmEzNDVjMTdhOWExNWY5ZWNmMGI4ZDQzNTNjNWI0ZmQzNWYxZDgzMWVmYjc4ZmZmOGQ1MmYifX19
 effects:
 - /effect <plr> 5 9999 20 true
-- /effect <plr> 10 9999 2 true
 items:
-- /give <plr> minecraft:iron_axe 1 16:30 name:&2Wrath_&cHammer
+- /give <plr> minecraft:iron_axe 1 16:5 name:&2Wrath_&cHammer
 maxHearts: 40
 permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - essentials.speed
 powers:
 - /effects
 - /items
-- /jump 0-4
-- /run 0-3
 - /carryplayer <player>
 - /dropplayer
 speech: I will merge ALL the realms!
