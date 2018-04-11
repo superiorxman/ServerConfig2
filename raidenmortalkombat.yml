@@ -1,41 +1,36 @@
-class: raiden(mortalkombat)
+class: raidenmortalkombat
 costumes:
 - chatcolor: '&b'
   name: &0R&ea&id&fen&8(&6MK&8)
   sig: chydGT1xu+Ii2Z18UXGxswKtsJr1Y+wzUnMpN4Y7WSkMWV9ayJL4gKOxHBcnKtWmAq2s0qJY6We75b2fnWGqBoULoko08RVmcN1LOG5s6FteqVXa7B17A1d1/3Q6v/hHoBD7t6TjueW/DL62mtBK9TIwQ+4lX89AS9+wECY9ScPmCEA6cCpqaooxEJca6+PdJGQZ9Bzh+HlPp2Qjz8JTn3dLUi2tkcXk4oA7v6wWvFr6+/v0ICEpIVft+03qGSDLJUlByvfCaVfYO29H7ObDDEewTlQ8icLSEVsEjEORu2OtAu2g7mVV1/YjbcyiaAtseeYKWOhHLpccvnnnDP7kZRfhUrHqU/ffDjMmVNgkeJSJTvDl/+gC1xZyQu0wBwrd4TiogCA7enFUk1y8ORP415WX4zgCskoSaoNAK9/dmew1YeQAbLIK7+OCRn2HxCAjLJjMbTULkv6+Ttjo16ME5ZJ5UV8icVwtuiyi8HOK8U9qjrw1E+JpUxVFf54MGR1FJYkjdbe1t+AploNA+Mx80lyaGH/LDSfTxPyx114W4ICzZnKalAXXv/aqofvK4B0G7v1jDNFDFXu/sv3v/A3F8x/imFVjbBP335+IUnhNRHBRajaBK5Q2F4tg2BhHGIQZygzlK2mbNBnWHTNUj2ElKfc3pws7TZ8QrTnF+kWFvE0=
   val: eyJ0aW1lc3RhbXAiOjE1MjM0MDA0MDczNzcsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI2MzA2OGRmMmJlMjU1MzIzYWI4ZTRkM2VjYzhkY2JhMzc4ODVjYjJmZWIwOTlmMzNmNjNlZTI2NTQ4YjkifX19
-effects:
-- /effect <plr> 5 9999 20 true
-- /effect <plr> 11 9999 3 true
-haste: 9
+effects: []
+haste: 2
 items:
 - /shot give <plr> whitelightning
-jump: 9
-maxHearts: 50
+jump: 2
+maxHearts: 30
 permissions:
   superherocity:
-  - powers.wallrun
   - -essentials.protect.damage.fall
   - ch.alias.carryplayer
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
   - ch.alias.dropplayer
-  - ch.alias.tp
+  - ch.alias.tpradius
 powers:
 - /effects
 - /items
-- /jump 0-4
-- /run 0-4
-- /haste 0-3
+- /jump 0-2
+- /run 0-2
+- /haste 0-2
 - /carryplayer <player>
 - /dropplayer
-- /wallrun on/off
-- Look Up+Jump+Crouch to perform a wallrun.
 - /flyspeed <number>
 - /fly
-- /tp
-run: 9
+- /tpradius
+run: 2
 speech: 
 trail: [
   ]
