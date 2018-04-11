@@ -1,0 +1,23 @@
+class: constantine
+costumes:
+- chatcolor: '&6'
+  name: §6Co§8nst§7an§8tin§6e
+  sig: eIiDe+aZWe325uScRnL1RrT+4CWbMlyltuY/XPcMoKtSBaJaXPbKZypI04M9YFptO09qTtwgdNAeAOGCZYtUAstDRx8+NhV0eGHUcEFkktnRlRtYWV866gRjvW2MswJCpdBbHAo8bkbUWRw8PtkJBFpRUDstc4vlT0K0Ng4Btf+uHkeMOTKHCxHthWCZHpPqhD6XSWYwFB5mzEV0TQOGw8mByyl/z54p9I7V8/TGkrFvF6/hvKfiImh9ddDb4dk1TzcVoN9ke4/Vtm4Eqycb7UyoF5vGF6QJjj8S2+9nIxGvpvTH3DvSRDzcWBUSPX+f7uis7J7Dn5dBcUyv+DHcZ7VU67HwCN70MPfSrCy8WNG3p0g/O7kjZ9lcbc3EnfDZmqlU8h3/TAThDAvq4hcD9SM5ApKYrkLJ2ewOes4YsIrN+Ljp5mKZlBkXbyDi8vDVzrqEFhdXDDKiXQF2YYmdP9Fmp7heabgpBMnLBlW355kcxhf+pwwogNwCpKUn1mIrpaYok7TXVIcAqmNfvv5JEpicg2dLjWX8yQH47Fz+FJwpB/NSD9AanYKrBuIusoZkQZsbwLhQyHNxWlL/LP+iEW3346qip5mlFMSfT3kYZGUWFmJ4MPUBn/FO67FeWUiaBsFA0mHYBo7tVuLlYgjwlMvi2aN9mMUbR/5HvCoUEL8=
+  val: eyJ0aW1lc3RhbXAiOjE1MjM0MjIyNjMwNjIsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjN2NkZDVkMTU1OWU2YzdkNWI3ODQ2ZGMyN2U2OTZjZDZhYTY2ZDE3Y2M5YzA2ZjVlNzJlYmI4N2U3ZDc3In19fQ==
+effects: [
+  ]
+items:
+- /shot give <plr> magicblast
+- /give <plr> minecraft:flint_and_steel name:&6Co&8nst&7an&8tin&6e&8's_Lighter
+- /mgive <plr> freezeraywand
+permissions:
+  superherocity:
+  - is.telepathicallyresistant
+  - powers.stoptime
+powers:
+- /effects
+- /items
+- /stoptime <player>
+speech: I walk my path alone, because let's be honest, who'd be crazy enough to walk it with me?
+trail: [
+  ]
