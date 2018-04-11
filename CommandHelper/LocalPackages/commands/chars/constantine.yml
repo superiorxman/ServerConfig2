@@ -15,9 +15,12 @@ maxHearts: 30
 permissions:
   superherocity:
   - is.telepathicallyresistant
+  - powers.fireballpunch
 powers:
 - /effects
 - /items
+- /fireballpunch on/off
+- Can throw fireballs by punching with an empty hand
 speech: I walk my path alone, because let's be honest, who'd be crazy enough to walk it with me?
 trail: [
   ]
