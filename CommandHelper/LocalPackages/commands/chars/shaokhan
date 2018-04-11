@@ -1,0 +1,27 @@
+class: shaokhan
+costumes:
+- chatcolor: '&4'
+  name: &4S&6h&ca&6 &4K&ch&6a&fn
+  sig: a4VVn90NadoxxREDEVlEErjow6r8R14chsEyQjsUkPL3mo3B0sIly71QPwVbgLgVc+wosRExucvFjAgkeN7xECBvHWsqPAOMrAw6qiuXCi2w0XRE//iz3vMQAqXmjt4zfhrtiNsT1fXLzEjKmO7Tn2L0PjiQtw8IAzExdsXxlqVeoDlnB+dDwGV5gl+z6daDaOdfpXubkp+BH2SF4GR2PTAKgNv3AFwt9b8ZhGqz2mkCkBU2B0AzFEiCZx0rR75oO3npXPdAKW2mi7QOFDQdSCD03Lb5leQxxRWpR6BtDh1PJtnPHvZGBEN4cF1BcQtKDHJm0KuqgnJnASXVXHTuadLLqsG3sQ9Lp923hJw1A9Yw1lZUksI0VtCSYpLozbCxrhrzxQGePiBp9ogRvRW/u1gMbA2IVTdRdjQZdI/jG1yecgDqtMthY0i3pnfuwBFu3QGS7CbvchDgrK4VeKwJeTWkfzxkW4OkFQ7/VIxIqwLzlnrQ9IrCyBwjaiMs9kbbq3Z6ILnEm3RoB1FxB5ls/b+Qq5pEv9WUdwdhd72EcjT3hg28RyVf2XDON4rhn1LxOlHViOuLbVgDyy6OMfTbAaeXlTqNtjQfX6f71NtgMVlJzPEFHfRw57AkpAu7W1uj2shIDXWQiLyGNB2Dm4PqYBYtrjR4HfvamoGw9O7y0Iw=
+  val: eyJ0aW1lc3RhbXAiOjE1MjM0MDk2NjU3NjksInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQyMTQyOTIzNmEzNDVjMTdhOWExNWY5ZWNmMGI4ZDQzNTNjNWI0ZmQzNWYxZDgzMWVmYjc4ZmZmOGQ1MmYifX19
+effects:
+- /effect <plr> 5 9999 20 true
+- /effect <plr> 10 9999 2 true
+items:
+- /give <plr> minecraft:iron_axe 1 16:30 name:&2Wrath_&cHammer
+maxHearts: 40
+permissions:
+  superherocity:
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
+  - essentials.speed
+powers:
+- /effects
+- /items
+- /jump 0-4
+- /run 0-3
+- /carryplayer <player>
+- /dropplayer
+speech: I will merge ALL the realms!
+trail: [
+  ]
