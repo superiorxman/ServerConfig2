@@ -9,15 +9,15 @@ effects: [
 items:
 - /shot give <plr> magicblast
 - /give <plr> minecraft:flint_and_steel name:&6Co&8nst&7an&8tin&6e&8's_Lighter
-- /mgive <plr> freezetimewand
 - /mgive <plr> freezeraywand
-maxHearts: 30
 permissions:
   superherocity:
   - is.telepathicallyresistant
+  - powers.stoptime
 powers:
 - /effects
 - /items
+- /stoptime <player>
 speech: I walk my path alone, because let's be honest, who'd be crazy enough to walk it with me?
 trail: [
   ]
