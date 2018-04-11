@@ -75,7 +75,7 @@ proc('_mindControlStopPlayer', @player,
     
     @ent = import(@player.'markerUUID')
     try{
-        @entLoc = entity_location(@ent)
+        @entLoc = entity_loc(@ent)
         set_ploc(@player, @ent)
         entity_remove(@ent)
     }catch(Exception @e){}

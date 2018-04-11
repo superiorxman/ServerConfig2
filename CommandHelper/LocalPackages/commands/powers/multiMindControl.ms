@@ -21,7 +21,7 @@ register_command('multimindcontrol',
             @numSuccesses = 0
             @ploc = ploc(@player)
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-
+            @successfulVics = array()
             foreach(@vic in @args){
                 if(@player == @vic){
                     msg(color('RED').'You are already mindcontrolling yourself!')
@@ -106,7 +106,7 @@ register_command('multimindcontrol',
                 }
 
                 @existingForgottenHeroes = import('forgottenHeroes')
-                
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 bind('player_command',array('id':@vic.'mindControlVicCommandCancel'),array('player':@vic),@e, @vic){
                     cancel()
                     tmsg(@vic,color('RED').'You are being mind controlled, you can\'t use any commands right now!')
@@ -114,17 +114,16 @@ register_command('multimindcontrol',
                 bind('player_quit', array('id': @vic.'mindControlVicLeave'), array('player': @vic), @event, @vic){
                     runas('~console','/tempban '.@vic.' 60s 1 Minute Ban For Quitting During Mind Control')
                     runas('~console','/pex user '.@vic.' group set mortal')
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                     _mindControlStopPlayer(@vic)
                 }
                 bind('player_death',array('id':@vic.'mindControlVicDeath'),array('player':@vic),@e,@vic){
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                     _mindControlStopPlayer(@vic)
                 }
 
                 @timer = set_timeout(30000,closure(
                     _mindControlStopPlayer(@vic)
                 ))
+
                 export(@vic.'mindControlTimer',@timer)
                 export(@player.'mindControlVicOrigHero',@vClass)
                 export(@vic.'beingMindControlled',true)
@@ -146,12 +145,10 @@ register_command('multimindcontrol',
                 }
 
                 bind('player_quit',array('id': @player.'mindControlPlrLeave'),array('player': @player),@event, @player){
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
-                    _mindControlStopPlayers(@player)
+                    _mindControlStopPlayer(@player)
                 }
                 bind('player_death',array('id':@player.'mindControlPlrDeath'),array('player':@player),@e,@player){
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
-                    _mindControlStopPlayers(@player)
+                    _mindControlStopPlayer(@player)
                 }
                 
                 @pClass = _getheroclass(@player)
@@ -166,7 +163,7 @@ register_command('stopmultimindcontrol',
 
     array(
         'description': 'Stops mind control',
-        'permission': 'ch.alias.stopmultimindcontrol',
+        'permission': 'ch.alias.multimindcontrol',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
         'executor': closure(@alias, @sender, @args) {        
             
