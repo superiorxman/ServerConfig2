@@ -13,11 +13,14 @@ items:
 permissions:
   superherocity:
   - is.telepathicallyresistant
-  - powers.stoptime
+  - powers.timestop
 powers:
 - /effects
 - /items
-- /stoptime <player>
+- /timestop <player>
 speech: I walk my path alone, because let's be honest, who'd be crazy enough to walk it with me?
 trail: [
   ]
+timeStopDist: 10
+timeStopDuration: 10
+timeStopCooldown: 20

@@ -1,23 +1,20 @@
-register_command('stoptime', 
+/*register_command('stoptime', 
     array(
         'description': 'Power',
-        'permission': 'ch.alias.stoptime',
+        'permission': 'powers.stoptime',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
-        'executor': closure() {        
+        'executor': closure(@aliases, @sender, @args) {        
             
-            @player = player()
-            assign(@cooldown, 120)
+            @player = @sender
+            @vic = @args[0]
+            @vic = player(@vic)
             
-            assign(@lastUsedStopTime, import(@player."lastUsedStopTime"))
-            if(@lastUsedStopTime + @cooldown > time() / 1000,
-                assign(@timeleft, subtract(add(@lastUsedStopTime, @cooldown), divide(time(),1000)))
-                tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use stoptime again!'))
-                die()
-            )
-            export(@player."lastUsedStopTime", time() / 1000)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('lastUsedStopTime',@player,30000)
 
-            runas('~console','/effect '.@player.' 1 60 255 true')
+            sudo('/freezeplayer '.@player.' 10')
                 
         }
     )
 )
+*/

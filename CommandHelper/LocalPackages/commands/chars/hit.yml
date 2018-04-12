@@ -15,6 +15,9 @@ items: [
   ]
 jump: 9
 maxHearts: 50
+timeStopDist: 10
+timeStopDuration: 10
+timeStopCooldown: 20
 permissions:
   superherocity:
   - power.killstrike
@@ -23,6 +26,7 @@ permissions:
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed
+  - powers.timestop
 powers:
 - /effects
 - /items
@@ -34,7 +38,7 @@ powers:
 - /carryplayer <player>
 - /dropplayer
 - /killstrike <player>
-- /freezeplayer <player>
+- /timestop <player>
 run: 9
 speech: Try ME!!
 trail: [

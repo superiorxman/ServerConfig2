@@ -1,7 +1,7 @@
 class: donatellotmnt
 costumes:
 - chatcolor: '&5'
-  name: &2Don&5ate&2llo&8(&2TMNT&8)
+  name: §2Don§5ate§2llo§8(§2TMNT§8)
   sig: gOS2UEWtkApKdnoQX+72N090z49lbmvQHg1HlH5Vd3V6t/g/Dk3bvUnHnpJ2KiJEMrT0qdvWiPBq5sNX1in0C3IMCAeO1bsJya25aIFSVwJ36c832fDzyttYVCn6akKX0Qd+whtJXdUBQKvE2KrRSVLD/rrzimRrSoNVPA5KMGyug1LH9mAWprqQMvuMIkXE2/Q2NTTutZgPJ1OqytJ4cHZ3jcduNgbinBwahRPfalh9VVsfNFfb4zOofIdj9LNOubyMpmP9Wo39ZibF39LP7fTQ5304XrZhnJWaHIcYOMnGKBXusv2RoiJV0hlwjHa2IrLDlasXGQv11oVdOExeIW175JE6yNAC6JTvdLHBm/1K23T6K8gSuRGABTpGBcYI39pj99NC2sxGg8V1Loxuj43ZJ3S8ltQk6TTNo8SvHva3QBQ65AJePtqt7MP6EyJPfiCjWnCPv1ctcArQC74Qj/kQLetbuonZJhCTRxM2jwuoQHOYEuPhlC1cAziNlt3s+UzjzFRS48UvfEriQwm/UhOo6LSPI2ObMu7kFSHuYa35XAgjtzv1Eu3fIu7c0ejBdh+ubR5TLN8oLV2d4pfQlzOsDgq7omnxIlEEfn6xfFuj868Lg91YDXJ1oBAOgK4ZjP09pp4ADCX0Sd3cveCJDnooA6V3VI3VOvHXHwUAFBg=
   val: eyJ0aW1lc3RhbXAiOjE1MjMyNTI2MTY5MTUsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JlNTVhM2M2NDA0Yjk0OTcyYjY4NzlkNDdmNjE3NmNiNDYyYWIxZDViYzdmMjg1NDg4Njc2YmRiYzQ5MTAifX19
 effects:
@@ -11,8 +11,6 @@ items:
 - /give <plr> minecraft:stick 1 19:2 16:2 name:&2Don&5nie&2's_Battle_Staff
 jump: 2
 maxHearts: 20
-permissions:
-  superherocity:
 powers:
 - /effects
 - /items
