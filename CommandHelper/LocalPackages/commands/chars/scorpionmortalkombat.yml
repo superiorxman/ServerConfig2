@@ -16,6 +16,7 @@ permissions:
   - powers.fireballpunch
   - ch.alias.flame
   - ch.alias.tpradius
+  - powers.netherrealm
 powers:
 - /effects
 - /items
@@ -24,7 +25,11 @@ powers:
 - /tpradius
 - /fireballpunch on/off
 - Can throw fireballs by punching with an empty hand
+- /netherrealm <player>
 jump: 4
 speech: GET OVER HERE!
 trail: [
   ]
+groupWarpRadius: 10
+groupWarpLimit: 1
+groupWarpLocation: netherrealm

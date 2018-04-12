@@ -131,12 +131,6 @@ players:
       name: MageOfSixPaths
     party: Chaos
     rank: 20
-  b67316ab-26b9-4329-8766-bb5a1eb164b3:
-    rank: 5
-    name:
-      timestamp: 1521449586
-      name: ItsDeathWing
-    party: TheTitans
   391762eb-24f6-4d95-84d6-bfac682d575a:
     options:
       spy: true
@@ -163,12 +157,6 @@ players:
       timestamp: 1521840162
       name: TheDarkAura_
     rank: 20
-    party: TheJL
-  bc220f87-ddd9-4805-aa20-349870def333:
-    rank: 5
-    name:
-      timestamp: 1523053592
-      name: KawaiiJuiceeeee
     party: TheJL
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     rank: 20
@@ -302,12 +290,6 @@ players:
       name: imcoolbo
     party: TheTitans
     rank: 5
-  ccecc513-b84b-44cb-8bcd-bf6cf31d4393:
-    name:
-      timestamp: 1523236264
-      name: jefferunfaster
-    party: Chaos
-    rank: 5
 parties:
   TheTitans:
     members:
@@ -319,12 +301,11 @@ parties:
     - de5871d3-17d4-485f-8ddb-b45b30ee6591
     - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
     - a15f051c-1473-4f90-88f3-bad6e6b9dce2
-    - b67316ab-26b9-4329-8766-bb5a1eb164b3
     - 7148a878-534c-46f8-9f81-7f5598807c6e
     - 1d3ccaf9-a73c-4a4d-97e0-efbfd914cf99
     - 1cb4fc41-4aec-488f-83a3-2edffcd21711
     leader: 8ca7fc56-614b-482a-91df-bf8580ba273d
-    motd: Supergirl and Superboy are now the Titans Leaders.
+    motd: Hey Titans, hope youre all having a great day.
     desc: Were The Titans
   Overwatch:
     members:
@@ -348,7 +329,6 @@ parties:
     - 21e726fd-af17-4454-bb61-25e55d7300ef
     - 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303
     - c1da0567-bcd9-48a0-9bf3-263be1439205
-    - ccecc513-b84b-44cb-8bcd-bf6cf31d4393
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -380,7 +360,6 @@ parties:
   TheJL:
     members:
     - d1fbaab7-bde3-4405-8282-9fc15d90209d
-    - bc220f87-ddd9-4805-aa20-349870def333
     - 3e36ae61-810a-44bc-8041-fd70a20b92aa
     - b6fcbf5e-dd83-4d9e-93f7-0b1ff3465857
     - fbfcb190-4cdb-400e-a8aa-fc30cc822caf
