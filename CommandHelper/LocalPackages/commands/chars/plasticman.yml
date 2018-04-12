@@ -11,7 +11,7 @@ items:
 - /give <plr> minecraft:fishing_rod 1 34:10 name:&4A&er&0m &4Str&0e&etch
 - /give <plr> minecraft:elytra 1 34:10 name:&4Glide
 - /mgive <plr> longpunchwand
-jump: 2
+jump: 5
 maxHearts: 20
 permissions:
   superherocity:
@@ -20,7 +20,7 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump 0-2
+- /jump 0-5
 - /carryplayer <player>
 - /dropplayer
 trail: [
