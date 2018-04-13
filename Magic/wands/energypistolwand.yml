@@ -1,0 +1,15 @@
+energypistolwand:
+  spell_inventory:
+    energypistol: 0
+  active_spell: energypistol
+  name: Energy Pistol
+  spells:
+  - energypistol
+  bound: true
+  keep: true
+  invulnerable: true
+  immortal: true
+  track: true
+  undroppable: true
+  indestructible: true
+  left_click: cast
