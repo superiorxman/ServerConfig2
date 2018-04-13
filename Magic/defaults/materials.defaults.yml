@@ -7,6 +7,11 @@
 #
 # https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/materials
 #
+all_attachable:
+- attachable
+- attachable_wall
+- attachable_double
+- delayed
 all_lava:
 - lava
 - stationary_lava

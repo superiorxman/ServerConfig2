@@ -1,6 +1,6 @@
 v2-logout:
   391762eb-24f6-4d95-84d6-bfac682d575a:
-    world: survival112
+    world: metropolis
     group: superherocities
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     world: survival112
@@ -54,8 +54,8 @@ v2-logout:
     world: survival112
     group: superherocities
   524eb61e-b329-4b65-8cd2-8f6d0e9b1919:
-    group: superherocities
-    world: survival112
+    group: mainmenu
+    world: mainmenu
   3639172b-aa0f-498d-9322-18addf094675:
     group: superherocities
     world: survival112
@@ -200,7 +200,7 @@ v2-logout:
     world: survival112
   b09b6618-e035-4e1f-be4e-f01ec6888001:
     group: superherocities
-    world: gotham
+    world: survival112
   f030d637-bf56-48da-a7ee-91ae9a3bfb73:
     group: mainmenu
     world: mainmenu
@@ -817,8 +817,8 @@ v2-logout:
     group: superherocities
     world: nyc
   16ef6ae1-6e1f-4f47-a5a1-de5a3bcc75ee:
-    group: mainmenu
-    world: mainmenu
+    group: superherocities
+    world: survival112
   d89e7a40-4981-4a3f-aab5-891ae714a0ad:
     group: mainmenu
     world: mainmenu
@@ -1870,8 +1870,8 @@ v2-logout:
     group: mainmenu
     world: mainmenu
   a042205d-dcc1-424d-a293-7c5f21d67825:
-    group: mainmenu
-    world: mainmenu
+    group: superherocities
+    world: starlabs
   e58af273-6453-47ae-b01d-c05f9210f38c:
     group: superherocities
     world: greenfield
@@ -1928,7 +1928,7 @@ v2-logout:
     world: starlabs
   1cb4fc41-4aec-488f-83a3-2edffcd21711:
     group: superherocities
-    world: survival112
+    world: survival112_nether
   8cb78b61-68f6-4a70-8a24-fad18ff758c0:
     group: superherocities
     world: starlabs
@@ -2153,7 +2153,7 @@ v2-logout:
     world: survival112
   ccecc513-b84b-44cb-8bcd-bf6cf31d4393:
     group: superherocities
-    world: survival112
+    world: survival112_nether
   1684ba9e-4c70-4ef1-b4dc-8c344a6fe5d2:
     group: superherocities
     world: chicago
@@ -2296,8 +2296,8 @@ v2-logout:
     group: superherocities
     world: metropolis
   52042d75-faf5-43ef-980c-e28b650b5dfe:
-    group: superherocities
-    world: hallofjustice
+    group: mainmenu
+    world: mainmenu
   d95dd65b-0666-4da6-82b2-21c56b394b74:
     group: superherocities
     world: survival112
@@ -2394,3 +2394,12 @@ v2-logout:
   3338ef0a-4911-4934-85da-27c05754f5c3:
     group: superherocities
     world: metropolis
+  1411b45f-ab5b-4ad0-8fda-d5e5ac41484f:
+    group: superherocities
+    world: gotham
+  1096a023-9a30-4708-96bb-e2ba227379ce:
+    group: superherocities
+    world: starlabs
+  bd3f2160-21dc-457d-b26a-86f2f3a95c3c:
+    group: superherocities
+    world: nyc
