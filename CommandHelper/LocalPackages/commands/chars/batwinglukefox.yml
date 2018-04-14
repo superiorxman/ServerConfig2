@@ -4,27 +4,18 @@ costumes:
   name: §8Bat§bw§8ing§0(§bLF§0)
   sig: 
   val: 
-effects:
-- /effect <plr> 5 9999 5 true
-- /effect <plr> 12 9999 1 true
-haste: 3
+effects: [
+  ]
 items: [
   ]
-jump: 3
 permissions:
   superherocity:
   - ch.alias.carryplayer
   - ch.alias.dropplayer
   - essentials.fly
 powers:
-- /effects
-- /items
-- /carryplayer <player>
-- /dropplayer
-- /jump 0-3
-- /run 0-2
-- /haste 0-3
+- /run 0-1
 - /fly
-run: 2
+run: 1
 trail: [
   ]
