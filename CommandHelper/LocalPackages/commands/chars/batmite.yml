@@ -63,8 +63,8 @@ permissions:
   - -essentials.protect.damage.fall
   - essentials.tppos
   - essentials.fly
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
 powers:
 - /effects
 - /items

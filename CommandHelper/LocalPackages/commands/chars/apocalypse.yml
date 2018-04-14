@@ -21,8 +21,8 @@ permissions:
   - headdb.open
   - headdb.category.*
   - headdb.free.*
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.speak
   - ch.alias.confuse
   - ch.alias.unconfuse

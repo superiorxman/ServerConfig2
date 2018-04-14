@@ -13,13 +13,13 @@ permissions:
   - is.telepathicallyresistant
   - ch.alias.msg
   - ch.alias.mindlock
-  - ch.alias.stopmindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.speak
   - ch.alias.confuse
   - ch.alias.unconfuse
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - ch.alias.mindcontrol
+  - powers.mindcontrol
 powers:
 - /speak <player> <message>
 - /mindcontrol <player>

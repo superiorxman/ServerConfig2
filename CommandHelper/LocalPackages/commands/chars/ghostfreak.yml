@@ -11,8 +11,8 @@ items: [
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
   - essentials.fly
   - ch.alias.intangible
   - ch.alias.tangible

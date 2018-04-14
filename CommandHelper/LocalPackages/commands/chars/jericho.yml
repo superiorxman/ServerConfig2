@@ -13,8 +13,8 @@ items:
 mindControlLimit: 20
 permissions:
   superherocity:
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
 powers:
 - /effects
 - /items

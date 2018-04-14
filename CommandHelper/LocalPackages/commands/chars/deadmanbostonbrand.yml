@@ -10,8 +10,8 @@ permissions:
   - ch.alias.speak
   - ch.alias.intangible
   - ch.alias.tangible
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
 powers:
 - /effects
 - /items

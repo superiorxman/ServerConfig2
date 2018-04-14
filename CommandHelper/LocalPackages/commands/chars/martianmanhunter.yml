@@ -21,12 +21,12 @@ permissions:
   - ch.alias.msg
   - ch.alias.mindlock
   - powers.wallrun
-  - ch.alias.stopmindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.confuse
   - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.unconfuse
-  - ch.alias.mindcontrol
+  - powers.mindcontrol
   - essentials.fly
   - essentials.speed.fly
   - essentials.speed

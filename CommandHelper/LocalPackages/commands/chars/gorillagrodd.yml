@@ -22,8 +22,8 @@ permissions:
   - essentials.back
   superherocity:
   - -essentials.protect.damage.fall
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.carryplayer
   - ch.alias.dropplayer
   - ch.alias.speak

@@ -18,8 +18,8 @@ permissions:
   superherocity:
   - ch.alias.dropplayer
   - ch.alias.carryplayer
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.empower
   - ch.alias.confuse
   - ch.alias.unconfuse

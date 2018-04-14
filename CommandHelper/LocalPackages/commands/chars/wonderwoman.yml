@@ -44,8 +44,8 @@ permissions:
   - essentials.speed.fly
   - essentials.speed
   - powers.lightningpunch
-  - ch.alias.mindcontrol
-  - ch.alias.stopmindcontrol
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
 powers:
 - /effects
 - /items

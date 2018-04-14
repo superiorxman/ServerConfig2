@@ -18,12 +18,12 @@ maxHearts: 50
 permissions:
   superherocity:
   - powers.wallrun
-  - ch.alias.stopmindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.confuse
   - ch.alias.unconfuse
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - ch.alias.mindcontrol
+  - powers.mindcontrol
   - worldedit.navigation.thru.command
   - essentials.fly
   - essentials.speed.fly

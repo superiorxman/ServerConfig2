@@ -1,4 +1,4 @@
-register_command('mindcontrol', 
+/*register_command('mindcontrol', 
 
     array(
         'description': 'Mind Controls a person',
@@ -229,3 +229,4 @@ register_command('stopmindcontrol',
         }
     )
 )
+*/

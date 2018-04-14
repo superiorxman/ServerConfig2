@@ -29,8 +29,20 @@ bind('player_chat', null, null, @e) {
     }*/
 
     if(import(@player.'mindControlling')){
-        cancel()
-        die()
+        @vic = import(@player.'mindControlActiveVic')
+        if(@vic != null){
+            cancel()
+            die()
+        }
+    }
+
+    if(import(@player.'beingMindControlled')){
+        @controller = import(@player.'beingMindControlledBy')
+        if(import(@controller.'mindControlActiveVic') != @player){
+            tmsg(@player,color('RED').'You are being mind controlled, you cannot speak at the moment.')
+            cancel()
+            die()
+        }
     }
 
     if(import(@player.'laughingGasActive') == true){

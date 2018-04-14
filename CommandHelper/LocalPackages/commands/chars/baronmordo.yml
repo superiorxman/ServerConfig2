@@ -13,8 +13,8 @@ maxHearts: 30
 permissions:
   superherocity:
   - powers.float
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.intangible
   - ch.alias.tangible
 powers:

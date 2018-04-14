@@ -19,8 +19,8 @@ jump: 2
 maxHearts: 20
 permissions:
   superherocity:
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.speak
   - ch.alias.confuse
   - ch.alias.unconfuse

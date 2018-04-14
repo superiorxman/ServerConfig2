@@ -28,10 +28,10 @@ permissions:
   - headdb.free.*
   - ch.alias.msg
   - ch.alias.mindlock
-  - ch.alias.stopmindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.confuse
   - ch.alias.unconfuse
-  - ch.alias.mindcontrol
+  - powers.mindcontrol
   - powers.wallrun
   - ch.alias.carryplayer
   - ch.alias.dropplayer

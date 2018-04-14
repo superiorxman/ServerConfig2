@@ -24,8 +24,8 @@ permissions:
   - ch.alias.mindlock
   - ch.alias.msg
   - powers.wallrun
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.carryplayer
   - ch.alias.dropplayer
   - essentials.fly

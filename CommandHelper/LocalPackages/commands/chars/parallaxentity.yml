@@ -13,8 +13,8 @@ jump: 3
 maxHearts: 30
 permissions:
   superherocity:
-  - ch.alias.stopmindcontrol
-  - ch.alias.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
   - ch.alias.mindlock
   - ch.alias.msg
   - libsdisguises.disguise

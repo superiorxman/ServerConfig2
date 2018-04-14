@@ -14,12 +14,12 @@ permissions:
   superherocity:
   - ch.alias.msg
   - ch.alias.mindlock
-  - ch.alias.stopmindcontrol
+  #- ch.alias.stopmindcontrol
   - ch.alias.confuse
   - ch.alias.dropplayer
   - ch.alias.carryplayer
   - ch.alias.unconfuse
-  - ch.alias.mindcontrol
+  - powers.mindcontrol
   - ch.alias.speak
 powers:
 - /effects
