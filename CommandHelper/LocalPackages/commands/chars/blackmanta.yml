@@ -1,0 +1,29 @@
+class: blackmanta
+costumes:
+- chatcolor: '&8'
+  name: §0Bl§7a§4c§8k M§0a§7nt§8a
+  sig: 
+  val: 
+effects:
+- /effect <plr> 5 9999 6 true
+- /effect <plr> 13 9999 1 true
+haste: 3
+items:
+- /give <plr> minecraft:iron_helmet 1 5:50 6:1 8:3 name:&0Bl&7a&4c&8k M&0a&7nt&8a's_Public_&9Water_Helmet
+jump: 3
+maxHearts: 40
+permissions:
+  superherocity:
+  - ch.alias.dropplayer
+  - ch.alias.carryplayer
+powers:
+- /effects
+- /items
+- /jump 0-3
+- /run 0-3
+- /haste 0-3
+- /carryplayer <player>
+- /dropplayer
+run: 3
+trail: [
+  ]
