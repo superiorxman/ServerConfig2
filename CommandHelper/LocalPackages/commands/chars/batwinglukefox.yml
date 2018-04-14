@@ -16,8 +16,6 @@ permissions:
   - ch.alias.carryplayer
   - ch.alias.dropplayer
   - essentials.fly
-  - essentials.speed.fly
-  - essentials.speed
 powers:
 - /effects
 - /items
@@ -27,7 +25,6 @@ powers:
 - /run 0-2
 - /haste 0-3
 - /fly
-- /flyspeed 0-10
 run: 2
 trail: [
   ]
