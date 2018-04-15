@@ -1,0 +1,28 @@
+class: grid
+costumes:
+- chatcolor: '&a'
+  name: §8G§fr§2i§ad
+  sig: B2Bq6E3+EMWkfXAsyedKWgWlx9sh6GLeXGcICxKIy0deHzCy0eZ/l1/RpNa7VkxCjVXo1S7xlwEN3Aws1Xpxz2nFbE+DPR3/eV+Qxt1ZCtGjlqAeqvJ/8UCBgmled31kTG2oW+jUOb5EX/QrzpoxezF1XZc6wfqJhMsRAmdCFPFOmtKwBogP49FzJSuG9lvsrQ//HyFbCllzly93YMjX1OLuqt1NBT8AbbXLjFUhNaV3+1j8pM4kY/bXMVLw5jHLr+Q2b/yoxGIwxINrgNHf2/NAaSo/HajZSSkwQfboRPOMK3keMUHDzl7f38d+Cqs8XHh0k1R2PTeX8pSQyXkM4sRv7To/bsHTViqXUCFjaIxtRMU4tPC/wkmWSWt4K6Kksrv6QqKyHlrgOpky5M44qHL2D9UmTg7wy9mPHK+mCDIcansR1syCPfjvgP9LL2DCvSRUYIIA98g2V+klsY6OduhgG2hFlvYogG98PntSEs9iI5H2zIoVrdcY0NgGOipuPlKa721pg9zoBjMcuH0H+7GySRwhmC7Z6Kdx4LzQ2B+ZFVCqx8y1r8qY/PFBoKxQKg5+kGOJeKl8ZVDvb7aSAQ6uCX1na8cSUgCGvVyG5oOC4OC2SeWykLEnJYDHgxwofiJ0Ao26P1BBa+pI9Mp43jp/P1hAtkZCbWtU5a8VPQQ=
+  val: eyJ0aW1lc3RhbXAiOjE1MjM4MjExMjcwNzIsInByb2ZpbGVJZCI6ImVmN2JjYzk2M2FjMDRkYzZhYWU3MDE5ZTVjNmRkYTJlIiwicHJvZmlsZU5hbWUiOiJzdXBlcmlvcnhtYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhjZDYxZGJiMjJjMmE3NTg1MWM0NGYyMmJmZTZhZmRmYjY0YjVlYWY4ZWZjZjhlMmZkZDkzNDRkZGQ2ZWY2NCJ9fX0=
+effects: []
+haste: 2
+items:
+- /mgive <plr> energypistol
+jump: 2
+maxHearts: 20
+permissions:
+  superherocity:
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
+  - ch.alias.portaltp
+powers:
+- /effects
+- /items
+- /jump 0-2
+- /haste 0-2
+- /carryplayer <player>
+- /dropplayer
+- /portaltp <player>
+speech: I feel nothing.
+trail: [
+  ]
