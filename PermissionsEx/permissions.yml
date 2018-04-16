@@ -2307,27 +2307,6 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
-  fanficc6cb4b81f1e7446db966e4ed7b45909d:
-    inheritance:
-    - commonherotraits
-    worlds:
-      superherocity:
-        permissions:
-        - is.fanfic
-        - ch.alias.fanficchatcolor
-        - ch.alias.fanficname
-        - ch.alias.fanficlaser
-        - ch.alias.jump2
-        - ch.alias.jump1
-        - ch.alias.jump0
-        - ch.alias.haste2
-        - ch.alias.haste1
-        - ch.alias.haste0
-        - ch.alias.run2
-        - ch.alias.run1
-        - ch.alias.run0
-    options:
-      prefix: '&r&6Co&ens&7tru&6ct&ei&7on &fW&7o&fr&7k&fe&7r&a/&9D&f.&dV&fa&a/&f_MrFlame_'
   thefifthdoctor:
     inheritance:
     - commonherotraits
@@ -10368,6 +10347,25 @@ groups:
         - ch.alias.portaltp
         - ch.alias.dropplayer
         - ch.alias.carryplayer
+  fanficc6cb4b81f1e7446db966e4ed7b45909d:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
 schema-version: 1
 worlds:
   checkers:
@@ -10942,7 +10940,7 @@ users:
       name: LolItzCrusty
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     group:
-    - thefourthdoctor
+    - fanficc6cb4b81f1e7446db966e4ed7b45909d
     options:
       name: LordOfGallifrey
     permissions:
