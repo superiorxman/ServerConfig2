@@ -20,15 +20,18 @@ blaster:
 
 blaster_red:
     class: ""
+    mode: cast
     inherit: blaster
     effect_color: 'FF0000'
 
 blaster_green:
     class: ""
+    mode: cast
     inherit: blaster
     effect_color: '00FF00'
 
 blaster_blue:
     class: ""
+    mode: cast
     inherit: blaster
     effect_color: '0000FF'
