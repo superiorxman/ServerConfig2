@@ -30,4 +30,5 @@ blaster_green:
 
 blaster_blue:
     class: ""
+    inherit: blaster
     effect_color: '0000FF'
