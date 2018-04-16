@@ -50,9 +50,9 @@ register_command('mindlock',
                 }
             }
 
-            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            /*include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             if(has_permission(@plr,'powers.mindlocknear')){
-                @plrClass = _getHeroClass(@plr)
+                @plrClass = _getheroclass(@plr)
                 @radius = 0
                 if(@plrClass == 'wonderwoman'){
                     @radius = 20
@@ -65,7 +65,7 @@ register_command('mindlock',
                         die()
                     }
                 }
-            }
+            }*/
 
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')

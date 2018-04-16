@@ -54,7 +54,7 @@ blaster:
         spread_movement_max: 0.08
         spread: 0.05
     costs:
-        mana: 15
+        mana: 0
 
 blaster|2:
   parameters:
@@ -64,4 +64,4 @@ blaster|2:
 blaster|3:
   parameters:
     spread_movement_max: 0.02
-spread: 0
+    spread: 0

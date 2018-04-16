@@ -1,5 +1,5 @@
 bind('entity_damage', null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|MAGIC|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK|CUSTOM|ENTITY_SWEEP_ATTACK/'), @e) {
-    if(ponline(@e['damager']) && has_permission(@e['damager'],'is.op')){
+    if(array_index_exists(@e,'damager') && ponline(@e['damager']) && has_permission(@e['damager'],'is.op')){
         die()
     }
     if(has_permission(@e['player'], "powers.ultrainstinct") && import(@e['player'].'isDepowered') != true && pmode(@e['player']) == 'SURVIVAL')

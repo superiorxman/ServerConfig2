@@ -392,7 +392,7 @@ worlds:
     pvp: 'true'
     scale: '1.0'
     respawnWorld: titanstower
-    allowWeather: 'true'
+    allowWeather: 'false'
     difficulty: HARD
     spawning:
       ==: MVSpawnSettings

@@ -152,11 +152,11 @@ register_command('mindcontrol',
                     return()
                 }
 
-                bind('player_quit',array('id': @player.'mindControlPlrLeave'),array('player': @player),@event, @player){
-                    _mindControlStopPlayer(@player)
+                bind('player_quit',array('id': @player.'mindControlPlrLeave'),array('player': @player),@e){
+                    _mindControlStop(@e['player'])
                 }
-                bind('player_death',array('id':@player.'mindControlPlrDeath'),array('player':@player),@e,@player){
-                    _mindControlStopPlayer(@player)
+                bind('player_death',array('id':@player.'mindControlPlrDeath'),array('player':@player),@e){
+                    _mindControlStop(@e['player'])
                 }
 
                 export(@player.'mindControlOrigHero',@pClass)
@@ -322,6 +322,7 @@ register_command('mindcontrolswitch',
             }
 
             export(@player.'mindControlActiveVic',@vic)
+            broadcast(@player." is now mindcontrolling ".@vic)
             
         }
     )

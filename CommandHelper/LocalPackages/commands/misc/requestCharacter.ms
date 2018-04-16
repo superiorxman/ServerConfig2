@@ -36,27 +36,44 @@ register_command('listrequests',
 
     array(
         'description': 'Request a hero to be made!',
-        'usage': '/listrequests',
+        'usage': '/listrequests [pagenum]',
         'permission': 'command.requestchar',
         'noPermMsg': 'Sorry you don\'t have permission to use this command.',
     
         'executor': closure(@alias, @sender, @args) {
-            if (array_size(@args) > 0) {
+            if (array_size(@args) > 1) {
                 msg(color('RED').color('BOLD').'Improper Usage!');
-                msg(color('RED').'Usage: /listrequests');
+                msg(color('RED').'Usage: /listrequests [pagenum]');
                 die()
             }
-
+            if (array_size(@args) == 0) {
+                @pageNum = 1
+            }else{
+                @pageNum = integer(@args[0])
+            }
+            
             @list = get_values('characterrequests.list')
-            @num = 1
+            if(@pageNum >= 0){
+                @indexNum = (@pageNum - 1) * 10
+            }else{
+                @indexNum = 0
+            }
+            
             if(array_index_exists(@list,'characterrequests.list')){
-                foreach(@request in @list['characterrequests.list']){
+                for(@i = @indexNum, @i < (@indexNum + 10), @i++){
+                    queue_push(closure(
+                        @request = @list['characterrequests.list'][@i]
+                        @request = color('YELLOW').replace(@request,' - ',color('WHITE').' - '.color('GREEN'))
+                        msg(++@i.'. '.@request)
+                    ))
+                }
+                /*foreach(@request in @list['characterrequests.list']){
                     queue_push(closure(
                         @request = color('YELLOW').replace(@request,' - ',color('WHITE').' - '.color('GREEN'))
                         msg(@num.'. '.@request)
                     ))
                     @num++
-                }
+                }*/
             }else{
                 msg('1. '.@list)
             }

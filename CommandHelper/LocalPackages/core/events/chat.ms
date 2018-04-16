@@ -68,9 +68,21 @@ bind('player_chat', null, null, @e) {
         if(@mindLocker != null && @mindLocker != ''){
             tmsg(@mindLocker,color('DARK_RED').'['.color('RED').'mindlock'.color('DARK_RED').'] '.color('RED').@player.color('DARK_RED').': '.color('GRAY').@msg)
             tmsg(@player,color('DARK_RED').'['.color('RED').'mindlock'.color('DARK_RED').'] '.color('RED').@player.color('DARK_RED').': '.color('GRAY').@msg)
+            console(@player.': '.@msg)
             cancel()
             return()
         }
+    }
+
+    if(import(@player.'speedsterTalkStatus')){
+        @players = all_players()
+        foreach(@plr in @plrs){
+            if(has_permission(@plr,'powers.understandspeedstertalk')){
+                tmsg(@plr,color('RED').@player.' said '.@msg)
+            }
+        }
+        cancel()
+        return()
     }
 
     @lastCoolDownAmount = import(@player.'lastCoolDownAmount')
