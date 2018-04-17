@@ -191,6 +191,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
+  dreamworld:
+    ==: MVWorld
+    hidden: 'false'
+    alias: dreamworld
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: dreamworld
+    allowWeather: 'true'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: NONE
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-9196779263343398231'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   mainmenu:
     ==: MVWorld
     hidden: 'false'
@@ -1306,7 +1354,7 @@ worlds:
     respawnWorld: survival112
     allowWeather: 'true'
     difficulty: EASY
-    spawning: &id007
+    spawning: &id025
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -1318,7 +1366,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id026
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -1337,7 +1385,7 @@ worlds:
       yaw: -270.15033
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id027 []
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.
@@ -1450,8 +1498,8 @@ worlds:
     respawnWorld: survival112
     allowWeather: 'true'
     difficulty: EASY
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id025
+    entryfee: *id026
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -1467,7 +1515,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id009
+    worldBlacklist: *id027
     environment: NORMAL
     seed: '-6827399460918381634'
     generator: CleanroomGenerator:.
