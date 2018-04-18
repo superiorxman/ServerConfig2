@@ -51,14 +51,14 @@ v2-logout:
     world: buildworld
     group: buildworld
   72fe3fc6-3df2-49ee-b836-38459deae8cd:
-    world: survival112
-    group: superherocities
+    world: mainmenu
+    group: mainmenu
   524eb61e-b329-4b65-8cd2-8f6d0e9b1919:
     group: mainmenu
     world: mainmenu
   3639172b-aa0f-498d-9322-18addf094675:
-    group: mainmenu
-    world: mainmenu
+    group: superherocities
+    world: survival112
   d1a0318e-b9f4-4951-a7d5-92d17836306c:
     group: superherocities
     world: survival112
@@ -2542,3 +2542,9 @@ v2-logout:
   2da5916e-8564-4c85-9da3-81171a2e4e39:
     group: superherocities
     world: survival112
+  df6053f3-5bdf-47b5-90cf-cfed2fb57bf4:
+    group: mainmenu
+    world: mainmenu
+  bcf617bd-a324-4cfd-9bdf-4e9da5a241fc:
+    group: superherocities
+    world: nyc
