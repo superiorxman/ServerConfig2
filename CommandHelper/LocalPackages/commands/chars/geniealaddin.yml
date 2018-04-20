@@ -29,6 +29,9 @@ permissions:
   - powers.cloneself
   - libsdisguises.disguise
   - libsdisguises.disguise.player
+  - ch.alias.grow
+  - ch.alias.shrink
+  - ch.alias.normalsize
 powers:
 - /fly
 - /flyspeed <number>
@@ -43,5 +46,8 @@ powers:
 - /dropplayer
 - /cloneself
 - /disguise player <player>
+- /shrink
+- /grow
+- /normalsize
 trail: [
   ]
