@@ -1,0 +1,45 @@
+class: geniealaddin
+costumes:
+- chatcolor: '&9'
+  name: §6G§9en§6i§9e§6(§cA§6)
+  sig: 
+  val:
+effects: [
+  ]
+items: [
+  ]
+permissions:
+  superherocity:
+  - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
+  - ch.alias.tphere
+  - ch.alias.tp
+  - -essentials.protect.damage.fall
+  - essentials.tppos
+  - essentials.fly
+  - essentials.speed.fly
+  - powers.mindcontrol
+  #- ch.alias.stopmindcontrol
+  - ch.alias.dropplayer
+  - ch.alias.carryplayer
+  - powers.cloneself
+  - libsdisguises.disguise
+  - libsdisguises.disguise.player
+powers:
+- /fly
+- /flyspeed <number>
+- /create <item> <quantity> <color>
+- /headdb
+- /tppos <x> <y> <z>
+- /tp <plr>
+- /tphere <plr>
+- /mindcontrol <player>
+- /stopmindcontrol
+- /carryplayer <player>
+- /dropplayer
+- /cloneself
+- /disguise player <player>
+trail: [
+  ]
