@@ -24,6 +24,8 @@ permissions:
   - essentials.speed.fly
   - powers.mindcontrol
   #- ch.alias.stopmindcontrol
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
   - powers.cloneself
   - libsdisguises.disguise
   - libsdisguises.disguise.player
@@ -45,5 +47,7 @@ powers:
 - /shrink
 - /grow
 - /normalsize
+- /carryplayer <player>
+- /dropplayer
 trail: [
   ]
