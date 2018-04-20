@@ -10,6 +10,7 @@ items: [
   ]
 permissions:
   superherocity:
+  - powers.cantdie
   - ch.alias.create
   - headdb.open
   - headdb.category.*
