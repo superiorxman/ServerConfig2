@@ -4,10 +4,8 @@ costumes:
   name: §0R§8e§fd §4X
   sig: Mn/A1DbY0SZayZKWsfc13sSNppemG/9B+vwdS4i2RQug0BJmuGxv6fTJBGHoKeyoP1KTpdFjCm/VLvX8Rk7SejtOdwI6Idqy+3bCGiU+SEE6xUQsrzRuahHTQak5tKKvEzkjsMS6Oc5TezdqSbtm3D6xKYggnAkOy1r14wHsuWKtsun97vm1Ay0ly5dMgX4ovYLTBxP+icmHtHHuUpUBam8LJp/BD0K/Cd0vtZg+NbUTp6HpsSLULuzBvBPr0DemdO53bN9pcZYfUJWEfW1DNc/hKnJVM6fhi+hqpaqT5cTbAZpcwleGeUSXwu97FpXt6bna2xYnCMS0r5yFWEHiEhxhixX7MkBt49sfTMwymg+21GdXS79wGW5MEkswlfqCGrc581nXboTN/doiqi8aoYKvlalPrDEeFh/SdsFBknuXazRPj+dE4DwFqnUlpWK55nTe5K3IE74+6q1UCYBqL+NvUYX9xLmFTFXcSu2XMGjK4uHAOThVBFs0K3hW/Ue/V2qiZdkxeHk++Wx5aX1fIuVX1UoH97Ixqfn+ZLh/OqYRMxvafucerrg124y65DkEeukFUOwSE5WqOchG89mJmMkIs0WGK62afPmGEQyuk3iSKlKw8+9LOqbR783CsMer/J50rIsy6Uof/MuLO42uWH2B5zpCdqLlwP1u/yYP8iw=
   val: eyJ0aW1lc3RhbXAiOjE1MjQyOTU5NTE0OTMsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY5NjA5NzkxN2ZlYjUyZWJhYzE5Y2ZhMjk4Mzg1M2YyN2NiYjlkYzk4YzFiNDU0NTczYTM3YzNkZmRkMWIifX19
-effects:
-- /effect <plr> 5 9999 10 true
-- /effect <plr> 11 9999 2 true
-haste: 7
+effects: [
+  ]
 items:
 - /give <plr> minecraft:snowball 10 name:&0R&8e&fd &4X&8's_X
 - /give <plr> minecraft:ender_pearl 5 name:&0R&8e&fd &4X&8's_Teleportation_Device
@@ -18,9 +16,8 @@ permissions:
 powers:
 - /effects
 - /items
-- /jump 0-7
-- /run 0-7
-- /haste 0-7
+- /jump 0-3
+- /run 0-5
 run: 7
 trail: [
   ]
