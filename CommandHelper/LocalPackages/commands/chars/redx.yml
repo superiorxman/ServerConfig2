@@ -11,8 +11,8 @@ items:
 - /give <plr> minecraft:ender_pearl 5 name:&0R&8e&fd &4X&8's_Teleportation_Device
 jump: 7
 maxHearts: 40
-permissions:
-  superherocity:
+permissions: [
+  ]
 powers:
 - /items
 - /jump 0-3
