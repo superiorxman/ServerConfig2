@@ -9,7 +9,7 @@ effects: [
 items:
 - /give <plr> minecraft:snowball 10 name:&0R&8e&fd &4X&8's_X
 - /give <plr> minecraft:ender_pearl 5 name:&0R&8e&fd &4X&8's_Teleportation_Device
-jump: 7
+jump: 3
 maxHearts: 40
 permissions: [
   ]
@@ -17,6 +17,6 @@ powers:
 - /items
 - /jump 0-3
 - /run 0-5
-run: 7
+run: 5
 trail: [
   ]
