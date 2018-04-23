@@ -1653,7 +1653,6 @@ arrow_bomb:
       destructible: solid
       destructible_override: true
       break_durability: 10
-      physics_blocks: true
       undo_speed: 0.5
       speed: "bowpull * 3"
       spread: "1 - bowpull"
@@ -2480,7 +2479,6 @@ blast:
         destructible_durability: 50
         break_durability: 10
         select_self: false
-        physics_blocks: true
         undo_speed: 0.5
         damage: 6
     costs:
@@ -4129,7 +4127,6 @@ collapse:
         undo: 10000
         cooldown: 8000
         select_self: false
-        physics_blocks: true
         undo_speed: 1
     costs:
         mana: 50
@@ -14469,7 +14466,6 @@ sticky:
         falling: true
         direction: 0,0.5,0
         undo: 15000
-        physics_blocks: true
         destructible_durability: 200
         break_durability: 50
         radius: 2

@@ -260,12 +260,6 @@ players:
       timestamp: 1522932762
     party: Hell
     rank: 5
-  2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
-    name:
-      name: TheoreticalGame
-      timestamp: 1522970107
-    rank: 5
-    party: Chaos
   c1da0567-bcd9-48a0-9bf3-263be1439205:
     party: Chaos
     rank: 5
@@ -284,12 +278,6 @@ players:
       name: MisserMan
       timestamp: 1523232185
     rank: 5
-  ccecc513-b84b-44cb-8bcd-bf6cf31d4393:
-    name:
-      timestamp: 1523650591
-      name: jefferunfaster
-    party: wardens
-    rank: 20
   8cd908e9-a758-41fa-99b9-1a8f8ffc5297:
     name:
       timestamp: 1523673965
@@ -307,6 +295,42 @@ players:
     name:
       timestamp: 1524127306
       name: NINJA_SNIVY
+    rank: 5
+  2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303:
+    name:
+      name: TheoreticalGame
+      timestamp: 1524283150
+    rank: 20
+    party: The
+  cca2ff81-2c4d-4e12-8e21-f23a501e0207:
+    party: The
+    name:
+      timestamp: 1524279425
+      name: bluebolt2135
+    rank: 5
+  5bb65383-a531-44d7-a944-904f0cb4e607:
+    name:
+      timestamp: 1524357009
+      name: THE_PRO_BANANA
+    rank: 5
+    party: Chaos
+  cc41c2d9-5ef0-4a02-953d-cfb7c0b155be:
+    rank: 10
+    name:
+      timestamp: 1524412507
+      name: darkstumper
+    party: The
+  57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
+    rank: 5
+    name:
+      name: Nightification
+      timestamp: 1524417460
+    party: The
+  1d785eb9-a613-430c-a6ee-74a26026e100:
+    name:
+      name: RoyalAwesomeness
+      timestamp: 1524419348
+    party: The
     rank: 5
 parties:
   TheTitans:
@@ -347,8 +371,8 @@ parties:
     - 861da66b-8eef-4143-93f1-dbab33665595
     - fdbd1274-eb12-4fd1-b9c5-a44917d58637
     - 21e726fd-af17-4454-bb61-25e55d7300ef
-    - 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303
     - c1da0567-bcd9-48a0-9bf3-263be1439205
+    - 5bb65383-a531-44d7-a944-904f0cb4e607
     leader: 861da66b-8eef-4143-93f1-dbab33665595
     motd: Chao Dominatur In Aeternum
     desc: Chaos Coalition
@@ -414,7 +438,11 @@ parties:
     - 3639172b-aa0f-498d-9322-18addf094675
     - 8efe1a15-da4a-430c-a6c6-8a1344a1618f
     - b5224355-6e3b-4514-a833-6208f459f9c5
-  wardens:
+  The:
+    leader: 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303
     members:
-    - ccecc513-b84b-44cb-8bcd-bf6cf31d4393
-    leader: ccecc513-b84b-44cb-8bcd-bf6cf31d4393
+    - 2aaef4d1-1ff7-4a46-ac2b-7e07aa9c3303
+    - cca2ff81-2c4d-4e12-8e21-f23a501e0207
+    - cc41c2d9-5ef0-4a02-953d-cfb7c0b155be
+    - 57b29f1f-dc6b-4d30-80ac-cf64c4df3428
+    - 1d785eb9-a613-430c-a6ee-74a26026e100
