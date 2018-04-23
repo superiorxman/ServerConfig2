@@ -1,0 +1,39 @@
+class: geniealaddin
+costumes:
+- chatcolor: '&9'
+  name: §6G§9en§6i§9e§6(§cA§6)
+  sig: ANM++Urd8KtZerxgbmyr8+OTTl7Tyyr2lyIt0mc/iNlPZn2ye5S64ZUJFu6DPtiiHHIJX0hoAEJRYFvrwwoon9meyokvPp5AcKFCSDwuOferhyy5dM7tMEx9678bfkZ7Kx/otn/mUy5XaS57UWGnkAMZzAU+koJFfuqbV5IyQkoJ2aWvmvRMQtwm5rIfEXfTTk+7TPkmwKxLzNl07fi9DYWgJBp9rwDbh+H7m+1q2iUFSweb0e13/G04q1GjYdRJk335ZjuJH9pRlYLMblSUYfhEB0UyGMs8VZLIKg1KxoE/VSGhKuoiPGmjvz6Z9ZoMGOpGVELf4R8DWQjs6dtfvYBT/h6gkkZgeDkmxMQ2FH3ufjLltCOpMr0/uDYpCp8HTXI/50fVHjJAGwXwJSvmR4LDykpVBevLVaHGk1iY2U742KFa6JFmiSFu+LGqFKsd/eqYoWiDqbNijhsbmcBq4y9jXRZdn6HL4FIeemrM6+14QMBF3RBQUYxS9yyX2bA+Y3LlqYsK1f1DDZb8F2IyD8HD/Lgkfml/+U5tVRC0xmXi/+RtAAUj1RmQMlgMj6trmpjXvTiGh8j6GFOXx7Cp34gcUsaF5g9cId5ZgtYuS603nfRsjCEJQc4vMJAKf8pO0+7tr9Zl+jpcw0q+O/9L0+F8wnB6qU5bGOQ/sxUbvEk=
+  val: eyJ0aW1lc3RhbXAiOjE1MjQyNjUxNzIxMzEsInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkzNzM5N2I2YmM3NzVlNzZkZjYzZTc3Mjk3ZTQ5ZjMwNTAyMDM4YWM4YThjNjI2OTVkMmVjNDg2NzYwIn19fQ==
+effects: [
+  ]
+items: [
+  ]
+permissions:
+  superherocity:
+  - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
+  - ch.alias.portaltp
+  - ch.alias.tpradius
+  - -essentials.protect.damage.fall
+  - ch.alias.carryplayer
+  - ch.alias.dropplayer
+  - libsdisguises.disguise
+  - libsdisguises.disguise.player
+  - ch.alias.grow
+  - ch.alias.shrink
+  - ch.alias.normalsize
+powers:
+- /create <item> <quantity> <color>
+- /headdb
+- /tpradius
+- /portaltp <plr>
+- /disguise player <player>
+- /shrink
+- /grow
+- /normalsize
+- /carryplayer <player>
+- /dropplayer
+trail: [
+  ]
