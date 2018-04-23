@@ -1,0 +1,19 @@
+class: musicmeister
+costumes:
+- chatcolor: '&f'
+  name: §5M§aus§5i§fc §aM§fei§5st§aer
+  sig: g/2u6XNPs0ApTT9zEApwsIlMt6w+Z9p7MdmfSjcsG/DHgwk0JR+Uf1P6+5NmSkPyrT6dSm1tU1ucxXaC3X0DJDvpMNZqXvdxJ2hqZDwUnCIYwxzrVPTxfzaATptIELtz9qvcqx4lvLKJ8lnwnR//L+84oabpyqDvRp8fWmyg5WXL4oUHiHX6+MIuIG3t8fbg9FBu0vLESwEGk/xWD33cVEpbQCsEFoiSqbM8V+GfI4zLX7j4StSJ4kS8coXDLfCRHPWlAchnVhpzQErxe+bupXLnUHIisCByeI9t+/z0C5G1SgfGONb4Q9QHVg/xbKnbKEnVSjNpSQTb0+Xzdbg7H0PPPQInBAYeaD6bzl8K41dCk7oyN2Ze6b7yHlNEGGO1PHKsVBpxy8BbA1iz1qH1iWKLmGGTrNMeMm/xaRZxAkeHjGlWF/2yzu+vBRS1jxpaETUtghOfo7Dn/c0EbF4YwjTGTkmpogI3Nm3ZBMvMXvj+mbUZA90mKgHgAxTi4oLhVr+w7vZxAfHbE5KrpVaH/8VGTcs9p5Rj8trjJ0RohURf8yjxyzTBmohS2L3cKkj7/Be9K7+l/yZlK180kF/3otLAy4PkOyqeKi7MB2XO0dwgjJwXXUfEDwhMY8ETHIiYzqnbBvEiJSCJEOnHgyiBGJKOmS4mazvIKJuqDz8xpw4=
+  val: eyJ0aW1lc3RhbXAiOjE1MjQyNjMxNzAyNzksInByb2ZpbGVJZCI6ImQxZmJhYWI3YmRlMzQ0MDU4MjgyOWZjMTVkOTAyMDlkIiwicHJvZmlsZU5hbWUiOiJUaGVEYXJrQXVyYV8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQ5N2JiYzk2ZGE0MTQyMWU3MGJhYzc3MTZlMTFjMTdkYzEyN2ZhNmQ5Y2VkOTczMzZjZjg5NDZlNTI5ZWVmIn19fQ==
+effects: [
+  ]
+items: [
+  ]
+permissions:
+  superherocity:
+  #- ch.alias.stopmindcontrol
+  - powers.mindcontrol
+powers:
+- /mindcontrol <player>
+- /stopmindcontrol
+trail: [
+  ]
