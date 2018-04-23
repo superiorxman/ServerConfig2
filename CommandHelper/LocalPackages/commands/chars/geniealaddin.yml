@@ -8,41 +8,27 @@ effects: [
   ]
 items: [
   ]
-maxHearts: 40
 permissions:
   superherocity:
-  - powers.cantdie
   - ch.alias.create
   - headdb.open
   - headdb.category.*
   - headdb.free.*
-  - ch.alias.tphere
-  - ch.alias.tp
+  - ch.alias.portaltp
+  - ch.alias.tpradius
   - -essentials.protect.damage.fall
-  - essentials.tppos
-  - essentials.fly
-  - essentials.speed.fly
-  - powers.mindcontrol
-  #- ch.alias.stopmindcontrol
   - ch.alias.carryplayer
   - ch.alias.dropplayer
-  - powers.cloneself
   - libsdisguises.disguise
   - libsdisguises.disguise.player
   - ch.alias.grow
   - ch.alias.shrink
   - ch.alias.normalsize
 powers:
-- /fly
-- /flyspeed <number>
 - /create <item> <quantity> <color>
 - /headdb
-- /tppos <x> <y> <z>
-- /tp <plr>
-- /tphere <plr>
-- /mindcontrol <player>
-- /stopmindcontrol
-- /cloneself
+- /tpradius
+- /portaltp <plr>
 - /disguise player <player>
 - /shrink
 - /grow
