@@ -10,6 +10,41 @@
 #
 # https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/config
 #
+# This is used to convert a block to an item, for cases where
+# the materials for each differ. (Example: skulls, doors)
+block_items:
+  skull: skull_item
+  wall_banner: banner
+  standing_banner: banner
+  wooden-door: wood_door
+  iron_door_block: iron_door
+  wall_sign: sign
+  sign_post: sign
+  acacia_door: acacia_door_item
+  jungle_door: jungle_door_item
+  dark_oak_door: dark_oak_door_item
+  birch_door: birch_door_item
+  spruce_door: spruce_door_item
+# These are player skins that represent blocks. Some are provided here
+# as official Mojang skins, but more can be added.
+block_skins:
+  cactus: MHF_Cactus;
+  chest: MHF_Chest;
+  melon_block: MHF_Melon
+  tnt: MHF_TNT # There is also MHF_TNT2 but we aren't using it now.
+  log: MHF_OakLog
+  pumpkin: MHF_Pumpkin
+
+  # 1.13
+  oak_log: MHF_OakLog
+
+  # Other MHF blocks we don't use:
+  # MHF_ArrowUp
+  # MHF_ArrowDown
+  # MHF_ArrowLeft
+  # MHF_ArrowRight
+  # MHF_Exclamation
+  # MHF_Question
 
 #
 # Here you can specify custom damage types.
@@ -1281,6 +1316,94 @@ material_colors:
   green: green_bed
   red: red_bed
   black: black_bed
+# This maps entity_type values to mob egg materials.
+mob_eggs:
+  bat: monster_egg,bat_spawn_egg
+  blaze: monster_egg,blaze_spawn_egg
+  cave_spider: monster_egg,cave_spider_spawn_egg
+  chicken: monster_egg,chicken_spawn_egg
+  cod_mob: monster_egg,cod_mob_spawn_egg
+  cow: monster_egg,cow_spawn_egg
+  creeper: monster_egg,creeper_spawn_egg
+  dolphin: monster_egg,dolphin_spawn_egg
+  donkey: monster_egg,donkey_spawn_egg
+  drowned: monster_egg,drowned_spawn_egg
+  elder_guardian: monster_egg,elder_guardian_spawn_egg
+  enderman: monster_egg,enderman_spawn_egg
+  endermite: monster_egg,endermite_spawn_egg
+  evoker: monster_egg,evocation_illager_spawn_egg
+  ghast: monster_egg,ghast_spawn_egg
+  guardian: monster_egg,guardian_spawn_egg
+  horse: monster_egg,horse_spawn_egg
+  husk: monster_egg,husk_spawn_egg
+  illusioner: monster_egg,vindication_illager_spawn_egg
+  llama: monster_egg,llama_spawn_egg
+  magma_cube: monster_egg,magma_cube_spawn_egg
+  mooshroom: monster_egg,mooshroom_spawn_egg
+  mule: monster_egg,mule_spawn_egg
+  ocelot: monster_egg,ocelot_spawn_egg
+  parrot: monster_egg,parrot_spawn_egg
+  phantom: monster_egg,phantom_spawn_egg
+  pig: monster_egg,pig_spawn_egg
+  polar_bear: monster_egg,polar_bear_spawn_egg
+  puffer_fish: monster_egg,puffer_fish_spawn_egg
+  rabbit: monster_egg,rabbit_spawn_egg
+  salmon: monster_egg,salmon_mob_spawn_egg
+  sheep: monster_egg,sheep_spawn_egg
+  shulker: monster_egg,shulker_spawn_egg
+  silverfish: monster_egg,silverfish_spawn_egg
+  skeleton_horse: monster_egg,skeleton_horse_spawn_egg
+  skeleton: monster_egg,skeleton_spawn_egg
+  slime: monster_egg,slime_spawn_egg
+  spider: monster_egg,spider_spawn_egg
+  squid: monster_egg,squid_spawn_egg
+  stray: monster_egg,stray_spawn_egg
+  tropical_fish: monster_egg,tropical_fish_spawn_egg
+  turtle: monster_egg,turtle_spawn_egg
+  vex: monster_egg,vex_spawn_egg
+  villager: monster_egg,villager_spawn_egg
+  vindicator: monster_egg,vindication_illager_spawn_egg
+  witch: monster_egg,witch_spawn_egg
+  wither_skeleton: monster_egg,wither_skeleton_spawn_egg
+  wolf: monster_egg,wolf_spawn_egg
+  zombie_horse: monster_egg,zombie_horse_spawn_egg
+  zombie_pigman: monster_egg,zombie_pigman_spawn_egg
+  zombie: monster_egg,zombie_spawn_egg
+  zombie_villager: monster_egg,zombie_villager_spawn_egg
+# These are player skins that represent mobs. Some are provided here
+# as official Mojang skins, but more can be added.
+mob_skins:
+  blaze: MHF_Blaze
+  cave_spider: MHF_CaveSpider
+  chicken: MHF_Chicken
+  cow: MHF_Cow
+  enderman: MHF_Enderman
+  ghast: MHF_Ghast
+  iron_golem: MHF_Golem
+  magma_cube: MHF_LavaSlime
+  mushroom_cow: MHF_MushroomCow
+  ocelot: MHF_Ocelot
+  pig: MHF_Pig
+  pig_zombie: MHF_PigZombie
+  sheep: MHF_Sheep
+  slime: MHF_Slime
+  spider: MHF_Spider
+  squid: MHF_Squid
+  villager: MHF_Villager
+  wolf: MHF_Wolf
+  creeper: MHF_Creeper
+  zombie: MHF_Zombie
+  skeleton: MHF_Skeleton
+  guardian: MHF_Guardian
+  witch: MHF_Witch
+# These define mappings of materials for backwards compatibility
+ground_sign_block: sign_post,sign
+firework: firework,firework_rocket
+wall_torch: wall_torch,torch
+redstone_torch_on: redstone_torch_on,redstone_torch:1
+redstone_torch_off: redstone_torch_on,redstone_torch:0
+redstone_wall_torch_on: redstone_torch_on,redstone_wall_torch:4
+redstone_wall_torch_off: redstone_torch_on,redstone_torch:0
 # This resource pack will automatically be used if none is defined in your server.properties
 # Set this to "" if you have some other plugin or Bungee managing resource packs.
 resource_pack: "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-RP-7.zip"
@@ -1309,3 +1432,29 @@ resource_pack_check_interval: 5
 
 # Set this to true, and resource packs will not be sent to payers on join, instead they will be prompted
 resource_pack_prompt: false
+# This defines which Materials make up skulls, used for backwards-compatibility
+skulls:
+  skeleton:
+    wall: skeleton_wall_skull, skull:0
+    ground: skeleton_skull, skull:0
+    item: skeleton_skull, skull_item:0
+  wither_skeleton:
+    wall: wither_skeleton_wall_skull, skull:1
+    ground: wither_skeleton_skull, skull:1
+    item: wither_skeleton_skull, skull_item:1
+  zombie:
+    wall: zombie_wall_head, skull:2
+    ground: zombie_head, skull:2
+    item: zombie_head, skull_item:2
+  player:
+    wall: player_wall_head, skull:3
+    ground: player_head, skull:3
+    item: player_head, skull_item:3
+  creeper:
+    wall: creeper_wall_head, skull:4
+    ground: creeper_head, skull:4
+    item: creeper_head, skull_item:4
+  ender_dragon:
+    wall: dragon_wall_head, skull:5
+    ground: dragon_head, skull:5
+    item: dragon_head, skull_item:5

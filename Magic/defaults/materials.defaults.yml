@@ -283,6 +283,7 @@ building:
 - gates
 - stairs
 - skulls
+- banners
 burnable:
 - air
 - snow
@@ -749,6 +750,13 @@ plants:
 - dead_bush
 - crops
 - saplings
+player_skulls:
+- skull:3
+- skull_item:3
+
+# 1.13
+- player_head
+- player_wall_head
 powerable:
 - stone_button
 - wood_button
@@ -1076,4 +1084,5 @@ wearable:
 - diamond_leggings
 - elytra
 - skulls
+- pumpkin
 
