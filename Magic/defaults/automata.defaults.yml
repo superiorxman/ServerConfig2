@@ -12,6 +12,11 @@
 #
 # This controls behavior of spawners, persistent effects and other "automatic blocks".
 #
+flare:
+  name: Flares
+  interval: 5000
+  cast:
+    spells: flare pdx 0 pdz 0 pdy 1 quiet true
 fountain:
   name: Fountain
   description: A water fountain

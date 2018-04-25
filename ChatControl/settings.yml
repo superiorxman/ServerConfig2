@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 15.03.2018 13:43:00
-#  to ChatControl 7.8.1
+#  Your file has been automatically updated at 24.04.2018 12:27:35
+#  to ChatControl 7.8.8
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
@@ -331,6 +331,7 @@ Spy:
   Signs: false
   McMMO: true
   Log_McMMO: false
+  Format_PM: '&8[&5spy&8] &7[{player}] -> [{receiver}]: &7{message}'
 BungeeCords:
   Enabled: false
   Prefix: ''
