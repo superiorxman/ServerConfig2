@@ -1,8 +1,19 @@
+# 
+# !! IMPORTANT !!
+# 
+# If you wish to customize this plugin, edit the "classes.yml" file instead.
+# 
+# DO NOT JUST COPY THIS WHOLE FILE INTO YOUR classes.yml !!!!
+# If you do this, updating the plugin in the future may not work as expected.
+# 
+# This file is merged from the files in the following folder:
+# 
+# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/classes
+
 base:
   storage:
     mana: class
     mana_max: class
-    mana_regeneration: class
     mana_regeneration: class
     mana_timestamp: class
     spell_levels: class
@@ -10,23 +21,7 @@ base:
     brushes: class
     path: subclass
     hotbar_count: subclass
-
-    # Attributes are primarily stored on the mage
-    # But attributes can also be set on wands to provide attribute buffs.
     attributes: mage,wand
-
-#
-# !! IMPORTANT !!
-#
-# If you wish to customize this plugin, edit the "classes.yml" file instead.
-#
-# DO NOT JUST COPY THIS WHOLE FILE INTO YOUR classes.yml !!!!
-# If you do this, updating the plugin in the future may not work as expected.
-#
-# This file is merged from the files in the following folder:
-#
-# https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/classes
-#
 archer_mage:
   inherit: base
   locked: false
@@ -40,16 +35,14 @@ battle_mage:
   locked: false
   path: battle
   spells:
-    - missile
-    - arrow
-    - curse
-    - fire
-    - push
-
+  - missile
+  - arrow
+  - curse
+  - fire
+  - push
 broomrider:
   storage:
     spell_levels: class
-
 caster:
   inherit: base
   locked: false
@@ -58,11 +51,139 @@ caster:
   mana_regeneration: 5
   spells:
   - missile
-
 mage:
   parent: caster
   locked: false
   path: beginner
   spells:
   - missile
-
+wizard:
+  inherit: base
+  locked: false
+  path: year1
+  mana_max: 50
+  mana: 50
+  mana_regeneration: 6
+  spells:
+  - vermillious
+soldier:
+  locked: false
+  storage:
+    spell_levels: class
+bender:
+  inherit: base
+  locked: false
+  limit_spells_to_path: true
+  mana_max: 50
+  mana: 50
+  mana_regeneration: 5
+waterbender:
+  parent: bender
+  locked: true
+  path: waterbending
+  protection:
+    water: 0.5
+    drowning: 0.75
+  spells:
+  - waterjet
+  - waterball
+airbender:
+  parent: bender
+  locked: true
+  path: airbending
+  protection:
+    fall: 0.7
+    air: 0.5
+    suffocation: 0.5
+  spells:
+  - airblast
+  - suction
+  - airscooter
+firebender:
+  parent: bender
+  locked: true
+  path: firebending
+  protection:
+    fire: 0.9
+    lightning: 0.7
+  spells:
+  - fire
+  - fireball
+earthbender:
+  parent: bender
+  locked: true
+  path: earthbending
+  protection:
+    physical: 0.3
+    explosion: 0.2
+    earth: 0.5
+    falling_block: 0.8
+  spells:
+  - compression
+  - earthblock
+avatar:
+  path: avatar
+  mana_regeneration: 40
+  mana_max: 500
+  mana: 500
+  parent: bender
+  locked: true
+  limit_spells_to_path: false
+  protection:
+    overall: 0.8
+    fire: 0.8
+    fall: 1
+    physical: 0.8
+    explosion: 0.8
+    water: 0.8
+    air: 0.8
+    earth: 0.8
+  spells:
+  - fling
+  - airblast
+  - suction
+  - force
+  - fireball
+  - compression
+  - fire
+  - lava
+  - lightning
+  - sandspout
+  - breach
+  - breathofice
+  - waterball
+  - airsphere
+  - combustion|2
+  - heal
+  - cure
+  - earthline
+  - airscooter
+force_user:
+  inherit: base
+  limit_spells_to_path: true
+  mana_max: 50
+  mana: 50
+  mana_regeneration: 5
+jedi:
+  parent: force_user
+  locked: true
+  path: youngling
+  spells:
+  - forcepush
+  - forcepull
+sith:
+  parent: force_user
+  locked: true
+  path: acolyte
+  spells:
+  - forcepush
+  - forceignite
+stars_soldier:
+  storage:
+    spell_levels: class
+rebel:
+  parent: stars_soldier
+  locked: false
+trooper:
+  parent: stars_soldier
+  locked: false

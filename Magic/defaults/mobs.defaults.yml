@@ -1,22 +1,23 @@
-#
+# 
 # !! IMPORTANT !!
-#
+# 
 # If you wish to customize this plugin, edit the "mobs.yml" file instead.
-#
+# 
 # DO NOT JUST COPY THIS WHOLE FILE INTO YOUR mobs.yml !!!!
 # If you do this, updating the plugin in the future may not work as expected.
-#
+# 
 # This file is merged from the files in the following folder:
-#
+# 
 # https://github.com/elBukkit/MagicPlugin/tree/master/Magic/src/main/resources/defaults/mobs
-#
+
+
 boomer:
-  name: "Boomer"
+  name: Boomer
   type: magma_cube
   size: 3
   triggers:
     spawn:
-      cast: "blast pdy -1 pdx 0 pdz 0 radius 4"
+      cast: blast pdy -1 pdx 0 pdz 0 radius 4
 dark_spider:
   type: cave_spider
   name: Dark Spider
@@ -35,7 +36,6 @@ dark_spider:
   potion_effects:
   - type: speed
     amplifier: 0
-    
 dark_wizard:
   name: Dark Wizard
   type: zombie
@@ -100,7 +100,6 @@ dark_wizard:
   potion_effects:
   - type: speed
     amplifier: 1
-    
 dummy:
   type: husk
   name: Dummy
@@ -127,7 +126,7 @@ fairy:
   health: 100
   lifetime: 10000
   mage:
-    effect_color: "random"
+    effect_color: random
   potion_effects:
   - type: levitation
     amplifier: 1
@@ -148,9 +147,7 @@ fairy:
         particle_offset_y: 2.5
         particle_offset_z: 1.2
   drops:
-  - glowstone_dust
-    redstone
-    sulphur
+  - glowstone_dust redstone sulphur
 fire_elemental:
   type: blaze
   name: Fire Elemental
@@ -173,24 +170,18 @@ fire_elemental:
   potion_effects:
   - type: speed
     amplifier: 0
-
 killer_bunny:
   type: rabbit
   rabbit_type: the_killer_bunny
   name: Killer Bunny
   health: 100
   default_drops: false
-
-  # This will force this mob to target the player who is damaging it.
-  # Normally this behavior is only present for spellcasting mobs.
   aggro: true
-
   drops:
   - gold_nugget@10
   - sp:10
-
 kingslime:
-  name: "King Slime"
+  name: King Slime
   type: slime
   size: 18
   interval: 3000
@@ -199,7 +190,7 @@ kingslime:
     interval:
       cast:
         none: 100
-        "rubberize pdy -1 pdx 0 pdz 0": 50
+        rubberize pdy -1 pdx 0 pdz 0: 50
 madscientist:
   name: Mad Scientist
   type: pig_zombie
@@ -244,7 +235,6 @@ mega_spider:
   potion_effects:
   - type: increase_damage
     amplifier: 0
-    
 mutant:
   type: pig_zombie
   item: iron_sword
@@ -257,7 +247,6 @@ mutant:
   default_drops: false
   drops:
   - gold_nugget@5
-  
 mutant_captain:
   type: pig_zombie
   item: iron_sword
@@ -277,7 +266,6 @@ mutant_captain:
   entity_attributes:
     generic_knockback_resistance: 1
     generic_attack_speed: 5
-    
 mutant_spider:
   type: cave_spider
   name: Mutant Spider
@@ -285,7 +273,6 @@ mutant_spider:
   drops:
   - gold_nugget@8
   - spider_eye@2
-  
 polterghast:
   type: ghast
   health: 100
@@ -296,13 +283,11 @@ polterghast:
   potion_effects:
   - type: speed
     amplifier: 2
-    
 undead_minion:
   type: skeleton
   item: iron_sword
   name: Undead Minion
   health: 50
-  
 undead_overlord:
   type: skeleton
   skeleton_type: wither
@@ -312,7 +297,6 @@ undead_overlord:
   potion_effects:
   - type: increase_damage
     amplifier: 1
-    
 warlock:
   type: zombie
   villager_profession: butcher
@@ -347,3 +331,205 @@ warlock:
     gold_nugget@12: 50
     gold_nugget@8: 20
   - sp:16
+dementor:
+  name: Dementor
+  type: wither
+  health: 1000
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    dementor: 100
+    petrificustotalus: 20
+    confundus: 30
+    crucio: 10
+    none: 20
+  drops:
+  - gold_ingot@24
+  - sp:100
+deatheater:
+  name: Death Eater
+  type: zombie
+  item: wizard_wand
+  chestplate: warlock_chestplate
+  leggings: warlock_leggings
+  helmet: iron_helmet
+  boots: warlock_boots
+  health: 200
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    stupefy: 100
+    vermillios: 100
+    crucio: 10
+    accio: 20
+    flipendo: 150
+    none: 20
+  drops:
+  - gold_ingot@24
+  - sp:100
+  potion_effects:
+  - type: speed
+    amplifier: 1
+acromantula:
+  type: spider
+  name: '&2Acromantula'
+  health: 100
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    webbing: 100
+    poison|3: 100
+    none: 50
+  drops:
+  - gold_nugget@8
+  - sp:8
+  potion_effects:
+  - type: speed
+    amplifier: 0
+soldier:
+  type: zombie
+  item: ak47_item
+  baby: false
+  chestplate: iron_chestplate
+  leggings: iron_leggings
+  boots: iron_boots
+  helmet: pumpkin
+  name: Soldier
+  health: 50
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    ak47: 80
+    none: 50
+police:
+  type: pig_zombie
+  item: pistol_item
+  baby: false
+  name: Police
+  health: 20
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    pistol: 80
+    none: 100
+riotpolice:
+  type: pig_zombie
+  item: shotgun_item
+  baby: false
+  chestplate: iron_chestplate
+  leggings: iron_leggings
+  boots: iron_boots
+  name: Riot Police
+  health: 25
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    shotgun: 50
+    none: 100
+fbi:
+  type: skeleton
+  item: pistol_item
+  baby: false
+  chestplate: iron_chestplate
+  leggings: iron_leggings
+  helmet: iron_helmet
+  boots: iron_boots
+  name: FBI
+  health: 30
+  default_drops: false
+  cast_interval: 1000
+  cast:
+    pistol: 80
+    none: 20
+model3:
+  type: armor_stand
+  helmet: model3_item
+  invisible: true
+  silent: true
+  name: '&9Model 3'
+  interact_spell: steal_model3
+  disabled_slots: 2039552
+ferrari:
+  type: armor_stand
+  helmet: ferrari_item
+  invisible: true
+  silent: true
+  name: Ferrari California
+  interact_spell: steal_ferrari
+  disabled_slots: 2039552
+train:
+  type: armor_stand
+  helmet: train_item
+  invisible: true
+  silent: true
+  name: Steam Engine
+  interact_spell: drive
+  disabled_slots: 2039552
+model3_red:
+  type: armor_stand
+  helmet: model3_red_item
+  invisible: true
+  silent: true
+  name: '&cModel 3'
+  interact_spell: steal_model3
+  disabled_slots: 2039552
+model3_black:
+  type: armor_stand
+  helmet: model3_black_item
+  invisible: true
+  silent: true
+  name: '&0Model 3'
+  interact_spell: steal_model3
+  disabled_slots: 2039552
+model3_white:
+  type: armor_stand
+  helmet: model3_white_item
+  invisible: true
+  silent: true
+  name: '&fModel 3'
+  interact_spell: steal_model3
+  disabled_slots: 2039552
+model3_silver:
+  type: armor_stand
+  helmet: model3_silver_item
+  invisible: true
+  silent: true
+  name: '&7Model 3'
+  interact_spell: steal_model3
+  disabled_slots: 2039552
+skybison:
+  type: cow
+  name: Sky Bison
+  interact_spell: ride
+  silent: true
+demon:
+  name: Demon
+  type: zombie
+  item: iron_fence
+  chestplate: leather_chestplate
+  leggings: leather_leggings
+  helmet: leather_helmet
+  boots: leather_boots
+  health: 40
+  default_drops: false
+  cast_interval: 5000
+  cast:
+    demon_rush: 100
+  drops:
+  - redstone@1
+tarzultrig:
+  name: Tarzultrig
+  type: zombie
+  item: iron_fence
+  chestplate: iron_chestplate
+  leggings: iron_leggings
+  helmet: iron_helmet
+  boots: iron_boots
+  health: 10000
+  default_drops: false
+  cast_interval: 3000
+  cast:
+    demon_rush: 50
+    demon_firebolt: 50
+  drops:
+  - nether_brick@1
